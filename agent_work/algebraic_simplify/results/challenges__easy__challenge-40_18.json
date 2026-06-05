@@ -1,0 +1,603 @@
+{
+  "linear_windows": {
+    "entangling_gates_in_windows": 516,
+    "general_linear_windows": 348,
+    "identity_windows": 0,
+    "length_hist_top": [
+      [
+        1,
+        244
+      ],
+      [
+        2,
+        72
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "max_window": 11,
+    "pure_permutation_windows": 1,
+    "top_windows": [
+      {
+        "end_line": 294,
+        "kind": "linear",
+        "length": 11,
+        "start_line": 284
+      },
+      {
+        "end_line": 260,
+        "kind": "linear",
+        "length": 7,
+        "start_line": 254
+      },
+      {
+        "end_line": 233,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 228
+      },
+      {
+        "end_line": 729,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 725
+      },
+      {
+        "end_line": 109,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 106
+      },
+      {
+        "end_line": 160,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 157
+      },
+      {
+        "end_line": 174,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 171
+      },
+      {
+        "end_line": 187,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 184
+      },
+      {
+        "end_line": 192,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 189
+      },
+      {
+        "end_line": 221,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 218
+      },
+      {
+        "end_line": 252,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 249
+      },
+      {
+        "end_line": 412,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 409
+      },
+      {
+        "end_line": 435,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 432
+      },
+      {
+        "end_line": 483,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 480
+      },
+      {
+        "end_line": 672,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 669
+      },
+      {
+        "end_line": 905,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 902
+      },
+      {
+        "end_line": 316,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 314
+      },
+      {
+        "end_line": 353,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 351
+      },
+      {
+        "end_line": 379,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 377
+      },
+      {
+        "end_line": 615,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 613
+      }
+    ],
+    "window_count": 349
+  },
+  "n": 40,
+  "path": "challenges/easy/challenge-40_18.qasm",
+  "qiskit": {
+    "raw": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 167,
+        "ok": true,
+        "ops": {
+          "cx": 515,
+          "rx": 110,
+          "rz": 180,
+          "u2": 48,
+          "u3": 183
+        },
+        "seconds": 0.024459362030029297,
+        "size": 1036
+      },
+      "opt3_native": {
+        "depth": 199,
+        "ok": true,
+        "ops": {
+          "cx": 515,
+          "rx": 343,
+          "rz": 469
+        },
+        "seconds": 0.036367177963256836,
+        "size": 1327
+      },
+      "original": {
+        "depth": 199,
+        "ops": {
+          "cx": 515,
+          "rx": 343,
+          "rz": 469,
+          "swap": 1
+        },
+        "size": 1328
+      },
+      "seconds": 0.5945508480072021,
+      "snap_stats": {},
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 167,
+        "ok": true,
+        "ops": {
+          "cx": 505,
+          "rx": 108,
+          "rz": 173,
+          "u2": 113,
+          "u3": 115,
+          "unitary": 5
+        },
+        "seconds": 0.02739858627319336,
+        "size": 1019
+      },
+      "opt3_native": {
+        "depth": 199,
+        "ok": true,
+        "ops": {
+          "cx": 510,
+          "rx": 351,
+          "rz": 474
+        },
+        "seconds": 0.025699377059936523,
+        "size": 1335
+      },
+      "original": {
+        "depth": 199,
+        "ops": {
+          "cx": 515,
+          "rx": 343,
+          "rz": 469,
+          "swap": 1
+        },
+        "size": 1328
+      },
+      "seconds": 0.09473109245300293,
+      "snap_stats": {
+        "rx_snapped": 231,
+        "rz_snapped": 318
+      },
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 167,
+        "ok": true,
+        "ops": {
+          "cx": 505,
+          "rx": 107,
+          "rz": 173,
+          "u2": 111,
+          "u3": 118,
+          "unitary": 5
+        },
+        "seconds": 0.02749466896057129,
+        "size": 1019
+      },
+      "opt3_native": {
+        "depth": 199,
+        "ok": true,
+        "ops": {
+          "cx": 510,
+          "rx": 351,
+          "rz": 477
+        },
+        "seconds": 0.02551722526550293,
+        "size": 1338
+      },
+      "original": {
+        "depth": 199,
+        "ops": {
+          "cx": 515,
+          "rx": 343,
+          "rz": 469,
+          "swap": 1
+        },
+        "size": 1328
+      },
+      "seconds": 0.09460568428039551,
+      "snap_stats": {
+        "rx_snapped": 223,
+        "rz_snapped": 296
+      },
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 167,
+        "ok": true,
+        "ops": {
+          "cx": 511,
+          "rx": 107,
+          "rz": 178,
+          "u2": 74,
+          "u3": 157,
+          "unitary": 2
+        },
+        "seconds": 0.027631044387817383,
+        "size": 1029
+      },
+      "opt3_native": {
+        "depth": 199,
+        "ok": true,
+        "ops": {
+          "cx": 513,
+          "rx": 344,
+          "rz": 472
+        },
+        "seconds": 0.02550649642944336,
+        "size": 1329
+      },
+      "original": {
+        "depth": 199,
+        "ops": {
+          "cx": 515,
+          "rx": 343,
+          "rz": 469,
+          "swap": 1
+        },
+        "size": 1328
+      },
+      "seconds": 0.09463644027709961,
+      "snap_stats": {
+        "rx_snapped": 145,
+        "rz_snapped": 195
+      },
+      "snap_tol": 1e-07
+    }
+  },
+  "simple_greedy": {
+    "exact": {
+      "gate_count": 1328,
+      "merged": {},
+      "op_counts": {
+        "cx": 515,
+        "rx": 343,
+        "rz": 469,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "gate_count": 1323,
+      "merged": {},
+      "op_counts": {
+        "cx": 515,
+        "rx": 342,
+        "rz": 465,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0037650602409639022,
+      "removed": {
+        "rx_zero": 1,
+        "rz_zero": 4
+      },
+      "snap_den": 16,
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "gate_count": 1326,
+      "merged": {},
+      "op_counts": {
+        "cx": 515,
+        "rx": 342,
+        "rz": 468,
+        "swap": 1
+      },
+      "reduction_fraction": 0.001506024096385561,
+      "removed": {
+        "rx_zero": 1,
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "gate_count": 1328,
+      "merged": {},
+      "op_counts": {
+        "cx": 515,
+        "rx": 343,
+        "rz": 469,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-07
+    }
+  },
+  "skipped_lines": {},
+  "statevector_limit16": {
+    "available": true,
+    "reason": "qreg 40 > limit 16",
+    "skipped": true
+  },
+  "static": {
+    "angle_counts_near_pi_fraction": {
+      "0.001": 549,
+      "0.01": 655,
+      "1e-05": 519,
+      "1e-07": 340,
+      "1e-09": 202,
+      "1e-12": 187
+    },
+    "angle_error_quantiles": {
+      "max": 0.09558561476402261,
+      "min": 0.0,
+      "p50": 3.4014336325327577e-07,
+      "p90": 0.025075955875675016,
+      "p99": 0.08307094864541487
+    },
+    "cliffordish_counts_by_tol": {
+      "0.001": 340,
+      "0.01": 357,
+      "1e-05": 332,
+      "1e-07": 241,
+      "1e-09": 149,
+      "1e-12": 140
+    },
+    "difficulty": "easy",
+    "exact_rx_pi_after_last_entangler": 0,
+    "exact_rx_pi_count": 3,
+    "exact_rx_pi_lines_first20": [
+      1164,
+      1249,
+      1271
+    ],
+    "exact_rx_pi_qubits": {
+      "1": 1,
+      "5": 1,
+      "19": 1
+    },
+    "gate_count": 1328,
+    "gate_density_per_qubit": 33.2,
+    "leading_single_qubit_gates": 14,
+    "op_counts": {
+      "cx": 515,
+      "rx": 343,
+      "rz": 469,
+      "swap": 1
+    },
+    "path": "challenges/easy/challenge-40_18.qasm",
+    "qreg": 40,
+    "rx_pi_counts_by_tol": {
+      "0.001": 3,
+      "0.01": 3,
+      "1e-05": 3,
+      "1e-07": 3,
+      "1e-09": 3,
+      "1e-12": 3
+    },
+    "rz_pi_over_2_counts_by_tol": {
+      "0.001": 178,
+      "0.01": 180,
+      "1e-05": 175,
+      "1e-07": 129,
+      "1e-09": 69,
+      "1e-12": 66
+    },
+    "top_pi_fractions_tol_1e-3": [
+      [
+        "1/2",
+        183
+      ],
+      [
+        "-1/2",
+        147
+      ],
+      [
+        "1/4",
+        64
+      ],
+      [
+        "-1/4",
+        63
+      ],
+      [
+        "-3/4",
+        38
+      ],
+      [
+        "3/4",
+        33
+      ],
+      [
+        "0/1",
+        5
+      ],
+      [
+        "1/1",
+        5
+      ],
+      [
+        "10/13",
+        1
+      ],
+      [
+        "-1/9",
+        1
+      ],
+      [
+        "-3/10",
+        1
+      ],
+      [
+        "8/11",
+        1
+      ],
+      [
+        "-5/4",
+        1
+      ],
+      [
+        "7/10",
+        1
+      ],
+      [
+        "1/3",
+        1
+      ],
+      [
+        "2/5",
+        1
+      ]
+    ],
+    "trailing_single_qubit_gates": 5
+  },
+  "structural_candidates": {
+    "tol_1e-3": {
+      "exact_rxpi_lines_first30": [
+        1164,
+        1249,
+        1271
+      ],
+      "exact_rxpi_toggle_count": 3,
+      "near_rxpi_lines_first30": [
+        1164,
+        1249,
+        1271
+      ],
+      "near_rxpi_toggle_count": 3,
+      "tol": 0.001,
+      "x_cxswap_exact_rxpi": "0000000000000000000010000000000000100010",
+      "x_cxswap_near_rxpi": "0000000000000000000010000000000000100010",
+      "x_swaponly_exact_rxpi_logical": "0000000000001000000000000000000000100010",
+      "x_swaponly_near_rxpi_logical": "0000000000001000000000000000000000100010"
+    },
+    "tol_1e-5": {
+      "exact_rxpi_lines_first30": [
+        1164,
+        1249,
+        1271
+      ],
+      "exact_rxpi_toggle_count": 3,
+      "near_rxpi_lines_first30": [
+        1164,
+        1249,
+        1271
+      ],
+      "near_rxpi_toggle_count": 3,
+      "tol": 1e-05,
+      "x_cxswap_exact_rxpi": "0000000000000000000010000000000000100010",
+      "x_cxswap_near_rxpi": "0000000000000000000010000000000000100010",
+      "x_swaponly_exact_rxpi_logical": "0000000000001000000000000000000000100010",
+      "x_swaponly_near_rxpi_logical": "0000000000001000000000000000000000100010"
+    },
+    "tol_1e-9": {
+      "exact_rxpi_lines_first30": [
+        1164,
+        1249,
+        1271
+      ],
+      "exact_rxpi_toggle_count": 3,
+      "near_rxpi_lines_first30": [
+        1164,
+        1249,
+        1271
+      ],
+      "near_rxpi_toggle_count": 3,
+      "tol": 1e-09,
+      "x_cxswap_exact_rxpi": "0000000000000000000010000000000000100010",
+      "x_cxswap_near_rxpi": "0000000000000000000010000000000000100010",
+      "x_swaponly_exact_rxpi_logical": "0000000000001000000000000000000000100010",
+      "x_swaponly_near_rxpi_logical": "0000000000001000000000000000000000100010"
+    }
+  }
+}

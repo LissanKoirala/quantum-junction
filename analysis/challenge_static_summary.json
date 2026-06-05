@@ -1,0 +1,3294 @@
+{
+  "summary": {
+    "easy": {
+      "files": 16,
+      "qubits": [
+        8,
+        64
+      ],
+      "gates_mean": 1063.0,
+      "gates_min_max": [
+        117,
+        1854
+      ],
+      "cx_mean": 397.3125,
+      "rx_mean": 315.6875,
+      "rz_mean": 347.25,
+      "swap_total": 44,
+      "leading_1q_mean": 16.9375,
+      "trailing_after_last_entangling_mean": 3.8125,
+      "unique_pairs_mean": 148.0,
+      "exactish_angle_fraction": 0.4706326011124729
+    },
+    "hard": {
+      "files": 7,
+      "qubits": [
+        40,
+        64
+      ],
+      "gates_mean": 3595.4285714285716,
+      "gates_min_max": [
+        2783,
+        5939
+      ],
+      "cx_mean": 1531.7142857142858,
+      "rx_mean": 813.7142857142857,
+      "rz_mean": 1249.0,
+      "swap_total": 7,
+      "leading_1q_mean": 22.0,
+      "trailing_after_last_entangling_mean": 4.0,
+      "unique_pairs_mean": 506.85714285714283,
+      "exactish_angle_fraction": 0.6181175981716185
+    },
+    "moderate": {
+      "files": 8,
+      "qubits": [
+        8,
+        64
+      ],
+      "gates_mean": 1713.125,
+      "gates_min_max": [
+        459,
+        3086
+      ],
+      "cx_mean": 701.75,
+      "rx_mean": 447.25,
+      "rz_mean": 560.125,
+      "swap_total": 32,
+      "leading_1q_mean": 8.5,
+      "trailing_after_last_entangling_mean": 3.625,
+      "unique_pairs_mean": 206.5,
+      "exactish_angle_fraction": 0.597840923191463
+    },
+    "very easy": {
+      "files": 10,
+      "qubits": [
+        8,
+        64
+      ],
+      "gates_mean": 420.4,
+      "gates_min_max": [
+        46,
+        1220
+      ],
+      "cx_mean": 127.1,
+      "rx_mean": 141.2,
+      "rz_mean": 149.7,
+      "swap_total": 24,
+      "leading_1q_mean": 19.3,
+      "trailing_after_last_entangling_mean": 3.4,
+      "unique_pairs_mean": 51.8,
+      "exactish_angle_fraction": 0.2526641457545548
+    },
+    "very_hard": {
+      "files": 8,
+      "qubits": [
+        48,
+        104
+      ],
+      "gates_mean": 28576.375,
+      "gates_min_max": [
+        20733,
+        37660
+      ],
+      "cx_mean": 5819.625,
+      "rx_mean": 10762.0,
+      "rz_mean": 11994.75,
+      "swap_total": 0,
+      "leading_1q_mean": 159.0,
+      "trailing_after_last_entangling_mean": 7.875,
+      "unique_pairs_mean": 1969.875,
+      "exactish_angle_fraction": 0.01001900535006097
+    }
+  },
+  "rows": [
+    {
+      "path": "challenges/easy/challenge-16_12.qasm",
+      "difficulty": "easy",
+      "file": "challenge-16_12.qasm",
+      "challenge_n": 16,
+      "challenge_id": 12,
+      "qreg": 16,
+      "gates": 291,
+      "op_cx": 129,
+      "op_rx": 65,
+      "op_rz": 89,
+      "op_swap": 8,
+      "first_entangling_gate_index": 9,
+      "last_entangling_gate_index": 289,
+      "leading_1q_gates": 8,
+      "trailing_after_last_entangling": 2,
+      "unique_entangling_pairs": 61,
+      "repeated_entangling_pairs": 38,
+      "max_pair_repetitions": 7,
+      "swap_count": 8,
+      "swap_positions": [
+        213,
+        274,
+        275,
+        276,
+        277,
+        282,
+        288,
+        289
+      ],
+      "qubits_touched_by_cx": 15,
+      "qubits_touched_by_swap": 10,
+      "angle_exactish_pi_fraction": 98,
+      "angle_noisy": 56,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          45
+        ],
+        [
+          "-1/2",
+          35
+        ],
+        [
+          "1/1",
+          6
+        ],
+        [
+          "1/4",
+          4
+        ],
+        [
+          "-1/4",
+          4
+        ],
+        [
+          "3/4",
+          2
+        ],
+        [
+          "-3/4",
+          2
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 19,
+      "cx_touch_min": 0,
+      "cx_touch_max": 34
+    },
+    {
+      "path": "challenges/easy/challenge-24_13.qasm",
+      "difficulty": "easy",
+      "file": "challenge-24_13.qasm",
+      "challenge_n": 24,
+      "challenge_id": 13,
+      "qreg": 24,
+      "gates": 550,
+      "op_cx": 206,
+      "op_rx": 176,
+      "op_rz": 163,
+      "op_swap": 5,
+      "first_entangling_gate_index": 12,
+      "last_entangling_gate_index": 549,
+      "leading_1q_gates": 11,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 67,
+      "repeated_entangling_pairs": 57,
+      "max_pair_repetitions": 13,
+      "swap_count": 5,
+      "swap_positions": [
+        522,
+        523,
+        535,
+        548,
+        549
+      ],
+      "qubits_touched_by_cx": 23,
+      "qubits_touched_by_swap": 8,
+      "angle_exactish_pi_fraction": 156,
+      "angle_noisy": 183,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          55
+        ],
+        [
+          "-1/2",
+          49
+        ],
+        [
+          "3/4",
+          13
+        ],
+        [
+          "-1/4",
+          11
+        ],
+        [
+          "1/4",
+          10
+        ],
+        [
+          "-3/4",
+          9
+        ],
+        [
+          "1/1",
+          8
+        ],
+        [
+          "1/3",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 39,
+      "cx_touch_min": 0,
+      "cx_touch_max": 40
+    },
+    {
+      "path": "challenges/easy/challenge-32_14.qasm",
+      "difficulty": "easy",
+      "file": "challenge-32_14.qasm",
+      "challenge_n": 32,
+      "challenge_id": 14,
+      "qreg": 32,
+      "gates": 875,
+      "op_cx": 330,
+      "op_rx": 243,
+      "op_rz": 299,
+      "op_swap": 3,
+      "first_entangling_gate_index": 15,
+      "last_entangling_gate_index": 874,
+      "leading_1q_gates": 14,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 114,
+      "repeated_entangling_pairs": 87,
+      "max_pair_repetitions": 11,
+      "swap_count": 3,
+      "swap_positions": [
+        857,
+        867,
+        874
+      ],
+      "qubits_touched_by_cx": 32,
+      "qubits_touched_by_swap": 5,
+      "angle_exactish_pi_fraction": 254,
+      "angle_noisy": 288,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          110
+        ],
+        [
+          "-1/2",
+          63
+        ],
+        [
+          "-1/4",
+          21
+        ],
+        [
+          "1/4",
+          18
+        ],
+        [
+          "3/4",
+          17
+        ],
+        [
+          "-3/4",
+          16
+        ],
+        [
+          "1/1",
+          9
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 36,
+      "cx_touch_min": 3,
+      "cx_touch_max": 43
+    },
+    {
+      "path": "challenges/easy/challenge-36_15.qasm",
+      "difficulty": "easy",
+      "file": "challenge-36_15.qasm",
+      "challenge_n": 36,
+      "challenge_id": 15,
+      "qreg": 36,
+      "gates": 1752,
+      "op_cx": 393,
+      "op_rx": 617,
+      "op_rz": 742,
+      "op_swap": 0,
+      "first_entangling_gate_index": 71,
+      "last_entangling_gate_index": 1739,
+      "leading_1q_gates": 70,
+      "trailing_after_last_entangling": 13,
+      "unique_entangling_pairs": 177,
+      "repeated_entangling_pairs": 173,
+      "max_pair_repetitions": 5,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 36,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 10,
+      "angle_noisy": 1349,
+      "top_pi_fractions": [
+        [
+          "1/1",
+          3
+        ],
+        [
+          "-1/2",
+          3
+        ],
+        [
+          "1/2",
+          2
+        ],
+        [
+          "-3/4",
+          1
+        ],
+        [
+          "3/4",
+          1
+        ]
+      ],
+      "oneq_min": 10,
+      "oneq_max": 67,
+      "cx_touch_min": 6,
+      "cx_touch_max": 36
+    },
+    {
+      "path": "challenges/easy/challenge-40_16.qasm",
+      "difficulty": "easy",
+      "file": "challenge-40_16.qasm",
+      "challenge_n": 40,
+      "challenge_id": 16,
+      "qreg": 40,
+      "gates": 969,
+      "op_cx": 361,
+      "op_rx": 301,
+      "op_rz": 302,
+      "op_swap": 5,
+      "first_entangling_gate_index": 11,
+      "last_entangling_gate_index": 966,
+      "leading_1q_gates": 10,
+      "trailing_after_last_entangling": 3,
+      "unique_entangling_pairs": 136,
+      "repeated_entangling_pairs": 107,
+      "max_pair_repetitions": 11,
+      "swap_count": 5,
+      "swap_positions": [
+        630,
+        816,
+        903,
+        909,
+        910
+      ],
+      "qubits_touched_by_cx": 39,
+      "qubits_touched_by_swap": 8,
+      "angle_exactish_pi_fraction": 258,
+      "angle_noisy": 345,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          118
+        ],
+        [
+          "-1/2",
+          70
+        ],
+        [
+          "1/4",
+          20
+        ],
+        [
+          "-1/4",
+          16
+        ],
+        [
+          "1/1",
+          15
+        ],
+        [
+          "-3/4",
+          10
+        ],
+        [
+          "3/4",
+          8
+        ],
+        [
+          "5/8",
+          1
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 28,
+      "cx_touch_min": 0,
+      "cx_touch_max": 41
+    },
+    {
+      "path": "challenges/easy/challenge-40_17.qasm",
+      "difficulty": "easy",
+      "file": "challenge-40_17.qasm",
+      "challenge_n": 40,
+      "challenge_id": 17,
+      "qreg": 40,
+      "gates": 779,
+      "op_cx": 326,
+      "op_rx": 208,
+      "op_rz": 233,
+      "op_swap": 12,
+      "first_entangling_gate_index": 18,
+      "last_entangling_gate_index": 778,
+      "leading_1q_gates": 17,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 126,
+      "repeated_entangling_pairs": 85,
+      "max_pair_repetitions": 10,
+      "swap_count": 12,
+      "swap_positions": [
+        389,
+        435,
+        601,
+        703,
+        707,
+        708,
+        709,
+        711,
+        729,
+        738,
+        739,
+        766
+      ],
+      "qubits_touched_by_cx": 37,
+      "qubits_touched_by_swap": 19,
+      "angle_exactish_pi_fraction": 265,
+      "angle_noisy": 176,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          110
+        ],
+        [
+          "-1/2",
+          66
+        ],
+        [
+          "1/4",
+          31
+        ],
+        [
+          "-1/4",
+          19
+        ],
+        [
+          "1/1",
+          16
+        ],
+        [
+          "3/4",
+          12
+        ],
+        [
+          "-3/4",
+          11
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 29,
+      "cx_touch_min": 0,
+      "cx_touch_max": 45
+    },
+    {
+      "path": "challenges/easy/challenge-40_18.qasm",
+      "difficulty": "easy",
+      "file": "challenge-40_18.qasm",
+      "challenge_n": 40,
+      "challenge_id": 18,
+      "qreg": 40,
+      "gates": 1328,
+      "op_cx": 515,
+      "op_rx": 343,
+      "op_rz": 469,
+      "op_swap": 1,
+      "first_entangling_gate_index": 15,
+      "last_entangling_gate_index": 1323,
+      "leading_1q_gates": 14,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 189,
+      "repeated_entangling_pairs": 149,
+      "max_pair_repetitions": 10,
+      "swap_count": 1,
+      "swap_positions": [
+        1159
+      ],
+      "qubits_touched_by_cx": 40,
+      "qubits_touched_by_swap": 2,
+      "angle_exactish_pi_fraction": 403,
+      "angle_noisy": 409,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          153
+        ],
+        [
+          "-1/2",
+          117
+        ],
+        [
+          "1/4",
+          44
+        ],
+        [
+          "-1/4",
+          38
+        ],
+        [
+          "-3/4",
+          27
+        ],
+        [
+          "3/4",
+          19
+        ],
+        [
+          "1/1",
+          5
+        ]
+      ],
+      "oneq_min": 5,
+      "oneq_max": 56,
+      "cx_touch_min": 6,
+      "cx_touch_max": 68
+    },
+    {
+      "path": "challenges/easy/challenge-48_19.qasm",
+      "difficulty": "easy",
+      "file": "challenge-48_19.qasm",
+      "challenge_n": 48,
+      "challenge_id": 19,
+      "qreg": 48,
+      "gates": 901,
+      "op_cx": 356,
+      "op_rx": 282,
+      "op_rz": 263,
+      "op_swap": 0,
+      "first_entangling_gate_index": 13,
+      "last_entangling_gate_index": 899,
+      "leading_1q_gates": 12,
+      "trailing_after_last_entangling": 2,
+      "unique_entangling_pairs": 123,
+      "repeated_entangling_pairs": 99,
+      "max_pair_repetitions": 7,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 46,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 365,
+      "angle_noisy": 180,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          176
+        ],
+        [
+          "-1/2",
+          75
+        ],
+        [
+          "1/4",
+          35
+        ],
+        [
+          "-1/4",
+          35
+        ],
+        [
+          "3/4",
+          15
+        ],
+        [
+          "-3/4",
+          14
+        ],
+        [
+          "1/1",
+          12
+        ],
+        [
+          "0/1",
+          2
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 27,
+      "cx_touch_min": 0,
+      "cx_touch_max": 33
+    },
+    {
+      "path": "challenges/easy/challenge-48_20.qasm",
+      "difficulty": "easy",
+      "file": "challenge-48_20.qasm",
+      "challenge_n": 48,
+      "challenge_id": 20,
+      "qreg": 48,
+      "gates": 917,
+      "op_cx": 327,
+      "op_rx": 270,
+      "op_rz": 319,
+      "op_swap": 1,
+      "first_entangling_gate_index": 17,
+      "last_entangling_gate_index": 910,
+      "leading_1q_gates": 16,
+      "trailing_after_last_entangling": 7,
+      "unique_entangling_pairs": 124,
+      "repeated_entangling_pairs": 98,
+      "max_pair_repetitions": 9,
+      "swap_count": 1,
+      "swap_positions": [
+        820
+      ],
+      "qubits_touched_by_cx": 44,
+      "qubits_touched_by_swap": 2,
+      "angle_exactish_pi_fraction": 247,
+      "angle_noisy": 342,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          115
+        ],
+        [
+          "-1/2",
+          59
+        ],
+        [
+          "1/4",
+          22
+        ],
+        [
+          "-1/4",
+          21
+        ],
+        [
+          "1/1",
+          10
+        ],
+        [
+          "-3/4",
+          10
+        ],
+        [
+          "3/4",
+          10
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 35,
+      "cx_touch_min": 0,
+      "cx_touch_max": 41
+    },
+    {
+      "path": "challenges/easy/challenge-48_21.qasm",
+      "difficulty": "easy",
+      "file": "challenge-48_21.qasm",
+      "challenge_n": 48,
+      "challenge_id": 21,
+      "qreg": 48,
+      "gates": 1103,
+      "op_cx": 444,
+      "op_rx": 308,
+      "op_rz": 347,
+      "op_swap": 4,
+      "first_entangling_gate_index": 4,
+      "last_entangling_gate_index": 1101,
+      "leading_1q_gates": 3,
+      "trailing_after_last_entangling": 2,
+      "unique_entangling_pairs": 166,
+      "repeated_entangling_pairs": 120,
+      "max_pair_repetitions": 10,
+      "swap_count": 4,
+      "swap_positions": [
+        1026,
+        1027,
+        1028,
+        1094
+      ],
+      "qubits_touched_by_cx": 47,
+      "qubits_touched_by_swap": 5,
+      "angle_exactish_pi_fraction": 347,
+      "angle_noisy": 308,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          141
+        ],
+        [
+          "-1/2",
+          94
+        ],
+        [
+          "1/4",
+          37
+        ],
+        [
+          "-1/4",
+          30
+        ],
+        [
+          "3/4",
+          16
+        ],
+        [
+          "-3/4",
+          16
+        ],
+        [
+          "1/1",
+          12
+        ],
+        [
+          "1/3",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 33,
+      "cx_touch_min": 0,
+      "cx_touch_max": 43
+    },
+    {
+      "path": "challenges/easy/challenge-56_22.qasm",
+      "difficulty": "easy",
+      "file": "challenge-56_22.qasm",
+      "challenge_n": 56,
+      "challenge_id": 22,
+      "qreg": 56,
+      "gates": 702,
+      "op_cx": 299,
+      "op_rx": 191,
+      "op_rz": 212,
+      "op_swap": 0,
+      "first_entangling_gate_index": 7,
+      "last_entangling_gate_index": 699,
+      "leading_1q_gates": 6,
+      "trailing_after_last_entangling": 3,
+      "unique_entangling_pairs": 113,
+      "repeated_entangling_pairs": 80,
+      "max_pair_repetitions": 10,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 45,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 236,
+      "angle_noisy": 167,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          105
+        ],
+        [
+          "-1/2",
+          59
+        ],
+        [
+          "1/1",
+          19
+        ],
+        [
+          "-1/4",
+          18
+        ],
+        [
+          "1/4",
+          17
+        ],
+        [
+          "3/4",
+          10
+        ],
+        [
+          "-3/4",
+          6
+        ],
+        [
+          "2/3",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 26,
+      "cx_touch_min": 0,
+      "cx_touch_max": 33
+    },
+    {
+      "path": "challenges/easy/challenge-56_23.qasm",
+      "difficulty": "easy",
+      "file": "challenge-56_23.qasm",
+      "challenge_n": 56,
+      "challenge_id": 23,
+      "qreg": 56,
+      "gates": 1746,
+      "op_cx": 684,
+      "op_rx": 540,
+      "op_rz": 520,
+      "op_swap": 2,
+      "first_entangling_gate_index": 15,
+      "last_entangling_gate_index": 1741,
+      "leading_1q_gates": 14,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 239,
+      "repeated_entangling_pairs": 189,
+      "max_pair_repetitions": 10,
+      "swap_count": 2,
+      "swap_positions": [
+        1678,
+        1741
+      ],
+      "qubits_touched_by_cx": 56,
+      "qubits_touched_by_swap": 4,
+      "angle_exactish_pi_fraction": 696,
+      "angle_noisy": 364,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          261
+        ],
+        [
+          "-1/2",
+          189
+        ],
+        [
+          "-1/4",
+          84
+        ],
+        [
+          "1/4",
+          78
+        ],
+        [
+          "3/4",
+          40
+        ],
+        [
+          "-3/4",
+          24
+        ],
+        [
+          "1/1",
+          14
+        ],
+        [
+          "1/3",
+          4
+        ]
+      ],
+      "oneq_min": 3,
+      "oneq_max": 46,
+      "cx_touch_min": 3,
+      "cx_touch_max": 60
+    },
+    {
+      "path": "challenges/easy/challenge-56_24.qasm",
+      "difficulty": "easy",
+      "file": "challenge-56_24.qasm",
+      "challenge_n": 56,
+      "challenge_id": 24,
+      "qreg": 56,
+      "gates": 1418,
+      "op_cx": 536,
+      "op_rx": 475,
+      "op_rz": 406,
+      "op_swap": 1,
+      "first_entangling_gate_index": 12,
+      "last_entangling_gate_index": 1413,
+      "leading_1q_gates": 11,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 211,
+      "repeated_entangling_pairs": 157,
+      "max_pair_repetitions": 11,
+      "swap_count": 1,
+      "swap_positions": [
+        1053
+      ],
+      "qubits_touched_by_cx": 55,
+      "qubits_touched_by_swap": 2,
+      "angle_exactish_pi_fraction": 428,
+      "angle_noisy": 453,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          201
+        ],
+        [
+          "-1/2",
+          115
+        ],
+        [
+          "-1/4",
+          33
+        ],
+        [
+          "1/4",
+          29
+        ],
+        [
+          "1/1",
+          18
+        ],
+        [
+          "3/4",
+          16
+        ],
+        [
+          "-3/4",
+          16
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 38,
+      "cx_touch_min": 0,
+      "cx_touch_max": 43
+    },
+    {
+      "path": "challenges/easy/challenge-64_25.qasm",
+      "difficulty": "easy",
+      "file": "challenge-64_25.qasm",
+      "challenge_n": 64,
+      "challenge_id": 25,
+      "qreg": 64,
+      "gates": 1706,
+      "op_cx": 704,
+      "op_rx": 458,
+      "op_rz": 544,
+      "op_swap": 0,
+      "first_entangling_gate_index": 29,
+      "last_entangling_gate_index": 1702,
+      "leading_1q_gates": 28,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 254,
+      "repeated_entangling_pairs": 198,
+      "max_pair_repetitions": 11,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 64,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 480,
+      "angle_noisy": 522,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          201
+        ],
+        [
+          "-1/2",
+          141
+        ],
+        [
+          "-1/4",
+          46
+        ],
+        [
+          "1/4",
+          36
+        ],
+        [
+          "3/4",
+          20
+        ],
+        [
+          "-3/4",
+          17
+        ],
+        [
+          "1/1",
+          14
+        ],
+        [
+          "0/1",
+          3
+        ]
+      ],
+      "oneq_min": 2,
+      "oneq_max": 38,
+      "cx_touch_min": 4,
+      "cx_touch_max": 50
+    },
+    {
+      "path": "challenges/easy/challenge-64_26.qasm",
+      "difficulty": "easy",
+      "file": "challenge-64_26.qasm",
+      "challenge_n": 64,
+      "challenge_id": 26,
+      "qreg": 64,
+      "gates": 1854,
+      "op_cx": 711,
+      "op_rx": 537,
+      "op_rz": 606,
+      "op_swap": 0,
+      "first_entangling_gate_index": 34,
+      "last_entangling_gate_index": 1849,
+      "leading_1q_gates": 33,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 256,
+      "repeated_entangling_pairs": 209,
+      "max_pair_repetitions": 8,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 64,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 733,
+      "angle_noisy": 410,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          287
+        ],
+        [
+          "-1/2",
+          186
+        ],
+        [
+          "-1/4",
+          84
+        ],
+        [
+          "1/4",
+          78
+        ],
+        [
+          "3/4",
+          41
+        ],
+        [
+          "-3/4",
+          37
+        ],
+        [
+          "1/1",
+          18
+        ],
+        [
+          "2/3",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 45,
+      "cx_touch_min": 2,
+      "cx_touch_max": 55
+    },
+    {
+      "path": "challenges/easy/challenge-8_11.qasm",
+      "difficulty": "easy",
+      "file": "challenge-8_11.qasm",
+      "challenge_n": 8,
+      "challenge_id": 11,
+      "qreg": 8,
+      "gates": 117,
+      "op_cx": 36,
+      "op_rx": 37,
+      "op_rz": 42,
+      "op_swap": 2,
+      "first_entangling_gate_index": 5,
+      "last_entangling_gate_index": 115,
+      "leading_1q_gates": 4,
+      "trailing_after_last_entangling": 2,
+      "unique_entangling_pairs": 12,
+      "repeated_entangling_pairs": 11,
+      "max_pair_repetitions": 7,
+      "swap_count": 2,
+      "swap_positions": [
+        114,
+        115
+      ],
+      "qubits_touched_by_cx": 8,
+      "qubits_touched_by_swap": 3,
+      "angle_exactish_pi_fraction": 16,
+      "angle_noisy": 63,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          7
+        ],
+        [
+          "-1/2",
+          6
+        ],
+        [
+          "1/1",
+          3
+        ]
+      ],
+      "oneq_min": 4,
+      "oneq_max": 15,
+      "cx_touch_min": 2,
+      "cx_touch_max": 17
+    },
+    {
+      "path": "challenges/hard/challenge-40_35.qasm",
+      "difficulty": "hard",
+      "file": "challenge-40_35.qasm",
+      "challenge_n": 40,
+      "challenge_id": 35,
+      "qreg": 40,
+      "gates": 2950,
+      "op_cx": 1193,
+      "op_rx": 819,
+      "op_rz": 938,
+      "op_swap": 0,
+      "first_entangling_gate_index": 19,
+      "last_entangling_gate_index": 2946,
+      "leading_1q_gates": 18,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 384,
+      "repeated_entangling_pairs": 325,
+      "max_pair_repetitions": 11,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 40,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 842,
+      "angle_noisy": 915,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          316
+        ],
+        [
+          "-1/2",
+          235
+        ],
+        [
+          "-1/4",
+          118
+        ],
+        [
+          "1/4",
+          105
+        ],
+        [
+          "3/4",
+          26
+        ],
+        [
+          "-3/4",
+          25
+        ],
+        [
+          "1/1",
+          10
+        ],
+        [
+          "1/3",
+          3
+        ]
+      ],
+      "oneq_min": 14,
+      "oneq_max": 68,
+      "cx_touch_min": 31,
+      "cx_touch_max": 75
+    },
+    {
+      "path": "challenges/hard/challenge-48_36.qasm",
+      "difficulty": "hard",
+      "file": "challenge-48_36.qasm",
+      "challenge_n": 48,
+      "challenge_id": 36,
+      "qreg": 48,
+      "gates": 2805,
+      "op_cx": 1145,
+      "op_rx": 656,
+      "op_rz": 999,
+      "op_swap": 5,
+      "first_entangling_gate_index": 15,
+      "last_entangling_gate_index": 2801,
+      "leading_1q_gates": 14,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 401,
+      "repeated_entangling_pairs": 333,
+      "max_pair_repetitions": 11,
+      "swap_count": 5,
+      "swap_positions": [
+        2653,
+        2654,
+        2655,
+        2755,
+        2789
+      ],
+      "qubits_touched_by_cx": 48,
+      "qubits_touched_by_swap": 8,
+      "angle_exactish_pi_fraction": 822,
+      "angle_noisy": 833,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          325
+        ],
+        [
+          "-1/2",
+          206
+        ],
+        [
+          "-1/4",
+          113
+        ],
+        [
+          "1/4",
+          108
+        ],
+        [
+          "-3/4",
+          29
+        ],
+        [
+          "3/4",
+          27
+        ],
+        [
+          "1/1",
+          10
+        ],
+        [
+          "-1/3",
+          3
+        ]
+      ],
+      "oneq_min": 11,
+      "oneq_max": 61,
+      "cx_touch_min": 27,
+      "cx_touch_max": 72
+    },
+    {
+      "path": "challenges/hard/challenge-48_37.qasm",
+      "difficulty": "hard",
+      "file": "challenge-48_37.qasm",
+      "challenge_n": 48,
+      "challenge_id": 37,
+      "qreg": 48,
+      "gates": 3505,
+      "op_cx": 1481,
+      "op_rx": 918,
+      "op_rz": 1106,
+      "op_swap": 0,
+      "first_entangling_gate_index": 19,
+      "last_entangling_gate_index": 3500,
+      "leading_1q_gates": 18,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 466,
+      "repeated_entangling_pairs": 375,
+      "max_pair_repetitions": 11,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 48,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 1373,
+      "angle_noisy": 651,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          548
+        ],
+        [
+          "-1/2",
+          347
+        ],
+        [
+          "1/4",
+          189
+        ],
+        [
+          "-1/4",
+          169
+        ],
+        [
+          "3/4",
+          51
+        ],
+        [
+          "-3/4",
+          47
+        ],
+        [
+          "1/1",
+          8
+        ],
+        [
+          "2/3",
+          6
+        ]
+      ],
+      "oneq_min": 18,
+      "oneq_max": 73,
+      "cx_touch_min": 26,
+      "cx_touch_max": 93
+    },
+    {
+      "path": "challenges/hard/challenge-56_38.qasm",
+      "difficulty": "hard",
+      "file": "challenge-56_38.qasm",
+      "challenge_n": 56,
+      "challenge_id": 38,
+      "qreg": 56,
+      "gates": 5939,
+      "op_cx": 2759,
+      "op_rx": 1040,
+      "op_rz": 2140,
+      "op_swap": 0,
+      "first_entangling_gate_index": 30,
+      "last_entangling_gate_index": 5933,
+      "leading_1q_gates": 29,
+      "trailing_after_last_entangling": 6,
+      "unique_entangling_pairs": 833,
+      "repeated_entangling_pairs": 717,
+      "max_pair_repetitions": 12,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 56,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 2428,
+      "angle_noisy": 752,
+      "top_pi_fractions": [
+        [
+          "-1/4",
+          632
+        ],
+        [
+          "1/2",
+          605
+        ],
+        [
+          "1/4",
+          604
+        ],
+        [
+          "-1/2",
+          326
+        ],
+        [
+          "3/4",
+          136
+        ],
+        [
+          "-3/4",
+          92
+        ],
+        [
+          "1/3",
+          11
+        ],
+        [
+          "2/3",
+          9
+        ]
+      ],
+      "oneq_min": 29,
+      "oneq_max": 92,
+      "cx_touch_min": 55,
+      "cx_touch_max": 143
+    },
+    {
+      "path": "challenges/hard/challenge-56_39.qasm",
+      "difficulty": "hard",
+      "file": "challenge-56_39.qasm",
+      "challenge_n": 56,
+      "challenge_id": 39,
+      "qreg": 56,
+      "gates": 2783,
+      "op_cx": 1143,
+      "op_rx": 607,
+      "op_rz": 1031,
+      "op_swap": 2,
+      "first_entangling_gate_index": 8,
+      "last_entangling_gate_index": 2782,
+      "leading_1q_gates": 7,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 374,
+      "repeated_entangling_pairs": 324,
+      "max_pair_repetitions": 11,
+      "swap_count": 2,
+      "swap_positions": [
+        2778,
+        2782
+      ],
+      "qubits_touched_by_cx": 56,
+      "qubits_touched_by_swap": 4,
+      "angle_exactish_pi_fraction": 879,
+      "angle_noisy": 759,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          280
+        ],
+        [
+          "1/4",
+          183
+        ],
+        [
+          "-1/4",
+          180
+        ],
+        [
+          "-1/2",
+          162
+        ],
+        [
+          "-3/4",
+          33
+        ],
+        [
+          "3/4",
+          29
+        ],
+        [
+          "1/1",
+          8
+        ],
+        [
+          "2/3",
+          2
+        ]
+      ],
+      "oneq_min": 9,
+      "oneq_max": 58,
+      "cx_touch_min": 12,
+      "cx_touch_max": 77
+    },
+    {
+      "path": "challenges/hard/challenge-64_40.qasm",
+      "difficulty": "hard",
+      "file": "challenge-64_40.qasm",
+      "challenge_n": 64,
+      "challenge_id": 40,
+      "qreg": 64,
+      "gates": 3758,
+      "op_cx": 1573,
+      "op_rx": 979,
+      "op_rz": 1206,
+      "op_swap": 0,
+      "first_entangling_gate_index": 32,
+      "last_entangling_gate_index": 3755,
+      "leading_1q_gates": 31,
+      "trailing_after_last_entangling": 3,
+      "unique_entangling_pairs": 607,
+      "repeated_entangling_pairs": 491,
+      "max_pair_repetitions": 10,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 64,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 1256,
+      "angle_noisy": 929,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          514
+        ],
+        [
+          "-1/2",
+          295
+        ],
+        [
+          "-1/4",
+          181
+        ],
+        [
+          "1/4",
+          173
+        ],
+        [
+          "-3/4",
+          43
+        ],
+        [
+          "3/4",
+          35
+        ],
+        [
+          "1/1",
+          7
+        ],
+        [
+          "2/3",
+          5
+        ]
+      ],
+      "oneq_min": 8,
+      "oneq_max": 63,
+      "cx_touch_min": 24,
+      "cx_touch_max": 83
+    },
+    {
+      "path": "challenges/hard/challenge-64_41.qasm",
+      "difficulty": "hard",
+      "file": "challenge-64_41.qasm",
+      "challenge_n": 64,
+      "challenge_id": 41,
+      "qreg": 64,
+      "gates": 3428,
+      "op_cx": 1428,
+      "op_rx": 677,
+      "op_rz": 1323,
+      "op_swap": 0,
+      "first_entangling_gate_index": 38,
+      "last_entangling_gate_index": 3423,
+      "leading_1q_gates": 37,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 483,
+      "repeated_entangling_pairs": 409,
+      "max_pair_repetitions": 12,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 64,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 1325,
+      "angle_noisy": 675,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          395
+        ],
+        [
+          "-1/4",
+          302
+        ],
+        [
+          "1/4",
+          285
+        ],
+        [
+          "-1/2",
+          206
+        ],
+        [
+          "3/4",
+          67
+        ],
+        [
+          "-3/4",
+          60
+        ],
+        [
+          "1/1",
+          5
+        ],
+        [
+          "1/3",
+          2
+        ]
+      ],
+      "oneq_min": 8,
+      "oneq_max": 75,
+      "cx_touch_min": 11,
+      "cx_touch_max": 86
+    },
+    {
+      "path": "challenges/moderate/challenge-16_28.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-16_28.qasm",
+      "challenge_n": 16,
+      "challenge_id": 28,
+      "qreg": 16,
+      "gates": 1670,
+      "op_cx": 693,
+      "op_rx": 334,
+      "op_rz": 643,
+      "op_swap": 0,
+      "first_entangling_gate_index": 5,
+      "last_entangling_gate_index": 1661,
+      "leading_1q_gates": 4,
+      "trailing_after_last_entangling": 9,
+      "unique_entangling_pairs": 111,
+      "repeated_entangling_pairs": 106,
+      "max_pair_repetitions": 18,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 16,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 630,
+      "angle_noisy": 347,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          185
+        ],
+        [
+          "-1/4",
+          144
+        ],
+        [
+          "1/4",
+          139
+        ],
+        [
+          "-1/2",
+          92
+        ],
+        [
+          "3/4",
+          43
+        ],
+        [
+          "-3/4",
+          23
+        ],
+        [
+          "-1/1",
+          2
+        ],
+        [
+          "-1/3",
+          1
+        ]
+      ],
+      "oneq_min": 29,
+      "oneq_max": 97,
+      "cx_touch_min": 55,
+      "cx_touch_max": 115
+    },
+    {
+      "path": "challenges/moderate/challenge-24_29.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-24_29.qasm",
+      "challenge_n": 24,
+      "challenge_id": 29,
+      "qreg": 24,
+      "gates": 3086,
+      "op_cx": 1267,
+      "op_rx": 752,
+      "op_rz": 1064,
+      "op_swap": 3,
+      "first_entangling_gate_index": 5,
+      "last_entangling_gate_index": 3082,
+      "leading_1q_gates": 4,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 240,
+      "repeated_entangling_pairs": 232,
+      "max_pair_repetitions": 17,
+      "swap_count": 3,
+      "swap_positions": [
+        3080,
+        3081,
+        3082
+      ],
+      "qubits_touched_by_cx": 24,
+      "qubits_touched_by_swap": 4,
+      "angle_exactish_pi_fraction": 1067,
+      "angle_noisy": 749,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          319
+        ],
+        [
+          "-1/2",
+          218
+        ],
+        [
+          "-1/4",
+          214
+        ],
+        [
+          "1/4",
+          194
+        ],
+        [
+          "-3/4",
+          55
+        ],
+        [
+          "3/4",
+          52
+        ],
+        [
+          "1/3",
+          5
+        ],
+        [
+          "2/3",
+          3
+        ]
+      ],
+      "oneq_min": 50,
+      "oneq_max": 98,
+      "cx_touch_min": 74,
+      "cx_touch_max": 140
+    },
+    {
+      "path": "challenges/moderate/challenge-32_30.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-32_30.qasm",
+      "challenge_n": 32,
+      "challenge_id": 30,
+      "qreg": 32,
+      "gates": 1977,
+      "op_cx": 801,
+      "op_rx": 507,
+      "op_rz": 664,
+      "op_swap": 5,
+      "first_entangling_gate_index": 22,
+      "last_entangling_gate_index": 1975,
+      "leading_1q_gates": 21,
+      "trailing_after_last_entangling": 2,
+      "unique_entangling_pairs": 250,
+      "repeated_entangling_pairs": 206,
+      "max_pair_repetitions": 13,
+      "swap_count": 5,
+      "swap_positions": [
+        1931,
+        1951,
+        1952,
+        1974,
+        1975
+      ],
+      "qubits_touched_by_cx": 32,
+      "qubits_touched_by_swap": 7,
+      "angle_exactish_pi_fraction": 542,
+      "angle_noisy": 629,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          179
+        ],
+        [
+          "-1/2",
+          127
+        ],
+        [
+          "-1/4",
+          96
+        ],
+        [
+          "1/4",
+          84
+        ],
+        [
+          "3/4",
+          29
+        ],
+        [
+          "-3/4",
+          21
+        ],
+        [
+          "1/1",
+          3
+        ],
+        [
+          "1/3",
+          2
+        ]
+      ],
+      "oneq_min": 14,
+      "oneq_max": 58,
+      "cx_touch_min": 23,
+      "cx_touch_max": 67
+    },
+    {
+      "path": "challenges/moderate/challenge-48_31.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-48_31.qasm",
+      "challenge_n": 48,
+      "challenge_id": 31,
+      "qreg": 48,
+      "gates": 1265,
+      "op_cx": 531,
+      "op_rx": 348,
+      "op_rz": 375,
+      "op_swap": 11,
+      "first_entangling_gate_index": 8,
+      "last_entangling_gate_index": 1261,
+      "leading_1q_gates": 7,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 212,
+      "repeated_entangling_pairs": 154,
+      "max_pair_repetitions": 12,
+      "swap_count": 11,
+      "swap_positions": [
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1249,
+        1250,
+        1251,
+        1252,
+        1254,
+        1255
+      ],
+      "qubits_touched_by_cx": 46,
+      "qubits_touched_by_swap": 12,
+      "angle_exactish_pi_fraction": 456,
+      "angle_noisy": 267,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          179
+        ],
+        [
+          "-1/2",
+          126
+        ],
+        [
+          "1/4",
+          51
+        ],
+        [
+          "-1/4",
+          37
+        ],
+        [
+          "3/4",
+          21
+        ],
+        [
+          "1/1",
+          20
+        ],
+        [
+          "-3/4",
+          18
+        ],
+        [
+          "-3/2",
+          2
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 47,
+      "cx_touch_min": 0,
+      "cx_touch_max": 66
+    },
+    {
+      "path": "challenges/moderate/challenge-48_32.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-48_32.qasm",
+      "challenge_n": 48,
+      "challenge_id": 32,
+      "qreg": 48,
+      "gates": 1790,
+      "op_cx": 718,
+      "op_rx": 536,
+      "op_rz": 531,
+      "op_swap": 5,
+      "first_entangling_gate_index": 12,
+      "last_entangling_gate_index": 1785,
+      "leading_1q_gates": 11,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 256,
+      "repeated_entangling_pairs": 195,
+      "max_pair_repetitions": 12,
+      "swap_count": 5,
+      "swap_positions": [
+        1699,
+        1700,
+        1777,
+        1781,
+        1785
+      ],
+      "qubits_touched_by_cx": 48,
+      "qubits_touched_by_swap": 9,
+      "angle_exactish_pi_fraction": 633,
+      "angle_noisy": 434,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          254
+        ],
+        [
+          "-1/2",
+          186
+        ],
+        [
+          "1/4",
+          65
+        ],
+        [
+          "-1/4",
+          54
+        ],
+        [
+          "-3/4",
+          29
+        ],
+        [
+          "3/4",
+          27
+        ],
+        [
+          "1/1",
+          17
+        ],
+        [
+          "-1/3",
+          1
+        ]
+      ],
+      "oneq_min": 3,
+      "oneq_max": 42,
+      "cx_touch_min": 6,
+      "cx_touch_max": 58
+    },
+    {
+      "path": "challenges/moderate/challenge-56_33.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-56_33.qasm",
+      "challenge_n": 56,
+      "challenge_id": 33,
+      "qreg": 56,
+      "gates": 1510,
+      "op_cx": 675,
+      "op_rx": 403,
+      "op_rz": 432,
+      "op_swap": 0,
+      "first_entangling_gate_index": 7,
+      "last_entangling_gate_index": 1509,
+      "leading_1q_gates": 6,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 251,
+      "repeated_entangling_pairs": 178,
+      "max_pair_repetitions": 11,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 54,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 687,
+      "angle_noisy": 148,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          265
+        ],
+        [
+          "-1/2",
+          189
+        ],
+        [
+          "1/4",
+          72
+        ],
+        [
+          "-1/4",
+          64
+        ],
+        [
+          "-3/4",
+          38
+        ],
+        [
+          "3/4",
+          31
+        ],
+        [
+          "1/1",
+          25
+        ],
+        [
+          "-1/1",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 43,
+      "cx_touch_min": 0,
+      "cx_touch_max": 51
+    },
+    {
+      "path": "challenges/moderate/challenge-64_34.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-64_34.qasm",
+      "challenge_n": 64,
+      "challenge_id": 34,
+      "qreg": 64,
+      "gates": 1948,
+      "op_cx": 761,
+      "op_rx": 587,
+      "op_rz": 597,
+      "op_swap": 3,
+      "first_entangling_gate_index": 8,
+      "last_entangling_gate_index": 1948,
+      "leading_1q_gates": 7,
+      "trailing_after_last_entangling": 0,
+      "unique_entangling_pairs": 306,
+      "repeated_entangling_pairs": 227,
+      "max_pair_repetitions": 11,
+      "swap_count": 3,
+      "swap_positions": [
+        1815,
+        1858,
+        1881
+      ],
+      "qubits_touched_by_cx": 64,
+      "qubits_touched_by_swap": 6,
+      "angle_exactish_pi_fraction": 692,
+      "angle_noisy": 492,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          303
+        ],
+        [
+          "-1/2",
+          203
+        ],
+        [
+          "1/4",
+          67
+        ],
+        [
+          "-1/4",
+          55
+        ],
+        [
+          "3/4",
+          26
+        ],
+        [
+          "-3/4",
+          19
+        ],
+        [
+          "1/1",
+          18
+        ],
+        [
+          "-5/6",
+          1
+        ]
+      ],
+      "oneq_min": 2,
+      "oneq_max": 37,
+      "cx_touch_min": 2,
+      "cx_touch_max": 48
+    },
+    {
+      "path": "challenges/moderate/challenge-8_27.qasm",
+      "difficulty": "moderate",
+      "file": "challenge-8_27.qasm",
+      "challenge_n": 8,
+      "challenge_id": 27,
+      "qreg": 8,
+      "gates": 459,
+      "op_cx": 168,
+      "op_rx": 111,
+      "op_rz": 175,
+      "op_swap": 5,
+      "first_entangling_gate_index": 9,
+      "last_entangling_gate_index": 455,
+      "leading_1q_gates": 8,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 26,
+      "repeated_entangling_pairs": 25,
+      "max_pair_repetitions": 19,
+      "swap_count": 5,
+      "swap_positions": [
+        446,
+        447,
+        448,
+        454,
+        455
+      ],
+      "qubits_touched_by_cx": 8,
+      "qubits_touched_by_swap": 6,
+      "angle_exactish_pi_fraction": 111,
+      "angle_noisy": 175,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          33
+        ],
+        [
+          "-1/2",
+          24
+        ],
+        [
+          "-1/4",
+          20
+        ],
+        [
+          "1/4",
+          14
+        ],
+        [
+          "3/4",
+          8
+        ],
+        [
+          "-3/4",
+          5
+        ],
+        [
+          "1/1",
+          4
+        ],
+        [
+          "-1/3",
+          1
+        ]
+      ],
+      "oneq_min": 19,
+      "oneq_max": 58,
+      "cx_touch_min": 23,
+      "cx_touch_max": 58
+    },
+    {
+      "path": "challenges/very easy/challenge-16_2.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-16_2.qasm",
+      "challenge_n": 16,
+      "challenge_id": 2,
+      "qreg": 16,
+      "gates": 308,
+      "op_cx": 124,
+      "op_rx": 95,
+      "op_rz": 88,
+      "op_swap": 1,
+      "first_entangling_gate_index": 2,
+      "last_entangling_gate_index": 303,
+      "leading_1q_gates": 1,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 42,
+      "repeated_entangling_pairs": 33,
+      "max_pair_repetitions": 8,
+      "swap_count": 1,
+      "swap_positions": [
+        265
+      ],
+      "qubits_touched_by_cx": 16,
+      "qubits_touched_by_swap": 2,
+      "angle_exactish_pi_fraction": 85,
+      "angle_noisy": 98,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          38
+        ],
+        [
+          "-1/2",
+          15
+        ],
+        [
+          "1/4",
+          10
+        ],
+        [
+          "-1/4",
+          8
+        ],
+        [
+          "3/4",
+          7
+        ],
+        [
+          "1/1",
+          4
+        ],
+        [
+          "-3/4",
+          3
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 26,
+      "cx_touch_min": 2,
+      "cx_touch_max": 31
+    },
+    {
+      "path": "challenges/very easy/challenge-24_3.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-24_3.qasm",
+      "challenge_n": 24,
+      "challenge_id": 3,
+      "qreg": 24,
+      "gates": 363,
+      "op_cx": 126,
+      "op_rx": 116,
+      "op_rz": 116,
+      "op_swap": 5,
+      "first_entangling_gate_index": 14,
+      "last_entangling_gate_index": 360,
+      "leading_1q_gates": 13,
+      "trailing_after_last_entangling": 3,
+      "unique_entangling_pairs": 55,
+      "repeated_entangling_pairs": 38,
+      "max_pair_repetitions": 7,
+      "swap_count": 5,
+      "swap_positions": [
+        331,
+        357,
+        358,
+        359,
+        360
+      ],
+      "qubits_touched_by_cx": 22,
+      "qubits_touched_by_swap": 7,
+      "angle_exactish_pi_fraction": 98,
+      "angle_noisy": 134,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          42
+        ],
+        [
+          "-1/2",
+          25
+        ],
+        [
+          "1/1",
+          10
+        ],
+        [
+          "1/4",
+          10
+        ],
+        [
+          "-1/4",
+          5
+        ],
+        [
+          "3/4",
+          3
+        ],
+        [
+          "-3/4",
+          3
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 20,
+      "cx_touch_min": 0,
+      "cx_touch_max": 25
+    },
+    {
+      "path": "challenges/very easy/challenge-28_4.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-28_4.qasm",
+      "challenge_n": 28,
+      "challenge_id": 4,
+      "qreg": 28,
+      "gates": 1220,
+      "op_cx": 278,
+      "op_rx": 417,
+      "op_rz": 525,
+      "op_swap": 0,
+      "first_entangling_gate_index": 69,
+      "last_entangling_gate_index": 1215,
+      "leading_1q_gates": 68,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 127,
+      "repeated_entangling_pairs": 113,
+      "max_pair_repetitions": 6,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 28,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 10,
+      "angle_noisy": 932,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          4
+        ],
+        [
+          "1/1",
+          4
+        ],
+        [
+          "-1/2",
+          1
+        ],
+        [
+          "-1/4",
+          1
+        ]
+      ],
+      "oneq_min": 15,
+      "oneq_max": 61,
+      "cx_touch_min": 10,
+      "cx_touch_max": 35
+    },
+    {
+      "path": "challenges/very easy/challenge-32_5.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-32_5.qasm",
+      "challenge_n": 32,
+      "challenge_id": 5,
+      "qreg": 32,
+      "gates": 773,
+      "op_cx": 307,
+      "op_rx": 225,
+      "op_rz": 234,
+      "op_swap": 7,
+      "first_entangling_gate_index": 1,
+      "last_entangling_gate_index": 769,
+      "leading_1q_gates": 0,
+      "trailing_after_last_entangling": 4,
+      "unique_entangling_pairs": 106,
+      "repeated_entangling_pairs": 83,
+      "max_pair_repetitions": 8,
+      "swap_count": 7,
+      "swap_positions": [
+        746,
+        747,
+        749,
+        755,
+        759,
+        768,
+        769
+      ],
+      "qubits_touched_by_cx": 32,
+      "qubits_touched_by_swap": 11,
+      "angle_exactish_pi_fraction": 241,
+      "angle_noisy": 218,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          87
+        ],
+        [
+          "-1/2",
+          59
+        ],
+        [
+          "-1/4",
+          29
+        ],
+        [
+          "1/4",
+          28
+        ],
+        [
+          "-3/4",
+          14
+        ],
+        [
+          "3/4",
+          13
+        ],
+        [
+          "1/1",
+          11
+        ]
+      ],
+      "oneq_min": 1,
+      "oneq_max": 31,
+      "cx_touch_min": 2,
+      "cx_touch_max": 40
+    },
+    {
+      "path": "challenges/very easy/challenge-36_6.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-36_6.qasm",
+      "challenge_n": 36,
+      "challenge_id": 6,
+      "qreg": 36,
+      "gates": 426,
+      "op_cx": 94,
+      "op_rx": 146,
+      "op_rz": 186,
+      "op_swap": 0,
+      "first_entangling_gate_index": 53,
+      "last_entangling_gate_index": 417,
+      "leading_1q_gates": 52,
+      "trailing_after_last_entangling": 9,
+      "unique_entangling_pairs": 45,
+      "repeated_entangling_pairs": 43,
+      "max_pair_repetitions": 4,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 30,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 10,
+      "angle_noisy": 322,
+      "top_pi_fractions": [
+        [
+          "1/1",
+          4
+        ],
+        [
+          "-1/2",
+          3
+        ],
+        [
+          "1/2",
+          2
+        ],
+        [
+          "-3/4",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 26,
+      "cx_touch_min": 0,
+      "cx_touch_max": 16
+    },
+    {
+      "path": "challenges/very easy/challenge-40_7.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-40_7.qasm",
+      "challenge_n": 40,
+      "challenge_id": 7,
+      "qreg": 40,
+      "gates": 211,
+      "op_cx": 59,
+      "op_rx": 85,
+      "op_rz": 67,
+      "op_swap": 0,
+      "first_entangling_gate_index": 16,
+      "last_entangling_gate_index": 210,
+      "leading_1q_gates": 15,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 27,
+      "repeated_entangling_pairs": 20,
+      "max_pair_repetitions": 5,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 21,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 42,
+      "angle_noisy": 110,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          17
+        ],
+        [
+          "1/1",
+          13
+        ],
+        [
+          "-1/2",
+          12
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 11,
+      "cx_touch_min": 0,
+      "cx_touch_max": 11
+    },
+    {
+      "path": "challenges/very easy/challenge-48_8.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-48_8.qasm",
+      "challenge_n": 48,
+      "challenge_id": 8,
+      "qreg": 48,
+      "gates": 227,
+      "op_cx": 84,
+      "op_rx": 80,
+      "op_rz": 63,
+      "op_swap": 0,
+      "first_entangling_gate_index": 11,
+      "last_entangling_gate_index": 226,
+      "leading_1q_gates": 10,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 33,
+      "repeated_entangling_pairs": 29,
+      "max_pair_repetitions": 6,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 30,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 51,
+      "angle_noisy": 92,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          23
+        ],
+        [
+          "1/1",
+          16
+        ],
+        [
+          "-1/2",
+          10
+        ],
+        [
+          "0/1",
+          1
+        ],
+        [
+          "1/4",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 14,
+      "cx_touch_min": 0,
+      "cx_touch_max": 17
+    },
+    {
+      "path": "challenges/very easy/challenge-56_9.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-56_9.qasm",
+      "challenge_n": 56,
+      "challenge_id": 9,
+      "qreg": 56,
+      "gates": 317,
+      "op_cx": 94,
+      "op_rx": 111,
+      "op_rz": 106,
+      "op_swap": 6,
+      "first_entangling_gate_index": 14,
+      "last_entangling_gate_index": 314,
+      "leading_1q_gates": 13,
+      "trailing_after_last_entangling": 3,
+      "unique_entangling_pairs": 38,
+      "repeated_entangling_pairs": 34,
+      "max_pair_repetitions": 7,
+      "swap_count": 6,
+      "swap_positions": [
+        127,
+        177,
+        218,
+        219,
+        313,
+        314
+      ],
+      "qubits_touched_by_cx": 32,
+      "qubits_touched_by_swap": 10,
+      "angle_exactish_pi_fraction": 105,
+      "angle_noisy": 112,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          43
+        ],
+        [
+          "-1/2",
+          26
+        ],
+        [
+          "1/1",
+          23
+        ],
+        [
+          "-1/4",
+          6
+        ],
+        [
+          "-3/4",
+          5
+        ],
+        [
+          "1/4",
+          2
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 26,
+      "cx_touch_min": 0,
+      "cx_touch_max": 21
+    },
+    {
+      "path": "challenges/very easy/challenge-64_10.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-64_10.qasm",
+      "challenge_n": 64,
+      "challenge_id": 10,
+      "qreg": 64,
+      "gates": 313,
+      "op_cx": 91,
+      "op_rx": 120,
+      "op_rz": 98,
+      "op_swap": 4,
+      "first_entangling_gate_index": 21,
+      "last_entangling_gate_index": 311,
+      "leading_1q_gates": 20,
+      "trailing_after_last_entangling": 2,
+      "unique_entangling_pairs": 39,
+      "repeated_entangling_pairs": 33,
+      "max_pair_repetitions": 6,
+      "swap_count": 4,
+      "swap_positions": [
+        208,
+        309,
+        310,
+        311
+      ],
+      "qubits_touched_by_cx": 36,
+      "qubits_touched_by_swap": 6,
+      "angle_exactish_pi_fraction": 86,
+      "angle_noisy": 132,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          40
+        ],
+        [
+          "1/1",
+          19
+        ],
+        [
+          "-1/2",
+          13
+        ],
+        [
+          "1/4",
+          7
+        ],
+        [
+          "-1/4",
+          3
+        ],
+        [
+          "-3/4",
+          3
+        ],
+        [
+          "3/4",
+          1
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 14,
+      "cx_touch_min": 0,
+      "cx_touch_max": 11
+    },
+    {
+      "path": "challenges/very easy/challenge-8_1.qasm",
+      "difficulty": "very easy",
+      "file": "challenge-8_1.qasm",
+      "challenge_n": 8,
+      "challenge_id": 1,
+      "qreg": 8,
+      "gates": 46,
+      "op_cx": 14,
+      "op_rx": 17,
+      "op_rz": 14,
+      "op_swap": 1,
+      "first_entangling_gate_index": 2,
+      "last_entangling_gate_index": 45,
+      "leading_1q_gates": 1,
+      "trailing_after_last_entangling": 1,
+      "unique_entangling_pairs": 6,
+      "repeated_entangling_pairs": 4,
+      "max_pair_repetitions": 4,
+      "swap_count": 1,
+      "swap_positions": [
+        12
+      ],
+      "qubits_touched_by_cx": 6,
+      "qubits_touched_by_swap": 2,
+      "angle_exactish_pi_fraction": 7,
+      "angle_noisy": 24,
+      "top_pi_fractions": [
+        [
+          "-1/2",
+          3
+        ],
+        [
+          "1/1",
+          2
+        ],
+        [
+          "1/2",
+          2
+        ]
+      ],
+      "oneq_min": 0,
+      "oneq_max": 10,
+      "cx_touch_min": 0,
+      "cx_touch_max": 7
+    },
+    {
+      "path": "challenges/very_hard/challenge-104_49.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-104_49.qasm",
+      "challenge_n": 104,
+      "challenge_id": 49,
+      "qreg": 104,
+      "gates": 26361,
+      "op_cx": 5406,
+      "op_rx": 10310,
+      "op_rz": 10645,
+      "op_swap": 0,
+      "first_entangling_gate_index": 212,
+      "last_entangling_gate_index": 26347,
+      "leading_1q_gates": 211,
+      "trailing_after_last_entangling": 14,
+      "unique_entangling_pairs": 2271,
+      "repeated_entangling_pairs": 2271,
+      "max_pair_repetitions": 6,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 104,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 209,
+      "angle_noisy": 20746,
+      "top_pi_fractions": [
+        [
+          "-1/2",
+          51
+        ],
+        [
+          "1/2",
+          41
+        ],
+        [
+          "3/4",
+          36
+        ],
+        [
+          "-1/4",
+          34
+        ],
+        [
+          "-3/4",
+          26
+        ],
+        [
+          "1/4",
+          19
+        ],
+        [
+          "-6/13",
+          2
+        ]
+      ],
+      "oneq_min": 133,
+      "oneq_max": 262,
+      "cx_touch_min": 70,
+      "cx_touch_max": 134
+    },
+    {
+      "path": "challenges/very_hard/challenge-48_42.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-48_42.qasm",
+      "challenge_n": 48,
+      "challenge_id": 42,
+      "qreg": 48,
+      "gates": 20733,
+      "op_cx": 4221,
+      "op_rx": 7087,
+      "op_rz": 9425,
+      "op_swap": 0,
+      "first_entangling_gate_index": 126,
+      "last_entangling_gate_index": 20723,
+      "leading_1q_gates": 125,
+      "trailing_after_last_entangling": 10,
+      "unique_entangling_pairs": 1072,
+      "repeated_entangling_pairs": 1072,
+      "max_pair_repetitions": 7,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 48,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 148,
+      "angle_noisy": 16364,
+      "top_pi_fractions": [
+        [
+          "1/4",
+          33
+        ],
+        [
+          "-1/2",
+          31
+        ],
+        [
+          "1/2",
+          24
+        ],
+        [
+          "3/4",
+          21
+        ],
+        [
+          "-1/4",
+          20
+        ],
+        [
+          "-3/4",
+          17
+        ],
+        [
+          "1/1",
+          2
+        ]
+      ],
+      "oneq_min": 282,
+      "oneq_max": 386,
+      "cx_touch_min": 146,
+      "cx_touch_max": 196
+    },
+    {
+      "path": "challenges/very_hard/challenge-56_43.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-56_43.qasm",
+      "challenge_n": 56,
+      "challenge_id": 43,
+      "qreg": 56,
+      "gates": 23004,
+      "op_cx": 4684,
+      "op_rx": 8034,
+      "op_rz": 10286,
+      "op_swap": 0,
+      "first_entangling_gate_index": 116,
+      "last_entangling_gate_index": 22997,
+      "leading_1q_gates": 115,
+      "trailing_after_last_entangling": 7,
+      "unique_entangling_pairs": 1354,
+      "repeated_entangling_pairs": 1353,
+      "max_pair_repetitions": 7,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 56,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 171,
+      "angle_noisy": 18149,
+      "top_pi_fractions": [
+        [
+          "-1/2",
+          35
+        ],
+        [
+          "1/2",
+          33
+        ],
+        [
+          "-1/4",
+          32
+        ],
+        [
+          "1/4",
+          25
+        ],
+        [
+          "-3/4",
+          22
+        ],
+        [
+          "3/4",
+          22
+        ],
+        [
+          "1/1",
+          1
+        ],
+        [
+          "-6/7",
+          1
+        ]
+      ],
+      "oneq_min": 266,
+      "oneq_max": 380,
+      "cx_touch_min": 138,
+      "cx_touch_max": 194
+    },
+    {
+      "path": "challenges/very_hard/challenge-64_44.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-64_44.qasm",
+      "challenge_n": 64,
+      "challenge_id": 44,
+      "qreg": 64,
+      "gates": 28787,
+      "op_cx": 5844,
+      "op_rx": 11016,
+      "op_rz": 11927,
+      "op_swap": 0,
+      "first_entangling_gate_index": 141,
+      "last_entangling_gate_index": 28781,
+      "leading_1q_gates": 140,
+      "trailing_after_last_entangling": 6,
+      "unique_entangling_pairs": 1743,
+      "repeated_entangling_pairs": 1743,
+      "max_pair_repetitions": 7,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 64,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 221,
+      "angle_noisy": 22722,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          53
+        ],
+        [
+          "-1/2",
+          37
+        ],
+        [
+          "3/4",
+          34
+        ],
+        [
+          "-1/4",
+          33
+        ],
+        [
+          "-3/4",
+          33
+        ],
+        [
+          "1/4",
+          26
+        ],
+        [
+          "-1/1",
+          2
+        ],
+        [
+          "1/1",
+          2
+        ]
+      ],
+      "oneq_min": 310,
+      "oneq_max": 478,
+      "cx_touch_min": 158,
+      "cx_touch_max": 242
+    },
+    {
+      "path": "challenges/very_hard/challenge-72_45.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-72_45.qasm",
+      "challenge_n": 72,
+      "challenge_id": 45,
+      "qreg": 72,
+      "gates": 28777,
+      "op_cx": 5852,
+      "op_rx": 11084,
+      "op_rz": 11841,
+      "op_swap": 0,
+      "first_entangling_gate_index": 167,
+      "last_entangling_gate_index": 28772,
+      "leading_1q_gates": 166,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 1932,
+      "repeated_entangling_pairs": 1932,
+      "max_pair_repetitions": 8,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 72,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 231,
+      "angle_noisy": 22694,
+      "top_pi_fractions": [
+        [
+          "-1/2",
+          65
+        ],
+        [
+          "-3/4",
+          42
+        ],
+        [
+          "-1/4",
+          41
+        ],
+        [
+          "1/4",
+          28
+        ],
+        [
+          "3/4",
+          25
+        ],
+        [
+          "1/2",
+          24
+        ],
+        [
+          "1/1",
+          6
+        ]
+      ],
+      "oneq_min": 225,
+      "oneq_max": 372,
+      "cx_touch_min": 114,
+      "cx_touch_max": 188
+    },
+    {
+      "path": "challenges/very_hard/challenge-80_46.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-80_46.qasm",
+      "challenge_n": 80,
+      "challenge_id": 46,
+      "qreg": 80,
+      "gates": 34586,
+      "op_cx": 7030,
+      "op_rx": 13161,
+      "op_rz": 14395,
+      "op_swap": 0,
+      "first_entangling_gate_index": 177,
+      "last_entangling_gate_index": 34581,
+      "leading_1q_gates": 176,
+      "trailing_after_last_entangling": 5,
+      "unique_entangling_pairs": 2362,
+      "repeated_entangling_pairs": 2360,
+      "max_pair_repetitions": 8,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 80,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 279,
+      "angle_noisy": 27277,
+      "top_pi_fractions": [
+        [
+          "1/4",
+          58
+        ],
+        [
+          "-1/2",
+          55
+        ],
+        [
+          "1/2",
+          44
+        ],
+        [
+          "3/4",
+          39
+        ],
+        [
+          "-3/4",
+          39
+        ],
+        [
+          "-1/4",
+          38
+        ],
+        [
+          "1/1",
+          5
+        ],
+        [
+          "0/1",
+          1
+        ]
+      ],
+      "oneq_min": 274,
+      "oneq_max": 405,
+      "cx_touch_min": 140,
+      "cx_touch_max": 206
+    },
+    {
+      "path": "challenges/very_hard/challenge-88_47.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-88_47.qasm",
+      "challenge_n": 88,
+      "challenge_id": 47,
+      "qreg": 88,
+      "gates": 37660,
+      "op_cx": 7654,
+      "op_rx": 14603,
+      "op_rz": 15403,
+      "op_swap": 0,
+      "first_entangling_gate_index": 143,
+      "last_entangling_gate_index": 37651,
+      "leading_1q_gates": 142,
+      "trailing_after_last_entangling": 9,
+      "unique_entangling_pairs": 2670,
+      "repeated_entangling_pairs": 2670,
+      "max_pair_repetitions": 6,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 88,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 310,
+      "angle_noisy": 29696,
+      "top_pi_fractions": [
+        [
+          "-1/2",
+          71
+        ],
+        [
+          "-3/4",
+          51
+        ],
+        [
+          "1/2",
+          50
+        ],
+        [
+          "-1/4",
+          47
+        ],
+        [
+          "3/4",
+          46
+        ],
+        [
+          "1/4",
+          44
+        ],
+        [
+          "0/1",
+          1
+        ]
+      ],
+      "oneq_min": 250,
+      "oneq_max": 419,
+      "cx_touch_min": 128,
+      "cx_touch_max": 215
+    },
+    {
+      "path": "challenges/very_hard/challenge-96_48.qasm",
+      "difficulty": "very_hard",
+      "file": "challenge-96_48.qasm",
+      "challenge_n": 96,
+      "challenge_id": 48,
+      "qreg": 96,
+      "gates": 28703,
+      "op_cx": 5866,
+      "op_rx": 10801,
+      "op_rz": 12036,
+      "op_swap": 0,
+      "first_entangling_gate_index": 198,
+      "last_entangling_gate_index": 28696,
+      "leading_1q_gates": 197,
+      "trailing_after_last_entangling": 7,
+      "unique_entangling_pairs": 2355,
+      "repeated_entangling_pairs": 2354,
+      "max_pair_repetitions": 6,
+      "swap_count": 0,
+      "swap_positions": [],
+      "qubits_touched_by_cx": 96,
+      "qubits_touched_by_swap": 0,
+      "angle_exactish_pi_fraction": 255,
+      "angle_noisy": 22582,
+      "top_pi_fractions": [
+        [
+          "1/2",
+          46
+        ],
+        [
+          "3/4",
+          43
+        ],
+        [
+          "1/4",
+          42
+        ],
+        [
+          "-1/2",
+          41
+        ],
+        [
+          "-1/4",
+          39
+        ],
+        [
+          "-3/4",
+          36
+        ],
+        [
+          "1/1",
+          5
+        ],
+        [
+          "-1/1",
+          3
+        ]
+      ],
+      "oneq_min": 175,
+      "oneq_max": 349,
+      "cx_touch_min": 90,
+      "cx_touch_max": 178
+    }
+  ],
+  "global_ops": {
+    "rz": 116235,
+    "rx": 101833,
+    "cx": 70521,
+    "swap": 107
+  },
+  "global_pi_fractions": [
+    [
+      "1/2",
+      7400
+    ],
+    [
+      "-1/2",
+      4822
+    ],
+    [
+      "-1/4",
+      3175
+    ],
+    [
+      "1/4",
+      3125
+    ],
+    [
+      "3/4",
+      1138
+    ],
+    [
+      "-3/4",
+      1048
+    ],
+    [
+      "1/1",
+      455
+    ],
+    [
+      "2/3",
+      40
+    ],
+    [
+      "1/3",
+      38
+    ],
+    [
+      "-1/3",
+      15
+    ],
+    [
+      "-1/1",
+      9
+    ],
+    [
+      "0/1",
+      8
+    ],
+    [
+      "-2/3",
+      6
+    ],
+    [
+      "-3/2",
+      3
+    ],
+    [
+      "1/6",
+      2
+    ],
+    [
+      "-5/4",
+      2
+    ],
+    [
+      "-6/13",
+      2
+    ],
+    [
+      "5/8",
+      1
+    ],
+    [
+      "-1/6",
+      1
+    ],
+    [
+      "3/2",
+      1
+    ],
+    [
+      "-5/6",
+      1
+    ],
+    [
+      "-6/7",
+      1
+    ],
+    [
+      "-9/14",
+      1
+    ]
+  ]
+}

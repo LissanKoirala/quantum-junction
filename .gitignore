@@ -1,1 +1,10 @@
 .DS_Store
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+slurm-*.out
+slurm/
+agent_work/**/logs/
+agent_work/**/*.out
+agent_work/**/*.err

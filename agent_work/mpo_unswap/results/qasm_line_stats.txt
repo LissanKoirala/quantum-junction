@@ -1,0 +1,54 @@
+challenges/easy
+  challenge-8_11.qasm ops=117 twoq/swap=38 lines=120
+  challenge-16_12.qasm ops=291 twoq/swap=137 lines=294
+  challenge-24_13.qasm ops=550 twoq/swap=211 lines=553
+  challenge-32_14.qasm ops=875 twoq/swap=333 lines=878
+  challenge-36_15.qasm ops=1752 twoq/swap=393 lines=1755
+  challenge-40_16.qasm ops=969 twoq/swap=366 lines=972
+  challenge-40_17.qasm ops=779 twoq/swap=338 lines=782
+  challenge-40_18.qasm ops=1328 twoq/swap=516 lines=1331
+  challenge-48_19.qasm ops=901 twoq/swap=356 lines=904
+  challenge-48_20.qasm ops=917 twoq/swap=328 lines=920
+  challenge-48_21.qasm ops=1103 twoq/swap=448 lines=1106
+  challenge-56_22.qasm ops=702 twoq/swap=299 lines=705
+  challenge-56_23.qasm ops=1746 twoq/swap=686 lines=1749
+  challenge-56_24.qasm ops=1418 twoq/swap=537 lines=1421
+  challenge-64_25.qasm ops=1706 twoq/swap=704 lines=1709
+  challenge-64_26.qasm ops=1854 twoq/swap=711 lines=1857
+challenges/hard
+  challenge-40_35.qasm ops=2950 twoq/swap=1193 lines=2953
+  challenge-48_36.qasm ops=2805 twoq/swap=1150 lines=2808
+  challenge-48_37.qasm ops=3505 twoq/swap=1481 lines=3508
+  challenge-56_38.qasm ops=5939 twoq/swap=2759 lines=5942
+  challenge-56_39.qasm ops=2783 twoq/swap=1145 lines=2786
+  challenge-64_40.qasm ops=3758 twoq/swap=1573 lines=3761
+  challenge-64_41.qasm ops=3428 twoq/swap=1428 lines=3431
+challenges/moderate
+  challenge-8_27.qasm ops=459 twoq/swap=173 lines=462
+  challenge-16_28.qasm ops=1670 twoq/swap=693 lines=1673
+  challenge-24_29.qasm ops=3086 twoq/swap=1270 lines=3089
+  challenge-32_30.qasm ops=1977 twoq/swap=806 lines=1980
+  challenge-48_31.qasm ops=1265 twoq/swap=542 lines=1268
+  challenge-48_32.qasm ops=1790 twoq/swap=723 lines=1793
+  challenge-56_33.qasm ops=1510 twoq/swap=675 lines=1513
+  challenge-64_34.qasm ops=1948 twoq/swap=764 lines=1951
+challenges/very easy
+  challenge-8_1.qasm ops=46 twoq/swap=15 lines=49
+  challenge-16_2.qasm ops=308 twoq/swap=125 lines=311
+  challenge-24_3.qasm ops=363 twoq/swap=131 lines=366
+  challenge-28_4.qasm ops=1220 twoq/swap=278 lines=1223
+  challenge-32_5.qasm ops=773 twoq/swap=314 lines=776
+  challenge-36_6.qasm ops=426 twoq/swap=94 lines=429
+  challenge-40_7.qasm ops=211 twoq/swap=59 lines=214
+  challenge-48_8.qasm ops=227 twoq/swap=84 lines=230
+  challenge-56_9.qasm ops=317 twoq/swap=100 lines=320
+  challenge-64_10.qasm ops=313 twoq/swap=95 lines=316
+challenges/very_hard
+  challenge-48_42.qasm ops=20733 twoq/swap=4221 lines=20736
+  challenge-56_43.qasm ops=23004 twoq/swap=4684 lines=23007
+  challenge-64_44.qasm ops=28787 twoq/swap=5844 lines=28790
+  challenge-72_45.qasm ops=28777 twoq/swap=5852 lines=28780
+  challenge-80_46.qasm ops=34586 twoq/swap=7030 lines=34589
+  challenge-88_47.qasm ops=37660 twoq/swap=7654 lines=37663
+  challenge-96_48.qasm ops=28703 twoq/swap=5866 lines=28706
+  challenge-104_49.qasm ops=26361 twoq/swap=5406 lines=26364

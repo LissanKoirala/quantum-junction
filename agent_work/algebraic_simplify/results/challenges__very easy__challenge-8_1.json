@@ -1,0 +1,489 @@
+{
+  "linear_windows": {
+    "entangling_gates_in_windows": 15,
+    "general_linear_windows": 14,
+    "identity_windows": 0,
+    "length_hist_top": [
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "max_window": 2,
+    "pure_permutation_windows": 0,
+    "top_windows": [
+      {
+        "end_line": 15,
+        "kind": "linear",
+        "length": 2,
+        "start_line": 14
+      },
+      {
+        "end_line": 5,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 5
+      },
+      {
+        "end_line": 8,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 8
+      },
+      {
+        "end_line": 10,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 10
+      },
+      {
+        "end_line": 17,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 17
+      },
+      {
+        "end_line": 21,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 21
+      },
+      {
+        "end_line": 23,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 23
+      },
+      {
+        "end_line": 27,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 27
+      },
+      {
+        "end_line": 30,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 30
+      },
+      {
+        "end_line": 34,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 34
+      },
+      {
+        "end_line": 37,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 37
+      },
+      {
+        "end_line": 41,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 41
+      },
+      {
+        "end_line": 46,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 46
+      },
+      {
+        "end_line": 48,
+        "kind": "linear",
+        "length": 1,
+        "start_line": 48
+      }
+    ],
+    "window_count": 14
+  },
+  "n": 8,
+  "path": "challenges/very easy/challenge-8_1.qasm",
+  "qiskit": {
+    "raw": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 16,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 9,
+          "rz": 3,
+          "u3": 8
+        },
+        "seconds": 0.009407281875610352,
+        "size": 34
+      },
+      "opt3_native": {
+        "depth": 21,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14
+        },
+        "seconds": 0.022958040237426758,
+        "size": 45
+      },
+      "original": {
+        "depth": 21,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14,
+          "swap": 1
+        },
+        "size": 46
+      },
+      "seconds": 0.5011358261108398,
+      "snap_stats": {},
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 16,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 9,
+          "rz": 3,
+          "u2": 5,
+          "u3": 3
+        },
+        "seconds": 0.00897979736328125,
+        "size": 34
+      },
+      "opt3_native": {
+        "depth": 20,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 13
+        },
+        "seconds": 0.008857250213623047,
+        "size": 44
+      },
+      "original": {
+        "depth": 21,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14,
+          "swap": 1
+        },
+        "size": 46
+      },
+      "seconds": 0.02075672149658203,
+      "snap_stats": {
+        "rx_snapped": 14,
+        "rz_snapped": 8
+      },
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 16,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 9,
+          "rz": 3,
+          "u2": 5,
+          "u3": 3
+        },
+        "seconds": 0.009017705917358398,
+        "size": 34
+      },
+      "opt3_native": {
+        "depth": 21,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14
+        },
+        "seconds": 0.009027481079101562,
+        "size": 45
+      },
+      "original": {
+        "depth": 21,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14,
+          "swap": 1
+        },
+        "size": 46
+      },
+      "seconds": 0.020997047424316406,
+      "snap_stats": {
+        "rx_snapped": 11,
+        "rz_snapped": 6
+      },
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 16,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 9,
+          "rz": 3,
+          "u2": 1,
+          "u3": 7
+        },
+        "seconds": 0.009786844253540039,
+        "size": 34
+      },
+      "opt3_native": {
+        "depth": 21,
+        "ok": true,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14
+        },
+        "seconds": 0.009134292602539062,
+        "size": 45
+      },
+      "original": {
+        "depth": 21,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14,
+          "swap": 1
+        },
+        "size": 46
+      },
+      "seconds": 0.021894454956054688,
+      "snap_stats": {
+        "rx_snapped": 3,
+        "rz_snapped": 2
+      },
+      "snap_tol": 1e-07
+    }
+  },
+  "simple_greedy": {
+    "exact": {
+      "gate_count": 46,
+      "merged": {},
+      "op_counts": {
+        "cx": 14,
+        "rx": 17,
+        "rz": 14,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "gate_count": 46,
+      "merged": {},
+      "op_counts": {
+        "cx": 14,
+        "rx": 17,
+        "rz": 14,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "gate_count": 46,
+      "merged": {},
+      "op_counts": {
+        "cx": 14,
+        "rx": 17,
+        "rz": 14,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "gate_count": 46,
+      "merged": {},
+      "op_counts": {
+        "cx": 14,
+        "rx": 17,
+        "rz": 14,
+        "swap": 1
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-07
+    }
+  },
+  "skipped_lines": {},
+  "statevector_limit16": {
+    "available": true,
+    "peak": "10101101",
+    "probability": 0.9126378477396645,
+    "seconds": 0.006655454635620117,
+    "skipped": false
+  },
+  "static": {
+    "angle_counts_near_pi_fraction": {
+      "0.001": 22,
+      "0.01": 25,
+      "1e-05": 17,
+      "1e-07": 5,
+      "1e-09": 2,
+      "1e-12": 2
+    },
+    "angle_error_quantiles": {
+      "max": 0.0415390426490263,
+      "min": 0.0,
+      "p50": 6.557106405402635e-06,
+      "p90": 0.014856972787349543,
+      "p99": 0.0415390426490263
+    },
+    "cliffordish_counts_by_tol": {
+      "0.001": 14,
+      "0.01": 15,
+      "1e-05": 13,
+      "1e-07": 5,
+      "1e-09": 2,
+      "1e-12": 2
+    },
+    "difficulty": "very easy",
+    "exact_rx_pi_after_last_entangler": 0,
+    "exact_rx_pi_count": 2,
+    "exact_rx_pi_lines_first20": [
+      16,
+      22
+    ],
+    "exact_rx_pi_qubits": {
+      "0": 1,
+      "1": 1
+    },
+    "gate_count": 46,
+    "gate_density_per_qubit": 5.75,
+    "leading_single_qubit_gates": 1,
+    "op_counts": {
+      "cx": 14,
+      "rx": 17,
+      "rz": 14,
+      "swap": 1
+    },
+    "path": "challenges/very easy/challenge-8_1.qasm",
+    "qreg": 8,
+    "rx_pi_counts_by_tol": {
+      "0.001": 2,
+      "0.01": 3,
+      "1e-05": 2,
+      "1e-07": 2,
+      "1e-09": 2,
+      "1e-12": 2
+    },
+    "rz_pi_over_2_counts_by_tol": {
+      "0.001": 5,
+      "0.01": 5,
+      "1e-05": 5,
+      "1e-07": 2
+    },
+    "top_pi_fractions_tol_1e-3": [
+      [
+        "1/2",
+        6
+      ],
+      [
+        "-1/2",
+        5
+      ],
+      [
+        "1/1",
+        3
+      ],
+      [
+        "-1/4",
+        3
+      ],
+      [
+        "-3/4",
+        2
+      ],
+      [
+        "3/4",
+        2
+      ],
+      [
+        "1/4",
+        1
+      ]
+    ],
+    "trailing_single_qubit_gates": 1
+  },
+  "structural_candidates": {
+    "tol_1e-3": {
+      "exact_rxpi_lines_first30": [
+        16,
+        22
+      ],
+      "exact_rxpi_toggle_count": 2,
+      "near_rxpi_lines_first30": [
+        16,
+        22
+      ],
+      "near_rxpi_toggle_count": 2,
+      "tol": 0.001,
+      "x_cxswap_exact_rxpi": "00000011",
+      "x_cxswap_near_rxpi": "00000011",
+      "x_swaponly_exact_rxpi_logical": "00100010",
+      "x_swaponly_near_rxpi_logical": "00100010"
+    },
+    "tol_1e-5": {
+      "exact_rxpi_lines_first30": [
+        16,
+        22
+      ],
+      "exact_rxpi_toggle_count": 2,
+      "near_rxpi_lines_first30": [
+        16,
+        22
+      ],
+      "near_rxpi_toggle_count": 2,
+      "tol": 1e-05,
+      "x_cxswap_exact_rxpi": "00000011",
+      "x_cxswap_near_rxpi": "00000011",
+      "x_swaponly_exact_rxpi_logical": "00100010",
+      "x_swaponly_near_rxpi_logical": "00100010"
+    },
+    "tol_1e-9": {
+      "exact_rxpi_lines_first30": [
+        16,
+        22
+      ],
+      "exact_rxpi_toggle_count": 2,
+      "near_rxpi_lines_first30": [
+        16,
+        22
+      ],
+      "near_rxpi_toggle_count": 2,
+      "tol": 1e-09,
+      "x_cxswap_exact_rxpi": "00000011",
+      "x_cxswap_near_rxpi": "00000011",
+      "x_swaponly_exact_rxpi_logical": "00100010",
+      "x_swaponly_near_rxpi_logical": "00100010"
+    }
+  }
+}

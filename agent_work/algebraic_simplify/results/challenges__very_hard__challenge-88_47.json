@@ -1,0 +1,566 @@
+{
+  "linear_windows": {
+    "entangling_gates_in_windows": 7654,
+    "general_linear_windows": 5647,
+    "identity_windows": 0,
+    "length_hist_top": [
+      [
+        1,
+        4209
+      ],
+      [
+        2,
+        1027
+      ],
+      [
+        3,
+        301
+      ],
+      [
+        4,
+        71
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        2
+      ]
+    ],
+    "max_window": 7,
+    "pure_permutation_windows": 0,
+    "top_windows": [
+      {
+        "end_line": 3896,
+        "kind": "linear",
+        "length": 7,
+        "start_line": 3890
+      },
+      {
+        "end_line": 23117,
+        "kind": "linear",
+        "length": 7,
+        "start_line": 23111
+      },
+      {
+        "end_line": 5725,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 5720
+      },
+      {
+        "end_line": 9426,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 9421
+      },
+      {
+        "end_line": 15181,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 15176
+      },
+      {
+        "end_line": 31628,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 31623
+      },
+      {
+        "end_line": 34185,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 34180
+      },
+      {
+        "end_line": 243,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 239
+      },
+      {
+        "end_line": 5426,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 5422
+      },
+      {
+        "end_line": 6281,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 6277
+      },
+      {
+        "end_line": 6645,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 6641
+      },
+      {
+        "end_line": 13102,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 13098
+      },
+      {
+        "end_line": 13447,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 13443
+      },
+      {
+        "end_line": 14846,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 14842
+      },
+      {
+        "end_line": 15636,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 15632
+      },
+      {
+        "end_line": 17453,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 17449
+      },
+      {
+        "end_line": 17766,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 17762
+      },
+      {
+        "end_line": 18379,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 18375
+      },
+      {
+        "end_line": 19569,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 19565
+      },
+      {
+        "end_line": 19937,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 19933
+      }
+    ],
+    "window_count": 5647
+  },
+  "n": 88,
+  "path": "challenges/very_hard/challenge-88_47.qasm",
+  "qiskit": {
+    "raw": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 1182,
+        "ok": true,
+        "ops": {
+          "cx": 7654,
+          "rx": 1669,
+          "rz": 1823,
+          "u3": 11618
+        },
+        "seconds": 0.434999942779541,
+        "size": 22764
+      },
+      "opt3_native": {
+        "depth": 1708,
+        "ok": true,
+        "ops": {
+          "cx": 7654,
+          "rx": 14602,
+          "rz": 15402
+        },
+        "seconds": 0.4580965042114258,
+        "size": 37658
+      },
+      "original": {
+        "depth": 1708,
+        "ops": {
+          "cx": 7654,
+          "rx": 14603,
+          "rz": 15403
+        },
+        "size": 37660
+      },
+      "seconds": 2.0208640098571777,
+      "snap_stats": {},
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 1181,
+        "ok": true,
+        "ops": {
+          "cx": 7650,
+          "rx": 1671,
+          "rz": 1824,
+          "u2": 3,
+          "u3": 11608,
+          "unitary": 1
+        },
+        "seconds": 0.4542655944824219,
+        "size": 22757
+      },
+      "opt3_native": {
+        "depth": 1707,
+        "ok": true,
+        "ops": {
+          "cx": 7651,
+          "rx": 14596,
+          "rz": 15394
+        },
+        "seconds": 0.45358777046203613,
+        "size": 37641
+      },
+      "original": {
+        "depth": 1708,
+        "ops": {
+          "cx": 7654,
+          "rx": 14603,
+          "rz": 15403
+        },
+        "size": 37660
+      },
+      "seconds": 2.277547597885132,
+      "snap_stats": {
+        "rx_snapped": 703,
+        "rz_snapped": 1098
+      },
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 1182,
+        "ok": true,
+        "ops": {
+          "cx": 7654,
+          "rx": 1669,
+          "rz": 1823,
+          "u2": 1,
+          "u3": 11617
+        },
+        "seconds": 0.4216322898864746,
+        "size": 22764
+      },
+      "opt3_native": {
+        "depth": 1708,
+        "ok": true,
+        "ops": {
+          "cx": 7654,
+          "rx": 14602,
+          "rz": 15402
+        },
+        "seconds": 0.44779467582702637,
+        "size": 37658
+      },
+      "original": {
+        "depth": 1708,
+        "ops": {
+          "cx": 7654,
+          "rx": 14603,
+          "rz": 15403
+        },
+        "size": 37660
+      },
+      "seconds": 2.256279230117798,
+      "snap_stats": {
+        "rx_snapped": 14,
+        "rz_snapped": 329
+      },
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 1182,
+        "ok": true,
+        "ops": {
+          "cx": 7654,
+          "rx": 1669,
+          "rz": 1823,
+          "u2": 1,
+          "u3": 11617
+        },
+        "seconds": 0.3980247974395752,
+        "size": 22764
+      },
+      "opt3_native": {
+        "depth": 1708,
+        "ok": true,
+        "ops": {
+          "cx": 7654,
+          "rx": 14602,
+          "rz": 15402
+        },
+        "seconds": 0.46226024627685547,
+        "size": 37658
+      },
+      "original": {
+        "depth": 1708,
+        "ops": {
+          "cx": 7654,
+          "rx": 14603,
+          "rz": 15403
+        },
+        "size": 37660
+      },
+      "seconds": 2.224975109100342,
+      "snap_stats": {
+        "rx_snapped": 1,
+        "rz_snapped": 300
+      },
+      "snap_tol": 1e-07
+    }
+  },
+  "simple_greedy": {
+    "exact": {
+      "gate_count": 37659,
+      "merged": {},
+      "op_counts": {
+        "cx": 7654,
+        "rx": 14603,
+        "rz": 15402
+      },
+      "reduction_fraction": 2.655337227830401e-05,
+      "removed": {
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "gate_count": 37641,
+      "merged": {
+        "rx_same_axis": 1,
+        "rz_same_axis": 3
+      },
+      "op_counts": {
+        "cx": 7652,
+        "rx": 14596,
+        "rz": 15393
+      },
+      "reduction_fraction": 0.0005045140732873321,
+      "removed": {
+        "cx_self_inverse_pair": 1,
+        "cx_self_inverse_pair_current": 1,
+        "rx_zero": 5,
+        "rx_zero_after_merge": 1,
+        "rz_zero": 5,
+        "rz_zero_after_merge": 2
+      },
+      "snap_den": 16,
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "gate_count": 37658,
+      "merged": {},
+      "op_counts": {
+        "cx": 7654,
+        "rx": 14602,
+        "rz": 15402
+      },
+      "reduction_fraction": 5.310674455660802e-05,
+      "removed": {
+        "rx_zero": 1,
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "gate_count": 37659,
+      "merged": {},
+      "op_counts": {
+        "cx": 7654,
+        "rx": 14603,
+        "rz": 15402
+      },
+      "reduction_fraction": 2.655337227830401e-05,
+      "removed": {
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 1e-07
+    }
+  },
+  "skipped_lines": {},
+  "statevector_limit16": {
+    "available": true,
+    "reason": "qreg 88 > limit 16",
+    "skipped": true
+  },
+  "static": {
+    "angle_counts_near_pi_fraction": {
+      "0.001": 1801,
+      "0.01": 15431,
+      "1e-05": 343,
+      "1e-07": 301,
+      "1e-09": 275,
+      "1e-12": 269
+    },
+    "angle_error_quantiles": {
+      "max": 0.09813369336008027,
+      "min": 0.0,
+      "p50": 0.009677053338773112,
+      "p90": 0.030491355046872615,
+      "p99": 0.08419749755009143
+    },
+    "cliffordish_counts_by_tol": {
+      "0.001": 162,
+      "0.01": 483,
+      "1e-05": 126,
+      "1e-07": 122,
+      "1e-09": 108,
+      "1e-12": 103
+    },
+    "difficulty": "very_hard",
+    "exact_rx_pi_after_last_entangler": 0,
+    "exact_rx_pi_count": 0,
+    "exact_rx_pi_lines_first20": [],
+    "exact_rx_pi_qubits": {},
+    "gate_count": 37660,
+    "gate_density_per_qubit": 427.95454545454544,
+    "leading_single_qubit_gates": 142,
+    "op_counts": {
+      "cx": 7654,
+      "rx": 14603,
+      "rz": 15403
+    },
+    "path": "challenges/very_hard/challenge-88_47.qasm",
+    "qreg": 88,
+    "rx_pi_counts_by_tol": {
+      "0.001": 3,
+      "0.01": 19
+    },
+    "rz_pi_over_2_counts_by_tol": {
+      "0.001": 143,
+      "0.01": 240,
+      "1e-05": 123,
+      "1e-07": 120,
+      "1e-09": 107,
+      "1e-12": 103
+    },
+    "top_pi_fractions_tol_1e-3": [
+      [
+        "-1/2",
+        81
+      ],
+      [
+        "1/2",
+        66
+      ],
+      [
+        "-3/4",
+        62
+      ],
+      [
+        "3/4",
+        61
+      ],
+      [
+        "1/4",
+        57
+      ],
+      [
+        "-1/4",
+        57
+      ],
+      [
+        "4/7",
+        24
+      ],
+      [
+        "2/5",
+        22
+      ],
+      [
+        "2/3",
+        19
+      ],
+      [
+        "4/11",
+        19
+      ],
+      [
+        "5/7",
+        18
+      ],
+      [
+        "3/14",
+        18
+      ],
+      [
+        "3/10",
+        17
+      ],
+      [
+        "7/13",
+        17
+      ],
+      [
+        "8/15",
+        17
+      ],
+      [
+        "7/12",
+        17
+      ]
+    ],
+    "trailing_single_qubit_gates": 9
+  },
+  "structural_candidates": {
+    "tol_1e-3": {
+      "exact_rxpi_lines_first30": [],
+      "exact_rxpi_toggle_count": 0,
+      "near_rxpi_lines_first30": [
+        12418,
+        27302,
+        32319
+      ],
+      "near_rxpi_toggle_count": 3,
+      "tol": 0.001,
+      "x_cxswap_exact_rxpi": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_cxswap_near_rxpi": "0110100100011101111001011101010101010101010011011111000000101010000000000000000000000000",
+      "x_swaponly_exact_rxpi_logical": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_swaponly_near_rxpi_logical": "0000000000000000000010000000000100000000000000000000000000000010000000000000000000000000"
+    },
+    "tol_1e-5": {
+      "exact_rxpi_lines_first30": [],
+      "exact_rxpi_toggle_count": 0,
+      "near_rxpi_lines_first30": [],
+      "near_rxpi_toggle_count": 0,
+      "tol": 1e-05,
+      "x_cxswap_exact_rxpi": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_cxswap_near_rxpi": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_swaponly_exact_rxpi_logical": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_swaponly_near_rxpi_logical": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "tol_1e-9": {
+      "exact_rxpi_lines_first30": [],
+      "exact_rxpi_toggle_count": 0,
+      "near_rxpi_lines_first30": [],
+      "near_rxpi_toggle_count": 0,
+      "tol": 1e-09,
+      "x_cxswap_exact_rxpi": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_cxswap_near_rxpi": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_swaponly_exact_rxpi_logical": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "x_swaponly_near_rxpi_logical": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+  }
+}

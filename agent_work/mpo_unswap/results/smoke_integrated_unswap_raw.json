@@ -1,0 +1,223 @@
+{
+  "circuit": {
+    "len": 46,
+    "num_clbits": 0,
+    "num_qubits": 8,
+    "ops": {
+      "cx": 14,
+      "rx": 17,
+      "rz": 14,
+      "swap": 1
+    }
+  },
+  "env": {
+    "MKL_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "SLURM_CPUS_PER_TASK": "4",
+    "SLURM_JOB_ID": "34605867",
+    "SLURM_JOB_PARTITION": "interruptible_cpu"
+  },
+  "finished_at": "2026-06-05T21:34:48+0100",
+  "max_rss_mb": 451.5,
+  "mode": "raw",
+  "qasm": "challenges/very easy/challenge-8_1.qasm",
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction",
+  "started_at": "2026-06-05T21:34:43+0100",
+  "steps": [
+    {
+      "name": "package_versions",
+      "result": {
+        "numpy": "2.2.6",
+        "qiskit": "2.4.1",
+        "qiskit-quimb": "0.0.10",
+        "quimb": "1.11.2",
+        "scipy": "1.15.3",
+        "torch": "2.5.1+cu121"
+      },
+      "rss_mb": 16.0,
+      "seconds": 0.011110172010376118,
+      "status": "ok"
+    },
+    {
+      "name": "import_bundled_modules",
+      "result": "<module 'utils' from '/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/peaked-circuit-simulation/utils.py'>",
+      "rss_mb": 441.5,
+      "seconds": 4.231676766008604,
+      "status": "ok"
+    },
+    {
+      "name": "load_qasm",
+      "result": "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722f5fe1f1f0>",
+      "rss_mb": 441.5,
+      "seconds": 0.003657720997580327,
+      "status": "ok"
+    },
+    {
+      "name": "circuit_counts",
+      "result": {
+        "len": 46,
+        "num_clbits": 0,
+        "num_qubits": 8,
+        "ops": {
+          "cx": 14,
+          "rx": 17,
+          "rz": 14,
+          "swap": 1
+        }
+      },
+      "rss_mb": 441.5,
+      "seconds": 2.5675006327219307e-05,
+      "status": "ok"
+    },
+    {
+      "name": "qiskit_private_bit_attrs",
+      "result": {
+        "qubit_has_index": true,
+        "qubit_has_register": true
+      },
+      "rss_mb": 441.5,
+      "seconds": 1.2306991266086698e-05,
+      "status": "ok"
+    },
+    {
+      "name": "iter_layers",
+      "result": [
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f86050>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f85fc0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f85b10>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f862c0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f86800>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f87f70>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f870a0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f855d0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f857b0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f85690>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f856f0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f85720>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f85900>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e86f858d0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e87018040>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e870180a0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e87018100>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e87018160>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e870181c0>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e87018220>",
+        "<qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x722e87018280>"
+      ],
+      "rss_mb": 442.5,
+      "seconds": 0.0011856259952764958,
+      "status": "ok"
+    },
+    {
+      "name": "merge_first_three_gates",
+      "result": {
+        "len": 3,
+        "num_clbits": 8,
+        "num_qubits": 8,
+        "ops": {
+          "cx": 1,
+          "rx": 1,
+          "rz": 1
+        }
+      },
+      "rss_mb": 442.5,
+      "seconds": 0.00017162400763481855,
+      "status": "ok"
+    },
+    {
+      "name": "rewire_first_six_layers",
+      "result": {
+        "layers": 10
+      },
+      "rss_mb": 443.0,
+      "seconds": 0.007857182004954666,
+      "status": "ok"
+    },
+    {
+      "name": "qiskit_quimb_empty_to_mpo",
+      "result": {
+        "num_qubits": 8
+      },
+      "rss_mb": 443.0,
+      "seconds": 0.0031407149945152923,
+      "status": "ok"
+    },
+    {
+      "name": "apply_prefix_layers_to_mpo",
+      "result": {
+        "max_bond": 4,
+        "max_links": 6,
+        "num_tensors": 8,
+        "total_elems": 120,
+        "total_links": 36,
+        "total_shapes": 68,
+        "used_layer_ops": 20
+      },
+      "rss_mb": 449.0,
+      "seconds": 0.15349493699613959,
+      "status": "ok"
+    },
+    {
+      "name": "unswap_prefix_mpo",
+      "result": {
+        "max_bond": 4,
+        "max_links": 6,
+        "num_tensors": 8,
+        "perm_left_head": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "perm_right_head": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "stats_rows": 6,
+        "total_elems": 120,
+        "total_links": 36,
+        "total_shapes": 68,
+        "used_layer_ops": 20
+      },
+      "rss_mb": 449.5,
+      "seconds": 0.19329903600737453,
+      "status": "ok"
+    },
+    {
+      "name": "mpo_compress_unswap_high_threshold",
+      "result": {
+        "leftover_left_layers": 14,
+        "leftover_right_layers": 22,
+        "max_bond": 2,
+        "max_links": 4,
+        "num_tensors": 8,
+        "stats_rows": 17,
+        "total_elems": 40,
+        "total_links": 30,
+        "total_shapes": 48
+      },
+      "rss_mb": 451.5,
+      "seconds": 0.3665356069977861,
+      "status": "ok"
+    }
+  ],
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

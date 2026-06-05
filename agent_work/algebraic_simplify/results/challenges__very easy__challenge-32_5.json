@@ -1,0 +1,596 @@
+{
+  "linear_windows": {
+    "entangling_gates_in_windows": 314,
+    "general_linear_windows": 215,
+    "identity_windows": 0,
+    "length_hist_top": [
+      [
+        1,
+        152
+      ],
+      [
+        2,
+        44
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "max_window": 6,
+    "pure_permutation_windows": 2,
+    "top_windows": [
+      {
+        "end_line": 448,
+        "kind": "linear",
+        "length": 6,
+        "start_line": 443
+      },
+      {
+        "end_line": 438,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 434
+      },
+      {
+        "end_line": 198,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 195
+      },
+      {
+        "end_line": 239,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 236
+      },
+      {
+        "end_line": 247,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 244
+      },
+      {
+        "end_line": 322,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 319
+      },
+      {
+        "end_line": 339,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 336
+      },
+      {
+        "end_line": 750,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 747
+      },
+      {
+        "end_line": 141,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 139
+      },
+      {
+        "end_line": 151,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 149
+      },
+      {
+        "end_line": 217,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 215
+      },
+      {
+        "end_line": 282,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 280
+      },
+      {
+        "end_line": 293,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 291
+      },
+      {
+        "end_line": 316,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 314
+      },
+      {
+        "end_line": 384,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 382
+      },
+      {
+        "end_line": 406,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 404
+      },
+      {
+        "end_line": 512,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 510
+      },
+      {
+        "end_line": 605,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 603
+      },
+      {
+        "end_line": 662,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 660
+      },
+      {
+        "end_line": 667,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 665
+      }
+    ],
+    "window_count": 217
+  },
+  "n": 32,
+  "path": "challenges/very easy/challenge-32_5.qasm",
+  "qiskit": {
+    "raw": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 177,
+        "ok": true,
+        "ops": {
+          "cx": 307,
+          "rx": 97,
+          "rz": 88,
+          "u2": 22,
+          "u3": 100
+        },
+        "seconds": 0.02322673797607422,
+        "size": 614
+      },
+      "opt3_native": {
+        "depth": 211,
+        "ok": true,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234
+        },
+        "seconds": 0.03396964073181152,
+        "size": 766
+      },
+      "original": {
+        "depth": 211,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234,
+          "swap": 7
+        },
+        "size": 773
+      },
+      "seconds": 0.533886194229126,
+      "snap_stats": {},
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 177,
+        "ok": true,
+        "ops": {
+          "cx": 306,
+          "rx": 97,
+          "rz": 88,
+          "u2": 62,
+          "u3": 58,
+          "unitary": 1
+        },
+        "seconds": 0.028878450393676758,
+        "size": 612
+      },
+      "opt3_native": {
+        "depth": 211,
+        "ok": true,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234
+        },
+        "seconds": 0.023581504821777344,
+        "size": 766
+      },
+      "original": {
+        "depth": 211,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234,
+          "swap": 7
+        },
+        "size": 773
+      },
+      "seconds": 0.08687973022460938,
+      "snap_stats": {
+        "rx_snapped": 166,
+        "rz_snapped": 167
+      },
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 177,
+        "ok": true,
+        "ops": {
+          "cx": 306,
+          "rx": 97,
+          "rz": 88,
+          "u2": 60,
+          "u3": 60,
+          "unitary": 1
+        },
+        "seconds": 0.02950119972229004,
+        "size": 612
+      },
+      "opt3_native": {
+        "depth": 211,
+        "ok": true,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234
+        },
+        "seconds": 0.023851394653320312,
+        "size": 766
+      },
+      "original": {
+        "depth": 211,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234,
+          "swap": 7
+        },
+        "size": 773
+      },
+      "seconds": 0.0874934196472168,
+      "snap_stats": {
+        "rx_snapped": 158,
+        "rz_snapped": 159
+      },
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 177,
+        "ok": true,
+        "ops": {
+          "cx": 307,
+          "rx": 97,
+          "rz": 88,
+          "u2": 37,
+          "u3": 85
+        },
+        "seconds": 0.023441553115844727,
+        "size": 614
+      },
+      "opt3_native": {
+        "depth": 211,
+        "ok": true,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234
+        },
+        "seconds": 0.02332329750061035,
+        "size": 766
+      },
+      "original": {
+        "depth": 211,
+        "ops": {
+          "cx": 307,
+          "rx": 225,
+          "rz": 234,
+          "swap": 7
+        },
+        "size": 773
+      },
+      "seconds": 0.08034348487854004,
+      "snap_stats": {
+        "rx_snapped": 81,
+        "rz_snapped": 117
+      },
+      "snap_tol": 1e-07
+    }
+  },
+  "simple_greedy": {
+    "exact": {
+      "gate_count": 773,
+      "merged": {},
+      "op_counts": {
+        "cx": 307,
+        "rx": 225,
+        "rz": 234,
+        "swap": 7
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "gate_count": 773,
+      "merged": {},
+      "op_counts": {
+        "cx": 307,
+        "rx": 225,
+        "rz": 234,
+        "swap": 7
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "gate_count": 773,
+      "merged": {},
+      "op_counts": {
+        "cx": 307,
+        "rx": 225,
+        "rz": 234,
+        "swap": 7
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "gate_count": 773,
+      "merged": {},
+      "op_counts": {
+        "cx": 307,
+        "rx": 225,
+        "rz": 234,
+        "swap": 7
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-07
+    }
+  },
+  "skipped_lines": {},
+  "statevector_limit16": {
+    "available": true,
+    "reason": "qreg 32 > limit 16",
+    "skipped": true
+  },
+  "static": {
+    "angle_counts_near_pi_fraction": {
+      "0.001": 333,
+      "0.01": 380,
+      "1e-05": 317,
+      "1e-07": 198,
+      "1e-09": 132,
+      "1e-12": 126
+    },
+    "angle_error_quantiles": {
+      "max": 0.08460863773199279,
+      "min": 0.0,
+      "p50": 2.4567159306876363e-07,
+      "p90": 0.01784069434316926,
+      "p99": 0.07585755864622423
+    },
+    "cliffordish_counts_by_tol": {
+      "0.001": 189,
+      "0.01": 198,
+      "1e-05": 185,
+      "1e-07": 139,
+      "1e-09": 98,
+      "1e-12": 96
+    },
+    "difficulty": "very easy",
+    "exact_rx_pi_after_last_entangler": 0,
+    "exact_rx_pi_count": 5,
+    "exact_rx_pi_lines_first20": [
+      656,
+      742,
+      753,
+      764,
+      766
+    ],
+    "exact_rx_pi_qubits": {
+      "3": 1,
+      "5": 1,
+      "13": 1,
+      "14": 1,
+      "26": 1
+    },
+    "gate_count": 773,
+    "gate_density_per_qubit": 24.15625,
+    "leading_single_qubit_gates": 0,
+    "op_counts": {
+      "cx": 307,
+      "rx": 225,
+      "rz": 234,
+      "swap": 7
+    },
+    "path": "challenges/very easy/challenge-32_5.qasm",
+    "qreg": 32,
+    "rx_pi_counts_by_tol": {
+      "0.001": 5,
+      "0.01": 5,
+      "1e-05": 5,
+      "1e-07": 5,
+      "1e-09": 5,
+      "1e-12": 5
+    },
+    "rz_pi_over_2_counts_by_tol": {
+      "0.001": 89,
+      "0.01": 92,
+      "1e-05": 87,
+      "1e-07": 76,
+      "1e-09": 54,
+      "1e-12": 52
+    },
+    "top_pi_fractions_tol_1e-3": [
+      [
+        "1/2",
+        103
+      ],
+      [
+        "-1/2",
+        75
+      ],
+      [
+        "1/4",
+        46
+      ],
+      [
+        "-1/4",
+        41
+      ],
+      [
+        "3/4",
+        27
+      ],
+      [
+        "-3/4",
+        23
+      ],
+      [
+        "1/1",
+        11
+      ],
+      [
+        "3/10",
+        1
+      ],
+      [
+        "-2/3",
+        1
+      ],
+      [
+        "4/15",
+        1
+      ],
+      [
+        "1/3",
+        1
+      ],
+      [
+        "7/16",
+        1
+      ],
+      [
+        "9/11",
+        1
+      ],
+      [
+        "-5/11",
+        1
+      ]
+    ],
+    "trailing_single_qubit_gates": 4
+  },
+  "structural_candidates": {
+    "tol_1e-3": {
+      "exact_rxpi_lines_first30": [
+        656,
+        742,
+        753,
+        764,
+        766
+      ],
+      "exact_rxpi_toggle_count": 5,
+      "near_rxpi_lines_first30": [
+        656,
+        742,
+        753,
+        764,
+        766
+      ],
+      "near_rxpi_toggle_count": 5,
+      "tol": 0.001,
+      "x_cxswap_exact_rxpi": "00000100000000000110000000101000",
+      "x_cxswap_near_rxpi": "00000100000000000110000000101000",
+      "x_swaponly_exact_rxpi_logical": "01100000000000000100000000001100",
+      "x_swaponly_near_rxpi_logical": "01100000000000000100000000001100"
+    },
+    "tol_1e-5": {
+      "exact_rxpi_lines_first30": [
+        656,
+        742,
+        753,
+        764,
+        766
+      ],
+      "exact_rxpi_toggle_count": 5,
+      "near_rxpi_lines_first30": [
+        656,
+        742,
+        753,
+        764,
+        766
+      ],
+      "near_rxpi_toggle_count": 5,
+      "tol": 1e-05,
+      "x_cxswap_exact_rxpi": "00000100000000000110000000101000",
+      "x_cxswap_near_rxpi": "00000100000000000110000000101000",
+      "x_swaponly_exact_rxpi_logical": "01100000000000000100000000001100",
+      "x_swaponly_near_rxpi_logical": "01100000000000000100000000001100"
+    },
+    "tol_1e-9": {
+      "exact_rxpi_lines_first30": [
+        656,
+        742,
+        753,
+        764,
+        766
+      ],
+      "exact_rxpi_toggle_count": 5,
+      "near_rxpi_lines_first30": [
+        656,
+        742,
+        753,
+        764,
+        766
+      ],
+      "near_rxpi_toggle_count": 5,
+      "tol": 1e-09,
+      "x_cxswap_exact_rxpi": "00000100000000000110000000101000",
+      "x_cxswap_near_rxpi": "00000100000000000110000000101000",
+      "x_swaponly_exact_rxpi_logical": "01100000000000000100000000001100",
+      "x_swaponly_near_rxpi_logical": "01100000000000000100000000001100"
+    }
+  }
+}

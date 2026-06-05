@@ -1,0 +1,628 @@
+{
+  "linear_windows": {
+    "entangling_gates_in_windows": 356,
+    "general_linear_windows": 209,
+    "identity_windows": 0,
+    "length_hist_top": [
+      [
+        1,
+        126
+      ],
+      [
+        2,
+        45
+      ],
+      [
+        3,
+        22
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        9,
+        1
+      ]
+    ],
+    "max_window": 9,
+    "pure_permutation_windows": 0,
+    "top_windows": [
+      {
+        "end_line": 599,
+        "kind": "linear",
+        "length": 9,
+        "start_line": 591
+      },
+      {
+        "end_line": 288,
+        "kind": "linear",
+        "length": 7,
+        "start_line": 282
+      },
+      {
+        "end_line": 506,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 502
+      },
+      {
+        "end_line": 583,
+        "kind": "linear",
+        "length": 5,
+        "start_line": 579
+      },
+      {
+        "end_line": 88,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 85
+      },
+      {
+        "end_line": 227,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 224
+      },
+      {
+        "end_line": 272,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 269
+      },
+      {
+        "end_line": 397,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 394
+      },
+      {
+        "end_line": 417,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 414
+      },
+      {
+        "end_line": 558,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 555
+      },
+      {
+        "end_line": 588,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 585
+      },
+      {
+        "end_line": 637,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 634
+      },
+      {
+        "end_line": 673,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 670
+      },
+      {
+        "end_line": 702,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 699
+      },
+      {
+        "end_line": 829,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 826
+      },
+      {
+        "end_line": 843,
+        "kind": "linear",
+        "length": 4,
+        "start_line": 840
+      },
+      {
+        "end_line": 251,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 249
+      },
+      {
+        "end_line": 407,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 405
+      },
+      {
+        "end_line": 433,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 431
+      },
+      {
+        "end_line": 439,
+        "kind": "linear",
+        "length": 3,
+        "start_line": 437
+      }
+    ],
+    "window_count": 209
+  },
+  "n": 48,
+  "path": "challenges/easy/challenge-48_19.qasm",
+  "qiskit": {
+    "raw": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 117,
+        "ok": true,
+        "ops": {
+          "cx": 323,
+          "rx": 70,
+          "rz": 55,
+          "u2": 51,
+          "u3": 119,
+          "unitary": 8
+        },
+        "seconds": 0.020369529724121094,
+        "size": 626
+      },
+      "opt3_native": {
+        "depth": 143,
+        "ok": true,
+        "ops": {
+          "cx": 334,
+          "rx": 293,
+          "rz": 289
+        },
+        "seconds": 0.04753255844116211,
+        "size": 916
+      },
+      "original": {
+        "depth": 148,
+        "ops": {
+          "cx": 356,
+          "rx": 282,
+          "rz": 263
+        },
+        "size": 901
+      },
+      "seconds": 0.5737776756286621,
+      "snap_stats": {},
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 117,
+        "ok": true,
+        "ops": {
+          "cx": 319,
+          "rx": 69,
+          "rz": 53,
+          "u1": 1,
+          "u2": 96,
+          "u3": 72,
+          "unitary": 9
+        },
+        "seconds": 0.026671409606933594,
+        "size": 619
+      },
+      "opt3_native": {
+        "depth": 143,
+        "ok": true,
+        "ops": {
+          "cx": 330,
+          "rx": 294,
+          "rz": 284
+        },
+        "seconds": 0.019399404525756836,
+        "size": 908
+      },
+      "original": {
+        "depth": 148,
+        "ops": {
+          "cx": 356,
+          "rx": 282,
+          "rz": 263
+        },
+        "size": 901
+      },
+      "seconds": 0.07482194900512695,
+      "snap_stats": {
+        "rx_snapped": 212,
+        "rz_snapped": 214
+      },
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 117,
+        "ok": true,
+        "ops": {
+          "cx": 319,
+          "rx": 70,
+          "rz": 53,
+          "u2": 95,
+          "u3": 73,
+          "unitary": 10
+        },
+        "seconds": 0.019820690155029297,
+        "size": 620
+      },
+      "opt3_native": {
+        "depth": 143,
+        "ok": true,
+        "ops": {
+          "cx": 332,
+          "rx": 299,
+          "rz": 290
+        },
+        "seconds": 0.022150278091430664,
+        "size": 921
+      },
+      "original": {
+        "depth": 148,
+        "ops": {
+          "cx": 356,
+          "rx": 282,
+          "rz": 263
+        },
+        "size": 901
+      },
+      "seconds": 0.07049369812011719,
+      "snap_stats": {
+        "rx_snapped": 204,
+        "rz_snapped": 206
+      },
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 117,
+        "ok": true,
+        "ops": {
+          "cx": 323,
+          "rx": 70,
+          "rz": 55,
+          "u2": 78,
+          "u3": 92,
+          "unitary": 8
+        },
+        "seconds": 0.020097970962524414,
+        "size": 626
+      },
+      "opt3_native": {
+        "depth": 143,
+        "ok": true,
+        "ops": {
+          "cx": 334,
+          "rx": 294,
+          "rz": 289
+        },
+        "seconds": 0.021976232528686523,
+        "size": 917
+      },
+      "original": {
+        "depth": 148,
+        "ops": {
+          "cx": 356,
+          "rx": 282,
+          "rz": 263
+        },
+        "size": 901
+      },
+      "seconds": 0.07045292854309082,
+      "snap_stats": {
+        "rx_snapped": 171,
+        "rz_snapped": 162
+      },
+      "snap_tol": 1e-07
+    }
+  },
+  "simple_greedy": {
+    "exact": {
+      "gate_count": 899,
+      "merged": {},
+      "op_counts": {
+        "cx": 354,
+        "rx": 282,
+        "rz": 263
+      },
+      "reduction_fraction": 0.002219755826859071,
+      "removed": {
+        "cx_self_inverse_pair": 1,
+        "cx_self_inverse_pair_current": 1
+      },
+      "snap_den": 16,
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "gate_count": 895,
+      "merged": {},
+      "op_counts": {
+        "cx": 354,
+        "rx": 279,
+        "rz": 262
+      },
+      "reduction_fraction": 0.006659267480577102,
+      "removed": {
+        "cx_self_inverse_pair": 1,
+        "cx_self_inverse_pair_current": 1,
+        "rx_zero": 3,
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "gate_count": 896,
+      "merged": {},
+      "op_counts": {
+        "cx": 354,
+        "rx": 280,
+        "rz": 262
+      },
+      "reduction_fraction": 0.005549389567147567,
+      "removed": {
+        "cx_self_inverse_pair": 1,
+        "cx_self_inverse_pair_current": 1,
+        "rx_zero": 2,
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "gate_count": 898,
+      "merged": {},
+      "op_counts": {
+        "cx": 354,
+        "rx": 282,
+        "rz": 262
+      },
+      "reduction_fraction": 0.0033296337402886067,
+      "removed": {
+        "cx_self_inverse_pair": 1,
+        "cx_self_inverse_pair_current": 1,
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 1e-07
+    }
+  },
+  "skipped_lines": {},
+  "statevector_limit16": {
+    "available": true,
+    "reason": "qreg 48 > limit 16",
+    "skipped": true
+  },
+  "static": {
+    "angle_counts_near_pi_fraction": {
+      "0.001": 426,
+      "0.01": 464,
+      "1e-05": 410,
+      "1e-07": 333,
+      "1e-09": 228,
+      "1e-12": 217
+    },
+    "angle_error_quantiles": {
+      "max": 0.09356699838789045,
+      "min": 0.0,
+      "p50": 2.8362029169670677e-08,
+      "p90": 0.01742764779153916,
+      "p99": 0.0819245084468534
+    },
+    "cliffordish_counts_by_tol": {
+      "0.001": 301,
+      "0.01": 307,
+      "1e-05": 294,
+      "1e-07": 245,
+      "1e-09": 173,
+      "1e-12": 163
+    },
+    "difficulty": "easy",
+    "exact_rx_pi_after_last_entangler": 0,
+    "exact_rx_pi_count": 6,
+    "exact_rx_pi_lines_first20": [
+      212,
+      522,
+      542,
+      641,
+      746,
+      818
+    ],
+    "exact_rx_pi_qubits": {
+      "0": 1,
+      "6": 1,
+      "10": 1,
+      "27": 1,
+      "38": 1,
+      "41": 1
+    },
+    "gate_count": 901,
+    "gate_density_per_qubit": 18.770833333333332,
+    "leading_single_qubit_gates": 12,
+    "op_counts": {
+      "cx": 356,
+      "rx": 282,
+      "rz": 263
+    },
+    "path": "challenges/easy/challenge-48_19.qasm",
+    "qreg": 48,
+    "rx_pi_counts_by_tol": {
+      "0.001": 7,
+      "0.01": 7,
+      "1e-05": 6,
+      "1e-07": 6,
+      "1e-09": 6,
+      "1e-12": 6
+    },
+    "rz_pi_over_2_counts_by_tol": {
+      "0.001": 141,
+      "0.01": 143,
+      "1e-05": 138,
+      "1e-07": 113,
+      "1e-09": 74,
+      "1e-12": 70
+    },
+    "top_pi_fractions_tol_1e-3": [
+      [
+        "1/2",
+        197
+      ],
+      [
+        "-1/2",
+        86
+      ],
+      [
+        "1/4",
+        43
+      ],
+      [
+        "-1/4",
+        38
+      ],
+      [
+        "3/4",
+        19
+      ],
+      [
+        "-3/4",
+        17
+      ],
+      [
+        "1/1",
+        14
+      ],
+      [
+        "0/1",
+        4
+      ],
+      [
+        "14/15",
+        1
+      ],
+      [
+        "2/3",
+        1
+      ],
+      [
+        "-6/11",
+        1
+      ],
+      [
+        "1/3",
+        1
+      ],
+      [
+        "5/6",
+        1
+      ],
+      [
+        "-8/11",
+        1
+      ],
+      [
+        "8/11",
+        1
+      ],
+      [
+        "2/11",
+        1
+      ]
+    ],
+    "trailing_single_qubit_gates": 2
+  },
+  "structural_candidates": {
+    "tol_1e-3": {
+      "exact_rxpi_lines_first30": [
+        212,
+        522,
+        542,
+        641,
+        746,
+        818
+      ],
+      "exact_rxpi_toggle_count": 6,
+      "near_rxpi_lines_first30": [
+        17,
+        212,
+        522,
+        542,
+        641,
+        746,
+        818
+      ],
+      "near_rxpi_toggle_count": 7,
+      "tol": 0.001,
+      "x_cxswap_exact_rxpi": "000000100100000000001000000000000000010001000001",
+      "x_cxswap_near_rxpi": "001000100100000000001000000000000000011001000001",
+      "x_swaponly_exact_rxpi_logical": "000000100100000000001000000000000000010001000001",
+      "x_swaponly_near_rxpi_logical": "000000100100000000001000000000000000010001010001"
+    },
+    "tol_1e-5": {
+      "exact_rxpi_lines_first30": [
+        212,
+        522,
+        542,
+        641,
+        746,
+        818
+      ],
+      "exact_rxpi_toggle_count": 6,
+      "near_rxpi_lines_first30": [
+        212,
+        522,
+        542,
+        641,
+        746,
+        818
+      ],
+      "near_rxpi_toggle_count": 6,
+      "tol": 1e-05,
+      "x_cxswap_exact_rxpi": "000000100100000000001000000000000000010001000001",
+      "x_cxswap_near_rxpi": "000000100100000000001000000000000000010001000001",
+      "x_swaponly_exact_rxpi_logical": "000000100100000000001000000000000000010001000001",
+      "x_swaponly_near_rxpi_logical": "000000100100000000001000000000000000010001000001"
+    },
+    "tol_1e-9": {
+      "exact_rxpi_lines_first30": [
+        212,
+        522,
+        542,
+        641,
+        746,
+        818
+      ],
+      "exact_rxpi_toggle_count": 6,
+      "near_rxpi_lines_first30": [
+        212,
+        522,
+        542,
+        641,
+        746,
+        818
+      ],
+      "near_rxpi_toggle_count": 6,
+      "tol": 1e-09,
+      "x_cxswap_exact_rxpi": "000000100100000000001000000000000000010001000001",
+      "x_cxswap_near_rxpi": "000000100100000000001000000000000000010001000001",
+      "x_swaponly_exact_rxpi_logical": "000000100100000000001000000000000000010001000001",
+      "x_swaponly_near_rxpi_logical": "000000100100000000001000000000000000010001000001"
+    }
+  }
+}

@@ -1,0 +1,532 @@
+                                                        Efficient Classical Simulation of Heuristic Peaked Quantum Circuits
+
+                                                                                    David Kremer1, ∗ and Nicolas Dupuis1
+                                                                1
+                                                                    IBM Quantum, IBM T.J.Watson Research Center, Yorktown Heights, NY 10598
+                                                                                          (Dated: April 24, 2026)
+                                                           Peaked quantum circuits, whose output distribution is sharply concentrated on a single bitstring,
+                                                        have emerged as a promising candidate for verifiable quantum advantage, as the correctness of
+                                                        the quantum output can be checked by simply comparing against the known peak. Recent work
+                                                        by Gharibyan et al. [arXiv:2510.25838] claimed heuristic quantum advantage using peaked circuits
+                                                        executed on Quantinuum’s 56-qubit H2 processor. These peaked circuits concentrate their output
+                                                        on a single hidden bitstring by training a shallow simulable circuit variationally and inserting an
+                                                        obfuscated permutation to increase the depth to a level that makes classical simulation intractable,
+                                                        with estimated runtimes of years for the largest instances. We show that these circuits can be
+                                                        efficiently simulated classically. We describe a method that efficiently performs a full tensor network
+arXiv:2604.21908v1 [quant-ph] 23 Apr 2026
+
+
+
+
+                                                        contraction, allowing near-exact sampling and extraction of the peaked bitstring. The method
+                                                        exploits the mirrored structure of the circuit and iteratively cancels both halves into a Matrix
+                                                        Product Operator (MPO), and avoids the obfuscated permutation by greedily reducing the MPO
+                                                        bond dimension through a process we call “unswapping.” The method can fully contract and extract
+                                                        the peak of the largest circuit in approximately one hour on a single GPU, around half the time it
+                                                        took to run on the quantum hardware.
+
+
+                                                              INTRODUCTION                                   among the most powerful tools for classical simulation of
+                                                                                                             quantum circuits, as they can efficiently represent states
+                                                                                                             with limited entanglement by compressing the quantum
+                                               Demonstrating a computational advantage of quantum
+                                                                                                             state into a network of low-rank tensors. Their compu-
+                                            hardware over classical methods remains one of the cen-
+                                                                                                             tational cost is controlled by the bond dimension, which
+                                            tral goals of quantum computing research. A key chal-
+                                                                                                             grows with the entanglement in the system. However,
+                                            lenge is that any such demonstration requires not only
+                                                                                                             this cost can also be inflated by features of the circuit
+                                            that the quantum device outperforms the best known
+                                                                                                             that do not correspond to genuine entanglement, such
+                                            classical methods, but also that the quantum output can
+                                                                                                             as permutations of qubit lines or long-range gates that
+                                            be rigorously verified. This has motivated calls for more
+                                                                                                             scramble the ordering of the tensor network [7]. As we
+                                            rigorous frameworks for evaluating quantum advantage
+                                                                                                             will show, this distinction between real entanglement and
+                                            claims [1], and the creation of the Quantum Advantage
+                                                                                                             artificial bond dimension inflation is central to under-
+                                            Tracker [2] to systematically collect and compare results.
+                                                                                                             standing why the peaked circuits of Ref. [8] are in fact
+                                               Peaked circuits, first proposed by Aaronson and               classically tractable.
+                                            Zhang [3], offer an approach that addresses the verifica-
+                                            tion problem directly. These circuits are constructed so            More recently, Gharibyan et al. [8] addressed the scal-
+                                            that their output distribution is sharply concentrated on        ability limitation by combining the variational peaking
+                                            a single bitstring that has a measurement probability or-        technique with a mirror circuit construction and a suite
+                                            ders of magnitude higher than the rest. This bitstring is        of obfuscation transformations. The resulting circuits
+                                            known at the time of circuit construction but is, in prin-       embed a U U † identity block that dramatically increases
+                                            ciple, computationally hard to extract from the circuit          depth, while tensor patch optimization, angle sweeping,
+                                            description without executing it on quantum hardware.            masking, and swap insertions are applied to prevent clas-
+                                            This makes peaked circuits an appealing candidate for            sical methods from detecting and cancelling the identity.
+                                            verifiable advantage: the answer obtained from quantum           The authors benchmark several state-of-the-art classi-
+                                            execution can be validated simply by checking against the        cal simulation strategies, including MPS methods, ten-
+                                            known peak bitstring, with no expensive classical post-          sor network belief propagation, and Pauli path simula-
+                                            processing required.                                             tion, and report that all fail to scale beyond roughly 700
+                                                                                                             two-qubit gates.
+                                               In practice, however, the classical hardness of peaked
+                                            circuits depends critically on how they are constructed.            Among the classical strategies considered in Ref. [8],
+                                            In the original proposal [3], the peak is induced by vari-       the one most relevant to our work is what the authors
+                                            ationally adjusting circuit parameters, an approach that         call the “Middle MPO Attack.” This approach directly
+                                            produces circuits with peaked distributions but does not         targets the mirrored structure of the circuit: it initial-
+                                            scale beyond circuit sizes amenable to direct statevector        izes a Matrix Product Operator (MPO) as the identity
+                                            simulation or standard tensor network methods. Tensor            at the circuit midpoint and iteratively absorbs gates from
+                                            network methods, in particular Matrix Product States             both halves, exploiting the fact that the underlying U U †
+                                            (MPS) and Matrix Product Operators (MPO) [4–6], are              structure should in principle allow the MPO to remain
+                                                                                                                        2
+
+low-rank throughout. For unobfuscated mirror circuits,                          Circuit Preparation
+this is highly effective: the two halves cancel as they are
+absorbed, and the MPO never grows beyond manageable
+                                                                 The peaked circuits in Ref. [8] are defined on an all-to-
+sizes. However, the authors show that the combination
+                                                              all connectivity native to the trapped-ion hardware. To
+of swap transformations, angle sweeping, and masking is
+                                                              enable efficient tensor network contraction, we first tran-
+sufficient to defeat this strategy: the permutations in-
+                                                              spile the circuit to a linear (nearest-neighbor) connec-
+troduced by the swap obfuscation cause the MPO bond
+                                                              tivity by decomposing long-range gates into sequences
+dimensions to grow uncontrollably and prevent compres-
+                                                              of SWAP gates and nearest-neighbor operations. This
+sion. The key insight of the present work is that this
+                                                              transpilation introduces additional gates but ensures that
+obstacle can be overcome.
+                                                              the circuit can be represented and contracted as a one-
+   Our method follows the same general principle as the       dimensional tensor network.
+Middle MPO Attack, splitting the circuit and contract-
+                                                                 We then split the transpiled circuit into two halves,
+ing both halves into a central MPO, but introduces an
+                                                              a left circuit CL and a right circuit CR , at the temporal
+additional step to handle the permutation structure that
+                                                              midpoint, and insert an empty (identity) Matrix Product
+causes the naive approach to fail. Rather than attempt-
+                                                              Operator (MPO) between them. The full circuit is thus
+ing to compress the MPO directly after absorption, we
+                                                              represented as CL · M · CR , where M is initialized as the
+apply a greedy procedure we call unswapping, which iden-
+                                                              identity MPO. The left and right circuits are oriented so
+tifies and extracts the hidden permutations from the
+                                                              that their innermost layers (closest to the midpoint) are
+MPO by iteratively testing swap operations on the bonds
+                                                              adjacent to the MPO, and contraction proceeds inward
+with the largest dimension. This decomposes the MPO
+                                                              from both sides. This setup is illustrated in Fig. 1a.
+as M = PL M̃ PR , where PL and PR are permutations
+and M̃ is a reduced MPO with low permutation con-
+tent. The extracted permutations are then propagated
+back into the remaining circuit through a rewiring step
+that restores alignment between the circuit and the com-                       Iterative Contraction
+pressed MPO, allowing the absorption to continue.
+   This iterative cycle of absorption, unswapping, and          The core of the method is an iterative loop that pro-
+rewiring allows the full circuit to be contracted while       gressively absorbs the left and right circuits into the cen-
+keeping the MPO size manageable throughout. Once all          tral MPO. Each iteration consists of up to three stages:
+layers have been absorbed, we apply the resulting MPO         absorption, unswapping, and rewiring. The process re-
+to the all-zero state to obtain a Matrix Product State        peats until all circuit layers have been absorbed. The full
+(MPS), from which we sample directly. The method re-          procedure is summarized in Algorithm 1.
+quires no approximation beyond a small singular value
+cutoff for numerical stability during compression, and
+thus produces near-exact samples from the ideal circuit.
+   We apply this method to the largest circuit presented                              Absorption
+in Ref. [8], a 56 qubit circuit with 1,917 two-qubit gates,
+and recover the peak bitstring in approximately one hour
+on a single GPU (Nvidia A100, 80 GB), roughly half the           In the absorption stage, we contract the innermost lay-
+time the circuit took to execute on the quantum hard-         ers of CL and CR into the MPO. Each two-qubit gate ad-
+ware. This demonstrates that the obfuscation strategies       jacent to the MPO is absorbed by contracting the gate
+employed in the peaked circuit construction are insuffi-      tensor with the corresponding MPO site tensors, followed
+cient to prevent efficient classical simulation, and that     by a singular value decomposition (SVD) to restore the
+the claimed quantum advantage does not hold for these         MPO to canonical form. A small singular value cutoff ϵ
+instances.                                                    is applied during the SVD to discard negligible singular
+                                                              values and maintain numerical stability; this is the only
+                                                              source of approximation in the method.
+                                                                 Because the circuit has an underlying mirrored struc-
+                                                              ture, many of the gates absorbed from opposite sides par-
+                       METHOD
+                                                              tially cancel, keeping the MPO bond dimension moder-
+                                                              ate during the early stages of absorption. However, as
+  We now describe the full contraction procedure. The         the swap-based obfuscation layers are encountered, the
+method consists of three phases: circuit preparation, it-     bond dimension begins to grow. When the total num-
+erative contraction, and sampling. An overview of the         ber of tensor elements in the MPO exceeds a predefined
+full process is shown in Fig. 2.                              threshold τ , we move to the unswapping stage.
+                                                                                                                       3
+
+
+
+
+           (a) Splitting                          (b) Unswapping                             (c) Rewiring
+
+   FIG. 1: The three stages of the iterative contraction method. (a) The transpiled circuit is split at the temporal
+midpoint into a left circuit CL and a right circuit CR , with an identity MPO inserted between them. (b) The greedy
+unswapping procedure: qubit pairs in the MPO are ranked by bond dimension, and swaps are applied from the left,
+right, or both sides. Swaps that reduce the bond dimension are accepted, yielding the decomposition M = PL M̃ PR .
+(c) Rewiring: the extracted permutations PL and PR are absorbed into the remaining circuits by removing existing
+                  transpilation SWAPs, reindexing qubits, and re-transpiling to linear connectivity.
+
+
+
+
+  FIG. 2: Overview of the iterative contraction procedure. Starting from a small MPO between the left and right
+ circuits, the method cycles through three stages: (1) absorption of circuit layers into the MPO, which causes it to
+     grow; (2) unswapping, which extracts permutations PL and PR and reduces the MPO to a smaller M̃ ; and
+  (3) rewiring, which propagates the extracted permutations into the remaining circuits and re-transpiles to linear
+                                                    connectivity.
+
+
+                       Unswapping                             The procedure maintains a set of available qubit pairs
+                                                            (bonds), initialized to all N − 1 nearest-neighbor pairs
+                                                            in the MPO. At each step, the available pairs are sorted
+   The unswapping procedure is a greedy heuristic de-       by their current bond dimension, and the pair (i, i + 1)
+signed to extract hidden permutation structure from the     with the largest bond is selected. For this pair, three
+MPO, thereby reducing its bond dimension. The key           candidate swaps are evaluated: applying a SWAP from
+observation is that the swap obfuscation in the original    the left side of the MPO, from the right side, or from
+circuit effectively permutes qubit lines within the MPO;    both sides simultaneously. Each candidate is followed
+if these permutations can be identified and factored out,   by SVD compression. If the best candidate reduces the
+the remaining MPO has a much smaller bond dimension.        bond dimension, it is accepted: the MPO is updated,
+                                                                                                                             4
+
+      Algorithm 1      MPO Iterative Cancellation with                                      Rewiring
+                        Unswapping
+
+Require: Circuit C on N qubits, SVD cutoff ϵ, MPO size                The permutations PL and PR extracted during
+    threshold τ                                                    unswapping must be absorbed into the remaining left and
+Ensure: MPS representation of C|0⟩⊗N                               right circuits so that subsequent absorption steps oper-
+ 1: Transpile C to linear connectivity                             ate on a consistent qubit ordering. This is accomplished
+ 2: Split C at midpoint into left CL and right CR                  through a rewiring procedure:
+ 3: Initialize MPO M ← I ⊗N (identity, bond dimension 1)
+ 4: while CL or CR have remaining layers do ▷ Absorption
+                                                                      1. Remove existing SWAPs. Strip all SWAP gates
+ 5:     while size(M ) < τ and layers remain do
+ 6:         Absorb innermost layer of CL into M from left
+                                                                         from CL and CR that were introduced during the
+ 7:         Absorb innermost layer of CR into M from right               initial transpilation to linear connectivity. This re-
+ 8:         Compress M to canonical form via SVD with ϵ                  covers the original qubit labeling of the remaining
+                                                  ▷ Unswapping           gates.
+ 9:     PL ← I, PR ← I
+10:     A ← {0, 1, . . . , N −2}        ▷ available bond indices      2. Reindex qubits. Apply the permutations PL and
+11:     while A is not empty do
+                                                                         PR to relabel the qubits in CL and CR respectively,
+12:         i ← arg maxj∈A bond dim(M, j)         ▷ largest bond
+13:         for side ∈ {left, right, both} do                            so that the circuit qubit ordering matches the com-
+14:             M ′ ← ApplySwap(M, i, i+1, side)                         pressed MPO M̃ .
+15:             Compress M ′ via SVD with cutoff ϵ
+16:         if any variant reduced bond dim. at (i, i+1) then         3. Re-transpile. Transpile the relabeled circuits
+17:             M ← best variant                                         back to linear connectivity with the new qubit lay-
+18:             Update PL and/or PR with the applied swap                out. This reintroduces SWAP gates as needed but
+19:             A ← A \ {i} ▷ mark current bond unavailable              with a layout that is now aligned with the reduced
+20:             A ← A ∪ neighbors(i) ▷ re-enable adj. bonds              MPO.
+21:         else
+22:             A ← A \ {i} ▷ mark current bond unavailable           After rewiring, the left and right circuits are again ad-
+                                                      ▷ Rewiring
+23:     Remove transpilation SWAPs from CL and CR                  jacent to the MPO with a consistent qubit ordering, and
+24:     Reindex qubits of CL according to PL                       the absorption stage can resume. The rewiring procedure
+25:     Reindex qubits of CR according to PR                       is illustrated in Fig. 1c.
+26:     Re-transpile CL and CR to linear connectivity
+27: Apply M to |0⟩⊗N to obtain MPS |ψ⟩
+28: return |ψ⟩                                                                             Sampling
+
+                                                                      Once the full circuit has been contracted into the MPO
+                                                                   M , we obtain the output state by applying M to the all-
+the swap is recorded in the corresponding permutation              zero input state |0⟩⊗N , yielding a Matrix Product State
+(PL , PR , or both), and the pair (i, i + 1) is marked as          (MPS) representation of the output. Sampling from this
+unavailable. Its adjacent pairs ((i−1, i) and (i+1, i+2),          MPS is efficient and exact: we sweep through the sites
+if they exist) are then marked as available, since the ac-         from left to right, sampling each qubit conditioned on the
+cepted swap changes the local structure of the MPO and             previously sampled qubits by contracting the conditional
+may make neighboring bonds amenable to further reduc-              probability from the MPS tensors.
+tion. If none of the three candidates reduces the bond
+dimension, the pair is simply marked as unavailable. The
+procedure repeats from the sorting step until no available                                 RESULTS
+pairs remain.
+  After unswapping, the original MPO is effectively de-               We apply the method described above to the
+composed as                                                        peaked circuit P9 Hqap 56x1917 circuit from Ref. [8],
+                                                                   a 56-qubit circuit with 1,917 two-qubit RZZ gates. This
+                                                                   is the largest circuit for which the authors claim quantum
+                       M = PL M̃ PR ,                       (1)    advantage. The contraction was performed on a single
+                                                                   Nvidia A100 GPU (80 GB) and completed in 4,059 sec-
+                                                                   onds (approximately 1 hour and 10 minutes). For com-
+where PL and PR are the accumulated left and right per-            parison, the same circuit was executed on Quantinuum’s
+mutations (each a product of SWAP gates), and M̃ is a              H2 trapped-ion processor in under 2 hours [8], making
+reduced MPO with lower bond dimension. This decom-                 our classical simulation roughly twice as fast as the quan-
+position is illustrated in Fig. 1b.                                tum execution.
+                                                                                                                         5
+
+                Contraction Dynamics                          composed entirely of nearest-neighbor swaps by construc-
+                                                              tion, and the unswapping procedure can cancel them ef-
+                                                              ficiently.
+   Fig. 3a shows the total number of tensor elements in
+the MPO as a function of the number of two-qubit uni-            Another factor that may contribute to the slow initial
+taries absorbed from the circuit. The absorption (blue)       phase is that the splitting point may not coincide with
+and unswapping (red) stages produce a characteristic          the exact center of the underlying mirror circuit. Since
+sawtooth pattern: the MPO grows during absorption as          we split at the temporal midpoint of the transpiled cir-
+new gates are contracted in, then shrinks during unswap-      cuit, and the transpilation can shift the relative positions
+ping as permutation structure is extracted.                   of gates, the left and right halves may not be perfectly
+                                                              symmetric at the start. This would produce a similar
+   The upper envelope of the MPO size is roughly de-          effect: the MPO can only be partially reduced because
+termined by the unswapping threshold τ : once the to-         the two sides do not fully cancel. The transition phase
+tal number of elements exceeds τ , absorption pauses and      may then correspond in part to the absorption process
+unswapping is triggered. This threshold is a tunable pa-      inadvertently correcting this misalignment, as the rout-
+rameter, and the peaks in the sawtooth can overshoot it       ing of layers to the linear topology can cause unitaries to
+by some margin depending on the gates absorbed in the         be absorbed at different rates from the two sides, gradu-
+last absorption step. The key quantity that determines        ally shifting the effective splitting point toward the true
+the effectiveness of the method is not the peak size, but     mirror center.
+rather how much the unswapping is able to reduce it. A           Fig. 3b shows the same quantity plotted against wall-
+large reduction means the absorption can run for many         clock time, confirming that the total contraction com-
+more layers before reaching the threshold again; in the       pletes in approximately 4,059 seconds. The dense cluster
+worst case (for instance, on a random circuit with no mir-    of iterations in the first ∼1,000 seconds corresponds to
+ror or permutation structure) unswapping would fail to        the first phase described above, where frequent unswap-
+reduce the MPO at all, and the algorithm would stall.         ping calls dominate the runtime despite limited progress
+   Three distinct regimes are visible in Fig. 3a. In          through the circuit. The later phases proceed more ef-
+the first phase (roughly 0–300 unitaries consumed), the       ficiently, with absorption consuming the majority of the
+absorption–unswapping cycle is rapid: the MPO reaches         remaining layers.
+the threshold quickly, and unswapping only manages
+to reduce the size to around 104 elements before the
+threshold is hit again. This results in frequent unswap-                           Peak Recovery
+ping calls, which constitute overhead without propor-
+tional progress through the circuit. In the second phase         After contracting the full circuit, we apply the result-
+(roughly 300–700 unitaries), a transition occurs: the ab-     ing MPO to the all-zero state |0⟩⊗56 to obtain an MPS
+sorption runs grow progressively longer, and the post-        and draw 1,000 samples. Figure 4 shows the frequency
+unswapping MPO size decreases steadily. In the third          of the top 20 most-sampled bitstrings. The peak bit-
+phase (beyond approximately 700 unitaries), the unswap-       string (ID 0) appears approximately 110 times out of
+ping reduces the MPO almost completely at each itera-         1,000 samples, corresponding to a measured peak weight
+tion, allowing long absorption runs that consume many         of roughly 11%. This is consistent with the designed peak
+layers before the threshold is reached again.                 weight of approximately 10% reported in Ref. [8], and
+   A possible interpretation of this behavior is that the     confirms that the contraction has preserved the circuit’s
+native obfuscation (the permutation structure introduced      output distribution to high accuracy. The remaining bit-
+by the variational training and masking, rather than by       strings each appear fewer than 20 times, with no sec-
+explicit swap gates) is concentrated in the central region    ondary structure visible in their frequencies. This sharp
+of the circuit, close to the midpoint of the U U † iden-      separation between the peak and the background is the
+tity block. During the early phase of contraction, this       defining signature of the peaked circuit and demonstrates
+native permutation is only partially absorbed into the        that our method successfully recovers it.
+MPO, so the unswapping heuristic cannot fully invert it:         The only source of approximation in our method is the
+the permutation may not decompose cleanly into nearest-       small singular value cutoff ϵ applied during SVD com-
+neighbor swaps, for example if it was prepared in a way       pression. The close agreement between our measured
+that it is spread across multi-qubit circuit blocks that      peak weight (∼11%) and the designed value (∼10%) pro-
+were prepared variationally to encode a permutation im-       vides empirical evidence that this cutoff introduces neg-
+plicitly. As more of this region is absorbed and the native   ligible error for the circuit sizes considered here. In prin-
+obfuscation is fully captured by the MPO, the remain-         ciple, the cutoff can be made arbitrarily small at the cost
+ing permutation content comes predominantly from the          of increased MPO bond dimension; in practice, we find
+explicit swap gates introduced by our own transpilation       that a modest cutoff is sufficient to maintain near-exact
+to linear connectivity. These artificial permutations are     fidelity throughout the contraction.
+                                                                                                                         6
+
+
+
+
+                                                           (a)
+
+
+
+
+                                                           (b)
+
+
+ FIG. 3: Total number of tensor elements in the MPO during contraction. Blue points correspond to the absorption
+stage and red points to the unswapping stage. (a) MPO size as a function of two-qubit unitaries consumed from the
+  circuit. Three regimes are visible: an initial phase (0–300 unitaries) with rapid absorption–unswapping cycling; a
+transition phase (300–700) where unswapping becomes progressively more effective; and a final phase (700+) where
+   unswapping reduces the MPO almost completely, allowing long absorption runs. (b) The same quantity plotted
+ against wall-clock time. The full contraction completes in 4,059 seconds on a single Nvidia A100 GPU. The dense
+ cluster of iterations in the first ∼1,000 seconds reflects the initial phase where frequent unswapping calls dominate
+                                                       the runtime.
+
+
+                                                                                      DISCUSSION
+
+
+                                                                    The effectiveness of our approach rests on a single
+                                                                 structural feature of the peaked circuits in Ref. [8]: the
+                                                                 U U † mirror construction. Regardless of the obfuscation
+                                                                 applied, the two halves of the circuit remain approxi-
+                                                                 mate inverses of each other, and contracting them simul-
+                                                                 taneously into a central MPO allows this cancellation
+                                                                 to take place implicitly. The obfuscation techniques are
+                                                                 designed to prevent classical methods from recognizing
+FIG. 4: Frequency of the top 20 most-sampled bitstrings          and exploiting this structure. However, our results show
+  from 1,000 samples drawn from the contracted MPS.              that the swap-based permutation obfuscation, which is
+  The peak bitstring (ID 0) appears approximately 110            the primary barrier to MPO-based contraction, can be
+times (∼11%), consistent with the designed peak weight           effectively undone through the greedy unswapping pro-
+   of ∼10%. The sharp separation from the remaining              cedure without requiring any knowledge of the original
+    bitstrings confirms successful recovery of the peak.         permutation.
+                                                                    This points to a fundamental tension in the peaked
+                                                                 circuit construction. The mirror structure is what makes
+                                                                 the circuit peaked: the U U † block ensures that the out-
+                                                                 put distribution is concentrated on a known bitstring.
+                                                                 But this same structure is also what makes the circuit
+                                                                                                                         7
+
+classically simulable, because it guarantees that the two      peak is designed in by ensuring that U U † acts as the
+halves cancel when contracted from the midpoint. The           identity on the input state, so the output is predeter-
+obfuscation must therefore hide the mirror structure well      mined by construction. Any circuit built this way carries
+enough to defeat classical simulation while preserving it      structural information that a sufficiently clever classical
+well enough to maintain the peak. Our results suggest          algorithm can exploit, regardless of how well the struc-
+that, for the constructions considered here, this balance      ture is obfuscated.
+has not been achieved.                                            A potentially more robust approach would be to con-
+                                                               struct circuits where the peak emerges from the com-
+                                                               putational hardness of an encoded problem, rather than
+                 Scope and Limitations
+                                                               from a designed structural shortcut. In such a construc-
+                                                               tion, the classical hardness of finding the peak would be
+   It is important to distinguish between the general          inherited from the hardness of the underlying problem
+peaked circuit problem and the specific HQAP con-              itself, not from the difficulty of reverse-engineering the
+struction of Ref. [8]. The authors prove that deciding         circuit.
+whether a circuit is peaked is QCMA-complete in the
+worst case, and conjecture that finding the peak bit-             Shor’s algorithm [9] provides a clean example of this
+string is hard even for quantum algorithms given only          principle: its output distribution is peaked on bitstrings
+the circuit description. Our work does not contradict          encoding the period, and finding the period is believed to
+these complexity-theoretic results. Rather, it shows that      be classically hard. However, Shor’s algorithm requires
+the specific construction used to generate the circuits in     fault-tolerant quantum hardware and is far from near-
+Ref. [8] which relies on a mirror circuit with obfuscated      term implementation. A more promising direction for
+permutations does not achieve the hardness that the gen-       near-term verifiable quantum advantage may lie in cir-
+eral problem admits.                                           cuits that encode classically hard optimization or combi-
+   Our method is also specifically tailored to circuits with   natorial problems whose solutions can be efficiently ver-
+this mirror structure. It would not be effective against       ified, such as the problems described in [10]. If such
+peaked circuits constructed through fundamentally dif-         circuits can be designed to produce sufficiently peaked
+ferent means, nor against generic quantum circuits. As         output distributions on solution bitstrings, they would
+noted in the results, applying the method to a ran-            combine verifiability (the solution can be checked) with
+dom circuit (without underlying permutation structure)         hardness that does not depend on obfuscation. An ex-
+would cause the unswapping to fail, and the MPO bond           ample of this paradigm is the Hidden Code Sampling
+dimension would grow uncontrollably. The method suc-           (HCS) proposal of Deshpande et al. [11], which con-
+ceeds here precisely because the peaked circuit construc-      structs peaked distributions from quantum error correc-
+tion leaves exploitable structure in the form of permuta-      tion structure rather than mirror circuits, with classical
+tions that can be extracted.                                   hardness tied to computing weight enumerators of ran-
+   One might consider modifications to the HQAP con-           dom codes.
+struction that could increase the classical cost. While
+such modifications could increase the runtime of our
+method or require adaptations to the unswapping heuris-
+tic, we note that they do not address the underlying vul-
+                                                                                   Broader Context
+nerability: as long as the circuit is built from a mir-
+ror structure, the two halves will partially cancel during
+contraction, and extensions of the present approach can           This work adds to the pattern of quantum advantage
+exploit this. It is unclear whether these improvements         claims being met by classical algorithmic improvements
+can achieve a superpolynomial separation. However, they        that narrow or close the gap. The peaked circuit frame-
+may increase the constant prefactor of the classical sim-      work of Ref. [8] was explicitly designed with this iterative
+ulation time enough that a direct execution in a quan-         dynamic in mind, framing the circuits as a public chal-
+tum device achieves better wall-clock time, resulting in a     lenge analogous to the RSA Factoring Challenge. Our
+practical instance of quantum advantage.                       results have been submitted to the Quantum Advantage
+                                                               Tracker [2], where they appear alongside the quantum
+                                                               execution results and the original classical extrapolations
+   Towards better verifyable quantum advantage                 under the classically verifiable problems pathway. In this
+                                                               spirit, our result should be understood as a response to
+   More broadly, our results suggest that the vulnerabil-      that challenge: the specific instances presented do not
+ity of the HQAP construction lies not in the specific ob-      withstand classical simulation, but the broader question
+fuscation being too weak, but in the peaking mechanism         of whether peaked circuits can be constructed to resist
+being too structured. In mirror-based constructions, the       all classical attacks remains open.
+                                                                   8
+
+                     Code Availability
+
+  The source code for the MPO contraction and
+unswapping method is available at https://github.
+com/d-kremer/peaked-circuit-simulation.
+
+
+
+
+  ∗
+     david.kremer@ibm.com
+ [1] O. Lanes, M. Beji, A. D. Corcoles, C. Dalyac, J. M. Gam-
+     betta, L. Henriet, A. Javadi-Abhari, A. Kandala, A. Mez-
+     zacapo, C. Porter, S. Sheldon, J. Watrous, C. Zoufal,
+     A. Dauphin, and B. Peropadre, A framework for quantum
+     advantage (2025), arXiv:2506.20658, arXiv:2506.20658
+     [quant-ph].
+ [2] Quantum          Advantage        Tracker,        https://
+     quantum-advantage-tracker.github.io (2025), ac-
+     cessed: 2026-03-02.
+ [3] S. Aaronson and Y. Zhang, On verifiable quan-
+     tum advantage with peaked circuit sampling (2024),
+     arXiv:2404.14493 [quant-ph].
+ [4] G. Vidal, Efficient classical simulation of slightly entan-
+     gled quantum computations, Physical Review Letters 91,
+     147902 (2003).
+ [5] U. Schollwöck, The density-matrix renormalization group
+     in the age of matrix product states, Annals of Physics
+     326, 96 (2011), 1008.3477.
+ [6] R. Orús, A practical introduction to tensor networks:
+     Matrix product states and projected entangled pair
+     states, Annals of Physics 349, 117 (2014), 1306.2164.
+ [7] Y. Zhou, E. M. Stoudenmire, and X. Waintal, What lim-
+     its the simulation of quantum computers?, Physical Re-
+     view X 10, 041038 (2020), 2002.07730.
+ [8] H. Gharibyan, M. Z. Mullath, N. E. Sherman, V. P.
+     Su, H. Tepanyan, and Y. Zhang, Heuristic quantum ad-
+     vantage with peaked circuits (2025), arXiv:2510.25838
+     [quant-ph].
+ [9] P. W. Shor, Polynomial-time algorithms for prime factor-
+     ization and discrete logarithms on a quantum computer,
+     SIAM Journal on Computing 26, 1484 (1997).
+[10] M. Sciorilli et al., The intractable decathlon: Bench-
+     marking quantum optimization (2025), arXiv:2504.03832
+     [quant-ph].
+[11] A. Deshpande, B. Fefferman, S. Ghosh, M. Gullans, and
+     D. Hangleiter, Peaked quantum advantage using error
+     correction (2025), arXiv:2510.05262 [quant-ph].
+                                                                                                                             9
+
+                                   Implementation Details and Algorithm Variants
+
+  The algorithm presented in the main text (Algorithm 1) describes the conceptual structure of the method. The im-
+plementation used to produce the results in this paper includes several refinements that improve practical performance.
+We describe these here for reproducibility.
+
+
+                                                 Parallel Swap Selection
+
+   The unswapping procedure described in the main text evaluates swap candidates sequentially: the bond with the
+largest dimension is tested, accepted or rejected, and the process restarts. In practice, we use a parallelized variant
+that evaluates multiple swap candidates simultaneously.
+   The key observation is that swaps acting on non-overlapping qubit pairs are independent and can be evaluated in
+parallel. We partition the bonds into two sets by parity (even pairs (0, 1), (2, 3), . . . and odd pairs (1, 2), (3, 4), . . .)
+so that all pairs within a set are non-overlapping. For each combination of side (left, right, both) and parity (even,
+odd), we apply all candidate swaps simultaneously and retain only those that reduce the local bond dimension. The
+six combinations are cycled through in sequence: both-even, both-odd, left-even, left-odd, right-even, right-odd. The
+outer loop terminates when a full cycle produces no further bond reductions.
+   This parallelized variant is significantly faster in practice, since each iteration tests ⌊N/2⌋ swaps at once rather
+than one at a time. Because the even/odd partition ensures that the swaps within each batch act on disjoint qubit
+pairs, the bond dimension reduction from each individual swap is independent of the others within the same batch.
+
+
+                                            Non-Strict Acceptance Criterion
+
+  The default acceptance criterion for unswapping accepts a swap only if it strictly reduces the bond dimension at
+the target bond. We also implement a relaxed variant that accepts swaps that leave the bond dimension unchanged
+(while still rejecting those that increase it). This “equal” mode can help the algorithm escape local minima where a
+permutation requires multiple swaps to resolve but no single swap produces an immediate improvement.
+
+
+                                                 Adaptive Side Selection
+
+  In the main text, the absorption stage alternates between absorbing from the left and right circuits. The imple-
+mentation supports an adaptive variant in which, at each absorption step, we tentatively absorb the next layer from
+both CL and CR independently and select the side that results in a smaller total MPO size. This greedy selection
+helps maintain a balanced contraction and can avoid situations where one side grows the MPO disproportionately.
+An alternative fixed-schedule mode absorbs from each side at a configurable frequency, which can be useful when the
+adaptive overhead (two trial absorptions per step) is not justified.
+
+
+                                                     Hyperparameters
+
+  The method has the following tunable hyperparameters:
+
+   • SVD cutoff (ϵ): threshold for discarding singular values during MPO compression. Controls the approximation
+     quality. We use ϵ = 2 × 10−3 for the results in this paper.
+
+   • Maximum bond dimension (χmax ): hard cap on the bond dimension after SVD compression. We use
+     χmax = 8192.
+
+   • Unswapping threshold (τ ): total number of MPO tensor elements at which absorption pauses and unswapping
+     is triggered. We use τ = 106 .
+
+   • Maximum unswapping iterations: cap on the number of outer-loop iterations in the unswapping procedure.
+     We use 20 iterations.
+                                                                                                               10
+
+   • Acceptance mode: strict (accept only dimension-reducing swaps) or relaxed (also accept dimension-preserving
+     swaps). We use strict mode.
+   • Side selection: adaptive (greedy selection based on MPO size) or fixed-frequency alternation. We use adaptive
+     selection.
+
+  The results reported in the main text were obtained with the hyperparameters listed above. We did not perform an
+extensive hyperparameter search; the values were chosen based on preliminary experiments and may not be optimal.
+A systematic study of the sensitivity of the method to these hyperparameters is left for future work.
+

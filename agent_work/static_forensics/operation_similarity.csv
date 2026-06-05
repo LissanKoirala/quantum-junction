@@ -1,0 +1,1177 @@
+file_a,difficulty_a,file_b,difficulty_b,op_5gram_cosine
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-16_2.qasm,very easy,0.42056749
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-24_3.qasm,very easy,0.49168699
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-28_4.qasm,very easy,0.27886565
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-32_5.qasm,very easy,0.51626443
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-36_6.qasm,very easy,0.29846285
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-40_7.qasm,very easy,0.27663064
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.38370849
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.47319542
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.46460850
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.40629960
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.27224468
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.47446649
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.48769240
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.28240082
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.52597850
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.35525208
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.46212310
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.41958332
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.48787505
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.46023737
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.42424243
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.50143628
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.51848214
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.45751313
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.48943920
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.40895877
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.34947999
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.40896694
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.39135930
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.44276435
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.47051262
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.40565621
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.50545557
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.43886143
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.40188599
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.40746485
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.27371680
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.39307465
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.42419514
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.35580549
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.24120028
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.18335830
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.23894431
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.25532319
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.25265994
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.25272046
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.23804833
+challenges/very easy/challenge-8_1.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.24485903
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-24_3.qasm,very easy,0.65618417
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-28_4.qasm,very easy,0.43575038
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-32_5.qasm,very easy,0.75797516
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-36_6.qasm,very easy,0.43774652
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-40_7.qasm,very easy,0.45688416
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.55588334
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.61220796
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.60509244
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.51440917
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.56361444
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.68212402
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.78523845
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.42874960
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.73180712
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.72393910
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.70441399
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.67846734
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.68100550
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.63648041
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.77216298
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.74000918
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.72546066
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.73638484
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.69467453
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.62087950
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.57889822
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.65484010
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.69217887
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.71830691
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.78014107
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.68109040
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.80248550
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.71587378
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.66726828
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.72276737
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.54363933
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.62882544
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.70578569
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.55203179
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.37361641
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.31781014
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.37860778
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.39155625
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.39053135
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.37963712
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.37787003
+challenges/very easy/challenge-16_2.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.39245390
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-28_4.qasm,very easy,0.61428520
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-32_5.qasm,very easy,0.76027820
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-36_6.qasm,very easy,0.59276579
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-40_7.qasm,very easy,0.60564466
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.64816275
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.66325324
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.72445730
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.53796931
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.58943152
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.73396903
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.79457739
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.62683742
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.81677802
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.76170311
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.78418410
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.75258692
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.72160595
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.72135165
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.77398928
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.84773852
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.81040656
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.79211887
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.76540857
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.61241362
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.59283327
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.71740992
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.72545644
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.77051156
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.79474032
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.74069591
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.83498075
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.76804487
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.73170327
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.75692325
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.55437831
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.68600241
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.75010640
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.61769901
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.55319236
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.40247208
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.53951145
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.55859418
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.55918063
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.55563283
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.54342828
+challenges/very easy/challenge-24_3.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.54749422
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very easy/challenge-32_5.qasm,very easy,0.52094312
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very easy/challenge-36_6.qasm,very easy,0.84275169
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very easy/challenge-40_7.qasm,very easy,0.62556805
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.49462970
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.59706198
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.62047531
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.44386176
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.42564682
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.51985151
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.62162297
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.89716424
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.59262660
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.54797540
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.61991058
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.55861751
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.53013120
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.52214741
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.52176567
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.57044938
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.57996943
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.57645275
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.58668264
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.50418340
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.49786767
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.54509358
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.54352985
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.55529449
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.56810602
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.51818563
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.61189541
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.58103780
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.57612950
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.57662703
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.43147423
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.56306968
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.56534704
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.51140818
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.90702374
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.86849592
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.89325902
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.90222150
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.90326406
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.89823360
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.90387693
+challenges/very easy/challenge-28_4.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.89091756
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very easy/challenge-36_6.qasm,very easy,0.50188632
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very easy/challenge-40_7.qasm,very easy,0.55429667
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.61275906
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.71811030
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.72407257
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.49301395
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.68855834
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.78780597
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.81643837
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.52199727
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.82756933
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.77433568
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.85199355
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.76443447
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.75292490
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.78609282
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.88446672
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.85080981
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.76897938
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.89021897
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.84443026
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.76115057
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.77477049
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.82434952
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.83546431
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.83255680
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.84434150
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.81853360
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.87533494
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.83998389
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.82485676
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.84233140
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.71622753
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.80678064
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.85030006
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.75600849
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.47322461
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.38335348
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.47437011
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.47517637
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.47720411
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.48019987
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.46523778
+challenges/very easy/challenge-32_5.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.47880039
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very easy/challenge-40_7.qasm,very easy,0.53264583
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.51856921
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.52001366
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.57860314
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.39240918
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.37063648
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.46599515
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.55947566
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.78793347
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.54567506
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.49830698
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.55304333
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.52515374
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.51461217
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.49048658
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.51633077
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.53477444
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.52530570
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.55342139
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.55812197
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.46501529
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.42305031
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.48140889
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.50359288
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.48616431
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.52779232
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.47187982
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.56123257
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.52458562
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.51856972
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.51894080
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.36169713
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.48940368
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.50356452
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.42858450
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.81568833
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.78309645
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.80140850
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.79798840
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.79737629
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.80424625
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.80085150
+challenges/very easy/challenge-36_6.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.79044274
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very easy/challenge-48_8.qasm,very easy,0.56776800
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.53245160
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.72638825
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.38167441
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.41079848
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.55549733
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.56425581
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.61458710
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.65356355
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.57129368
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.53461416
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.61067940
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.53332224
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.47486818
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.54214944
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.62756221
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.66834442
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.59323397
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.61388730
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.49862667
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.42832623
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.58473638
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.58976999
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.62146447
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.58226951
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.51578879
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.65345705
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.64306867
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.58833241
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.60745390
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.36891589
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.51765791
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.63440311
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.41641649
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.57542701
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.47069535
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.61338872
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.62301162
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.61443437
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.62955195
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.60540957
+challenges/very easy/challenge-40_7.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.62187050
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very easy/challenge-56_9.qasm,very easy,0.49685272
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.59715560
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.42872667
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.51670040
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.58785252
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.59134457
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.45202481
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.70095637
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.59008550
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.52049885
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.68465783
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.53750761
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.49985825
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.62362421
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.74990877
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.72537965
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.63211638
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.70537435
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.50388017
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.42751394
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.59876969
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.62655763
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.72996160
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.67908450
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.59373387
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.70198123
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.67074021
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.58619338
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.65261952
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.40843744
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.52074048
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.66592903
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.45201548
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.41747997
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39188033
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.46427014
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.47443281
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.46029837
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.47171828
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.45097295
+challenges/very easy/challenge-48_8.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.47869546
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very easy/challenge-64_10.qasm,very easy,0.75088887
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.42079353
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.51444688
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.62431472
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.66429890
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.58978304
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.66151216
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.60565154
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.74907961
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.58917441
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.65618751
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.59950407
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.62252191
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.63141256
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.60917802
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.70199906
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.61283971
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.65802925
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.64937219
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.64630068
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.64908479
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.62394142
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.61718057
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.61457183
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.71121400
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.65519509
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.68771442
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.66030425
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.54853193
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.65485138
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.65656063
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.64092536
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.52340914
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.43192943
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.52326363
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.53194863
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.53420693
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.53112198
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.52356343
+challenges/very easy/challenge-56_9.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.53299895
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-8_11.qasm,easy,0.53247457
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-16_12.qasm,easy,0.48660515
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-24_13.qasm,easy,0.68694718
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-32_14.qasm,easy,0.66613851
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-36_15.qasm,easy,0.59347519
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-40_16.qasm,easy,0.77726237
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-40_17.qasm,easy,0.64996800
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-40_18.qasm,easy,0.70115157
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-48_19.qasm,easy,0.67267127
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-48_20.qasm,easy,0.63011659
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-48_21.qasm,easy,0.57351750
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-56_22.qasm,easy,0.62825935
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-56_23.qasm,easy,0.74383037
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-56_24.qasm,easy,0.74578307
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-64_25.qasm,easy,0.71940750
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/easy/challenge-64_26.qasm,easy,0.66373429
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-8_27.qasm,moderate,0.59373719
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-16_28.qasm,moderate,0.55186209
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-24_29.qasm,moderate,0.68434286
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-32_30.qasm,moderate,0.70407793
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-48_31.qasm,moderate,0.70213146
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-48_32.qasm,moderate,0.67386130
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-56_33.qasm,moderate,0.61186505
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/moderate/challenge-64_34.qasm,moderate,0.75497777
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-40_35.qasm,hard,0.75566004
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-48_36.qasm,hard,0.69195502
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-48_37.qasm,hard,0.70516299
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-56_38.qasm,hard,0.48078939
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-56_39.qasm,hard,0.60561913
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-64_40.qasm,hard,0.72947543
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/hard/challenge-64_41.qasm,hard,0.54230448
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.53654762
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.43131678
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.56486898
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.57554699
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.56917835
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.57981630
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.56108279
+challenges/very easy/challenge-64_10.qasm,very easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.57592187
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-16_12.qasm,easy,0.34542275
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-24_13.qasm,easy,0.57533013
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-32_14.qasm,easy,0.60789352
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-36_15.qasm,easy,0.41496783
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-40_16.qasm,easy,0.58370132
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-40_17.qasm,easy,0.60890458
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.57018425
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.40271060
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.43673620
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.46443683
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.49388782
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.58932267
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.54544934
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.49655862
+challenges/easy/challenge-8_11.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.44685167
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.38580937
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.39095990
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.47210208
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.49792572
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.53155409
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.54842479
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.47068205
+challenges/easy/challenge-8_11.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.57456068
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.54218444
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.45616439
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.51730876
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.34871254
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.45193869
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.51639060
+challenges/easy/challenge-8_11.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.36204592
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.35051767
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.26791000
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.32718271
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.35595524
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.34709821
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.34142760
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.33408075
+challenges/easy/challenge-8_11.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.33950364
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-24_13.qasm,easy,0.59286438
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-32_14.qasm,easy,0.70858138
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-36_15.qasm,easy,0.44278861
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-40_16.qasm,easy,0.61612405
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-40_17.qasm,easy,0.71646048
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.73900175
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.70154425
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.65510819
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.72435338
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.76649934
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.69164839
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.61543659
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.77178119
+challenges/easy/challenge-16_12.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.73686183
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.61290119
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.70119627
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.71217626
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.69909504
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.77256149
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.74134504
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.77136889
+challenges/easy/challenge-16_12.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.69431165
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.73281598
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.78134694
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.77151187
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.73066099
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.76786644
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.74616096
+challenges/easy/challenge-16_12.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.72885060
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.37588316
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.30552747
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.35336824
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.36026452
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.36852368
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.35651182
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.35911735
+challenges/easy/challenge-16_12.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.36186455
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-32_14.qasm,easy,0.78175446
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-36_15.qasm,easy,0.53989815
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-40_16.qasm,easy,0.81750268
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-40_17.qasm,easy,0.80305565
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.78304330
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.75416569
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.71579267
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.77172567
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.77106765
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.84106165
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.81203081
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.81197701
+challenges/easy/challenge-24_13.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.77243455
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.56468981
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.62185731
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.70070318
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.70146298
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.77594558
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.80154983
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.77287289
+challenges/easy/challenge-24_13.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.82368673
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.75411639
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.70335245
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.76519417
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.57748891
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.65542341
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.71778337
+challenges/easy/challenge-24_13.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.59119941
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.48630527
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.36025040
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.48670277
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.49508186
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.49161930
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.49624505
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.47934538
+challenges/easy/challenge-24_13.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.49039306
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-36_15.qasm,easy,0.65373674
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-40_16.qasm,easy,0.81213204
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-40_17.qasm,easy,0.84782076
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.87711174
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.80220635
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.84638914
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.84739327
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.86424699
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.81832276
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.75613192
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.88389326
+challenges/easy/challenge-32_14.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.81931343
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.69031373
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.74774671
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.75892997
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.77542294
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.82514566
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.86212276
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.84097730
+challenges/easy/challenge-32_14.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.88922526
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.80809246
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.81970860
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.82181183
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.69821990
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.80483449
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.78146360
+challenges/easy/challenge-32_14.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.75109579
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.57991394
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.45013226
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.55160740
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.56197718
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.57139164
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.55577865
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.55276136
+challenges/easy/challenge-32_14.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.55273804
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-40_16.qasm,easy,0.57825288
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-40_17.qasm,easy,0.54136391
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.66063787
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.56693811
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.57924337
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.58570183
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.55163822
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.55545678
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.55154536
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.58142204
+challenges/easy/challenge-36_15.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.57173005
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.49044833
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.49733154
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.48487045
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.49792025
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.51914702
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.56595958
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.54346257
+challenges/easy/challenge-36_15.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.60497996
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.53780108
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.56138684
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.56756271
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.42701637
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.54281248
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.53364827
+challenges/easy/challenge-36_15.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.51353416
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.92760016
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.83375690
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.91918533
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.91858913
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.92622435
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.91958504
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.92006503
+challenges/easy/challenge-36_15.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.91366220
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-40_17.qasm,easy,0.81751064
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.79019834
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.82009100
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.71536181
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.75886810
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.81513672
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.89400552
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.87717347
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.84366899
+challenges/easy/challenge-40_16.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.83495682
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.73364771
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.69355887
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.82560202
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.84226275
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.85961670
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.84539654
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.77233877
+challenges/easy/challenge-40_16.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.89085993
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.88501554
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.83062339
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.84870127
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.62525104
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.74146885
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.86961099
+challenges/easy/challenge-40_16.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.65524617
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.53435222
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.40963919
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.53939369
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.54648397
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.54310568
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.54016050
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.52945586
+challenges/easy/challenge-40_16.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.54329439
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-40_18.qasm,easy,0.82928551
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.78477059
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.74313952
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.80684807
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.84031281
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.81498313
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.76970998
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.87054735
+challenges/easy/challenge-40_17.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.76444605
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.57654444
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.68611317
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.76053906
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.76596752
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.83557423
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.84348113
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.87292991
+challenges/easy/challenge-40_17.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.87854870
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.81813136
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.79382764
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.82550817
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.68050283
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.77217579
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.79021566
+challenges/easy/challenge-40_17.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.68056618
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.48423165
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.36458716
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.46780702
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.48056795
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.48052198
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.47433996
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.46866272
+challenges/easy/challenge-40_17.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.47177442
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-48_19.qasm,easy,0.76357381
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.80730232
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.86948905
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.87066269
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.80989497
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.73184695
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.89686914
+challenges/easy/challenge-40_18.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.79844563
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.75197231
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.84365425
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.80613632
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.80847267
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.79979757
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.82704425
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.85713829
+challenges/easy/challenge-40_18.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.86459243
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.81911359
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.87749176
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.85254378
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.78779748
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.87712376
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.82574904
+challenges/easy/challenge-40_18.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.84385820
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.57611053
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.44163549
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.53320261
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.54454302
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.55457659
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.54113980
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.54071686
+challenges/easy/challenge-40_18.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.53994591
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-48_20.qasm,easy,0.82927561
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.81428494
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.82509141
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.85666206
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.85024400
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.84012121
+challenges/easy/challenge-48_19.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.89259216
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.62245110
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.61012177
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.69617701
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.72348938
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.83556468
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.89841210
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.84838345
+challenges/easy/challenge-48_19.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.86369703
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.80525999
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.76178213
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.79702949
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.60591491
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.68517645
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.76250441
+challenges/easy/challenge-48_19.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.60754138
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.50530799
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.40136528
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.51733701
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.52422424
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.52457020
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.52412402
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.51406167
+challenges/easy/challenge-48_19.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.52251616
+challenges/easy/challenge-48_20.qasm,easy,challenges/easy/challenge-48_21.qasm,easy,0.84660238
+challenges/easy/challenge-48_20.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.80550750
+challenges/easy/challenge-48_20.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.74039769
+challenges/easy/challenge-48_20.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.70055012
+challenges/easy/challenge-48_20.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.84803821
+challenges/easy/challenge-48_20.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.79743063
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.63031591
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.66581929
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.63217035
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.65165586
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.72318760
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.81886954
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.80236499
+challenges/easy/challenge-48_20.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.81884392
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.69298786
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.73765346
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.70120977
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.58978316
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.70200004
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.64516195
+challenges/easy/challenge-48_20.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.65105422
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.49394896
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.37427457
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.47675520
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.48288623
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.48859870
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.47729393
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.47422129
+challenges/easy/challenge-48_20.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.47199459
+challenges/easy/challenge-48_21.qasm,easy,challenges/easy/challenge-56_22.qasm,easy,0.84256677
+challenges/easy/challenge-48_21.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.77498414
+challenges/easy/challenge-48_21.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.71954864
+challenges/easy/challenge-48_21.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.86544968
+challenges/easy/challenge-48_21.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.78437747
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.59239941
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.71587856
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.66567937
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.68369950
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.74760046
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.85514724
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.89988000
+challenges/easy/challenge-48_21.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.82056577
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.72679257
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.76306260
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.76995219
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.68040404
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.73832659
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.70169584
+challenges/easy/challenge-48_21.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.69244584
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.50673953
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.38390440
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.48647245
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.49239719
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.49533172
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.48876833
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.48497678
+challenges/easy/challenge-48_21.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.48455631
+challenges/easy/challenge-56_22.qasm,easy,challenges/easy/challenge-56_23.qasm,easy,0.85627799
+challenges/easy/challenge-56_22.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.78397368
+challenges/easy/challenge-56_22.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.91729282
+challenges/easy/challenge-56_22.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.86121202
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.72103309
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.77081282
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.80695400
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.83119661
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.87322981
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.88004919
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.88767949
+challenges/easy/challenge-56_22.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.88383306
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.84933749
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.85579003
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.86926354
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.76162801
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.82385261
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.85418961
+challenges/easy/challenge-56_22.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.76860679
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.47874800
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.38985689
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.47220369
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.47971186
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.48171878
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.47623823
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.46954772
+challenges/easy/challenge-56_22.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.48073167
+challenges/easy/challenge-56_23.qasm,easy,challenges/easy/challenge-56_24.qasm,easy,0.92117794
+challenges/easy/challenge-56_23.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.85585069
+challenges/easy/challenge-56_23.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.89279194
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.68491018
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.66118801
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.81564453
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.82895425
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.90889111
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.89448462
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.81244844
+challenges/easy/challenge-56_23.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.88271172
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.88971706
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.80578568
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.85988694
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.65308129
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.74554293
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.85736213
+challenges/easy/challenge-56_23.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.65258469
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.50565088
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39265834
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.50872482
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.52037707
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.51719409
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.52011471
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.50362601
+challenges/easy/challenge-56_23.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.51850145
+challenges/easy/challenge-56_24.qasm,easy,challenges/easy/challenge-64_25.qasm,easy,0.79691029
+challenges/easy/challenge-56_24.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.86516353
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.64735844
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.58476619
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.75143843
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.79161551
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.86368394
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.89489059
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.75279171
+challenges/easy/challenge-56_24.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.86981500
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.87226833
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.74753936
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.84354245
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.56318714
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.67034394
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.81542424
+challenges/easy/challenge-56_24.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.55849810
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.49393692
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39015076
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.50885009
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.52574153
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.51946448
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.52426093
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.50687719
+challenges/easy/challenge-56_24.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.51893758
+challenges/easy/challenge-64_25.qasm,easy,challenges/easy/challenge-64_26.qasm,easy,0.85971394
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.71918182
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.79393110
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.82710880
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.84076411
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.89409773
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.88428084
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.90908434
+challenges/easy/challenge-64_25.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.92343343
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.86757554
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.88792051
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.87125691
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.74883373
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.84725271
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.87062237
+challenges/easy/challenge-64_25.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.77794190
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.52577527
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.40755085
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.50538168
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.51003217
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.51529631
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.51008214
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.50414464
+challenges/easy/challenge-64_25.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.50575270
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-8_27.qasm,moderate,0.75217522
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-16_28.qasm,moderate,0.72264086
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-24_29.qasm,moderate,0.82343636
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-32_30.qasm,moderate,0.83148423
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-48_31.qasm,moderate,0.88647551
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-48_32.qasm,moderate,0.90561028
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-56_33.qasm,moderate,0.80204836
+challenges/easy/challenge-64_26.qasm,easy,challenges/moderate/challenge-64_34.qasm,moderate,0.87103878
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-40_35.qasm,hard,0.88400678
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-48_36.qasm,hard,0.83747653
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-48_37.qasm,hard,0.86371462
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-56_38.qasm,hard,0.69147887
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-56_39.qasm,hard,0.79029323
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-64_40.qasm,hard,0.84192888
+challenges/easy/challenge-64_26.qasm,easy,challenges/hard/challenge-64_41.qasm,hard,0.71151781
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-48_42.qasm,very_hard,0.52833939
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-56_43.qasm,very_hard,0.42282446
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-64_44.qasm,very_hard,0.53351074
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-72_45.qasm,very_hard,0.54134370
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-80_46.qasm,very_hard,0.54195849
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-88_47.qasm,very_hard,0.54311896
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-96_48.qasm,very_hard,0.53084588
+challenges/easy/challenge-64_26.qasm,easy,challenges/very_hard/challenge-104_49.qasm,very_hard,0.53985096
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-16_28.qasm,moderate,0.81743228
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-24_29.qasm,moderate,0.83396199
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-32_30.qasm,moderate,0.84376844
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-48_31.qasm,moderate,0.70339488
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-48_32.qasm,moderate,0.67342418
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-56_33.qasm,moderate,0.59114891
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.73468044
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.80818049
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.86087037
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.78008134
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.71986848
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.80404714
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.80932423
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.77932160
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.43542612
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.35474265
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.40606709
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.41064220
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.42023020
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.40508974
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.40686546
+challenges/moderate/challenge-8_27.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.41234614
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/moderate/challenge-24_29.qasm,moderate,0.88156151
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/moderate/challenge-32_30.qasm,moderate,0.87025581
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/moderate/challenge-48_31.qasm,moderate,0.74325329
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/moderate/challenge-48_32.qasm,moderate,0.69045543
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/moderate/challenge-56_33.qasm,moderate,0.70328096
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.72887650
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.81446669
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.91594305
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.85830782
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.92397420
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.94448362
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.84227105
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.95934857
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.45676371
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.35900150
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.40765294
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.41072785
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.42232503
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.40478663
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.41214604
+challenges/moderate/challenge-16_28.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.40763523
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/moderate/challenge-32_30.qasm,moderate,0.95513086
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/moderate/challenge-48_31.qasm,moderate,0.87674808
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/moderate/challenge-48_32.qasm,moderate,0.75860600
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/moderate/challenge-56_33.qasm,moderate,0.70798628
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.80930643
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.93285796
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.94025782
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.91750750
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.84587340
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.92345990
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.94211177
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.86280127
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.46764812
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.36719874
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.44628912
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.45354334
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.45763210
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.45103424
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.44693404
+challenges/moderate/challenge-24_29.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.45406040
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/moderate/challenge-48_31.qasm,moderate,0.87409920
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/moderate/challenge-48_32.qasm,moderate,0.79874622
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/moderate/challenge-56_33.qasm,moderate,0.71777213
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.82763320
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.95621445
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.92878936
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.92350248
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.83675464
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.90516441
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.94793895
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.84233957
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.47007930
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.37621174
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.45598601
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.46525240
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.46460164
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.46328593
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.45431680
+challenges/moderate/challenge-32_30.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.46536032
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/moderate/challenge-48_32.qasm,moderate,0.86959520
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/moderate/challenge-56_33.qasm,moderate,0.83957579
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.88696613
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.91440598
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.87801517
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.91719923
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.75973634
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.83531824
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.91538389
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.74719485
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.47192046
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.38098746
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.46886757
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.47886969
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.48013785
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.47687737
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.46749588
+challenges/moderate/challenge-48_31.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.47606520
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/moderate/challenge-56_33.qasm,moderate,0.85809491
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.91330416
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.85458798
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.78896011
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.85489760
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.65808374
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.74773772
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.81456335
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.66176945
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.48974655
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39065012
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.49359286
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.50783726
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.50483275
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.50389722
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.49220421
+challenges/moderate/challenge-48_32.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.50147624
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/moderate/challenge-64_34.qasm,moderate,0.86719484
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.76939691
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.78001458
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.82488070
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.70813400
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.76652695
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.77329751
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.70486363
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.46973050
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.36861699
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.45938173
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.46400960
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.46836237
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.46498258
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.45990831
+challenges/moderate/challenge-56_33.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.45848959
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-40_35.qasm,hard,0.88391241
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-48_36.qasm,hard,0.84353707
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-48_37.qasm,hard,0.87406291
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-56_38.qasm,hard,0.65924429
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-56_39.qasm,hard,0.78691628
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-64_40.qasm,hard,0.86343358
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/hard/challenge-64_41.qasm,hard,0.69774462
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-48_42.qasm,very_hard,0.53003108
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-56_43.qasm,very_hard,0.42526313
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-64_44.qasm,very_hard,0.52961192
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-72_45.qasm,very_hard,0.53821189
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-80_46.qasm,very_hard,0.53978419
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-88_47.qasm,very_hard,0.53343826
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-96_48.qasm,very_hard,0.52662680
+challenges/moderate/challenge-64_34.qasm,moderate,challenges/very_hard/challenge-104_49.qasm,very_hard,0.53440763
+challenges/hard/challenge-40_35.qasm,hard,challenges/hard/challenge-48_36.qasm,hard,0.92121247
+challenges/hard/challenge-40_35.qasm,hard,challenges/hard/challenge-48_37.qasm,hard,0.94644007
+challenges/hard/challenge-40_35.qasm,hard,challenges/hard/challenge-56_38.qasm,hard,0.79500711
+challenges/hard/challenge-40_35.qasm,hard,challenges/hard/challenge-56_39.qasm,hard,0.87048332
+challenges/hard/challenge-40_35.qasm,hard,challenges/hard/challenge-64_40.qasm,hard,0.95718957
+challenges/hard/challenge-40_35.qasm,hard,challenges/hard/challenge-64_41.qasm,hard,0.78685428
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.49453253
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39019436
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.49027042
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.50342204
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.49972211
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.49860784
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.48953200
+challenges/hard/challenge-40_35.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.50247410
+challenges/hard/challenge-48_36.qasm,hard,challenges/hard/challenge-48_37.qasm,hard,0.92349049
+challenges/hard/challenge-48_36.qasm,hard,challenges/hard/challenge-56_38.qasm,hard,0.87530904
+challenges/hard/challenge-48_36.qasm,hard,challenges/hard/challenge-56_39.qasm,hard,0.94648081
+challenges/hard/challenge-48_36.qasm,hard,challenges/hard/challenge-64_40.qasm,hard,0.93548592
+challenges/hard/challenge-48_36.qasm,hard,challenges/hard/challenge-64_41.qasm,hard,0.90404406
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.51614625
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.40277563
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.48001723
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.48647600
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.49449546
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.48127390
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.48413593
+challenges/hard/challenge-48_36.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.48266242
+challenges/hard/challenge-48_37.qasm,hard,challenges/hard/challenge-56_38.qasm,hard,0.87051523
+challenges/hard/challenge-48_37.qasm,hard,challenges/hard/challenge-56_39.qasm,hard,0.90055777
+challenges/hard/challenge-48_37.qasm,hard,challenges/hard/challenge-64_40.qasm,hard,0.95309129
+challenges/hard/challenge-48_37.qasm,hard,challenges/hard/challenge-64_41.qasm,hard,0.84540276
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.50652605
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39529852
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.49203844
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.50384163
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.50456773
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.50088692
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.49113565
+challenges/hard/challenge-48_37.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.49984171
+challenges/hard/challenge-56_38.qasm,hard,challenges/hard/challenge-56_39.qasm,hard,0.92225629
+challenges/hard/challenge-56_38.qasm,hard,challenges/hard/challenge-64_40.qasm,hard,0.83087919
+challenges/hard/challenge-56_38.qasm,hard,challenges/hard/challenge-64_41.qasm,hard,0.94055390
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.39231351
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.30640642
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.34306634
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.35280577
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.36039555
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.34593771
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.35014262
+challenges/hard/challenge-56_38.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.34657839
+challenges/hard/challenge-56_39.qasm,hard,challenges/hard/challenge-64_40.qasm,hard,0.89416515
+challenges/hard/challenge-56_39.qasm,hard,challenges/hard/challenge-64_41.qasm,hard,0.95084761
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.51325806
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.40439764
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.46587395
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.47715327
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.48568732
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.47133372
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.47469216
+challenges/hard/challenge-56_39.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.47092515
+challenges/hard/challenge-64_40.qasm,hard,challenges/hard/challenge-64_41.qasm,hard,0.83073996
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.48804410
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.39159051
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.47624044
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.48516958
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.48810622
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.48353142
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.47549818
+challenges/hard/challenge-64_40.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.48838766
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-48_42.qasm,very_hard,0.47725013
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.37857144
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.42221018
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.43239410
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.44342454
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.42521227
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.43125592
+challenges/hard/challenge-64_41.qasm,hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.42633339
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-56_43.qasm,very_hard,0.91279178
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.97434325
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.97227744
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.97855630
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.97105795
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.97920093
+challenges/very_hard/challenge-48_42.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.96055310
+challenges/very_hard/challenge-56_43.qasm,very_hard,challenges/very_hard/challenge-64_44.qasm,very_hard,0.91985956
+challenges/very_hard/challenge-56_43.qasm,very_hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.91456250
+challenges/very_hard/challenge-56_43.qasm,very_hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.91149095
+challenges/very_hard/challenge-56_43.qasm,very_hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.90747899
+challenges/very_hard/challenge-56_43.qasm,very_hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.92314473
+challenges/very_hard/challenge-56_43.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.91331137
+challenges/very_hard/challenge-64_44.qasm,very_hard,challenges/very_hard/challenge-72_45.qasm,very_hard,0.99399096
+challenges/very_hard/challenge-64_44.qasm,very_hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.99478000
+challenges/very_hard/challenge-64_44.qasm,very_hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.99513073
+challenges/very_hard/challenge-64_44.qasm,very_hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.99504917
+challenges/very_hard/challenge-64_44.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.99277988
+challenges/very_hard/challenge-72_45.qasm,very_hard,challenges/very_hard/challenge-80_46.qasm,very_hard,0.99551305
+challenges/very_hard/challenge-72_45.qasm,very_hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.99541851
+challenges/very_hard/challenge-72_45.qasm,very_hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.99498077
+challenges/very_hard/challenge-72_45.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.99396237
+challenges/very_hard/challenge-80_46.qasm,very_hard,challenges/very_hard/challenge-88_47.qasm,very_hard,0.99533735
+challenges/very_hard/challenge-80_46.qasm,very_hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.99618471
+challenges/very_hard/challenge-80_46.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.99246283
+challenges/very_hard/challenge-88_47.qasm,very_hard,challenges/very_hard/challenge-96_48.qasm,very_hard,0.99500260
+challenges/very_hard/challenge-88_47.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.99383009
+challenges/very_hard/challenge-96_48.qasm,very_hard,challenges/very_hard/challenge-104_49.qasm,very_hard,0.99120191

@@ -1,0 +1,843 @@
+                                                Simulating and Sampling from Quantum Circuits with 2D Tensor Networks
+                                                                               Manuel S. Rudolph1, 2, 3, ∗ and Joseph Tindall3, †
+                                                        1
+                                                         Institute of Physics, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland
+                                                                  2
+                                                                    Centre for Quantum Science and Engineering, EPFL, Lausanne, Switzerland
+                                                      3
+                                                        Center for Computational Quantum Physics, Flatiron Institute, New York, New York 10010, USA
+                                                                                           (Dated: September 16, 2025)
+                                                          Classical simulations of quantum circuits play a vital role in the development of quantum com-
+                                                       puters and for taking the temperature of the field. Here, we classically simulate various physically-
+                                                       motivated circuits using 2D tensor network ansätze for the many-body wavefunction which match
+                                                       the geometry of the underlying quantum processor. We then employ a generalized version of the
+                                                       boundary Matrix Product State contraction algorithm to controllably generate samples from the
+                                                       resultant tensor network states. Our approach allows us to systematically converge both the quality
+                                                       of the final state and the samples drawn from it to the true distribution defined by the circuit, with
+                                                       GPU hardware providing us with significant speedups over CPU hardware. With these methods,
+                                                       we simulate the largest local unitary Jastrow ansatz circuit taken from recent IBM experiments
+arXiv:2507.11424v2 [quant-ph] 14 Sep 2025
+
+
+
+
+                                                       to numerical precision. We also study a domain-wall quench in a two-dimensional discrete-time
+                                                       Heisenberg model on large heavy-hex and rotated square lattices, which reflect IBM’s and Google’s
+                                                       latest quantum processors respectively. We observe a rapid buildup of complex loop correlations on
+                                                       the Google Willow geometry which significantly impact the local properties of the system. Mean-
+                                                       while, we find loop correlations build up extremely slowly on heavy-hex processors and have almost
+                                                       negligible impact on the local properties of the system, even at large circuit depths. Our results
+                                                       underscore the role the geometry of the quantum processor plays in classical simulability.
+
+
+                                                             I.   INTRODUCTION                              of the MPS growing linearly with the height of the 2D
+                                                                                                            system.
+                                               Quantum circuits realize the non-equilibrium evo-               A more natural ansatz for the wavefunction of such
+                                            lution of a many-body quantum system. Most famil-               systems is a tensor network whose geometry reflects
+                                            iarly, they are the “programs” that quantum comput-             that of the underlying processor and the interactions
+                                            ers execute and, ideally, the measurement outcomes              encoded in the quantum circuit [13]. Quantum states
+                                            from such circuits provides the solution to some clas-          generated from fixed-depth quantum circuits on the
+                                            sically intractable, but useful problem.                        aforementioned 2D geometries are then guaranteed to
+                                               Arguably the most prominent classical approach               be representable as a tensor network of fixed bond
+                                            for simulating such circuits beyond the regime of ex-           dimension with memory requirements that are only
+                                            act diagonalisation is with the Matrix Product State            linear in the number of qubits. The cost of extracting
+                                            (MPS) [1–4], a one-dimensional flavor of tensor net-            information from such networks and the dependence
+                                            work (TN). By tensor network, we mean a general                 of the bond dimension with circuit depth is where
+                                            graph whose vertices consist of low-rank tensors and            the complexity of the problem presents itself. De-
+                                            whose edges indicate along which tensor axes the                spite their appealing nature as an ansatz, there is a
+                                            wavefunction is factorized and entangled is mediated            relatively small body of work demonstrating the use
+                                            (see Fig. 1). It is straightforward and efficient to ex-        of 2D tensor networks for simulating quantum cir-
+                                            tract information from states encoded as an MPS —               cuits and benchmarking them against experimental
+                                            either via direct computation of the desired observable         data [11, 13–15]. Moreover, almost nothing is un-
+                                            or by sampling bitstrings x perfectly from the distri-          derstood about how efficiently and accurately such
+                                            bution of amplitudes p(x) ∼ |⟨x|ψ⟩|2 it encodes [5, 6].         networks can be sampled after application of a quan-
+                                               While MPS are extraordinarily effective for 1D and           tum circuit, a key component of many quantum algo-
+                                            quasi-1D problems, many setups of interest follow               rithms.
+                                            more complex, higher-dimensional geometries. Promi-
+                                            nently, quantum computers — including the latest                   Here we demonstrate the simulation and sampling
+                                            superconducting quantum processors — typically in-              of quantum circuits with 2D tensor networks in a con-
+                                            volve qubits arranged in a planar lattice structure             trollable and verifiable manner. Our corresponding
+                                            and with two-qubit gates applicable between neigh-              open-source software [16] can be used to perform ro-
+                                            boring qubits [7–9]. As a result, even quantum states           bust tensor network simulations of circuits realized
+                                            generated from fixed-depth quantum circuits on these            over any planar quantum processor, with GPU sup-
+                                            architectures require resources growing exponentially           port enabling these samples and expectation values to
+                                            with the number of qubits to capture with an MPS                be obtained with unprecedented speed. We consider
+                                            ansatz [8, 10, 11]. This is because of the effective            two different circuits: i) the local unitary cluster Jas-
+                                            mapping of a 2D state to a 1D ansatz, which results             trow ansatz (LUCJ) circuits employed in Ref. [12] and
+                                            in the von-Neumann entanglement entropy on a bond               simulated on cutouts of IBM’s latest processors with
+                                                                                                            52 and 72 qubits, and ii) the discrete-time dynamics
+                                                                                                            of a domain wall quench of a 2D Heisenberg model on
+                                                                                                            both IBM’s heavy-hex architecture with 164 qubits
+                                            ∗ manuel.rudolph@epfl.ch
+                                                                                                            and the latest Willow processor by Google with 105
+                                            † jtindall@flatironinstitute.org
+                                                                                                            qubits [17].
+                                                                                                                      2
+
+
+
+
+Figure 1. Our tensor network topologies and their simulation errors. a) The tensor network states (TNS) for
+simulating the N2 and 4FE-4S LUCJ circuits according to Ref. [12]. Vertex colors indicate quantum sub-registers which
+encode the different spin states for the considered electronic system. b) Approximate infidelity (c.f. 1 − f following
+Eq. (2)) of the final TNS as a function of the maximum bond dimension χ in our simulations. We also sketch the circuit
+structures, which consist of single-site gates and XX+YY rotations within the quantum registers, and CP gates between
+them. c) The TNS used for simulating discrete-time dynamics under the Heisenberg Hamiltonian on the heavy-hex
+or Willow processor topologies. Vertex colors indicate the regions of the model initialized in the 0- or the 1-state. d)
+Approximate infidelity of the final TNS after simulating 20 layers on the heavy-hex topology, and 7 or 15 on the Willow
+topology. Further details of the simulations can be found in Sec. III.
+
+
+   In all cases, we demonstrate how, for fixed                networks are a compressed format for the coefficients
+depth, with systematically increasing computational           of the many-body wavefunction, and consist of a net-
+resources we can obtain a tensor network represen-            work of tensors — one for each qubit — connected by
+tation of the state of the system with increasing fi-         virtual indices which mediate the entanglement be-
+delity and draw samples whose distribution converges          tween the qubits in the system. The structure of the
+to that exactly realized by the underlying circuit. Cru-      tensor network is chosen to reflect the geometry of the
+cially, we identify efficiently computable metrics which      underlying quantum device upon which such a circuit
+attest to the quality of the state, expectation values,       might be implemented: with examples shown in Fig. 1
+and bitstrings drawn from it. In the case of the LUCJ         including heavy-hex lattices mirroring IBM’s current
+circuits employed in Ref. [12], we find that the biggest      quantum devices and Google’s latest Willow chip [17].
+system can be simulated and sampled to numerical              Whilst our focus here is on qubit-systems and one
+precision with our 2D tensor network approach. In             or two-qubit gates, extensions to more general qudit
+general, we observe how the tree-like nature of the           setups are straightforward and non-nearest-neighbor
+heavy-hex processors enables rapid and accurate ten-          gates could be achieved via using either SWAP gates
+sor network simulations of deep quantum circuits with         or encoding the circuit in more general, long-range
+strikingly low levels of loop correlations. Meanwhile,        tensor network operators.
+the denser grid structure of the Willow chip can give            The memory footprint of a tensor network can be
+rise to challenging loop correlations even at relatively      determined simply from the size of the individual ten-
+short circuit depths. Our results shed important light        sors and scales as O(Nqubits χz ), where Nqubits is the
+on the role of geometry in the classical simulability         number of qubits (and thus tensors in the network), χ
+and physical nature of states realized by quantum cir-        is the maximum bond dimension of any of the virtual
+cuits.                                                        indices in the network and z is the coordination num-
+                                                              ber, i.e, the maximum number of virtual indices that
+                                                              any of the tensors possess (we have z = 3 for heavy-
+                   II.   METHODS                              hex geometries and z = 4 for the Willow processor
+                                                              geometry).
+            Quantum Circuit Simulation                           One-qubit gates can be applied exactly to the tensor
+                                                              network in O(χz ) time without any truncation and do
+  We use a tensor network ansatz for the approxi-             not alter the bond dimension. Meanwhile, two-qubit
+mate state |ψm ⟩ of the many-body function following
+                                                Qm            gates Gi are applied exactly to the state |ψi−1 ⟩ and
+the application of a quantum circuit U = i=1 Gi               then the resulting combined tensor (consisting of the
+consisting of a sequence of one- and two-qubit gates          two tensors where the gate was applied and the gate it-
+G1 , G2 . . . Gm to an initial state |ψ0 ⟩. These tensor      self) is truncated, via a Singular Value Decomposition
+                                                                                                                              3
+
+(SVD), to a maximum dimension χ ≤ χ′ , where χ′ is              decomposition and applying the two-qubit gates ac-
+the exact bond dimension needed to keep all non-zero            cording to an edge coloring of the underlying graph
+singular values. The procedure has time complexity              [23]. That is, we group the gates within one Trotter
+O(χz+1 ), and yields an approximate tensor network              step into series of non-overlapping gates and re-run
+representation |ψi ⟩ ≈ Gi |ψi−1 ⟩ of the state with equal-      the BP algorithm between application of each series.
+ity occurring when χ = χ′ .                                     As a result, the number of BP updates required dur-
+   In this work, we apply two-qubit gates via a proce-          ing the circuit is independent of the system size and
+dure that is mathematically equivalent to performing            the overall time-complexity of our circuit simulation
+the well-known simple update procedure from within              scales as O(Nqubits χz+1 L) where L is the number of
+the Vidal gauge [18–20]. The SVD is performed condi-            (Trotter) steps.
+tioned on a factorizable representation of the contrac-
+tion of the network ⟨ψ|ψ⟩ surrounding the given two-
+qubits. This factorization takes the form of an outer           The Boundary Matrix Product State Method for
+product of “message tensors”, which can be obtained                       Planar Tensor Networks
+via the belief propagation (BP) algorithm [21, 22] in
+O(Nqubits χz+1 ) time (see Appendix for an illustra-               In this work, in order to extract information (via
+tion). The underlying approximation of this scheme,             direct measurement of observables or via sampling)
+the BP approximation [22], is exact when the virtual            from the tensor network |ψ⟩ following application of
+indices of the tensor network do not form loops. Even           a circuit, we will need to contract both the norm net-
+in the presence of loops, however, the true gate fidelity       work ⟨ψ|ψ⟩ and amplitude networks ⟨x|ψ⟩, where ⟨x|
+|⟨ψi+1 |Gi |ψ⟩|2 is often well correlated with the sum of       is a tensor network of bond dimension χ = 1 encoding
+the square of the singular values σi discarded [14], al-        a given bitstring x.
+lowing us to define an approximate gate error                      The BP algorithm can readily be used for fast,
+                  ′
+                                                                approximate contraction of these networks. In fact,
+                 χ
+                 X                                              we can introduce an approximate but efficiently com-
+         ϵi =           σj2 ≈ 1 − |⟨ψi |Gi |ψi−1 ⟩|2 ,    (1)   putable BP error metric which is obtainable from
+                j=χ+1
+                                                                the spectrum of eigenvalues of the transfer matrices
+                                                                formed using primitive loops (the set of Nl loops of
+where we have, for brevity, assumed the tensors are             smallest size) of the tensor network. Specifically se-
+                        Pχ′
+normalized such that j=1 σj2 = 1. While in the pres-            lecting a loop, inserting BP messages on the boundary
+ence of loops this is an approximation (it is exact when        and cutting open the virtual indices on a selected edge
+there are no loops [2]), increasing χ is still a reliable       of the loop l yields a matrix with eigenvalues λl1 , λl2 , . . .
+parameter which, in almost all practical cases, lowers          sorted in decreasing order by their absolute value (see
+ϵi and improves the accuracy of the tensor network              Fig. 9 for an illustration). We can then define errors
+representation. Moreover, there is the crucial guaran-          representing a first-order approximation to the true
+tee that when the bond dimension is not truncated,              BP error [24] in the network as
+i.e., ϵi = 0, the tensor network is an exact representa-
+tion of the many-body state, i.e. |ψi ⟩ = Gi |ψi−1 ⟩. It                                 1 Xl   N
+is useful to define the fidelity per gate fi = 1 − ϵi , and                           ε=      εl                            (3)
+from this an approximation for the fidelity of the final                                 Nl
+                                                                                               l=1
+state after application of the whole circuit                                                   |λl |
+                                                                                     εl = 1 − P 1 l ,                       (4)
+                 m
+                 Y                   m
+                                     Y                                                          i |λi |
+            f=         fi ≈ |⟨ψm |         Gi |ψ0 ⟩|2 .   (2)
+                 i=1                 i=1
+                                                                where ε is averaged over the per-loop BP errors εl .
+                                                                When calculated for ⟨ψ|ψ⟩, we have 0 ≤ ϵ ≤ 1− χ12 and
+with the corresponding infidelity 1 − f . Whilst this           this quantity is a very helpful indicator of the “loop
+quantity is an approximation of the overall infidelity,         correlations” associated with the tensor network |ψ⟩.
+in practical experience it is often a reliable error metric        It is necessary when ε is large to go beyond BP,
+for the accuracy of the simulation in terms of overall          ideally with a systematically improvable approach, to
+state fidelity [2, 14].                                         contract the tensor network. This would allow con-
+   When simulating entire circuits involving large              vergable, more accurate information to be obtained
+numbers of gates, it is important that the message              whilst still avoiding the prohibitively high polynomial
+tensors remain updated so that the SVD truncations              scaling with χ of near-exact contraction approaches.
+remain optimal under the BP approximation, and                     In this work, we achieve this by adopting a bound-
+that ϵi as accurate as possible. There is thus an im-           ary Matrix Product State (MPS) contraction approach
+portant simulation cost trade-off to consider about             which is commonly used on open boundary square
+the frequency with which BP should be re-run mid-               lattice tensor networks [25, 26]. Notably, we have
+circuit [22] to update the message tensors. In our ap-          realized a more general implementation of the algo-
+proach, we find that a sweet-spot is to update the mes-         rithm which works on any tensor network that, upon
+sage tensors between layers of non-overlapping gates.           some grouping of the tensors into partitions |ψb ⟩,
+For structured circuits, such as those generated from           b = 1, 2, . . . Nb , where Nb is the total number of par-
+the discrete-time dynamics of an underlying Hamilto-            titions, forms a line. This means our contraction ap-
+nian, this naturally aligns with performing a Trotter           proach works on any planar tensor network, i.e. one
+                                                                                                                    4
+
+that can be drawn in two dimensions without any              b = 1, 2, . . . Nb with the network ⟨x|ψ⟩ contracted “on-
+edges crossing, such as those depicted in Fig. 1. A          the-fly” as the partitions are moved through. More
+typical partitioning that we will adopt is based on the      details and an in-depth illustration of the sampling
+columns of the networks depicted in Fig. 1 — al-             procedure are provided in the Appendix.
+though partitioning based on diagonal or horizontal            Importantly, we also calculate the ratio p(x)/q(x),
+cuts is straightforward and supported in our codebase        which attests to the quality of each sample. Whilst
+[16, 27].                                                    this can be computed “on-the-fly” when sampling the
+   Following the partitioning, MPS of maximum vir-           partitions [31], this estimate is only accurate when a
+tual bond dimension R can be passed through the              sufficiently large sampling MPS dimension Rx is used.
+partitions of the planar tensor network via sequen-          Instead, in this work, we allow ourselves to perform
+tially fitting Matrix Product State - Matrix Product         the sampling with arbitrary Rx and Rn and indepen-
+Operator (MPO) contractions. The resultant MPS               dently verify the samples by performing an accurate
+form approximations for the partial contraction of the       computation of p(x) = |⟨x|ψ⟩|2 upon generation of the
+network with the approximation becoming equality in          sample. Whilst this requires a separate tensor net-
+the limit R → ∞. We have implemented an opti-                work contraction, it can be done more efficiently in
+mized, efficient MPS-MPO fitting algorithm and cor-          comparison to using a large Rx within the sampling
+responding code which is highly general, in that the         procedure and allows us freedom in choosing Rx and
+MPO can be a tensor network of any structure which           Rn .
+maps one MPS to another. Importantly, the one-site             The mean probability ratio has the useful property
+fitting procedure we adopt scales more favorably with        that it is an unbiased estimator of the norm,
+bond dimension in comparison to density matrix or                                       X
+SVD-based contraction methods which have also re-                                  p(x)            p(x)
+                                                                           Ex∼q          =    q(x)
+cently been adapted to more general tensor network                                 q(x)     x
+                                                                                                   q(x)
+structures [28, 29]                                                                        X
+   As a consequence, we have the automated ability to                                    =    p(x) = ⟨ψ|ψ⟩,        (5)
+                                                                                         x
+systematically contract any planar tensor network in
+a highly efficient, controllable manner. This then al-       which is not necessarily 1 for our tensor networks due
+lows us to controllably extract expectation values (in-      to the truncations performed during the circuit appli-
+cluding non-local correlators [30]) and, crucial to this     cation.
+work, sample bitstrings x from the tensor networks             The p(x)/q(x) ratio is an informative metric for
+|ψ⟩ illustrated in Fig. 1 via an implementation of the       assessing the quality of individual samples, but we
+TNS sampling procedure introduced in Ref. [31] but           compute one further metric that communicates the
+generalised to arbitrary planar topologies. Moreover,        quality of the samples, the sample KL-Divergence
+as our boundary MPS approach is dominated by ten-            (KLD) [31, 32]. The sample KLD reads
+sor contractions and QR decompositions, significant
+speedups are observed when using GPU hardware —                                        X         q(x)
+which we will show and exploit explicitly in this work                   KLD(q, p) =         q(x) log
+                                                                                       x
+                                                                                                 p(x)
+to rapidly and accurately contract 2D tensor networks                                              
+of very high bond dimension.                                                                   q(x)
+                                                                                    = Ex∼q log        ,           (6)
+                                                                                               p(x)
+
+      Sampling from Tensor Network States                    which is the (inverse) log-ratio of the probabilities av-
+                                                             eraged over the samples drawn from q(x). A KLD of
+                                                             0 guarantees that the distributions are identical, but
+  In the sampling procedure we distinguish between
+                                                             small values significantly below 1 typically indicate
+two probability distributions, q(x) and p(x), which
+                                                             high-quality samples.
+are:
+                                                                In this work, we will sample from tensor networks
+                                                             with heavy-hex or Willow geometries following the ap-
+        q(x) : the sampled distribution.
+                                                             plication of several different circuits. We will use an
+        p(x) : the actual distribution |⟨x|ψ⟩|2              identical MPS dimensions Rx = R and Rn = R when
+               defined by the TNS.                           contracting ⟨x|ψ⟩ and ⟨ψ|ψ⟩ and certify our samples
+                                                             independently by contracting the network ⟨x|ψ⟩ via
+The distribution we actually sample from, q(x), is the       MPS-MPO contractions with an MPS of maximum
+one obtained by using boundary MPS of finite dimen-          bond dimension 2χ (which we find sufficiently large
+sions Rx and Rn to contract the networks ⟨x|ψ⟩ and           to accurately compute p(x) in all cases). Just like ap-
+⟨ψ|ψ⟩ respectively. If we additionally find that, follow-    plying gates, the complexity of generating a number of
+ing the application of the circuit, the fidelity f ≈ 1,      samples n is dependent on the coordination number z
+then p(x) can be understood as the true distribution         of the tensor network. For R ≤ χ on a (rotated or un-
+of the initial state evolved under the circuit. We con-      rotated) square lattice processor with z = 4 (such as
+tract the norm network ⟨ψ|ψ⟩ once (independent of            the Willow processor) with a total number of qubits
+the number of samples) via MPS-MPO contractions              or tensors Nqubits , n samples can be obtained with
+in reverse order from partition b = Nb , Nb − 1, . . . , 2   time complexity O(Nqubits χ5 R3 ) + O(nNqubits χ4 R3 )
+and store those intermediate contractions. Then, for         upon partitioning the network by either its columns
+each sample, the partitions are sampled sequentially         or rows. Meanwhile on a heavy-hex architecture where
+                                                                                                                      5
+
+                                                                this framework could arise from classical simulations
+                                                                being unable to capture the evolved states with rea-
+                                                                sonable resources or from an inability to accurately
+                                                                sample from them in reasonable time. In this work,
+                                                                using the tensor networks illustrated in Fig. 1, we
+                                                                execute those same circuits and then generate numer-
+                                                                ically exact samples from the evolved states.
+                                                                   We study the two largest circuits executed in
+                                                                Ref. [12] for the N2 molecule with 52 qubits and the
+                                                                4Fe-4S molecule with 72 qubits. The executed circuits
+                                                                can be found as part of that work, and consist of par-
+                                                                ticle number preserving rotations - most prominently
+                                                                controlled-phase gates and XX + YY rotations. In
+                                                                Ref. [12], the XX+YY gates are transpiled into device-
+                                                                native CNOT gates, with the largest circuit (for the
+                                                                4F-4s molecule) involving ∼ 3500 CNOTs. Here, we
+                                                                do not need such transpilation and thus run the same
+                                                                circuit in a format involving ∼ 1800 XX + YY rota-
+                                                                tions. The circuit topologies are sublattices of IBM’s
+                                                                heavy-hex processors with 6 and 4 primitive loops,
+                                                                respectively (see Fig. 1). Here, we show that, with
+                                                                a tensor network graph adapted to the circuit topol-
+                                                                ogy, we can simulate the 52-qubit case near-exactly
+                                                                and the 72-qubit case to numerical precision, with a
+                                                                time-to-sample far below one second on a single GPU.
+                                                                Note that Ref. [12] reports 58 and 77-qubit simula-
+                                                                tions, where ancilla qubits had to be used to fit the
+Figure 2. Simulation and sampling of local unitary              problem into the heavy hex topology of the quantum
+Jastrow circuits. At the top we depict the KLD (see             device. Here such ancilla are not necessary and can be
+Eq. (6)) of 1000 samples generated with boundary MPS            viewed as just the presence of redundant identity ma-
+ov varying different bond dimensions R from a TN state          trices on the bonds of the tensor network (see white
+with bond dimension χ = 600 after application of the cor-       nodes in Fig. 1).
+responding LUCJ circuit. Annotated times indicate the              In Fig. 1 we show that we can achieve overall state
+average time tsample to generate a single bitstring using ei-   fidelities f = 0.996 ≈ |⟨ψ|C|ψ0 ⟩|2 and f = 0.999 ≈
+ther an Intel Xeon Gold (CPU) or an Nvidia RTX A6000
+                                                                |⟨ψ|C|ψ0 ⟩|2 based on the discarded singular values
+(GPU), following a pre-computed contraction of the norm
+network ⟨ψ|ψ⟩ for a given R. The 72-qubit simulation of         during the circuit at χ = 1000 for the N2 and 4Fe-
+the 4Fe-4S molecule exhibits effectively no loop correla-       4S circuits C, respectively with |ψ0 ⟩ the initial prod-
+tions and can be sampled exactly with R = 1, while the          uct state and |ψ⟩ the final state encoded in the tensor
+52-qubit N2 simulation requires at least R = 5 for near-        network. These map to mean CNOT gate fidelities of
+exact samples. At the bottom we show the distribution           99.9998% and 99.99999% respectively, which can be
+of p(x)/q(x) values at sampling dimensions R = 1 and            contrasted with the 99.8% reported in Ref. [12].
+R = 20 for the N2 molecule, confirming that at R ≤ 20 we
+                                                                   Fig. 2 shows our results for sampling from the
+generate practically exact samples. The inset showcases
+that samples generated at any R lie within the correct
+                                                                χ = 600 tensor network states, which are still of
+magnetization subspace.                                         very high quality with f = 0.95 and f = 1.00 re-
+                                                                spectively. Strikingly, even with the lowest sampling
+                                                                MPS dimension of R = 1 (recall we set Rx , Rn = R),
+z = 3, n samples can be obtained with time complex-             i.e., using effectively a belief propagation approxima-
+ity O(Nqubits χ4 R3 ) + O(nNqubits χ3 R3 ).                     tion when generating samples, all generated samples
+                                                                have the correct magnetization despite no efforts be-
+                                                                ing made to enforce the underlying U(1) conservation
+                                                                in the tensors in the network. Moreover, the sample
+                    III.   RESULTS
+                                                                KLD from Eq. 6 — which rigorously quantifies the
+                                                                sample errors — is zero, to double precision, for both
+Precise simulation of local unitary Jastrow ansatz              problems when R = 50. Empirically, we find that for
+                      circuits                                  N2, KLD values of below ∼ 10−3 are achievable with
+                                                                R = 5 whilst for 4F − 4S below ∼ 10−8 is achievable
+   We first turn our attention to the Local Unitary             with R = 1 suggesting a total absence of loop cor-
+Cluster Jastrow ansatz (LUCJ) circuits employed in              relations despite the high depth of the circuits. This
+Ref. [12] on IBM’s processors. These circuits were              appears to be a general pattern of heavy-hex topolo-
+used as part of an intricate hybrid framework where             gies where loop correlations are strikingly small (even
+samples from the evolved states were used to diag-              when accounting for the loop size) [13] compared to
+onalize molecular Hamiltonians and find low-energy              more dense 2D lattices. In this application, however,
+eigenstates. A potential quantum advantage within               a significant culprit is also the low number of gates
+                                                                                                                         6
+
+between the sub-registers (see the coloring in Fig. 1).
+There is one or two control-phase (CP) gate per sub-
+register connection, which results in the inter-register
+bonds being of low dimension and entanglement along
+these bonds is directly responsible for the presence or
+absence of loop correlations in this system. In effect,
+due to the geometry of the problem, these systems can
+be simulated with two weakly coupled Matrix Prod-
+uct States, which is what our simulation approach
+achieves naturally, by virtue of its generality. It is
+an interesting avenue of future research to consider
+LUCJ circuits which can generate more complicated
+states with larger loop correlations. Such circuits are
+likely those which have a higher frequency of gates be-
+tween the two sub-registers and are implemented on
+a device with smaller loops.
+
+
+Discrete-time dynamics of the Heisenberg model
+
+  The Heisenberg model is a paradigmatic spin model
+which gives rise to rich quantum dynamics [33, 34].
+The Hamiltonian reads
+         X                               X
+ H=J          (Xi Xj + Yi Yj + Zi Zj ) =   Hij (7)
+         <i,j>                                <i,j>
+
+where the summation runs over the neighboring sites
+of lattices, which is specified by the topology or con-         Figure 3. Simulation and sampling of the quench dy-
+nectivity of the system, and Xi , Yi , Zi are the usual         namics of a domain wall for the Heisenberg model
+                                                                on heavy-hex and Willow topologies. At the top we
+Pauli operators for the ith qubit. Here, we study real,
+                                                                depict the KLD (see Eq. (6)) of 1000 samples generated
+discrete-time dynamics under this Hamiltonian until             with boundary MPS with indicated bond dimensions R.
+time t according to a first-order Trotter-Suzuki de-            Annotated times indicate the average time tsample to gen-
+composition of the evolution with discrete time steps           erate a single bitstring using either an Intel Xeon Gold
+δt = t/L and L layers. The decomposition used is                (CPU) or an Nvidia RTX A6000 (GPU). At the bottom
+based on an edge coloring of the lattice into a mini-           we show the histogram of the p(x)/q(x) probability ratios
+mal number of groups of pairs of sites E1 , E2 , . . . EK       at R = 1 and R = 20 for the more challenging L = 15
+such that each site i appears at most once in a given           Willow case. We find that at R = 1 the probabilities of
+group. The corresponding quantum circuit is                     the samples are often off by dozens of orders of magnitude,
+                                                                which is why the bars within the shown limits are barely
+           L
+           Y                   K
+                               Y     Y                          visible. In contrast, at R = 20 we generate higher-quality
+      U=         Ul ,   Ul =                  e−iHij δt   (8)   samples with more more concentrated probability ratios.
+                                                                The inset shows the percentage of samples that lie within
+           l=1                 k=1 <i,j>∈Ek
+                                                                the correct magnetization subspace, which is over 96% in
+with the rotation matrices in a given group commut-             all cases at R = 3.
+ing with each other. On a general bipartite lattice, the
+minimum K for which such a decomposition is possi-
+ble is known to be z [23], the coordination number,                We set a time step of δt = 0.1 and J = 1. Be-
+which is 3 in the heavy-hex case and 4 for the Willow           cause the individual rotation gates are U (1), they pre-
+topology.                                                       serve the total magnetization and the evolved states
+   We draw inspiration from Ref. [35], which studied            |ψ⟩ = U |ψ0 ⟩ are a superposition of basis states that
+the magnetization transfer under Heisenberg evolu-              each have the same number of 0s or 1s as the initial
+tion in a 46 qubit chain, where one half of the sys-            state |ψ0 ⟩. This has the benefit that — alongside the
+tem favored initialization to the 0-state and the other         fidelity bound and the sample KL divergence — it
+half to the 1-state. The use of large time steps δt al-         serves as another metric for assessing the quality of
+lowed the quantum device based on superconducting               our samples. As the states evolve, the initial domain
+qubits to reach highly entangled regimes whilst keep-           wall becomes a continuous transition with local expec-
+ing the depth of the circuit reasonable compared to             tation values going from Zi ∈ {−1, 1} to Zi ∈ [−1, 1].
+when using a smaller time step. Here, we port these                In our simulations, we simulate up to L = 20 layers
+experiments to a 164-qubit heavy-hex topology with              for the heavy-hex topology and up to L = 15 layers for
+5 × 5 = 25 primitive loops and the 105-qubit Willow             the Willow topology. With χ = 50 the heavy-hex TNS
+chip topology, which are shown in Fig. 1c. We split             achieves f > 99% fidelity (the wavefunction takes up
+the system into two halves and initialize them, as in-          96MB of RAM – using double precision complex num-
+dicated in red and blue, in the 0-state and 1-states.           bers in each tensor), and with χ = 20 the Willow
+                                                                                                                        7
+
+topology TNS achieves f > 86% fidelity (247MB).
+With the resources available to us, the heavy-hex TNS
+simulation can be pushed to χ ∼ 300 and the Wil-
+low TNS to χ ∼ 50 for the desired number of layers,
+which result in a wavefunction memory-cost of 8GB
+or 13GB, respectively. At this size, the bond dimen-
+sion of the Willow tensor network is notably larger
+than that typically considered in literature for square-
+lattice tensor networks, and extracting accurate in-
+formation from it, with current methods, beyond the
+belief propagation approximation is very challenging.
+The same is not true for the heavy-hex topology for
+two crucial reasons: i) the lower connectivity means
+the boundary MPS contraction scheme scales more
+favorably in χ and thus it is cheaper to correct belief
+propagation with MPS of dimensions R > 1 and ii)
+the much larger loops means only minimal corrections
+are needed to belief propagation, which is already re-
+markably accurate.
+   Figure 3 shows our results in sampling from the
+evolved TNS with varying boundary-MPS sampling
+dimensions R (recall we set Rx , Rn = R). It is clear
+in all cases that increasing R yields increasingly high
+quality samples: both the sample KLD decreases and
+the rate of correct magnetization samples approaches
+100%. The p(x)/q(x) ratio in the inset showcases that
+for the hardest Willow TNS we can draw samples from
+a distribution with probabilities that are at most one
+order of magnitude off of the exact encoded probabil-
+ities in this 105-qubit quantum state. Notably, the        Figure 4. Expectation values via direct contraction
+heavy hex bond dimension here is χ = 50 and R ≪ χ          and sampling for the Heisenberg model. We show
+is sufficient to get the sample KLD below 1.               Pauli Z expectation values for the quench dynamics of
+   Whilst the sample KLD provides an accurate indi-        a domain wall of the Heisenberg model on sites 51 to
+                                                           57, which are located the centers of the 164-qubit heavy-
+cator of the quality of our samples, due to its global
+                                                           hex and 105-qubit Willow topologies, as a function of the
+nature it can be an overly conservative estimate of        boundary MPS dimension R. The expectation values are
+accuracy when the desired measurement outcomes of          estimated both directly through boundary MPS contrac-
+the state are low-weight observables such as one or        tion of ⟨ψ|ψ⟩ and via 1000 samples generated at the desig-
+two-site expectation values. In Fig. 4 we showcase         nated boundary MPS dimension (1 std error of the mean
+the local Zi expectation values for sites close to the     is shaded). It becomes clear that the Willow topology
+center of both topologies — computed both from the         generates significantly stronger loop correlations than the
+sample distributions illustrated in Fig. 7 and from di-    heavy-hex topology, even at a third of the circuit depth.
+rect computation using MPS messages to contract the        Interestingly, at sample KLD values of approximately 2
+⟨ψ|Zi |ψ⟩ and ⟨ψ|ψ⟩. The heavy-hex topology shows an       (c.f., Fig. 3), the samples can accurately recover local ex-
+                                                           pectation values while the full distribution still differs from
+almost complete insensitivity to the single-site expec-
+                                                           the true one.
+tation with the boundary MPS dimension both when
+sampling and directly computing an observable. The
+Willow topology is notably different, even at shallower
+circuit depths. At 7 layers, expectation values can        tions and allows us to leverage GPU hardware to its
+be converged with our MPS algorithms but require           fullest extent. We show a comparison of the relevant
+dimensions R on the order of the bond dimension            walltimes in Fig. 5 on both CPU and GPU, realizing
+χ of the state. Meanwhile, at 15 layers it becomes         a speedup factor of over 35 for GPU hardware both
+much more computationally expensive to converge the        when directly contracting ⟨ψ|ψ⟩ with our boundary
+single-site expectation value with either direct compu-    MPS approach and when generating individual sam-
+tation or sample-based computation.                        ples via boundary MPS contraction.
+   At this depth, we find we have to go to MPS di-            We now study the loop correlations present in these
+mensions R ∼ 75 to obtain convergence in local ex-         TNs. When these are large, they necessitate the afore-
+pectation values when contracting the norm of this 2D      mentioned contraction with a large boundary MPS di-
+tensor network |ψ⟩ which has bond dimension χ = 20.        mension R. Here, we compute the first-order approxi-
+These results thus necessitated the accurate contrac-      mation to the BP error in both setups (see Eq. (3)) as
+tion of a 2D PEPS of very high bond dimension and          a function of the number of Trotter layers. This error
+we achieve this here because, as we systematically in-     can be seen as quantifying the strength of loop corre-
+crease boundary MPS rank, the workload of our fitting      lations in the TNS. The results are shown in Fig. 6.
+method is increasingly dominated by tensor contrac-        We observe a drastically larger BP error (many orders
+                                                                                                                       8
+
+
+
+
+                                                            Figure 6. Quantifying loop correlations in the
+                                                            heavy-hex and Willow topologies. We depict all in-
+                                                            dividual approximate BP errors εl per loop in faint colors
+                                                            and their average ε (see Eqs. (3) & (4)) for the discrete-
+                                                            time Heisenberg evolution as a function of the number of
+Figure 5. Walltimes for contracting and sampling            Trotter layers. With a loop size of 12, significant loop cor-
+from a 2D Willow tensor network. The 105-qubit              relations in the heavy-hex topology can only start arising
+tensor network state |ψ⟩ with χ = 20 is the same as in      at 6 layers, with artifacts due to the Trotterization of non-
+Fig. 4, i.e that obtained after 15 layers of the propaga-   commuting gates arising earlier. In contrast, the Willow
+tor in Eq. (8) with δtJ = 0.1. At the top is the wall-      topology at that point already exhibits significant loop cor-
+time to contract the norm network ⟨ψ|ψ⟩ with boundary       relations requiring, e.g., boundary MPS approaches with
+MPS of dimension R. At the bottom is the average time       R > 1 to extract accurate properties from the states.
+to generate a sample x from |ψ⟩ using a boundary MPS        The large spread between the individual loop errors is ex-
+of dimension R, following a pre-computed contraction of     plained by the initial location of the spin domain wall,
+the norm network ⟨ψ|ψ⟩. CPU hardware corresponds to         which causes loops near the middle of the lattice to ex-
+a multi-threaded Intel Xeon 6244 Gold CPU whilst GPU        hibit strong correlations earlier.
+hardware corresponds to an Nvidia RTX A6000. All cal-
+culations are in 32-bit floating point precision.
+
+                                                            proximate contraction of arbitrary planar tensor net-
+of magnitude) for the Willow square-lattice versus the      works. Importantly, we identified reliable metrics for
+heavy-hexagonal lattice. The loops in the heavy-hex         both the fidelity of the tensor network and the quality
+lattice are three times as large and thus generically one   of the samples in order to attest to the quality of our
+could expect ε(Heavy Hex) ∼ ε3 (Willow) (0 ≤ ε ≤ 1)         simulations.
+based on the exponential scaling of the eigenvalue gap         By applying these techniques to the local uni-
+of increasingly long sequences of matrices. The differ-     tary Jastrow ansatz (LUCJ) circuits introduced in
+ence we see in Fig. 6, however, appears to go beyond        Ref. [12], we generated samples which are drawn, to
+even this, and is reinforced by the remarkably accu-        numerical precision, from the exact underlying distri-
+rate BP results numerically observed in Fig. 4 and          bution. We also showed the generality of our meth-
+in Ref. [13] for Ising model dynamics on large heavy-       ods, simulating, on moderate timescales, the highly-
+hex geometries. These results point to some level of        entangling quench dynamics of a domain wall in the
+“loop interference” in large lattice systems which com-     two-dimensional Heisenberg model on both IBM’s
+pounds with the increased loop sizes relative to the        heavy-hex processor architecture and Google’s latest
+Willow topology. A theoretical explanation appears          Willow processor. We exploited the potential for GPU
+urgently needed to this phenomenon.                         speedup latent in these contraction methods, to accu-
+                                                            rately sample and contract the norm of 2D Tensor
+                                                            Networks of very large bond dimension.
+                IV.   CONCLUSION                               Crucially, our results demonstrated that the loop
+                                                            correlations generated are remarkably low for quan-
+  In this work, we showcased systematically improv-         tum circuits realized on heavy-hexagonal processors,
+able techniques for simulating 2D quantum circuits          which leads to procedures with boundary MPS of
+and their outcomes with planar tensor networks in           very low dimension (and consequently belief propa-
+a scalable, controllable manner. These classical net-       gation) yielding highly accurate samples and expecta-
+works make a natural ansatz for simulating upcoming         tion values even at large circuit depths. In fact, for
+quantum computers, including quantum circuits run-          local observables, we observe immediate convergence
+ning on superconducting processors.                         with R = 1 contraction procedure in all cases, im-
+  We applied gates in the circuit to the tensor net-        plying that significantly deeper circuits or larger time
+work via the belief propagation-based simple update         steps are required for classical hardness. The same
+procedure, whilst sampling was performed using gen-         is not true for the Willow processor, whose topol-
+eralized Matrix Product State and Matrix Product            ogy means that extracting accurate expectation values
+Operator contraction routines, which allow the ap-          from moderate-depth circuits (such as those encoding
+                                                                                                                           9
+
+the time dynamics of the Heisenberg model) can re-              Simulator.jl [16], an open source wrapper — built off
+quire significant computational resources.                      of ITensors.jl [37] and ITensorNetworks.jl [27] — for
+   It should be pointed out that there are certain, fi-         simulating quantum circuits with tensor networks of
+nite dimension, pathological tensor network states one          arbitrary topology.
+can construct for which perfect sampling must require
+resources (the boundary MPS dimension R) growing
+exponentially in the system size [36]. We do not ob-
+serve signatures of such states here, most likely be-
+cause they are generated from circuits which encode
+local, physical interactions and thus there is a finite
+velocity associated with information spreading in the
+system.                                                                      ACKNOWLEDGEMENTS
+   Our results here highlight how geometry plays a cru-
+cial role in the complexity of quantum circuits and
+provide a state-of-the-art framework — with corre-                 The authors acknowledge helpful discussions with
+sponding open-source code with both CPU and GPU                 Zoë Holmes, Miles Stoudenmire, and Matt Fishman.
+support [16, 27] – for simulating quantum circuits              The authors would like to thank Miles Stoudenmire,
+with planar tensor networks. We hope that these ten-            Supanut Thanasilp and Haochen Li for feedback on
+sor networks and the underlying classical simulation            this manuscript. The authors also acknowledge Kevin
+methods in general become more widely used by those             Sung and Javier Robledo-Moreno for discussions and
+at the forefront of developing quantum devices and              providing the scripts necessary to generate the LUCJ
+their applications.                                             circuits. MSR is grateful for support by the Flat-
+                                                                iron Institute during the Pre-Doctoral Researcher pro-
+                                                                gram, and JT is grateful for ongoing support through
+                      SOFTWARE                                  the Flatiron Institute, a division of the Simons Foun-
+                                                                dation. MSR acknowledges funding from the 2024
+  Open source Julia code for reproducing the results            Google PhD Fellowship and the Swiss National Sci-
+in this work is available at TensorNetworkQuantum-              ence Foundation [grant number 200021-219329].
+
+
+
+
+ [1] M. C. Bañuls, R. Orús, J. I. Latorre, A. Pérez, and     [10] A. D. King, A. Nocera, M. M. Rams, J. Dziarmaga,
+     P. Ruiz-Femenı́a, Simulation of many-qubit quantum              R. Wiersema, W. Bernoudy, J. Raymond, N. Kaushal,
+     computation with matrix product states, Phys. Rev.              N. Heinsdorf, and R. H. et al, Beyond-classical com-
+     A 73, 022344 (2006).                                            putation in quantum simulation, Science 388, 199
+ [2] Y. Zhou, E. M. Stoudenmire, and X. Waintal, What                (2025).
+     limits the simulation of quantum computers?, Phys.         [11] R. Haghshenas, E. Chertkov, M. Mills, W. Kadow,
+     Rev. X 10, 041038 (2020).                                       S.-H. Lin, Y.-H. Chen, C. Cade, I. Niesen,
+ [3] A. Dang, C. D. Hill, and L. C. L. Hollenberg, Op-               T. Begušić, M. S. Rudolph, et al., Digital
+     timising Matrix Product State Simulations of Shor’s             quantum magnetism at the frontier of classi-
+     Algorithm, Quantum 3, 116 (2019).                               cal simulations, arXiv preprint arXiv:2503.20870
+ [4] J. C. Napp, R. L. La Placa, A. M. Dalzell, F. G.                https://doi.org/10.48550/arXiv.2503.20870 (2025).
+     S. L. Brandão, and A. W. Harrow, Efficient classical      [12] J. Robledo-Moreno, M. Motta, H. Haas, A. Javadi-
+     simulation of random shallow 2d quantum circuits,               Abhari, P. Jurcevic, W. Kirby, S. Martiel, K. Sharma,
+     Phys. Rev. X 12, 021021 (2022).                                 S. Sharma, and T. S. et al, Chemistry beyond the scale
+ [5] E. Stoudenmire and S. R. White, Minimally entan-                of exact diagonalization on a quantum-centric super-
+     gled typical thermal state algorithms, New Journal of           computer, Science Advances 11, eadu9991 (2025).
+     Physics 12, 055026 (2010).                                 [13] J. Tindall, M. Fishman, E. M. Stoudenmire, and
+ [6] A. J. Ferris and G. Vidal, Perfect sampling with uni-           D. Sels, Efficient tensor network simulation of IBM’s
+     tary tensor networks, Physical Review B 85, 165146              Eagle kicked Ising experiment, PRX Quantum 5,
+     (2012).                                                         010308 (2024).
+ [7] F. Arute, K. Arya, R. Babbush, D. Bacon, J. C.             [14] S.-B. B. Lee, H. R. Choi, D. D. Ohm, and S.-
+     Bardin, R. Barends, R. Biswas, S. Boixo, F. G. S. L.            S. B. Lee, Scalable simulation of random quantum
+     Brandao, and D. A. e. a. Buell, Quantum supremacy               circuits using projected entangled-pair states (2025),
+     using a programmable superconducting processor,                 arXiv:2504.04769 [quant-ph].
+     Nature 574, 505 (2019).                                    [15] T. Begušić, J. Gray, and G. K.-L. Chan, Fast and con-
+ [8] Y. Kim, A. Eddins, S. Anand, K. X. Wei, E. Van                  verged classical simulations of evidence for the utility
+     Den Berg, S. Rosenblatt, H. Nayfeh, Y. Wu, M. Zale-             of quantum computing before fault tolerance, Science
+     tel, K. Temme, et al., Evidence for the utility of quan-        Advances 10, 10.1126/sciadv.adk4321 (2024).
+     tum computing before fault tolerance, Nature 618,          [16] J. Tindall and M. Rudolpho, TensorNetworkQuan-
+     500 (2023).                                                     tumSimulator.jl, https://github.com/JoeyT1994/
+ [9] F. Jin, S. Jiang, X. Zhu, Z. Bao, F. Shen, K. Wang,             TensorNetworkQuantumSimulator (2025).
+     Z. Zhu, S. Xu, Z. Song, and J. C. et al, Observation       [17] D. A. Abanin, R. Acharya, L. Aghababaie-Beni,
+     of topological prethermal strong zero modes (2025),             G. Aigeldinger, A. Ajoy, R. Alcaraz, I. Aleiner, T. I.
+     arXiv:2501.04688 [quant-ph].                                    Andersen, M. Ansmann, and F. A. et al, Constructive
+                                                                                                                        10
+
+     interference at the edge of quantum ergodic dynamics       [38] F. Verstraete, V. Murg, and J. I. Cirac, Matrix prod-
+     (2025), arXiv:2506.10191 [quant-ph].                            uct states, projected entangled pair states, and vari-
+[18] G. Vidal, Efficient classical simulation of slightly en-        ational renormalization group methods for quantum
+     tangled quantum computations, Phys. Rev. Lett. 91,              spin systems, Advances in physics 57, 143 (2008).
+     147902 (2003).                                             [39] G. Evenbly, N. Pancotti, A. Milsted, J. Gray, and
+[19] G. Vidal, Efficient simulation of one-dimensional               G. K.-L. Chan, Loop series expansions for tensor net-
+     quantum many-body systems, Phys. Rev. Lett. 93,                 works (2025), arXiv:2409.03108 [quant-ph].
+     040502 (2004).
+[20] H. C. Jiang, Z. Y. Weng, and T. Xiang, Accurate de-
+     termination of tensor network state of quantum lat-
+     tice models in two dimensions, Phys. Rev. Lett. 101,                             APPENDIX
+     090603 (2008).
+[21] R. Alkabetz and I. Arad, Tensor networks contraction             Sampling from a Tensor Network State
+     and the belief propagation algorithm, Physical Re-
+     view Research 3, 10.1103/physrevresearch.3.023073
+     (2021).                                                       Here we detail, in-depth, a computational proce-
+[22] J. Tindall and M. Fishman, Gauging tensor networks         dure to sample from a planar tensor network repre-
+     with belief propagation, SciPost Phys. 15, 222 (2023).     sentation of the wavefunction |ψ⟩. Our method and
+[23] R. Cole and J. Hopcroft, On edge coloring bipartite        implementation can be seen as a generalisation of the
+     graphs, SIAM Journal on Computing 11, 540 (1982),          algorithm detailed in Ref. [31] to arbitrary planar
+     https://doi.org/10.1137/0211043.                           topologies.
+[24] J. Tindall and D. Sels, Confinement in the transverse         Consider a planar tensor network |ψ⟩ which we wish
+     field ising model on the heavy hex lattice, Physical       to draw samples x from. In Fig. 7 we illustrate this
+     Review Letters 133, 180402 (2024).
+                                                                with the example of a network with heavy-hex topol-
+[25] F. Verstraete and J. I. Cirac, Renormalization algo-
+     rithms for quantum-many body systems in two and            ogy. The tensors of the network are first grouped into
+     higher dimensions, arXiv preprint cond-mat/0407066         partitions b = 1, 2, . . . Nb such that the topology of the
+     (2004).                                                    network following this partitioning is a single line with
+[26] M. Lubasch, J. I. Cirac, and M.-C. Bañuls, Algo-          edges between sequential partitions. This is most nat-
+     rithms for finite projected entangled pair states, Phys.   urally achieved by partitioning the network by its rows
+     Rev. B 90, 064425 (2014).                                  or columns (we show the choice of column partitions
+[27] ITensorNetworks.jl, https://github.com/ITensor/            in Fig. 7), although other choices are possible. We de-
+     ITensorNetworks.jl (2025).                                 fine the subset of tensors in a given partition with ψb .
+[28] C. T. Chubb, General tensor network decoding of 2d         We also define the norm network ⟨ψ|ψ⟩ and an iden-
+     pauli codes (2021), arXiv:2101.04125 [quant-ph].
+[29] L. Ma, M. Fishman, E. M. Stoudenmire, and                  tical partitioning such that the partitions Tb = ψb† ψb
+     E. Solomonik, Approximate Contraction of Arbitrary         are formed from the tensors in ψb and their conju-
+     Tensor Networks with a Flexible and Efficient Density      gates. Those Tb are generally MPOs, apart from the
+     Matrix Algorithm, Quantum 8, 1580 (2024).                  first and last partition at the boundaries, where they
+[30] J. Tindall, A. Mello, M. Fishman, M. Stoudenmire,          are MPS.
+     and D. Sels, Dynamics of disordered quantum                   A crucial ingredient of the sampling procedure is
+     systems with two-and three-dimensional ten-                a generalised MPS-MPO and MPS fitting method.
+     sor networks, arXiv preprint arXiv:2503.05693              Specifically, we need to be able to approximate the
+     https://doi.org/10.48550/arXiv.2503.05693 (2025).
+                                                                contraction of a Matrix Product State Mb+1→b with
+[31] T. Vieijra, J. Haegeman, F. Verstraete, and L. Van-
+     derstraeten, Direct sampling of projected entangled-
+                                                                a partition, i.e. Mb+1→b · Tb with another MPS
+     pair states, Phys. Rev. B 104, 235141 (2021).              Mb→b−1 , and also approximate the contraction of a
+[32] S. Kullback and R. A. Leibler, On information and          Matrix Product State mp−1→p with a sampled par-
+     sufficiency, The annals of mathematical statistics 22,     tition, i.e. mb−1→b · Xb with another MPS mb→b+1 ,
+     79 (1951).                                                 where Xb = xb · ψb are again generally MPOs apart
+[33] B. Bertini, M. Collura, J. De Nardis, and M. Fagotti,      from the boundaries. This process is illustrated in
+     Transport in out-of-equilibrium xxz chains: Exact          Fig. 7c. The fitting can be achieved most efficiently
+     profiles of charges and currents, Phys. Rev. Lett. 117,    by a one-site variational fitting procedure [38] which
+     207201 (2016).                                             forms an initial guess for the output MPS and ap-
+[34] M. Ljubotina, M. Žnidarič, and T. Prosen, Spin diffu-    proximately maximizes the overlap between the out-
+     sion from an inhomogeneous quench in an integrable
+                                                                put MPS and the MPS-MPO contraction by variation-
+     system, Nature Communications 8, 16117 (2017).
+[35] E. Rosenberg, T. I. Andersen, R. Samajdar,                 ally sweeping through the tensors of the output MPS
+     A. Petukhov, J. C. Hoke, D. Abanin, A. Bengtsson,          and replacing them with the derivative of the MPS-
+     I. K. Drozdov, C. Erickson, and P. V. K. et al, Dy-        MPO-MPS contraction with respect to that tensor.
+     namics of magnetization at infinite temperature in a       We have implemented this fitting procedure algorith-
+     heisenberg spin chain, Science 384, 48 (2024).             mically in a highly generic, efficient way, such that
+[36] F. Verstraete, M. M. Wolf, D. Perez-Garcia, and J. I.      incoming MPS can be fit to MPOs of arbitrary struc-
+     Cirac, Criticality, the area law, and the computational    ture (i.e. the MPOs can just be any tensor network
+     power of projected entangled pair states, Phys. Rev.       which maps an MPS to another MPS).
+     Lett. 96, 220601 (2006).                                      With this in hand, the sampling procedure can be
+[37] M. Fishman, S. White, and E. Stoudenmire, The iten-
+                                                                defined as illustrated in Fig. 7d. First, the last par-
+     sor software library for tensor network calculations,
+     SciPost Physics Codebases , 004 (2022).                    tition TNb is approximated by an MPS MNb →Nb −1
+                                                                of dimension Rn . Then the MPS-MPO contraction
+                                                                                                                                 11
+
+
+
+
+Figure 7. Sampling from planar Tensor Network States. a) Planar tensor network representation of a wavefunction
+|ψ⟩ with bond dimension χ. A heavy-hex topology is chosen for illustrative purposes. The tensors in the network are
+grouped into partitions b = 1, 2 . . . Nb - with a column-based partition illustrated here. b) Norm network ⟨ψ|ψ⟩ with
+the individual nodes formed from uncontracted pairs of tensors in |ψ⟩. c) MPS-MPO fitting procedures that form the
+workhorse of the sampling procedure. The contraction of incident MPS with either the MPO defined by the two-layer
+partition ψb† ψb or the MPO defined by the single-layer partition xb · ψb are approximated with an outgoing MPS via a
+variational one-site fitting procedure that works on MPOs of arbitrary structure. Other procedures can be used, but the
+one-site fitting procedure scales most favorably in bond dimension χ. d) Procedure for generating a single bitstring x
+assuming the pre-computation of the set of MPS {MNb →Nb −1 , . . . M3→2 , M2→1 } via the MPS-MPO fitting procedure on
+the two-layer tensor network state. The first partition ψ1† ψ1 is sampled with the MPS M2→1 incident. This is done by
+contracting the structure from top to bottom and sequentially splitting open the bonds connecting the bra and ket tensors
+to form the one-site reduced density matrix and sample from it, conditioned on the already sampled sites above it. The
+structure ⟨x1 |ψ1 ⟩ is then fit to an MPS m1→2 and the second partition is sampled. The structure m1→2 · x2 · ψ2 is then fit
+to an MPS m2→3 and the next partition sampled. This is repeated until all partitions are sampled, yielding a bitstring
+x from the distribution q(x) defined by the dimension Rn and Rx chosen for the MPS Mi+1→i and mi→i+1 respectively.
+Computation of p(x) = |⟨x|ψ⟩|2 can be done either by selecting a sufficiently large Rx or a separate contraction of the
+network ⟨x|ψ⟩. A legend is included to show the different tensors which appear and the dimension of their respective
+indices.
+
+
+MNb →Nb −1 · TNb −1 is approximated with an MPS                 tion q(x) defined by the selected MPS bond dimen-
+MNb −1→Nb −2 . This last procedure is then repeated             sions Rx and Rn , and not necessarily from the ac-
+for the partitions b = Nb − 2 through b = 2 yielding            tual distribution p(x) = |⟨x|ψ⟩|2 of the tensor network
+the set of MPS {MNb →Nb −1 , . . . M3→2 , M2→1 }. This          state. Equality is only achieved if Rx and Rn are large
+procedure only needs to be done once, independent of            enough such that there is no error in the fitting proce-
+the number of samples one wishes to draw.                       dures. The probability q(x) is returned immediately
+   Next, for each sample desired, the first partition T1        from the sampling procedure as it is just the product
+is sampled conditioned on the incident MPS M2→1 .               of the individual probabilities q(xq ) when sampling
+This can be done by moving through the partition,               the reduced density matrix for each qubit q. The
+qubit by qubit, and forming the one-site reduced den-           probability p(x) can be obtained in one of two ways:
+sity matrix conditioned on the incident MPS and any             if the MPS dimension Rx used is large enough such
+qubits already sampled in the partition. The result is          that only minimal truncations are made in the fitting
+a sample x1 of all qubits in the partition conditioned          procedures for the mi→i+1 then it is the square of the
+on M2→1 as an approximation of the contraction of               MPS-MPS contraction mNb −1→Nb · XNb . If significant
+the rest of the network. Next, the tensors in X1 are fit        truncations are made then it can be obtained indepen-
+to a MPS m1→2 of bond dimension Rx . The partition              dently via contraction of the planar tensor network
+b = 2 can then be sampled conditioned on the incident           ⟨x|ψ⟩ with either sequential MPS contractions or a
+MPS m1→2 , m†1→2 and M3→2 . Then, the contraction               seperate method such as loop corrections. Notably,
+of m1→2 with x2 · ψ2 is fit to a MPS m2→3 of max-               this separate verification step scales better than sam-
+imum bond dimension Rx and the partition b = 3 is               pling with a higher boundary MPS dimension and is
+sampled. This procedure is repeated until all columns           not strictly necessary if only the samples are desired.
+are sampled yielding the bitstring x = x1 x2 . . . xNb             The set of ratios { p(x 1 ) p(x2 ) p(x3 )          p(xm )
+                                                                                       q(x1 ) , q(x2 ) , q(x3 ) . . . q(xm ) } for a
+in a manner which scales linearly with the number of            series of m samples provides clear information about
+qubits.                                                         the quality of the samples generated for the chosen
+   The resulting bitstring is drawn from the distribu-          Rx and Rn . Moreover, they can be used to correct
+                                                                                                                      12
+
+
+
+
+Figure 8. Belief propagation algorithm and gate application for a Tensor Network State. a) Planar tensor
+network representation of a wavefunction |ψ⟩ with bond dimension χ. A heavy-hex topology is chosen for illustrative
+purposes. b) Norm network ⟨ψ|ψ⟩ with the individual nodes formed from uncontracted pairs of tensors in |ψ⟩. c) Belief
+propagation algorithm. Message tensors are initialised in each direction on every edge of the norm network and self-
+consistently updated until convergence subject to a normalisation condition. d) Gate application. A gate is applied to
+a pair of sites v and v ′ conditioned on the BP approximation by updating the corresponding tensors ψv and ψv′ with
+those that maximise their overlap with the original tensors, the gate and the incoming message tensors to that region.
+
+
+the computation of an observable from those samples
+via the “importance sampling” formula
+
+                           m
+                       1 X p(xi )
+           ⟨ψ|O|ψ⟩ ≈                ⟨xi |O|xi ⟩      (9)
+                       N i=1 q(xi )
+
+with N = n1 i p(x    i)
+             P
+                  q(xi ) an approximation for the norm
+of the wavefunction. This approximation becomes
+equality in the limit m → ∞ and all p(x   i)
+                                       q(xi ) are finite.
+   Computational Complexity - In the following and
+throughout this work, we take Rx = R and Rn = R.
+The complexity of generating samples x is highly de-
+pendent on the coordination number of the tensor
+network. For R ≤ χ, with χ the bond dimension
+of the tensor network, then on a (rotated or unro-
+tated) square lattice processor with z = 4, such as
+the Willow processor, and a total number of qubits
+or tensors Nqubits , m samples can be obtained with
+time complexity O(Nqubits χ5 R3 ) + O(mNqubits χ4 R3 )
+upon partitioning the network by either its columns or
+rows. Meanwhile on a heavy-hex architecture where
+z = 3, n samples can be obtained with time complex-          Figure 9. Computation of a belief propagation error
+ity O(Nqubits χ4 R3 ) + O(mNqubits χ3 R3 ) upon parti-       metric. a) Norm network ⟨ψ|ψ⟩ associated with a heavy-
+tioning the network by either its columns or rows.           hex tensor network representation of |ψ⟩ with the individ-
+                                                             ual nodes formed from uncontracted pairs of tensors in
+                                                             |ψ⟩. The primitive loops (set of smallest loops) of the lat-
+   Applying Gates to a Tensor Network State                  tice are ringed. b) An error metric (see Eq. (3)) can be
+                                                             defined by averaging the separability index for each loop.
+                                                             The separability index is computed from the ordered (by
+   In this work, we apply gates to our tensor network        absolute value) eigenvalues of the transfer matrix formed
+ansatz for the many-body wavefunction |ψ⟩ using mes-         when inserting BP message tensors on the boundary of the
+sage tensors obtained from the belief propagation al-        loop and splitting an edge of the loop open.
+gorithm. Specifically, given a tensor network repre-
+sentation of |ψ⟩, we form the network ⟨ψ|ψ⟩ from two
+copies of the tensor network. We group the individ-
+ual tensors ψv and their conjugates ψv∗ together, such       of tensors grouped (ψv , ψv∗ and ψv′ , ψv∗′ ) at each end
+that the norm network has the same structure as the          of the edge. A self-consistent update rule for the mes-
+original network. This is illustrated in Fig. 8b. It         sage tensors is defined, with the message tensor on an
+is crucial for efficiency that this grouping of tensors      edge v → v ′ equal to the incoming message tensors to
+remains a book-keeping operation and the individual          v (excluding the message from v ′ to v) multiplied by
+tensors are not contracted. We then initialize message       the local tensors ψv and ψv∗′ . Imposing the normal-
+tensors in both directions on each edge v ↔ v ′ of the       ization condition that the norm of a message tensor
+network. As such, these message tensors each possess         is 1 this update rule can be iterated until appropriate
+the virtual indices corresponding to the grouped pair        convergence of all message tensors [21, 22, 39]. These
+                                                                13
+
+message tensor details are outlined in Fig. 8c.
+   These messages can then be used to condition the
+singular value decomposition during the application
+of a two-site gate to the network. Specifically, when
+applying a gate to a local pair of sites v and v ′ in the
+network, the tensors ψv and ψv′ are replaced with a
+new pair of normalized tensors ψ̃v and ψ̃v′ sharing a
+bond of specified dimension χ such that they maximise
+the overlap
+                                            Y
+          C = G · ψv · ψv′ · ψ̃v∗ · ψ̃v∗′ ·   Me     (10)
+                                           e
+       Q
+where e Me is the product of all messages along the
+edges incident to the region consisting of v and v. This
+quantity is illustrated in Fig. 8d and the tensors can
+be identified by gauging the region with the square
+root of the incoming message tensors, applying the
+gate, performing a singular value decomposition, and
+ungauging the region with the inverse square root of
+the incoming message tensors. If the bond dimension
+χ is chosen such that no singular values are thrown
+away, the gate application is exact. More details can
+be found in Ref. [22].
+
+
+               Computing the BP Error
+
+   As discussed in the main text, an error metric which
+can be associated when contracting a tensor network
+via BP is obtainable from the spectrum of eigenvalues
+λl1 , λl2 , . . . of the transfer matrices formed using prim-
+itive loops (the set of loops of smallest size) of the
+tensor network — see Eq. (3) for a definition. For the
+norm network ⟨ψ|ψ⟩, this spectrum can be obtained
+exactly in O(Nqubits χ6 ) time, whilst it can be reduced
+to O(Nqubits χz+1 k) time with a Krylov-based method
+if only the k smallest eigenvalues are computed. In
+Fig. 9 we illustrate the procedure for computing these
+eigenvalues.
+

@@ -1,0 +1,632 @@
+{
+  "linear_windows": {
+    "entangling_gates_in_windows": 2759,
+    "general_linear_windows": 1626,
+    "identity_windows": 0,
+    "length_hist_top": [
+      [
+        1,
+        1022
+      ],
+      [
+        2,
+        382
+      ],
+      [
+        3,
+        121
+      ],
+      [
+        4,
+        39
+      ],
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        20,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        18,
+        1
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        14,
+        1
+      ]
+    ],
+    "max_window": 20,
+    "pure_permutation_windows": 0,
+    "top_windows": [
+      {
+        "end_line": 1023,
+        "kind": "linear",
+        "length": 20,
+        "start_line": 1004
+      },
+      {
+        "end_line": 1142,
+        "kind": "linear",
+        "length": 18,
+        "start_line": 1125
+      },
+      {
+        "end_line": 2926,
+        "kind": "linear",
+        "length": 17,
+        "start_line": 2910
+      },
+      {
+        "end_line": 4850,
+        "kind": "linear",
+        "length": 14,
+        "start_line": 4837
+      },
+      {
+        "end_line": 1039,
+        "kind": "linear",
+        "length": 13,
+        "start_line": 1027
+      },
+      {
+        "end_line": 988,
+        "kind": "linear",
+        "length": 12,
+        "start_line": 977
+      },
+      {
+        "end_line": 1109,
+        "kind": "linear",
+        "length": 11,
+        "start_line": 1099
+      },
+      {
+        "end_line": 1252,
+        "kind": "linear",
+        "length": 10,
+        "start_line": 1243
+      },
+      {
+        "end_line": 2903,
+        "kind": "linear",
+        "length": 10,
+        "start_line": 2894
+      },
+      {
+        "end_line": 3005,
+        "kind": "linear",
+        "length": 10,
+        "start_line": 2996
+      },
+      {
+        "end_line": 4541,
+        "kind": "linear",
+        "length": 10,
+        "start_line": 4532
+      },
+      {
+        "end_line": 960,
+        "kind": "linear",
+        "length": 9,
+        "start_line": 952
+      },
+      {
+        "end_line": 1122,
+        "kind": "linear",
+        "length": 9,
+        "start_line": 1114
+      },
+      {
+        "end_line": 4572,
+        "kind": "linear",
+        "length": 9,
+        "start_line": 4564
+      },
+      {
+        "end_line": 867,
+        "kind": "linear",
+        "length": 8,
+        "start_line": 860
+      },
+      {
+        "end_line": 895,
+        "kind": "linear",
+        "length": 8,
+        "start_line": 888
+      },
+      {
+        "end_line": 1348,
+        "kind": "linear",
+        "length": 8,
+        "start_line": 1341
+      },
+      {
+        "end_line": 4477,
+        "kind": "linear",
+        "length": 8,
+        "start_line": 4470
+      },
+      {
+        "end_line": 1304,
+        "kind": "linear",
+        "length": 7,
+        "start_line": 1298
+      },
+      {
+        "end_line": 2706,
+        "kind": "linear",
+        "length": 7,
+        "start_line": 2700
+      }
+    ],
+    "window_count": 1626
+  },
+  "n": 56,
+  "path": "challenges/hard/challenge-56_38.qasm",
+  "qiskit": {
+    "raw": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 578,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 115,
+          "rz": 1094,
+          "u2": 498,
+          "u3": 382
+        },
+        "seconds": 0.08588552474975586,
+        "size": 4848
+      },
+      "opt3_native": {
+        "depth": 652,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2140
+        },
+        "seconds": 0.09636640548706055,
+        "size": 5939
+      },
+      "original": {
+        "depth": 652,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2140
+        },
+        "size": 5939
+      },
+      "seconds": 0.7723941802978516,
+      "snap_stats": {},
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 578,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 115,
+          "rz": 1094,
+          "u2": 556,
+          "u3": 324
+        },
+        "seconds": 0.08925557136535645,
+        "size": 4848
+      },
+      "opt3_native": {
+        "depth": 652,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 1039,
+          "rz": 2138
+        },
+        "seconds": 0.08767104148864746,
+        "size": 5936
+      },
+      "original": {
+        "depth": 652,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2140
+        },
+        "size": 5939
+      },
+      "seconds": 0.35956501960754395,
+      "snap_stats": {
+        "rx_snapped": 708,
+        "rz_snapped": 1825
+      },
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 578,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 115,
+          "rz": 1094,
+          "u2": 555,
+          "u3": 325
+        },
+        "seconds": 0.08511567115783691,
+        "size": 4848
+      },
+      "opt3_native": {
+        "depth": 652,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2139
+        },
+        "seconds": 0.08793163299560547,
+        "size": 5938
+      },
+      "original": {
+        "depth": 652,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2140
+        },
+        "size": 5939
+      },
+      "seconds": 0.3381686210632324,
+      "snap_stats": {
+        "rx_snapped": 695,
+        "rz_snapped": 1789
+      },
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "available": true,
+      "opt3_auto": {
+        "depth": 578,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 115,
+          "rz": 1094,
+          "u2": 528,
+          "u3": 352
+        },
+        "seconds": 0.08493900299072266,
+        "size": 4848
+      },
+      "opt3_native": {
+        "depth": 652,
+        "ok": true,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2140
+        },
+        "seconds": 0.08835220336914062,
+        "size": 5939
+      },
+      "original": {
+        "depth": 652,
+        "ops": {
+          "cx": 2759,
+          "rx": 1040,
+          "rz": 2140
+        },
+        "size": 5939
+      },
+      "seconds": 0.34000682830810547,
+      "snap_stats": {
+        "rx_snapped": 657,
+        "rz_snapped": 1704
+      },
+      "snap_tol": 1e-07
+    }
+  },
+  "simple_greedy": {
+    "exact": {
+      "gate_count": 5939,
+      "merged": {},
+      "op_counts": {
+        "cx": 2759,
+        "rx": 1040,
+        "rz": 2140
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": null
+    },
+    "snap_1e-3_den16": {
+      "gate_count": 5938,
+      "merged": {},
+      "op_counts": {
+        "cx": 2759,
+        "rx": 1040,
+        "rz": 2139
+      },
+      "reduction_fraction": 0.00016837851490147937,
+      "removed": {
+        "rz_zero": 1
+      },
+      "snap_den": 16,
+      "snap_tol": 0.001
+    },
+    "snap_1e-5_den16": {
+      "gate_count": 5939,
+      "merged": {},
+      "op_counts": {
+        "cx": 2759,
+        "rx": 1040,
+        "rz": 2140
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-05
+    },
+    "snap_1e-7_den16": {
+      "gate_count": 5939,
+      "merged": {},
+      "op_counts": {
+        "cx": 2759,
+        "rx": 1040,
+        "rz": 2140
+      },
+      "reduction_fraction": 0.0,
+      "removed": {},
+      "snap_den": 16,
+      "snap_tol": 1e-07
+    }
+  },
+  "skipped_lines": {},
+  "statevector_limit16": {
+    "available": true,
+    "reason": "qreg 56 > limit 16",
+    "skipped": true
+  },
+  "static": {
+    "angle_counts_near_pi_fraction": {
+      "0.001": 2533,
+      "0.01": 2806,
+      "1e-05": 2484,
+      "1e-07": 2361,
+      "1e-09": 2180,
+      "1e-12": 2151
+    },
+    "angle_error_quantiles": {
+      "max": 0.09782964166985852,
+      "min": 0.0,
+      "p50": 0.0,
+      "p90": 0.011327275287735361,
+      "p99": 0.04897599511512851
+    },
+    "cliffordish_counts_by_tol": {
+      "0.001": 967,
+      "0.01": 984,
+      "1e-05": 964,
+      "1e-07": 917,
+      "1e-09": 876,
+      "1e-12": 863
+    },
+    "difficulty": "hard",
+    "exact_rx_pi_after_last_entangler": 0,
+    "exact_rx_pi_count": 4,
+    "exact_rx_pi_lines_first20": [
+      5543,
+      5585,
+      5586,
+      5738
+    ],
+    "exact_rx_pi_qubits": {
+      "21": 1,
+      "37": 1,
+      "40": 1,
+      "44": 1
+    },
+    "gate_count": 5939,
+    "gate_density_per_qubit": 106.05357142857143,
+    "leading_single_qubit_gates": 29,
+    "op_counts": {
+      "cx": 2759,
+      "rx": 1040,
+      "rz": 2140
+    },
+    "path": "challenges/hard/challenge-56_38.qasm",
+    "qreg": 56,
+    "rx_pi_counts_by_tol": {
+      "0.001": 5,
+      "0.01": 5,
+      "1e-05": 4,
+      "1e-07": 4,
+      "1e-09": 4,
+      "1e-12": 4
+    },
+    "rz_pi_over_2_counts_by_tol": {
+      "0.001": 297,
+      "0.01": 302,
+      "1e-05": 297,
+      "1e-07": 284,
+      "1e-09": 269,
+      "1e-12": 262
+    },
+    "top_pi_fractions_tol_1e-3": [
+      [
+        "-1/4",
+        639
+      ],
+      [
+        "1/2",
+        619
+      ],
+      [
+        "1/4",
+        619
+      ],
+      [
+        "-1/2",
+        338
+      ],
+      [
+        "3/4",
+        145
+      ],
+      [
+        "-3/4",
+        95
+      ],
+      [
+        "1/3",
+        14
+      ],
+      [
+        "2/3",
+        12
+      ],
+      [
+        "1/1",
+        8
+      ],
+      [
+        "-2/3",
+        4
+      ],
+      [
+        "1/6",
+        3
+      ],
+      [
+        "-1/3",
+        3
+      ],
+      [
+        "6/11",
+        3
+      ],
+      [
+        "-5/13",
+        2
+      ],
+      [
+        "4/13",
+        2
+      ],
+      [
+        "9/13",
+        2
+      ]
+    ],
+    "trailing_single_qubit_gates": 6
+  },
+  "structural_candidates": {
+    "tol_1e-3": {
+      "exact_rxpi_lines_first30": [
+        5543,
+        5585,
+        5586,
+        5738
+      ],
+      "exact_rxpi_toggle_count": 4,
+      "near_rxpi_lines_first30": [
+        1040,
+        5543,
+        5585,
+        5586,
+        5738
+      ],
+      "near_rxpi_toggle_count": 5,
+      "tol": 0.001,
+      "x_cxswap_exact_rxpi": "00000000000100010010000000000000001000000000000000000000",
+      "x_cxswap_near_rxpi": "01110111000010010011000100100100000001000111110000000000",
+      "x_swaponly_exact_rxpi_logical": "00000000000100010010000000000000001000000000000000000000",
+      "x_swaponly_near_rxpi_logical": "00000100000100010010000000000000001000000000000000000000"
+    },
+    "tol_1e-5": {
+      "exact_rxpi_lines_first30": [
+        5543,
+        5585,
+        5586,
+        5738
+      ],
+      "exact_rxpi_toggle_count": 4,
+      "near_rxpi_lines_first30": [
+        5543,
+        5585,
+        5586,
+        5738
+      ],
+      "near_rxpi_toggle_count": 4,
+      "tol": 1e-05,
+      "x_cxswap_exact_rxpi": "00000000000100010010000000000000001000000000000000000000",
+      "x_cxswap_near_rxpi": "00000000000100010010000000000000001000000000000000000000",
+      "x_swaponly_exact_rxpi_logical": "00000000000100010010000000000000001000000000000000000000",
+      "x_swaponly_near_rxpi_logical": "00000000000100010010000000000000001000000000000000000000"
+    },
+    "tol_1e-9": {
+      "exact_rxpi_lines_first30": [
+        5543,
+        5585,
+        5586,
+        5738
+      ],
+      "exact_rxpi_toggle_count": 4,
+      "near_rxpi_lines_first30": [
+        5543,
+        5585,
+        5586,
+        5738
+      ],
+      "near_rxpi_toggle_count": 4,
+      "tol": 1e-09,
+      "x_cxswap_exact_rxpi": "00000000000100010010000000000000001000000000000000000000",
+      "x_cxswap_near_rxpi": "00000000000100010010000000000000001000000000000000000000",
+      "x_swaponly_exact_rxpi_logical": "00000000000100010010000000000000001000000000000000000000",
+      "x_swaponly_near_rxpi_logical": "00000000000100010010000000000000001000000000000000000000"
+    }
+  }
+}

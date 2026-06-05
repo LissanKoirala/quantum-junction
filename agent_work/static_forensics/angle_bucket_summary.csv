@@ -1,0 +1,2724 @@
+difficulty,op,bucket,nearest_pi_fraction,count
+very easy,rx,numeric_close_pi_fraction,-1,1
+very easy,rx,numeric_close_pi_fraction,-1/11,1
+very easy,rx,numeric_close_pi_fraction,-1/2,7
+very easy,rx,numeric_close_pi_fraction,-1/4,6
+very easy,rx,numeric_close_pi_fraction,-2/3,1
+very easy,rx,numeric_close_pi_fraction,-3/16,1
+very easy,rx,numeric_close_pi_fraction,-3/4,3
+very easy,rx,numeric_close_pi_fraction,-5/11,1
+very easy,rx,numeric_close_pi_fraction,0,2
+very easy,rx,numeric_close_pi_fraction,1/14,1
+very easy,rx,numeric_close_pi_fraction,1/2,16
+very easy,rx,numeric_close_pi_fraction,1/3,1
+very easy,rx,numeric_close_pi_fraction,1/4,7
+very easy,rx,numeric_close_pi_fraction,1/5,1
+very easy,rx,numeric_close_pi_fraction,1/6,1
+very easy,rx,numeric_close_pi_fraction,1/7,1
+very easy,rx,numeric_close_pi_fraction,1/8,1
+very easy,rx,numeric_close_pi_fraction,13/11,1
+very easy,rx,numeric_close_pi_fraction,2/5,1
+very easy,rx,numeric_close_pi_fraction,3/4,4
+very easy,rx,numeric_close_pi_fraction,6/7,1
+very easy,rx,numeric_close_pi_fraction,7/15,1
+very easy,rx,numeric_close_pi_fraction,7/16,1
+very easy,rx,numeric_close_pi_fraction,9/14,1
+very easy,rx,numeric_exact_pi_fraction,-1/2,4
+very easy,rx,numeric_exact_pi_fraction,-1/4,4
+very easy,rx,numeric_exact_pi_fraction,1/2,6
+very easy,rx,numeric_exact_pi_fraction,1/4,1
+very easy,rx,numeric_loose_pi_fraction,-1,10
+very easy,rx,numeric_loose_pi_fraction,-1/10,3
+very easy,rx,numeric_loose_pi_fraction,-1/11,3
+very easy,rx,numeric_loose_pi_fraction,-1/12,2
+very easy,rx,numeric_loose_pi_fraction,-1/14,1
+very easy,rx,numeric_loose_pi_fraction,-1/15,1
+very easy,rx,numeric_loose_pi_fraction,-1/16,1
+very easy,rx,numeric_loose_pi_fraction,-1/2,17
+very easy,rx,numeric_loose_pi_fraction,-1/3,9
+very easy,rx,numeric_loose_pi_fraction,-1/4,5
+very easy,rx,numeric_loose_pi_fraction,-1/5,1
+very easy,rx,numeric_loose_pi_fraction,-1/6,8
+very easy,rx,numeric_loose_pi_fraction,-1/7,3
+very easy,rx,numeric_loose_pi_fraction,-1/9,6
+very easy,rx,numeric_loose_pi_fraction,-10/13,3
+very easy,rx,numeric_loose_pi_fraction,-11/12,1
+very easy,rx,numeric_loose_pi_fraction,-11/13,2
+very easy,rx,numeric_loose_pi_fraction,-11/14,5
+very easy,rx,numeric_loose_pi_fraction,-11/15,3
+very easy,rx,numeric_loose_pi_fraction,-11/16,3
+very easy,rx,numeric_loose_pi_fraction,-12/13,1
+very easy,rx,numeric_loose_pi_fraction,-13/14,2
+very easy,rx,numeric_loose_pi_fraction,-13/15,1
+very easy,rx,numeric_loose_pi_fraction,-14/15,1
+very easy,rx,numeric_loose_pi_fraction,-15/16,2
+very easy,rx,numeric_loose_pi_fraction,-2/11,1
+very easy,rx,numeric_loose_pi_fraction,-2/13,3
+very easy,rx,numeric_loose_pi_fraction,-2/15,2
+very easy,rx,numeric_loose_pi_fraction,-2/3,3
+very easy,rx,numeric_loose_pi_fraction,-2/5,5
+very easy,rx,numeric_loose_pi_fraction,-2/7,5
+very easy,rx,numeric_loose_pi_fraction,-2/9,2
+very easy,rx,numeric_loose_pi_fraction,-3/10,1
+very easy,rx,numeric_loose_pi_fraction,-3/11,1
+very easy,rx,numeric_loose_pi_fraction,-3/13,4
+very easy,rx,numeric_loose_pi_fraction,-3/14,4
+very easy,rx,numeric_loose_pi_fraction,-3/16,3
+very easy,rx,numeric_loose_pi_fraction,-3/4,11
+very easy,rx,numeric_loose_pi_fraction,-3/5,2
+very easy,rx,numeric_loose_pi_fraction,-3/7,7
+very easy,rx,numeric_loose_pi_fraction,-3/8,5
+very easy,rx,numeric_loose_pi_fraction,-4/11,4
+very easy,rx,numeric_loose_pi_fraction,-4/13,3
+very easy,rx,numeric_loose_pi_fraction,-4/15,6
+very easy,rx,numeric_loose_pi_fraction,-4/5,3
+very easy,rx,numeric_loose_pi_fraction,-4/7,3
+very easy,rx,numeric_loose_pi_fraction,-4/9,2
+very easy,rx,numeric_loose_pi_fraction,-5/11,1
+very easy,rx,numeric_loose_pi_fraction,-5/12,6
+very easy,rx,numeric_loose_pi_fraction,-5/13,2
+very easy,rx,numeric_loose_pi_fraction,-5/14,5
+very easy,rx,numeric_loose_pi_fraction,-5/16,5
+very easy,rx,numeric_loose_pi_fraction,-5/6,2
+very easy,rx,numeric_loose_pi_fraction,-5/7,2
+very easy,rx,numeric_loose_pi_fraction,-5/8,3
+very easy,rx,numeric_loose_pi_fraction,-5/9,3
+very easy,rx,numeric_loose_pi_fraction,-6/11,1
+very easy,rx,numeric_loose_pi_fraction,-6/13,1
+very easy,rx,numeric_loose_pi_fraction,-6/7,2
+very easy,rx,numeric_loose_pi_fraction,-7/10,1
+very easy,rx,numeric_loose_pi_fraction,-7/11,5
+very easy,rx,numeric_loose_pi_fraction,-7/12,5
+very easy,rx,numeric_loose_pi_fraction,-7/13,1
+very easy,rx,numeric_loose_pi_fraction,-7/15,7
+very easy,rx,numeric_loose_pi_fraction,-7/16,2
+very easy,rx,numeric_loose_pi_fraction,-7/8,4
+very easy,rx,numeric_loose_pi_fraction,-8/11,3
+very easy,rx,numeric_loose_pi_fraction,-8/13,6
+very easy,rx,numeric_loose_pi_fraction,-8/15,6
+very easy,rx,numeric_loose_pi_fraction,-8/9,3
+very easy,rx,numeric_loose_pi_fraction,-9/10,2
+very easy,rx,numeric_loose_pi_fraction,-9/11,2
+very easy,rx,numeric_loose_pi_fraction,-9/13,1
+very easy,rx,numeric_loose_pi_fraction,-9/14,4
+very easy,rx,numeric_loose_pi_fraction,-9/16,2
+very easy,rx,numeric_loose_pi_fraction,0,25
+very easy,rx,numeric_loose_pi_fraction,1,17
+very easy,rx,numeric_loose_pi_fraction,1/10,6
+very easy,rx,numeric_loose_pi_fraction,1/11,3
+very easy,rx,numeric_loose_pi_fraction,1/12,1
+very easy,rx,numeric_loose_pi_fraction,1/14,3
+very easy,rx,numeric_loose_pi_fraction,1/15,1
+very easy,rx,numeric_loose_pi_fraction,1/16,2
+very easy,rx,numeric_loose_pi_fraction,1/2,22
+very easy,rx,numeric_loose_pi_fraction,1/3,9
+very easy,rx,numeric_loose_pi_fraction,1/4,9
+very easy,rx,numeric_loose_pi_fraction,1/5,7
+very easy,rx,numeric_loose_pi_fraction,1/6,7
+very easy,rx,numeric_loose_pi_fraction,1/7,5
+very easy,rx,numeric_loose_pi_fraction,1/8,3
+very easy,rx,numeric_loose_pi_fraction,1/9,7
+very easy,rx,numeric_loose_pi_fraction,10/11,1
+very easy,rx,numeric_loose_pi_fraction,10/13,4
+very easy,rx,numeric_loose_pi_fraction,11/12,2
+very easy,rx,numeric_loose_pi_fraction,11/13,4
+very easy,rx,numeric_loose_pi_fraction,11/14,2
+very easy,rx,numeric_loose_pi_fraction,11/15,12
+very easy,rx,numeric_loose_pi_fraction,11/16,4
+very easy,rx,numeric_loose_pi_fraction,12/13,2
+very easy,rx,numeric_loose_pi_fraction,13/15,4
+very easy,rx,numeric_loose_pi_fraction,13/16,3
+very easy,rx,numeric_loose_pi_fraction,15/16,4
+very easy,rx,numeric_loose_pi_fraction,2/11,5
+very easy,rx,numeric_loose_pi_fraction,2/13,5
+very easy,rx,numeric_loose_pi_fraction,2/15,3
+very easy,rx,numeric_loose_pi_fraction,2/3,7
+very easy,rx,numeric_loose_pi_fraction,2/5,3
+very easy,rx,numeric_loose_pi_fraction,2/7,3
+very easy,rx,numeric_loose_pi_fraction,2/9,2
+very easy,rx,numeric_loose_pi_fraction,3/10,10
+very easy,rx,numeric_loose_pi_fraction,3/11,5
+very easy,rx,numeric_loose_pi_fraction,3/13,9
+very easy,rx,numeric_loose_pi_fraction,3/14,6
+very easy,rx,numeric_loose_pi_fraction,3/16,6
+very easy,rx,numeric_loose_pi_fraction,3/4,12
+very easy,rx,numeric_loose_pi_fraction,3/5,13
+very easy,rx,numeric_loose_pi_fraction,3/7,6
+very easy,rx,numeric_loose_pi_fraction,3/8,9
+very easy,rx,numeric_loose_pi_fraction,4/11,9
+very easy,rx,numeric_loose_pi_fraction,4/13,2
+very easy,rx,numeric_loose_pi_fraction,4/15,9
+very easy,rx,numeric_loose_pi_fraction,4/3,1
+very easy,rx,numeric_loose_pi_fraction,4/5,2
+very easy,rx,numeric_loose_pi_fraction,4/7,9
+very easy,rx,numeric_loose_pi_fraction,4/9,2
+very easy,rx,numeric_loose_pi_fraction,5/11,6
+very easy,rx,numeric_loose_pi_fraction,5/12,15
+very easy,rx,numeric_loose_pi_fraction,5/13,13
+very easy,rx,numeric_loose_pi_fraction,5/14,6
+very easy,rx,numeric_loose_pi_fraction,5/16,14
+very easy,rx,numeric_loose_pi_fraction,5/6,2
+very easy,rx,numeric_loose_pi_fraction,5/7,7
+very easy,rx,numeric_loose_pi_fraction,5/8,4
+very easy,rx,numeric_loose_pi_fraction,5/9,4
+very easy,rx,numeric_loose_pi_fraction,6/11,4
+very easy,rx,numeric_loose_pi_fraction,6/13,3
+very easy,rx,numeric_loose_pi_fraction,6/7,5
+very easy,rx,numeric_loose_pi_fraction,7/10,5
+very easy,rx,numeric_loose_pi_fraction,7/11,7
+very easy,rx,numeric_loose_pi_fraction,7/12,12
+very easy,rx,numeric_loose_pi_fraction,7/13,3
+very easy,rx,numeric_loose_pi_fraction,7/15,7
+very easy,rx,numeric_loose_pi_fraction,7/16,3
+very easy,rx,numeric_loose_pi_fraction,7/9,1
+very easy,rx,numeric_loose_pi_fraction,8/11,1
+very easy,rx,numeric_loose_pi_fraction,8/13,7
+very easy,rx,numeric_loose_pi_fraction,8/15,8
+very easy,rx,numeric_loose_pi_fraction,8/9,2
+very easy,rx,numeric_loose_pi_fraction,9/10,4
+very easy,rx,numeric_loose_pi_fraction,9/11,4
+very easy,rx,numeric_loose_pi_fraction,9/13,7
+very easy,rx,numeric_loose_pi_fraction,9/14,4
+very easy,rx,numeric_loose_pi_fraction,9/16,6
+very easy,rx,numeric_noisy_non_fraction,-1,5
+very easy,rx,numeric_noisy_non_fraction,-1/16,9
+very easy,rx,numeric_noisy_non_fraction,-1/2,2
+very easy,rx,numeric_noisy_non_fraction,-1/3,2
+very easy,rx,numeric_noisy_non_fraction,-15/16,7
+very easy,rx,numeric_noisy_non_fraction,-7/15,2
+very easy,rx,numeric_noisy_non_fraction,-8/15,4
+very easy,rx,numeric_noisy_non_fraction,0,20
+very easy,rx,numeric_noisy_non_fraction,1,18
+very easy,rx,numeric_noisy_non_fraction,1/16,13
+very easy,rx,numeric_noisy_non_fraction,1/2,12
+very easy,rx,numeric_noisy_non_fraction,1/3,4
+very easy,rx,numeric_noisy_non_fraction,11/16,1
+very easy,rx,numeric_noisy_non_fraction,15/16,5
+very easy,rx,numeric_noisy_non_fraction,5/14,2
+very easy,rx,numeric_noisy_non_fraction,5/16,1
+very easy,rx,numeric_noisy_non_fraction,7/15,10
+very easy,rx,numeric_noisy_non_fraction,8/15,2
+very easy,rx,numeric_noisy_non_fraction,9/14,2
+very easy,rx,numeric_very_close_pi_fraction,-1/2,47
+very easy,rx,numeric_very_close_pi_fraction,-1/4,31
+very easy,rx,numeric_very_close_pi_fraction,-3/4,17
+very easy,rx,numeric_very_close_pi_fraction,0,1
+very easy,rx,numeric_very_close_pi_fraction,1/2,130
+very easy,rx,numeric_very_close_pi_fraction,1/4,31
+very easy,rx,numeric_very_close_pi_fraction,3/4,20
+very easy,rx,symbolic_pi_expr,-1/2,28
+very easy,rx,symbolic_pi_expr,-1/4,8
+very easy,rx,symbolic_pi_expr,-3/4,4
+very easy,rx,symbolic_pi_expr,1,75
+very easy,rx,symbolic_pi_expr,1/2,71
+very easy,rx,symbolic_pi_expr,1/4,14
+very easy,rx,symbolic_pi_expr,3/4,5
+very easy,rz,numeric_close_pi_fraction,-1/2,13
+very easy,rz,numeric_close_pi_fraction,-1/4,4
+very easy,rz,numeric_close_pi_fraction,-1/5,1
+very easy,rz,numeric_close_pi_fraction,-3/14,1
+very easy,rz,numeric_close_pi_fraction,-3/4,3
+very easy,rz,numeric_close_pi_fraction,0,3
+very easy,rz,numeric_close_pi_fraction,1,1
+very easy,rz,numeric_close_pi_fraction,1/2,12
+very easy,rz,numeric_close_pi_fraction,1/4,4
+very easy,rz,numeric_close_pi_fraction,1/5,1
+very easy,rz,numeric_close_pi_fraction,1/6,1
+very easy,rz,numeric_close_pi_fraction,2/9,1
+very easy,rz,numeric_close_pi_fraction,3/10,3
+very easy,rz,numeric_close_pi_fraction,3/4,3
+very easy,rz,numeric_close_pi_fraction,4/15,1
+very easy,rz,numeric_close_pi_fraction,5/13,1
+very easy,rz,numeric_close_pi_fraction,7/9,1
+very easy,rz,numeric_close_pi_fraction,9/11,1
+very easy,rz,numeric_exact_pi_fraction,-1/2,7
+very easy,rz,numeric_exact_pi_fraction,-1/4,1
+very easy,rz,numeric_exact_pi_fraction,1/2,13
+very easy,rz,numeric_exact_pi_fraction,1/4,3
+very easy,rz,numeric_loose_pi_fraction,-1,12
+very easy,rz,numeric_loose_pi_fraction,-1/10,3
+very easy,rz,numeric_loose_pi_fraction,-1/11,5
+very easy,rz,numeric_loose_pi_fraction,-1/12,7
+very easy,rz,numeric_loose_pi_fraction,-1/13,1
+very easy,rz,numeric_loose_pi_fraction,-1/14,3
+very easy,rz,numeric_loose_pi_fraction,-1/15,2
+very easy,rz,numeric_loose_pi_fraction,-1/16,1
+very easy,rz,numeric_loose_pi_fraction,-1/2,26
+very easy,rz,numeric_loose_pi_fraction,-1/3,7
+very easy,rz,numeric_loose_pi_fraction,-1/4,4
+very easy,rz,numeric_loose_pi_fraction,-1/5,2
+very easy,rz,numeric_loose_pi_fraction,-1/6,5
+very easy,rz,numeric_loose_pi_fraction,-1/7,6
+very easy,rz,numeric_loose_pi_fraction,-1/8,2
+very easy,rz,numeric_loose_pi_fraction,-1/9,5
+very easy,rz,numeric_loose_pi_fraction,-10/11,11
+very easy,rz,numeric_loose_pi_fraction,-10/13,2
+very easy,rz,numeric_loose_pi_fraction,-11/12,3
+very easy,rz,numeric_loose_pi_fraction,-11/13,1
+very easy,rz,numeric_loose_pi_fraction,-11/14,6
+very easy,rz,numeric_loose_pi_fraction,-11/15,5
+very easy,rz,numeric_loose_pi_fraction,-11/16,6
+very easy,rz,numeric_loose_pi_fraction,-12/13,1
+very easy,rz,numeric_loose_pi_fraction,-13/14,1
+very easy,rz,numeric_loose_pi_fraction,-13/15,2
+very easy,rz,numeric_loose_pi_fraction,-13/16,1
+very easy,rz,numeric_loose_pi_fraction,-14/15,4
+very easy,rz,numeric_loose_pi_fraction,-15/16,5
+very easy,rz,numeric_loose_pi_fraction,-19/12,1
+very easy,rz,numeric_loose_pi_fraction,-2/11,5
+very easy,rz,numeric_loose_pi_fraction,-2/13,3
+very easy,rz,numeric_loose_pi_fraction,-2/15,4
+very easy,rz,numeric_loose_pi_fraction,-2/3,11
+very easy,rz,numeric_loose_pi_fraction,-2/5,2
+very easy,rz,numeric_loose_pi_fraction,-2/7,7
+very easy,rz,numeric_loose_pi_fraction,-2/9,1
+very easy,rz,numeric_loose_pi_fraction,-3/10,4
+very easy,rz,numeric_loose_pi_fraction,-3/11,7
+very easy,rz,numeric_loose_pi_fraction,-3/13,3
+very easy,rz,numeric_loose_pi_fraction,-3/14,7
+very easy,rz,numeric_loose_pi_fraction,-3/16,5
+very easy,rz,numeric_loose_pi_fraction,-3/4,9
+very easy,rz,numeric_loose_pi_fraction,-3/5,10
+very easy,rz,numeric_loose_pi_fraction,-3/7,4
+very easy,rz,numeric_loose_pi_fraction,-3/8,4
+very easy,rz,numeric_loose_pi_fraction,-4/11,2
+very easy,rz,numeric_loose_pi_fraction,-4/13,2
+very easy,rz,numeric_loose_pi_fraction,-4/15,6
+very easy,rz,numeric_loose_pi_fraction,-4/5,2
+very easy,rz,numeric_loose_pi_fraction,-4/7,10
+very easy,rz,numeric_loose_pi_fraction,-4/9,2
+very easy,rz,numeric_loose_pi_fraction,-5/11,3
+very easy,rz,numeric_loose_pi_fraction,-5/12,12
+very easy,rz,numeric_loose_pi_fraction,-5/13,8
+very easy,rz,numeric_loose_pi_fraction,-5/14,6
+very easy,rz,numeric_loose_pi_fraction,-5/16,5
+very easy,rz,numeric_loose_pi_fraction,-5/6,5
+very easy,rz,numeric_loose_pi_fraction,-5/7,5
+very easy,rz,numeric_loose_pi_fraction,-5/8,6
+very easy,rz,numeric_loose_pi_fraction,-5/9,6
+very easy,rz,numeric_loose_pi_fraction,-6/11,5
+very easy,rz,numeric_loose_pi_fraction,-6/13,1
+very easy,rz,numeric_loose_pi_fraction,-6/7,2
+very easy,rz,numeric_loose_pi_fraction,-7/10,4
+very easy,rz,numeric_loose_pi_fraction,-7/11,2
+very easy,rz,numeric_loose_pi_fraction,-7/12,11
+very easy,rz,numeric_loose_pi_fraction,-7/13,3
+very easy,rz,numeric_loose_pi_fraction,-7/15,4
+very easy,rz,numeric_loose_pi_fraction,-7/6,1
+very easy,rz,numeric_loose_pi_fraction,-7/8,1
+very easy,rz,numeric_loose_pi_fraction,-7/9,3
+very easy,rz,numeric_loose_pi_fraction,-8/11,7
+very easy,rz,numeric_loose_pi_fraction,-8/13,6
+very easy,rz,numeric_loose_pi_fraction,-8/15,4
+very easy,rz,numeric_loose_pi_fraction,-8/9,1
+very easy,rz,numeric_loose_pi_fraction,-9/10,1
+very easy,rz,numeric_loose_pi_fraction,-9/11,5
+very easy,rz,numeric_loose_pi_fraction,-9/13,1
+very easy,rz,numeric_loose_pi_fraction,-9/14,3
+very easy,rz,numeric_loose_pi_fraction,0,38
+very easy,rz,numeric_loose_pi_fraction,1,11
+very easy,rz,numeric_loose_pi_fraction,1/10,4
+very easy,rz,numeric_loose_pi_fraction,1/11,3
+very easy,rz,numeric_loose_pi_fraction,1/12,2
+very easy,rz,numeric_loose_pi_fraction,1/13,1
+very easy,rz,numeric_loose_pi_fraction,1/14,3
+very easy,rz,numeric_loose_pi_fraction,1/15,2
+very easy,rz,numeric_loose_pi_fraction,1/16,8
+very easy,rz,numeric_loose_pi_fraction,1/2,53
+very easy,rz,numeric_loose_pi_fraction,1/3,9
+very easy,rz,numeric_loose_pi_fraction,1/4,10
+very easy,rz,numeric_loose_pi_fraction,1/5,8
+very easy,rz,numeric_loose_pi_fraction,1/6,4
+very easy,rz,numeric_loose_pi_fraction,1/7,5
+very easy,rz,numeric_loose_pi_fraction,1/8,10
+very easy,rz,numeric_loose_pi_fraction,1/9,8
+very easy,rz,numeric_loose_pi_fraction,10/11,3
+very easy,rz,numeric_loose_pi_fraction,10/13,4
+very easy,rz,numeric_loose_pi_fraction,11/12,1
+very easy,rz,numeric_loose_pi_fraction,11/13,3
+very easy,rz,numeric_loose_pi_fraction,11/14,4
+very easy,rz,numeric_loose_pi_fraction,11/15,4
+very easy,rz,numeric_loose_pi_fraction,11/16,8
+very easy,rz,numeric_loose_pi_fraction,12/11,1
+very easy,rz,numeric_loose_pi_fraction,12/13,2
+very easy,rz,numeric_loose_pi_fraction,13/15,1
+very easy,rz,numeric_loose_pi_fraction,13/16,3
+very easy,rz,numeric_loose_pi_fraction,14/15,2
+very easy,rz,numeric_loose_pi_fraction,15/16,5
+very easy,rz,numeric_loose_pi_fraction,2/11,2
+very easy,rz,numeric_loose_pi_fraction,2/13,5
+very easy,rz,numeric_loose_pi_fraction,2/15,2
+very easy,rz,numeric_loose_pi_fraction,2/3,5
+very easy,rz,numeric_loose_pi_fraction,2/5,9
+very easy,rz,numeric_loose_pi_fraction,2/7,5
+very easy,rz,numeric_loose_pi_fraction,2/9,7
+very easy,rz,numeric_loose_pi_fraction,3/10,8
+very easy,rz,numeric_loose_pi_fraction,3/11,7
+very easy,rz,numeric_loose_pi_fraction,3/13,9
+very easy,rz,numeric_loose_pi_fraction,3/14,1
+very easy,rz,numeric_loose_pi_fraction,3/16,5
+very easy,rz,numeric_loose_pi_fraction,3/4,11
+very easy,rz,numeric_loose_pi_fraction,3/5,7
+very easy,rz,numeric_loose_pi_fraction,3/7,5
+very easy,rz,numeric_loose_pi_fraction,3/8,5
+very easy,rz,numeric_loose_pi_fraction,4/11,3
+very easy,rz,numeric_loose_pi_fraction,4/13,3
+very easy,rz,numeric_loose_pi_fraction,4/15,3
+very easy,rz,numeric_loose_pi_fraction,4/5,3
+very easy,rz,numeric_loose_pi_fraction,4/7,7
+very easy,rz,numeric_loose_pi_fraction,4/9,7
+very easy,rz,numeric_loose_pi_fraction,5/11,5
+very easy,rz,numeric_loose_pi_fraction,5/12,7
+very easy,rz,numeric_loose_pi_fraction,5/13,1
+very easy,rz,numeric_loose_pi_fraction,5/14,6
+very easy,rz,numeric_loose_pi_fraction,5/16,11
+very easy,rz,numeric_loose_pi_fraction,5/6,2
+very easy,rz,numeric_loose_pi_fraction,5/7,9
+very easy,rz,numeric_loose_pi_fraction,5/8,7
+very easy,rz,numeric_loose_pi_fraction,5/9,2
+very easy,rz,numeric_loose_pi_fraction,6/11,3
+very easy,rz,numeric_loose_pi_fraction,6/5,1
+very easy,rz,numeric_loose_pi_fraction,6/7,5
+very easy,rz,numeric_loose_pi_fraction,7/10,5
+very easy,rz,numeric_loose_pi_fraction,7/11,2
+very easy,rz,numeric_loose_pi_fraction,7/12,7
+very easy,rz,numeric_loose_pi_fraction,7/13,5
+very easy,rz,numeric_loose_pi_fraction,7/15,11
+very easy,rz,numeric_loose_pi_fraction,7/16,4
+very easy,rz,numeric_loose_pi_fraction,7/8,2
+very easy,rz,numeric_loose_pi_fraction,7/9,1
+very easy,rz,numeric_loose_pi_fraction,8/11,9
+very easy,rz,numeric_loose_pi_fraction,8/13,7
+very easy,rz,numeric_loose_pi_fraction,8/15,3
+very easy,rz,numeric_loose_pi_fraction,8/9,5
+very easy,rz,numeric_loose_pi_fraction,9/10,3
+very easy,rz,numeric_loose_pi_fraction,9/11,4
+very easy,rz,numeric_loose_pi_fraction,9/13,3
+very easy,rz,numeric_loose_pi_fraction,9/14,5
+very easy,rz,numeric_loose_pi_fraction,9/16,3
+very easy,rz,numeric_noisy_non_fraction,-1,12
+very easy,rz,numeric_noisy_non_fraction,-1/16,9
+very easy,rz,numeric_noisy_non_fraction,-1/2,15
+very easy,rz,numeric_noisy_non_fraction,-15/16,9
+very easy,rz,numeric_noisy_non_fraction,-2/3,1
+very easy,rz,numeric_noisy_non_fraction,-5/16,1
+very easy,rz,numeric_noisy_non_fraction,-7/15,1
+very easy,rz,numeric_noisy_non_fraction,-8/15,6
+very easy,rz,numeric_noisy_non_fraction,0,35
+very easy,rz,numeric_noisy_non_fraction,1,11
+very easy,rz,numeric_noisy_non_fraction,1/16,9
+very easy,rz,numeric_noisy_non_fraction,1/2,24
+very easy,rz,numeric_noisy_non_fraction,1/3,2
+very easy,rz,numeric_noisy_non_fraction,15/16,7
+very easy,rz,numeric_noisy_non_fraction,17/16,1
+very easy,rz,numeric_noisy_non_fraction,7/15,3
+very easy,rz,numeric_noisy_non_fraction,8/15,5
+very easy,rz,numeric_noisy_non_fraction,9/14,3
+very easy,rz,numeric_very_close_pi_fraction,-1/2,63
+very easy,rz,numeric_very_close_pi_fraction,-1/4,19
+very easy,rz,numeric_very_close_pi_fraction,-3/4,21
+very easy,rz,numeric_very_close_pi_fraction,1,1
+very easy,rz,numeric_very_close_pi_fraction,1/2,82
+very easy,rz,numeric_very_close_pi_fraction,1/3,1
+very easy,rz,numeric_very_close_pi_fraction,1/4,17
+very easy,rz,numeric_very_close_pi_fraction,3/4,17
+very easy,rz,symbolic_pi_expr,-1/2,62
+very easy,rz,symbolic_pi_expr,-1/4,9
+very easy,rz,symbolic_pi_expr,-3/4,2
+very easy,rz,symbolic_pi_expr,1,30
+very easy,rz,symbolic_pi_expr,1/2,74
+very easy,rz,symbolic_pi_expr,1/4,14
+very easy,rz,symbolic_pi_expr,3/4,4
+easy,rx,numeric_close_pi_fraction,-1,1
+easy,rx,numeric_close_pi_fraction,-1/10,1
+easy,rx,numeric_close_pi_fraction,-1/2,26
+easy,rx,numeric_close_pi_fraction,-1/3,1
+easy,rx,numeric_close_pi_fraction,-1/4,7
+easy,rx,numeric_close_pi_fraction,-11/12,1
+easy,rx,numeric_close_pi_fraction,-13/15,2
+easy,rx,numeric_close_pi_fraction,-13/16,1
+easy,rx,numeric_close_pi_fraction,-2/3,1
+easy,rx,numeric_close_pi_fraction,-3/4,6
+easy,rx,numeric_close_pi_fraction,-4/15,1
+easy,rx,numeric_close_pi_fraction,-4/9,1
+easy,rx,numeric_close_pi_fraction,-5/6,1
+easy,rx,numeric_close_pi_fraction,-7/11,2
+easy,rx,numeric_close_pi_fraction,-8/13,1
+easy,rx,numeric_close_pi_fraction,-9/13,1
+easy,rx,numeric_close_pi_fraction,0,11
+easy,rx,numeric_close_pi_fraction,1,2
+easy,rx,numeric_close_pi_fraction,1/14,1
+easy,rx,numeric_close_pi_fraction,1/15,1
+easy,rx,numeric_close_pi_fraction,1/2,39
+easy,rx,numeric_close_pi_fraction,1/4,15
+easy,rx,numeric_close_pi_fraction,1/9,1
+easy,rx,numeric_close_pi_fraction,2/11,1
+easy,rx,numeric_close_pi_fraction,2/3,2
+easy,rx,numeric_close_pi_fraction,2/5,1
+easy,rx,numeric_close_pi_fraction,3/4,16
+easy,rx,numeric_close_pi_fraction,5/11,1
+easy,rx,numeric_close_pi_fraction,5/13,2
+easy,rx,numeric_close_pi_fraction,5/6,1
+easy,rx,numeric_close_pi_fraction,6/11,1
+easy,rx,numeric_close_pi_fraction,8/11,3
+easy,rx,numeric_close_pi_fraction,8/9,1
+easy,rx,numeric_close_pi_fraction,9/10,1
+easy,rx,numeric_exact_pi_fraction,-1/2,38
+easy,rx,numeric_exact_pi_fraction,-1/4,7
+easy,rx,numeric_exact_pi_fraction,-3/4,9
+easy,rx,numeric_exact_pi_fraction,1/2,54
+easy,rx,numeric_exact_pi_fraction,1/3,1
+easy,rx,numeric_exact_pi_fraction,1/4,11
+easy,rx,numeric_exact_pi_fraction,3/4,4
+easy,rx,numeric_loose_pi_fraction,-1,32
+easy,rx,numeric_loose_pi_fraction,-1/10,6
+easy,rx,numeric_loose_pi_fraction,-1/11,9
+easy,rx,numeric_loose_pi_fraction,-1/12,2
+easy,rx,numeric_loose_pi_fraction,-1/13,3
+easy,rx,numeric_loose_pi_fraction,-1/14,4
+easy,rx,numeric_loose_pi_fraction,-1/15,4
+easy,rx,numeric_loose_pi_fraction,-1/16,6
+easy,rx,numeric_loose_pi_fraction,-1/2,58
+easy,rx,numeric_loose_pi_fraction,-1/3,16
+easy,rx,numeric_loose_pi_fraction,-1/4,17
+easy,rx,numeric_loose_pi_fraction,-1/5,6
+easy,rx,numeric_loose_pi_fraction,-1/6,9
+easy,rx,numeric_loose_pi_fraction,-1/7,5
+easy,rx,numeric_loose_pi_fraction,-1/8,6
+easy,rx,numeric_loose_pi_fraction,-1/9,5
+easy,rx,numeric_loose_pi_fraction,-10/11,9
+easy,rx,numeric_loose_pi_fraction,-10/13,5
+easy,rx,numeric_loose_pi_fraction,-11/10,1
+easy,rx,numeric_loose_pi_fraction,-11/12,3
+easy,rx,numeric_loose_pi_fraction,-11/13,9
+easy,rx,numeric_loose_pi_fraction,-11/14,2
+easy,rx,numeric_loose_pi_fraction,-11/15,6
+easy,rx,numeric_loose_pi_fraction,-11/16,7
+easy,rx,numeric_loose_pi_fraction,-12/13,1
+easy,rx,numeric_loose_pi_fraction,-13/14,3
+easy,rx,numeric_loose_pi_fraction,-13/15,5
+easy,rx,numeric_loose_pi_fraction,-13/16,10
+easy,rx,numeric_loose_pi_fraction,-14/15,2
+easy,rx,numeric_loose_pi_fraction,-15/13,1
+easy,rx,numeric_loose_pi_fraction,-15/14,1
+easy,rx,numeric_loose_pi_fraction,-15/16,5
+easy,rx,numeric_loose_pi_fraction,-2/11,6
+easy,rx,numeric_loose_pi_fraction,-2/13,6
+easy,rx,numeric_loose_pi_fraction,-2/15,1
+easy,rx,numeric_loose_pi_fraction,-2/3,14
+easy,rx,numeric_loose_pi_fraction,-2/5,10
+easy,rx,numeric_loose_pi_fraction,-2/7,10
+easy,rx,numeric_loose_pi_fraction,-2/9,2
+easy,rx,numeric_loose_pi_fraction,-3/10,8
+easy,rx,numeric_loose_pi_fraction,-3/11,10
+easy,rx,numeric_loose_pi_fraction,-3/13,9
+easy,rx,numeric_loose_pi_fraction,-3/14,11
+easy,rx,numeric_loose_pi_fraction,-3/16,3
+easy,rx,numeric_loose_pi_fraction,-3/4,16
+easy,rx,numeric_loose_pi_fraction,-3/5,10
+easy,rx,numeric_loose_pi_fraction,-3/7,2
+easy,rx,numeric_loose_pi_fraction,-3/8,9
+easy,rx,numeric_loose_pi_fraction,-4/11,5
+easy,rx,numeric_loose_pi_fraction,-4/13,12
+easy,rx,numeric_loose_pi_fraction,-4/15,4
+easy,rx,numeric_loose_pi_fraction,-4/5,6
+easy,rx,numeric_loose_pi_fraction,-4/7,6
+easy,rx,numeric_loose_pi_fraction,-4/9,4
+easy,rx,numeric_loose_pi_fraction,-5/11,7
+easy,rx,numeric_loose_pi_fraction,-5/12,8
+easy,rx,numeric_loose_pi_fraction,-5/13,13
+easy,rx,numeric_loose_pi_fraction,-5/14,4
+easy,rx,numeric_loose_pi_fraction,-5/16,7
+easy,rx,numeric_loose_pi_fraction,-5/6,9
+easy,rx,numeric_loose_pi_fraction,-5/7,11
+easy,rx,numeric_loose_pi_fraction,-5/8,10
+easy,rx,numeric_loose_pi_fraction,-5/9,3
+easy,rx,numeric_loose_pi_fraction,-6/11,6
+easy,rx,numeric_loose_pi_fraction,-6/13,3
+easy,rx,numeric_loose_pi_fraction,-6/7,5
+easy,rx,numeric_loose_pi_fraction,-7/10,8
+easy,rx,numeric_loose_pi_fraction,-7/11,4
+easy,rx,numeric_loose_pi_fraction,-7/12,5
+easy,rx,numeric_loose_pi_fraction,-7/13,2
+easy,rx,numeric_loose_pi_fraction,-7/15,10
+easy,rx,numeric_loose_pi_fraction,-7/16,11
+easy,rx,numeric_loose_pi_fraction,-7/8,3
+easy,rx,numeric_loose_pi_fraction,-7/9,6
+easy,rx,numeric_loose_pi_fraction,-8/11,3
+easy,rx,numeric_loose_pi_fraction,-8/13,11
+easy,rx,numeric_loose_pi_fraction,-8/15,15
+easy,rx,numeric_loose_pi_fraction,-8/9,6
+easy,rx,numeric_loose_pi_fraction,-9/10,3
+easy,rx,numeric_loose_pi_fraction,-9/11,5
+easy,rx,numeric_loose_pi_fraction,-9/13,12
+easy,rx,numeric_loose_pi_fraction,-9/14,7
+easy,rx,numeric_loose_pi_fraction,-9/16,9
+easy,rx,numeric_loose_pi_fraction,0,59
+easy,rx,numeric_loose_pi_fraction,1,43
+easy,rx,numeric_loose_pi_fraction,1/10,13
+easy,rx,numeric_loose_pi_fraction,1/11,9
+easy,rx,numeric_loose_pi_fraction,1/12,2
+easy,rx,numeric_loose_pi_fraction,1/13,5
+easy,rx,numeric_loose_pi_fraction,1/14,3
+easy,rx,numeric_loose_pi_fraction,1/15,3
+easy,rx,numeric_loose_pi_fraction,1/16,16
+easy,rx,numeric_loose_pi_fraction,1/2,114
+easy,rx,numeric_loose_pi_fraction,1/3,30
+easy,rx,numeric_loose_pi_fraction,1/4,35
+easy,rx,numeric_loose_pi_fraction,1/5,12
+easy,rx,numeric_loose_pi_fraction,1/6,16
+easy,rx,numeric_loose_pi_fraction,1/7,9
+easy,rx,numeric_loose_pi_fraction,1/8,8
+easy,rx,numeric_loose_pi_fraction,1/9,12
+easy,rx,numeric_loose_pi_fraction,10/11,9
+easy,rx,numeric_loose_pi_fraction,10/13,14
+easy,rx,numeric_loose_pi_fraction,11/12,4
+easy,rx,numeric_loose_pi_fraction,11/13,9
+easy,rx,numeric_loose_pi_fraction,11/14,11
+easy,rx,numeric_loose_pi_fraction,11/15,8
+easy,rx,numeric_loose_pi_fraction,11/16,12
+easy,rx,numeric_loose_pi_fraction,12/11,1
+easy,rx,numeric_loose_pi_fraction,12/13,1
+easy,rx,numeric_loose_pi_fraction,13/14,5
+easy,rx,numeric_loose_pi_fraction,13/15,1
+easy,rx,numeric_loose_pi_fraction,13/16,9
+easy,rx,numeric_loose_pi_fraction,14/15,4
+easy,rx,numeric_loose_pi_fraction,15/16,6
+easy,rx,numeric_loose_pi_fraction,2/11,6
+easy,rx,numeric_loose_pi_fraction,2/13,13
+easy,rx,numeric_loose_pi_fraction,2/15,5
+easy,rx,numeric_loose_pi_fraction,2/3,34
+easy,rx,numeric_loose_pi_fraction,2/5,25
+easy,rx,numeric_loose_pi_fraction,2/7,10
+easy,rx,numeric_loose_pi_fraction,2/9,10
+easy,rx,numeric_loose_pi_fraction,3/10,11
+easy,rx,numeric_loose_pi_fraction,3/11,6
+easy,rx,numeric_loose_pi_fraction,3/13,21
+easy,rx,numeric_loose_pi_fraction,3/14,13
+easy,rx,numeric_loose_pi_fraction,3/16,5
+easy,rx,numeric_loose_pi_fraction,3/4,24
+easy,rx,numeric_loose_pi_fraction,3/5,14
+easy,rx,numeric_loose_pi_fraction,3/7,13
+easy,rx,numeric_loose_pi_fraction,3/8,7
+easy,rx,numeric_loose_pi_fraction,4/11,13
+easy,rx,numeric_loose_pi_fraction,4/13,14
+easy,rx,numeric_loose_pi_fraction,4/15,11
+easy,rx,numeric_loose_pi_fraction,4/5,8
+easy,rx,numeric_loose_pi_fraction,4/7,16
+easy,rx,numeric_loose_pi_fraction,4/9,10
+easy,rx,numeric_loose_pi_fraction,5/11,17
+easy,rx,numeric_loose_pi_fraction,5/12,26
+easy,rx,numeric_loose_pi_fraction,5/13,14
+easy,rx,numeric_loose_pi_fraction,5/14,12
+easy,rx,numeric_loose_pi_fraction,5/16,19
+easy,rx,numeric_loose_pi_fraction,5/6,11
+easy,rx,numeric_loose_pi_fraction,5/7,13
+easy,rx,numeric_loose_pi_fraction,5/8,15
+easy,rx,numeric_loose_pi_fraction,5/9,13
+easy,rx,numeric_loose_pi_fraction,6/11,16
+easy,rx,numeric_loose_pi_fraction,6/13,13
+easy,rx,numeric_loose_pi_fraction,6/7,5
+easy,rx,numeric_loose_pi_fraction,7/10,15
+easy,rx,numeric_loose_pi_fraction,7/11,4
+easy,rx,numeric_loose_pi_fraction,7/12,26
+easy,rx,numeric_loose_pi_fraction,7/13,4
+easy,rx,numeric_loose_pi_fraction,7/15,32
+easy,rx,numeric_loose_pi_fraction,7/16,6
+easy,rx,numeric_loose_pi_fraction,7/8,9
+easy,rx,numeric_loose_pi_fraction,7/9,14
+easy,rx,numeric_loose_pi_fraction,8/11,12
+easy,rx,numeric_loose_pi_fraction,8/13,14
+easy,rx,numeric_loose_pi_fraction,8/15,17
+easy,rx,numeric_loose_pi_fraction,8/9,7
+easy,rx,numeric_loose_pi_fraction,9/10,3
+easy,rx,numeric_loose_pi_fraction,9/11,8
+easy,rx,numeric_loose_pi_fraction,9/13,16
+easy,rx,numeric_loose_pi_fraction,9/14,15
+easy,rx,numeric_loose_pi_fraction,9/16,9
+easy,rx,numeric_noisy_non_fraction,-1,25
+easy,rx,numeric_noisy_non_fraction,-1/16,18
+easy,rx,numeric_noisy_non_fraction,-1/2,18
+easy,rx,numeric_noisy_non_fraction,-1/3,2
+easy,rx,numeric_noisy_non_fraction,-11/16,1
+easy,rx,numeric_noisy_non_fraction,-15/16,15
+easy,rx,numeric_noisy_non_fraction,-17/16,1
+easy,rx,numeric_noisy_non_fraction,-5/14,2
+easy,rx,numeric_noisy_non_fraction,-5/16,1
+easy,rx,numeric_noisy_non_fraction,-7/15,7
+easy,rx,numeric_noisy_non_fraction,-8/15,4
+easy,rx,numeric_noisy_non_fraction,-9/14,2
+easy,rx,numeric_noisy_non_fraction,0,50
+easy,rx,numeric_noisy_non_fraction,1,34
+easy,rx,numeric_noisy_non_fraction,1/16,34
+easy,rx,numeric_noisy_non_fraction,1/2,36
+easy,rx,numeric_noisy_non_fraction,1/3,1
+easy,rx,numeric_noisy_non_fraction,11/16,2
+easy,rx,numeric_noisy_non_fraction,15/16,19
+easy,rx,numeric_noisy_non_fraction,2/3,4
+easy,rx,numeric_noisy_non_fraction,5/14,3
+easy,rx,numeric_noisy_non_fraction,7/15,17
+easy,rx,numeric_noisy_non_fraction,8/15,14
+easy,rx,numeric_very_close_pi_fraction,-1/2,329
+easy,rx,numeric_very_close_pi_fraction,-1/4,150
+easy,rx,numeric_very_close_pi_fraction,-3/4,82
+easy,rx,numeric_very_close_pi_fraction,0,3
+easy,rx,numeric_very_close_pi_fraction,1,1
+easy,rx,numeric_very_close_pi_fraction,1/2,552
+easy,rx,numeric_very_close_pi_fraction,1/3,3
+easy,rx,numeric_very_close_pi_fraction,1/4,171
+easy,rx,numeric_very_close_pi_fraction,1/6,1
+easy,rx,numeric_very_close_pi_fraction,2/3,4
+easy,rx,numeric_very_close_pi_fraction,3/4,100
+easy,rx,symbolic_pi_expr,-1/2,277
+easy,rx,symbolic_pi_expr,-1/3,1
+easy,rx,symbolic_pi_expr,-1/4,91
+easy,rx,symbolic_pi_expr,-3/4,44
+easy,rx,symbolic_pi_expr,1,73
+easy,rx,symbolic_pi_expr,1/2,657
+easy,rx,symbolic_pi_expr,1/4,85
+easy,rx,symbolic_pi_expr,3/4,54
+easy,rz,numeric_close_pi_fraction,-1,1
+easy,rz,numeric_close_pi_fraction,-1/12,1
+easy,rz,numeric_close_pi_fraction,-1/2,32
+easy,rz,numeric_close_pi_fraction,-1/4,17
+easy,rz,numeric_close_pi_fraction,-1/9,2
+easy,rz,numeric_close_pi_fraction,-11/16,1
+easy,rz,numeric_close_pi_fraction,-14/15,1
+easy,rz,numeric_close_pi_fraction,-3/10,1
+easy,rz,numeric_close_pi_fraction,-3/13,1
+easy,rz,numeric_close_pi_fraction,-3/4,9
+easy,rz,numeric_close_pi_fraction,-3/5,1
+easy,rz,numeric_close_pi_fraction,-3/7,1
+easy,rz,numeric_close_pi_fraction,-5/4,1
+easy,rz,numeric_close_pi_fraction,-5/6,1
+easy,rz,numeric_close_pi_fraction,-5/7,1
+easy,rz,numeric_close_pi_fraction,-6/11,1
+easy,rz,numeric_close_pi_fraction,-6/7,1
+easy,rz,numeric_close_pi_fraction,-7/8,2
+easy,rz,numeric_close_pi_fraction,0,5
+easy,rz,numeric_close_pi_fraction,1,3
+easy,rz,numeric_close_pi_fraction,1/13,1
+easy,rz,numeric_close_pi_fraction,1/2,40
+easy,rz,numeric_close_pi_fraction,1/3,1
+easy,rz,numeric_close_pi_fraction,1/4,28
+easy,rz,numeric_close_pi_fraction,1/9,1
+easy,rz,numeric_close_pi_fraction,10/13,1
+easy,rz,numeric_close_pi_fraction,14/15,1
+easy,rz,numeric_close_pi_fraction,2/11,1
+easy,rz,numeric_close_pi_fraction,2/13,1
+easy,rz,numeric_close_pi_fraction,2/3,1
+easy,rz,numeric_close_pi_fraction,2/5,1
+easy,rz,numeric_close_pi_fraction,2/7,1
+easy,rz,numeric_close_pi_fraction,3/13,1
+easy,rz,numeric_close_pi_fraction,3/16,1
+easy,rz,numeric_close_pi_fraction,3/4,9
+easy,rz,numeric_close_pi_fraction,3/7,1
+easy,rz,numeric_close_pi_fraction,5/13,1
+easy,rz,numeric_close_pi_fraction,7/10,1
+easy,rz,numeric_close_pi_fraction,7/16,1
+easy,rz,numeric_close_pi_fraction,8/11,2
+easy,rz,numeric_close_pi_fraction,8/15,1
+easy,rz,numeric_close_pi_fraction,9/14,1
+easy,rz,numeric_exact_pi_fraction,-1/2,42
+easy,rz,numeric_exact_pi_fraction,-1/4,17
+easy,rz,numeric_exact_pi_fraction,-3/4,6
+easy,rz,numeric_exact_pi_fraction,1/2,54
+easy,rz,numeric_exact_pi_fraction,1/4,18
+easy,rz,numeric_exact_pi_fraction,2/3,1
+easy,rz,numeric_exact_pi_fraction,3/4,7
+easy,rz,numeric_loose_pi_fraction,-1,30
+easy,rz,numeric_loose_pi_fraction,-1/10,6
+easy,rz,numeric_loose_pi_fraction,-1/11,5
+easy,rz,numeric_loose_pi_fraction,-1/12,3
+easy,rz,numeric_loose_pi_fraction,-1/13,4
+easy,rz,numeric_loose_pi_fraction,-1/14,3
+easy,rz,numeric_loose_pi_fraction,-1/15,4
+easy,rz,numeric_loose_pi_fraction,-1/16,9
+easy,rz,numeric_loose_pi_fraction,-1/2,66
+easy,rz,numeric_loose_pi_fraction,-1/3,13
+easy,rz,numeric_loose_pi_fraction,-1/4,19
+easy,rz,numeric_loose_pi_fraction,-1/5,16
+easy,rz,numeric_loose_pi_fraction,-1/6,11
+easy,rz,numeric_loose_pi_fraction,-1/7,7
+easy,rz,numeric_loose_pi_fraction,-1/8,9
+easy,rz,numeric_loose_pi_fraction,-1/9,6
+easy,rz,numeric_loose_pi_fraction,-10/11,1
+easy,rz,numeric_loose_pi_fraction,-10/13,8
+easy,rz,numeric_loose_pi_fraction,-11/12,1
+easy,rz,numeric_loose_pi_fraction,-11/13,7
+easy,rz,numeric_loose_pi_fraction,-11/14,12
+easy,rz,numeric_loose_pi_fraction,-11/15,8
+easy,rz,numeric_loose_pi_fraction,-11/16,11
+easy,rz,numeric_loose_pi_fraction,-12/13,1
+easy,rz,numeric_loose_pi_fraction,-13/11,1
+easy,rz,numeric_loose_pi_fraction,-13/14,3
+easy,rz,numeric_loose_pi_fraction,-13/15,7
+easy,rz,numeric_loose_pi_fraction,-13/16,6
+easy,rz,numeric_loose_pi_fraction,-14/15,4
+easy,rz,numeric_loose_pi_fraction,-15/16,6
+easy,rz,numeric_loose_pi_fraction,-2/11,6
+easy,rz,numeric_loose_pi_fraction,-2/13,13
+easy,rz,numeric_loose_pi_fraction,-2/15,7
+easy,rz,numeric_loose_pi_fraction,-2/3,14
+easy,rz,numeric_loose_pi_fraction,-2/5,14
+easy,rz,numeric_loose_pi_fraction,-2/7,12
+easy,rz,numeric_loose_pi_fraction,-2/9,5
+easy,rz,numeric_loose_pi_fraction,-3/10,14
+easy,rz,numeric_loose_pi_fraction,-3/11,8
+easy,rz,numeric_loose_pi_fraction,-3/13,16
+easy,rz,numeric_loose_pi_fraction,-3/14,10
+easy,rz,numeric_loose_pi_fraction,-3/16,5
+easy,rz,numeric_loose_pi_fraction,-3/4,19
+easy,rz,numeric_loose_pi_fraction,-3/5,10
+easy,rz,numeric_loose_pi_fraction,-3/7,12
+easy,rz,numeric_loose_pi_fraction,-3/8,9
+easy,rz,numeric_loose_pi_fraction,-4/11,7
+easy,rz,numeric_loose_pi_fraction,-4/13,10
+easy,rz,numeric_loose_pi_fraction,-4/15,8
+easy,rz,numeric_loose_pi_fraction,-4/5,12
+easy,rz,numeric_loose_pi_fraction,-4/7,10
+easy,rz,numeric_loose_pi_fraction,-4/9,9
+easy,rz,numeric_loose_pi_fraction,-5/11,9
+easy,rz,numeric_loose_pi_fraction,-5/12,14
+easy,rz,numeric_loose_pi_fraction,-5/13,11
+easy,rz,numeric_loose_pi_fraction,-5/14,9
+easy,rz,numeric_loose_pi_fraction,-5/16,7
+easy,rz,numeric_loose_pi_fraction,-5/6,2
+easy,rz,numeric_loose_pi_fraction,-5/7,8
+easy,rz,numeric_loose_pi_fraction,-5/8,4
+easy,rz,numeric_loose_pi_fraction,-5/9,7
+easy,rz,numeric_loose_pi_fraction,-6/11,8
+easy,rz,numeric_loose_pi_fraction,-6/13,5
+easy,rz,numeric_loose_pi_fraction,-6/7,3
+easy,rz,numeric_loose_pi_fraction,-7/10,5
+easy,rz,numeric_loose_pi_fraction,-7/11,6
+easy,rz,numeric_loose_pi_fraction,-7/12,19
+easy,rz,numeric_loose_pi_fraction,-7/13,5
+easy,rz,numeric_loose_pi_fraction,-7/15,17
+easy,rz,numeric_loose_pi_fraction,-7/16,6
+easy,rz,numeric_loose_pi_fraction,-7/8,5
+easy,rz,numeric_loose_pi_fraction,-7/9,5
+easy,rz,numeric_loose_pi_fraction,-8/11,5
+easy,rz,numeric_loose_pi_fraction,-8/13,10
+easy,rz,numeric_loose_pi_fraction,-8/15,18
+easy,rz,numeric_loose_pi_fraction,-8/9,12
+easy,rz,numeric_loose_pi_fraction,-9/10,4
+easy,rz,numeric_loose_pi_fraction,-9/11,2
+easy,rz,numeric_loose_pi_fraction,-9/13,9
+easy,rz,numeric_loose_pi_fraction,-9/14,8
+easy,rz,numeric_loose_pi_fraction,-9/16,4
+easy,rz,numeric_loose_pi_fraction,0,104
+easy,rz,numeric_loose_pi_fraction,1,34
+easy,rz,numeric_loose_pi_fraction,1/10,9
+easy,rz,numeric_loose_pi_fraction,1/11,11
+easy,rz,numeric_loose_pi_fraction,1/12,10
+easy,rz,numeric_loose_pi_fraction,1/13,5
+easy,rz,numeric_loose_pi_fraction,1/14,4
+easy,rz,numeric_loose_pi_fraction,1/15,4
+easy,rz,numeric_loose_pi_fraction,1/16,8
+easy,rz,numeric_loose_pi_fraction,1/2,105
+easy,rz,numeric_loose_pi_fraction,1/3,20
+easy,rz,numeric_loose_pi_fraction,1/4,33
+easy,rz,numeric_loose_pi_fraction,1/5,13
+easy,rz,numeric_loose_pi_fraction,1/6,15
+easy,rz,numeric_loose_pi_fraction,1/7,8
+easy,rz,numeric_loose_pi_fraction,1/8,11
+easy,rz,numeric_loose_pi_fraction,1/9,19
+easy,rz,numeric_loose_pi_fraction,10/11,6
+easy,rz,numeric_loose_pi_fraction,10/13,10
+easy,rz,numeric_loose_pi_fraction,11/12,12
+easy,rz,numeric_loose_pi_fraction,11/13,5
+easy,rz,numeric_loose_pi_fraction,11/14,5
+easy,rz,numeric_loose_pi_fraction,11/15,10
+easy,rz,numeric_loose_pi_fraction,11/16,10
+easy,rz,numeric_loose_pi_fraction,12/13,4
+easy,rz,numeric_loose_pi_fraction,13/14,5
+easy,rz,numeric_loose_pi_fraction,13/15,9
+easy,rz,numeric_loose_pi_fraction,13/16,6
+easy,rz,numeric_loose_pi_fraction,14/15,2
+easy,rz,numeric_loose_pi_fraction,15/16,8
+easy,rz,numeric_loose_pi_fraction,2/11,9
+easy,rz,numeric_loose_pi_fraction,2/13,8
+easy,rz,numeric_loose_pi_fraction,2/15,13
+easy,rz,numeric_loose_pi_fraction,2/3,24
+easy,rz,numeric_loose_pi_fraction,2/5,23
+easy,rz,numeric_loose_pi_fraction,2/7,17
+easy,rz,numeric_loose_pi_fraction,2/9,12
+easy,rz,numeric_loose_pi_fraction,3/10,12
+easy,rz,numeric_loose_pi_fraction,3/11,8
+easy,rz,numeric_loose_pi_fraction,3/13,19
+easy,rz,numeric_loose_pi_fraction,3/14,12
+easy,rz,numeric_loose_pi_fraction,3/16,9
+easy,rz,numeric_loose_pi_fraction,3/4,22
+easy,rz,numeric_loose_pi_fraction,3/5,10
+easy,rz,numeric_loose_pi_fraction,3/7,15
+easy,rz,numeric_loose_pi_fraction,3/8,7
+easy,rz,numeric_loose_pi_fraction,4/11,10
+easy,rz,numeric_loose_pi_fraction,4/13,7
+easy,rz,numeric_loose_pi_fraction,4/15,14
+easy,rz,numeric_loose_pi_fraction,4/5,11
+easy,rz,numeric_loose_pi_fraction,4/7,15
+easy,rz,numeric_loose_pi_fraction,4/9,9
+easy,rz,numeric_loose_pi_fraction,5/11,14
+easy,rz,numeric_loose_pi_fraction,5/12,20
+easy,rz,numeric_loose_pi_fraction,5/13,13
+easy,rz,numeric_loose_pi_fraction,5/14,15
+easy,rz,numeric_loose_pi_fraction,5/16,12
+easy,rz,numeric_loose_pi_fraction,5/6,5
+easy,rz,numeric_loose_pi_fraction,5/7,9
+easy,rz,numeric_loose_pi_fraction,5/8,10
+easy,rz,numeric_loose_pi_fraction,5/9,9
+easy,rz,numeric_loose_pi_fraction,6/11,2
+easy,rz,numeric_loose_pi_fraction,6/13,8
+easy,rz,numeric_loose_pi_fraction,6/7,6
+easy,rz,numeric_loose_pi_fraction,7/10,11
+easy,rz,numeric_loose_pi_fraction,7/11,12
+easy,rz,numeric_loose_pi_fraction,7/12,23
+easy,rz,numeric_loose_pi_fraction,7/13,12
+easy,rz,numeric_loose_pi_fraction,7/15,25
+easy,rz,numeric_loose_pi_fraction,7/16,13
+easy,rz,numeric_loose_pi_fraction,7/8,6
+easy,rz,numeric_loose_pi_fraction,7/9,6
+easy,rz,numeric_loose_pi_fraction,8/11,6
+easy,rz,numeric_loose_pi_fraction,8/13,13
+easy,rz,numeric_loose_pi_fraction,8/15,22
+easy,rz,numeric_loose_pi_fraction,8/7,1
+easy,rz,numeric_loose_pi_fraction,8/9,4
+easy,rz,numeric_loose_pi_fraction,9/10,5
+easy,rz,numeric_loose_pi_fraction,9/11,4
+easy,rz,numeric_loose_pi_fraction,9/13,6
+easy,rz,numeric_loose_pi_fraction,9/14,12
+easy,rz,numeric_loose_pi_fraction,9/16,8
+easy,rz,numeric_noisy_non_fraction,-1,13
+easy,rz,numeric_noisy_non_fraction,-1/16,30
+easy,rz,numeric_noisy_non_fraction,-1/2,27
+easy,rz,numeric_noisy_non_fraction,-1/3,2
+easy,rz,numeric_noisy_non_fraction,-11/16,1
+easy,rz,numeric_noisy_non_fraction,-15/16,24
+easy,rz,numeric_noisy_non_fraction,-17/16,1
+easy,rz,numeric_noisy_non_fraction,-2,1
+easy,rz,numeric_noisy_non_fraction,-2/3,2
+easy,rz,numeric_noisy_non_fraction,-5/16,1
+easy,rz,numeric_noisy_non_fraction,-7/15,11
+easy,rz,numeric_noisy_non_fraction,-8/15,13
+easy,rz,numeric_noisy_non_fraction,0,92
+easy,rz,numeric_noisy_non_fraction,1,22
+easy,rz,numeric_noisy_non_fraction,1/16,28
+easy,rz,numeric_noisy_non_fraction,1/2,40
+easy,rz,numeric_noisy_non_fraction,1/3,1
+easy,rz,numeric_noisy_non_fraction,15/16,19
+easy,rz,numeric_noisy_non_fraction,2/3,2
+easy,rz,numeric_noisy_non_fraction,5/14,4
+easy,rz,numeric_noisy_non_fraction,5/16,1
+easy,rz,numeric_noisy_non_fraction,7/15,14
+easy,rz,numeric_noisy_non_fraction,8/15,14
+easy,rz,numeric_noisy_non_fraction,9/14,1
+easy,rz,numeric_very_close_pi_fraction,-1/2,363
+easy,rz,numeric_very_close_pi_fraction,-1/4,219
+easy,rz,numeric_very_close_pi_fraction,-2/3,1
+easy,rz,numeric_very_close_pi_fraction,-3/2,1
+easy,rz,numeric_very_close_pi_fraction,-3/4,110
+easy,rz,numeric_very_close_pi_fraction,0,4
+easy,rz,numeric_very_close_pi_fraction,1,1
+easy,rz,numeric_very_close_pi_fraction,1/2,567
+easy,rz,numeric_very_close_pi_fraction,1/3,7
+easy,rz,numeric_very_close_pi_fraction,1/4,224
+easy,rz,numeric_very_close_pi_fraction,2/3,6
+easy,rz,numeric_very_close_pi_fraction,3/4,108
+easy,rz,numeric_very_close_pi_fraction,5/8,1
+easy,rz,symbolic_pi_expr,-1/2,490
+easy,rz,symbolic_pi_expr,-1/4,98
+easy,rz,symbolic_pi_expr,-3/4,61
+easy,rz,symbolic_pi_expr,1,107
+easy,rz,symbolic_pi_expr,1/2,502
+easy,rz,symbolic_pi_expr,1/3,3
+easy,rz,symbolic_pi_expr,1/4,95
+easy,rz,symbolic_pi_expr,3/4,52
+moderate,rx,numeric_close_pi_fraction,-1/14,1
+moderate,rx,numeric_close_pi_fraction,-1/2,18
+moderate,rx,numeric_close_pi_fraction,-1/4,4
+moderate,rx,numeric_close_pi_fraction,-3/4,6
+moderate,rx,numeric_close_pi_fraction,-4/15,1
+moderate,rx,numeric_close_pi_fraction,-7/11,1
+moderate,rx,numeric_close_pi_fraction,-7/13,1
+moderate,rx,numeric_close_pi_fraction,-9/13,1
+moderate,rx,numeric_close_pi_fraction,0,3
+moderate,rx,numeric_close_pi_fraction,1/15,1
+moderate,rx,numeric_close_pi_fraction,1/2,18
+moderate,rx,numeric_close_pi_fraction,1/3,1
+moderate,rx,numeric_close_pi_fraction,1/4,4
+moderate,rx,numeric_close_pi_fraction,2/3,1
+moderate,rx,numeric_close_pi_fraction,3/4,2
+moderate,rx,numeric_close_pi_fraction,4/9,1
+moderate,rx,numeric_close_pi_fraction,9/13,1
+moderate,rx,numeric_exact_pi_fraction,-1/2,36
+moderate,rx,numeric_exact_pi_fraction,-1/4,10
+moderate,rx,numeric_exact_pi_fraction,-3/4,5
+moderate,rx,numeric_exact_pi_fraction,-5/4,1
+moderate,rx,numeric_exact_pi_fraction,1/2,36
+moderate,rx,numeric_exact_pi_fraction,1/4,13
+moderate,rx,numeric_exact_pi_fraction,3/4,4
+moderate,rx,numeric_loose_pi_fraction,-1,11
+moderate,rx,numeric_loose_pi_fraction,-1/10,3
+moderate,rx,numeric_loose_pi_fraction,-1/11,1
+moderate,rx,numeric_loose_pi_fraction,-1/13,1
+moderate,rx,numeric_loose_pi_fraction,-1/14,2
+moderate,rx,numeric_loose_pi_fraction,-1/15,2
+moderate,rx,numeric_loose_pi_fraction,-1/16,4
+moderate,rx,numeric_loose_pi_fraction,-1/2,34
+moderate,rx,numeric_loose_pi_fraction,-1/3,6
+moderate,rx,numeric_loose_pi_fraction,-1/4,11
+moderate,rx,numeric_loose_pi_fraction,-1/5,4
+moderate,rx,numeric_loose_pi_fraction,-1/6,2
+moderate,rx,numeric_loose_pi_fraction,-1/7,5
+moderate,rx,numeric_loose_pi_fraction,-1/8,4
+moderate,rx,numeric_loose_pi_fraction,-1/9,5
+moderate,rx,numeric_loose_pi_fraction,-10/11,1
+moderate,rx,numeric_loose_pi_fraction,-10/13,4
+moderate,rx,numeric_loose_pi_fraction,-11/12,2
+moderate,rx,numeric_loose_pi_fraction,-11/13,5
+moderate,rx,numeric_loose_pi_fraction,-11/14,4
+moderate,rx,numeric_loose_pi_fraction,-11/15,4
+moderate,rx,numeric_loose_pi_fraction,-11/16,6
+moderate,rx,numeric_loose_pi_fraction,-12/13,2
+moderate,rx,numeric_loose_pi_fraction,-13/14,2
+moderate,rx,numeric_loose_pi_fraction,-13/15,2
+moderate,rx,numeric_loose_pi_fraction,-13/16,3
+moderate,rx,numeric_loose_pi_fraction,-14/15,5
+moderate,rx,numeric_loose_pi_fraction,-15/16,4
+moderate,rx,numeric_loose_pi_fraction,-2/11,3
+moderate,rx,numeric_loose_pi_fraction,-2/13,6
+moderate,rx,numeric_loose_pi_fraction,-2/15,7
+moderate,rx,numeric_loose_pi_fraction,-2/3,7
+moderate,rx,numeric_loose_pi_fraction,-2/5,5
+moderate,rx,numeric_loose_pi_fraction,-2/7,4
+moderate,rx,numeric_loose_pi_fraction,-2/9,3
+moderate,rx,numeric_loose_pi_fraction,-3/10,5
+moderate,rx,numeric_loose_pi_fraction,-3/11,6
+moderate,rx,numeric_loose_pi_fraction,-3/13,8
+moderate,rx,numeric_loose_pi_fraction,-3/14,1
+moderate,rx,numeric_loose_pi_fraction,-3/16,2
+moderate,rx,numeric_loose_pi_fraction,-3/4,16
+moderate,rx,numeric_loose_pi_fraction,-3/5,4
+moderate,rx,numeric_loose_pi_fraction,-3/7,8
+moderate,rx,numeric_loose_pi_fraction,-3/8,3
+moderate,rx,numeric_loose_pi_fraction,-4/11,5
+moderate,rx,numeric_loose_pi_fraction,-4/13,18
+moderate,rx,numeric_loose_pi_fraction,-4/15,4
+moderate,rx,numeric_loose_pi_fraction,-4/5,3
+moderate,rx,numeric_loose_pi_fraction,-4/7,6
+moderate,rx,numeric_loose_pi_fraction,-4/9,5
+moderate,rx,numeric_loose_pi_fraction,-5/11,4
+moderate,rx,numeric_loose_pi_fraction,-5/12,7
+moderate,rx,numeric_loose_pi_fraction,-5/13,2
+moderate,rx,numeric_loose_pi_fraction,-5/14,7
+moderate,rx,numeric_loose_pi_fraction,-5/16,4
+moderate,rx,numeric_loose_pi_fraction,-5/6,5
+moderate,rx,numeric_loose_pi_fraction,-5/7,5
+moderate,rx,numeric_loose_pi_fraction,-5/9,1
+moderate,rx,numeric_loose_pi_fraction,-6/11,4
+moderate,rx,numeric_loose_pi_fraction,-6/13,1
+moderate,rx,numeric_loose_pi_fraction,-6/7,1
+moderate,rx,numeric_loose_pi_fraction,-7/10,1
+moderate,rx,numeric_loose_pi_fraction,-7/11,4
+moderate,rx,numeric_loose_pi_fraction,-7/12,6
+moderate,rx,numeric_loose_pi_fraction,-7/13,2
+moderate,rx,numeric_loose_pi_fraction,-7/15,12
+moderate,rx,numeric_loose_pi_fraction,-7/16,5
+moderate,rx,numeric_loose_pi_fraction,-7/8,4
+moderate,rx,numeric_loose_pi_fraction,-7/9,4
+moderate,rx,numeric_loose_pi_fraction,-8/11,4
+moderate,rx,numeric_loose_pi_fraction,-8/13,5
+moderate,rx,numeric_loose_pi_fraction,-8/15,8
+moderate,rx,numeric_loose_pi_fraction,-8/9,4
+moderate,rx,numeric_loose_pi_fraction,-9/10,1
+moderate,rx,numeric_loose_pi_fraction,-9/11,5
+moderate,rx,numeric_loose_pi_fraction,-9/13,18
+moderate,rx,numeric_loose_pi_fraction,-9/14,8
+moderate,rx,numeric_loose_pi_fraction,-9/16,2
+moderate,rx,numeric_loose_pi_fraction,0,33
+moderate,rx,numeric_loose_pi_fraction,1,18
+moderate,rx,numeric_loose_pi_fraction,1/10,3
+moderate,rx,numeric_loose_pi_fraction,1/11,3
+moderate,rx,numeric_loose_pi_fraction,1/12,1
+moderate,rx,numeric_loose_pi_fraction,1/13,3
+moderate,rx,numeric_loose_pi_fraction,1/15,2
+moderate,rx,numeric_loose_pi_fraction,1/16,5
+moderate,rx,numeric_loose_pi_fraction,1/2,51
+moderate,rx,numeric_loose_pi_fraction,1/3,8
+moderate,rx,numeric_loose_pi_fraction,1/4,23
+moderate,rx,numeric_loose_pi_fraction,1/5,4
+moderate,rx,numeric_loose_pi_fraction,1/6,8
+moderate,rx,numeric_loose_pi_fraction,1/7,3
+moderate,rx,numeric_loose_pi_fraction,1/8,5
+moderate,rx,numeric_loose_pi_fraction,1/9,2
+moderate,rx,numeric_loose_pi_fraction,10/11,4
+moderate,rx,numeric_loose_pi_fraction,10/13,7
+moderate,rx,numeric_loose_pi_fraction,11/12,2
+moderate,rx,numeric_loose_pi_fraction,11/13,3
+moderate,rx,numeric_loose_pi_fraction,11/14,4
+moderate,rx,numeric_loose_pi_fraction,11/15,3
+moderate,rx,numeric_loose_pi_fraction,11/16,4
+moderate,rx,numeric_loose_pi_fraction,12/13,2
+moderate,rx,numeric_loose_pi_fraction,13/14,2
+moderate,rx,numeric_loose_pi_fraction,13/15,6
+moderate,rx,numeric_loose_pi_fraction,13/16,2
+moderate,rx,numeric_loose_pi_fraction,14/15,2
+moderate,rx,numeric_loose_pi_fraction,15/16,3
+moderate,rx,numeric_loose_pi_fraction,2/11,3
+moderate,rx,numeric_loose_pi_fraction,2/13,3
+moderate,rx,numeric_loose_pi_fraction,2/15,6
+moderate,rx,numeric_loose_pi_fraction,2/3,10
+moderate,rx,numeric_loose_pi_fraction,2/5,14
+moderate,rx,numeric_loose_pi_fraction,2/7,4
+moderate,rx,numeric_loose_pi_fraction,2/9,3
+moderate,rx,numeric_loose_pi_fraction,23/16,1
+moderate,rx,numeric_loose_pi_fraction,3/10,6
+moderate,rx,numeric_loose_pi_fraction,3/11,8
+moderate,rx,numeric_loose_pi_fraction,3/13,4
+moderate,rx,numeric_loose_pi_fraction,3/14,9
+moderate,rx,numeric_loose_pi_fraction,3/16,4
+moderate,rx,numeric_loose_pi_fraction,3/4,23
+moderate,rx,numeric_loose_pi_fraction,3/5,8
+moderate,rx,numeric_loose_pi_fraction,3/7,8
+moderate,rx,numeric_loose_pi_fraction,3/8,6
+moderate,rx,numeric_loose_pi_fraction,4/11,10
+moderate,rx,numeric_loose_pi_fraction,4/13,17
+moderate,rx,numeric_loose_pi_fraction,4/15,6
+moderate,rx,numeric_loose_pi_fraction,4/5,9
+moderate,rx,numeric_loose_pi_fraction,4/7,5
+moderate,rx,numeric_loose_pi_fraction,4/9,3
+moderate,rx,numeric_loose_pi_fraction,5/11,3
+moderate,rx,numeric_loose_pi_fraction,5/12,6
+moderate,rx,numeric_loose_pi_fraction,5/13,11
+moderate,rx,numeric_loose_pi_fraction,5/14,13
+moderate,rx,numeric_loose_pi_fraction,5/16,6
+moderate,rx,numeric_loose_pi_fraction,5/6,2
+moderate,rx,numeric_loose_pi_fraction,5/7,8
+moderate,rx,numeric_loose_pi_fraction,5/8,4
+moderate,rx,numeric_loose_pi_fraction,5/9,3
+moderate,rx,numeric_loose_pi_fraction,6/11,7
+moderate,rx,numeric_loose_pi_fraction,6/13,7
+moderate,rx,numeric_loose_pi_fraction,6/7,5
+moderate,rx,numeric_loose_pi_fraction,7/10,9
+moderate,rx,numeric_loose_pi_fraction,7/11,6
+moderate,rx,numeric_loose_pi_fraction,7/12,8
+moderate,rx,numeric_loose_pi_fraction,7/13,4
+moderate,rx,numeric_loose_pi_fraction,7/15,10
+moderate,rx,numeric_loose_pi_fraction,7/16,8
+moderate,rx,numeric_loose_pi_fraction,7/8,6
+moderate,rx,numeric_loose_pi_fraction,7/9,1
+moderate,rx,numeric_loose_pi_fraction,8/11,7
+moderate,rx,numeric_loose_pi_fraction,8/13,9
+moderate,rx,numeric_loose_pi_fraction,8/15,13
+moderate,rx,numeric_loose_pi_fraction,8/9,10
+moderate,rx,numeric_loose_pi_fraction,9/10,2
+moderate,rx,numeric_loose_pi_fraction,9/11,3
+moderate,rx,numeric_loose_pi_fraction,9/13,25
+moderate,rx,numeric_loose_pi_fraction,9/14,8
+moderate,rx,numeric_loose_pi_fraction,9/16,9
+moderate,rx,numeric_noisy_non_fraction,-1,10
+moderate,rx,numeric_noisy_non_fraction,-1/16,2
+moderate,rx,numeric_noisy_non_fraction,-1/2,12
+moderate,rx,numeric_noisy_non_fraction,-1/3,1
+moderate,rx,numeric_noisy_non_fraction,-15/16,7
+moderate,rx,numeric_noisy_non_fraction,-7/15,1
+moderate,rx,numeric_noisy_non_fraction,-8/15,8
+moderate,rx,numeric_noisy_non_fraction,0,29
+moderate,rx,numeric_noisy_non_fraction,1,13
+moderate,rx,numeric_noisy_non_fraction,1/16,7
+moderate,rx,numeric_noisy_non_fraction,1/2,13
+moderate,rx,numeric_noisy_non_fraction,15/16,9
+moderate,rx,numeric_noisy_non_fraction,5/16,1
+moderate,rx,numeric_noisy_non_fraction,7/15,7
+moderate,rx,numeric_noisy_non_fraction,8/15,4
+moderate,rx,numeric_noisy_non_fraction,9/14,1
+moderate,rx,numeric_very_close_pi_fraction,-1/2,320
+moderate,rx,numeric_very_close_pi_fraction,-1/3,1
+moderate,rx,numeric_very_close_pi_fraction,-1/4,93
+moderate,rx,numeric_very_close_pi_fraction,-2/3,3
+moderate,rx,numeric_very_close_pi_fraction,-3/4,65
+moderate,rx,numeric_very_close_pi_fraction,1/2,441
+moderate,rx,numeric_very_close_pi_fraction,1/3,5
+moderate,rx,numeric_very_close_pi_fraction,1/4,89
+moderate,rx,numeric_very_close_pi_fraction,2/3,4
+moderate,rx,numeric_very_close_pi_fraction,3/4,60
+moderate,rx,symbolic_pi_expr,-1/2,341
+moderate,rx,symbolic_pi_expr,-1/4,55
+moderate,rx,symbolic_pi_expr,-3/2,2
+moderate,rx,symbolic_pi_expr,-3/4,27
+moderate,rx,symbolic_pi_expr,1,40
+moderate,rx,symbolic_pi_expr,1/2,637
+moderate,rx,symbolic_pi_expr,1/4,71
+moderate,rx,symbolic_pi_expr,3/4,28
+moderate,rz,numeric_close_pi_fraction,-1,1
+moderate,rz,numeric_close_pi_fraction,-1/15,1
+moderate,rz,numeric_close_pi_fraction,-1/2,13
+moderate,rz,numeric_close_pi_fraction,-1/4,16
+moderate,rz,numeric_close_pi_fraction,-13/14,1
+moderate,rz,numeric_close_pi_fraction,-3/4,15
+moderate,rz,numeric_close_pi_fraction,-4/13,1
+moderate,rz,numeric_close_pi_fraction,-5/12,1
+moderate,rz,numeric_close_pi_fraction,-6/13,1
+moderate,rz,numeric_close_pi_fraction,0,7
+moderate,rz,numeric_close_pi_fraction,1,3
+moderate,rz,numeric_close_pi_fraction,1/2,16
+moderate,rz,numeric_close_pi_fraction,1/3,1
+moderate,rz,numeric_close_pi_fraction,1/4,22
+moderate,rz,numeric_close_pi_fraction,11/15,1
+moderate,rz,numeric_close_pi_fraction,2/3,3
+moderate,rz,numeric_close_pi_fraction,3/13,1
+moderate,rz,numeric_close_pi_fraction,3/4,7
+moderate,rz,numeric_close_pi_fraction,4/13,1
+moderate,rz,numeric_close_pi_fraction,5/14,1
+moderate,rz,numeric_close_pi_fraction,7/12,1
+moderate,rz,numeric_close_pi_fraction,7/15,1
+moderate,rz,numeric_close_pi_fraction,7/9,1
+moderate,rz,numeric_close_pi_fraction,8/11,1
+moderate,rz,numeric_close_pi_fraction,8/13,1
+moderate,rz,numeric_exact_pi_fraction,-1/2,25
+moderate,rz,numeric_exact_pi_fraction,-1/4,29
+moderate,rz,numeric_exact_pi_fraction,-3/4,5
+moderate,rz,numeric_exact_pi_fraction,1/2,31
+moderate,rz,numeric_exact_pi_fraction,1/4,26
+moderate,rz,numeric_exact_pi_fraction,2/3,1
+moderate,rz,numeric_exact_pi_fraction,3/4,8
+moderate,rz,numeric_loose_pi_fraction,-1,10
+moderate,rz,numeric_loose_pi_fraction,-1/10,5
+moderate,rz,numeric_loose_pi_fraction,-1/11,5
+moderate,rz,numeric_loose_pi_fraction,-1/12,1
+moderate,rz,numeric_loose_pi_fraction,-1/13,3
+moderate,rz,numeric_loose_pi_fraction,-1/14,1
+moderate,rz,numeric_loose_pi_fraction,-1/15,2
+moderate,rz,numeric_loose_pi_fraction,-1/16,6
+moderate,rz,numeric_loose_pi_fraction,-1/2,39
+moderate,rz,numeric_loose_pi_fraction,-1/3,4
+moderate,rz,numeric_loose_pi_fraction,-1/4,18
+moderate,rz,numeric_loose_pi_fraction,-1/5,6
+moderate,rz,numeric_loose_pi_fraction,-1/6,2
+moderate,rz,numeric_loose_pi_fraction,-1/7,5
+moderate,rz,numeric_loose_pi_fraction,-1/8,3
+moderate,rz,numeric_loose_pi_fraction,-1/9,6
+moderate,rz,numeric_loose_pi_fraction,-10/11,3
+moderate,rz,numeric_loose_pi_fraction,-10/13,3
+moderate,rz,numeric_loose_pi_fraction,-11/12,4
+moderate,rz,numeric_loose_pi_fraction,-11/13,2
+moderate,rz,numeric_loose_pi_fraction,-11/14,2
+moderate,rz,numeric_loose_pi_fraction,-11/15,5
+moderate,rz,numeric_loose_pi_fraction,-11/16,2
+moderate,rz,numeric_loose_pi_fraction,-12/13,2
+moderate,rz,numeric_loose_pi_fraction,-13/14,1
+moderate,rz,numeric_loose_pi_fraction,-13/15,2
+moderate,rz,numeric_loose_pi_fraction,-13/16,3
+moderate,rz,numeric_loose_pi_fraction,-15/16,3
+moderate,rz,numeric_loose_pi_fraction,-2/11,4
+moderate,rz,numeric_loose_pi_fraction,-2/13,1
+moderate,rz,numeric_loose_pi_fraction,-2/15,5
+moderate,rz,numeric_loose_pi_fraction,-2/3,6
+moderate,rz,numeric_loose_pi_fraction,-2/5,9
+moderate,rz,numeric_loose_pi_fraction,-2/7,4
+moderate,rz,numeric_loose_pi_fraction,-2/9,7
+moderate,rz,numeric_loose_pi_fraction,-3/10,5
+moderate,rz,numeric_loose_pi_fraction,-3/11,5
+moderate,rz,numeric_loose_pi_fraction,-3/13,4
+moderate,rz,numeric_loose_pi_fraction,-3/14,3
+moderate,rz,numeric_loose_pi_fraction,-3/16,4
+moderate,rz,numeric_loose_pi_fraction,-3/4,8
+moderate,rz,numeric_loose_pi_fraction,-3/5,7
+moderate,rz,numeric_loose_pi_fraction,-3/7,2
+moderate,rz,numeric_loose_pi_fraction,-3/8,6
+moderate,rz,numeric_loose_pi_fraction,-4/11,3
+moderate,rz,numeric_loose_pi_fraction,-4/13,8
+moderate,rz,numeric_loose_pi_fraction,-4/15,3
+moderate,rz,numeric_loose_pi_fraction,-4/5,2
+moderate,rz,numeric_loose_pi_fraction,-4/7,5
+moderate,rz,numeric_loose_pi_fraction,-4/9,3
+moderate,rz,numeric_loose_pi_fraction,-5/11,7
+moderate,rz,numeric_loose_pi_fraction,-5/12,6
+moderate,rz,numeric_loose_pi_fraction,-5/13,4
+moderate,rz,numeric_loose_pi_fraction,-5/14,4
+moderate,rz,numeric_loose_pi_fraction,-5/16,6
+moderate,rz,numeric_loose_pi_fraction,-5/6,6
+moderate,rz,numeric_loose_pi_fraction,-5/7,5
+moderate,rz,numeric_loose_pi_fraction,-5/8,3
+moderate,rz,numeric_loose_pi_fraction,-5/9,5
+moderate,rz,numeric_loose_pi_fraction,-6/11,6
+moderate,rz,numeric_loose_pi_fraction,-6/7,4
+moderate,rz,numeric_loose_pi_fraction,-7/10,4
+moderate,rz,numeric_loose_pi_fraction,-7/11,6
+moderate,rz,numeric_loose_pi_fraction,-7/12,8
+moderate,rz,numeric_loose_pi_fraction,-7/13,5
+moderate,rz,numeric_loose_pi_fraction,-7/15,10
+moderate,rz,numeric_loose_pi_fraction,-7/16,4
+moderate,rz,numeric_loose_pi_fraction,-7/8,4
+moderate,rz,numeric_loose_pi_fraction,-7/9,4
+moderate,rz,numeric_loose_pi_fraction,-8/11,3
+moderate,rz,numeric_loose_pi_fraction,-8/13,7
+moderate,rz,numeric_loose_pi_fraction,-8/15,3
+moderate,rz,numeric_loose_pi_fraction,-8/9,5
+moderate,rz,numeric_loose_pi_fraction,-9/10,2
+moderate,rz,numeric_loose_pi_fraction,-9/11,4
+moderate,rz,numeric_loose_pi_fraction,-9/13,7
+moderate,rz,numeric_loose_pi_fraction,-9/14,1
+moderate,rz,numeric_loose_pi_fraction,0,39
+moderate,rz,numeric_loose_pi_fraction,1,10
+moderate,rz,numeric_loose_pi_fraction,1/10,6
+moderate,rz,numeric_loose_pi_fraction,1/11,2
+moderate,rz,numeric_loose_pi_fraction,1/12,4
+moderate,rz,numeric_loose_pi_fraction,1/13,6
+moderate,rz,numeric_loose_pi_fraction,1/14,1
+moderate,rz,numeric_loose_pi_fraction,1/15,6
+moderate,rz,numeric_loose_pi_fraction,1/16,6
+moderate,rz,numeric_loose_pi_fraction,1/2,45
+moderate,rz,numeric_loose_pi_fraction,1/3,8
+moderate,rz,numeric_loose_pi_fraction,1/4,22
+moderate,rz,numeric_loose_pi_fraction,1/5,6
+moderate,rz,numeric_loose_pi_fraction,1/6,8
+moderate,rz,numeric_loose_pi_fraction,1/7,7
+moderate,rz,numeric_loose_pi_fraction,1/8,5
+moderate,rz,numeric_loose_pi_fraction,1/9,3
+moderate,rz,numeric_loose_pi_fraction,10/11,3
+moderate,rz,numeric_loose_pi_fraction,10/13,7
+moderate,rz,numeric_loose_pi_fraction,11/12,4
+moderate,rz,numeric_loose_pi_fraction,11/13,1
+moderate,rz,numeric_loose_pi_fraction,11/14,3
+moderate,rz,numeric_loose_pi_fraction,11/15,14
+moderate,rz,numeric_loose_pi_fraction,11/16,6
+moderate,rz,numeric_loose_pi_fraction,12/13,1
+moderate,rz,numeric_loose_pi_fraction,13/14,2
+moderate,rz,numeric_loose_pi_fraction,13/15,4
+moderate,rz,numeric_loose_pi_fraction,13/16,7
+moderate,rz,numeric_loose_pi_fraction,15/16,2
+moderate,rz,numeric_loose_pi_fraction,2/11,5
+moderate,rz,numeric_loose_pi_fraction,2/13,3
+moderate,rz,numeric_loose_pi_fraction,2/15,3
+moderate,rz,numeric_loose_pi_fraction,2/3,11
+moderate,rz,numeric_loose_pi_fraction,2/5,9
+moderate,rz,numeric_loose_pi_fraction,2/7,10
+moderate,rz,numeric_loose_pi_fraction,2/9,4
+moderate,rz,numeric_loose_pi_fraction,3/10,4
+moderate,rz,numeric_loose_pi_fraction,3/11,9
+moderate,rz,numeric_loose_pi_fraction,3/13,4
+moderate,rz,numeric_loose_pi_fraction,3/14,2
+moderate,rz,numeric_loose_pi_fraction,3/16,5
+moderate,rz,numeric_loose_pi_fraction,3/4,12
+moderate,rz,numeric_loose_pi_fraction,3/5,9
+moderate,rz,numeric_loose_pi_fraction,3/7,11
+moderate,rz,numeric_loose_pi_fraction,3/8,9
+moderate,rz,numeric_loose_pi_fraction,4/11,8
+moderate,rz,numeric_loose_pi_fraction,4/13,8
+moderate,rz,numeric_loose_pi_fraction,4/15,13
+moderate,rz,numeric_loose_pi_fraction,4/5,6
+moderate,rz,numeric_loose_pi_fraction,4/7,7
+moderate,rz,numeric_loose_pi_fraction,4/9,3
+moderate,rz,numeric_loose_pi_fraction,5/11,7
+moderate,rz,numeric_loose_pi_fraction,5/12,8
+moderate,rz,numeric_loose_pi_fraction,5/13,3
+moderate,rz,numeric_loose_pi_fraction,5/14,4
+moderate,rz,numeric_loose_pi_fraction,5/16,6
+moderate,rz,numeric_loose_pi_fraction,5/6,6
+moderate,rz,numeric_loose_pi_fraction,5/7,12
+moderate,rz,numeric_loose_pi_fraction,5/8,5
+moderate,rz,numeric_loose_pi_fraction,5/9,4
+moderate,rz,numeric_loose_pi_fraction,6/11,5
+moderate,rz,numeric_loose_pi_fraction,6/13,6
+moderate,rz,numeric_loose_pi_fraction,6/7,2
+moderate,rz,numeric_loose_pi_fraction,7/10,5
+moderate,rz,numeric_loose_pi_fraction,7/11,11
+moderate,rz,numeric_loose_pi_fraction,7/12,8
+moderate,rz,numeric_loose_pi_fraction,7/13,7
+moderate,rz,numeric_loose_pi_fraction,7/15,6
+moderate,rz,numeric_loose_pi_fraction,7/16,9
+moderate,rz,numeric_loose_pi_fraction,7/8,5
+moderate,rz,numeric_loose_pi_fraction,7/9,1
+moderate,rz,numeric_loose_pi_fraction,8/11,9
+moderate,rz,numeric_loose_pi_fraction,8/13,5
+moderate,rz,numeric_loose_pi_fraction,8/15,7
+moderate,rz,numeric_loose_pi_fraction,8/9,4
+moderate,rz,numeric_loose_pi_fraction,9/10,6
+moderate,rz,numeric_loose_pi_fraction,9/11,3
+moderate,rz,numeric_loose_pi_fraction,9/13,10
+moderate,rz,numeric_loose_pi_fraction,9/14,8
+moderate,rz,numeric_loose_pi_fraction,9/16,7
+moderate,rz,numeric_noisy_non_fraction,-1,12
+moderate,rz,numeric_noisy_non_fraction,-1/16,10
+moderate,rz,numeric_noisy_non_fraction,-1/2,8
+moderate,rz,numeric_noisy_non_fraction,-15/16,8
+moderate,rz,numeric_noisy_non_fraction,-5/14,1
+moderate,rz,numeric_noisy_non_fraction,-7/15,4
+moderate,rz,numeric_noisy_non_fraction,0,32
+moderate,rz,numeric_noisy_non_fraction,1,14
+moderate,rz,numeric_noisy_non_fraction,1/16,14
+moderate,rz,numeric_noisy_non_fraction,1/2,15
+moderate,rz,numeric_noisy_non_fraction,1/3,1
+moderate,rz,numeric_noisy_non_fraction,15/16,8
+moderate,rz,numeric_noisy_non_fraction,2/3,1
+moderate,rz,numeric_noisy_non_fraction,5/14,2
+moderate,rz,numeric_noisy_non_fraction,7/15,4
+moderate,rz,numeric_noisy_non_fraction,8/15,12
+moderate,rz,numeric_noisy_non_fraction,9/14,1
+moderate,rz,numeric_very_close_pi_fraction,-1,2
+moderate,rz,numeric_very_close_pi_fraction,-1/2,198
+moderate,rz,numeric_very_close_pi_fraction,-1/3,7
+moderate,rz,numeric_very_close_pi_fraction,-1/4,375
+moderate,rz,numeric_very_close_pi_fraction,-2/3,4
+moderate,rz,numeric_very_close_pi_fraction,-3/4,106
+moderate,rz,numeric_very_close_pi_fraction,-5/6,1
+moderate,rz,numeric_very_close_pi_fraction,1/2,355
+moderate,rz,numeric_very_close_pi_fraction,1/3,10
+moderate,rz,numeric_very_close_pi_fraction,1/4,353
+moderate,rz,numeric_very_close_pi_fraction,1/6,1
+moderate,rz,numeric_very_close_pi_fraction,2/3,7
+moderate,rz,numeric_very_close_pi_fraction,3/4,133
+moderate,rz,numeric_very_close_pi_fraction,5/6,1
+moderate,rz,symbolic_pi_expr,-1,1
+moderate,rz,symbolic_pi_expr,-1/2,406
+moderate,rz,symbolic_pi_expr,-1/4,260
+moderate,rz,symbolic_pi_expr,-2/3,1
+moderate,rz,symbolic_pi_expr,-3/4,65
+moderate,rz,symbolic_pi_expr,1,51
+moderate,rz,symbolic_pi_expr,1/2,431
+moderate,rz,symbolic_pi_expr,1/3,3
+moderate,rz,symbolic_pi_expr,1/4,282
+moderate,rz,symbolic_pi_expr,2/3,1
+moderate,rz,symbolic_pi_expr,3/2,1
+moderate,rz,symbolic_pi_expr,3/4,79
+hard,rx,numeric_close_pi_fraction,-1/13,1
+hard,rx,numeric_close_pi_fraction,-1/2,13
+hard,rx,numeric_close_pi_fraction,-1/4,1
+hard,rx,numeric_close_pi_fraction,-1/7,1
+hard,rx,numeric_close_pi_fraction,-1/9,1
+hard,rx,numeric_close_pi_fraction,-11/14,1
+hard,rx,numeric_close_pi_fraction,-15/16,1
+hard,rx,numeric_close_pi_fraction,-3/11,1
+hard,rx,numeric_close_pi_fraction,-3/4,3
+hard,rx,numeric_close_pi_fraction,-4/11,1
+hard,rx,numeric_close_pi_fraction,-4/13,1
+hard,rx,numeric_close_pi_fraction,-5/13,1
+hard,rx,numeric_close_pi_fraction,-5/16,1
+hard,rx,numeric_close_pi_fraction,-6/13,2
+hard,rx,numeric_close_pi_fraction,-7/11,1
+hard,rx,numeric_close_pi_fraction,-8/9,1
+hard,rx,numeric_close_pi_fraction,-9/16,1
+hard,rx,numeric_close_pi_fraction,0,4
+hard,rx,numeric_close_pi_fraction,1,2
+hard,rx,numeric_close_pi_fraction,1/15,1
+hard,rx,numeric_close_pi_fraction,1/2,20
+hard,rx,numeric_close_pi_fraction,1/4,4
+hard,rx,numeric_close_pi_fraction,11/16,1
+hard,rx,numeric_close_pi_fraction,2/11,1
+hard,rx,numeric_close_pi_fraction,2/7,1
+hard,rx,numeric_close_pi_fraction,3/4,1
+hard,rx,numeric_close_pi_fraction,4/11,2
+hard,rx,numeric_close_pi_fraction,4/13,1
+hard,rx,numeric_close_pi_fraction,4/9,1
+hard,rx,numeric_close_pi_fraction,5/12,1
+hard,rx,numeric_close_pi_fraction,5/13,1
+hard,rx,numeric_close_pi_fraction,5/9,1
+hard,rx,numeric_close_pi_fraction,7/11,1
+hard,rx,numeric_close_pi_fraction,7/13,2
+hard,rx,numeric_close_pi_fraction,7/16,3
+hard,rx,numeric_close_pi_fraction,8/11,1
+hard,rx,numeric_close_pi_fraction,9/16,1
+hard,rx,numeric_exact_pi_fraction,-1/2,36
+hard,rx,numeric_exact_pi_fraction,-1/4,4
+hard,rx,numeric_exact_pi_fraction,-3/4,2
+hard,rx,numeric_exact_pi_fraction,1/2,64
+hard,rx,numeric_exact_pi_fraction,1/4,3
+hard,rx,numeric_exact_pi_fraction,2/3,1
+hard,rx,numeric_exact_pi_fraction,3/4,1
+hard,rx,numeric_loose_pi_fraction,-1,25
+hard,rx,numeric_loose_pi_fraction,-1/10,6
+hard,rx,numeric_loose_pi_fraction,-1/11,8
+hard,rx,numeric_loose_pi_fraction,-1/12,2
+hard,rx,numeric_loose_pi_fraction,-1/13,2
+hard,rx,numeric_loose_pi_fraction,-1/14,1
+hard,rx,numeric_loose_pi_fraction,-1/15,3
+hard,rx,numeric_loose_pi_fraction,-1/16,6
+hard,rx,numeric_loose_pi_fraction,-1/2,47
+hard,rx,numeric_loose_pi_fraction,-1/3,17
+hard,rx,numeric_loose_pi_fraction,-1/4,19
+hard,rx,numeric_loose_pi_fraction,-1/5,11
+hard,rx,numeric_loose_pi_fraction,-1/6,4
+hard,rx,numeric_loose_pi_fraction,-1/7,6
+hard,rx,numeric_loose_pi_fraction,-1/8,5
+hard,rx,numeric_loose_pi_fraction,-1/9,8
+hard,rx,numeric_loose_pi_fraction,-10/11,6
+hard,rx,numeric_loose_pi_fraction,-10/13,3
+hard,rx,numeric_loose_pi_fraction,-11/12,2
+hard,rx,numeric_loose_pi_fraction,-11/13,6
+hard,rx,numeric_loose_pi_fraction,-11/14,6
+hard,rx,numeric_loose_pi_fraction,-11/15,12
+hard,rx,numeric_loose_pi_fraction,-11/16,17
+hard,rx,numeric_loose_pi_fraction,-12/13,6
+hard,rx,numeric_loose_pi_fraction,-13/14,6
+hard,rx,numeric_loose_pi_fraction,-13/15,2
+hard,rx,numeric_loose_pi_fraction,-13/16,5
+hard,rx,numeric_loose_pi_fraction,-14/15,2
+hard,rx,numeric_loose_pi_fraction,-15/16,10
+hard,rx,numeric_loose_pi_fraction,-2/11,4
+hard,rx,numeric_loose_pi_fraction,-2/13,5
+hard,rx,numeric_loose_pi_fraction,-2/15,3
+hard,rx,numeric_loose_pi_fraction,-2/3,14
+hard,rx,numeric_loose_pi_fraction,-2/5,14
+hard,rx,numeric_loose_pi_fraction,-2/7,18
+hard,rx,numeric_loose_pi_fraction,-2/9,6
+hard,rx,numeric_loose_pi_fraction,-3/10,14
+hard,rx,numeric_loose_pi_fraction,-3/11,9
+hard,rx,numeric_loose_pi_fraction,-3/13,4
+hard,rx,numeric_loose_pi_fraction,-3/14,11
+hard,rx,numeric_loose_pi_fraction,-3/16,2
+hard,rx,numeric_loose_pi_fraction,-3/4,21
+hard,rx,numeric_loose_pi_fraction,-3/5,20
+hard,rx,numeric_loose_pi_fraction,-3/7,12
+hard,rx,numeric_loose_pi_fraction,-3/8,11
+hard,rx,numeric_loose_pi_fraction,-4/11,9
+hard,rx,numeric_loose_pi_fraction,-4/13,34
+hard,rx,numeric_loose_pi_fraction,-4/15,10
+hard,rx,numeric_loose_pi_fraction,-4/5,10
+hard,rx,numeric_loose_pi_fraction,-4/7,9
+hard,rx,numeric_loose_pi_fraction,-4/9,5
+hard,rx,numeric_loose_pi_fraction,-5/11,8
+hard,rx,numeric_loose_pi_fraction,-5/12,11
+hard,rx,numeric_loose_pi_fraction,-5/13,7
+hard,rx,numeric_loose_pi_fraction,-5/14,11
+hard,rx,numeric_loose_pi_fraction,-5/16,9
+hard,rx,numeric_loose_pi_fraction,-5/6,7
+hard,rx,numeric_loose_pi_fraction,-5/7,16
+hard,rx,numeric_loose_pi_fraction,-5/8,7
+hard,rx,numeric_loose_pi_fraction,-5/9,9
+hard,rx,numeric_loose_pi_fraction,-6/11,10
+hard,rx,numeric_loose_pi_fraction,-6/13,6
+hard,rx,numeric_loose_pi_fraction,-6/7,8
+hard,rx,numeric_loose_pi_fraction,-7/10,11
+hard,rx,numeric_loose_pi_fraction,-7/11,13
+hard,rx,numeric_loose_pi_fraction,-7/12,9
+hard,rx,numeric_loose_pi_fraction,-7/13,4
+hard,rx,numeric_loose_pi_fraction,-7/15,11
+hard,rx,numeric_loose_pi_fraction,-7/16,6
+hard,rx,numeric_loose_pi_fraction,-7/8,2
+hard,rx,numeric_loose_pi_fraction,-7/9,4
+hard,rx,numeric_loose_pi_fraction,-8/11,10
+hard,rx,numeric_loose_pi_fraction,-8/13,7
+hard,rx,numeric_loose_pi_fraction,-8/15,12
+hard,rx,numeric_loose_pi_fraction,-8/9,10
+hard,rx,numeric_loose_pi_fraction,-9/10,3
+hard,rx,numeric_loose_pi_fraction,-9/11,9
+hard,rx,numeric_loose_pi_fraction,-9/13,39
+hard,rx,numeric_loose_pi_fraction,-9/14,11
+hard,rx,numeric_loose_pi_fraction,-9/16,9
+hard,rx,numeric_loose_pi_fraction,0,45
+hard,rx,numeric_loose_pi_fraction,1,27
+hard,rx,numeric_loose_pi_fraction,1/10,5
+hard,rx,numeric_loose_pi_fraction,1/11,5
+hard,rx,numeric_loose_pi_fraction,1/12,5
+hard,rx,numeric_loose_pi_fraction,1/13,8
+hard,rx,numeric_loose_pi_fraction,1/14,5
+hard,rx,numeric_loose_pi_fraction,1/16,7
+hard,rx,numeric_loose_pi_fraction,1/2,100
+hard,rx,numeric_loose_pi_fraction,1/3,21
+hard,rx,numeric_loose_pi_fraction,1/4,35
+hard,rx,numeric_loose_pi_fraction,1/5,7
+hard,rx,numeric_loose_pi_fraction,1/6,10
+hard,rx,numeric_loose_pi_fraction,1/7,5
+hard,rx,numeric_loose_pi_fraction,1/8,9
+hard,rx,numeric_loose_pi_fraction,1/9,10
+hard,rx,numeric_loose_pi_fraction,10/11,7
+hard,rx,numeric_loose_pi_fraction,10/13,9
+hard,rx,numeric_loose_pi_fraction,11/12,7
+hard,rx,numeric_loose_pi_fraction,11/13,11
+hard,rx,numeric_loose_pi_fraction,11/14,5
+hard,rx,numeric_loose_pi_fraction,11/15,15
+hard,rx,numeric_loose_pi_fraction,11/16,22
+hard,rx,numeric_loose_pi_fraction,12/13,4
+hard,rx,numeric_loose_pi_fraction,13/14,3
+hard,rx,numeric_loose_pi_fraction,13/15,4
+hard,rx,numeric_loose_pi_fraction,13/16,8
+hard,rx,numeric_loose_pi_fraction,14/15,3
+hard,rx,numeric_loose_pi_fraction,15/16,16
+hard,rx,numeric_loose_pi_fraction,2/11,5
+hard,rx,numeric_loose_pi_fraction,2/13,11
+hard,rx,numeric_loose_pi_fraction,2/15,10
+hard,rx,numeric_loose_pi_fraction,2/3,18
+hard,rx,numeric_loose_pi_fraction,2/5,17
+hard,rx,numeric_loose_pi_fraction,2/7,16
+hard,rx,numeric_loose_pi_fraction,2/9,8
+hard,rx,numeric_loose_pi_fraction,3/10,5
+hard,rx,numeric_loose_pi_fraction,3/11,15
+hard,rx,numeric_loose_pi_fraction,3/13,4
+hard,rx,numeric_loose_pi_fraction,3/14,14
+hard,rx,numeric_loose_pi_fraction,3/16,9
+hard,rx,numeric_loose_pi_fraction,3/4,28
+hard,rx,numeric_loose_pi_fraction,3/5,21
+hard,rx,numeric_loose_pi_fraction,3/7,13
+hard,rx,numeric_loose_pi_fraction,3/8,13
+hard,rx,numeric_loose_pi_fraction,4/11,6
+hard,rx,numeric_loose_pi_fraction,4/13,43
+hard,rx,numeric_loose_pi_fraction,4/15,11
+hard,rx,numeric_loose_pi_fraction,4/5,11
+hard,rx,numeric_loose_pi_fraction,4/7,11
+hard,rx,numeric_loose_pi_fraction,4/9,13
+hard,rx,numeric_loose_pi_fraction,5/11,10
+hard,rx,numeric_loose_pi_fraction,5/12,19
+hard,rx,numeric_loose_pi_fraction,5/13,15
+hard,rx,numeric_loose_pi_fraction,5/14,18
+hard,rx,numeric_loose_pi_fraction,5/16,10
+hard,rx,numeric_loose_pi_fraction,5/6,17
+hard,rx,numeric_loose_pi_fraction,5/7,20
+hard,rx,numeric_loose_pi_fraction,5/8,12
+hard,rx,numeric_loose_pi_fraction,5/9,9
+hard,rx,numeric_loose_pi_fraction,6/11,13
+hard,rx,numeric_loose_pi_fraction,6/13,8
+hard,rx,numeric_loose_pi_fraction,6/7,12
+hard,rx,numeric_loose_pi_fraction,7/10,20
+hard,rx,numeric_loose_pi_fraction,7/11,7
+hard,rx,numeric_loose_pi_fraction,7/12,20
+hard,rx,numeric_loose_pi_fraction,7/13,14
+hard,rx,numeric_loose_pi_fraction,7/15,20
+hard,rx,numeric_loose_pi_fraction,7/16,11
+hard,rx,numeric_loose_pi_fraction,7/8,5
+hard,rx,numeric_loose_pi_fraction,7/9,10
+hard,rx,numeric_loose_pi_fraction,8/11,11
+hard,rx,numeric_loose_pi_fraction,8/13,11
+hard,rx,numeric_loose_pi_fraction,8/15,27
+hard,rx,numeric_loose_pi_fraction,8/9,7
+hard,rx,numeric_loose_pi_fraction,9/10,5
+hard,rx,numeric_loose_pi_fraction,9/11,7
+hard,rx,numeric_loose_pi_fraction,9/13,37
+hard,rx,numeric_loose_pi_fraction,9/14,18
+hard,rx,numeric_loose_pi_fraction,9/16,6
+hard,rx,numeric_noisy_non_fraction,-1,21
+hard,rx,numeric_noisy_non_fraction,-1/16,24
+hard,rx,numeric_noisy_non_fraction,-1/2,22
+hard,rx,numeric_noisy_non_fraction,-1/3,3
+hard,rx,numeric_noisy_non_fraction,-11/16,1
+hard,rx,numeric_noisy_non_fraction,-15/16,13
+hard,rx,numeric_noisy_non_fraction,-2/3,2
+hard,rx,numeric_noisy_non_fraction,-5/16,1
+hard,rx,numeric_noisy_non_fraction,-7/15,6
+hard,rx,numeric_noisy_non_fraction,-8/15,8
+hard,rx,numeric_noisy_non_fraction,0,51
+hard,rx,numeric_noisy_non_fraction,1,35
+hard,rx,numeric_noisy_non_fraction,1/16,19
+hard,rx,numeric_noisy_non_fraction,1/2,32
+hard,rx,numeric_noisy_non_fraction,1/3,4
+hard,rx,numeric_noisy_non_fraction,15/16,11
+hard,rx,numeric_noisy_non_fraction,2/3,2
+hard,rx,numeric_noisy_non_fraction,5/14,2
+hard,rx,numeric_noisy_non_fraction,5/16,1
+hard,rx,numeric_noisy_non_fraction,7/15,13
+hard,rx,numeric_noisy_non_fraction,8/15,14
+hard,rx,numeric_noisy_non_fraction,9/14,4
+hard,rx,numeric_very_close_pi_fraction,-1/2,270
+hard,rx,numeric_very_close_pi_fraction,-1/4,21
+hard,rx,numeric_very_close_pi_fraction,-3/4,25
+hard,rx,numeric_very_close_pi_fraction,0,1
+hard,rx,numeric_very_close_pi_fraction,1/2,367
+hard,rx,numeric_very_close_pi_fraction,1/4,29
+hard,rx,numeric_very_close_pi_fraction,3/4,21
+hard,rx,numeric_very_close_pi_fraction,5/6,1
+hard,rx,symbolic_pi_expr,-1/2,859
+hard,rx,symbolic_pi_expr,-1/4,28
+hard,rx,symbolic_pi_expr,-3/4,26
+hard,rx,symbolic_pi_expr,1,28
+hard,rx,symbolic_pi_expr,1/2,1559
+hard,rx,symbolic_pi_expr,1/4,39
+hard,rx,symbolic_pi_expr,2/3,1
+hard,rx,symbolic_pi_expr,3/4,43
+hard,rz,numeric_close_pi_fraction,-1,1
+hard,rz,numeric_close_pi_fraction,-1/10,1
+hard,rz,numeric_close_pi_fraction,-1/2,5
+hard,rz,numeric_close_pi_fraction,-1/4,6
+hard,rz,numeric_close_pi_fraction,-1/5,1
+hard,rz,numeric_close_pi_fraction,-13/16,1
+hard,rz,numeric_close_pi_fraction,-2/11,1
+hard,rz,numeric_close_pi_fraction,-2/15,1
+hard,rz,numeric_close_pi_fraction,-2/3,1
+hard,rz,numeric_close_pi_fraction,-2/5,1
+hard,rz,numeric_close_pi_fraction,-3/4,2
+hard,rz,numeric_close_pi_fraction,-4/9,2
+hard,rz,numeric_close_pi_fraction,-5/13,2
+hard,rz,numeric_close_pi_fraction,-5/14,2
+hard,rz,numeric_close_pi_fraction,-7/15,1
+hard,rz,numeric_close_pi_fraction,-7/16,1
+hard,rz,numeric_close_pi_fraction,-8/15,1
+hard,rz,numeric_close_pi_fraction,-9/14,1
+hard,rz,numeric_close_pi_fraction,0,3
+hard,rz,numeric_close_pi_fraction,1/10,1
+hard,rz,numeric_close_pi_fraction,1/2,10
+hard,rz,numeric_close_pi_fraction,1/3,2
+hard,rz,numeric_close_pi_fraction,1/4,13
+hard,rz,numeric_close_pi_fraction,1/7,1
+hard,rz,numeric_close_pi_fraction,11/15,1
+hard,rz,numeric_close_pi_fraction,13/15,1
+hard,rz,numeric_close_pi_fraction,13/16,1
+hard,rz,numeric_close_pi_fraction,2/3,1
+hard,rz,numeric_close_pi_fraction,3/11,2
+hard,rz,numeric_close_pi_fraction,3/4,9
+hard,rz,numeric_close_pi_fraction,3/8,2
+hard,rz,numeric_close_pi_fraction,4/13,3
+hard,rz,numeric_close_pi_fraction,5/14,1
+hard,rz,numeric_close_pi_fraction,6/11,2
+hard,rz,numeric_close_pi_fraction,7/15,1
+hard,rz,numeric_close_pi_fraction,7/16,3
+hard,rz,numeric_close_pi_fraction,8/11,1
+hard,rz,numeric_close_pi_fraction,9/13,2
+hard,rz,numeric_close_pi_fraction,9/16,2
+hard,rz,numeric_exact_pi_fraction,-1/2,17
+hard,rz,numeric_exact_pi_fraction,-1/3,1
+hard,rz,numeric_exact_pi_fraction,-1/4,62
+hard,rz,numeric_exact_pi_fraction,-3/4,11
+hard,rz,numeric_exact_pi_fraction,1/2,53
+hard,rz,numeric_exact_pi_fraction,1/4,52
+hard,rz,numeric_exact_pi_fraction,2/3,1
+hard,rz,numeric_exact_pi_fraction,3/4,17
+hard,rz,numeric_loose_pi_fraction,-1,13
+hard,rz,numeric_loose_pi_fraction,-1/10,6
+hard,rz,numeric_loose_pi_fraction,-1/11,7
+hard,rz,numeric_loose_pi_fraction,-1/12,5
+hard,rz,numeric_loose_pi_fraction,-1/13,6
+hard,rz,numeric_loose_pi_fraction,-1/14,5
+hard,rz,numeric_loose_pi_fraction,-1/15,2
+hard,rz,numeric_loose_pi_fraction,-1/16,5
+hard,rz,numeric_loose_pi_fraction,-1/2,50
+hard,rz,numeric_loose_pi_fraction,-1/3,23
+hard,rz,numeric_loose_pi_fraction,-1/4,34
+hard,rz,numeric_loose_pi_fraction,-1/5,13
+hard,rz,numeric_loose_pi_fraction,-1/6,12
+hard,rz,numeric_loose_pi_fraction,-1/7,15
+hard,rz,numeric_loose_pi_fraction,-1/8,9
+hard,rz,numeric_loose_pi_fraction,-1/9,3
+hard,rz,numeric_loose_pi_fraction,-10/11,8
+hard,rz,numeric_loose_pi_fraction,-10/13,9
+hard,rz,numeric_loose_pi_fraction,-11/12,6
+hard,rz,numeric_loose_pi_fraction,-11/13,10
+hard,rz,numeric_loose_pi_fraction,-11/14,4
+hard,rz,numeric_loose_pi_fraction,-11/15,6
+hard,rz,numeric_loose_pi_fraction,-11/16,12
+hard,rz,numeric_loose_pi_fraction,-11/6,1
+hard,rz,numeric_loose_pi_fraction,-12/13,3
+hard,rz,numeric_loose_pi_fraction,-13/14,2
+hard,rz,numeric_loose_pi_fraction,-13/15,6
+hard,rz,numeric_loose_pi_fraction,-13/16,8
+hard,rz,numeric_loose_pi_fraction,-14/15,1
+hard,rz,numeric_loose_pi_fraction,-15/16,7
+hard,rz,numeric_loose_pi_fraction,-2/11,3
+hard,rz,numeric_loose_pi_fraction,-2/13,11
+hard,rz,numeric_loose_pi_fraction,-2/15,9
+hard,rz,numeric_loose_pi_fraction,-2/3,19
+hard,rz,numeric_loose_pi_fraction,-2/5,16
+hard,rz,numeric_loose_pi_fraction,-2/7,10
+hard,rz,numeric_loose_pi_fraction,-2/9,7
+hard,rz,numeric_loose_pi_fraction,-3/10,9
+hard,rz,numeric_loose_pi_fraction,-3/11,9
+hard,rz,numeric_loose_pi_fraction,-3/13,13
+hard,rz,numeric_loose_pi_fraction,-3/14,9
+hard,rz,numeric_loose_pi_fraction,-3/16,11
+hard,rz,numeric_loose_pi_fraction,-3/4,23
+hard,rz,numeric_loose_pi_fraction,-3/5,19
+hard,rz,numeric_loose_pi_fraction,-3/7,8
+hard,rz,numeric_loose_pi_fraction,-3/8,10
+hard,rz,numeric_loose_pi_fraction,-4/11,9
+hard,rz,numeric_loose_pi_fraction,-4/13,10
+hard,rz,numeric_loose_pi_fraction,-4/15,10
+hard,rz,numeric_loose_pi_fraction,-4/5,18
+hard,rz,numeric_loose_pi_fraction,-4/7,13
+hard,rz,numeric_loose_pi_fraction,-4/9,11
+hard,rz,numeric_loose_pi_fraction,-5/11,6
+hard,rz,numeric_loose_pi_fraction,-5/12,11
+hard,rz,numeric_loose_pi_fraction,-5/13,12
+hard,rz,numeric_loose_pi_fraction,-5/14,14
+hard,rz,numeric_loose_pi_fraction,-5/16,7
+hard,rz,numeric_loose_pi_fraction,-5/6,9
+hard,rz,numeric_loose_pi_fraction,-5/7,8
+hard,rz,numeric_loose_pi_fraction,-5/8,5
+hard,rz,numeric_loose_pi_fraction,-5/9,4
+hard,rz,numeric_loose_pi_fraction,-6/11,9
+hard,rz,numeric_loose_pi_fraction,-6/13,5
+hard,rz,numeric_loose_pi_fraction,-6/7,2
+hard,rz,numeric_loose_pi_fraction,-7/10,17
+hard,rz,numeric_loose_pi_fraction,-7/11,6
+hard,rz,numeric_loose_pi_fraction,-7/12,7
+hard,rz,numeric_loose_pi_fraction,-7/13,3
+hard,rz,numeric_loose_pi_fraction,-7/15,12
+hard,rz,numeric_loose_pi_fraction,-7/16,12
+hard,rz,numeric_loose_pi_fraction,-7/8,7
+hard,rz,numeric_loose_pi_fraction,-7/9,11
+hard,rz,numeric_loose_pi_fraction,-8/11,7
+hard,rz,numeric_loose_pi_fraction,-8/13,11
+hard,rz,numeric_loose_pi_fraction,-8/15,18
+hard,rz,numeric_loose_pi_fraction,-8/9,9
+hard,rz,numeric_loose_pi_fraction,-9/10,2
+hard,rz,numeric_loose_pi_fraction,-9/11,4
+hard,rz,numeric_loose_pi_fraction,-9/13,6
+hard,rz,numeric_loose_pi_fraction,-9/14,13
+hard,rz,numeric_loose_pi_fraction,-9/16,12
+hard,rz,numeric_loose_pi_fraction,0,80
+hard,rz,numeric_loose_pi_fraction,1,18
+hard,rz,numeric_loose_pi_fraction,1/10,12
+hard,rz,numeric_loose_pi_fraction,1/11,8
+hard,rz,numeric_loose_pi_fraction,1/12,12
+hard,rz,numeric_loose_pi_fraction,1/13,10
+hard,rz,numeric_loose_pi_fraction,1/14,1
+hard,rz,numeric_loose_pi_fraction,1/15,6
+hard,rz,numeric_loose_pi_fraction,1/16,17
+hard,rz,numeric_loose_pi_fraction,1/2,74
+hard,rz,numeric_loose_pi_fraction,1/3,38
+hard,rz,numeric_loose_pi_fraction,1/4,57
+hard,rz,numeric_loose_pi_fraction,1/5,19
+hard,rz,numeric_loose_pi_fraction,1/6,21
+hard,rz,numeric_loose_pi_fraction,1/7,13
+hard,rz,numeric_loose_pi_fraction,1/8,17
+hard,rz,numeric_loose_pi_fraction,1/9,4
+hard,rz,numeric_loose_pi_fraction,10/11,12
+hard,rz,numeric_loose_pi_fraction,10/13,19
+hard,rz,numeric_loose_pi_fraction,11/12,1
+hard,rz,numeric_loose_pi_fraction,11/13,9
+hard,rz,numeric_loose_pi_fraction,11/14,14
+hard,rz,numeric_loose_pi_fraction,11/15,15
+hard,rz,numeric_loose_pi_fraction,11/16,12
+hard,rz,numeric_loose_pi_fraction,12/13,4
+hard,rz,numeric_loose_pi_fraction,13/14,5
+hard,rz,numeric_loose_pi_fraction,13/15,13
+hard,rz,numeric_loose_pi_fraction,13/16,16
+hard,rz,numeric_loose_pi_fraction,14/15,4
+hard,rz,numeric_loose_pi_fraction,15/16,7
+hard,rz,numeric_loose_pi_fraction,2/11,12
+hard,rz,numeric_loose_pi_fraction,2/13,7
+hard,rz,numeric_loose_pi_fraction,2/15,10
+hard,rz,numeric_loose_pi_fraction,2/3,33
+hard,rz,numeric_loose_pi_fraction,2/5,16
+hard,rz,numeric_loose_pi_fraction,2/7,20
+hard,rz,numeric_loose_pi_fraction,2/9,11
+hard,rz,numeric_loose_pi_fraction,3/10,19
+hard,rz,numeric_loose_pi_fraction,3/11,13
+hard,rz,numeric_loose_pi_fraction,3/13,20
+hard,rz,numeric_loose_pi_fraction,3/14,9
+hard,rz,numeric_loose_pi_fraction,3/16,11
+hard,rz,numeric_loose_pi_fraction,3/4,32
+hard,rz,numeric_loose_pi_fraction,3/5,26
+hard,rz,numeric_loose_pi_fraction,3/7,25
+hard,rz,numeric_loose_pi_fraction,3/8,12
+hard,rz,numeric_loose_pi_fraction,4/11,23
+hard,rz,numeric_loose_pi_fraction,4/13,14
+hard,rz,numeric_loose_pi_fraction,4/15,10
+hard,rz,numeric_loose_pi_fraction,4/5,16
+hard,rz,numeric_loose_pi_fraction,4/7,20
+hard,rz,numeric_loose_pi_fraction,4/9,13
+hard,rz,numeric_loose_pi_fraction,5/11,32
+hard,rz,numeric_loose_pi_fraction,5/12,31
+hard,rz,numeric_loose_pi_fraction,5/13,29
+hard,rz,numeric_loose_pi_fraction,5/14,16
+hard,rz,numeric_loose_pi_fraction,5/16,23
+hard,rz,numeric_loose_pi_fraction,5/6,14
+hard,rz,numeric_loose_pi_fraction,5/7,19
+hard,rz,numeric_loose_pi_fraction,5/8,19
+hard,rz,numeric_loose_pi_fraction,5/9,16
+hard,rz,numeric_loose_pi_fraction,6/11,19
+hard,rz,numeric_loose_pi_fraction,6/13,12
+hard,rz,numeric_loose_pi_fraction,6/7,7
+hard,rz,numeric_loose_pi_fraction,7/10,23
+hard,rz,numeric_loose_pi_fraction,7/11,16
+hard,rz,numeric_loose_pi_fraction,7/12,21
+hard,rz,numeric_loose_pi_fraction,7/13,15
+hard,rz,numeric_loose_pi_fraction,7/15,24
+hard,rz,numeric_loose_pi_fraction,7/16,12
+hard,rz,numeric_loose_pi_fraction,7/8,9
+hard,rz,numeric_loose_pi_fraction,7/9,8
+hard,rz,numeric_loose_pi_fraction,8/11,15
+hard,rz,numeric_loose_pi_fraction,8/13,23
+hard,rz,numeric_loose_pi_fraction,8/15,26
+hard,rz,numeric_loose_pi_fraction,8/9,15
+hard,rz,numeric_loose_pi_fraction,9/10,11
+hard,rz,numeric_loose_pi_fraction,9/11,8
+hard,rz,numeric_loose_pi_fraction,9/13,15
+hard,rz,numeric_loose_pi_fraction,9/14,26
+hard,rz,numeric_loose_pi_fraction,9/16,14
+hard,rz,numeric_noisy_non_fraction,-1,20
+hard,rz,numeric_noisy_non_fraction,-1/16,16
+hard,rz,numeric_noisy_non_fraction,-1/2,15
+hard,rz,numeric_noisy_non_fraction,-1/3,5
+hard,rz,numeric_noisy_non_fraction,-11/16,2
+hard,rz,numeric_noisy_non_fraction,-15/16,18
+hard,rz,numeric_noisy_non_fraction,-2/3,3
+hard,rz,numeric_noisy_non_fraction,-7/15,10
+hard,rz,numeric_noisy_non_fraction,-8/15,2
+hard,rz,numeric_noisy_non_fraction,-9/14,2
+hard,rz,numeric_noisy_non_fraction,0,115
+hard,rz,numeric_noisy_non_fraction,1,31
+hard,rz,numeric_noisy_non_fraction,1/16,36
+hard,rz,numeric_noisy_non_fraction,1/2,26
+hard,rz,numeric_noisy_non_fraction,1/3,2
+hard,rz,numeric_noisy_non_fraction,11/16,1
+hard,rz,numeric_noisy_non_fraction,15/16,32
+hard,rz,numeric_noisy_non_fraction,2/3,2
+hard,rz,numeric_noisy_non_fraction,5/14,2
+hard,rz,numeric_noisy_non_fraction,5/16,4
+hard,rz,numeric_noisy_non_fraction,7/15,11
+hard,rz,numeric_noisy_non_fraction,8/15,10
+hard,rz,numeric_noisy_non_fraction,9/14,2
+hard,rz,numeric_very_close_pi_fraction,-1,2
+hard,rz,numeric_very_close_pi_fraction,-1/2,123
+hard,rz,numeric_very_close_pi_fraction,-1/3,1
+hard,rz,numeric_very_close_pi_fraction,-1/4,481
+hard,rz,numeric_very_close_pi_fraction,-1/6,1
+hard,rz,numeric_very_close_pi_fraction,-2/3,3
+hard,rz,numeric_very_close_pi_fraction,-3/4,111
+hard,rz,numeric_very_close_pi_fraction,-5/4,1
+hard,rz,numeric_very_close_pi_fraction,-5/6,1
+hard,rz,numeric_very_close_pi_fraction,1/2,253
+hard,rz,numeric_very_close_pi_fraction,1/3,18
+hard,rz,numeric_very_close_pi_fraction,1/4,523
+hard,rz,numeric_very_close_pi_fraction,1/6,3
+hard,rz,numeric_very_close_pi_fraction,2/3,8
+hard,rz,numeric_very_close_pi_fraction,3/2,1
+hard,rz,numeric_very_close_pi_fraction,3/4,125
+hard,rz,symbolic_pi_expr,-1/2,587
+hard,rz,symbolic_pi_expr,-1/3,7
+hard,rz,symbolic_pi_expr,-1/4,1169
+hard,rz,symbolic_pi_expr,-2/3,3
+hard,rz,symbolic_pi_expr,-3/4,196
+hard,rz,symbolic_pi_expr,1,27
+hard,rz,symbolic_pi_expr,1/2,842
+hard,rz,symbolic_pi_expr,1/3,15
+hard,rz,symbolic_pi_expr,1/4,1119
+hard,rz,symbolic_pi_expr,2/3,18
+hard,rz,symbolic_pi_expr,3/4,206
+very_hard,rx,numeric_close_pi_fraction,-1,4
+very_hard,rx,numeric_close_pi_fraction,-1/10,8
+very_hard,rx,numeric_close_pi_fraction,-1/11,11
+very_hard,rx,numeric_close_pi_fraction,-1/12,4
+very_hard,rx,numeric_close_pi_fraction,-1/13,8
+very_hard,rx,numeric_close_pi_fraction,-1/14,2
+very_hard,rx,numeric_close_pi_fraction,-1/15,4
+very_hard,rx,numeric_close_pi_fraction,-1/16,4
+very_hard,rx,numeric_close_pi_fraction,-1/2,6
+very_hard,rx,numeric_close_pi_fraction,-1/3,10
+very_hard,rx,numeric_close_pi_fraction,-1/4,13
+very_hard,rx,numeric_close_pi_fraction,-1/5,7
+very_hard,rx,numeric_close_pi_fraction,-1/6,6
+very_hard,rx,numeric_close_pi_fraction,-1/7,11
+very_hard,rx,numeric_close_pi_fraction,-1/8,1
+very_hard,rx,numeric_close_pi_fraction,-1/9,4
+very_hard,rx,numeric_close_pi_fraction,-10/11,8
+very_hard,rx,numeric_close_pi_fraction,-10/13,4
+very_hard,rx,numeric_close_pi_fraction,-11/12,3
+very_hard,rx,numeric_close_pi_fraction,-11/13,4
+very_hard,rx,numeric_close_pi_fraction,-11/14,5
+very_hard,rx,numeric_close_pi_fraction,-11/15,7
+very_hard,rx,numeric_close_pi_fraction,-11/16,11
+very_hard,rx,numeric_close_pi_fraction,-12/13,4
+very_hard,rx,numeric_close_pi_fraction,-13/14,3
+very_hard,rx,numeric_close_pi_fraction,-13/15,5
+very_hard,rx,numeric_close_pi_fraction,-13/16,1
+very_hard,rx,numeric_close_pi_fraction,-14/15,6
+very_hard,rx,numeric_close_pi_fraction,-15/16,5
+very_hard,rx,numeric_close_pi_fraction,-16/15,1
+very_hard,rx,numeric_close_pi_fraction,-2/11,2
+very_hard,rx,numeric_close_pi_fraction,-2/13,3
+very_hard,rx,numeric_close_pi_fraction,-2/15,3
+very_hard,rx,numeric_close_pi_fraction,-2/3,12
+very_hard,rx,numeric_close_pi_fraction,-2/5,2
+very_hard,rx,numeric_close_pi_fraction,-2/7,5
+very_hard,rx,numeric_close_pi_fraction,-2/9,6
+very_hard,rx,numeric_close_pi_fraction,-3/10,4
+very_hard,rx,numeric_close_pi_fraction,-3/11,9
+very_hard,rx,numeric_close_pi_fraction,-3/13,7
+very_hard,rx,numeric_close_pi_fraction,-3/14,6
+very_hard,rx,numeric_close_pi_fraction,-3/16,4
+very_hard,rx,numeric_close_pi_fraction,-3/4,10
+very_hard,rx,numeric_close_pi_fraction,-3/5,11
+very_hard,rx,numeric_close_pi_fraction,-3/7,6
+very_hard,rx,numeric_close_pi_fraction,-3/8,13
+very_hard,rx,numeric_close_pi_fraction,-4/11,4
+very_hard,rx,numeric_close_pi_fraction,-4/13,13
+very_hard,rx,numeric_close_pi_fraction,-4/15,8
+very_hard,rx,numeric_close_pi_fraction,-4/5,4
+very_hard,rx,numeric_close_pi_fraction,-4/7,12
+very_hard,rx,numeric_close_pi_fraction,-4/9,10
+very_hard,rx,numeric_close_pi_fraction,-5/11,5
+very_hard,rx,numeric_close_pi_fraction,-5/12,11
+very_hard,rx,numeric_close_pi_fraction,-5/13,3
+very_hard,rx,numeric_close_pi_fraction,-5/14,9
+very_hard,rx,numeric_close_pi_fraction,-5/16,8
+very_hard,rx,numeric_close_pi_fraction,-5/6,2
+very_hard,rx,numeric_close_pi_fraction,-5/7,4
+very_hard,rx,numeric_close_pi_fraction,-5/8,3
+very_hard,rx,numeric_close_pi_fraction,-5/9,8
+very_hard,rx,numeric_close_pi_fraction,-6/11,7
+very_hard,rx,numeric_close_pi_fraction,-6/13,7
+very_hard,rx,numeric_close_pi_fraction,-6/7,10
+very_hard,rx,numeric_close_pi_fraction,-7/10,4
+very_hard,rx,numeric_close_pi_fraction,-7/11,3
+very_hard,rx,numeric_close_pi_fraction,-7/12,5
+very_hard,rx,numeric_close_pi_fraction,-7/13,6
+very_hard,rx,numeric_close_pi_fraction,-7/15,6
+very_hard,rx,numeric_close_pi_fraction,-7/16,9
+very_hard,rx,numeric_close_pi_fraction,-7/8,2
+very_hard,rx,numeric_close_pi_fraction,-7/9,4
+very_hard,rx,numeric_close_pi_fraction,-8/11,10
+very_hard,rx,numeric_close_pi_fraction,-8/13,9
+very_hard,rx,numeric_close_pi_fraction,-8/15,8
+very_hard,rx,numeric_close_pi_fraction,-8/9,2
+very_hard,rx,numeric_close_pi_fraction,-9/10,6
+very_hard,rx,numeric_close_pi_fraction,-9/11,7
+very_hard,rx,numeric_close_pi_fraction,-9/13,10
+very_hard,rx,numeric_close_pi_fraction,-9/14,8
+very_hard,rx,numeric_close_pi_fraction,-9/16,6
+very_hard,rx,numeric_close_pi_fraction,0,8
+very_hard,rx,numeric_close_pi_fraction,1,3
+very_hard,rx,numeric_close_pi_fraction,1/10,14
+very_hard,rx,numeric_close_pi_fraction,1/11,4
+very_hard,rx,numeric_close_pi_fraction,1/12,6
+very_hard,rx,numeric_close_pi_fraction,1/13,4
+very_hard,rx,numeric_close_pi_fraction,1/14,4
+very_hard,rx,numeric_close_pi_fraction,1/15,9
+very_hard,rx,numeric_close_pi_fraction,1/16,10
+very_hard,rx,numeric_close_pi_fraction,1/2,20
+very_hard,rx,numeric_close_pi_fraction,1/3,17
+very_hard,rx,numeric_close_pi_fraction,1/4,14
+very_hard,rx,numeric_close_pi_fraction,1/5,19
+very_hard,rx,numeric_close_pi_fraction,1/6,14
+very_hard,rx,numeric_close_pi_fraction,1/7,12
+very_hard,rx,numeric_close_pi_fraction,1/8,8
+very_hard,rx,numeric_close_pi_fraction,1/9,4
+very_hard,rx,numeric_close_pi_fraction,10/11,3
+very_hard,rx,numeric_close_pi_fraction,10/13,13
+very_hard,rx,numeric_close_pi_fraction,11/12,4
+very_hard,rx,numeric_close_pi_fraction,11/13,12
+very_hard,rx,numeric_close_pi_fraction,11/14,16
+very_hard,rx,numeric_close_pi_fraction,11/15,8
+very_hard,rx,numeric_close_pi_fraction,11/16,14
+very_hard,rx,numeric_close_pi_fraction,12/13,8
+very_hard,rx,numeric_close_pi_fraction,13/14,3
+very_hard,rx,numeric_close_pi_fraction,13/16,5
+very_hard,rx,numeric_close_pi_fraction,14/15,5
+very_hard,rx,numeric_close_pi_fraction,15/16,6
+very_hard,rx,numeric_close_pi_fraction,16/13,1
+very_hard,rx,numeric_close_pi_fraction,2/11,8
+very_hard,rx,numeric_close_pi_fraction,2/13,3
+very_hard,rx,numeric_close_pi_fraction,2/15,12
+very_hard,rx,numeric_close_pi_fraction,2/3,15
+very_hard,rx,numeric_close_pi_fraction,2/5,23
+very_hard,rx,numeric_close_pi_fraction,2/7,9
+very_hard,rx,numeric_close_pi_fraction,2/9,13
+very_hard,rx,numeric_close_pi_fraction,3/10,2
+very_hard,rx,numeric_close_pi_fraction,3/11,15
+very_hard,rx,numeric_close_pi_fraction,3/13,5
+very_hard,rx,numeric_close_pi_fraction,3/14,10
+very_hard,rx,numeric_close_pi_fraction,3/16,8
+very_hard,rx,numeric_close_pi_fraction,3/4,18
+very_hard,rx,numeric_close_pi_fraction,3/5,17
+very_hard,rx,numeric_close_pi_fraction,3/7,15
+very_hard,rx,numeric_close_pi_fraction,3/8,14
+very_hard,rx,numeric_close_pi_fraction,4/11,5
+very_hard,rx,numeric_close_pi_fraction,4/13,12
+very_hard,rx,numeric_close_pi_fraction,4/15,8
+very_hard,rx,numeric_close_pi_fraction,4/5,8
+very_hard,rx,numeric_close_pi_fraction,4/7,11
+very_hard,rx,numeric_close_pi_fraction,4/9,19
+very_hard,rx,numeric_close_pi_fraction,5/11,7
+very_hard,rx,numeric_close_pi_fraction,5/12,18
+very_hard,rx,numeric_close_pi_fraction,5/13,9
+very_hard,rx,numeric_close_pi_fraction,5/14,12
+very_hard,rx,numeric_close_pi_fraction,5/16,11
+very_hard,rx,numeric_close_pi_fraction,5/6,5
+very_hard,rx,numeric_close_pi_fraction,5/7,16
+very_hard,rx,numeric_close_pi_fraction,5/8,3
+very_hard,rx,numeric_close_pi_fraction,5/9,17
+very_hard,rx,numeric_close_pi_fraction,6/11,11
+very_hard,rx,numeric_close_pi_fraction,6/13,7
+very_hard,rx,numeric_close_pi_fraction,6/7,12
+very_hard,rx,numeric_close_pi_fraction,7/10,13
+very_hard,rx,numeric_close_pi_fraction,7/11,20
+very_hard,rx,numeric_close_pi_fraction,7/12,20
+very_hard,rx,numeric_close_pi_fraction,7/13,12
+very_hard,rx,numeric_close_pi_fraction,7/15,13
+very_hard,rx,numeric_close_pi_fraction,7/16,19
+very_hard,rx,numeric_close_pi_fraction,7/8,8
+very_hard,rx,numeric_close_pi_fraction,7/9,10
+very_hard,rx,numeric_close_pi_fraction,8/11,12
+very_hard,rx,numeric_close_pi_fraction,8/13,12
+very_hard,rx,numeric_close_pi_fraction,8/15,16
+very_hard,rx,numeric_close_pi_fraction,8/9,8
+very_hard,rx,numeric_close_pi_fraction,9/10,7
+very_hard,rx,numeric_close_pi_fraction,9/11,13
+very_hard,rx,numeric_close_pi_fraction,9/13,14
+very_hard,rx,numeric_close_pi_fraction,9/14,11
+very_hard,rx,numeric_close_pi_fraction,9/16,16
+very_hard,rx,numeric_exact_pi_fraction,-1/2,1
+very_hard,rx,numeric_exact_pi_fraction,1/2,1
+very_hard,rx,numeric_loose_pi_fraction,-1,179
+very_hard,rx,numeric_loose_pi_fraction,-1/10,240
+very_hard,rx,numeric_loose_pi_fraction,-1/11,187
+very_hard,rx,numeric_loose_pi_fraction,-1/12,168
+very_hard,rx,numeric_loose_pi_fraction,-1/13,150
+very_hard,rx,numeric_loose_pi_fraction,-1/14,116
+very_hard,rx,numeric_loose_pi_fraction,-1/15,101
+very_hard,rx,numeric_loose_pi_fraction,-1/16,271
+very_hard,rx,numeric_loose_pi_fraction,-1/2,840
+very_hard,rx,numeric_loose_pi_fraction,-1/3,704
+very_hard,rx,numeric_loose_pi_fraction,-1/4,602
+very_hard,rx,numeric_loose_pi_fraction,-1/5,386
+very_hard,rx,numeric_loose_pi_fraction,-1/6,388
+very_hard,rx,numeric_loose_pi_fraction,-1/7,258
+very_hard,rx,numeric_loose_pi_fraction,-1/8,287
+very_hard,rx,numeric_loose_pi_fraction,-1/9,315
+very_hard,rx,numeric_loose_pi_fraction,-10/11,214
+very_hard,rx,numeric_loose_pi_fraction,-10/13,379
+very_hard,rx,numeric_loose_pi_fraction,-11/10,3
+very_hard,rx,numeric_loose_pi_fraction,-11/12,142
+very_hard,rx,numeric_loose_pi_fraction,-11/13,316
+very_hard,rx,numeric_loose_pi_fraction,-11/14,301
+very_hard,rx,numeric_loose_pi_fraction,-11/15,337
+very_hard,rx,numeric_loose_pi_fraction,-11/16,437
+very_hard,rx,numeric_loose_pi_fraction,-11/9,1
+very_hard,rx,numeric_loose_pi_fraction,-12/11,1
+very_hard,rx,numeric_loose_pi_fraction,-12/13,127
+very_hard,rx,numeric_loose_pi_fraction,-13/11,2
+very_hard,rx,numeric_loose_pi_fraction,-13/12,1
+very_hard,rx,numeric_loose_pi_fraction,-13/14,102
+very_hard,rx,numeric_loose_pi_fraction,-13/15,215
+very_hard,rx,numeric_loose_pi_fraction,-13/16,264
+very_hard,rx,numeric_loose_pi_fraction,-13/7,1
+very_hard,rx,numeric_loose_pi_fraction,-14/11,1
+very_hard,rx,numeric_loose_pi_fraction,-14/15,116
+very_hard,rx,numeric_loose_pi_fraction,-15/16,259
+very_hard,rx,numeric_loose_pi_fraction,-17/12,1
+very_hard,rx,numeric_loose_pi_fraction,-17/14,1
+very_hard,rx,numeric_loose_pi_fraction,-17/16,3
+very_hard,rx,numeric_loose_pi_fraction,-19/15,1
+very_hard,rx,numeric_loose_pi_fraction,-19/16,3
+very_hard,rx,numeric_loose_pi_fraction,-2/11,329
+very_hard,rx,numeric_loose_pi_fraction,-2/13,343
+very_hard,rx,numeric_loose_pi_fraction,-2/15,233
+very_hard,rx,numeric_loose_pi_fraction,-2/3,707
+very_hard,rx,numeric_loose_pi_fraction,-2/5,605
+very_hard,rx,numeric_loose_pi_fraction,-2/7,468
+very_hard,rx,numeric_loose_pi_fraction,-2/9,247
+very_hard,rx,numeric_loose_pi_fraction,-28/15,1
+very_hard,rx,numeric_loose_pi_fraction,-3/10,394
+very_hard,rx,numeric_loose_pi_fraction,-3/11,351
+very_hard,rx,numeric_loose_pi_fraction,-3/13,466
+very_hard,rx,numeric_loose_pi_fraction,-3/14,372
+very_hard,rx,numeric_loose_pi_fraction,-3/16,285
+very_hard,rx,numeric_loose_pi_fraction,-3/2,1
+very_hard,rx,numeric_loose_pi_fraction,-3/4,539
+very_hard,rx,numeric_loose_pi_fraction,-3/5,619
+very_hard,rx,numeric_loose_pi_fraction,-3/7,400
+very_hard,rx,numeric_loose_pi_fraction,-3/8,398
+very_hard,rx,numeric_loose_pi_fraction,-4/11,312
+very_hard,rx,numeric_loose_pi_fraction,-4/13,212
+very_hard,rx,numeric_loose_pi_fraction,-4/15,390
+very_hard,rx,numeric_loose_pi_fraction,-4/5,378
+very_hard,rx,numeric_loose_pi_fraction,-4/7,400
+very_hard,rx,numeric_loose_pi_fraction,-4/9,316
+very_hard,rx,numeric_loose_pi_fraction,-5/11,326
+very_hard,rx,numeric_loose_pi_fraction,-5/12,569
+very_hard,rx,numeric_loose_pi_fraction,-5/13,479
+very_hard,rx,numeric_loose_pi_fraction,-5/14,440
+very_hard,rx,numeric_loose_pi_fraction,-5/16,450
+very_hard,rx,numeric_loose_pi_fraction,-5/4,1
+very_hard,rx,numeric_loose_pi_fraction,-5/6,382
+very_hard,rx,numeric_loose_pi_fraction,-5/7,473
+very_hard,rx,numeric_loose_pi_fraction,-5/8,376
+very_hard,rx,numeric_loose_pi_fraction,-5/9,310
+very_hard,rx,numeric_loose_pi_fraction,-6/11,322
+very_hard,rx,numeric_loose_pi_fraction,-6/13,225
+very_hard,rx,numeric_loose_pi_fraction,-6/5,2
+very_hard,rx,numeric_loose_pi_fraction,-6/7,294
+very_hard,rx,numeric_loose_pi_fraction,-7/10,366
+very_hard,rx,numeric_loose_pi_fraction,-7/11,363
+very_hard,rx,numeric_loose_pi_fraction,-7/12,572
+very_hard,rx,numeric_loose_pi_fraction,-7/13,216
+very_hard,rx,numeric_loose_pi_fraction,-7/15,496
+very_hard,rx,numeric_loose_pi_fraction,-7/16,254
+very_hard,rx,numeric_loose_pi_fraction,-7/8,265
+very_hard,rx,numeric_loose_pi_fraction,-7/9,236
+very_hard,rx,numeric_loose_pi_fraction,-8/11,319
+very_hard,rx,numeric_loose_pi_fraction,-8/13,458
+very_hard,rx,numeric_loose_pi_fraction,-8/15,476
+very_hard,rx,numeric_loose_pi_fraction,-8/7,1
+very_hard,rx,numeric_loose_pi_fraction,-8/9,307
+very_hard,rx,numeric_loose_pi_fraction,-9/10,239
+very_hard,rx,numeric_loose_pi_fraction,-9/11,267
+very_hard,rx,numeric_loose_pi_fraction,-9/13,177
+very_hard,rx,numeric_loose_pi_fraction,-9/14,477
+very_hard,rx,numeric_loose_pi_fraction,-9/16,290
+very_hard,rx,numeric_loose_pi_fraction,0,466
+very_hard,rx,numeric_loose_pi_fraction,1,210
+very_hard,rx,numeric_loose_pi_fraction,1/10,370
+very_hard,rx,numeric_loose_pi_fraction,1/11,288
+very_hard,rx,numeric_loose_pi_fraction,1/12,232
+very_hard,rx,numeric_loose_pi_fraction,1/13,190
+very_hard,rx,numeric_loose_pi_fraction,1/14,160
+very_hard,rx,numeric_loose_pi_fraction,1/15,150
+very_hard,rx,numeric_loose_pi_fraction,1/16,351
+very_hard,rx,numeric_loose_pi_fraction,1/2,1493
+very_hard,rx,numeric_loose_pi_fraction,1/3,1285
+very_hard,rx,numeric_loose_pi_fraction,1/4,1049
+very_hard,rx,numeric_loose_pi_fraction,1/5,653
+very_hard,rx,numeric_loose_pi_fraction,1/6,643
+very_hard,rx,numeric_loose_pi_fraction,1/7,449
+very_hard,rx,numeric_loose_pi_fraction,1/8,430
+very_hard,rx,numeric_loose_pi_fraction,1/9,453
+very_hard,rx,numeric_loose_pi_fraction,10/11,258
+very_hard,rx,numeric_loose_pi_fraction,10/13,779
+very_hard,rx,numeric_loose_pi_fraction,10/9,1
+very_hard,rx,numeric_loose_pi_fraction,11/10,2
+very_hard,rx,numeric_loose_pi_fraction,11/12,210
+very_hard,rx,numeric_loose_pi_fraction,11/13,525
+very_hard,rx,numeric_loose_pi_fraction,11/14,512
+very_hard,rx,numeric_loose_pi_fraction,11/15,642
+very_hard,rx,numeric_loose_pi_fraction,11/16,793
+very_hard,rx,numeric_loose_pi_fraction,12/11,2
+very_hard,rx,numeric_loose_pi_fraction,12/13,191
+very_hard,rx,numeric_loose_pi_fraction,12/7,1
+very_hard,rx,numeric_loose_pi_fraction,13/12,1
+very_hard,rx,numeric_loose_pi_fraction,13/14,131
+very_hard,rx,numeric_loose_pi_fraction,13/15,357
+very_hard,rx,numeric_loose_pi_fraction,13/16,449
+very_hard,rx,numeric_loose_pi_fraction,14/15,109
+very_hard,rx,numeric_loose_pi_fraction,15/14,2
+very_hard,rx,numeric_loose_pi_fraction,15/16,363
+very_hard,rx,numeric_loose_pi_fraction,16/15,1
+very_hard,rx,numeric_loose_pi_fraction,17/14,1
+very_hard,rx,numeric_loose_pi_fraction,17/15,1
+very_hard,rx,numeric_loose_pi_fraction,19/16,2
+very_hard,rx,numeric_loose_pi_fraction,2/11,499
+very_hard,rx,numeric_loose_pi_fraction,2/13,553
+very_hard,rx,numeric_loose_pi_fraction,2/15,335
+very_hard,rx,numeric_loose_pi_fraction,2/3,1249
+very_hard,rx,numeric_loose_pi_fraction,2/5,1250
+very_hard,rx,numeric_loose_pi_fraction,2/7,865
+very_hard,rx,numeric_loose_pi_fraction,2/9,389
+very_hard,rx,numeric_loose_pi_fraction,21/16,1
+very_hard,rx,numeric_loose_pi_fraction,23/14,1
+very_hard,rx,numeric_loose_pi_fraction,29/15,1
+very_hard,rx,numeric_loose_pi_fraction,3/10,698
+very_hard,rx,numeric_loose_pi_fraction,3/11,638
+very_hard,rx,numeric_loose_pi_fraction,3/13,783
+very_hard,rx,numeric_loose_pi_fraction,3/14,636
+very_hard,rx,numeric_loose_pi_fraction,3/16,500
+very_hard,rx,numeric_loose_pi_fraction,3/4,1015
+very_hard,rx,numeric_loose_pi_fraction,3/5,1077
+very_hard,rx,numeric_loose_pi_fraction,3/7,750
+very_hard,rx,numeric_loose_pi_fraction,3/8,774
+very_hard,rx,numeric_loose_pi_fraction,4/11,683
+very_hard,rx,numeric_loose_pi_fraction,4/13,353
+very_hard,rx,numeric_loose_pi_fraction,4/15,692
+very_hard,rx,numeric_loose_pi_fraction,4/3,1
+very_hard,rx,numeric_loose_pi_fraction,4/5,601
+very_hard,rx,numeric_loose_pi_fraction,4/7,770
+very_hard,rx,numeric_loose_pi_fraction,4/9,630
+very_hard,rx,numeric_loose_pi_fraction,5/11,589
+very_hard,rx,numeric_loose_pi_fraction,5/12,1130
+very_hard,rx,numeric_loose_pi_fraction,5/13,961
+very_hard,rx,numeric_loose_pi_fraction,5/14,898
+very_hard,rx,numeric_loose_pi_fraction,5/16,770
+very_hard,rx,numeric_loose_pi_fraction,5/6,611
+very_hard,rx,numeric_loose_pi_fraction,5/7,863
+very_hard,rx,numeric_loose_pi_fraction,5/8,731
+very_hard,rx,numeric_loose_pi_fraction,5/9,621
+very_hard,rx,numeric_loose_pi_fraction,6/11,593
+very_hard,rx,numeric_loose_pi_fraction,6/13,459
+very_hard,rx,numeric_loose_pi_fraction,6/7,422
+very_hard,rx,numeric_loose_pi_fraction,7/10,659
+very_hard,rx,numeric_loose_pi_fraction,7/11,632
+very_hard,rx,numeric_loose_pi_fraction,7/12,1040
+very_hard,rx,numeric_loose_pi_fraction,7/13,420
+very_hard,rx,numeric_loose_pi_fraction,7/15,947
+very_hard,rx,numeric_loose_pi_fraction,7/16,569
+very_hard,rx,numeric_loose_pi_fraction,7/8,419
+very_hard,rx,numeric_loose_pi_fraction,7/9,412
+very_hard,rx,numeric_loose_pi_fraction,8/11,593
+very_hard,rx,numeric_loose_pi_fraction,8/13,811
+very_hard,rx,numeric_loose_pi_fraction,8/15,1009
+very_hard,rx,numeric_loose_pi_fraction,8/7,1
+very_hard,rx,numeric_loose_pi_fraction,8/9,427
+very_hard,rx,numeric_loose_pi_fraction,9/10,345
+very_hard,rx,numeric_loose_pi_fraction,9/11,491
+very_hard,rx,numeric_loose_pi_fraction,9/13,350
+very_hard,rx,numeric_loose_pi_fraction,9/14,867
+very_hard,rx,numeric_loose_pi_fraction,9/16,597
+very_hard,rx,numeric_loose_pi_fraction,9/8,1
+very_hard,rx,numeric_noisy_non_fraction,-1,425
+very_hard,rx,numeric_noisy_non_fraction,-1/16,477
+very_hard,rx,numeric_noisy_non_fraction,-1/2,505
+very_hard,rx,numeric_noisy_non_fraction,-1/3,71
+very_hard,rx,numeric_noisy_non_fraction,-11/16,16
+very_hard,rx,numeric_noisy_non_fraction,-15/16,389
+very_hard,rx,numeric_noisy_non_fraction,-17/16,4
+very_hard,rx,numeric_noisy_non_fraction,-2/3,79
+very_hard,rx,numeric_noisy_non_fraction,-5/14,60
+very_hard,rx,numeric_noisy_non_fraction,-5/16,15
+very_hard,rx,numeric_noisy_non_fraction,-7/15,278
+very_hard,rx,numeric_noisy_non_fraction,-8/15,269
+very_hard,rx,numeric_noisy_non_fraction,-9/14,64
+very_hard,rx,numeric_noisy_non_fraction,0,886
+very_hard,rx,numeric_noisy_non_fraction,1,452
+very_hard,rx,numeric_noisy_non_fraction,1/16,592
+very_hard,rx,numeric_noisy_non_fraction,1/2,1076
+very_hard,rx,numeric_noisy_non_fraction,1/3,179
+very_hard,rx,numeric_noisy_non_fraction,11/16,31
+very_hard,rx,numeric_noisy_non_fraction,15/16,546
+very_hard,rx,numeric_noisy_non_fraction,17/16,2
+very_hard,rx,numeric_noisy_non_fraction,2/3,146
+very_hard,rx,numeric_noisy_non_fraction,5/14,111
+very_hard,rx,numeric_noisy_non_fraction,5/16,18
+very_hard,rx,numeric_noisy_non_fraction,7/15,528
+very_hard,rx,numeric_noisy_non_fraction,8/15,546
+very_hard,rx,numeric_noisy_non_fraction,9/14,107
+very_hard,rx,numeric_very_close_pi_fraction,-1,1
+very_hard,rx,numeric_very_close_pi_fraction,-1/2,5
+very_hard,rx,numeric_very_close_pi_fraction,-2/3,1
+very_hard,rx,numeric_very_close_pi_fraction,-6/13,2
+very_hard,rx,numeric_very_close_pi_fraction,-8/9,1
+very_hard,rx,numeric_very_close_pi_fraction,0,3
+very_hard,rx,numeric_very_close_pi_fraction,1,1
+very_hard,rx,numeric_very_close_pi_fraction,1/14,1
+very_hard,rx,numeric_very_close_pi_fraction,1/2,10
+very_hard,rx,numeric_very_close_pi_fraction,13/14,1
+very_hard,rx,numeric_very_close_pi_fraction,3/10,1
+very_hard,rx,numeric_very_close_pi_fraction,3/16,1
+very_hard,rx,numeric_very_close_pi_fraction,5/14,1
+very_hard,rx,numeric_very_close_pi_fraction,6/11,2
+very_hard,rx,numeric_very_close_pi_fraction,7/16,2
+very_hard,rx,numeric_very_close_pi_fraction,7/9,2
+very_hard,rx,symbolic_pi_expr,-1,1
+very_hard,rx,symbolic_pi_expr,-1/2,1
+very_hard,rx,symbolic_pi_expr,1,4
+very_hard,rx,symbolic_pi_expr,1/2,4
+very_hard,rz,numeric_close_pi_fraction,-1,3
+very_hard,rz,numeric_close_pi_fraction,-1/10,5
+very_hard,rz,numeric_close_pi_fraction,-1/11,5
+very_hard,rz,numeric_close_pi_fraction,-1/12,9
+very_hard,rz,numeric_close_pi_fraction,-1/13,12
+very_hard,rz,numeric_close_pi_fraction,-1/14,5
+very_hard,rz,numeric_close_pi_fraction,-1/15,6
+very_hard,rz,numeric_close_pi_fraction,-1/16,4
+very_hard,rz,numeric_close_pi_fraction,-1/2,17
+very_hard,rz,numeric_close_pi_fraction,-1/3,9
+very_hard,rz,numeric_close_pi_fraction,-1/4,10
+very_hard,rz,numeric_close_pi_fraction,-1/5,6
+very_hard,rz,numeric_close_pi_fraction,-1/6,5
+very_hard,rz,numeric_close_pi_fraction,-1/7,9
+very_hard,rz,numeric_close_pi_fraction,-1/8,5
+very_hard,rz,numeric_close_pi_fraction,-1/9,18
+very_hard,rz,numeric_close_pi_fraction,-10/11,3
+very_hard,rz,numeric_close_pi_fraction,-10/13,5
+very_hard,rz,numeric_close_pi_fraction,-11/12,6
+very_hard,rz,numeric_close_pi_fraction,-11/13,6
+very_hard,rz,numeric_close_pi_fraction,-11/14,7
+very_hard,rz,numeric_close_pi_fraction,-11/15,11
+very_hard,rz,numeric_close_pi_fraction,-11/16,12
+very_hard,rz,numeric_close_pi_fraction,-12/13,6
+very_hard,rz,numeric_close_pi_fraction,-13/12,1
+very_hard,rz,numeric_close_pi_fraction,-13/14,7
+very_hard,rz,numeric_close_pi_fraction,-13/15,5
+very_hard,rz,numeric_close_pi_fraction,-13/16,7
+very_hard,rz,numeric_close_pi_fraction,-14/15,4
+very_hard,rz,numeric_close_pi_fraction,-15/16,4
+very_hard,rz,numeric_close_pi_fraction,-2/11,6
+very_hard,rz,numeric_close_pi_fraction,-2/13,10
+very_hard,rz,numeric_close_pi_fraction,-2/15,6
+very_hard,rz,numeric_close_pi_fraction,-2/3,8
+very_hard,rz,numeric_close_pi_fraction,-2/5,8
+very_hard,rz,numeric_close_pi_fraction,-2/7,7
+very_hard,rz,numeric_close_pi_fraction,-2/9,10
+very_hard,rz,numeric_close_pi_fraction,-3/10,8
+very_hard,rz,numeric_close_pi_fraction,-3/11,9
+very_hard,rz,numeric_close_pi_fraction,-3/13,5
+very_hard,rz,numeric_close_pi_fraction,-3/14,12
+very_hard,rz,numeric_close_pi_fraction,-3/16,4
+very_hard,rz,numeric_close_pi_fraction,-3/4,11
+very_hard,rz,numeric_close_pi_fraction,-3/5,5
+very_hard,rz,numeric_close_pi_fraction,-3/7,6
+very_hard,rz,numeric_close_pi_fraction,-3/8,10
+very_hard,rz,numeric_close_pi_fraction,-4/11,9
+very_hard,rz,numeric_close_pi_fraction,-4/13,9
+very_hard,rz,numeric_close_pi_fraction,-4/15,8
+very_hard,rz,numeric_close_pi_fraction,-4/5,4
+very_hard,rz,numeric_close_pi_fraction,-4/7,11
+very_hard,rz,numeric_close_pi_fraction,-4/9,8
+very_hard,rz,numeric_close_pi_fraction,-5/11,14
+very_hard,rz,numeric_close_pi_fraction,-5/12,10
+very_hard,rz,numeric_close_pi_fraction,-5/13,8
+very_hard,rz,numeric_close_pi_fraction,-5/14,12
+very_hard,rz,numeric_close_pi_fraction,-5/16,10
+very_hard,rz,numeric_close_pi_fraction,-5/6,6
+very_hard,rz,numeric_close_pi_fraction,-5/7,8
+very_hard,rz,numeric_close_pi_fraction,-5/8,6
+very_hard,rz,numeric_close_pi_fraction,-5/9,12
+very_hard,rz,numeric_close_pi_fraction,-6/11,7
+very_hard,rz,numeric_close_pi_fraction,-6/13,8
+very_hard,rz,numeric_close_pi_fraction,-6/7,7
+very_hard,rz,numeric_close_pi_fraction,-7/10,7
+very_hard,rz,numeric_close_pi_fraction,-7/11,11
+very_hard,rz,numeric_close_pi_fraction,-7/12,11
+very_hard,rz,numeric_close_pi_fraction,-7/13,4
+very_hard,rz,numeric_close_pi_fraction,-7/15,9
+very_hard,rz,numeric_close_pi_fraction,-7/16,7
+very_hard,rz,numeric_close_pi_fraction,-7/8,5
+very_hard,rz,numeric_close_pi_fraction,-7/9,10
+very_hard,rz,numeric_close_pi_fraction,-8/11,10
+very_hard,rz,numeric_close_pi_fraction,-8/13,7
+very_hard,rz,numeric_close_pi_fraction,-8/15,16
+very_hard,rz,numeric_close_pi_fraction,-8/9,10
+very_hard,rz,numeric_close_pi_fraction,-9/10,8
+very_hard,rz,numeric_close_pi_fraction,-9/11,5
+very_hard,rz,numeric_close_pi_fraction,-9/13,10
+very_hard,rz,numeric_close_pi_fraction,-9/14,9
+very_hard,rz,numeric_close_pi_fraction,-9/16,8
+very_hard,rz,numeric_close_pi_fraction,0,10
+very_hard,rz,numeric_close_pi_fraction,1,3
+very_hard,rz,numeric_close_pi_fraction,1/10,10
+very_hard,rz,numeric_close_pi_fraction,1/11,9
+very_hard,rz,numeric_close_pi_fraction,1/12,11
+very_hard,rz,numeric_close_pi_fraction,1/13,11
+very_hard,rz,numeric_close_pi_fraction,1/14,6
+very_hard,rz,numeric_close_pi_fraction,1/15,7
+very_hard,rz,numeric_close_pi_fraction,1/16,4
+very_hard,rz,numeric_close_pi_fraction,1/2,29
+very_hard,rz,numeric_close_pi_fraction,1/3,18
+very_hard,rz,numeric_close_pi_fraction,1/4,17
+very_hard,rz,numeric_close_pi_fraction,1/5,4
+very_hard,rz,numeric_close_pi_fraction,1/6,9
+very_hard,rz,numeric_close_pi_fraction,1/7,16
+very_hard,rz,numeric_close_pi_fraction,1/8,5
+very_hard,rz,numeric_close_pi_fraction,1/9,10
+very_hard,rz,numeric_close_pi_fraction,10/11,9
+very_hard,rz,numeric_close_pi_fraction,10/13,10
+very_hard,rz,numeric_close_pi_fraction,11/12,9
+very_hard,rz,numeric_close_pi_fraction,11/13,13
+very_hard,rz,numeric_close_pi_fraction,11/14,10
+very_hard,rz,numeric_close_pi_fraction,11/15,9
+very_hard,rz,numeric_close_pi_fraction,11/16,10
+very_hard,rz,numeric_close_pi_fraction,12/13,12
+very_hard,rz,numeric_close_pi_fraction,13/14,3
+very_hard,rz,numeric_close_pi_fraction,13/15,10
+very_hard,rz,numeric_close_pi_fraction,13/16,11
+very_hard,rz,numeric_close_pi_fraction,14/15,11
+very_hard,rz,numeric_close_pi_fraction,15/16,4
+very_hard,rz,numeric_close_pi_fraction,2/11,7
+very_hard,rz,numeric_close_pi_fraction,2/13,8
+very_hard,rz,numeric_close_pi_fraction,2/15,8
+very_hard,rz,numeric_close_pi_fraction,2/3,13
+very_hard,rz,numeric_close_pi_fraction,2/5,13
+very_hard,rz,numeric_close_pi_fraction,2/7,7
+very_hard,rz,numeric_close_pi_fraction,2/9,19
+very_hard,rz,numeric_close_pi_fraction,3/10,11
+very_hard,rz,numeric_close_pi_fraction,3/11,10
+very_hard,rz,numeric_close_pi_fraction,3/13,14
+very_hard,rz,numeric_close_pi_fraction,3/14,14
+very_hard,rz,numeric_close_pi_fraction,3/16,9
+very_hard,rz,numeric_close_pi_fraction,3/4,8
+very_hard,rz,numeric_close_pi_fraction,3/5,6
+very_hard,rz,numeric_close_pi_fraction,3/7,16
+very_hard,rz,numeric_close_pi_fraction,3/8,10
+very_hard,rz,numeric_close_pi_fraction,4/11,12
+very_hard,rz,numeric_close_pi_fraction,4/13,16
+very_hard,rz,numeric_close_pi_fraction,4/15,11
+very_hard,rz,numeric_close_pi_fraction,4/5,12
+very_hard,rz,numeric_close_pi_fraction,4/7,21
+very_hard,rz,numeric_close_pi_fraction,4/9,14
+very_hard,rz,numeric_close_pi_fraction,5/11,9
+very_hard,rz,numeric_close_pi_fraction,5/12,12
+very_hard,rz,numeric_close_pi_fraction,5/13,11
+very_hard,rz,numeric_close_pi_fraction,5/14,10
+very_hard,rz,numeric_close_pi_fraction,5/16,12
+very_hard,rz,numeric_close_pi_fraction,5/6,8
+very_hard,rz,numeric_close_pi_fraction,5/7,8
+very_hard,rz,numeric_close_pi_fraction,5/8,12
+very_hard,rz,numeric_close_pi_fraction,5/9,8
+very_hard,rz,numeric_close_pi_fraction,6/11,15
+very_hard,rz,numeric_close_pi_fraction,6/13,19
+very_hard,rz,numeric_close_pi_fraction,6/7,12
+very_hard,rz,numeric_close_pi_fraction,7/10,14
+very_hard,rz,numeric_close_pi_fraction,7/11,6
+very_hard,rz,numeric_close_pi_fraction,7/12,18
+very_hard,rz,numeric_close_pi_fraction,7/13,13
+very_hard,rz,numeric_close_pi_fraction,7/15,18
+very_hard,rz,numeric_close_pi_fraction,7/16,15
+very_hard,rz,numeric_close_pi_fraction,7/8,7
+very_hard,rz,numeric_close_pi_fraction,7/9,8
+very_hard,rz,numeric_close_pi_fraction,8/11,11
+very_hard,rz,numeric_close_pi_fraction,8/13,13
+very_hard,rz,numeric_close_pi_fraction,8/15,15
+very_hard,rz,numeric_close_pi_fraction,8/9,8
+very_hard,rz,numeric_close_pi_fraction,9/10,12
+very_hard,rz,numeric_close_pi_fraction,9/11,14
+very_hard,rz,numeric_close_pi_fraction,9/13,10
+very_hard,rz,numeric_close_pi_fraction,9/14,16
+very_hard,rz,numeric_close_pi_fraction,9/16,16
+very_hard,rz,numeric_exact_pi_fraction,-1/2,19
+very_hard,rz,numeric_exact_pi_fraction,-1/4,9
+very_hard,rz,numeric_exact_pi_fraction,-3/4,6
+very_hard,rz,numeric_exact_pi_fraction,0,1
+very_hard,rz,numeric_exact_pi_fraction,1/2,17
+very_hard,rz,numeric_exact_pi_fraction,1/4,7
+very_hard,rz,numeric_exact_pi_fraction,3/4,14
+very_hard,rz,numeric_loose_pi_fraction,-1,257
+very_hard,rz,numeric_loose_pi_fraction,-1/10,326
+very_hard,rz,numeric_loose_pi_fraction,-1/11,300
+very_hard,rz,numeric_loose_pi_fraction,-1/12,237
+very_hard,rz,numeric_loose_pi_fraction,-1/13,192
+very_hard,rz,numeric_loose_pi_fraction,-1/14,152
+very_hard,rz,numeric_loose_pi_fraction,-1/15,134
+very_hard,rz,numeric_loose_pi_fraction,-1/16,369
+very_hard,rz,numeric_loose_pi_fraction,-1/2,671
+very_hard,rz,numeric_loose_pi_fraction,-1/3,887
+very_hard,rz,numeric_loose_pi_fraction,-1/4,538
+very_hard,rz,numeric_loose_pi_fraction,-1/5,545
+very_hard,rz,numeric_loose_pi_fraction,-1/6,497
+very_hard,rz,numeric_loose_pi_fraction,-1/7,380
+very_hard,rz,numeric_loose_pi_fraction,-1/8,384
+very_hard,rz,numeric_loose_pi_fraction,-1/9,441
+very_hard,rz,numeric_loose_pi_fraction,-10/11,242
+very_hard,rz,numeric_loose_pi_fraction,-10/13,557
+very_hard,rz,numeric_loose_pi_fraction,-11/12,203
+very_hard,rz,numeric_loose_pi_fraction,-11/13,432
+very_hard,rz,numeric_loose_pi_fraction,-11/14,391
+very_hard,rz,numeric_loose_pi_fraction,-11/15,394
+very_hard,rz,numeric_loose_pi_fraction,-11/16,524
+very_hard,rz,numeric_loose_pi_fraction,-11/9,2
+very_hard,rz,numeric_loose_pi_fraction,-12/11,3
+very_hard,rz,numeric_loose_pi_fraction,-12/13,175
+very_hard,rz,numeric_loose_pi_fraction,-13/11,1
+very_hard,rz,numeric_loose_pi_fraction,-13/12,2
+very_hard,rz,numeric_loose_pi_fraction,-13/14,188
+very_hard,rz,numeric_loose_pi_fraction,-13/15,308
+very_hard,rz,numeric_loose_pi_fraction,-13/16,330
+very_hard,rz,numeric_loose_pi_fraction,-14/13,1
+very_hard,rz,numeric_loose_pi_fraction,-14/15,136
+very_hard,rz,numeric_loose_pi_fraction,-15/13,2
+very_hard,rz,numeric_loose_pi_fraction,-15/14,2
+very_hard,rz,numeric_loose_pi_fraction,-15/16,367
+very_hard,rz,numeric_loose_pi_fraction,-16/15,2
+very_hard,rz,numeric_loose_pi_fraction,-17/13,1
+very_hard,rz,numeric_loose_pi_fraction,-17/14,2
+very_hard,rz,numeric_loose_pi_fraction,-17/16,2
+very_hard,rz,numeric_loose_pi_fraction,-18/11,1
+very_hard,rz,numeric_loose_pi_fraction,-19/11,1
+very_hard,rz,numeric_loose_pi_fraction,-19/12,1
+very_hard,rz,numeric_loose_pi_fraction,-19/15,1
+very_hard,rz,numeric_loose_pi_fraction,-2/11,420
+very_hard,rz,numeric_loose_pi_fraction,-2/13,440
+very_hard,rz,numeric_loose_pi_fraction,-2/15,318
+very_hard,rz,numeric_loose_pi_fraction,-2/3,854
+very_hard,rz,numeric_loose_pi_fraction,-2/5,730
+very_hard,rz,numeric_loose_pi_fraction,-2/7,587
+very_hard,rz,numeric_loose_pi_fraction,-2/9,328
+very_hard,rz,numeric_loose_pi_fraction,-27/16,1
+very_hard,rz,numeric_loose_pi_fraction,-3/10,480
+very_hard,rz,numeric_loose_pi_fraction,-3/11,421
+very_hard,rz,numeric_loose_pi_fraction,-3/13,550
+very_hard,rz,numeric_loose_pi_fraction,-3/14,429
+very_hard,rz,numeric_loose_pi_fraction,-3/16,335
+very_hard,rz,numeric_loose_pi_fraction,-3/4,496
+very_hard,rz,numeric_loose_pi_fraction,-3/5,697
+very_hard,rz,numeric_loose_pi_fraction,-3/7,470
+very_hard,rz,numeric_loose_pi_fraction,-3/8,465
+very_hard,rz,numeric_loose_pi_fraction,-31/16,1
+very_hard,rz,numeric_loose_pi_fraction,-4/11,406
+very_hard,rz,numeric_loose_pi_fraction,-4/13,311
+very_hard,rz,numeric_loose_pi_fraction,-4/15,454
+very_hard,rz,numeric_loose_pi_fraction,-4/5,535
+very_hard,rz,numeric_loose_pi_fraction,-4/7,483
+very_hard,rz,numeric_loose_pi_fraction,-4/9,404
+very_hard,rz,numeric_loose_pi_fraction,-5/11,412
+very_hard,rz,numeric_loose_pi_fraction,-5/12,637
+very_hard,rz,numeric_loose_pi_fraction,-5/13,550
+very_hard,rz,numeric_loose_pi_fraction,-5/14,621
+very_hard,rz,numeric_loose_pi_fraction,-5/16,542
+very_hard,rz,numeric_loose_pi_fraction,-5/4,1
+very_hard,rz,numeric_loose_pi_fraction,-5/6,445
+very_hard,rz,numeric_loose_pi_fraction,-5/7,556
+very_hard,rz,numeric_loose_pi_fraction,-5/8,491
+very_hard,rz,numeric_loose_pi_fraction,-5/9,421
+very_hard,rz,numeric_loose_pi_fraction,-6/11,391
+very_hard,rz,numeric_loose_pi_fraction,-6/13,292
+very_hard,rz,numeric_loose_pi_fraction,-6/5,1
+very_hard,rz,numeric_loose_pi_fraction,-6/7,316
+very_hard,rz,numeric_loose_pi_fraction,-7/10,461
+very_hard,rz,numeric_loose_pi_fraction,-7/11,410
+very_hard,rz,numeric_loose_pi_fraction,-7/12,727
+very_hard,rz,numeric_loose_pi_fraction,-7/13,274
+very_hard,rz,numeric_loose_pi_fraction,-7/15,594
+very_hard,rz,numeric_loose_pi_fraction,-7/16,358
+very_hard,rz,numeric_loose_pi_fraction,-7/5,1
+very_hard,rz,numeric_loose_pi_fraction,-7/6,3
+very_hard,rz,numeric_loose_pi_fraction,-7/8,365
+very_hard,rz,numeric_loose_pi_fraction,-7/9,323
+very_hard,rz,numeric_loose_pi_fraction,-8/11,372
+very_hard,rz,numeric_loose_pi_fraction,-8/13,578
+very_hard,rz,numeric_loose_pi_fraction,-8/15,598
+very_hard,rz,numeric_loose_pi_fraction,-8/7,1
+very_hard,rz,numeric_loose_pi_fraction,-8/9,393
+very_hard,rz,numeric_loose_pi_fraction,-9/10,306
+very_hard,rz,numeric_loose_pi_fraction,-9/11,388
+very_hard,rz,numeric_loose_pi_fraction,-9/13,260
+very_hard,rz,numeric_loose_pi_fraction,-9/14,588
+very_hard,rz,numeric_loose_pi_fraction,-9/16,372
+very_hard,rz,numeric_loose_pi_fraction,-9/5,2
+very_hard,rz,numeric_loose_pi_fraction,-9/7,2
+very_hard,rz,numeric_loose_pi_fraction,-9/8,2
+very_hard,rz,numeric_loose_pi_fraction,0,653
+very_hard,rz,numeric_loose_pi_fraction,1,251
+very_hard,rz,numeric_loose_pi_fraction,1/10,427
+very_hard,rz,numeric_loose_pi_fraction,1/11,325
+very_hard,rz,numeric_loose_pi_fraction,1/12,292
+very_hard,rz,numeric_loose_pi_fraction,1/13,234
+very_hard,rz,numeric_loose_pi_fraction,1/14,179
+very_hard,rz,numeric_loose_pi_fraction,1/15,165
+very_hard,rz,numeric_loose_pi_fraction,1/16,470
+very_hard,rz,numeric_loose_pi_fraction,1/2,1155
+very_hard,rz,numeric_loose_pi_fraction,1/3,1354
+very_hard,rz,numeric_loose_pi_fraction,1/4,756
+very_hard,rz,numeric_loose_pi_fraction,1/5,670
+very_hard,rz,numeric_loose_pi_fraction,1/6,703
+very_hard,rz,numeric_loose_pi_fraction,1/7,462
+very_hard,rz,numeric_loose_pi_fraction,1/8,480
+very_hard,rz,numeric_loose_pi_fraction,1/9,589
+very_hard,rz,numeric_loose_pi_fraction,10/11,315
+very_hard,rz,numeric_loose_pi_fraction,10/13,727
+very_hard,rz,numeric_loose_pi_fraction,10/9,3
+very_hard,rz,numeric_loose_pi_fraction,11/12,271
+very_hard,rz,numeric_loose_pi_fraction,11/13,553
+very_hard,rz,numeric_loose_pi_fraction,11/14,578
+very_hard,rz,numeric_loose_pi_fraction,11/15,602
+very_hard,rz,numeric_loose_pi_fraction,11/16,754
+very_hard,rz,numeric_loose_pi_fraction,11/7,1
+very_hard,rz,numeric_loose_pi_fraction,12/13,218
+very_hard,rz,numeric_loose_pi_fraction,13/12,1
+very_hard,rz,numeric_loose_pi_fraction,13/14,192
+very_hard,rz,numeric_loose_pi_fraction,13/15,389
+very_hard,rz,numeric_loose_pi_fraction,13/16,452
+very_hard,rz,numeric_loose_pi_fraction,13/7,1
+very_hard,rz,numeric_loose_pi_fraction,14/15,140
+very_hard,rz,numeric_loose_pi_fraction,15/16,440
+very_hard,rz,numeric_loose_pi_fraction,16/15,1
+very_hard,rz,numeric_loose_pi_fraction,17/12,1
+very_hard,rz,numeric_loose_pi_fraction,17/14,1
+very_hard,rz,numeric_loose_pi_fraction,17/16,2
+very_hard,rz,numeric_loose_pi_fraction,18/13,1
+very_hard,rz,numeric_loose_pi_fraction,19/16,1
+very_hard,rz,numeric_loose_pi_fraction,2/11,544
+very_hard,rz,numeric_loose_pi_fraction,2/13,568
+very_hard,rz,numeric_loose_pi_fraction,2/15,418
+very_hard,rz,numeric_loose_pi_fraction,2/3,1177
+very_hard,rz,numeric_loose_pi_fraction,2/5,1108
+very_hard,rz,numeric_loose_pi_fraction,2/7,806
+very_hard,rz,numeric_loose_pi_fraction,2/9,476
+very_hard,rz,numeric_loose_pi_fraction,3/10,665
+very_hard,rz,numeric_loose_pi_fraction,3/11,579
+very_hard,rz,numeric_loose_pi_fraction,3/13,797
+very_hard,rz,numeric_loose_pi_fraction,3/14,598
+very_hard,rz,numeric_loose_pi_fraction,3/16,477
+very_hard,rz,numeric_loose_pi_fraction,3/4,793
+very_hard,rz,numeric_loose_pi_fraction,3/5,1034
+very_hard,rz,numeric_loose_pi_fraction,3/7,743
+very_hard,rz,numeric_loose_pi_fraction,3/8,645
+very_hard,rz,numeric_loose_pi_fraction,4/11,603
+very_hard,rz,numeric_loose_pi_fraction,4/13,394
+very_hard,rz,numeric_loose_pi_fraction,4/15,637
+very_hard,rz,numeric_loose_pi_fraction,4/5,715
+very_hard,rz,numeric_loose_pi_fraction,4/7,739
+very_hard,rz,numeric_loose_pi_fraction,4/9,566
+very_hard,rz,numeric_loose_pi_fraction,5/11,562
+very_hard,rz,numeric_loose_pi_fraction,5/12,989
+very_hard,rz,numeric_loose_pi_fraction,5/13,841
+very_hard,rz,numeric_loose_pi_fraction,5/14,878
+very_hard,rz,numeric_loose_pi_fraction,5/16,754
+very_hard,rz,numeric_loose_pi_fraction,5/6,665
+very_hard,rz,numeric_loose_pi_fraction,5/7,796
+very_hard,rz,numeric_loose_pi_fraction,5/8,682
+very_hard,rz,numeric_loose_pi_fraction,5/9,619
+very_hard,rz,numeric_loose_pi_fraction,6/11,576
+very_hard,rz,numeric_loose_pi_fraction,6/13,431
+very_hard,rz,numeric_loose_pi_fraction,6/7,433
+very_hard,rz,numeric_loose_pi_fraction,7/10,618
+very_hard,rz,numeric_loose_pi_fraction,7/11,515
+very_hard,rz,numeric_loose_pi_fraction,7/12,1033
+very_hard,rz,numeric_loose_pi_fraction,7/13,426
+very_hard,rz,numeric_loose_pi_fraction,7/15,903
+very_hard,rz,numeric_loose_pi_fraction,7/16,528
+very_hard,rz,numeric_loose_pi_fraction,7/6,1
+very_hard,rz,numeric_loose_pi_fraction,7/8,478
+very_hard,rz,numeric_loose_pi_fraction,7/9,430
+very_hard,rz,numeric_loose_pi_fraction,8/11,568
+very_hard,rz,numeric_loose_pi_fraction,8/13,848
+very_hard,rz,numeric_loose_pi_fraction,8/15,876
+very_hard,rz,numeric_loose_pi_fraction,8/7,1
+very_hard,rz,numeric_loose_pi_fraction,8/9,500
+very_hard,rz,numeric_loose_pi_fraction,9/10,426
+very_hard,rz,numeric_loose_pi_fraction,9/11,542
+very_hard,rz,numeric_loose_pi_fraction,9/13,370
+very_hard,rz,numeric_loose_pi_fraction,9/14,879
+very_hard,rz,numeric_loose_pi_fraction,9/16,583
+very_hard,rz,numeric_loose_pi_fraction,9/7,1
+very_hard,rz,numeric_loose_pi_fraction,9/8,1
+very_hard,rz,numeric_noisy_non_fraction,-1,623
+very_hard,rz,numeric_noisy_non_fraction,-1/16,675
+very_hard,rz,numeric_noisy_non_fraction,-1/2,608
+very_hard,rz,numeric_noisy_non_fraction,-1/3,98
+very_hard,rz,numeric_noisy_non_fraction,-11/16,18
+very_hard,rz,numeric_noisy_non_fraction,-15/16,630
+very_hard,rz,numeric_noisy_non_fraction,-17/16,2
+very_hard,rz,numeric_noisy_non_fraction,-2/3,102
+very_hard,rz,numeric_noisy_non_fraction,-5/14,110
+very_hard,rz,numeric_noisy_non_fraction,-5/16,19
+very_hard,rz,numeric_noisy_non_fraction,-5/3,1
+very_hard,rz,numeric_noisy_non_fraction,-7/15,341
+very_hard,rz,numeric_noisy_non_fraction,-8/15,316
+very_hard,rz,numeric_noisy_non_fraction,-9/14,107
+very_hard,rz,numeric_noisy_non_fraction,0,1319
+very_hard,rz,numeric_noisy_non_fraction,1,629
+very_hard,rz,numeric_noisy_non_fraction,1/16,782
+very_hard,rz,numeric_noisy_non_fraction,1/2,923
+very_hard,rz,numeric_noisy_non_fraction,1/3,160
+very_hard,rz,numeric_noisy_non_fraction,11/16,14
+very_hard,rz,numeric_noisy_non_fraction,15/16,700
+very_hard,rz,numeric_noisy_non_fraction,17/16,3
+very_hard,rz,numeric_noisy_non_fraction,2/3,144
+very_hard,rz,numeric_noisy_non_fraction,3/2,1
+very_hard,rz,numeric_noisy_non_fraction,31/16,1
+very_hard,rz,numeric_noisy_non_fraction,5/14,107
+very_hard,rz,numeric_noisy_non_fraction,5/16,17
+very_hard,rz,numeric_noisy_non_fraction,7/15,503
+very_hard,rz,numeric_noisy_non_fraction,8/15,519
+very_hard,rz,numeric_noisy_non_fraction,9/14,112
+very_hard,rz,numeric_very_close_pi_fraction,-1,2
+very_hard,rz,numeric_very_close_pi_fraction,-1/2,66
+very_hard,rz,numeric_very_close_pi_fraction,-1/4,53
+very_hard,rz,numeric_very_close_pi_fraction,-10/13,1
+very_hard,rz,numeric_very_close_pi_fraction,-2/9,1
+very_hard,rz,numeric_very_close_pi_fraction,-3/4,53
+very_hard,rz,numeric_very_close_pi_fraction,-5/11,2
+very_hard,rz,numeric_very_close_pi_fraction,-5/16,1
+very_hard,rz,numeric_very_close_pi_fraction,-5/4,1
+very_hard,rz,numeric_very_close_pi_fraction,-6/7,1
+very_hard,rz,numeric_very_close_pi_fraction,-9/14,1
+very_hard,rz,numeric_very_close_pi_fraction,0,1
+very_hard,rz,numeric_very_close_pi_fraction,1,2
+very_hard,rz,numeric_very_close_pi_fraction,1/14,1
+very_hard,rz,numeric_very_close_pi_fraction,1/2,75
+very_hard,rz,numeric_very_close_pi_fraction,1/3,2
+very_hard,rz,numeric_very_close_pi_fraction,1/4,87
+very_hard,rz,numeric_very_close_pi_fraction,11/16,1
+very_hard,rz,numeric_very_close_pi_fraction,2/7,1
+very_hard,rz,numeric_very_close_pi_fraction,2/9,1
+very_hard,rz,numeric_very_close_pi_fraction,3/4,59
+very_hard,rz,numeric_very_close_pi_fraction,5/11,1
+very_hard,rz,numeric_very_close_pi_fraction,5/14,1
+very_hard,rz,numeric_very_close_pi_fraction,5/16,1
+very_hard,rz,numeric_very_close_pi_fraction,5/8,2
+very_hard,rz,numeric_very_close_pi_fraction,9/16,1
+very_hard,rz,symbolic_pi_expr,-1,2
+very_hard,rz,symbolic_pi_expr,-1/2,312
+very_hard,rz,symbolic_pi_expr,-1/4,236
+very_hard,rz,symbolic_pi_expr,-3/4,222
+very_hard,rz,symbolic_pi_expr,1,15
+very_hard,rz,symbolic_pi_expr,1/2,234
+very_hard,rz,symbolic_pi_expr,1/4,207
+very_hard,rz,symbolic_pi_expr,3/4,211

@@ -1,0 +1,49 @@
+challenges/easy/challenge-8_11.qasm
+challenges/easy/challenge-16_12.qasm
+challenges/easy/challenge-24_13.qasm
+challenges/easy/challenge-32_14.qasm
+challenges/easy/challenge-36_15.qasm
+challenges/easy/challenge-40_16.qasm
+challenges/easy/challenge-40_17.qasm
+challenges/easy/challenge-40_18.qasm
+challenges/easy/challenge-48_19.qasm
+challenges/easy/challenge-48_20.qasm
+challenges/easy/challenge-48_21.qasm
+challenges/easy/challenge-56_22.qasm
+challenges/easy/challenge-56_23.qasm
+challenges/easy/challenge-56_24.qasm
+challenges/easy/challenge-64_25.qasm
+challenges/easy/challenge-64_26.qasm
+challenges/hard/challenge-40_35.qasm
+challenges/hard/challenge-48_36.qasm
+challenges/hard/challenge-48_37.qasm
+challenges/hard/challenge-56_38.qasm
+challenges/hard/challenge-56_39.qasm
+challenges/hard/challenge-64_40.qasm
+challenges/hard/challenge-64_41.qasm
+challenges/moderate/challenge-8_27.qasm
+challenges/moderate/challenge-16_28.qasm
+challenges/moderate/challenge-24_29.qasm
+challenges/moderate/challenge-32_30.qasm
+challenges/moderate/challenge-48_31.qasm
+challenges/moderate/challenge-48_32.qasm
+challenges/moderate/challenge-56_33.qasm
+challenges/moderate/challenge-64_34.qasm
+challenges/very easy/challenge-8_1.qasm
+challenges/very easy/challenge-16_2.qasm
+challenges/very easy/challenge-24_3.qasm
+challenges/very easy/challenge-28_4.qasm
+challenges/very easy/challenge-32_5.qasm
+challenges/very easy/challenge-36_6.qasm
+challenges/very easy/challenge-40_7.qasm
+challenges/very easy/challenge-48_8.qasm
+challenges/very easy/challenge-56_9.qasm
+challenges/very easy/challenge-64_10.qasm
+challenges/very_hard/challenge-48_42.qasm
+challenges/very_hard/challenge-56_43.qasm
+challenges/very_hard/challenge-64_44.qasm
+challenges/very_hard/challenge-72_45.qasm
+challenges/very_hard/challenge-80_46.qasm
+challenges/very_hard/challenge-88_47.qasm
+challenges/very_hard/challenge-96_48.qasm
+challenges/very_hard/challenge-104_49.qasm
