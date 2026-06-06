@@ -126,3 +126,12 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Added `jobs/run_mpo_graph_tns_veryhard_fast_i_cpu_array.slurm`, targeting only the five open labels (`64_44`, `72_45`, `80_46`, `88_47`, `96_48`) as array indices `2-6`.
 - Submitted the new focused CPU variant as Slurm job `34629015`; tasks `_2` through `_6` started immediately.
 - Latest monitor snapshot after submission: solved count remains 44/49; running CPU 732/2000, running GPU 1/5, pending CPU 166, pending GPU 0; no cap breach.
+
+## Update: 2026-06-06 20:03 BST
+
+- Refreshed the candidate rollup; solved count remains 44/49. Open labels are still `64_44`, `72_45`, `80_46`, `88_47`, and `96_48`.
+- Focused variant `34629015_2` through `_6` is still running on all five open labels. Current JSON status for each is `started`.
+- Parameter probe `34626264_4`, `_5`, and `_6` is still running on `80_46`, `88_47`, and `96_48`; `64_44` and `72_45` already ended as `no_candidate` from non-finite sampling probabilities.
+- GPU retry `34624722_48` for `96_48` is still running.
+- Cancelled redundant solved-label tasks for `104_49` (`34619647_41`, `34616566_41`, `34618694_41`), then cancelled solved `48_42` task `34619647_42` and pending solved `56_43` task `34619647_43` from the `%1` extra-CPU array.
+- Latest monitor snapshot after cleanup: running CPU 924/2000, running GPU 1/5, pending CPU 166, pending GPU 0; no cap breach.
