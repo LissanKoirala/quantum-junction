@@ -1,0 +1,2 @@
+{"cuda_visible_devices": "0", "device_name": "NVIDIA A100 80GB PCIe", "rss_mb": 470.25, "seconds": 0.02050646278075874, "selected": "cuda", "stage": "backend", "torch_cuda_available": true}
+{"rss_mb": 483.1875, "seconds": 0.3661381811834872, "stage": "parse_qasm"}

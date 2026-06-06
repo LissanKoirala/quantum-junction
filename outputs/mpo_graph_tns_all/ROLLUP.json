@@ -1,0 +1,21 @@
+{
+  "accepted_graph_ordering_events": 0,
+  "expected_challenges": 49,
+  "generated_at": "2026-06-06T19:21:54+0100",
+  "graph_ordering_events": 0,
+  "json_outputs": 49,
+  "missing_outputs": 0,
+  "status_counts": {
+    "error": 1,
+    "ok": 42,
+    "preempted": 2,
+    "started": 4
+  },
+  "summary_md": "outputs/mpo_graph_tns_all/SUMMARY.md",
+  "validation_counts": {
+    "": 7,
+    "correct": 7,
+    "incorrect": 3,
+    "unknown": 32
+  }
+}

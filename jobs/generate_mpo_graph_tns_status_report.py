@@ -40,6 +40,7 @@ SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_veryhard_fast_cpu_g",
     "mpo_graph_tns_veryhard_fast_cpu_h",
+    "mpo_graph_tns_veryhard_fast_cpu_i",
     "mpo_graph_tns_combined",
 ]
 SOURCE_LABELS = {
@@ -69,6 +70,7 @@ SOURCE_LABELS = {
     "mpo_graph_tns_veryhard_fast_cpu_f": "vhard_fast_f",
     "mpo_graph_tns_veryhard_fast_cpu_g": "vhard_fast_g",
     "mpo_graph_tns_veryhard_fast_cpu_h": "vhard_fast_h",
+    "mpo_graph_tns_veryhard_fast_cpu_i": "vhard_fast_i",
     "mpo_graph_tns_combined": "combined",
 }
 EXTERNAL_SYNC_SOURCE_NAMES = [
@@ -81,6 +83,7 @@ EXTERNAL_SYNC_SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_veryhard_fast_cpu_g",
     "mpo_graph_tns_veryhard_fast_cpu_h",
+    "mpo_graph_tns_veryhard_fast_cpu_i",
     "mpo_graph_tns_param_probe",
     "mpo_graph_tns_gpu_retry",
     "mpo_graph_tns_marginal_fallback_cpu",
@@ -118,6 +121,7 @@ CPU_JOB_IDS = [
     "34626293",
     "34626172",
     "34626264",
+    "34629015",
 ]
 GPU_JOB_IDS = ["34616526", "34622515", "34624722"]
 
@@ -482,14 +486,10 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         f"- Chosen-record status counts: {chosen_status}",
         f"- Chosen-record validation counts: {chosen_validation}",
         f"- Chosen-record source counts: {chosen_sources}",
-        "- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; "
-        "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
-        "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
-        "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; "
-        "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; "
-        "`sample_top_post` records known-answer hits found below rank 1 in sampled distributions.",
-        "- Imported external all-GPU, param-probe, fast very-hard, GPU retry, and marginal fallback outputs from `../hard-problems`: `34616526`, `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`, `34624347`, `34624722`, `34624738`, `34626172`, `34626264`.",
-        "- Current replacement dependency-gated jobs: `34626293` fallback array, `34626294` combined rollup.",
+        "- Local klalee-graph MPO job roots cancelled at user request after collecting latest outputs: `34616566`, `34616567`, `34618007`, `34618030`, `34618781`, `34618782`, `34619018`, `34619092`, `34619216`, `34619647`, `34619942`, `34626293`, `34626294`.",
+        "- Earlier retry source directories represented in this report include `extra_cpu_d`, `extra_cpu_e`, `extra_cpu_f`, `extra_cpu_g`, `mod_retry_h` through `mod_retry_k`, and `sample_top_post`.",
+        "- Imported external all-GPU, param-probe, fast very-hard, GPU retry, and marginal fallback outputs from `../hard-problems`: `34616526`, `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`, `34624347`, `34624722`, `34624738`, `34626172`, `34626264`, `34629015`.",
+        "- Current replacement dependency-gated klalee jobs: none; fallback and rollup were cancelled.",
         "",
         "## Source Output Counts",
         "",

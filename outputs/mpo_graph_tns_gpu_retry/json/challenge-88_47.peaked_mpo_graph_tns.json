@@ -1,6 +1,18 @@
 {
+  "backend": {
+    "cuda_visible_devices": "0",
+    "device_name": "NVIDIA A100 80GB PCIe",
+    "selected": "cuda",
+    "torch_cuda_available": true
+  },
   "challenge_id": 47,
   "challenge_label": "88_47",
+  "circuit_len": 37660,
+  "circuit_ops": {
+    "cx": 7654,
+    "rx": 14603,
+    "rz": 15403
+  },
   "difficulty": "very_hard",
   "env": {
     "CUDA_VISIBLE_DEVICES": "0",
@@ -13,8 +25,13 @@
     "SLURM_JOB_ID": "34626268",
     "SLURM_JOB_PARTITION": "interruptible_gpu"
   },
+  "error": "received signal 15",
+  "error_type": "SignalTerminated",
+  "max_rss_mb": 7611.44921875,
   "method": "peaked_mpo_graph_tns",
   "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "num_clbits": 0,
+  "num_qubits": 88,
   "output_json": "outputs/mpo_graph_tns_gpu_retry/json/challenge-88_47.peaked_mpo_graph_tns.json",
   "output_stats_jsonl": "outputs/mpo_graph_tns_gpu_retry/stats/challenge-88_47.peaked_mpo_graph_tns.stats.jsonl",
   "parameters": {
@@ -40,9 +57,18 @@
     "unswap_threshold": 1000000.0
   },
   "qasm": "challenges/very_hard/challenge-88_47.qasm",
+  "removed_final_measurements": false,
   "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems",
   "started_at": "2026-06-06T16:24:30+0100",
-  "status": "started",
+  "status": "terminated",
+  "terminated_signal": 15,
+  "total_seconds": 9579.128405389143,
+  "unitary_circuit_len": 37660,
+  "unitary_circuit_ops": {
+    "cx": 7654,
+    "rx": 14603,
+    "rz": 15403
+  },
   "versions": {
     "networkx": "3.4.2",
     "numpy": "2.2.6",

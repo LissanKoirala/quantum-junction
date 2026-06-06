@@ -1,0 +1,81 @@
+{
+  "backend": {
+    "cuda_visible_devices": "",
+    "selected": "numpy",
+    "torch_cuda_available": false
+  },
+  "challenge_id": 48,
+  "challenge_label": "96_48",
+  "circuit_len": 28703,
+  "circuit_ops": {
+    "cx": 5866,
+    "rx": 10801,
+    "rz": 12036
+  },
+  "difficulty": "very_hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": "32",
+    "OMP_NUM_THREADS": "32",
+    "OPENBLAS_NUM_THREADS": "32",
+    "SLURM_ARRAY_JOB_ID": "34629015",
+    "SLURM_ARRAY_TASK_ID": "6",
+    "SLURM_CPUS_PER_TASK": "32",
+    "SLURM_JOB_ID": "34629015",
+    "SLURM_JOB_PARTITION": "interruptible_cpu"
+  },
+  "error": "CPUDispatcher(<function svd_truncated_numba at 0x7ef6a4e1b2e0>) returned a result with an exception set",
+  "error_type": "SystemError",
+  "max_rss_mb": 6924.3359375,
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "num_clbits": 0,
+  "num_qubits": 96,
+  "output_json": "outputs/mpo_graph_tns_veryhard_fast_cpu_i/json/challenge-96_48.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_veryhard_fast_cpu_i/stats/challenge-96_48.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.25,
+    "cutoff": 0.01,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 14,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 1280,
+    "max_its": 14,
+    "mps_max_bond": 640,
+    "sabre_trials": 192,
+    "samples": 1024,
+    "seed": 20260673,
+    "unswap_threshold": 260000.0
+  },
+  "qasm": "challenges/very_hard/challenge-96_48.qasm",
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems",
+  "started_at": "2026-06-06T19:25:03+0100",
+  "status": "error",
+  "terminated_signal": 15,
+  "total_seconds": 7579.453051694902,
+  "traceback": "Traceback (most recent call last):\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/numba/core/serialize.py\", line 30, in _numba_unpickle\n    def _numba_unpickle(address, bytedata, hashed):\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems/jobs/peaked_mpo_graph_tns_runner.py\", line 76, in handle_termination\n    raise SystemExit(128 + signum)\nSystemExit: 143\n\nThe above exception was the direct cause of the following exception:\n\nSystemError: _PyEval_EvalFrameDefault returned a result with an exception set\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems/jobs/peaked_mpo_graph_tns_runner.py\", line 392, in run\n    b0 = time.perf_counter()\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems/peaked-circuit-simulation/unswap_graph.py\", line 235, in mpo_compress_unswap_graph\n    mpo_right = apply_circuit(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems/peaked-circuit-simulation/circuit_mpo.py\", line 77, in apply_circuit\n    return apply_mpo(mpo, mpo_from_circuit(circ), side=side, max_bond=max_bond, cutoff=cutoff, contract=contract, compress=compress, **compress_opts)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems/peaked-circuit-simulation/circuit_mpo.py\", line 57, in apply_mpo\n    return mpo2.apply(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_1d.py\", line 4358, in apply\n    return self._apply_mpo(other, compress=compress, **compress_opts)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_1d.py\", line 4300, in _apply_mpo\n    return tensor_network_apply_op_op(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_arbgeom.py\", line 314, in tensor_network_apply_op_op\n    B.compress(**compress_opts)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_1d.py\", line 1345, in compress\n    self.right_compress(**compress_opts)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_1d.py\", line 1298, in right_compress\n    self.right_compress_site(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_1d.py\", line 1223, in right_compress_site\n    tensor_compress_bond(tl, tr, create_bond=create_bond, **compress_opts)\n  File \"/usr/lib/python3.10/functools.py\", line 889, in wrapper\n    return dispatch(args[0].__class__)(*args, **kw)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 917, in tensor_compress_bond\n    M, *s, T2C = T2.split(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 2562, in split\n    return tensor_split(self, *args, **kwargs)\n  File \"/usr/lib/python3.10/functools.py\", line 889, in wrapper\n    return dispatch(args[0].__class__)(*args, **kw)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 633, in tensor_split\n    left, s, right = _SPLIT_FNS[method](array, **opts)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/autoray/autoray.py\", line 1108, in __call__\n    return fn(*args, **kwargs)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/decomp.py\", line 359, in svd_truncated_numpy\n    return svd_truncated_numba(\nSystemError: CPUDispatcher(<function svd_truncated_numba at 0x7ef6a4e1b2e0>) returned a result with an exception set\n",
+  "unitary_circuit_len": 28703,
+  "unitary_circuit_ops": {
+    "cx": 5866,
+    "rx": 10801,
+    "rz": 12036
+  },
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}
