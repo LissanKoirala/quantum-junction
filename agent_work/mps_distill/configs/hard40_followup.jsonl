@@ -1,0 +1,2 @@
+{"bond_dim": 64, "circuit": "challenges/hard/challenge-40_35.qasm", "label": "hard40_followup", "seed": 303, "shots": 8192, "task_id": 1, "truncation_threshold": 1e-12}
+{"bond_dim": 64, "circuit": "challenges/hard/challenge-40_35.qasm", "label": "hard40_followup", "seed": 404, "shots": 8192, "task_id": 2, "truncation_threshold": 1e-12}

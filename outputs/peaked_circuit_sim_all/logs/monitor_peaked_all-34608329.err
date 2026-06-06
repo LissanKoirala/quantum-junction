@@ -1,2 +1,0 @@
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-[2026-06-05T23:54:37.275] error: *** JOB 34608329 ON erc-hpc-comp206 CANCELLED AT 2026-06-05T23:54:37 DUE to SIGNAL Terminated ***

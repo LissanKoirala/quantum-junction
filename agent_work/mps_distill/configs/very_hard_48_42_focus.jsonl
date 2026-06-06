@@ -1,0 +1,4 @@
+{"task_id": 1, "label": "very_hard_48_42_focus", "circuit": "challenges/very_hard/challenge-48_42.qasm", "shots": 2048, "bond_dim": 32, "seed": 301, "truncation_threshold": 1e-12}
+{"task_id": 2, "label": "very_hard_48_42_focus", "circuit": "challenges/very_hard/challenge-48_42.qasm", "shots": 2048, "bond_dim": 32, "seed": 302, "truncation_threshold": 1e-12}
+{"task_id": 3, "label": "very_hard_48_42_focus", "circuit": "challenges/very_hard/challenge-48_42.qasm", "shots": 4096, "bond_dim": 64, "seed": 401, "truncation_threshold": 1e-12}
+{"task_id": 4, "label": "very_hard_48_42_focus", "circuit": "challenges/very_hard/challenge-48_42.qasm", "shots": 4096, "bond_dim": 64, "seed": 402, "truncation_threshold": 1e-12}

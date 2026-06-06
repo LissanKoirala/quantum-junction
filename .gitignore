@@ -8,3 +8,11 @@ slurm/
 agent_work/**/logs/
 agent_work/**/*.out
 agent_work/**/*.err
+*.pkl
+outputs/
+*.jsonl
+*.log
+agent_work/checkpoint_unswap_48_42/
+outputs/
+*.jsonl
+*.log
