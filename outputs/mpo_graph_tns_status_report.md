@@ -1,8 +1,8 @@
 # MPO Graph TNS Current Report
 
-Generated: 2026-06-06T12:52:20+01:00
+Generated: 2026-06-06T13:00:14+01:00
 
-This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`.
+This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. Each challenge detail includes an SVG image of the selected bitstring distribution; challenges without sampled results include a placeholder image.
 
 ## Summary
 
@@ -34,57 +34,57 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 
 ## Challenge Overview
 
-| idx | challenge | difficulty | chosen source | status | validation | candidate qiskit order | top fraction | seconds | json |
-|---:|---|---|---|---|---|---|---:|---:|---|
-| 0 | `16_12` | easy | all_gpu | ok | correct | `1111000101101011` | 0.269 | 244.7 | `outputs/mpo_graph_tns_all/json/challenge-16_12.peaked_mpo_graph_tns.json` |
-| 1 | `24_13` | easy | all_gpu | ok | correct | `111110011111001011010001` | 0.667 | 200.3 | `outputs/mpo_graph_tns_all/json/challenge-24_13.peaked_mpo_graph_tns.json` |
-| 2 | `32_14` | easy | all_gpu | ok | unknown | `00000101001101000001011111101100` | 0.317 | 304.1 | `outputs/mpo_graph_tns_all/json/challenge-32_14.peaked_mpo_graph_tns.json` |
-| 3 | `36_15` | easy | all_gpu | ok | unknown | `110110011011111111011001011110101111` | 0.038 | 414.9 | `outputs/mpo_graph_tns_all/json/challenge-36_15.peaked_mpo_graph_tns.json` |
-| 4 | `40_16` | easy | all_gpu | ok | unknown | `0101110101001110011000111011100110010110` | 0.348 | 564.1 | `outputs/mpo_graph_tns_all/json/challenge-40_16.peaked_mpo_graph_tns.json` |
-| 5 | `40_17` | easy | all_gpu | ok | unknown | `0010010101010111001001000010001000001001` | 0.452 | 316.8 | `outputs/mpo_graph_tns_all/json/challenge-40_17.peaked_mpo_graph_tns.json` |
-| 6 | `40_18` | easy | all_gpu | ok | unknown | `0100000110010010001101111000111111001110` | 0.149 | 503.2 | `outputs/mpo_graph_tns_all/json/challenge-40_18.peaked_mpo_graph_tns.json` |
-| 7 | `48_19` | easy | all_gpu | ok | unknown | `011001010111101100111110000001011101001110010000` | 0.738 | 270.4 | `outputs/mpo_graph_tns_all/json/challenge-48_19.peaked_mpo_graph_tns.json` |
-| 8 | `48_20` | easy | all_gpu | ok | unknown | `101010100101001010000110101000001011110010000000` | 0.582 | 295.1 | `outputs/mpo_graph_tns_all/json/challenge-48_20.peaked_mpo_graph_tns.json` |
-| 9 | `48_21` | easy | all_gpu | ok | unknown | `111010101110101011110101000001101000100000001001` | 0.364 | 360.4 | `outputs/mpo_graph_tns_all/json/challenge-48_21.peaked_mpo_graph_tns.json` |
-| 10 | `56_22` | easy | all_gpu | ok | unknown | `11100100100110010011110010110110011000000100010111111011` | 0.781 | 252.4 | `outputs/mpo_graph_tns_all/json/challenge-56_22.peaked_mpo_graph_tns.json` |
-| 11 | `56_23` | easy | all_gpu | ok | unknown | `01001101001111111100000101001110111011100011111100001101` | 0.261 | 598.7 | `outputs/mpo_graph_tns_all/json/challenge-56_23.peaked_mpo_graph_tns.json` |
-| 12 | `56_24` | easy | all_gpu | ok | unknown | `10011001001111101111111011101011101101010011001011110001` | 0.293 | 514.2 | `outputs/mpo_graph_tns_all/json/challenge-56_24.peaked_mpo_graph_tns.json` |
-| 13 | `64_25` | easy | all_gpu | ok | unknown | `0011101111110000110110111101011000010000010100110111000001111011` | 0.501 | 655.9 | `outputs/mpo_graph_tns_all/json/challenge-64_25.peaked_mpo_graph_tns.json` |
-| 14 | `64_26` | easy | all_gpu | ok | unknown | `0110101010100011010111011000011100010110110110011100011001100110` | 0.228 | 638.3 | `outputs/mpo_graph_tns_all/json/challenge-64_26.peaked_mpo_graph_tns.json` |
-| 15 | `8_11` | easy | all_gpu | ok | correct | `01001110` | 0.564 | 8.032 | `outputs/mpo_graph_tns_all/json/challenge-8_11.peaked_mpo_graph_tns.json` |
-| 16 | `40_35` | hard | all_gpu | ok | unknown | `1101100110111110111000111101010111000001` | 0.001 | 1306.2 | `outputs/mpo_graph_tns_all/json/challenge-40_35.peaked_mpo_graph_tns.json` |
-| 17 | `48_36` | hard | all_gpu | ok | unknown | `000111011011000100010011001000101001101010111000` | 0.002 | 890.0 | `outputs/mpo_graph_tns_all/json/challenge-48_36.peaked_mpo_graph_tns.json` |
-| 18 | `48_37` | hard | all_gpu | ok | unknown | `001000111110111100010110100100011000011100001000` | 0.001 | 1769.8 | `outputs/mpo_graph_tns_all/json/challenge-48_37.peaked_mpo_graph_tns.json` |
-| 19 | `56_38` | hard | all_gpu | ok | unknown | `01010110010110000010000111010111010011110100100110011101` | 0.001 | 2815.0 | `outputs/mpo_graph_tns_all/json/challenge-56_38.peaked_mpo_graph_tns.json` |
-| 20 | `56_39` | hard | all_gpu | ok | unknown | `10010111001101010101111111010110110100010000111001010000` | 0.004 | 687.3 | `outputs/mpo_graph_tns_all/json/challenge-56_39.peaked_mpo_graph_tns.json` |
-| 21 | `64_40` | hard | all_gpu | ok | unknown | `1010010110110110010100101100010010000000101110110101100101001010` | 0.001 | 1794.7 | `outputs/mpo_graph_tns_all/json/challenge-64_40.peaked_mpo_graph_tns.json` |
-| 22 | `64_41` | hard | all_gpu | ok | unknown | `1111000100010010110100010011110011000000000011011001110011010011` | 0.001 | 1415.4 | `outputs/mpo_graph_tns_all/json/challenge-64_41.peaked_mpo_graph_tns.json` |
-| 23 | `16_28` | moderate | all_gpu | ok | incorrect | `1111001011011100` | 0.015 | 541.8 | `outputs/mpo_graph_tns_all/json/challenge-16_28.peaked_mpo_graph_tns.json` |
-| 24 | `24_29` | moderate | all_gpu | ok | incorrect | `011100010111101001101011` | 0.003 | 608.0 | `outputs/mpo_graph_tns_all/json/challenge-24_29.peaked_mpo_graph_tns.json` |
-| 25 | `32_30` | moderate | all_gpu | ok | unknown | `10111000010011110111101110010110` | 0.003 | 900.0 | `outputs/mpo_graph_tns_all/json/challenge-32_30.peaked_mpo_graph_tns.json` |
-| 26 | `48_31` | moderate | all_gpu | ok | unknown | `101100111000101011111111101010111011011000110110` | 0.386 | 524.8 | `outputs/mpo_graph_tns_all/json/challenge-48_31.peaked_mpo_graph_tns.json` |
-| 27 | `48_32` | moderate | all_gpu | ok | unknown | `011101010111011110001110010101010101101110001110` | 0.087 | 663.5 | `outputs/mpo_graph_tns_all/json/challenge-48_32.peaked_mpo_graph_tns.json` |
-| 28 | `56_33` | moderate | all_gpu | ok | unknown | `11001001100100001111010100100010010101111111011101010000` | 0.098 | 788.6 | `outputs/mpo_graph_tns_all/json/challenge-56_33.peaked_mpo_graph_tns.json` |
-| 29 | `64_34` | moderate | all_gpu | ok | unknown | `0011010100010011001110101110100101101011001011011001111011100110` | 0.286 | 786.7 | `outputs/mpo_graph_tns_all/json/challenge-64_34.peaked_mpo_graph_tns.json` |
-| 30 | `8_27` | moderate | all_gpu | ok | correct | `11001001` | 0.507 | 14.65 | `outputs/mpo_graph_tns_all/json/challenge-8_27.peaked_mpo_graph_tns.json` |
-| 31 | `16_2` | very_easy | all_gpu | ok | correct | `1010101011001000` | 0.544 | 17.46 | `outputs/mpo_graph_tns_all/json/challenge-16_2.peaked_mpo_graph_tns.json` |
-| 32 | `24_3` | very_easy | all_gpu | ok | correct | `011110010000101010001000` | 0.814 | 59.55 | `outputs/mpo_graph_tns_all/json/challenge-24_3.peaked_mpo_graph_tns.json` |
-| 33 | `28_4` | very_easy | all_cpu | ok | correct | `1111111000101010110110011111` | 0.047 | 5384.3 | `outputs/mpo_graph_tns_all_cpu/json/challenge-28_4.peaked_mpo_graph_tns.json` |
-| 34 | `32_5` | very_easy | all_gpu | ok | unknown | `00111000101010100001000000010000` | 0.177 | 555.4 | `outputs/mpo_graph_tns_all/json/challenge-32_5.peaked_mpo_graph_tns.json` |
-| 35 | `36_6` | very_easy | all_gpu | ok | unknown | `100110100111101001001101110011001000` | 0.781 | 131.5 | `outputs/mpo_graph_tns_all/json/challenge-36_6.peaked_mpo_graph_tns.json` |
-| 36 | `40_7` | very_easy | all_gpu | ok | unknown | `0110111011010001010011111110010011000111` | 0.886 | 28.68 | `outputs/mpo_graph_tns_all/json/challenge-40_7.peaked_mpo_graph_tns.json` |
-| 37 | `48_8` | very_easy | all_cpu | ok | unknown | `000100100110111001001111111100101011001110010100` | 0.717 | 28.65 | `outputs/mpo_graph_tns_all_cpu/json/challenge-48_8.peaked_mpo_graph_tns.json` |
-| 38 | `56_9` | very_easy | all_cpu | ok | unknown | `10010110101100101110100110010110011101100110001101010100` | 0.752 | 15.89 | `outputs/mpo_graph_tns_all_cpu/json/challenge-56_9.peaked_mpo_graph_tns.json` |
-| 39 | `64_10` | very_easy | all_cpu | ok | unknown | `0011010010110001110010111001100100101100010111110110010100101011` | 0.774 | 40.03 | `outputs/mpo_graph_tns_all_cpu/json/challenge-64_10.peaked_mpo_graph_tns.json` |
-| 40 | `8_1` | very_easy | all_cpu | ok | correct | `10101101` | 0.927 | 5.591 | `outputs/mpo_graph_tns_all_cpu/json/challenge-8_1.peaked_mpo_graph_tns.json` |
-| 41 | `104_49` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json` |
-| 42 | `48_42` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-48_42.peaked_mpo_graph_tns.json` |
-| 43 | `56_43` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-56_43.peaked_mpo_graph_tns.json` |
-| 44 | `64_44` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-64_44.peaked_mpo_graph_tns.json` |
-| 45 | `72_45` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-72_45.peaked_mpo_graph_tns.json` |
-| 46 | `80_46` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-80_46.peaked_mpo_graph_tns.json` |
-| 47 | `88_47` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-88_47.peaked_mpo_graph_tns.json` |
-| 48 | `96_48` | very_hard | all_cpu | started |  |  |  |  | `outputs/mpo_graph_tns_all_cpu/json/challenge-96_48.peaked_mpo_graph_tns.json` |
+| idx | challenge | difficulty | chosen source | status | validation | candidate qiskit order | top fraction | seconds | distribution image | json |
+|---:|---|---|---|---|---|---|---:|---:|---|---|
+| 0 | `16_12` | easy | all_gpu | ok | correct | `1111000101101011` | 0.269 | 244.7 | [image](mpo_graph_tns_distribution_images/challenge-16_12.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-16_12.peaked_mpo_graph_tns.json` |
+| 1 | `24_13` | easy | all_gpu | ok | correct | `111110011111001011010001` | 0.667 | 200.3 | [image](mpo_graph_tns_distribution_images/challenge-24_13.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-24_13.peaked_mpo_graph_tns.json` |
+| 2 | `32_14` | easy | all_gpu | ok | unknown | `00000101001101000001011111101100` | 0.317 | 304.1 | [image](mpo_graph_tns_distribution_images/challenge-32_14.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-32_14.peaked_mpo_graph_tns.json` |
+| 3 | `36_15` | easy | all_gpu | ok | unknown | `110110011011111111011001011110101111` | 0.038 | 414.9 | [image](mpo_graph_tns_distribution_images/challenge-36_15.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-36_15.peaked_mpo_graph_tns.json` |
+| 4 | `40_16` | easy | all_gpu | ok | unknown | `0101110101001110011000111011100110010110` | 0.348 | 564.1 | [image](mpo_graph_tns_distribution_images/challenge-40_16.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-40_16.peaked_mpo_graph_tns.json` |
+| 5 | `40_17` | easy | all_gpu | ok | unknown | `0010010101010111001001000010001000001001` | 0.452 | 316.8 | [image](mpo_graph_tns_distribution_images/challenge-40_17.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-40_17.peaked_mpo_graph_tns.json` |
+| 6 | `40_18` | easy | all_gpu | ok | unknown | `0100000110010010001101111000111111001110` | 0.149 | 503.2 | [image](mpo_graph_tns_distribution_images/challenge-40_18.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-40_18.peaked_mpo_graph_tns.json` |
+| 7 | `48_19` | easy | all_gpu | ok | unknown | `011001010111101100111110000001011101001110010000` | 0.738 | 270.4 | [image](mpo_graph_tns_distribution_images/challenge-48_19.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_19.peaked_mpo_graph_tns.json` |
+| 8 | `48_20` | easy | all_gpu | ok | unknown | `101010100101001010000110101000001011110010000000` | 0.582 | 295.1 | [image](mpo_graph_tns_distribution_images/challenge-48_20.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_20.peaked_mpo_graph_tns.json` |
+| 9 | `48_21` | easy | all_gpu | ok | unknown | `111010101110101011110101000001101000100000001001` | 0.364 | 360.4 | [image](mpo_graph_tns_distribution_images/challenge-48_21.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_21.peaked_mpo_graph_tns.json` |
+| 10 | `56_22` | easy | all_gpu | ok | unknown | `11100100100110010011110010110110011000000100010111111011` | 0.781 | 252.4 | [image](mpo_graph_tns_distribution_images/challenge-56_22.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-56_22.peaked_mpo_graph_tns.json` |
+| 11 | `56_23` | easy | all_gpu | ok | unknown | `01001101001111111100000101001110111011100011111100001101` | 0.261 | 598.7 | [image](mpo_graph_tns_distribution_images/challenge-56_23.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-56_23.peaked_mpo_graph_tns.json` |
+| 12 | `56_24` | easy | all_gpu | ok | unknown | `10011001001111101111111011101011101101010011001011110001` | 0.293 | 514.2 | [image](mpo_graph_tns_distribution_images/challenge-56_24.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-56_24.peaked_mpo_graph_tns.json` |
+| 13 | `64_25` | easy | all_gpu | ok | unknown | `0011101111110000110110111101011000010000010100110111000001111011` | 0.501 | 655.9 | [image](mpo_graph_tns_distribution_images/challenge-64_25.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-64_25.peaked_mpo_graph_tns.json` |
+| 14 | `64_26` | easy | all_gpu | ok | unknown | `0110101010100011010111011000011100010110110110011100011001100110` | 0.228 | 638.3 | [image](mpo_graph_tns_distribution_images/challenge-64_26.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-64_26.peaked_mpo_graph_tns.json` |
+| 15 | `8_11` | easy | all_gpu | ok | correct | `01001110` | 0.564 | 8.032 | [image](mpo_graph_tns_distribution_images/challenge-8_11.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-8_11.peaked_mpo_graph_tns.json` |
+| 16 | `40_35` | hard | all_gpu | ok | unknown | `1101100110111110111000111101010111000001` | 0.001 | 1306.2 | [image](mpo_graph_tns_distribution_images/challenge-40_35.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-40_35.peaked_mpo_graph_tns.json` |
+| 17 | `48_36` | hard | all_gpu | ok | unknown | `000111011011000100010011001000101001101010111000` | 0.002 | 890.0 | [image](mpo_graph_tns_distribution_images/challenge-48_36.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_36.peaked_mpo_graph_tns.json` |
+| 18 | `48_37` | hard | all_gpu | ok | unknown | `001000111110111100010110100100011000011100001000` | 0.001 | 1769.8 | [image](mpo_graph_tns_distribution_images/challenge-48_37.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_37.peaked_mpo_graph_tns.json` |
+| 19 | `56_38` | hard | all_gpu | ok | unknown | `01010110010110000010000111010111010011110100100110011101` | 0.001 | 2815.0 | [image](mpo_graph_tns_distribution_images/challenge-56_38.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-56_38.peaked_mpo_graph_tns.json` |
+| 20 | `56_39` | hard | all_gpu | ok | unknown | `10010111001101010101111111010110110100010000111001010000` | 0.004 | 687.3 | [image](mpo_graph_tns_distribution_images/challenge-56_39.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-56_39.peaked_mpo_graph_tns.json` |
+| 21 | `64_40` | hard | all_gpu | ok | unknown | `1010010110110110010100101100010010000000101110110101100101001010` | 0.001 | 1794.7 | [image](mpo_graph_tns_distribution_images/challenge-64_40.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-64_40.peaked_mpo_graph_tns.json` |
+| 22 | `64_41` | hard | all_gpu | ok | unknown | `1111000100010010110100010011110011000000000011011001110011010011` | 0.001 | 1415.4 | [image](mpo_graph_tns_distribution_images/challenge-64_41.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-64_41.peaked_mpo_graph_tns.json` |
+| 23 | `16_28` | moderate | all_gpu | ok | incorrect | `1111001011011100` | 0.015 | 541.8 | [image](mpo_graph_tns_distribution_images/challenge-16_28.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-16_28.peaked_mpo_graph_tns.json` |
+| 24 | `24_29` | moderate | all_gpu | ok | incorrect | `011100010111101001101011` | 0.003 | 608.0 | [image](mpo_graph_tns_distribution_images/challenge-24_29.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-24_29.peaked_mpo_graph_tns.json` |
+| 25 | `32_30` | moderate | all_gpu | ok | unknown | `10111000010011110111101110010110` | 0.003 | 900.0 | [image](mpo_graph_tns_distribution_images/challenge-32_30.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-32_30.peaked_mpo_graph_tns.json` |
+| 26 | `48_31` | moderate | all_gpu | ok | unknown | `101100111000101011111111101010111011011000110110` | 0.386 | 524.8 | [image](mpo_graph_tns_distribution_images/challenge-48_31.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_31.peaked_mpo_graph_tns.json` |
+| 27 | `48_32` | moderate | all_gpu | ok | unknown | `011101010111011110001110010101010101101110001110` | 0.087 | 663.5 | [image](mpo_graph_tns_distribution_images/challenge-48_32.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-48_32.peaked_mpo_graph_tns.json` |
+| 28 | `56_33` | moderate | all_gpu | ok | unknown | `11001001100100001111010100100010010101111111011101010000` | 0.098 | 788.6 | [image](mpo_graph_tns_distribution_images/challenge-56_33.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-56_33.peaked_mpo_graph_tns.json` |
+| 29 | `64_34` | moderate | all_gpu | ok | unknown | `0011010100010011001110101110100101101011001011011001111011100110` | 0.286 | 786.7 | [image](mpo_graph_tns_distribution_images/challenge-64_34.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-64_34.peaked_mpo_graph_tns.json` |
+| 30 | `8_27` | moderate | all_gpu | ok | correct | `11001001` | 0.507 | 14.65 | [image](mpo_graph_tns_distribution_images/challenge-8_27.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-8_27.peaked_mpo_graph_tns.json` |
+| 31 | `16_2` | very_easy | all_gpu | ok | correct | `1010101011001000` | 0.544 | 17.46 | [image](mpo_graph_tns_distribution_images/challenge-16_2.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-16_2.peaked_mpo_graph_tns.json` |
+| 32 | `24_3` | very_easy | all_gpu | ok | correct | `011110010000101010001000` | 0.814 | 59.55 | [image](mpo_graph_tns_distribution_images/challenge-24_3.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-24_3.peaked_mpo_graph_tns.json` |
+| 33 | `28_4` | very_easy | all_cpu | ok | correct | `1111111000101010110110011111` | 0.047 | 5384.3 | [image](mpo_graph_tns_distribution_images/challenge-28_4.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-28_4.peaked_mpo_graph_tns.json` |
+| 34 | `32_5` | very_easy | all_gpu | ok | unknown | `00111000101010100001000000010000` | 0.177 | 555.4 | [image](mpo_graph_tns_distribution_images/challenge-32_5.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-32_5.peaked_mpo_graph_tns.json` |
+| 35 | `36_6` | very_easy | all_gpu | ok | unknown | `100110100111101001001101110011001000` | 0.781 | 131.5 | [image](mpo_graph_tns_distribution_images/challenge-36_6.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-36_6.peaked_mpo_graph_tns.json` |
+| 36 | `40_7` | very_easy | all_gpu | ok | unknown | `0110111011010001010011111110010011000111` | 0.886 | 28.68 | [image](mpo_graph_tns_distribution_images/challenge-40_7.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all/json/challenge-40_7.peaked_mpo_graph_tns.json` |
+| 37 | `48_8` | very_easy | all_cpu | ok | unknown | `000100100110111001001111111100101011001110010100` | 0.717 | 28.65 | [image](mpo_graph_tns_distribution_images/challenge-48_8.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-48_8.peaked_mpo_graph_tns.json` |
+| 38 | `56_9` | very_easy | all_cpu | ok | unknown | `10010110101100101110100110010110011101100110001101010100` | 0.752 | 15.89 | [image](mpo_graph_tns_distribution_images/challenge-56_9.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-56_9.peaked_mpo_graph_tns.json` |
+| 39 | `64_10` | very_easy | all_cpu | ok | unknown | `0011010010110001110010111001100100101100010111110110010100101011` | 0.774 | 40.03 | [image](mpo_graph_tns_distribution_images/challenge-64_10.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-64_10.peaked_mpo_graph_tns.json` |
+| 40 | `8_1` | very_easy | all_cpu | ok | correct | `10101101` | 0.927 | 5.591 | [image](mpo_graph_tns_distribution_images/challenge-8_1.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-8_1.peaked_mpo_graph_tns.json` |
+| 41 | `104_49` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-104_49.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json` |
+| 42 | `48_42` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-48_42.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-48_42.peaked_mpo_graph_tns.json` |
+| 43 | `56_43` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-56_43.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-56_43.peaked_mpo_graph_tns.json` |
+| 44 | `64_44` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-64_44.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-64_44.peaked_mpo_graph_tns.json` |
+| 45 | `72_45` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-72_45.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-72_45.peaked_mpo_graph_tns.json` |
+| 46 | `80_46` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-80_46.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-80_46.peaked_mpo_graph_tns.json` |
+| 47 | `88_47` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-88_47.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-88_47.peaked_mpo_graph_tns.json` |
+| 48 | `96_48` | very_hard | all_cpu | started |  |  |  |  | [image](mpo_graph_tns_distribution_images/challenge-96_48.bitstring_distribution.svg) | `outputs/mpo_graph_tns_all_cpu/json/challenge-96_48.peaked_mpo_graph_tns.json` |
 
 ## Challenge Details
 
@@ -99,6 +99,10 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-16_12.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct
 - Marginal P(0) raw-site prefix: `0.047, 0.170, 0.500, 0.998, 0.000, 0.000, 0.000, 0.000, 0.135, 1.000, 1.000, 0.000, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 16_12](mpo_graph_tns_distribution_images/challenge-16_12.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -127,6 +131,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct
 - Marginal P(0) raw-site prefix: `0.000, 0.936, 0.064, 0.916, 0.001, 0.034, 0.933, 0.033, 0.110, 0.003, 0.931, 0.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 24_13](mpo_graph_tns_distribution_images/challenge-24_13.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -152,6 +160,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-32_14.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.807, 0.980, 0.116, 0.988, 1.000, 0.953, 0.050, 0.000, 1.000, 0.867, 0.000, 0.974, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 32_14](mpo_graph_tns_distribution_images/challenge-32_14.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -179,6 +191,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.059, 0.033, 0.892, 0.120, 0.076, 0.152, 0.148, 0.112, 0.103, 0.893, 0.225, 0.169, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 36_15](mpo_graph_tns_distribution_images/challenge-36_15.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -204,6 +220,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-40_16.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.001, 1.000, 0.000, 0.000, 0.078, 0.014, 1.000, 0.000, 0.028, 0.000, 0.999, 0.996, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 40_16](mpo_graph_tns_distribution_images/challenge-40_16.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -231,6 +251,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.000, 1.000, 1.000, 0.996, 0.052, 0.063, 1.000, 1.000, 1.000, 0.953, 1.000, 0.108, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 40_17](mpo_graph_tns_distribution_images/challenge-40_17.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -256,6 +280,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-40_18.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.098, 0.913, 0.001, 0.933, 0.190, 0.002, 0.001, 1.000, 1.000, 1.000, 0.875, 0.999, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 40_18](mpo_graph_tns_distribution_images/challenge-40_18.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -283,6 +311,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 1.000, 0.000, 0.000, 0.000, 0.032, 0.004, 0.000, 1.000, 0.003, 0.007, 1.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 48_19](mpo_graph_tns_distribution_images/challenge-48_19.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -308,6 +340,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-48_20.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 0.997, 1.000, 1.000, 0.000, 0.008, 0.998, 0.939, 0.882, 0.933, 0.067, 0.002, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 48_20](mpo_graph_tns_distribution_images/challenge-48_20.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -335,6 +371,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.000, 0.970, 0.000, 1.000, 0.000, 0.010, 0.030, 0.998, 0.000, 0.988, 1.000, 1.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 48_21](mpo_graph_tns_distribution_images/challenge-48_21.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -360,6 +400,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-56_22.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 0.999, 0.000, 1.000, 1.000, 0.000, 0.000, 1.000, 1.000, 0.004, 0.000, 0.006, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 56_22](mpo_graph_tns_distribution_images/challenge-56_22.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -387,6 +431,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 0.000, 0.002, 0.008, 1.000, 0.001, 0.000, 0.996, 0.000, 1.000, 0.022, 0.976, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 56_23](mpo_graph_tns_distribution_images/challenge-56_23.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -412,6 +460,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-56_24.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.977, 0.982, 0.031, 0.637, 0.000, 0.000, 0.000, 0.004, 0.990, 0.013, 0.977, 0.012, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 56_24](mpo_graph_tns_distribution_images/challenge-56_24.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -439,6 +491,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.001, 1.000, 0.977, 0.099, 0.071, 1.000, 0.072, 0.070, 0.988, 0.000, 0.000, 1.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 64_25](mpo_graph_tns_distribution_images/challenge-64_25.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -464,6 +520,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-64_26.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 1.000, 0.000, 1.000, 0.000, 0.915, 0.999, 0.024, 0.092, 0.986, 0.999, 0.989, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 64_26](mpo_graph_tns_distribution_images/challenge-64_26.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -492,6 +552,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct
 - Marginal P(0) raw-site prefix: `0.000, 1.000, 0.769, 0.149, 0.720, 0.779, 0.176, 0.029`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 8_11](mpo_graph_tns_distribution_images/challenge-8_11.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -517,6 +581,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-40_35.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.176, 0.287, 0.783, 0.501, 0.049, 0.233, 0.472, 0.496, 0.191, 0.506, 0.774, 0.938, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 40_35](mpo_graph_tns_distribution_images/challenge-40_35.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -544,6 +612,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.267, 0.517, 0.419, 0.996, 0.762, 0.925, 0.128, 0.500, 0.631, 1.000, 0.929, 0.003, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 48_36](mpo_graph_tns_distribution_images/challenge-48_36.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -569,6 +641,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-48_37.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.880, 0.488, 0.118, 0.974, 0.885, 0.813, 0.512, 0.104, 0.682, 0.580, 0.991, 0.115, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 48_37](mpo_graph_tns_distribution_images/challenge-48_37.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -596,6 +672,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:started, all_gpu:ok/unknown, param_probe:started
 - Marginal P(0) raw-site prefix: `0.500, 0.500, 0.500, 0.855, 0.500, 0.704, 0.748, 0.700, 0.619, 0.494, 0.266, 0.500, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 56_38](mpo_graph_tns_distribution_images/challenge-56_38.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -621,6 +701,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-56_39.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.974, 0.007, 0.017, 0.000, 0.656, 0.022, 0.964, 0.810, 0.025, 0.094, 0.995, 0.725, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 56_39](mpo_graph_tns_distribution_images/challenge-56_39.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -648,6 +732,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.804, 0.997, 0.991, 0.498, 0.070, 0.902, 0.527, 0.439, 0.502, 0.635, 0.511, 0.151, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 64_40](mpo_graph_tns_distribution_images/challenge-64_40.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -673,6 +761,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-64_41.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.106, 0.034, 0.629, 0.013, 0.997, 0.992, 0.773, 0.065, 0.096, 0.950, 0.932, 0.431, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 64_41](mpo_graph_tns_distribution_images/challenge-64_41.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -701,6 +793,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:started, extra_cpu_d:started
 - Marginal P(0) raw-site prefix: `0.515, 0.320, 0.518, 0.500, 0.145, 0.147, 0.940, 0.500, 0.269, 0.254, 0.500, 0.990, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 16_28](mpo_graph_tns_distribution_images/challenge-16_28.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -728,6 +824,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:started, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started
 - Marginal P(0) raw-site prefix: `0.756, 0.385, 0.057, 0.779, 0.354, 0.343, 0.723, 0.500, 0.500, 0.500, 0.500, 0.026, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 24_29](mpo_graph_tns_distribution_images/challenge-24_29.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -753,6 +853,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-32_30.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.542, 0.019, 0.074, 0.056, 0.978, 0.430, 0.232, 0.355, 0.071, 0.048, 0.677, 0.963, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 32_30](mpo_graph_tns_distribution_images/challenge-32_30.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -780,6 +884,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.000, 0.977, 0.003, 0.989, 0.000, 1.000, 0.000, 1.000, 0.000, 0.819, 0.916, 0.077, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 48_31](mpo_graph_tns_distribution_images/challenge-48_31.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -805,6 +913,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-48_32.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 0.003, 0.992, 0.002, 0.000, 0.000, 1.000, 0.080, 1.000, 1.000, 0.000, 0.918, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 48_32](mpo_graph_tns_distribution_images/challenge-48_32.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -832,6 +944,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 0.734, 0.266, 0.774, 0.271, 0.986, 0.004, 0.856, 0.011, 1.000, 1.000, 1.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 56_33](mpo_graph_tns_distribution_images/challenge-56_33.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -857,6 +973,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-64_34.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.074, 0.056, 1.000, 0.001, 0.006, 0.001, 0.892, 0.000, 0.005, 0.001, 0.056, 0.999, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 64_34](mpo_graph_tns_distribution_images/challenge-64_34.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -885,6 +1005,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct, param_probe:ok/correct
 - Marginal P(0) raw-site prefix: `0.105, 0.943, 0.083, 0.871, 0.176, 0.854, 0.178, 0.762`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 8_27](mpo_graph_tns_distribution_images/challenge-8_27.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -911,6 +1035,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-16_2.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct
 - Marginal P(0) raw-site prefix: `0.000, 0.045, 0.057, 0.998, 0.878, 0.074, 0.955, 0.021, 1.000, 0.997, 0.843, 0.022, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 16_2](mpo_graph_tns_distribution_images/challenge-16_2.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -939,6 +1067,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct
 - Marginal P(0) raw-site prefix: `0.001, 1.000, 0.998, 1.000, 1.000, 0.000, 0.001, 0.000, 0.000, 1.000, 0.002, 0.972, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 24_3](mpo_graph_tns_distribution_images/challenge-24_3.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -966,6 +1098,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/correct, all_gpu:ok/incorrect, missing_cpu:started
 - Marginal P(0) raw-site prefix: `0.995, 0.960, 0.096, 0.000, 0.728, 0.054, 0.302, 0.058, 0.269, 0.289, 0.010, 0.259, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 28_4](mpo_graph_tns_distribution_images/challenge-28_4.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -991,6 +1127,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-32_5.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.997, 0.004, 0.246, 1.000, 0.997, 0.001, 0.992, 0.012, 0.998, 0.961, 1.000, 0.997, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 32_5](mpo_graph_tns_distribution_images/challenge-32_5.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -1018,6 +1158,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 0.009, 0.000, 1.000, 0.999, 0.912, 0.996, 1.000, 1.000, 0.986, 0.001, 0.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 36_6](mpo_graph_tns_distribution_images/challenge-36_6.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -1043,6 +1187,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-40_7.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.000, 0.998, 1.000, 0.000, 0.998, 0.001, 0.000, 0.000, 0.000, 1.000, 0.062, 0.999, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 40_7](mpo_graph_tns_distribution_images/challenge-40_7.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -1070,6 +1218,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.038, 0.003, 0.000, 1.000, 0.002, 1.000, 0.929, 0.000, 0.980, 1.000, 1.000, 1.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 48_8](mpo_graph_tns_distribution_images/challenge-48_8.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -1096,6 +1248,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `0.061, 0.969, 0.957, 0.997, 1.000, 1.000, 0.000, 0.001, 1.000, 0.000, 1.000, 0.000, ...`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 56_9](mpo_graph_tns_distribution_images/challenge-56_9.bitstring_distribution.svg)
+
 Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -1121,6 +1277,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-64_10.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:ok/unknown, all_gpu:ok/unknown
 - Marginal P(0) raw-site prefix: `1.000, 1.000, 0.000, 0.001, 0.005, 0.992, 0.000, 0.975, 0.994, 1.000, 0.002, 0.000, ...`
+
+Bitstring distribution image:
+
+![Bitstring distribution for 64_10](mpo_graph_tns_distribution_images/challenge-64_10.bitstring_distribution.svg)
 
 Bitstring distribution, top 10 of 1000 samples:
 
@@ -1149,6 +1309,10 @@ Bitstring distribution, top 10 of 1000 samples:
 - Source records: all_cpu:ok/correct, all_gpu:ok/correct
 - Marginal P(0) raw-site prefix: `0.025, 0.000, 0.975, 0.025, 0.000, 0.040, 1.000, 1.000`
 
+Bitstring distribution image:
+
+![Bitstring distribution for 8_1](mpo_graph_tns_distribution_images/challenge-8_1.bitstring_distribution.svg)
+
 Bitstring distribution, top 6 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
@@ -1168,6 +1332,10 @@ Bitstring distribution, top 6 of 1000 samples:
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started
 
+Bitstring distribution image:
+
+![Bitstring distribution for 104_49](mpo_graph_tns_distribution_images/challenge-104_49.bitstring_distribution.svg)
+
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
 ### 42. `48_42` (very_hard)
@@ -1177,6 +1345,10 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-48_42.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started
+
+Bitstring distribution image:
+
+![Bitstring distribution for 48_42](mpo_graph_tns_distribution_images/challenge-48_42.bitstring_distribution.svg)
 
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
@@ -1188,6 +1360,10 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-56_43.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started
 
+Bitstring distribution image:
+
+![Bitstring distribution for 56_43](mpo_graph_tns_distribution_images/challenge-56_43.bitstring_distribution.svg)
+
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
 ### 44. `64_44` (very_hard)
@@ -1197,6 +1373,10 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-64_44.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started
+
+Bitstring distribution image:
+
+![Bitstring distribution for 64_44](mpo_graph_tns_distribution_images/challenge-64_44.bitstring_distribution.svg)
 
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
@@ -1208,6 +1388,10 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-72_45.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started
 
+Bitstring distribution image:
+
+![Bitstring distribution for 72_45](mpo_graph_tns_distribution_images/challenge-72_45.bitstring_distribution.svg)
+
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
 ### 46. `80_46` (very_hard)
@@ -1217,6 +1401,10 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-80_46.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, extra_cpu:started, extra_cpu_b:started
+
+Bitstring distribution image:
+
+![Bitstring distribution for 80_46](mpo_graph_tns_distribution_images/challenge-80_46.bitstring_distribution.svg)
 
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
@@ -1228,6 +1416,10 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-88_47.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, missing_cpu:started, extra_cpu:started
 
+Bitstring distribution image:
+
+![Bitstring distribution for 88_47](mpo_graph_tns_distribution_images/challenge-88_47.bitstring_distribution.svg)
+
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
 
 ### 48. `96_48` (very_hard)
@@ -1237,5 +1429,9 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-96_48.peaked_mpo_graph_tns.json`
 - Source records: all_cpu:started, extra_cpu:started, extra_cpu_b:started
+
+Bitstring distribution image:
+
+![Bitstring distribution for 96_48](mpo_graph_tns_distribution_images/challenge-96_48.bitstring_distribution.svg)
 
 Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
