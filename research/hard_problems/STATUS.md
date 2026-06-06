@@ -101,3 +101,10 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Added `jobs/run_mpo_graph_tns_veryhard_fast_h_cpu_array.slurm`, a focused CPU graph/TNS variant for array indices `2-7` with a distinct seed, center ratio, higher bond limits, and 768 samples.
 - Added `outputs/mpo_graph_tns_veryhard_fast_cpu_h` to the collector and Slurm monitor so any usable candidate from the new run is included in the rollup.
 - Submitted the new focused CPU array as Slurm job `34626172`; it is pending on priority with `%6` throttle.
+
+## Update: 2026-06-06 16:24 BST
+
+- Slurm started all six `34626172` focused-H tasks for the remaining very-hard labels; early JSON status is `started` for all six with no immediate runner failure.
+- Submitted an additional collector-covered parameter probe as Slurm job `34626264`, writing to `outputs/mpo_graph_tns_param_probe`, using seed `20260667`, center ratio `0.75`, bond limits `1024/512`, cutoff `0.015`, and 768 samples.
+- Initial `34626264` state: tasks `2`, `3`, and `7` running; tasks `4`, `5`, and `6` pending on Slurm environment retrieval.
+- Latest monitor snapshot after both submissions: running CPU 1500/2000, running GPU 5/5, pending CPU 279, pending GPU 1; no cap breach.
