@@ -1,6 +1,6 @@
 # MPO Graph TNS Current Report
 
-Generated: 2026-06-06T14:39:48+01:00
+Generated: 2026-06-06T14:42:02+01:00
 
 This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. The overview table embeds a distribution image thumbnail for every challenge, and each challenge detail includes the full SVG. Challenges without sampled results include a placeholder image.
 
@@ -9,14 +9,14 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 - Usable coverage: 42 / 49
 - Missing or only incorrect: 24_29, 104_49, 64_44, 72_45, 80_46, 88_47, 96_48
 - Known incorrect completed outputs present: 16_28, 24_29, 28_4
-- Workload CPU running now: 53 tasks, 1544 cores
+- Workload CPU running now: 56 tasks, 1608 cores
 - GPU array running now: 5 tasks
 - Chosen-record status counts: {'ok': 43, 'started': 6}
 - Chosen-record validation counts: {'correct': 9, 'unknown': 33, 'incorrect': 1, 'None': 6}
 - Chosen-record source counts: {'all_gpu': 35, 'sample_top_post': 1, 'all_cpu': 11, 'vhard_fast_b': 2}
 - Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; `34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; `sample_top_post` records known-answer hits found below rank 1 in sampled distributions.
-- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`.
-- Current replacement dependency-gated jobs: `34623306` fallback array, `34623307` combined rollup.
+- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`.
+- Current replacement dependency-gated jobs: `34623543` fallback array, `34623544` combined rollup.
 
 ## Source Output Counts
 
@@ -36,8 +36,8 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | `extra_cpu_g` | 5 | `{'started': 5}` | `{'None': 5}` |
 | `mod_retry_h` | 2 | `{'cancelled': 1, 'started': 1}` | `{'None': 2}` |
 | `mod_retry_i` | 1 | `{'started': 1}` | `{'None': 1}` |
-| `mod_retry_j` | 0 | `{}` | `{}` |
-| `mod_retry_k` | 0 | `{}` | `{}` |
+| `mod_retry_j` | 1 | `{'started': 1}` | `{'None': 1}` |
+| `mod_retry_k` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `sample_top_post` | 1 | `{'ok': 1}` | `{'correct': 1}` |
 | `vhard_fast` | 8 | `{'started': 3, 'cancelled': 2, 'preempted': 3}` | `{'None': 8}` |
 | `vhard_fast_b` | 8 | `{'started': 4, 'ok': 2, 'error': 2}` | `{'None': 6, 'unknown': 2}` |
@@ -45,6 +45,7 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | `vhard_fast_d` | 6 | `{'started': 6}` | `{'None': 6}` |
 | `vhard_fast_e` | 6 | `{'started': 6}` | `{'None': 6}` |
 | `vhard_fast_f` | 2 | `{'started': 2}` | `{'None': 2}` |
+| `vhard_fast_g` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `combined` | 0 | `{}` | `{}` |
 
 ## Challenge Overview
@@ -835,7 +836,7 @@ Bitstring distribution, top 10 of 1000 samples:
 - Known answer, Qiskit order: `110100010111100001001001`
 - Runtime seconds: 608.0
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-24_29.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started, extra_cpu_f:ok/incorrect, extra_cpu_g:started, mod_retry_h:started, mod_retry_i:started
+- Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started, extra_cpu_f:ok/incorrect, extra_cpu_g:started, mod_retry_h:started, mod_retry_i:started, mod_retry_j:started, mod_retry_k:started
 - Marginal P(0) raw-site prefix: `0.756, 0.385, 0.057, 0.779, 0.354, 0.343, 0.723, 0.500, 0.500, 0.500, 0.500, 0.026, ...`
 
 Bitstring distribution image:
@@ -1446,7 +1447,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-80_46.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:started, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started
+- Source records: all_cpu:started, all_gpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:started, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started, vhard_fast_g:started
 
 Bitstring distribution image:
 

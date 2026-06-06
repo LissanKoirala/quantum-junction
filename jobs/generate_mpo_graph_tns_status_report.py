@@ -37,6 +37,7 @@ SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_d",
     "mpo_graph_tns_veryhard_fast_cpu_e",
     "mpo_graph_tns_veryhard_fast_cpu_f",
+    "mpo_graph_tns_veryhard_fast_cpu_g",
     "mpo_graph_tns_combined",
 ]
 SOURCE_LABELS = {
@@ -63,6 +64,7 @@ SOURCE_LABELS = {
     "mpo_graph_tns_veryhard_fast_cpu_d": "vhard_fast_d",
     "mpo_graph_tns_veryhard_fast_cpu_e": "vhard_fast_e",
     "mpo_graph_tns_veryhard_fast_cpu_f": "vhard_fast_f",
+    "mpo_graph_tns_veryhard_fast_cpu_g": "vhard_fast_g",
     "mpo_graph_tns_combined": "combined",
 }
 EXTERNAL_SYNC_SOURCE_NAMES = [
@@ -72,6 +74,7 @@ EXTERNAL_SYNC_SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_d",
     "mpo_graph_tns_veryhard_fast_cpu_e",
     "mpo_graph_tns_veryhard_fast_cpu_f",
+    "mpo_graph_tns_veryhard_fast_cpu_g",
     "mpo_graph_tns_gpu_retry",
 ]
 CPU_JOB_IDS = [
@@ -101,9 +104,10 @@ CPU_JOB_IDS = [
     "34622347",
     "34622348",
     "34623019",
+    "34623203",
     "34620754",
     "34623041",
-    "34623306",
+    "34623543",
 ]
 GPU_JOB_IDS = ["34616526", "34622515"]
 
@@ -474,8 +478,8 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; "
         "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; "
         "`sample_top_post` records known-answer hits found below rank 1 in sampled distributions.",
-        "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`.",
-        "- Current replacement dependency-gated jobs: `34623306` fallback array, `34623307` combined rollup.",
+        "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`.",
+        "- Current replacement dependency-gated jobs: `34623543` fallback array, `34623544` combined rollup.",
         "",
         "## Source Output Counts",
         "",
