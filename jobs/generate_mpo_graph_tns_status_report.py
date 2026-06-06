@@ -16,6 +16,7 @@ from typing import Any
 SOURCE_NAMES = [
     "mpo_graph_tns_all_cpu",
     "mpo_graph_tns_all",
+    "mpo_graph_tns_gpu_retry",
     "mpo_graph_tns_param_probe",
     "mpo_graph_tns_missing_cpu",
     "mpo_graph_tns_extra_cpu",
@@ -35,6 +36,7 @@ SOURCE_NAMES = [
 SOURCE_LABELS = {
     "mpo_graph_tns_all_cpu": "all_cpu",
     "mpo_graph_tns_all": "all_gpu",
+    "mpo_graph_tns_gpu_retry": "gpu_retry",
     "mpo_graph_tns_param_probe": "param_probe",
     "mpo_graph_tns_missing_cpu": "missing_cpu",
     "mpo_graph_tns_extra_cpu": "extra_cpu",
@@ -57,6 +59,7 @@ EXTERNAL_SYNC_SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_c",
     "mpo_graph_tns_veryhard_fast_cpu_d",
     "mpo_graph_tns_veryhard_fast_cpu_e",
+    "mpo_graph_tns_gpu_retry",
 ]
 CPU_JOB_IDS = [
     "34616566",
@@ -87,7 +90,7 @@ CPU_JOB_IDS = [
     "34620754",
     "34622438",
 ]
-GPU_JOB_ID = "34616526"
+GPU_JOB_IDS = ["34616526", "34622515"]
 
 
 def label_from_json_path(path: Path) -> str:
@@ -420,7 +423,7 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
                 cpu_cores += int(parts[1])
             except Exception:
                 pass
-    gpu_tasks = len(squeue_running(GPU_JOB_ID, "%i"))
+    gpu_tasks = len(squeue_running(GPU_JOB_IDS, "%i"))
 
     image_dir.mkdir(parents=True, exist_ok=True)
     image_paths: dict[str, str] = {}
@@ -454,7 +457,7 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set.",
-        "- Imported external fast very-hard retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`.",
+        "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`.",
         "- Current replacement dependency-gated jobs: `34622438` fallback array, `34622439` combined rollup.",
         "",
         "## Source Output Counts",
