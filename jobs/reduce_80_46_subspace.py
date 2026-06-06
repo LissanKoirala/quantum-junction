@@ -237,6 +237,19 @@ def main() -> int:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text("\n".join(lines) + "\n")
+    counts_path = args.out.with_name("SUBSPACE_COUNTS.csv")
+    with counts_path.open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=["bitstring", "count", "neighborhood_score", "rank"])
+        writer.writeheader()
+        for rank, row in enumerate(ranked[:500], 1):
+            writer.writerow(
+                {
+                    "bitstring": row["candidate"],
+                    "count": row["exact_count"],
+                    "neighborhood_score": row["score"],
+                    "rank": rank,
+                }
+            )
     print(args.out)
     return 0
 
