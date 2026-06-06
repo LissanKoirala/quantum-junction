@@ -1,0 +1,1793 @@
+[
+  {
+    "challenge_id": 12,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "1111000101101011",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.46653673211917734",
+        "validation": "exact"
+      },
+      {
+        "candidate": "1111000101101011",
+        "max_bond": 24,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-16_12.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 10.699602320091799,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.494140625,
+        "validation": "correct"
+      },
+      {
+        "candidate": "1111000101101011",
+        "max_bond": 24,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-16_12.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 5.105488528031856,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.494140625,
+        "validation": "correct"
+      },
+      {
+        "candidate": "1111000101101011",
+        "max_bond": "",
+        "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+        "priority": 40,
+        "seconds": "",
+        "source": "aer_mps_pilot",
+        "top_fraction": "1.000",
+        "validation": "stable_high_config"
+      }
+    ],
+    "label": "16_12",
+    "num_qubits": 16,
+    "qasm": "challenges/easy/challenge-16_12.qasm",
+    "selected": {
+      "candidate": "1111000101101011",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.46653673211917734",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 13,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "111110011111001011010001",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.5912482860105316",
+        "validation": "exact"
+      },
+      {
+        "candidate": "111110011111001011010001",
+        "max_bond": 111,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-24_13.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 20.618080267915502,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.6171875,
+        "validation": "correct"
+      },
+      {
+        "candidate": "111110011111001011010001",
+        "max_bond": 111,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-24_13.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 145.65786419494543,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.6171875,
+        "validation": "correct"
+      }
+    ],
+    "label": "24_13",
+    "num_qubits": 24,
+    "qasm": "challenges/easy/challenge-24_13.qasm",
+    "selected": {
+      "candidate": "111110011111001011010001",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.5912482860105316",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 14,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "00000101001101000001011111101100",
+        "max_bond": 974,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-32_14.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 204.297723014839,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.4716796875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "00000101001101000001011111101100",
+        "max_bond": 974,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-32_14.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 5089.328296295134,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.4716796875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "00000101001101000001011111101100",
+        "max_bond": 160,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-32_14.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 292.81885538599454,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.458984375,
+        "validation": "unknown"
+      }
+    ],
+    "label": "32_14",
+    "num_qubits": 32,
+    "qasm": "challenges/easy/challenge-32_14.qasm",
+    "selected": {
+      "candidate": "00000101001101000001011111101100",
+      "max_bond": 974,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-32_14.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 204.297723014839,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.4716796875,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 15,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "110110011011111111011001011110101111",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-36_15.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 2186.736932408996,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.03125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "110110011011111111011001011110101111",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-36_15.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 2635.8527174430055,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.03125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "110110011011011111011000011111101111",
+        "max_bond": 128,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-36_15.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 3902.182036800019,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.00390625,
+        "validation": "unknown"
+      }
+    ],
+    "label": "36_15",
+    "num_qubits": 36,
+    "qasm": "challenges/easy/challenge-36_15.qasm",
+    "selected": {
+      "candidate": "110110011011111111011001011110101111",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-36_15.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 2186.736932408996,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.03125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 16,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "0101110101001110011000111011100110010110",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-40_16.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 406.0428800773807,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.4423828125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0101110101001110011000111011100110010110",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-40_16.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 670.6548004739889,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.4423828125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0101110101001110011000111011100110010110",
+        "max_bond": 73,
+        "path": "outputs/tree_tensor_sim/fast_cpu/json/challenge-40_16.quimb_tree_graph_mps.json",
+        "priority": 50,
+        "seconds": 412.6593729609158,
+        "source": "quimb_fast_cpu",
+        "top_fraction": 0.50390625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0101110101001110011000111011100110010110",
+        "max_bond": "",
+        "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+        "priority": 40,
+        "seconds": "",
+        "source": "aer_mps_pilot",
+        "top_fraction": "1.000",
+        "validation": "stable_high_config"
+      }
+    ],
+    "label": "40_16",
+    "num_qubits": 40,
+    "qasm": "challenges/easy/challenge-40_16.qasm",
+    "selected": {
+      "candidate": "0101110101001110011000111011100110010110",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-40_16.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 406.0428800773807,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.4423828125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 17,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "0010010101010111001001000010001000001001",
+        "max_bond": 251,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-40_17.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 157.80208567599766,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.5458984375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0010010101010111001001000010001000001001",
+        "max_bond": 250,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-40_17.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 1275.6358355300035,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.5458984375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0010010101010111001001000010001000001001",
+        "max_bond": 57,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-40_17.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 169.21006372000556,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.5234375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0010010101010111001001000010001000001001",
+        "max_bond": 200,
+        "path": "outputs/tree_tensor_sim/fast_cpu/json/challenge-40_17.quimb_tree_graph_mps.json",
+        "priority": 50,
+        "seconds": 299.76804796792567,
+        "source": "quimb_fast_cpu",
+        "top_fraction": 0.5546875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "40_17",
+    "num_qubits": 40,
+    "qasm": "challenges/easy/challenge-40_17.qasm",
+    "selected": {
+      "candidate": "0010010101010111001001000010001000001001",
+      "max_bond": 251,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-40_17.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 157.80208567599766,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.5458984375,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 18,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "0100000110010010001101111000111111001110",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-40_18.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 1816.451525606215,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.439453125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0100000110010010001101111000111111001110",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-40_18.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 2614.0391854020127,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.439453125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0100000110010010001101111000111111001110",
+        "max_bond": 117,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-40_18.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1414.3921348009026,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.216796875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "40_18",
+    "num_qubits": 40,
+    "qasm": "challenges/easy/challenge-40_18.qasm",
+    "selected": {
+      "candidate": "0100000110010010001101111000111111001110",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-40_18.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 1816.451525606215,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.439453125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 19,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "011001010111101100111110000001011101001110010000",
+        "max_bond": 29,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-48_19.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 35.093291667988524,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.673828125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "011001010111101100111110000001011101001110010000",
+        "max_bond": 29,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_19.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 44.622320821014,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.673828125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_19",
+    "num_qubits": 48,
+    "qasm": "challenges/easy/challenge-48_19.qasm",
+    "selected": {
+      "candidate": "011001010111101100111110000001011101001110010000",
+      "max_bond": 29,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-48_19.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 35.093291667988524,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.673828125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 20,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "101010100101001010000110101000001011110010000000",
+        "max_bond": 275,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-48_20.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 244.04334258800372,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.6123046875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "101010100101001010000110101000001011110010000000",
+        "max_bond": 275,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_20.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 746.4007850299968,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.6123046875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "101010100101001010000110101000001011110010000000",
+        "max_bond": 37,
+        "path": "outputs/tree_tensor_sim/fast_cpu/json/challenge-48_20.quimb_tree_graph_mps.json",
+        "priority": 50,
+        "seconds": 184.07346311304718,
+        "source": "quimb_fast_cpu",
+        "top_fraction": 0.654296875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_20",
+    "num_qubits": 48,
+    "qasm": "challenges/easy/challenge-48_20.qasm",
+    "selected": {
+      "candidate": "101010100101001010000110101000001011110010000000",
+      "max_bond": 275,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-48_20.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 244.04334258800372,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.6123046875,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 21,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "111010101110101011110101000001101000100000001001",
+        "max_bond": 346,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-48_21.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 365.72183076292276,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.44140625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "111010101110101011110101000001101000100000001001",
+        "max_bond": 344,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_21.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 1128.8825895460031,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.44140625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "111010101110101011110101000001101000100000001001",
+        "max_bond": 63,
+        "path": "outputs/tree_tensor_sim/fast_cpu/json/challenge-48_21.quimb_tree_graph_mps.json",
+        "priority": 50,
+        "seconds": 298.2340615709545,
+        "source": "quimb_fast_cpu",
+        "top_fraction": 0.458984375,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_21",
+    "num_qubits": 48,
+    "qasm": "challenges/easy/challenge-48_21.qasm",
+    "selected": {
+      "candidate": "111010101110101011110101000001101000100000001001",
+      "max_bond": 346,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-48_21.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 365.72183076292276,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.44140625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 22,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "11100100100110010011110010110110011000000100010111111011",
+        "max_bond": 33,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-56_22.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 43.44751948211342,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.58984375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "11100100100110010011110010110110011000000100010111111011",
+        "max_bond": 33,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_22.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 192.1452442491427,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.58984375,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_22",
+    "num_qubits": 56,
+    "qasm": "challenges/easy/challenge-56_22.qasm",
+    "selected": {
+      "candidate": "11100100100110010011110010110110011000000100010111111011",
+      "max_bond": 33,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-56_22.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 43.44751948211342,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.58984375,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 23,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "01001101001111111100000101001110111011100011111100001101",
+        "max_bond": 1475,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-56_23.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 3631.819509597961,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.4970703125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "01001101001111111100000101001110111011100011111100001101",
+        "max_bond": 1471,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_23.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 3811.5216554799117,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.4970703125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_23",
+    "num_qubits": 56,
+    "qasm": "challenges/easy/challenge-56_23.qasm",
+    "selected": {
+      "candidate": "01001101001111111100000101001110111011100011111100001101",
+      "max_bond": 1475,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-56_23.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 3631.819509597961,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.4970703125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 24,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "10011001001111101111111011101011101101010011001011110001",
+        "max_bond": 441,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-56_24.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 1615.8745195169467,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.517578125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "10011001001111101111111011101011101101010011001011110001",
+        "max_bond": 444,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_24.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 20724.178879607003,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.517578125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "10011001001111101111111011101011101101010011001011110001",
+        "max_bond": 110,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-56_24.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1201.1308175509912,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.095703125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_24",
+    "num_qubits": 56,
+    "qasm": "challenges/easy/challenge-56_24.qasm",
+    "selected": {
+      "candidate": "10011001001111101111111011101011101101010011001011110001",
+      "max_bond": 441,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-56_24.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 1615.8745195169467,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.517578125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 25,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "0011101111110000110110111101011000010000010100110111000001111011",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-64_25.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 3087.5471233739518,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.396484375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0011101111110000110110111101011000010000010100110111000001111011",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-64_25.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 21368.61016953783,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.396484375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0011101111110000110110111101011000010000010100110111000001111011",
+        "max_bond": 122,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-64_25.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1929.9747508540167,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.01171875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "64_25",
+    "num_qubits": 64,
+    "qasm": "challenges/easy/challenge-64_25.qasm",
+    "selected": {
+      "candidate": "0011101111110000110110111101011000010000010100110111000001111011",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-64_25.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 3087.5471233739518,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.396484375,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 26,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "0110101010100011010111011000011100010110110110011100011001100110",
+        "max_bond": 499,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-64_26.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 3774.1666177911684,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.26171875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0110101010100011010111011000011100010110110110011100011001100110",
+        "max_bond": 501,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-64_26.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 17448.997431343887,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.263671875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0110101010100011010111011000011101010110110010011100011001100110",
+        "max_bond": 61,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-64_26.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1920.2362505337223,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.01171875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "64_26",
+    "num_qubits": 64,
+    "qasm": "challenges/easy/challenge-64_26.qasm",
+    "selected": {
+      "candidate": "0110101010100011010111011000011100010110110110011100011001100110",
+      "max_bond": 499,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-64_26.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 3774.1666177911684,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.26171875,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 11,
+    "difficulty": "easy",
+    "evidence": [
+      {
+        "candidate": "01001110",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.5454480750007801",
+        "validation": "exact"
+      },
+      {
+        "candidate": "01001110",
+        "max_bond": 8,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-8_11.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 5.092356294160709,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.52734375,
+        "validation": "correct"
+      },
+      {
+        "candidate": "01001110",
+        "max_bond": 8,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-8_11.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 2.9588750309776515,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.52734375,
+        "validation": "correct"
+      },
+      {
+        "candidate": "01001110",
+        "max_bond": "",
+        "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+        "priority": 40,
+        "seconds": "",
+        "source": "aer_mps_pilot",
+        "top_fraction": "1.000",
+        "validation": "stable_high_config"
+      }
+    ],
+    "label": "8_11",
+    "num_qubits": 8,
+    "qasm": "challenges/easy/challenge-8_11.qasm",
+    "selected": {
+      "candidate": "01001110",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.5454480750007801",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 35,
+    "difficulty": "hard",
+    "evidence": [
+      {
+        "candidate": "0101100110101111111000010101001110001001",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-40_35.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 8629.290444809012,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0111110111110111101000011110000100001011",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-40_35.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 9906.00760480098,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.0009765625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0000000111100110110100001101100100111001",
+        "max_bond": "",
+        "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+        "priority": 40,
+        "seconds": "",
+        "source": "aer_mps_pilot",
+        "top_fraction": "0.167",
+        "validation": "unstable_top1_vs_aggregate"
+      }
+    ],
+    "label": "40_35",
+    "num_qubits": 40,
+    "qasm": "challenges/hard/challenge-40_35.qasm",
+    "selected": {
+      "candidate": "0101100110101111111000010101001110001001",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-40_35.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 8629.290444809012,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.001953125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 36,
+    "difficulty": "hard",
+    "evidence": [
+      {
+        "candidate": "001111011011001100110011001000101001101010111000",
+        "max_bond": 1839,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-48_36.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 11122.209334747866,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.0078125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "001000010010111000010000100001111011011011011001",
+        "max_bond": 128,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-48_36.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 5019.068430946907,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "000001001011001100010011101001001000101010110111",
+        "max_bond": "",
+        "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+        "priority": 40,
+        "seconds": "",
+        "source": "aer_mps_pilot",
+        "top_fraction": "0.167",
+        "validation": "unstable_top1_vs_aggregate"
+      }
+    ],
+    "label": "48_36",
+    "num_qubits": 48,
+    "qasm": "challenges/hard/challenge-48_36.qasm",
+    "selected": {
+      "candidate": "001111011011001100110011001000101001101010111000",
+      "max_bond": 1839,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-48_36.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 11122.209334747866,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.0078125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 37,
+    "difficulty": "hard",
+    "evidence": [
+      {
+        "candidate": "100101001010001101010100100101001001000101010001",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-48_37.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 14706.956619238947,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.0009765625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "100101001010001101010100100101001001000101010001",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_37.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 14825.98766003875,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.0009765625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "001110010010111100111010100101011000100000001000",
+        "max_bond": 128,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-48_37.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 7707.789425185183,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_37",
+    "num_qubits": 48,
+    "qasm": "challenges/hard/challenge-48_37.qasm",
+    "selected": {
+      "candidate": "100101001010001101010100100101001001000101010001",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-48_37.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 14706.956619238947,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.0009765625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 38,
+    "difficulty": "hard",
+    "evidence": [
+      {
+        "candidate": "10011001011110000000010011010101100001001001110110110001",
+        "max_bond": 70,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-56_38.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 19818.51346176816,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_38",
+    "num_qubits": 56,
+    "qasm": "challenges/hard/challenge-56_38.qasm",
+    "selected": {
+      "candidate": "10011001011110000000010011010101100001001001110110110001",
+      "max_bond": 70,
+      "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-56_38.quimb_tree_graph_mps.json",
+      "priority": 55,
+      "seconds": 19818.51346176816,
+      "source": "quimb_rcm_cpu",
+      "top_fraction": 0.001953125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 39,
+    "difficulty": "hard",
+    "evidence": [
+      {
+        "candidate": "10010111001101010101111111010110110110110000101001010000",
+        "max_bond": 1848,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-56_39.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 12022.908040051116,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "01010110001001010111111111010111011000100000111011000001",
+        "max_bond": 285,
+        "path": "outputs/tree_tensor_sim/degree_cpu/json/challenge-56_39.quimb_tree_graph_mps.json",
+        "priority": 53,
+        "seconds": 5532.806964861229,
+        "source": "quimb_degree_cpu",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_39",
+    "num_qubits": 56,
+    "qasm": "challenges/hard/challenge-56_39.qasm",
+    "selected": {
+      "candidate": "10010111001101010101111111010110110110110000101001010000",
+      "max_bond": 1848,
+      "path": "outputs/tree_tensor_sim/all/json/challenge-56_39.quimb_tree_graph_mps.json",
+      "priority": 90,
+      "seconds": 12022.908040051116,
+      "source": "quimb_gpu_all",
+      "top_fraction": 0.001953125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 40,
+    "difficulty": "hard",
+    "evidence": [],
+    "label": "64_40",
+    "num_qubits": 64,
+    "qasm": "challenges/hard/challenge-64_40.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 41,
+    "difficulty": "hard",
+    "evidence": [
+      {
+        "candidate": "0001000111010011100110010011110111000000100011010001101010110010",
+        "max_bond": "",
+        "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+        "priority": 40,
+        "seconds": "",
+        "source": "aer_mps_pilot",
+        "top_fraction": "0.167",
+        "validation": "unstable_top1_vs_aggregate"
+      }
+    ],
+    "label": "64_41",
+    "num_qubits": 64,
+    "qasm": "challenges/hard/challenge-64_41.qasm",
+    "selected": {
+      "candidate": "0001000111010011100110010011110111000000100011010001101010110010",
+      "max_bond": "",
+      "path": "agent_work/mps_distill/summaries/pilot_candidates.tsv",
+      "priority": 40,
+      "seconds": "",
+      "source": "aer_mps_pilot",
+      "top_fraction": "0.167",
+      "validation": "unstable_top1_vs_aggregate"
+    }
+  },
+  {
+    "challenge_id": 28,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "1101001111011100",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.3962059348034266",
+        "validation": "exact"
+      },
+      {
+        "candidate": "1101001111011100",
+        "max_bond": 251,
+        "path": "outputs/tree_tensor_sim/all/json/challenge-16_28.quimb_tree_graph_mps.json",
+        "priority": 90,
+        "seconds": 88.70587939722463,
+        "source": "quimb_gpu_all",
+        "top_fraction": 0.3740234375,
+        "validation": "correct"
+      },
+      {
+        "candidate": "1101001111011100",
+        "max_bond": 251,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-16_28.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 879.5975143939722,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.3740234375,
+        "validation": "correct"
+      },
+      {
+        "candidate": "1101001111011100",
+        "max_bond": 127,
+        "path": "outputs/tree_tensor_sim/fast_cpu/json/challenge-16_28.quimb_tree_graph_mps.json",
+        "priority": 50,
+        "seconds": 337.12958894856274,
+        "source": "quimb_fast_cpu",
+        "top_fraction": 0.458984375,
+        "validation": "correct"
+      }
+    ],
+    "label": "16_28",
+    "num_qubits": 16,
+    "qasm": "challenges/moderate/challenge-16_28.qasm",
+    "selected": {
+      "candidate": "1101001111011100",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.3962059348034266",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 29,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "110100010111100001001001",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.3900966376778103",
+        "validation": "exact"
+      },
+      {
+        "candidate": "110100010111100001001001",
+        "max_bond": 1904,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-24_29.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 7177.476240062155,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.03125,
+        "validation": "correct"
+      },
+      {
+        "candidate": "100100100110101001101100",
+        "max_bond": 442,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-24_29.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 2131.579968066886,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.001953125,
+        "validation": "incorrect"
+      }
+    ],
+    "label": "24_29",
+    "num_qubits": 24,
+    "qasm": "challenges/moderate/challenge-24_29.qasm",
+    "selected": {
+      "candidate": "110100010111100001001001",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.3900966376778103",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 30,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "10011000010011110111101111010111",
+        "max_bond": 2017,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-32_30.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 8272.098411094164,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.1357421875,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "10011000010011110111101111000111",
+        "max_bond": 128,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-32_30.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 2683.171219384996,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.01171875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "32_30",
+    "num_qubits": 32,
+    "qasm": "challenges/moderate/challenge-32_30.qasm",
+    "selected": {
+      "candidate": "10011000010011110111101111010111",
+      "max_bond": 2017,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-32_30.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 8272.098411094164,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.1357421875,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 31,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "101100111000101011111111101010111011011000110110",
+        "max_bond": 2145,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_31.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 5286.312591393944,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.4208984375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "101100111000101011111111001010111011011000110110",
+        "max_bond": 2101,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-48_31.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1407.8044407148845,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.01171875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_31",
+    "num_qubits": 48,
+    "qasm": "challenges/moderate/challenge-48_31.qasm",
+    "selected": {
+      "candidate": "101100111000101011111111101010111011011000110110",
+      "max_bond": 2145,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_31.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 5286.312591393944,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.4208984375,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 32,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "011101010111011110001110010101010101101110001110",
+        "max_bond": 1742,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_32.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 6627.036273923935,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.265625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "011101010111011110001110010101010101101110001110",
+        "max_bond": 433,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-48_32.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1639.386163600022,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.0234375,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_32",
+    "num_qubits": 48,
+    "qasm": "challenges/moderate/challenge-48_32.qasm",
+    "selected": {
+      "candidate": "011101010111011110001110010101010101101110001110",
+      "max_bond": 1742,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_32.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 6627.036273923935,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.265625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 33,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "11001001100101001111010100100010010101111111011101010000",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_33.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 6158.677842762088,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.041015625,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "11000001000100001100000100100110110100111100111001010001",
+        "max_bond": 128,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-56_33.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 1547.5791398540605,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.001953125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_33",
+    "num_qubits": 56,
+    "qasm": "challenges/moderate/challenge-56_33.qasm",
+    "selected": {
+      "candidate": "11001001100101001111010100100010010101111111011101010000",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_33.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 6158.677842762088,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.041015625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 34,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "0011010100010011001110101110100101001011001011011001111011100110",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-64_34.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 9827.188070290023,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.1630859375,
+        "validation": "unknown"
+      },
+      {
+        "candidate": "0011010100010011101110101110100101101011001011011001111011100110",
+        "max_bond": 89,
+        "path": "outputs/tree_tensor_sim/rcm_cpu/json/challenge-64_34.quimb_tree_graph_mps.json",
+        "priority": 55,
+        "seconds": 9105.039570288965,
+        "source": "quimb_rcm_cpu",
+        "top_fraction": 0.029296875,
+        "validation": "unknown"
+      }
+    ],
+    "label": "64_34",
+    "num_qubits": 64,
+    "qasm": "challenges/moderate/challenge-64_34.qasm",
+    "selected": {
+      "candidate": "0011010100010011001110101110100101001011001011011001111011100110",
+      "max_bond": 512,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-64_34.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 9827.188070290023,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.1630859375,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 27,
+    "difficulty": "moderate",
+    "evidence": [
+      {
+        "candidate": "11001001",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.2879073385472982",
+        "validation": "exact"
+      },
+      {
+        "candidate": "11001001",
+        "max_bond": 16,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-8_27.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 9.354290170129389,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.2705078125,
+        "validation": "correct"
+      }
+    ],
+    "label": "8_27",
+    "num_qubits": 8,
+    "qasm": "challenges/moderate/challenge-8_27.qasm",
+    "selected": {
+      "candidate": "11001001",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.2879073385472982",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 2,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "1010101011001000",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.46696962421756005",
+        "validation": "exact"
+      },
+      {
+        "candidate": "1010101011001000",
+        "max_bond": 30,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-16_2.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 11.555157506139949,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.4716796875,
+        "validation": "correct"
+      }
+    ],
+    "label": "16_2",
+    "num_qubits": 16,
+    "qasm": "challenges/very easy/challenge-16_2.qasm",
+    "selected": {
+      "candidate": "1010101011001000",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.46696962421756005",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 3,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "011110010000101010001000",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.7239837426523221",
+        "validation": "exact"
+      },
+      {
+        "candidate": "011110010000101010001000",
+        "max_bond": 52,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-24_3.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 12.476727702189237,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.6982421875,
+        "validation": "correct"
+      }
+    ],
+    "label": "24_3",
+    "num_qubits": 24,
+    "qasm": "challenges/very easy/challenge-24_3.qasm",
+    "selected": {
+      "candidate": "011110010000101010001000",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.7239837426523221",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 4,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "1111111000101010110110011111",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.3511118993870582",
+        "validation": "exact"
+      },
+      {
+        "candidate": "1111111000101010110110011111",
+        "max_bond": 512,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-28_4.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 1208.7308507100097,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.4619140625,
+        "validation": "correct"
+      }
+    ],
+    "label": "28_4",
+    "num_qubits": 28,
+    "qasm": "challenges/very easy/challenge-28_4.qasm",
+    "selected": {
+      "candidate": "1111111000101010110110011111",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.3511118993870582",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 5,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "00111000101010100001000000010000",
+        "max_bond": 1376,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-32_5.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 600.3461958561093,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.5322265625,
+        "validation": "unknown"
+      }
+    ],
+    "label": "32_5",
+    "num_qubits": 32,
+    "qasm": "challenges/very easy/challenge-32_5.qasm",
+    "selected": {
+      "candidate": "00111000101010100001000000010000",
+      "max_bond": 1376,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-32_5.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 600.3461958561093,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.5322265625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 6,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "100110100111101001001101110011001000",
+        "max_bond": 25,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-36_6.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 167.304611640051,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.6884765625,
+        "validation": "unknown"
+      }
+    ],
+    "label": "36_6",
+    "num_qubits": 36,
+    "qasm": "challenges/very easy/challenge-36_6.qasm",
+    "selected": {
+      "candidate": "100110100111101001001101110011001000",
+      "max_bond": 25,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-36_6.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 167.304611640051,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.6884765625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 7,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "0110111011010001010011111110010011000111",
+        "max_bond": 4,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-40_7.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 14.323705504997633,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.87890625,
+        "validation": "unknown"
+      }
+    ],
+    "label": "40_7",
+    "num_qubits": 40,
+    "qasm": "challenges/very easy/challenge-40_7.qasm",
+    "selected": {
+      "candidate": "0110111011010001010011111110010011000111",
+      "max_bond": 4,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-40_7.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 14.323705504997633,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.87890625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 8,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "000100100110111001001111111100101011001110010100",
+        "max_bond": 6,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_8.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 8.576204065000638,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.697265625,
+        "validation": "unknown"
+      }
+    ],
+    "label": "48_8",
+    "num_qubits": 48,
+    "qasm": "challenges/very easy/challenge-48_8.qasm",
+    "selected": {
+      "candidate": "000100100110111001001111111100101011001110010100",
+      "max_bond": 6,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-48_8.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 8.576204065000638,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.697265625,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 9,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "10010110101100101110100110010110011101100110001101010100",
+        "max_bond": 10,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_9.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 19.62739471020177,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.78125,
+        "validation": "unknown"
+      }
+    ],
+    "label": "56_9",
+    "num_qubits": 56,
+    "qasm": "challenges/very easy/challenge-56_9.qasm",
+    "selected": {
+      "candidate": "10010110101100101110100110010110011101100110001101010100",
+      "max_bond": 10,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-56_9.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 19.62739471020177,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.78125,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 10,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "0011010010110001110010111001100100101100010111110110010100101011",
+        "max_bond": 5,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-64_10.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 21.401709445985034,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.787109375,
+        "validation": "unknown"
+      }
+    ],
+    "label": "64_10",
+    "num_qubits": 64,
+    "qasm": "challenges/very easy/challenge-64_10.qasm",
+    "selected": {
+      "candidate": "0011010010110001110010111001100100101100010111110110010100101011",
+      "max_bond": 5,
+      "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-64_10.quimb_tree_graph_mps.json",
+      "priority": 80,
+      "seconds": 21.401709445985034,
+      "source": "quimb_cpu_all",
+      "top_fraction": 0.787109375,
+      "validation": "unknown"
+    }
+  },
+  {
+    "challenge_id": 1,
+    "difficulty": "very easy",
+    "evidence": [
+      {
+        "candidate": "10101101",
+        "max_bond": "",
+        "path": "agent_work/exact_baseline/peaks_exact.csv",
+        "priority": 100,
+        "seconds": "",
+        "source": "exact_statevector",
+        "top_fraction": "0.9126378477396644",
+        "validation": "exact"
+      },
+      {
+        "candidate": "10101101",
+        "max_bond": 2,
+        "path": "outputs/tree_tensor_sim/all_cpu/json/challenge-8_1.quimb_tree_graph_mps.json",
+        "priority": 80,
+        "seconds": 1.3561234130174853,
+        "source": "quimb_cpu_all",
+        "top_fraction": 0.9013671875,
+        "validation": "correct"
+      }
+    ],
+    "label": "8_1",
+    "num_qubits": 8,
+    "qasm": "challenges/very easy/challenge-8_1.qasm",
+    "selected": {
+      "candidate": "10101101",
+      "max_bond": "",
+      "path": "agent_work/exact_baseline/peaks_exact.csv",
+      "priority": 100,
+      "seconds": "",
+      "source": "exact_statevector",
+      "top_fraction": "0.9126378477396644",
+      "validation": "exact"
+    }
+  },
+  {
+    "challenge_id": 49,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "104_49",
+    "num_qubits": 104,
+    "qasm": "challenges/very_hard/challenge-104_49.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 42,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "48_42",
+    "num_qubits": 48,
+    "qasm": "challenges/very_hard/challenge-48_42.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 43,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "56_43",
+    "num_qubits": 56,
+    "qasm": "challenges/very_hard/challenge-56_43.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 44,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "64_44",
+    "num_qubits": 64,
+    "qasm": "challenges/very_hard/challenge-64_44.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 45,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "72_45",
+    "num_qubits": 72,
+    "qasm": "challenges/very_hard/challenge-72_45.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 46,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "80_46",
+    "num_qubits": 80,
+    "qasm": "challenges/very_hard/challenge-80_46.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 47,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "88_47",
+    "num_qubits": 88,
+    "qasm": "challenges/very_hard/challenge-88_47.qasm",
+    "selected": null
+  },
+  {
+    "challenge_id": 48,
+    "difficulty": "very_hard",
+    "evidence": [],
+    "label": "96_48",
+    "num_qubits": 96,
+    "qasm": "challenges/very_hard/challenge-96_48.qasm",
+    "selected": null
+  }
+]

@@ -1,0 +1,170 @@
+# tree_tensor_sim attempt log
+
+## 2026-06-05
+
+- Reused the existing sibling worktree at `../quantum-junction-tree-tensor` on branch `tree-tensor-sim`.
+- Read the local handoff in the original checkout, the challenge instructions, prior static/MPS/MPO reports, and the 2507.11424 paper/README notes.
+- Checked the failed prior probe under `outputs/tree_tensor_sim/probe/logs`; it did not test APIs because the Slurm script used `source` under `/bin/sh`.
+- Checked the existing MPO full sweep `34607501`; it was still running with a live array throttle above the active 5-GPU cap.
+- Updated `34607501` with `scontrol update JobId=34607501 ArrayTaskThrottle=5` so no new GPU tasks start above the cap.
+- Implemented `jobs/tree_tensor_runner.py` as a graph-aware MPS fallback:
+  - parses QASM with Qiskit;
+  - builds a weighted two-qubit interaction graph;
+  - constructs native, reverse-Cuthill-McKee, spectral, greedy, and recursive spectral-mincut tree orderings;
+  - relabels qubits into each order before Aer MPS sampling;
+  - converts sampled bitstrings back to original Qiskit/counts order;
+  - records graph stats, order span stats, JSON, annotated figures, and known-answer validation;
+  - performs exact statevector validation only up to a configurable qubit limit on Slurm nodes.
+- Added CPU Slurm wrappers:
+  - `jobs/run_tree_tensor_pilot_array.slurm` for six known-answer pilot circuits;
+  - `jobs/run_tree_tensor_all_array.slurm` for all 49 circuits, held until the pilot proves useful.
+- Added `jobs/summarize_tree_tensor.py` to turn runner JSON files into `SUMMARY.md`.
+- Submitted syntax compile check `34608456`; it completed successfully.
+- Pilot array `34608447` plus single rerun `34608481` completed on `interruptible_cpu`.
+  - Pilot IDs: `1, 11, 27, 12, 28, 13`.
+  - Parameters: order methods `native rcm spectral mincut greedy`, bond dimensions `32 64 128`, `4096` shots, `exact_max_qubits=24`, 8 CPU/task.
+  - Summary dependency `34608495` completed and regenerated `outputs/tree_tensor_sim/pilot/SUMMARY.md`.
+  - All six known-answer rows matched: `8_1`, `8_11`, `8_27`, `16_12`, `16_28`, `24_13`.
+  - MPS top/majority checks matched on all trials for five rows; `16_28` had 11/15 matching MPS top and 11/15 matching majority, with exact statevector confirming the final answer.
+- Submitted full CPU sweep `34608804` using `jobs/run_tree_tensor_all_array.slurm`.
+  - Resources: `interruptible_cpu`, array `0-48%31`, 32 CPU/task, 80 GB/task, one-day wall time.
+  - Maximum concurrent CPU allocation is `31 * 32 = 992`, within the 1000-CPU cap.
+  - Summary dependency job `34608806` will regenerate `outputs/tree_tensor_sim/all/SUMMARY.md` after the array ends.
+- Reapplied live GPU throttle to older MPO array `34607501`.
+  - Slurm briefly started extra GPU tasks after several short tasks finished.
+  - Cancelled newest MPO elements `34607501_13`, `34607501_14`, `34607501_16`, and `34607501_17` to bring live usage back to the five longer-running tasks.
+  - Live state after correction: pending group `34607501_[18-48%5]`, running `34607501_3`, `_8`, `_9`, `_11`, `_12`, with `_17` in `COMPLETING`.
+- Early full-sweep check:
+  - `34608804` live state: 31 running tasks and 1 pending group, matching the 992-CPU cap.
+  - Completed known rows in `outputs/tree_tensor_sim/all/json/`: `8_11`, `8_27`, `16_2`, and `16_12`, all matching known answers.
+  - Completed unknown row `48_19` produced candidate `011001010111101100111110000001011101001110010000`.
+  - GPU MPO array live state after cancellation: pending `34607501_[18-48%5]`, running five GPU tasks.
+- Later queue audit found newer canonical Quimb work in progress:
+  - clean Quimb CPU full sweep `34608968` running in `outputs/tree_tensor_sim/all_cpu/`;
+  - clean Quimb GPU full sweep `34608954` dependency-held behind `34607501`;
+  - summaries `34609018` and `34609019` pending behind those sweeps.
+- Also found that the old Aer CPU array `34608804` plus the Quimb CPU sweep exceeded the 1000-CPU cap.
+- Added `jobs/aer_tree_tensor_runner.py` and changed `jobs/tree_tensor_runner.py` to dispatch old Aer-style arguments to it, preserving the old attempt for reproducibility.
+- Compile check `34609004` passed for `tree_tensor_runner.py`, `aer_tree_tensor_runner.py`, `quimb_tree_tensor_runner.py`, and `summarize_tree_tensor.py`.
+- Submitted Aer retry `34609048` for failed old-array indices `35-48`, then cancelled it along with old Aer array `34608804` and old summary `34609050` after the cap audit.
+- Restored `jobs/run_tree_tensor_all_array.slurm` to the canonical Quimb GPU configuration. The separate CPU Quimb sweep wrapper is `jobs/run_tree_tensor_all_cpu_array.slurm`.
+- Resource state after cancellation:
+  - running CPU: `34608968` plus monitor, about 577 CPU from CPU jobs and 657 total including GPU-task CPUs;
+  - running GPU: `34607501` has five GPU tasks;
+  - dependency-held GPU: `34608954` waits for `34607501`.
+- Noted additional prepared Quimb/CircuitMPS fallback files:
+  - `jobs/quimb_tree_tensor_runner.py`
+  - `jobs/run_quimb_tree_tensor_pilot_array.slurm`
+  These are GPU-oriented and were not submitted because the active GPU cap is already occupied by the older MPO array.
+
+Current limitation: this is not a full port of TensorNetworkQuantumSimulator.jl or the paper's boundary-MPS sampler. It is the conservative fallback suggested by the handoff: geometry-aware ordering/hierarchy plus MPS sampling, with every output labelled as a fallback.
+
+## 2026-06-06
+
+- Checkpoint at `00:07:19 BST`:
+  - live allocation was 641 running CPUs and five running GPUs, within the requested caps;
+  - canonical Quimb CPU sweep `34608968` was still running 35 tasks in `outputs/tree_tensor_sim/all_cpu/`;
+  - canonical Quimb CPU summary `34609018` was pending on `34608968`;
+  - canonical Quimb GPU sweep `34608954` was still dependency-held behind the older peaked GPU sweep `34607501`;
+  - canonical Quimb GPU summary `34609019` was pending on `34608954`;
+  - older peaked GPU sweep `34607501` had five live GPU tasks and pending group `34607501_[20-48%5]`.
+- Canonical CPU JSON status counts at that checkpoint were `14 ok` and `35 started` placeholders.
+- Completed canonical CPU known-answer rows all validated correct so far: `8_1`, `8_11`, `8_27`, `16_2`, `16_12`, `24_3`, and `24_13`.
+- Unknown completed rows so far: `36_6`, `40_7`, `48_8`, `48_19`, `56_9`, `56_22`, and `64_10`.
+- Rechecked the referenced arXiv page and GitHub README. The target method/package emphasize geometry-aware 2D tensor-network states, BP/simple-update style gate application, boundary-MPS contraction and sampling, truncation controls, and GPU support. The current runner remains an explicitly labelled `graph_ordered_mps_fallback`; it is not yet a true TTN or full boundary-MPS Julia port.
+- Found the prepared fast exploratory CPU pass:
+  - compile check `34609136` completed;
+  - array `34609147` was already running with `0-48%20`, 16 CPUs/task, 24 GB/task, lower-fidelity parameters `max_bond=128`, `cutoff=1e-5`, `samples=512`;
+  - it skips canonical `all_cpu` rows already marked `ok` and writes to `outputs/tree_tensor_sim/fast_cpu/`.
+- Cap audit while fast pass was active: 961 running CPUs and five running GPUs. This remains under the user caps; if pressure increases, cancel or throttle `34609147` first because it is exploratory.
+- Submitted dependent fast-pass summary job `34609181` with dependency `afterany:34609147`.
+- Added `jobs/collect_peak_candidates.py` to merge exact baselines, canonical Quimb GPU/CPU results, fast CPU results, and earlier MPS pilot evidence into final candidate rollup artifacts.
+- Collector compile check `34609226` completed successfully.
+- Submitted final candidate rollup job `34609259` with dependency `afterany:34609018:34609019:34609181`.
+- Collector smoke output in `outputs/tree_tensor_sim/collector_smoke/` completed successfully; final rollup is still dependency-held as `34609259`.
+- Raised exploratory fast CPU array `34609147` throttle from `%20` to `%24` after canonical CPU progress freed headroom. Post-update live allocation was 945 CPUs and five GPUs.
+- Checkpoint after the throttle update: canonical CPU had `18 ok` and `31 started`; fast CPU had `5 ok` and `19 started`; no Slurm or JSON errors observed. `16_28` matched the exact answer in both canonical and fast runs, and `48_20` matched between canonical CPU and fast CPU.
+- Environment check: `julia` is not on `PATH`, so the Julia package cannot be run directly here without installing Julia. Current work remains a Python/Quimb adaptation of the paper and TensorNetworkQuantumSimulator.jl ideas.
+- Canonical CPU later completed `48_21` and matched the fast exploratory candidate exactly: `111010101110101011110101000001101000100000001001`.
+- Canonical CPU later completed exact-known `28_4` correctly: `1111111000101010110110011111`.
+- Tried increasing fast exploratory array `34609147` to `%26`, but Slurm started too many elements and live CPU overshot the 1000 cap. Cancelled the entire exploratory fast array immediately; post-cancellation audit was 849 running CPUs and five GPUs. Kept canonical CPU/GPU jobs untouched.
+- Fast summary `34609181` completed after the cancellation.
+- Found exploratory RCM CPU pass `34609383` plus summary `34609416`: lower-bond `max_bond=128`, `cutoff=1e-5`, `order_method=rcm`, output under `outputs/tree_tensor_sim/rcm_cpu/`, skips canonical `all_cpu` rows already marked `ok`.
+- Updated `jobs/collect_peak_candidates.py` to include RCM evidence below canonical CPU/GPU priority, and updated rollup job `34609259` to wait on RCM summary `34609416`.
+- Checkpoint at `00:28 BST`: live allocation was 833 CPUs and five GPUs. Canonical CPU remained at `21 ok` / `28 started`; exploratory RCM reached `2 ok` / `19 started`. New RCM-only candidate: `32_14` -> `00000101001101000001011111101100` (top fraction `0.458984375`, max bond `160`, `292.82s`).
+- Scheduler adjustment at `00:30 BST`: set older GPU array `34607501` to `%5` explicitly and raised exploratory RCM `34609383` to `%25`. Post-update audit stayed within caps at 833 CPUs and five GPUs, and the failure-only accounting filter was clean.
+- GPU budget correction at `00:32 BST`: cancelled low-trust older `peaked_mpo_mps` GPU array `34607501` plus monitor `34608840` after confirming a `24_13` known-answer mismatch and several disagreements with Quimb evidence. Canonical Quimb GPU array `34608954` then started five tasks; post-cancellation audit was 928 CPUs and five GPUs. Stale old `*.tree_tensor_mps.json` files remain in `outputs/tree_tensor_sim/all/json/`, but collector evidence is filtered to `method == quimb_graph_tree_ordered_circuit_mps`.
+- Canonical GPU sanity check at `00:35 BST`: first completed Quimb GPU rows `16_12` and `24_13` both validated correct and matched canonical CPU. Quimb GPU JSON status was `2 ok` / `5 started`; no JSON errors observed.
+- Canonical GPU checkpoint at `00:37 BST`: GPU reached `5 ok` / `5 started`. New corroboration: `32_14` matched RCM exactly; `40_17` matched canonical CPU, fast, and RCM; `48_19` matched canonical CPU. Failure-only accounting filter remained clean.
+- Checkpoint at `00:43 BST`: live allocation still 928 CPUs and five GPUs. GPU Quimb reached `9 ok` / `5 started`; new GPU corroboration included `40_16`, `48_20`, `48_21`, and `56_22`. RCM produced fallback candidate `56_24` -> `10011001001111101111111011101011101101010011001011110001` with low top fraction `0.095703125`. Interim rollup coverage: `27/49`.
+- Checkpoint at `00:46 BST`: live allocation dropped to 880 CPUs and five GPUs. Canonical CPU reached `23 ok` / `26 started`; new CPU candidates `36_15` and `40_18`, with RCM matching `40_18`. RCM also produced low-confidence fallback `48_31`. Interim rollup coverage: `30/49`.
+- RCM checkpoint at `00:50 BST`: live allocation was 848 CPUs and five GPUs. RCM reached `7 ok` / `22 started`, adding low-confidence fallback candidates `56_33` and `48_32`. Interim rollup coverage: `32/49`.
+- Fast retry at `00:51 BST`: submitted capped fast CPU retry `34610265` (`0-48%9`) plus summary `34610266`, and updated final rollup `34609259` to wait for the new summary. Post-submit audit was 864 CPUs and five GPUs.
+- Cap correction at `00:54-00:55 BST`: audit reached 1184 CPUs after fast retry plus an unexpected `tree_tensor_mst_cpu` array `34610370`. Cancelled fast retry `34610265`, newest RCM elements `34609383_48`, `_47`, `_46`, MST array `34610370`, and duplicate MST summary/rollup `34610373`/`34610376`. Fast summary `34610266` completed and final rollup `34609259` is back to waiting only on canonical CPU/GPU and RCM summaries. Final audit: 768 CPUs and five GPUs. RCM added fallback `64_25` and `64_26`; interim coverage: `34/49`.
+- RCM warning at `00:59 BST`: RCM completed known row `24_29` incorrectly (`100100100110101001101100` vs exact `110100010111100001001001`) with top fraction `0.001953125`. Collector priority keeps the exact answer selected, but this confirms the very low-fraction RCM tail is weak evidence.
+- Canonical checkpoint at `01:04 BST`: live allocation was 736 CPUs and five GPUs. GPU `40_18` matched CPU and RCM. Canonical CPU filled `56_23` with top fraction `0.4970703125`. Interim rollup coverage: `35/49`; failure-only accounting filter remained clean.
+- RCM checkpoint at `01:08 BST`: live allocation was 720 CPUs and five GPUs. RCM added low-confidence fallback `32_30`; interim coverage: `36/49`.
+- GPU checkpoint at `01:11 BST`: GPU reached `13 ok` / `5 started`; `36_15` matched CPU, `56_24` matched RCM and became stronger GPU evidence, and known `8_11` validated correct. Coverage stayed `36/49`.
+- Preemption handling at `01:24 BST`: canonical CPU task `34608968_46` (`80_46`) was preempted. Submitted single-index canonical CPU retry `34610792` plus summary `34610793` and updated final rollup `34609259` to wait on the retry summary. RCM preemptions were `56_23` (already covered) and `64_40` (exploratory). Post-submit audit: 656 CPUs and five GPUs; retry pending.
+- Checkpoint at `01:30 BST`: canonical CPU upgraded `48_31` from weak RCM fallback to stronger CPU evidence. RCM also produced a conflicting low-fraction `36_15`, reinforcing RCM tail weakness. New RCM preemption: `34609383_44` (`64_44`). Coverage stayed `36/49`.
+- Checkpoint at `01:55 BST`: live allocation is `576` CPUs and `5` GPUs, within the requested caps. Canonical CPU is `28 ok` / `21 started` after upgrading `48_32` to CPU evidence; canonical GPU is `15 ok` / `5 started`; RCM is `13 ok` / `16 started`. Coverage remains `36/49`; no new failures beyond the already handled `80_46` CPU retry and known exploratory RCM preemptions.
+- Collector enhancement at `02:01 BST`: `collect_peak_candidates.py` now also writes `SUBMISSION_ANSWERS.tsv` and `SUBMISSION_ANSWERS.md` with per-candidate explanations. Compile and smoke rollup passed; interim coverage remains `36/49`.
+- CPU checkpoint at `02:02 BST`: canonical CPU reached `29 ok` / `20 started`; new row `24_29` matched the exact answer `110100010111100001001001`, contradicting the earlier weak incorrect RCM tail. Coverage remains `36/49`.
+- GPU checkpoint at `02:07 BST`: canonical GPU reached `16 ok` / `4 started`; new row `64_26` is `0110101010100011010111011000011100010110110110011100011001100110` with top fraction `0.26171875`, replacing the weaker conflicting RCM fallback. Coverage remains `36/49`.
+- Monitoring checkpoint at `02:15 BST`: allocation is steady at `560` CPUs and `5` GPUs. Counts are GPU `16 ok` / `5 started`, CPU `29 ok` / `20 started`, and RCM `13 ok` / `16 started`; all 13 blank labels are still covered by active canonical CPU tasks, and no new failures appeared.
+- CPU checkpoint at `02:19 BST`: canonical CPU reached `30 ok` / `19 started`; new row `32_30` is `10011000010011110111101111010111` with top fraction `0.1357421875`, replacing a weaker conflicting RCM fallback. Coverage remains `36/49`.
+- Monitoring checkpoint at `02:30 BST`: allocation is `544` CPUs and `5` GPUs. Counts are unchanged at GPU `16 ok` / `5 started`, CPU `30 ok` / `19 started`, and RCM `13 ok` / `16 started`; no new failures or JSON errors.
+- RCM checkpoint at `02:34 BST`: RCM reached `14 ok` / `15 started`; new weak fallback `48_37` is `001110010010111100111010100101011000100000001000` with top fraction `0.001953125`. Interim coverage is now `37/49`; 12 labels remain blank.
+- CPU checkpoint at `02:45 BST`: canonical CPU reached `31 ok` / `18 started`; new row `64_34` is `0011010100010011001110101110100101001011001011011001111011100110` with top fraction `0.1630859375`. Interim coverage is now `38/49`; 11 labels remain blank.
+- User status checkpoint at `02:47 BST`: canonical CPU reached `32 ok` / `17 started`; new row `40_35` is `0111110111110111101000011110000100001011` with top fraction `0.0009765625`. Coverage remains `38/49`; current audit is `496` CPUs and `5` GPUs.
+- GPU cap correction at `02:53 BST`: a stray `peaked_retry` GPU job `34611837_0` plus monitor `34611838` briefly raised the audit to `6` GPUs. Cancelled both; post-cancel audit is back to `496` CPUs and `5` GPUs, with canonical GPU jobs preserved.
+- RCM checkpoint at `02:57 BST`: RCM reached `15 ok` / `14 started`; new `64_34` RCM candidate conflicts with the stronger CPU-selected row, so coverage remains `38/49`. Current audit is `480` CPUs and `5` GPUs.
+- Monitoring checkpoint at `03:17 BST`: no count changes after several polls. GPU is `16 ok` / `5 started`, CPU `32 ok` / `17 started`, RCM `15 ok` / `14 started`; allocation remains `480` CPUs and `5` GPUs with no new failures.
+- RCM preemption at `03:32 BST`: exploratory RCM task `34609383_22` (`64_41`) preempted after `03:07:45`. It is not currently blank, so no retry; allocation is `464` CPUs and `5` GPUs.
+- User status checkpoint at `03:38 BST`: refreshed coverage remains `38/49`. Blanks are `56_38`, `56_39`, `64_40`, `104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, and `96_48`. Counts are CPU `32 ok` / `17 started`, GPU `17 ok` / `5 started`, and RCM `15 ok` / `14 started`; allocation is `464` CPUs and `5` GPUs. All blanks are covered by active or queued canonical CPU/GPU work, including the `80_46` CPU retry.
+- Targeted MST-DFS blank pass at `03:43 BST`: submitted `34612536` for blank indices `19-21,41-48%11`, plus summary `34612537`; updated final rollup `34609259` to wait on the MST summary alongside canonical CPU/GPU, RCM, and retry summaries. Post-submit audit remained `464` CPUs and `5` GPUs because the MST array was pending.
+- MST start confirmation at `03:44 BST`: all `11` targeted MST elements started and allocation is `640` CPUs / `5` GPUs. No MST ok rows yet.
+- Monitoring checkpoint at `03:48 BST`: no count changes; CPU `32 ok` / `17 started`, GPU `17 ok` / `5 started`, RCM `15 ok` / `14 started`, MST `0 ok` / `25 started`. Allocation remains `640` CPUs / `5` GPUs with no new failure states.
+- Targeted degree-order blank pass at `03:49 BST`: added `jobs/run_tree_tensor_degree_cpu_array.slurm`, updated collector to include `degree_cpu` at priority `53`, compile/smoke passed, then submitted degree array `34612609` for blank indices `19-21,41-48%10` plus summary `34612610`; final rollup `34609259` now waits on the degree summary too.
+- Degree start checkpoint at `03:50 BST`: degree `19-21` started, degree `41-48` remain pending on priority, allocation is `688` CPUs / `5` GPUs; no new ok rows yet.
+- Monitoring checkpoint at `03:53 BST`: collector remains `38/49`; same 11 blanks. Counts unchanged except degree has `3 started`; allocation is `688` CPUs / `5` GPUs and no new failures.
+- Monitoring checkpoint at `03:56 BST`: still `38/49`, same 11 blanks, allocation `688` CPUs / `5` GPUs, no new ok rows or failure states.
+- Monitoring checkpoint at `04:02 BST`: still `38/49`; degree now has `10` active and `1` pending, allocation `800` CPUs / `5` GPUs, no new ok rows or failures.
+- Targeted fast blank pass at `04:03 BST`: submitted existing fast CPU script for blank indices `19-21,41-48%10` as `34612770`, summary `34612771`, and updated final rollup `34609259` to wait on it. Expected peak is about `960` CPUs / `5` GPUs.
+- Fast start checkpoint at `04:04 BST`: fast `19` started, remaining fast elements pending on priority; allocation is `816` CPUs / `5` GPUs. No new ok rows yet.
+- Monitoring checkpoint at `04:07 BST`: fast now has `10` running and `1` pending; degree has `10` running and `1` pending. Allocation is `960` CPUs / `5` GPUs; collector still `38/49` with no new failures.
+- CPU checkpoint at `04:11 BST`: canonical CPU reached `33 ok` / `16 started`; `48_37` now has CPU candidate `100101001010001101010100100101001001000101010001` (top `0.0009765625`, max bond `512`, runtime `14825.99s`). Coverage stays `38/49`; allocation `944` CPUs / `5` GPUs.
+- Monitoring checkpoint at `04:14 BST`: no new ok rows; collector remains `38/49`; allocation remains `944` CPUs / `5` GPUs with no new failure states.
+- GPU checkpoint at `04:18 BST`: canonical GPU reached `18 ok` / `5 started`; `48_36` candidate `001111011011001100110011001000101001101010111000` (top `0.0078125`, max bond `1839`, runtime `11122.21s`) upgrades evidence but coverage stays `38/49`.
+- Monitoring checkpoint at `04:21 BST`: no new ok rows after GPU `48_36`; collector remains `38/49`, allocation `944` CPUs / `5` GPUs, no new failure states.
+- MST preemption handling at `04:28 BST`: targeted MST `34612536_41` (`104_49`) preempted after `00:40:35`. Submitted single-index MST retry `34613104` plus summary `34613105`, and updated final rollup `34609259` to wait on it. Coverage remains `38/49`.
+- MST retry start confirmation at `04:29 BST`: `34613104_41` is running; allocation is `944` CPUs / `5` GPUs.
+- Monitoring checkpoint at `04:32 BST`: no new ok rows after MST retry start; collector remains `38/49`; allocation `944` CPUs / `5` GPUs; failure accounting unchanged beyond the handled `104_49` MST preemption.
+- Monitoring checkpoint at `04:35 BST`: no new ok rows; selected coverage remains `38/49`, allocation `944` CPUs / `5` GPUs, and no additional failures.
+- Monitoring checkpoint at `04:41 BST`: counts and coverage unchanged; allocation `944` CPUs / `5` GPUs; no additional failures.
+- Monitoring checkpoint at `04:46 BST`: counts and coverage unchanged at `38/49`; allocation `944` CPUs / `5` GPUs; no additional failures.
+- CPU checkpoint at `04:52 BST`: canonical CPU reached `34 ok` / `15 started`; `64_26` matched the selected GPU candidate `0110101010100011010111011000011100010110110110011100011001100110` (top `0.263671875`, max bond `501`, runtime `17449.0s`). Coverage stays `38/49`; allocation `928` CPUs / `5` GPUs.
+- Monitoring checkpoint at `04:57 BST`: focused collector refresh remains `38/49`, same 11 blanks; allocation `928` CPUs / `5` GPUs; no new failures.
+- CPU cap correction at `05:03 BST`: stray `tree_tensor_identity_cpu` array `34613415` briefly raised audit to `1088` CPUs / `5` GPUs. Cancelled `34613415` and dependent identity summary `34613419`; audit returned to `928` CPUs / `5` GPUs. Final rollup dependencies are clean and do not include identity.
+- CPU cap correction at `05:07 BST`: stray `tree_tensor_mid_cpu` array `34613457` briefly raised audit to `1088` CPUs / `5` GPUs. Cancelled `34613457` and dependent `tree_mid_summary` `34613470`; audit returned to `928` CPUs / `5` GPUs.
+- Full queue audit at `05:08 BST`: no remaining identity/mid jobs; only intended canonical, RCM, MST, degree, fast, retry, and dependent summary/rollup jobs are present.
+- Guard poll at `05:10 BST`: allocation `928` CPUs / `5` GPUs; no identity/mid strays; collector remains `38/49`, no new failures.
+- Guard poll at `05:12 BST`: allocation `928` CPUs / `5` GPUs; no identity/mid strays; collector remains `38/49`.
+- Monitoring checkpoint at `05:17 BST`: counts and coverage unchanged at `38/49`; allocation `928` CPUs / `5` GPUs; no strays or new failure states.
+- Monitoring checkpoint at `05:19 BST`: focused refresh remains `38/49`, same 11 blanks; allocation `928` CPUs / `5` GPUs; no new failure entries.
+- Queue adjustment at `05:19 BST`: raised degree `34612609` and fast `34612770` array throttles from `%10` to `%11` to let tail index `48` start. Immediate audit stayed `928` CPUs / `5` GPUs; both tail tasks were eligible/pending.
+- Degree fallback checkpoint at `05:25 BST`: `degree_cpu` produced `56_39` -> `01010110001001010111111111010111011000100000111011000001` (top `0.001953125`, max bond `285`, runtime `5532.81s`). Coverage increased to `39/49`; blanks now `56_38`, `64_40`, `104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`. Allocation `944` CPUs / `5` GPUs.
+- GPU checkpoint at `05:30 BST`: GPU completed `56_39` -> `10010111001101010101111111010110110110110000101001010000` (top `0.001953125`, max bond `1848`, runtime `12022.91s`), replacing the lower-priority degree fallback; GPU also validated known `16_28`. Coverage remains `39/49`.
+- Monitoring checkpoint at `05:36 BST`: counts unchanged; coverage remains `39/49` with blanks `56_38`, `64_40`, `104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`; allocation `944` CPUs / `5` GPUs; no new failures.
+- GPU checkpoint at `05:41 BST`: GPU reached `21 ok` / `5 started`; `48_37` matched canonical CPU with `100101001010001101010100100101001001000101010001` (top `0.0009765625`, max bond `512`, runtime `14706.96s`). Coverage remains `39/49`; allocation `944` CPUs / `5` GPUs.
+- CPU checkpoint at `05:46 BST`: canonical CPU reached `35 ok` / `14 started`; `56_24` matched the selected GPU/RCM candidate `10011001001111101111111011101011101101010011001011110001` (top `0.517578125`, max bond `444`, runtime `20724.18s`). Coverage remains `39/49`; allocation `928` CPUs / `5` GPUs.
+- Monitoring checkpoint at `05:48 BST`: coverage remains `39/49`; allocation `928` CPUs / `5` GPUs; degree/fast tail index `48` are now running; no new failures.
+- Monitoring checkpoint at `05:50 BST`: coverage remains `39/49`; blanks are `56_38`, `64_40`, `104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`; allocation `928` CPUs / `5` GPUs; no new failure states.
+- RCM fallback checkpoint at `05:56 BST`: coverage increased to `40/49`; `56_38` selected from `quimb_rcm_cpu` as `10011001011110000000010011010101100001001001110110110001` (top `0.001953125`, max bond `70`, runtime `19818.51s`). Remaining blanks: `64_40`, `104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`; allocation `912` CPUs / `5` GPUs.
+- Targeted fallback submission at `05:58 BST`: submitted `mid_cpu` `34613938` for indices `21,41-48%5` and `identity_cpu` `34613953` for `21,41-48%1`; final rollup `34609259` now waits on both arrays. Immediate audit: `976` CPUs / `5` GPUs, with five mid tasks running and identity pending.
+- Monitoring checkpoint at `06:03 BST`: coverage remains `40/49`; allocation `992` CPUs / `5` GPUs. Targeted queue: `mid_cpu` five running / four pending, `identity_cpu` one running / eight pending. Canonical CPU reached `36 ok` after `64_25`, which does not change selected coverage; no new failures.
+- Monitoring checkpoint at `06:09 BST`: coverage remains `40/49`; allocation `992` CPUs / `5` GPUs; counts unchanged from `06:03`; no new failures.
+- Strategy pivot at `06:17 BST`: after user guidance that `>2h` is too much, abandoned long graph-ordered MPS as the main path. Existing long arrays exited/cancelled with coverage still `40/49`. Added bounded MPO-unswapping runner/Slurm wrapper and collector support; patched `unswap.py` to make SABRE trials configurable. Submitted validation `34614140` (`16_28`) and unresolved pilot `34614141` (`64_40`), both GPU jobs with `02:00:00` limits.
+- MPO-unswap compatibility fix at `06:23 BST`: corrected known validation index (`16_28` is array `23`, not `28`). Initial jobs reached MPS extraction but failed on old Quimb `partial_trace` usage in the bundled marginal helper; cancelled old-code `64_40`, patched runner to use `compute_local_expectation(..., method="canonical")`, and resubmitted patched known `34614197` plus patched `64_40` pilot `34614198`.
+- MPO-unswap bit-order validation at `06:28 BST`: `34614197` completed in `93.26s` and matched known `16_28`; Qiskit/counts order is `permuted_measurement_order_reversed`. Patched the runner default for unknown circuits, cancelled pre-fix unresolved jobs, and submitted clean unresolved array `34614254` (`21,41-48%5`) plus dependent rollup `34614255`, all with `02:00:00` caps.
+- Report checkpoint at `06:33 BST`: generated and compiled `agent_work/tree_tensor_sim/report/tree_tensor_report.pdf` plus source/assets. Snapshot remains `40/49`; unresolved MPO-unswapping array `34614254` is running and has only `started` JSONs so far.
