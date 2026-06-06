@@ -135,3 +135,11 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - GPU retry `34624722_48` for `96_48` is still running.
 - Cancelled redundant solved-label tasks for `104_49` (`34619647_41`, `34616566_41`, `34618694_41`), then cancelled solved `48_42` task `34619647_42` and pending solved `56_43` task `34619647_43` from the `%1` extra-CPU array.
 - Latest monitor snapshot after cleanup: running CPU 924/2000, running GPU 1/5, pending CPU 166, pending GPU 0; no cap breach.
+
+## Update: 2026-06-06 21:31 BST
+
+- Cancelled all still-running Slurm jobs started by this thread: `34629015_2`, `34629015_3`, `34629015_4`, `34629015_5`, `34629015_6`, and `34624722_48`.
+- Stopped the local hourly monitor loop started by this thread (`outputs/hourly_monitor/hourly_monitor.sh`, PID `1259754`).
+- Final statuses from the cancelled or finished thread-started runs: focused-H `34626172` completed with `no_candidate`; parameter probe `34626264` completed with `no_candidate` for all remaining labels; focused-I `34629015` ended with errors or signal termination and no usable candidates; GPU retry `34624722_48` terminated with no usable `96_48` candidate.
+- Refreshed the candidate rollup and regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md`; solved count remains 44/49 with open labels `64_44`, `72_45`, `80_46`, `88_47`, and `96_48`.
+- Latest monitor snapshot after cancellation: no thread-started Slurm jobs remain active. Account-level resources are running CPU 532/2000 and running GPU 7/5; the remaining GPU pressure is from other active jobs, not this thread.

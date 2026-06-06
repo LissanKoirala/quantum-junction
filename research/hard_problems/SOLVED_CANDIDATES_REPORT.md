@@ -1,6 +1,6 @@
 # Solved Candidate Report
 
-Generated: 2026-06-06T19:20:52+0100
+Generated: 2026-06-06T21:32:20+0100
 
 Source rollup: `outputs/tree_tensor_sim/CANDIDATES.tsv`
 
