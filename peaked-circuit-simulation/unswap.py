@@ -24,13 +24,13 @@ logging.basicConfig(
 from qiskit.transpiler.passes import ElidePermutations, SabreSwap
 from qiskit.transpiler import CouplingMap
 
-def rewire_layers(ls, perm, seed=None):
+def rewire_layers(ls, perm, seed=None, sabre_trials=10000):
     nq = len(perm)
     qc = merge_layers(ls)
     qc = QuantumCircuit(nq).compose(qc, qubits=np.argsort(perm))
 
     qc = ElidePermutations()(qc)
-    ss = SabreSwap(coupling_map=CouplingMap.from_line(ls[0].num_qubits), heuristic='decay', trials=10000, seed=seed)
+    ss = SabreSwap(coupling_map=CouplingMap.from_line(ls[0].num_qubits), heuristic='decay', trials=sabre_trials, seed=seed)
     qc = ss(qc)
 
     return list(iter_layers(qc))
@@ -122,7 +122,11 @@ def unswap(mpo: MatrixProductOperator, hows=("left", "right", "both"), max_bond=
 #  MPO Cancellation + Unswapping
 # ------------------------------------------------------------------
 
-def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, unswap_threshold=1e6, early_stopping_gates=100, center_ratio=0.5, equal=False, flip_freq=None, max_its=20, to_backend=None, seed=None, hows=("both", "left", "right"), mpo_core=None):
+def count_quantum_ops(circuit):
+    ignored = {"barrier", "measure", "delay"}
+    return sum(v for k, v in circuit.count_ops().items() if k not in ignored)
+
+def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, unswap_threshold=1e6, early_stopping_gates=100, center_ratio=0.5, equal=False, flip_freq=None, max_its=20, to_backend=None, seed=None, hows=("both", "left", "right"), mpo_core=None, sabre_trials=10000):
     q2c = lambda qc: quimb_circuit(qc.decompose("unitary"), Circuit, to_backend=to_backend)
     t0 = time.perf_counter()
 
@@ -142,18 +146,18 @@ def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, un
     layers_right = list(iter_layers(circuit_right))
 
 
-    T_U = circuit.count_ops().get("unitary", 0)
-    T_UL = circuit_left.count_ops().get("unitary", 0)
-    T_UR = circuit_right.count_ops().get("unitary", 0)
+    T_U = count_quantum_ops(circuit)
+    T_UL = count_quantum_ops(circuit_left)
+    T_UR = count_quantum_ops(circuit_right)
 
-    logging.info(f"Total unitaries: {T_U} = {T_UL} (left) + {T_UR} (right)")
+    logging.info(f"Total quantum ops: {T_U} = {T_UL} (left) + {T_UR} (right)")
 
     # Rewire layers
-    layers_left = rewire_layers(layers_left, np.arange(circuit.num_qubits, dtype=int), seed=seed)
+    layers_left = rewire_layers(layers_left, np.arange(circuit.num_qubits, dtype=int), seed=seed, sabre_trials=sabre_trials)
     init_meas = layers_left[-2:]
     layers_left = layers_left[:-2]
 
-    layers_right = rewire_layers(layers_right, np.arange(circuit.num_qubits, dtype=int), seed=seed)
+    layers_right = rewire_layers(layers_right, np.arange(circuit.num_qubits, dtype=int), seed=seed, sabre_trials=sabre_trials)
     final_meas = layers_right[-2:]
     layers_right = layers_right[:-2]
 
@@ -212,7 +216,7 @@ def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, un
                 mpo_core = mpo_left
                 # Update counts
                 new_ops = dict(layers_left[ii_left].count_ops())
-                new_us = new_ops.get('unitary', 0)
+                new_us = count_quantum_ops(layers_left[ii_left])
                 new_swaps = new_ops.get('swap', 0)
                 total_u_consumed += new_us
                 current_u_consumed += new_us
@@ -225,7 +229,7 @@ def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, un
                 mpo_core = mpo_right
                 # Update counts
                 new_ops = dict(layers_right[ii_right].count_ops())
-                new_us = new_ops.get('unitary', 0)  
+                new_us = count_quantum_ops(layers_right[ii_right])
                 new_swaps = new_ops.get('swap', 0)
                 total_u_consumed += new_us
                 current_u_consumed += new_us
@@ -254,7 +258,7 @@ def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, un
                 break        
             # Rewire left circuit
             if ii_left < len(layers_left):
-                layers_left = rewire_layers(layers_left[(ii_left):] + init_meas, new_perm_left, seed=seed)
+                layers_left = rewire_layers(layers_left[(ii_left):] + init_meas, new_perm_left, seed=seed, sabre_trials=sabre_trials)
                 init_meas = layers_left[-2:]
                 layers_left = layers_left[:-2]
             else:
@@ -262,7 +266,7 @@ def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, un
             
             # Rewire right circuit
             if ii_right < len(layers_right):
-                layers_right = rewire_layers(layers_right[(ii_right):] + final_meas, new_perm_right, seed=seed)
+                layers_right = rewire_layers(layers_right[(ii_right):] + final_meas, new_perm_right, seed=seed, sabre_trials=sabre_trials)
                 final_meas = layers_right[-2:]
                 layers_right = layers_right[:-2]
             else:
@@ -331,4 +335,3 @@ def mpo_to_mps(mpo_core, layers_left, layers_right, max_bond=4096, cutoff=0.001,
 
     # Return MPS and final perm
     return final_mps, final_perm
-

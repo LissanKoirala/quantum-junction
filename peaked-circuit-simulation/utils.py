@@ -182,12 +182,17 @@ def extract_bitstring(tne):
     nq = len(tne.sites)
     pred_bs = ''
     p0s = []
+    info = {}
     for ii in range(nq):
         if tne[0].backend == 'numpy':
             Pi0 = np.array([[1., 0.],[0., 0.]])
         else:
             Pi0 = torch.tensor(np.array([[1., 0.],[0., 0.]]), device=DEVICE, dtype=torch.cfloat)
-        p0 = tne.local_expectation(Pi0, where=[ii], max_bond=2, optimize="auto", normalized=True).real.item()
+        try:
+            p0 = tne.local_expectation_canonical(Pi0, where=ii, normalized=True, info=info)
+        except AttributeError:
+            p0 = tne.local_expectation(Pi0, where=[ii], max_bond=2, optimize="auto", normalized=True)
+        p0 = p0.real.item()
         p0s.append(p0)
         pred_bs += '1' if p0 < 0.5 else '0'
         #print(f"({ii}) -> {p0:.3f} | {pred_bs}")
