@@ -87,6 +87,7 @@ def source_priority(source: str) -> int:
         "peaked_mpo_graph_tns_ultrafast_cpu_s2": 26,
         "peaked_mpo_graph_tns_veryhard_fast_cpu_f": 25,
         "peaked_mpo_graph_tns_veryhard_fast_cpu_g": 24,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_h": 24,
         "peaked_mpo_graph_tns_marginal_fallback_cpu": 23,
     }
     return priorities.get(source, 10)
@@ -582,6 +583,7 @@ def main() -> int:
     load_peaked_graph_tns_dir(root, "outputs/mpo_veryhard_ultrafast_cpu_s2", "peaked_mpo_graph_tns_ultrafast_cpu_s2", 26, evidence)
     load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_f", "peaked_mpo_graph_tns_veryhard_fast_cpu_f", 25, evidence)
     load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_g", "peaked_mpo_graph_tns_veryhard_fast_cpu_g", 24, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_h", "peaked_mpo_graph_tns_veryhard_fast_cpu_h", 24, evidence)
     load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_marginal_fallback_cpu", "peaked_mpo_graph_tns_marginal_fallback_cpu", 23, evidence)
     load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_param_probe", "peaked_mpo_graph_tns_veryhard_fast_cpu", 32, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/rcm_cpu", "quimb_rcm_cpu", 55, evidence)

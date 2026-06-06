@@ -93,3 +93,11 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` so every solved row embeds its own bitstring probability graph through a GitHub-renderable relative SVG image reference, matching 43/43 solved candidates in the current rollup.
 - The per-problem graphs use retained top-k distribution evidence where available, graph-TNS sampling JSONs for the new `48_42` and `56_43` hits, and a selected-candidate-only fallback when no retained top-k distribution exists.
 - Verified the regenerated report: 49 total rows, 43 solved rows, 43 SVG files, 43 relative SVG image references, and no blocked data-URI image references.
+
+## Update: 2026-06-06 16:21 BST
+
+- Refreshed the candidate rollup and monitor; solved count remains 43/49 with open labels `64_44`, `72_45`, `80_46`, `88_47`, `96_48`, and `104_49`.
+- Latest monitor snapshot: running CPU 1228/2000, running GPU 4/5, pending CPU 223, pending GPU 1; no cap breach and no solved-label cancellation action needed.
+- Added `jobs/run_mpo_graph_tns_veryhard_fast_h_cpu_array.slurm`, a focused CPU graph/TNS variant for array indices `2-7` with a distinct seed, center ratio, higher bond limits, and 768 samples.
+- Added `outputs/mpo_graph_tns_veryhard_fast_cpu_h` to the collector and Slurm monitor so any usable candidate from the new run is included in the rollup.
+- Submitted the new focused CPU array as Slurm job `34626172`; it is pending on priority with `%6` throttle.

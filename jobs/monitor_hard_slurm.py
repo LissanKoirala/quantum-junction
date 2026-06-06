@@ -41,6 +41,7 @@ GRAPH_DIRS = [
     "mpo_veryhard_ultrafast_cpu_s2",
     "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_veryhard_fast_cpu_g",
+    "mpo_graph_tns_veryhard_fast_cpu_h",
     "mpo_graph_tns_marginal_fallback_cpu",
     "mpo_graph_tns_param_probe",
 ]
