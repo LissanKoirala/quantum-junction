@@ -2,7 +2,7 @@ from qiskit import QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
 
 # 1) Load QASM circuit
-qasm_path = "circuit.qasm"
+qasm_path = "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-36_15.qasm"
 qc = QuantumCircuit.from_qasm_file(qasm_path)
 
 # 2) Ensure we have measurements for shot-based sampling
@@ -10,7 +10,7 @@ qc.measure_all()
 
 # 3) Configure MPS simulator
 shots = 4096
-bond_dim = 32  # try 32, 64, 128, ... (higher is usually more accurate)
+bond_dim = 128  # try 32, 64, 128, ... (higher is usually more accurate)
 
 sim = AerSimulator(
   method="matrix_product_state",
