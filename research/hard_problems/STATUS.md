@@ -90,6 +90,6 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 ## Update: 2026-06-06 16:02 BST
 
 - Added per-problem bitstring probability SVGs under `research/hard_problems/bitstring_probability_images/`.
-- Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` so every solved row embeds its own bitstring probability graph as an inline SVG data image, matching 43/43 solved candidates in the current rollup.
+- Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` so every solved row embeds its own bitstring probability graph through a GitHub-renderable relative SVG image reference, matching 43/43 solved candidates in the current rollup.
 - The per-problem graphs use retained top-k distribution evidence where available, graph-TNS sampling JSONs for the new `48_42` and `56_43` hits, and a selected-candidate-only fallback when no retained top-k distribution exists.
-- Verified the regenerated report: 49 total rows, 43 solved rows, 43 SVG files, 43 embedded SVG data images, and no external per-problem graph references.
+- Verified the regenerated report: 49 total rows, 43 solved rows, 43 SVG files, 43 relative SVG image references, and no blocked data-URI image references.

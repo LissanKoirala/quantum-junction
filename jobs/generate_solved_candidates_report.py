@@ -2,11 +2,11 @@
 from __future__ import annotations
 
 import argparse
-import base64
 import csv
 import html
 import json
 import math
+import os
 import time
 from collections import Counter
 from pathlib import Path
@@ -186,11 +186,6 @@ def svg_text(x: float, y: float, text: str, size: int = 16, weight: str = "400",
         f'<text x="{x:.1f}" y="{y:.1f}" font-family="{family}" font-size="{size}" '
         f'font-weight="{weight}" fill="#172033">{html.escape(text)}</text>'
     )
-
-
-def embedded_svg_data_uri(path: Path) -> str:
-    encoded = base64.b64encode(path.read_bytes()).decode("ascii")
-    return f"data:image/svg+xml;base64,{encoded}"
 
 
 def make_bitstring_distribution_svg(row: dict[str, Any], dist: dict[str, Any], path: Path, top_limit: int) -> None:
@@ -413,7 +408,7 @@ def markdown_report(
             "",
             "## Per-Problem Bitstring Probability Graphs",
             "",
-            "Each solved problem below has its own bitstring probability graph embedded directly in this markdown file. Where top-k distribution evidence was retained, the graph shows the ranked bitstrings and tail mass; otherwise it plots the selected bitstring probability/top fraction from the rollup. Green marks the selected candidate.",
+            "Each solved problem below embeds its own bitstring probability graph from the committed SVG artifacts. Where top-k distribution evidence was retained, the graph shows the ranked bitstrings and tail mass; otherwise it plots the selected bitstring probability/top fraction from the rollup. Green marks the selected candidate.",
             "",
             "## Solved Candidates",
             "",
@@ -424,7 +419,7 @@ def markdown_report(
     for row in solved_sorted:
         probability = fmt_probability(row.get("probability_f"))
         image_path = image_paths.get(row.get("challenge", ""))
-        image_src = embedded_svg_data_uri(image_path) if image_path else ""
+        image_src = os.path.relpath(image_path, report_path.parent) if image_path else ""
         lines.append(
             "| "
             + " | ".join(
