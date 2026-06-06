@@ -30,6 +30,7 @@ SOURCE_NAMES = [
     "mpo_graph_tns_moderate_retry_i",
     "mpo_graph_tns_moderate_retry_j",
     "mpo_graph_tns_moderate_retry_k",
+    "mpo_graph_tns_sample_top_postprocess",
     "mpo_graph_tns_veryhard_fast_cpu",
     "mpo_graph_tns_veryhard_fast_cpu_b",
     "mpo_graph_tns_veryhard_fast_cpu_c",
@@ -55,6 +56,7 @@ SOURCE_LABELS = {
     "mpo_graph_tns_moderate_retry_i": "mod_retry_i",
     "mpo_graph_tns_moderate_retry_j": "mod_retry_j",
     "mpo_graph_tns_moderate_retry_k": "mod_retry_k",
+    "mpo_graph_tns_sample_top_postprocess": "sample_top_post",
     "mpo_graph_tns_veryhard_fast_cpu": "vhard_fast",
     "mpo_graph_tns_veryhard_fast_cpu_b": "vhard_fast_b",
     "mpo_graph_tns_veryhard_fast_cpu_c": "vhard_fast_c",
@@ -101,7 +103,7 @@ CPU_JOB_IDS = [
     "34623019",
     "34620754",
     "34623041",
-    "34623110",
+    "34623306",
 ]
 GPU_JOB_IDS = ["34616526", "34622515"]
 
@@ -470,9 +472,10 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; "
-        "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`.",
+        "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; "
+        "`sample_top_post` records known-answer hits found below rank 1 in sampled distributions.",
         "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`.",
-        "- Current replacement dependency-gated jobs: `34623110` fallback array, `34623111` combined rollup.",
+        "- Current replacement dependency-gated jobs: `34623306` fallback array, `34623307` combined rollup.",
         "",
         "## Source Output Counts",
         "",

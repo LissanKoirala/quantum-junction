@@ -58,6 +58,7 @@ sources = {
     "cpu_moderate_retry_i": Path("outputs/mpo_graph_tns_moderate_retry_i/json"),
     "cpu_moderate_retry_j": Path("outputs/mpo_graph_tns_moderate_retry_j/json"),
     "cpu_moderate_retry_k": Path("outputs/mpo_graph_tns_moderate_retry_k/json"),
+    "cpu_sample_top_postprocess": Path("outputs/mpo_graph_tns_sample_top_postprocess/json"),
     "cpu_veryhard_fast": Path("outputs/mpo_graph_tns_veryhard_fast_cpu/json"),
     "cpu_veryhard_fast_b": Path("outputs/mpo_graph_tns_veryhard_fast_cpu_b/json"),
     "cpu_veryhard_fast_c": Path("outputs/mpo_graph_tns_veryhard_fast_cpu_c/json"),

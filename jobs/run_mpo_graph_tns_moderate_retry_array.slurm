@@ -103,6 +103,7 @@ coverage_dirs = [
     Path("outputs/mpo_graph_tns_moderate_retry_i/json"),
     Path("outputs/mpo_graph_tns_moderate_retry_j/json"),
     Path("outputs/mpo_graph_tns_moderate_retry_k/json"),
+    Path("outputs/mpo_graph_tns_sample_top_postprocess/json"),
 ]
 covered = False
 for directory in coverage_dirs:

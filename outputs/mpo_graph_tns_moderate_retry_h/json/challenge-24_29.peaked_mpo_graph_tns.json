@@ -1,7 +1,6 @@
 {
-  "cancelled_at": "2026-06-06T14:38:56+0100",
-  "challenge_id": 28,
-  "challenge_label": "16_28",
+  "challenge_id": 29,
+  "challenge_label": "24_29",
   "difficulty": "moderate",
   "env": {
     "CUDA_VISIBLE_DEVICES": null,
@@ -9,17 +8,15 @@
     "OMP_NUM_THREADS": "16",
     "OPENBLAS_NUM_THREADS": "16",
     "SLURM_ARRAY_JOB_ID": "34623041",
-    "SLURM_ARRAY_TASK_ID": "0",
+    "SLURM_ARRAY_TASK_ID": "1",
     "SLURM_CPUS_PER_TASK": "16",
-    "SLURM_JOB_ID": "34623069",
+    "SLURM_JOB_ID": "34623200",
     "SLURM_JOB_PARTITION": "interruptible_cpu"
   },
-  "error": "Cancelled after sample_top_postprocess produced a correct candidate for 16_28.",
-  "error_type": "SlurmCancelledForSolvedLabel",
   "method": "peaked_mpo_graph_tns",
   "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
-  "output_json": "outputs/mpo_graph_tns_moderate_retry_h/json/challenge-16_28.peaked_mpo_graph_tns.json",
-  "output_stats_jsonl": "outputs/mpo_graph_tns_moderate_retry_h/stats/challenge-16_28.peaked_mpo_graph_tns.stats.jsonl",
+  "output_json": "outputs/mpo_graph_tns_moderate_retry_h/json/challenge-24_29.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_moderate_retry_h/stats/challenge-24_29.peaked_mpo_graph_tns.stats.jsonl",
   "parameters": {
     "backend_requested": "numpy",
     "center_ratio": 0.5,
@@ -42,10 +39,10 @@
     "seed": 20260613,
     "unswap_threshold": 1000000.0
   },
-  "qasm": "challenges/moderate/challenge-16_28.qasm",
+  "qasm": "challenges/moderate/challenge-24_29.qasm",
   "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/klalee-graph",
-  "started_at": "2026-06-06T14:32:42+0100",
-  "status": "cancelled",
+  "started_at": "2026-06-06T14:36:18+0100",
+  "status": "started",
   "versions": {
     "networkx": "3.4.2",
     "numpy": "2.2.6",

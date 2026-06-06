@@ -1,22 +1,22 @@
 # MPO Graph TNS Current Report
 
-Generated: 2026-06-06T14:34:23+01:00
+Generated: 2026-06-06T14:39:48+01:00
 
 This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. The overview table embeds a distribution image thumbnail for every challenge, and each challenge detail includes the full SVG. Challenges without sampled results include a placeholder image.
 
 ## Summary
 
-- Usable coverage: 41 / 49
-- Missing or only incorrect: 16_28, 24_29, 104_49, 64_44, 72_45, 80_46, 88_47, 96_48
+- Usable coverage: 42 / 49
+- Missing or only incorrect: 24_29, 104_49, 64_44, 72_45, 80_46, 88_47, 96_48
 - Known incorrect completed outputs present: 16_28, 24_29, 28_4
-- Workload CPU running now: 52 tasks, 1528 cores
+- Workload CPU running now: 53 tasks, 1544 cores
 - GPU array running now: 5 tasks
 - Chosen-record status counts: {'ok': 43, 'started': 6}
-- Chosen-record validation counts: {'correct': 8, 'unknown': 33, 'incorrect': 2, 'None': 6}
-- Chosen-record source counts: {'all_gpu': 36, 'all_cpu': 11, 'vhard_fast_b': 2}
-- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; `34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`.
+- Chosen-record validation counts: {'correct': 9, 'unknown': 33, 'incorrect': 1, 'None': 6}
+- Chosen-record source counts: {'all_gpu': 35, 'sample_top_post': 1, 'all_cpu': 11, 'vhard_fast_b': 2}
+- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; `34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; `sample_top_post` records known-answer hits found below rank 1 in sampled distributions.
 - Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`.
-- Current replacement dependency-gated jobs: `34623110` fallback array, `34623111` combined rollup.
+- Current replacement dependency-gated jobs: `34623306` fallback array, `34623307` combined rollup.
 
 ## Source Output Counts
 
@@ -34,10 +34,11 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | `extra_cpu_e` | 2 | `{'started': 2}` | `{'None': 2}` |
 | `extra_cpu_f` | 10 | `{'started': 9, 'ok': 1}` | `{'None': 9, 'incorrect': 1}` |
 | `extra_cpu_g` | 5 | `{'started': 5}` | `{'None': 5}` |
-| `mod_retry_h` | 1 | `{'started': 1}` | `{'None': 1}` |
-| `mod_retry_i` | 0 | `{}` | `{}` |
+| `mod_retry_h` | 2 | `{'cancelled': 1, 'started': 1}` | `{'None': 2}` |
+| `mod_retry_i` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `mod_retry_j` | 0 | `{}` | `{}` |
 | `mod_retry_k` | 0 | `{}` | `{}` |
+| `sample_top_post` | 1 | `{'ok': 1}` | `{'correct': 1}` |
 | `vhard_fast` | 8 | `{'started': 3, 'cancelled': 2, 'preempted': 3}` | `{'None': 8}` |
 | `vhard_fast_b` | 8 | `{'started': 4, 'ok': 2, 'error': 2}` | `{'None': 6, 'unknown': 2}` |
 | `vhard_fast_c` | 6 | `{'started': 6}` | `{'None': 6}` |
@@ -73,7 +74,7 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | 20 | `56_39` | hard | all_gpu | ok | unknown | `10010111001101010101111111010110110100010000111001010000` | 0.004 | 687.3 | <img src="mpo_graph_tns_distribution_images/challenge-56_39.bitstring_distribution.svg" alt="Bitstring distribution for 56_39" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-56_39.peaked_mpo_graph_tns.json` |
 | 21 | `64_40` | hard | all_gpu | ok | unknown | `1010010110110110010100101100010010000000101110110101100101001010` | 0.001 | 1794.7 | <img src="mpo_graph_tns_distribution_images/challenge-64_40.bitstring_distribution.svg" alt="Bitstring distribution for 64_40" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-64_40.peaked_mpo_graph_tns.json` |
 | 22 | `64_41` | hard | all_gpu | ok | unknown | `1111000100010010110100010011110011000000000011011001110011010011` | 0.001 | 1415.4 | <img src="mpo_graph_tns_distribution_images/challenge-64_41.bitstring_distribution.svg" alt="Bitstring distribution for 64_41" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-64_41.peaked_mpo_graph_tns.json` |
-| 23 | `16_28` | moderate | all_gpu | ok | incorrect | `1111001011011100` | 0.015 | 541.8 | <img src="mpo_graph_tns_distribution_images/challenge-16_28.bitstring_distribution.svg" alt="Bitstring distribution for 16_28" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-16_28.peaked_mpo_graph_tns.json` |
+| 23 | `16_28` | moderate | sample_top_post | ok | correct | `1101001111011100` | 0.033 | 3478.3 | <img src="mpo_graph_tns_distribution_images/challenge-16_28.bitstring_distribution.svg" alt="Bitstring distribution for 16_28" width="360"> | `outputs/mpo_graph_tns_sample_top_postprocess/json/challenge-16_28.peaked_mpo_graph_tns.json` |
 | 24 | `24_29` | moderate | all_gpu | ok | incorrect | `011100010111101001101011` | 0.003 | 608.0 | <img src="mpo_graph_tns_distribution_images/challenge-24_29.bitstring_distribution.svg" alt="Bitstring distribution for 24_29" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-24_29.peaked_mpo_graph_tns.json` |
 | 25 | `32_30` | moderate | all_gpu | ok | unknown | `10111000010011110111101110010110` | 0.003 | 900.0 | <img src="mpo_graph_tns_distribution_images/challenge-32_30.bitstring_distribution.svg" alt="Bitstring distribution for 32_30" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-32_30.peaked_mpo_graph_tns.json` |
 | 26 | `48_31` | moderate | all_gpu | ok | unknown | `101100111000101011111111101010111011011000110110` | 0.386 | 524.8 | <img src="mpo_graph_tns_distribution_images/challenge-48_31.bitstring_distribution.svg" alt="Bitstring distribution for 48_31" width="360"> | `outputs/mpo_graph_tns_all/json/challenge-48_31.peaked_mpo_graph_tns.json` |
@@ -798,14 +799,13 @@ Bitstring distribution, top 10 of 1000 samples:
 ### 23. `16_28` (moderate)
 
 - QASM: `challenges/moderate/challenge-16_28.qasm`
-- Chosen source: `all_gpu`
-- Status: `ok`; validation: `incorrect`
-- Final candidate, Qiskit order: `1111001011011100`
+- Chosen source: `sample_top_post`
+- Status: `ok`; validation: `correct`
+- Final candidate, Qiskit order: `1101001111011100`
 - Known answer, Qiskit order: `1101001111011100`
-- Runtime seconds: 541.8
-- JSON: `outputs/mpo_graph_tns_all/json/challenge-16_28.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_d:started, extra_cpu_f:started, extra_cpu_g:started, mod_retry_h:started
-- Marginal P(0) raw-site prefix: `0.515, 0.320, 0.518, 0.500, 0.145, 0.147, 0.940, 0.500, 0.269, 0.254, 0.500, 0.990, ...`
+- Runtime seconds: 3478.3
+- JSON: `outputs/mpo_graph_tns_sample_top_postprocess/json/challenge-16_28.peaked_mpo_graph_tns.json`
+- Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_d:started, extra_cpu_f:started, extra_cpu_g:started, mod_retry_h:cancelled, sample_top_post:ok/correct
 
 Bitstring distribution image:
 
@@ -815,16 +815,16 @@ Bitstring distribution, top 10 of 1000 samples:
 
 | rank | qiskit_order | count | fraction | permuted_measurement_order | raw_site_order |
 |---:|---|---:|---:|---|---|
-| 1 | `1111001011011100` | 15 | 0.015 | `0011101101001111` | `1101110111000110` |
-| 2 | `1101011001011100` | 14 | 0.014 | `0011101001101011` | `0110110111000110` |
-| 3 | `1101011101011000` | 13 | 0.013 | `0001101011101011` | `0110110011100110` |
-| 4 | `1111001011011000` | 12 | 0.012 | `0001101101001111` | `1101110011000110` |
-| 5 | `1111001101011100` | 11 | 0.011 | `0011101011001111` | `1100110111100110` |
-| 6 | `1101011011011000` | 11 | 0.011 | `0001101101101011` | `0111110011000110` |
-| 7 | `1101011111011110` | 11 | 0.011 | `0111101111101011` | `0111110111101110` |
-| 8 | `1111001111011010` | 10 | 0.010 | `0101101111001111` | `1101110011101110` |
-| 9 | `1111001001011000` | 9 | 0.009 | `0001101001001111` | `1100110011000110` |
-| 10 | `1111001001011100` | 9 | 0.009 | `0011101001001111` | `1100110111000110` |
+| 1 | `0111001111011100` | 33 | 0.033 | `0011101111001110` | `0011011110111001` |
+| 2 | `0101101111011100` | 33 | 0.033 | `0011101111011010` | `0011011111111000` |
+| 3 | `0101001111011100` | 30 | 0.030 | `0011101111001010` | `0011011110111000` |
+| 4 | `0111101111011110` | 29 | 0.029 | `0111101111011110` | `0011111111111001` |
+| 5 | `1111101111011100` | 28 | 0.028 | `0011101111011111` | `0011011111111011` |
+| 6 | `0111001111011110` | 27 | 0.027 | `0111101111001110` | `0011111110111001` |
+| 7 | `0111101111011100` | 26 | 0.026 | `0011101111011110` | `0011011111111001` |
+| 8 | `1111101111011110` | 24 | 0.024 | `0111101111011111` | `0011111111111011` |
+| 9 | `1101101111011100` | 23 | 0.023 | `0011101111011011` | `0011011111111010` |
+| 10 | `0101101111011110` | 23 | 0.023 | `0111101111011010` | `0011111111111000` |
 
 ### 24. `24_29` (moderate)
 
@@ -835,7 +835,7 @@ Bitstring distribution, top 10 of 1000 samples:
 - Known answer, Qiskit order: `110100010111100001001001`
 - Runtime seconds: 608.0
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-24_29.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started, extra_cpu_f:ok/incorrect, extra_cpu_g:started
+- Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started, extra_cpu_f:ok/incorrect, extra_cpu_g:started, mod_retry_h:started, mod_retry_i:started
 - Marginal P(0) raw-site prefix: `0.756, 0.385, 0.057, 0.779, 0.354, 0.343, 0.723, 0.500, 0.500, 0.500, 0.500, 0.026, ...`
 
 Bitstring distribution image:
