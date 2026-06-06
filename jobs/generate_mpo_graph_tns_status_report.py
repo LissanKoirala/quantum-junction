@@ -27,6 +27,7 @@ SOURCE_NAMES = [
     "mpo_graph_tns_extra_cpu_g",
     "mpo_graph_tns_veryhard_fast_cpu",
     "mpo_graph_tns_veryhard_fast_cpu_b",
+    "mpo_graph_tns_veryhard_fast_cpu_c",
     "mpo_graph_tns_combined",
 ]
 SOURCE_LABELS = {
@@ -43,11 +44,13 @@ SOURCE_LABELS = {
     "mpo_graph_tns_extra_cpu_g": "extra_cpu_g",
     "mpo_graph_tns_veryhard_fast_cpu": "vhard_fast",
     "mpo_graph_tns_veryhard_fast_cpu_b": "vhard_fast_b",
+    "mpo_graph_tns_veryhard_fast_cpu_c": "vhard_fast_c",
     "mpo_graph_tns_combined": "combined",
 }
 EXTERNAL_SYNC_SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu",
     "mpo_graph_tns_veryhard_fast_cpu_b",
+    "mpo_graph_tns_veryhard_fast_cpu_c",
 ]
 CPU_JOB_IDS = [
     "34616566",
@@ -72,8 +75,9 @@ CPU_JOB_IDS = [
     "34619926",
     "34620010",
     "34620567",
+    "34621962",
     "34620754",
-    "34621642",
+    "34622321",
 ]
 GPU_JOB_ID = "34616526"
 
@@ -442,8 +446,8 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set.",
-        "- Imported external fast very-hard retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`.",
-        "- Current replacement dependency-gated jobs: `34621642` fallback array, `34621643` combined rollup.",
+        "- Imported external fast very-hard retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`.",
+        "- Current replacement dependency-gated jobs: `34622321` fallback array, `34622322` combined rollup.",
         "",
         "## Source Output Counts",
         "",

@@ -1,4 +1,6 @@
 {
+  "cancel_reason": "candidate already selected in outputs/tree_tensor_sim/CANDIDATES.tsv",
+  "cancelled_at": "2026-06-06T14:08:28+0100",
   "challenge_id": 43,
   "challenge_label": "56_43",
   "difficulty": "very_hard",
@@ -13,6 +15,7 @@
     "SLURM_JOB_ID": "34620567",
     "SLURM_JOB_PARTITION": "interruptible_cpu"
   },
+  "error_type": "SlurmCancelledForSolvedLabel",
   "method": "peaked_mpo_graph_tns",
   "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
   "output_json": "outputs/mpo_graph_tns_veryhard_fast_cpu/json/challenge-56_43.peaked_mpo_graph_tns.json",
@@ -42,7 +45,7 @@
   "qasm": "challenges/very_hard/challenge-56_43.qasm",
   "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems",
   "started_at": "2026-06-06T13:26:24+0100",
-  "status": "started",
+  "status": "cancelled",
   "versions": {
     "networkx": "3.4.2",
     "numpy": "2.2.6",
