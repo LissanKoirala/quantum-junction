@@ -1,0 +1,189 @@
+\section{Context of the Challenge}
+
+\subsection{Context}
+
+The QMill Quantum Peak Challenge sits in the wider context of quantum sampling
+benchmarks. In random circuit sampling, a quantum circuit is applied to an
+initial state, usually \(\ket{0}^{\otimes n}\), and the circuit is run many
+times to generate samples from its output probability distribution. The point of
+such tasks is not usually to solve a practical application directly, but to test
+whether a quantum device can produce samples from a distribution that is hard
+for a classical computer to reproduce.
+
+For a circuit \(C\), the ideal output state is
+\[
+\ket{\psi} = C\ket{0}^{\otimes n}
+= \sum_x a_x \ket{x},
+\]
+where \(x\) runs over all \(2^n\) possible bitstrings. The probability of
+measuring bitstring \(x\) is
+\[
+P(x) = |a_x|^2.
+\]
+A quantum computer does not output the full list of amplitudes \(a_x\). It
+physically evolves the quantum state and, when measured, returns one bitstring
+sampled according to \(P(x)\). To estimate the distribution, the circuit must be
+run many times.
+
+A classical simulator treats the same process differently. It also starts from
+\(\ket{0}^{\otimes n}\), but it represents the state explicitly by storing and
+updating the amplitudes \(a_x\). Each quantum gate is applied as a matrix
+operation on this stored state. Since there are \(2^n\) amplitudes, exact
+statevector simulation becomes infeasible as the number of qubits grows. This is
+why large, deep, highly entangling quantum circuits can become difficult to
+simulate classically.
+
+The QMill challenge uses a related but more structured task: peaked circuits.
+A peaked circuit is one whose output distribution is concentrated around a
+hidden bitstring \(x_\mathrm{peak}\), so that
+\[
+P(x_\mathrm{peak}) \gg P(y)
+\]
+for most other bitstrings \(y\). Unlike ordinary random circuit sampling, where
+there is no single correct output, the goal here is to recover the most likely
+bitstring:
+\[
+x_\mathrm{peak} = \arg\max_x P(x).
+\]
+
+In the challenge, the peak is created using layers of \(R_X\) rotations. An
+\(R_X(0)\) gate leaves a qubit unchanged, while an \(R_X(\pi)\) gate flips
+\(\ket{0}\) to \(\ket{1}\), up to an irrelevant phase. Therefore, a column of
+\(R_X(0)\) and \(R_X(\pi)\) gates encodes a target bitstring. This simple
+structure is then hidden inside larger circuit blocks of the form
+\[
+U_i U_i^\dagger = I,
+\]
+which are identity operations because \(U_i^\dagger\) undoes \(U_i\). The
+payload is split across two \(R_X\)-only layers, \(P_1\) and \(P_2\), chosen so
+that rotations on the same qubit merge as
+\[
+R_X(a)R_X(b)=R_X(a+b).
+\]
+Thus, after simplification, the combined effect of \(P_1\) and \(P_2\) is the
+hidden target layer of \(R_X(0)\) and \(R_X(\pi)\) gates.
+
+The purpose of the hackathon is therefore not simply to brute-force simulate a
+quantum circuit. The real task is to exploit circuit structure. Easier instances
+can be solved by exact statevector simulation or matrix-product-state sampling.
+Harder instances require smarter methods: circuit simplification, rotation
+merging, cancellation of inverse blocks, tensor-network simulation, or other
+de-obfuscation strategies. This connects directly to QMill's broader mission:
+using AI and compiler techniques to identify hidden structure in quantum
+circuits, reduce gate count and circuit depth, and make quantum circuits more
+practical to run on real hardware.
+
+\subsection{The Challenge}
+
+The scrambled circuit only looks different, but physically does the same thing. The probability distribution made by the actual and scrambled circuit is the same and we want to know what the most likely bit string is from 0.
+
+The reason for scrambling is to make more computational hard and also so we can't just read what the hidden bitstring is from the pattern of rx(0) and rx(pi).
+
+We can't just run the scrambled circuit because ti gets too complex in later challenges and we need to approximate it.
+
+
+\subsection{Statevector, Quantum Hardware, and Tensor-Network Simulation}
+
+For the statevector approach, we use Qiskit as a classical simulator. The
+simulator starts from the all-zero input state,
+\[
+\ket{0}^{\otimes n},
+\]
+and applies the gates in the circuit numerically. The final state is
+\[
+\ket{\psi} = C\ket{0}^{\otimes n}
+= \sum_x a_x \ket{x},
+\]
+where \(a_x\) is the amplitude of bitstring \(x\). The probability of measuring
+\(x\) is then
+\[
+P(x) = |a_x|^2.
+\]
+The statevector simulator stores all \(2^n\) amplitudes and applies the circuit
+gates exactly, up to floating-point precision. It is not connected to a real
+quantum computer, and no hardware noise is included unless we explicitly add a
+noise model. Therefore, the result is the ideal noiseless output distribution of
+the circuit.
+
+A real quantum computer behaves differently. It physically prepares
+\(\ket{0}^{\otimes n}\), applies the circuit, and then measures. Each run gives
+one sampled bitstring. To estimate the output distribution, the circuit must be
+run many times. Unlike statevector simulation, real hardware is affected by gate
+errors, decoherence, crosstalk, and readout errors. These errors can reduce the
+probability of the true peak bitstring and spread probability mass over many
+incorrect outputs. In a peaked-circuit challenge, this means hardware noise can
+make the peak harder to identify.
+
+Circuit depth is important because noise accumulates as more gates are applied.
+A deeper circuit gives the hardware more opportunities to make errors. Therefore,
+reducing the circuit depth can make the peak easier to recover:
+\[
+\text{lower depth}
+\quad \Rightarrow \quad
+\text{less accumulated noise}
+\quad \Rightarrow \quad
+\text{clearer peak}.
+\]
+This is directly connected to QMill's broader goal of circuit compression:
+shorter and shallower circuits are generally more practical to run on noisy
+quantum hardware.
+
+For larger circuits, exact statevector simulation becomes infeasible because it
+requires storing \(2^n\) amplitudes. Tensor-network methods, such as matrix
+product states (MPS) and matrix product operators (MPO), provide a compressed
+classical representation of the state or circuit. These methods still apply the
+ideal gates, but they do not store the full statevector. Instead, they store a
+compressed tensor network whose cost is controlled by the bond dimension
+\(\chi\).
+
+The reason MPS can fail even with ideal gates is not hardware noise. It fails
+when the circuit generates too much entanglement, or when the chosen tensor
+network ordering makes the state appear highly entangled. In an MPS, the bond
+dimension required across a cut grows with the amount of correlation or
+entanglement between the two sides of that cut. If \(\chi\) becomes too large,
+the simulation becomes too expensive. If we cap \(\chi\), the MPS becomes an
+approximation and may lose important information about the output distribution.
+
+Thus, the failure modes are different:
+\[
+\text{statevector simulation fails because } 2^n \text{ is too large,}
+\]
+\[
+\text{MPS/MPO simulation fails because the required bond dimension becomes too large,}
+\]
+\[
+\text{quantum hardware fails because noise can wash out the peak.}
+\]
+
+In the QMill challenge, the aim is therefore not simply to run the largest
+simulation possible. The better strategy is to exploit hidden circuit structure:
+cancel inverse blocks, merge rotations, undo hidden permutations, reduce
+effective depth, and then use simulation or sampling to recover the peak
+bitstring.
+
+
+Kremer and Dupuis do not remain exactly exact in the strict mathematical sense.
+Their method keeps the MPO bond dimension small by exploiting the hidden
+\(UU^\dagger\) mirror structure and by using unswapping to extract hidden
+permutations. However, they also apply SVD compression with a small singular
+value cutoff \(\epsilon\). This cutoff discards negligible singular values and is
+the only source of approximation in their method. In the limit
+\(\epsilon \to 0\), the contraction would become exact, but the required bond
+dimension and computational cost would increase.
+
+\subsection{Tensor Networks}
+
+\begin{itemize}
+    \item How do they fail. What do they look like when they fail.
+\end{itemize}
+
+How does the Qiskit tensor networks work.
+
+What does the code for the Kremer Depuis mpo look like.
+
+
+
+
+
+
+
