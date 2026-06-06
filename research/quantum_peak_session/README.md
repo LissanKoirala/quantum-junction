@@ -29,6 +29,9 @@ The selected set combines exact statevector baselines with graph-ordered Quimb M
 - `reports/session_report/`: compiled PDF, TeX source, build scripts, figures, and tables for the full session report.
 - `reports/tree_tensor_report/`: compiled PDF, TeX source, report data, figure-generation script, and figures for the focused tensor-network report.
 - `results/current_candidates/`: current selected candidates and evidence rollup.
+- `results_index/`: normalized challenge/method lookup tables generated from this package's collector data and available raw outputs in the main checkout.
 - `logs/`: condensed run logs from the tree-tensor worktree.
 
 Heavy raw Slurm output directories are intentionally not duplicated here.
+
+For new method families, update `research/_shared/scripts/build_results_index.py`, rerun it, and commit the refreshed `results_index/` folder. The schema is documented in `research/_shared/schemas/results_index_schema.md`.

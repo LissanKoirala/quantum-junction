@@ -1,0 +1,50 @@
+challenge	difficulty	qubits	qasm	selected_bitstring	selected_method	validation	top_fraction	evidence_count
+8_1	very easy	8	challenges/very easy/challenge-8_1.qasm	10101101	exact_statevector	exact	0.9126378477396644	2
+16_2	very easy	16	challenges/very easy/challenge-16_2.qasm	1010101011001000	exact_statevector	exact	0.46696962421756005	2
+24_3	very easy	24	challenges/very easy/challenge-24_3.qasm	011110010000101010001000	exact_statevector	exact	0.7239837426523221	2
+28_4	very easy	28	challenges/very easy/challenge-28_4.qasm	1111111000101010110110011111	exact_statevector	exact	0.3511118993870582	2
+32_5	very easy	32	challenges/very easy/challenge-32_5.qasm	00111000101010100001000000010000	quimb_cpu_all	unknown	0.5322265625	1
+36_6	very easy	36	challenges/very easy/challenge-36_6.qasm	100110100111101001001101110011001000	quimb_cpu_all	unknown	0.6884765625	1
+40_7	very easy	40	challenges/very easy/challenge-40_7.qasm	0110111011010001010011111110010011000111	quimb_cpu_all	unknown	0.87890625	1
+48_8	very easy	48	challenges/very easy/challenge-48_8.qasm	000100100110111001001111111100101011001110010100	quimb_cpu_all	unknown	0.697265625	1
+56_9	very easy	56	challenges/very easy/challenge-56_9.qasm	10010110101100101110100110010110011101100110001101010100	quimb_cpu_all	unknown	0.78125	1
+64_10	very easy	64	challenges/very easy/challenge-64_10.qasm	0011010010110001110010111001100100101100010111110110010100101011	quimb_cpu_all	unknown	0.787109375	1
+8_11	easy	8	challenges/easy/challenge-8_11.qasm	01001110	exact_statevector	exact	0.5454480750007801	4
+16_12	easy	16	challenges/easy/challenge-16_12.qasm	1111000101101011	exact_statevector	exact	0.46653673211917734	4
+24_13	easy	24	challenges/easy/challenge-24_13.qasm	111110011111001011010001	exact_statevector	exact	0.5912482860105316	3
+32_14	easy	32	challenges/easy/challenge-32_14.qasm	00000101001101000001011111101100	quimb_gpu_all	unknown	0.4716796875	3
+36_15	easy	36	challenges/easy/challenge-36_15.qasm	110110011011111111011001011110101111	quimb_gpu_all	unknown	0.03125	3
+40_16	easy	40	challenges/easy/challenge-40_16.qasm	0101110101001110011000111011100110010110	quimb_gpu_all	unknown	0.4423828125	4
+40_17	easy	40	challenges/easy/challenge-40_17.qasm	0010010101010111001001000010001000001001	quimb_gpu_all	unknown	0.5458984375	4
+40_18	easy	40	challenges/easy/challenge-40_18.qasm	0100000110010010001101111000111111001110	quimb_gpu_all	unknown	0.439453125	3
+48_19	easy	48	challenges/easy/challenge-48_19.qasm	011001010111101100111110000001011101001110010000	quimb_gpu_all	unknown	0.673828125	2
+48_20	easy	48	challenges/easy/challenge-48_20.qasm	101010100101001010000110101000001011110010000000	quimb_gpu_all	unknown	0.6123046875	3
+48_21	easy	48	challenges/easy/challenge-48_21.qasm	111010101110101011110101000001101000100000001001	quimb_gpu_all	unknown	0.44140625	3
+56_22	easy	56	challenges/easy/challenge-56_22.qasm	11100100100110010011110010110110011000000100010111111011	quimb_gpu_all	unknown	0.58984375	2
+56_23	easy	56	challenges/easy/challenge-56_23.qasm	01001101001111111100000101001110111011100011111100001101	quimb_gpu_all	unknown	0.4970703125	2
+56_24	easy	56	challenges/easy/challenge-56_24.qasm	10011001001111101111111011101011101101010011001011110001	quimb_gpu_all	unknown	0.517578125	4
+64_25	easy	64	challenges/easy/challenge-64_25.qasm	0011101111110000110110111101011000010000010100110111000001111011	quimb_gpu_all	unknown	0.396484375	4
+64_26	easy	64	challenges/easy/challenge-64_26.qasm	0110101010100011010111011000011100010110110110011100011001100110	quimb_gpu_all	unknown	0.26171875	3
+8_27	moderate	8	challenges/moderate/challenge-8_27.qasm	11001001	exact_statevector	exact	0.2879073385472982	2
+16_28	moderate	16	challenges/moderate/challenge-16_28.qasm	1101001111011100	exact_statevector	exact	0.3962059348034266	6
+24_29	moderate	24	challenges/moderate/challenge-24_29.qasm	110100010111100001001001	exact_statevector	exact	0.3900966376778103	4
+32_30	moderate	32	challenges/moderate/challenge-32_30.qasm	10011000010011110111101111010111	quimb_cpu_all	unknown	0.1357421875	2
+48_31	moderate	48	challenges/moderate/challenge-48_31.qasm	101100111000101011111111101010111011011000110110	quimb_cpu_all	unknown	0.4208984375	2
+48_32	moderate	48	challenges/moderate/challenge-48_32.qasm	011101010111011110001110010101010101101110001110	quimb_cpu_all	unknown	0.265625	2
+56_33	moderate	56	challenges/moderate/challenge-56_33.qasm	11001001100101001111010100100010010101111111011101010000	quimb_cpu_all	unknown	0.041015625	2
+64_34	moderate	64	challenges/moderate/challenge-64_34.qasm	0011010100010011001110101110100101001011001011011001111011100110	quimb_cpu_all	unknown	0.1630859375	2
+40_35	hard	40	challenges/hard/challenge-40_35.qasm	0101100110101111111000010101001110001001	quimb_gpu_all	unknown	0.001953125	3
+48_36	hard	48	challenges/hard/challenge-48_36.qasm	001111011011001100110011001000101001101010111000	quimb_gpu_all	unknown	0.0078125	3
+48_37	hard	48	challenges/hard/challenge-48_37.qasm	100101001010001101010100100101001001000101010001	quimb_gpu_all	unknown	0.0009765625	3
+56_38	hard	56	challenges/hard/challenge-56_38.qasm	10011001011110000000010011010101100001001001110110110001	quimb_rcm_cpu	unknown	0.001953125	1
+56_39	hard	56	challenges/hard/challenge-56_39.qasm	10010111001101010101111111010110110110110000101001010000	quimb_gpu_all	unknown	0.001953125	3
+64_40	hard	64	challenges/hard/challenge-64_40.qasm	1011010011100010110100000000110000111001111010100100110100001100	peaked_mpo_unswap_gpu	unknown	0.001	1
+64_41	hard	64	challenges/hard/challenge-64_41.qasm	0001000111010011100110010011110111000000100011010001101010110010	aer_mps_pilot	unstable_top1_vs_aggregate	0.167	1
+48_42	very_hard	48	challenges/very_hard/challenge-48_42.qasm					0
+56_43	very_hard	56	challenges/very_hard/challenge-56_43.qasm					0
+64_44	very_hard	64	challenges/very_hard/challenge-64_44.qasm					0
+72_45	very_hard	72	challenges/very_hard/challenge-72_45.qasm					0
+80_46	very_hard	80	challenges/very_hard/challenge-80_46.qasm					0
+88_47	very_hard	88	challenges/very_hard/challenge-88_47.qasm					0
+96_48	very_hard	96	challenges/very_hard/challenge-96_48.qasm					0
+104_49	very_hard	104	challenges/very_hard/challenge-104_49.qasm					0

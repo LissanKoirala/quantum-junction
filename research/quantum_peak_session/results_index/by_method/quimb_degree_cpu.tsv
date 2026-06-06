@@ -1,0 +1,2 @@
+session	challenge	difficulty	qubits	method	run_id	rank_type	rank	bitstring_qiskit	score_type	score	count	support	fraction	selected	validation	status	source_path	notes
+quantum_peak_session	56_39	hard	56	quimb_degree_cpu	collector_evidence:56_39:2	collector_evidence	2	01010110001001010111111111010111011000100000111011000001	sample_fraction	0.001953125			0.001953125	0	unknown	unknown	outputs/tree_tensor_sim/degree_cpu/json/challenge-56_39.quimb_tree_graph_mps.json	collector priority 53
