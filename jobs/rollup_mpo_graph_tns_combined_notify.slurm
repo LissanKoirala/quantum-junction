@@ -27,7 +27,7 @@ OUT_DIR="outputs/mpo_graph_tns_combined"
 mkdir -p "$OUT_DIR"/logs
 
 HARD_ROOT="/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems"
-for SOURCE_NAME in mpo_graph_tns_veryhard_fast_cpu mpo_graph_tns_veryhard_fast_cpu_b mpo_graph_tns_veryhard_fast_cpu_c; do
+for SOURCE_NAME in mpo_graph_tns_veryhard_fast_cpu mpo_graph_tns_veryhard_fast_cpu_b mpo_graph_tns_veryhard_fast_cpu_c mpo_graph_tns_veryhard_fast_cpu_d mpo_graph_tns_veryhard_fast_cpu_e; do
   mkdir -p "outputs/$SOURCE_NAME"/{json,stats}
   cp -a "$HARD_ROOT/outputs/$SOURCE_NAME/json/." "outputs/$SOURCE_NAME/json/" 2>/dev/null || true
   cp -a "$HARD_ROOT/outputs/$SOURCE_NAME/stats/." "outputs/$SOURCE_NAME/stats/" 2>/dev/null || true
@@ -56,6 +56,8 @@ sources = {
     "cpu_veryhard_fast": Path("outputs/mpo_graph_tns_veryhard_fast_cpu/json"),
     "cpu_veryhard_fast_b": Path("outputs/mpo_graph_tns_veryhard_fast_cpu_b/json"),
     "cpu_veryhard_fast_c": Path("outputs/mpo_graph_tns_veryhard_fast_cpu_c/json"),
+    "cpu_veryhard_fast_d": Path("outputs/mpo_graph_tns_veryhard_fast_cpu_d/json"),
+    "cpu_veryhard_fast_e": Path("outputs/mpo_graph_tns_veryhard_fast_cpu_e/json"),
 }
 expected_paths = sorted(Path("challenges").glob("*/*.qasm"), key=lambda p: (p.parent.name, p.name))
 expected = []
