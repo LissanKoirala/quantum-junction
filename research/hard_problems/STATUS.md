@@ -108,3 +108,4 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Submitted an additional collector-covered parameter probe as Slurm job `34626264`, writing to `outputs/mpo_graph_tns_param_probe`, using seed `20260667`, center ratio `0.75`, bond limits `1024/512`, cutoff `0.015`, and 768 samples.
 - Initial `34626264` state: tasks `2`, `3`, and `7` running; tasks `4`, `5`, and `6` pending on Slurm environment retrieval.
 - Latest monitor snapshot after both submissions: running CPU 1500/2000, running GPU 5/5, pending CPU 279, pending GPU 1; no cap breach.
+- Released `34626264_4`, `34626264_5`, and `34626264_6` from Slurm's transient user-env-retrieval hold; after release they were pending with no hold reason.
