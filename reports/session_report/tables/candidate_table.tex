@@ -1,0 +1,22 @@
+\begin{longtable}{p{0.10\linewidth}p{0.15\linewidth}p{0.39\linewidth}p{0.12\linewidth}p{0.18\linewidth}}
+\caption{Candidate bitstrings and confidence after this session.}\\
+\toprule
+Challenge & Source & Candidate & Confidence & Reason \\
+\midrule
+\endfirsthead
+\toprule
+Challenge & Source & Candidate & Confidence & Reason \\
+\midrule
+\endhead
+8\_1 & exact/peaked & \bitstr{10101101} & validated & Exact peak p=0.9126; peaked matched. \\
+8\_11 & exact/peaked/MPS & \bitstr{01001110} & validated & All methods matched; exact p=0.5454. \\
+8\_27 & exact/peaked & \bitstr{11001001} & validated & Exact p=0.2879; peaked matched. \\
+16\_12 & exact/peaked/MPS & \bitstr{1111000101101011} & validated & All methods matched; exact p=0.4665. \\
+24\_13 & exact & \bitstr{111110011111001011010001} & validated & Peaked marginal output was one bit off. \\
+40\_16 & MPS distill & \bitstr{0101110101001110011000111011100110010110} & strong candidate & Stable across 6/6 MPS trials; peaked disagreed by 3 bits. \\
+64\_26 & Aer MPS & \bitstr{0110101010100011010111011000011100010110110110011100011001100110} & candidate & Top count 287/4096; runner candidate only. \\
+64\_34 & Aer MPS & \bitstr{0011010100010011001110101110100101001011001011011001111011100110} & candidate & Top count 552/4096; runner candidate only. \\
+64\_41 & MPS samples & -- & unreliable & 4096/4096 unique in selected run; distill unstable. \\
+104\_49 & MPS samples & -- & unreliable & 1024/1024 unique; no repeated peak evidence. \\
+\bottomrule
+\end{longtable}

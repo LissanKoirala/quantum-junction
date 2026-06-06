@@ -1,0 +1,51 @@
+{
+  "challenge_id": 39,
+  "challenge_label": "56_39",
+  "difficulty": "hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "MKL_NUM_THREADS": "16",
+    "OMP_NUM_THREADS": "16",
+    "OPENBLAS_NUM_THREADS": "16",
+    "SLURM_ARRAY_JOB_ID": "34607501",
+    "SLURM_ARRAY_TASK_ID": "20",
+    "SLURM_CPUS_PER_TASK": "16",
+    "SLURM_JOB_ID": "34609490",
+    "SLURM_JOB_PARTITION": "interruptible_gpu"
+  },
+  "method": "peaked_mpo_unswap_mps_marginals",
+  "output_image": "outputs/peaked_circuit_sim_all/images/challenge-56_39.peaked_mpo_mps.png",
+  "output_json": "outputs/peaked_circuit_sim_all/json/challenge-56_39.peaked_mpo_mps.json",
+  "output_stats_jsonl": "outputs/peaked_circuit_sim_all/stats/challenge-56_39.stats.jsonl",
+  "parameters": {
+    "backend_requested": "auto",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": -1,
+    "equal": false,
+    "figure_note": "full 49-circuit sweep after 3-circuit pilot; A100 80GB Slurm array capped at 5 GPUs; exact method/params/shims printed on this figure",
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 512,
+    "max_its": 10,
+    "rewire_trials": 64,
+    "seed": 123,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/hard/challenge-56_39.qasm",
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction",
+  "started_at": "2026-06-06T00:24:45+0100",
+  "status": "started",
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}
