@@ -1,0 +1,24 @@
+# Research Folder Index
+
+There are two separate research/report packages under this directory. They are intentionally kept in different folders because they come from different Codex/report workstreams.
+
+## `tree_tensor_sim_session`
+
+This is the package for the worktree we were actively using in this conversation.
+
+- Source branch/worktree: `tree-tensor-sim` at `quantum-junction-tree-tensor`.
+- Clean push branch used for the final report update: `report-session-folder-fix`.
+- Primary report: `tree_tensor_sim_session/report/quantum_junction_session_report.pdf`.
+- Snapshot: `41/49` selected answers.
+- Distinguishing result: `64_40` is included as weak MPO-unswap evidence.
+- Contents: tree/graph-ordered Quimb MPS work, fallback orderings, MPO-unswap calibration, current collector artifacts, and per-problem distribution appendix.
+
+## `quantum_peak_session`
+
+This is a separate Quantum Peak report/distribution package that was already present on `main`.
+
+- Primary report: `quantum_peak_session/reports/session_report/quantum_junction_session_report.pdf`.
+- Snapshot in that package: `40/49` selected answers.
+- Distinguishing artifact: one combined `distribution_appendix_pages.pdf` plus distribution metadata.
+
+Do not merge these folders together. Update `tree_tensor_sim_session` for the `tree-tensor-sim` worktree session, and update `quantum_peak_session` only when intentionally working on that separate package.

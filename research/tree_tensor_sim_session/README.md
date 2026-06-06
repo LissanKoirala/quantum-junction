@@ -4,6 +4,13 @@ Snapshot generated during the Codex tree-tensor simulation work on 2026-06-06.
 
 This folder is intentionally separate from `research/quantum_peak_session`, which contains a different report/distribution package already present on `main`.
 
+## Provenance
+
+- Source branch/worktree: `tree-tensor-sim` at `quantum-junction-tree-tensor`.
+- Final clean push branch: `report-session-folder-fix`.
+- This is the folder to update for the tree-tensor simulation work from this conversation.
+- Do not merge this folder with `research/quantum_peak_session`; that folder is a separate report package.
+
 ## Report
 
 - `report/quantum_junction_session_report.pdf` - compiled 17-page concise report with a per-problem distribution appendix.

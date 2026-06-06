@@ -4,6 +4,8 @@ Snapshot date: 2026-06-06
 
 This folder contains the condensed research artifacts from the Codex session on the Quantum Peak challenge circuits.
 
+This package is intentionally separate from `research/tree_tensor_sim_session`. The `tree_tensor_sim_session` folder is the one tied to the active `tree-tensor-sim` worktree from the later tree-tensor simulation work in this conversation.
+
 ## Entry Points
 
 - `reports/session_report/quantum_junction_session_report.pdf`: primary compiled LaTeX report.
