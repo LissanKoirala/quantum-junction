@@ -114,6 +114,11 @@ def md_code(value: Any) -> str:
     return f"`{escaped}`" if escaped else ""
 
 
+def md_image_thumbnail(src: str, label: str, width: int = 360) -> str:
+    alt = html.escape(f"Bitstring distribution for {label}", quote=True)
+    return f'<img src="{html.escape(src, quote=True)}" alt="{alt}" width="{width}">'
+
+
 def qiskit_from_top_entry(entry: dict[str, Any]) -> str:
     if entry.get("qiskit_order"):
         return str(entry["qiskit_order"])
@@ -420,7 +425,8 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. "
         "For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. "
         "`qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. "
-        "Each challenge detail includes an SVG image of the selected bitstring distribution; challenges without sampled results include a placeholder image.",
+        "The overview table embeds a distribution image thumbnail for every challenge, and each challenge detail includes the full SVG. "
+        "Challenges without sampled results include a placeholder image.",
         "",
         "## Summary",
         "",
@@ -453,14 +459,14 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
             "",
             "## Challenge Overview",
             "",
-            "| idx | challenge | difficulty | chosen source | status | validation | candidate qiskit order | top fraction | seconds | distribution image | json |",
+            "| idx | challenge | difficulty | chosen source | status | validation | candidate qiskit order | top fraction | seconds | distribution thumbnail | json |",
             "|---:|---|---|---|---|---|---|---:|---:|---|---|",
         ]
     )
     for item in expected:
         label = item["label"]
         record = chosen_by_label.get(label)
-        image_link = f"[image]({image_paths[label]})"
+        image_thumbnail = md_image_thumbnail(image_paths[label], label)
         if record:
             data = record["data"]
             sampling = data.get("sampling") or {}
@@ -474,11 +480,11 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
                 md_code(data.get("final_candidate_qiskit_order")),
                 fmt_num(sampling.get("top_fraction")),
                 fmt_num(data.get("total_seconds")),
-                image_link,
+                image_thumbnail,
                 md_code(record["path"]),
             ]
         else:
-            row = [str(item["idx"]), md_code(label), item["difficulty"], "", "missing", "", "", "", "", image_link, ""]
+            row = [str(item["idx"]), md_code(label), item["difficulty"], "", "missing", "", "", "", "", image_thumbnail, ""]
         lines.append("| " + " | ".join(row) + " |")
 
     lines.extend(["", "## Challenge Details"])
