@@ -275,6 +275,25 @@ def extract_marginal_bitstring(mps: Any) -> tuple[str, list[float]]:
         )
         p0s.append(p0)
         bits.append("1" if np.isfinite(p0) and p0 < 0.5 else "0")
+
+    # Fallback: if all NaN (zero-norm MPS), extract from raw tensor elements.
+    # This happens when aggressive cutoff zeroes out the global norm but
+    # individual tensor element ratios still encode the dominant bitstring.
+    if all(not np.isfinite(p) for p in p0s):
+        bits_fb = []
+        try:
+            for site in range(len(mps.sites)):
+                T = np.array(mps[site].data, dtype=np.complex128)
+                flat = T.flatten()
+                n = len(flat) // 2
+                prob0 = float(np.sum(np.abs(flat[:n]) ** 2))
+                prob1 = float(np.sum(np.abs(flat[n:]) ** 2))
+                bits_fb.append("1" if prob1 > prob0 else "0")
+            if any(b == "1" for b in bits_fb):
+                bits = bits_fb
+        except Exception:
+            pass
+
     return "".join(bits), p0s
 
 
@@ -425,12 +444,13 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 
         # ── MPO → MPS ─────────────────────────────────────────────────
         m0 = time.perf_counter()
+        mps_cutoff = args.mps_cutoff if args.mps_cutoff is not None else args.cutoff
         mps, perm = mpo_to_mps(
             mpo,
             layers_left[:-2],
             layers_right,
             max_bond=args.mps_max_bond,
-            cutoff=args.cutoff,
+            cutoff=mps_cutoff,
             to_backend=to_backend,
         )
         perm = [int(i) for i in perm]
@@ -551,6 +571,8 @@ def main() -> int:
     parser.add_argument("--max-bond", type=int, default=8192)
     parser.add_argument("--mps-max-bond", type=int, default=4096)
     parser.add_argument("--cutoff", type=float, default=0.002)
+    parser.add_argument("--mps-cutoff", type=float, default=None,
+                        help="Cutoff for the final MPO→MPS conversion step (default: same as --cutoff)")
     parser.add_argument("--unswap-threshold", type=float, default=1e6)
     parser.add_argument("--early-stopping-gates", type=int, default=0)
     parser.add_argument("--center-ratio", type=float, default=0.5)
