@@ -7,6 +7,7 @@ import datetime as dt
 import html
 import json
 import math
+import shutil
 import subprocess
 from pathlib import Path
 from typing import Any
@@ -24,6 +25,8 @@ SOURCE_NAMES = [
     "mpo_graph_tns_extra_cpu_e",
     "mpo_graph_tns_extra_cpu_f",
     "mpo_graph_tns_extra_cpu_g",
+    "mpo_graph_tns_veryhard_fast_cpu",
+    "mpo_graph_tns_veryhard_fast_cpu_b",
     "mpo_graph_tns_combined",
 ]
 SOURCE_LABELS = {
@@ -38,8 +41,14 @@ SOURCE_LABELS = {
     "mpo_graph_tns_extra_cpu_e": "extra_cpu_e",
     "mpo_graph_tns_extra_cpu_f": "extra_cpu_f",
     "mpo_graph_tns_extra_cpu_g": "extra_cpu_g",
+    "mpo_graph_tns_veryhard_fast_cpu": "vhard_fast",
+    "mpo_graph_tns_veryhard_fast_cpu_b": "vhard_fast_b",
     "mpo_graph_tns_combined": "combined",
 }
+EXTERNAL_SYNC_SOURCE_NAMES = [
+    "mpo_graph_tns_veryhard_fast_cpu",
+    "mpo_graph_tns_veryhard_fast_cpu_b",
+]
 CPU_JOB_IDS = [
     "34616566",
     "34618007",
@@ -60,8 +69,11 @@ CPU_JOB_IDS = [
     "34619634",
     "34619647",
     "34619942",
+    "34619926",
+    "34620010",
+    "34620567",
     "34620754",
-    "34620755",
+    "34621642",
 ]
 GPU_JOB_ID = "34616526"
 
@@ -292,6 +304,22 @@ def make_distribution_svg(
     image_path.write_text("\n".join(parts) + "\n")
 
 
+def sync_external_source_outputs(root: Path) -> None:
+    external_root = root.parent / "hard-problems"
+    for name in EXTERNAL_SYNC_SOURCE_NAMES:
+        source_base = external_root / "outputs" / name
+        dest_base = root / "outputs" / name
+        for subdir in ("json", "stats"):
+            source_dir = source_base / subdir
+            if not source_dir.exists():
+                continue
+            dest_dir = dest_base / subdir
+            dest_dir.mkdir(parents=True, exist_ok=True)
+            for source_path in source_dir.iterdir():
+                if source_path.is_file():
+                    shutil.copy2(source_path, dest_dir / source_path.name)
+
+
 def load_records(root: Path, source_defs: list[tuple[str, Path]]) -> tuple[dict[str, list[dict[str, Any]]], list[dict[str, Any]], dict[str, dict[str, Any]]]:
     records_by_label: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
     all_records: list[dict[str, Any]] = []
@@ -329,6 +357,7 @@ def load_records(root: Path, source_defs: list[tuple[str, Path]]) -> tuple[dict[
 
 
 def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> dict[str, Any]:
+    sync_external_source_outputs(root)
     source_defs = [(SOURCE_LABELS[name], root / "outputs" / name) for name in SOURCE_NAMES]
     source_order = {source: index for index, (source, _) in enumerate(source_defs)}
     expected_paths = sorted((root / "challenges").glob("*/*.qasm"), key=lambda path: (path.parent.name, path.name))
@@ -407,7 +436,8 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set.",
-        "- Current replacement dependency-gated jobs: `34620755` fallback array, `34620756` combined rollup.",
+        "- Imported external fast very-hard retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`.",
+        "- Current replacement dependency-gated jobs: `34621642` fallback array, `34621643` combined rollup.",
         "",
         "## Source Output Counts",
         "",
