@@ -33,6 +33,7 @@ Important artifacts:
 - `artifacts/collector/SUBMISSION_ANSWERS.tsv` and `.md` - submission-oriented answer list.
 - `artifacts/collector/CANDIDATE_EVIDENCE.json` - full evidence records used by the collector.
 - `results_index/` - normalized challenge/method lookup tables, generated from collector data plus available raw outputs in this checkout and the sibling `quantum-junction-tree-tensor` worktree.
+- `solution_book/README.md` - per-challenge browser with selected answers, all normalized candidate rows, and bitstring-distribution figures.
 - `artifacts/RUN_LOG.md` - concise running log of attempts and decisions.
 - `artifacts/exact_baseline/` - exact statevector baseline outputs for small calibrating circuits.
 - `artifacts/static_forensics/` - QASM structural summaries used to guide method choice.
@@ -40,4 +41,4 @@ Important artifacts:
 
 The report is an as-of snapshot. Later Slurm jobs may have produced additional outputs after this folder was assembled.
 
-For new method families, update `research/_shared/scripts/build_results_index.py`, rerun it, and commit the refreshed `results_index/` folder. The schema is documented in `research/_shared/schemas/results_index_schema.md`.
+For new method families, update `research/_shared/scripts/build_results_index.py`, rerun it, then rerun `research/_shared/scripts/build_solution_book.py` and commit the refreshed generated folders. The index schema is documented in `research/_shared/schemas/results_index_schema.md`.
