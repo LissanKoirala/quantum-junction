@@ -45,6 +45,7 @@ SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_e",
     "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_veryhard_fast_cpu_g",
+    "mpo_graph_tns_veryhard_fast_cpu_h",
     "mpo_graph_tns_gpu_retry",
     "mpo_graph_tns_marginal_fallback_cpu",
 ]

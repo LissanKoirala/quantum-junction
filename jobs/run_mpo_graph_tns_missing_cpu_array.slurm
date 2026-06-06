@@ -32,7 +32,7 @@ OUT_DIR="outputs/mpo_graph_tns_missing_cpu"
 mkdir -p "$OUT_DIR"/{json,stats,logs}
 
 HARD_ROOT="/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems"
-for SOURCE_NAME in mpo_graph_tns_all mpo_graph_tns_veryhard_fast_cpu mpo_graph_tns_veryhard_fast_cpu_b mpo_graph_tns_veryhard_fast_cpu_c mpo_graph_tns_veryhard_fast_cpu_d mpo_graph_tns_veryhard_fast_cpu_e mpo_graph_tns_veryhard_fast_cpu_f mpo_graph_tns_veryhard_fast_cpu_g mpo_graph_tns_gpu_retry mpo_graph_tns_marginal_fallback_cpu; do
+for SOURCE_NAME in mpo_graph_tns_all mpo_graph_tns_veryhard_fast_cpu mpo_graph_tns_veryhard_fast_cpu_b mpo_graph_tns_veryhard_fast_cpu_c mpo_graph_tns_veryhard_fast_cpu_d mpo_graph_tns_veryhard_fast_cpu_e mpo_graph_tns_veryhard_fast_cpu_f mpo_graph_tns_veryhard_fast_cpu_g mpo_graph_tns_veryhard_fast_cpu_h mpo_graph_tns_gpu_retry mpo_graph_tns_marginal_fallback_cpu; do
   mkdir -p "outputs/$SOURCE_NAME"/{json,stats}
   cp -a "$HARD_ROOT/outputs/$SOURCE_NAME/json/." "outputs/$SOURCE_NAME/json/" 2>/dev/null || true
   cp -a "$HARD_ROOT/outputs/$SOURCE_NAME/stats/." "outputs/$SOURCE_NAME/stats/" 2>/dev/null || true
@@ -78,6 +78,7 @@ coverage_dirs = [
     Path("outputs/mpo_graph_tns_veryhard_fast_cpu_e/json"),
     Path("outputs/mpo_graph_tns_veryhard_fast_cpu_f/json"),
     Path("outputs/mpo_graph_tns_veryhard_fast_cpu_g/json"),
+    Path("outputs/mpo_graph_tns_veryhard_fast_cpu_h/json"),
     out_dir / "json",
 ]
 
