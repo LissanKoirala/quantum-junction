@@ -1,0 +1,2727 @@
+[
+  {
+    "challenge": "8_1",
+    "collector_top_fraction": "0.9126378477396644",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.0011321389298143414,
+      "top": [
+        {
+          "bitstring": "10101101",
+          "rank": 1,
+          "value": 0.9126378477396644
+        },
+        {
+          "bitstring": "00101101",
+          "rank": 2,
+          "value": 0.03791185128794029
+        },
+        {
+          "bitstring": "10101001",
+          "rank": 3,
+          "value": 0.01183411950021498
+        },
+        {
+          "bitstring": "10101111",
+          "rank": 4,
+          "value": 0.011834069610118906
+        },
+        {
+          "bitstring": "10101110",
+          "rank": 5,
+          "value": 0.011833411773848073
+        },
+        {
+          "bitstring": "10101000",
+          "rank": 6,
+          "value": 0.011833361888252496
+        },
+        {
+          "bitstring": "00101001",
+          "rank": 7,
+          "value": 0.0004916006713145274
+        },
+        {
+          "bitstring": "00101111",
+          "rank": 8,
+          "value": 0.0004915985988320991
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.9126378477396644,
+    "qubits": 8,
+    "selected_candidate": "10101101",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "16_2",
+    "collector_top_fraction": "0.46696962421756005",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.21815364237718604,
+      "top": [
+        {
+          "bitstring": "1010101011001000",
+          "rank": 1,
+          "value": 0.46696962421756005
+        },
+        {
+          "bitstring": "1011101011001000",
+          "rank": 2,
+          "value": 0.0975870441002859
+        },
+        {
+          "bitstring": "1010101011001100",
+          "rank": 3,
+          "value": 0.06209106413032871
+        },
+        {
+          "bitstring": "1010101011001110",
+          "rank": 4,
+          "value": 0.04911585026001513
+        },
+        {
+          "bitstring": "0010101011001000",
+          "rank": 5,
+          "value": 0.040214273324241975
+        },
+        {
+          "bitstring": "1010111011001000",
+          "rank": 6,
+          "value": 0.02597125894223926
+        },
+        {
+          "bitstring": "1010101011001010",
+          "rank": 7,
+          "value": 0.02304200988889332
+        },
+        {
+          "bitstring": "1010101001001000",
+          "rank": 8,
+          "value": 0.016855232759249567
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.46696962421756005,
+    "qubits": 16,
+    "selected_candidate": "1010101011001000",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "24_3",
+    "collector_top_fraction": "0.7239837426523221",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.06350434150671924,
+      "top": [
+        {
+          "bitstring": "011110010000101010001000",
+          "rank": 1,
+          "value": 0.7239837426523221
+        },
+        {
+          "bitstring": "011110000000101010001000",
+          "rank": 2,
+          "value": 0.04709225735423629
+        },
+        {
+          "bitstring": "011100010000101010001000",
+          "rank": 3,
+          "value": 0.040523310046870015
+        },
+        {
+          "bitstring": "011110000000101010101000",
+          "rank": 4,
+          "value": 0.036712207780153334
+        },
+        {
+          "bitstring": "011110000001101010001000",
+          "rank": 5,
+          "value": 0.03498088730467093
+        },
+        {
+          "bitstring": "011110000000101010011000",
+          "rank": 6,
+          "value": 0.02464874840314799
+        },
+        {
+          "bitstring": "011111000000101010001000",
+          "rank": 7,
+          "value": 0.02292397667929443
+        },
+        {
+          "bitstring": "001110010000101010001000",
+          "rank": 8,
+          "value": 0.00563052827258551
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.7239837426523221,
+    "qubits": 24,
+    "selected_candidate": "011110010000101010001000",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "28_4",
+    "collector_top_fraction": "0.3511118993870582",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.49125599372249573,
+      "top": [
+        {
+          "bitstring": "1111111000101010110110011111",
+          "rank": 1,
+          "value": 0.3511118993870582
+        },
+        {
+          "bitstring": "1111111000100010110110011111",
+          "rank": 2,
+          "value": 0.07350276542355927
+        },
+        {
+          "bitstring": "1111111010101010110110011111",
+          "rank": 3,
+          "value": 0.029970357576968892
+        },
+        {
+          "bitstring": "1111111000101010110110111111",
+          "rank": 4,
+          "value": 0.019629344084071576
+        },
+        {
+          "bitstring": "1101111000101010110110111111",
+          "rank": 5,
+          "value": 0.009956925944317102
+        },
+        {
+          "bitstring": "0111111000101010110100011111",
+          "rank": 6,
+          "value": 0.008877744162673097
+        },
+        {
+          "bitstring": "1111111000111010110110011111",
+          "rank": 7,
+          "value": 0.008499690487076099
+        },
+        {
+          "bitstring": "1111111000100010110110111111",
+          "rank": 8,
+          "value": 0.007195279211780042
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.3511118993870582,
+    "qubits": 28,
+    "selected_candidate": "1111111000101010110110011111",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "32_5",
+    "collector_top_fraction": "0.5322265625",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-32_5.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.2626953125,
+      "top": [
+        {
+          "bitstring": "00111000101010100001000000010000",
+          "count": 545,
+          "value": 0.5322265625
+        },
+        {
+          "bitstring": "00101000101010100001000000010000",
+          "count": 64,
+          "value": 0.0625
+        },
+        {
+          "bitstring": "00111000101011100001000000010000",
+          "count": 61,
+          "value": 0.0595703125
+        },
+        {
+          "bitstring": "00111011101010100001000000010000",
+          "count": 27,
+          "value": 0.0263671875
+        },
+        {
+          "bitstring": "01111000101010100001000000010000",
+          "count": 21,
+          "value": 0.0205078125
+        },
+        {
+          "bitstring": "00110000101011100001000001010000",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "00111001101010100001000000010000",
+          "count": 12,
+          "value": 0.01171875
+        },
+        {
+          "bitstring": "00111000101010100001000000011000",
+          "count": 12,
+          "value": 0.01171875
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.5322265625,
+    "qubits": 32,
+    "selected_candidate": "00111000101010100001000000010000",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "36_6",
+    "collector_top_fraction": "0.6884765625",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-36_6.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.0927734375,
+      "top": [
+        {
+          "bitstring": "100110100111101001001101110011001000",
+          "count": 705,
+          "value": 0.6884765625
+        },
+        {
+          "bitstring": "100110100111101001001101110011001010",
+          "count": 85,
+          "value": 0.0830078125
+        },
+        {
+          "bitstring": "100110100111101001001101110010001000",
+          "count": 33,
+          "value": 0.0322265625
+        },
+        {
+          "bitstring": "100110100111101001001101110111001000",
+          "count": 30,
+          "value": 0.029296875
+        },
+        {
+          "bitstring": "100110000111101001001101110011000000",
+          "count": 29,
+          "value": 0.0283203125
+        },
+        {
+          "bitstring": "100110100111101001011101110011001000",
+          "count": 21,
+          "value": 0.0205078125
+        },
+        {
+          "bitstring": "100110100111101001001101010111001000",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "100110100111101001001101110011000000",
+          "count": 13,
+          "value": 0.0126953125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.6884765625,
+    "qubits": 36,
+    "selected_candidate": "100110100111101001001101110011001000",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "40_7",
+    "collector_top_fraction": "0.87890625",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-40_7.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.015625,
+      "top": [
+        {
+          "bitstring": "0110111011010001010011111110010011000111",
+          "count": 900,
+          "value": 0.87890625
+        },
+        {
+          "bitstring": "0110111011010001010011111110000011000011",
+          "count": 55,
+          "value": 0.0537109375
+        },
+        {
+          "bitstring": "0110111011010000010011111110010011000111",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "0110111011010001010011111110000011000111",
+          "count": 11,
+          "value": 0.0107421875
+        },
+        {
+          "bitstring": "0110111011011001010011111110010011000111",
+          "count": 9,
+          "value": 0.0087890625
+        },
+        {
+          "bitstring": "0110111011010001010011111110010011000011",
+          "count": 9,
+          "value": 0.0087890625
+        },
+        {
+          "bitstring": "0110111011010001010001111110010011000111",
+          "count": 6,
+          "value": 0.005859375
+        },
+        {
+          "bitstring": "0110111011010000010001111110010011000111",
+          "count": 5,
+          "value": 0.0048828125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.87890625,
+    "qubits": 40,
+    "selected_candidate": "0110111011010001010011111110010011000111",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "48_8",
+    "collector_top_fraction": "0.697265625",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-48_8.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.0673828125,
+      "top": [
+        {
+          "bitstring": "000100100110111001001111111100101011001110010100",
+          "count": 714,
+          "value": 0.697265625
+        },
+        {
+          "bitstring": "000100100110110001001111111100101111001110010100",
+          "count": 75,
+          "value": 0.0732421875
+        },
+        {
+          "bitstring": "000100100110111001001111111100101001001110010100",
+          "count": 43,
+          "value": 0.0419921875
+        },
+        {
+          "bitstring": "000100100110111011001111111100101011001110010100",
+          "count": 41,
+          "value": 0.0400390625
+        },
+        {
+          "bitstring": "000100100110111000001111111100101011001110010100",
+          "count": 30,
+          "value": 0.029296875
+        },
+        {
+          "bitstring": "000100100110111001001111111100101011001010010100",
+          "count": 29,
+          "value": 0.0283203125
+        },
+        {
+          "bitstring": "000101100110111001001111111100101011001110010100",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "000100100110110001001111111100101011001110010100",
+          "count": 4,
+          "value": 0.00390625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.697265625,
+    "qubits": 48,
+    "selected_candidate": "000100100110111001001111111100101011001110010100",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "56_9",
+    "collector_top_fraction": "0.78125",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-56_9.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.068359375,
+      "top": [
+        {
+          "bitstring": "10010110101100101110100110010110011101100110001101010100",
+          "count": 800,
+          "value": 0.78125
+        },
+        {
+          "bitstring": "10010110101100101110100110010110011111100110001101010100",
+          "count": 73,
+          "value": 0.0712890625
+        },
+        {
+          "bitstring": "10010110101110101110100110010110011101100110001101010100",
+          "count": 24,
+          "value": 0.0234375
+        },
+        {
+          "bitstring": "10010110101100101110100110110110011101100111001001010100",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "10010110101100101110100110110110011101100110001001010100",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "10010110101100101110100110010110011101100111001001010100",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "10010110101100101110100110010110011101100110001001010100",
+          "count": 12,
+          "value": 0.01171875
+        },
+        {
+          "bitstring": "10010100101100111110100110010110011101100110001111010100",
+          "count": 6,
+          "value": 0.005859375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.78125,
+    "qubits": 56,
+    "selected_candidate": "10010110101100101110100110010110011101100110001101010100",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "64_10",
+    "collector_top_fraction": "0.787109375",
+    "difficulty": "very easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-64_10.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.06640625,
+      "top": [
+        {
+          "bitstring": "0011010010110001110010111001100100101100010111110110010100101011",
+          "count": 806,
+          "value": 0.787109375
+        },
+        {
+          "bitstring": "0011010010110001110010101001100100101100010111110110010100101011",
+          "count": 34,
+          "value": 0.033203125
+        },
+        {
+          "bitstring": "0011010010110001110010111001100100101100010011110110010100101011",
+          "count": 27,
+          "value": 0.0263671875
+        },
+        {
+          "bitstring": "0011010010110001111010101001100100101100010111110110010100101011",
+          "count": 23,
+          "value": 0.0224609375
+        },
+        {
+          "bitstring": "0011010010110001110010111001100100101100010111110110010100111011",
+          "count": 18,
+          "value": 0.017578125
+        },
+        {
+          "bitstring": "0011010110110001110010111011100100101100010111110110010110101011",
+          "count": 17,
+          "value": 0.0166015625
+        },
+        {
+          "bitstring": "0011010010110101110010111001100100101100010111110110010100101011",
+          "count": 16,
+          "value": 0.015625
+        },
+        {
+          "bitstring": "0011010010110001110010111011100100101100010111110110010100101011",
+          "count": 15,
+          "value": 0.0146484375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.787109375,
+    "qubits": 64,
+    "selected_candidate": "0011010010110001110010111001100100101100010111110110010100101011",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "8_11",
+    "collector_top_fraction": "0.5454480750007801",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.2053451063481554,
+      "top": [
+        {
+          "bitstring": "01001110",
+          "rank": 1,
+          "value": 0.5454480750007801
+        },
+        {
+          "bitstring": "01101111",
+          "rank": 2,
+          "value": 0.06868399681608031
+        },
+        {
+          "bitstring": "01100110",
+          "rank": 3,
+          "value": 0.038746568187655775
+        },
+        {
+          "bitstring": "10101110",
+          "rank": 4,
+          "value": 0.03566504515240433
+        },
+        {
+          "bitstring": "00001110",
+          "rank": 5,
+          "value": 0.0347722045671955
+        },
+        {
+          "bitstring": "11101110",
+          "rank": 6,
+          "value": 0.028016856923912786
+        },
+        {
+          "bitstring": "01001111",
+          "rank": 7,
+          "value": 0.023885328502459544
+        },
+        {
+          "bitstring": "10101111",
+          "rank": 8,
+          "value": 0.01943681850135632
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "4",
+    "plotted_top_value": 0.5454480750007801,
+    "qubits": 8,
+    "selected_candidate": "01001110",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "16_12",
+    "collector_top_fraction": "0.46653673211917734",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.19088711062346053,
+      "top": [
+        {
+          "bitstring": "1111000101101011",
+          "rank": 1,
+          "value": 0.46653673211917734
+        },
+        {
+          "bitstring": "1111010101101011",
+          "rank": 2,
+          "value": 0.07296457899843241
+        },
+        {
+          "bitstring": "1011000101101011",
+          "rank": 3,
+          "value": 0.0682217107174549
+        },
+        {
+          "bitstring": "1111010101101010",
+          "rank": 4,
+          "value": 0.06509952861088839
+        },
+        {
+          "bitstring": "1110010101101011",
+          "rank": 5,
+          "value": 0.05080725879547651
+        },
+        {
+          "bitstring": "1111000101101010",
+          "rank": 6,
+          "value": 0.03917749621229463
+        },
+        {
+          "bitstring": "1011000100101011",
+          "rank": 7,
+          "value": 0.023175598161996828
+        },
+        {
+          "bitstring": "1010000101101010",
+          "rank": 8,
+          "value": 0.023129985760818338
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "4",
+    "plotted_top_value": 0.46653673211917734,
+    "qubits": 16,
+    "selected_candidate": "1111000101101011",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "24_13",
+    "collector_top_fraction": "0.5912482860105316",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.20736577763304176,
+      "top": [
+        {
+          "bitstring": "111110011111001011010001",
+          "rank": 1,
+          "value": 0.5912482860105316
+        },
+        {
+          "bitstring": "111110111101001011010001",
+          "rank": 2,
+          "value": 0.04716839008181299
+        },
+        {
+          "bitstring": "111110011110001011010101",
+          "rank": 3,
+          "value": 0.030276316319817975
+        },
+        {
+          "bitstring": "111110011110011011011001",
+          "rank": 4,
+          "value": 0.02539586753874185
+        },
+        {
+          "bitstring": "111100011110011011011001",
+          "rank": 5,
+          "value": 0.025390000989868468
+        },
+        {
+          "bitstring": "011110011110011011011001",
+          "rank": 6,
+          "value": 0.025342910143541175
+        },
+        {
+          "bitstring": "011100011110011011011001",
+          "rank": 7,
+          "value": 0.02534290948747879
+        },
+        {
+          "bitstring": "111111011111001011010001",
+          "rank": 8,
+          "value": 0.022469541795165457
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.5912482860105316,
+    "qubits": 24,
+    "selected_candidate": "111110011111001011010001",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "32_14",
+    "collector_top_fraction": "0.4716796875",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-32_14.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.2861328125,
+      "top": [
+        {
+          "bitstring": "00000101001101000001011111101100",
+          "count": 483,
+          "value": 0.4716796875
+        },
+        {
+          "bitstring": "00000101001101000001011011101101",
+          "count": 50,
+          "value": 0.048828125
+        },
+        {
+          "bitstring": "00000001001101000001011111101100",
+          "count": 46,
+          "value": 0.044921875
+        },
+        {
+          "bitstring": "00000101001101000000010111101100",
+          "count": 41,
+          "value": 0.0400390625
+        },
+        {
+          "bitstring": "00000101011101000001011111101110",
+          "count": 34,
+          "value": 0.033203125
+        },
+        {
+          "bitstring": "00000101001101000000011111101100",
+          "count": 29,
+          "value": 0.0283203125
+        },
+        {
+          "bitstring": "00000101001101010001010111001100",
+          "count": 28,
+          "value": 0.02734375
+        },
+        {
+          "bitstring": "00000101001101000001111111101100",
+          "count": 20,
+          "value": 0.01953125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.4716796875,
+    "qubits": 32,
+    "selected_candidate": "00000101001101000001011111101100",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "36_15",
+    "collector_top_fraction": "0.03125",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-36_15.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.9052734375,
+      "top": [
+        {
+          "bitstring": "110110011011111111011001011110101111",
+          "count": 32,
+          "value": 0.03125
+        },
+        {
+          "bitstring": "110110011011111101011001011110101111",
+          "count": 15,
+          "value": 0.0146484375
+        },
+        {
+          "bitstring": "110110011011111111011000011110101111",
+          "count": 14,
+          "value": 0.013671875
+        },
+        {
+          "bitstring": "110110011011111101011000011110101111",
+          "count": 9,
+          "value": 0.0087890625
+        },
+        {
+          "bitstring": "111110011011111111011001011110101111",
+          "count": 8,
+          "value": 0.0078125
+        },
+        {
+          "bitstring": "110110011011011111011001011110101111",
+          "count": 7,
+          "value": 0.0068359375
+        },
+        {
+          "bitstring": "111110011011111111011000011110101111",
+          "count": 7,
+          "value": 0.0068359375
+        },
+        {
+          "bitstring": "110110011011111111011001010110101111",
+          "count": 5,
+          "value": 0.0048828125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.03125,
+    "qubits": 36,
+    "selected_candidate": "110110011011111111011001011110101111",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "40_16",
+    "collector_top_fraction": "0.4423828125",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-40_16.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.3037109375,
+      "top": [
+        {
+          "bitstring": "0101110101001110011000111011100110010110",
+          "count": 453,
+          "value": 0.4423828125
+        },
+        {
+          "bitstring": "0101110101001110011000111011100110000110",
+          "count": 122,
+          "value": 0.119140625
+        },
+        {
+          "bitstring": "0101110101001110011000111011100010010110",
+          "count": 37,
+          "value": 0.0361328125
+        },
+        {
+          "bitstring": "1101110101001110011000111011100110011110",
+          "count": 31,
+          "value": 0.0302734375
+        },
+        {
+          "bitstring": "0100110101001110011000011011100110010110",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "0101110101001110011000111011101110010010",
+          "count": 18,
+          "value": 0.017578125
+        },
+        {
+          "bitstring": "0101110101001110011000111111100110010110",
+          "count": 18,
+          "value": 0.017578125
+        },
+        {
+          "bitstring": "0101110101001110011000111011100110010100",
+          "count": 15,
+          "value": 0.0146484375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "4",
+    "plotted_top_value": 0.4423828125,
+    "qubits": 40,
+    "selected_candidate": "0101110101001110011000111011100110010110",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "40_17",
+    "collector_top_fraction": "0.5458984375",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-40_17.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.2041015625,
+      "top": [
+        {
+          "bitstring": "0010010101010111001001000010001000001001",
+          "count": 559,
+          "value": 0.5458984375
+        },
+        {
+          "bitstring": "0010110101010111000001000010001000001001",
+          "count": 56,
+          "value": 0.0546875
+        },
+        {
+          "bitstring": "1010010111010111001001000010001000001001",
+          "count": 46,
+          "value": 0.044921875
+        },
+        {
+          "bitstring": "0010010101010111001001000010011000001001",
+          "count": 45,
+          "value": 0.0439453125
+        },
+        {
+          "bitstring": "0010010111010111001001001010001000001001",
+          "count": 39,
+          "value": 0.0380859375
+        },
+        {
+          "bitstring": "0010010111010111001001000010001000001001",
+          "count": 25,
+          "value": 0.0244140625
+        },
+        {
+          "bitstring": "0010010101010110001001000010001000101001",
+          "count": 24,
+          "value": 0.0234375
+        },
+        {
+          "bitstring": "0010010001010110001001000010001000001001",
+          "count": 21,
+          "value": 0.0205078125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "4",
+    "plotted_top_value": 0.5458984375,
+    "qubits": 40,
+    "selected_candidate": "0010010101010111001001000010001000001001",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "40_18",
+    "collector_top_fraction": "0.439453125",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-40_18.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.2392578125,
+      "top": [
+        {
+          "bitstring": "0100000110010010001101111000111111001110",
+          "count": 450,
+          "value": 0.439453125
+        },
+        {
+          "bitstring": "0100000110010010001101111000111111011110",
+          "count": 111,
+          "value": 0.1083984375
+        },
+        {
+          "bitstring": "0100000110010010001101110000111111001110",
+          "count": 90,
+          "value": 0.087890625
+        },
+        {
+          "bitstring": "0100000110010010001101111000111011001110",
+          "count": 33,
+          "value": 0.0322265625
+        },
+        {
+          "bitstring": "0110000110010010001101111000111111001110",
+          "count": 28,
+          "value": 0.02734375
+        },
+        {
+          "bitstring": "0100000110010010001101110000111111011110",
+          "count": 25,
+          "value": 0.0244140625
+        },
+        {
+          "bitstring": "0101000110010010001101111000111101001110",
+          "count": 22,
+          "value": 0.021484375
+        },
+        {
+          "bitstring": "0100001110010010001101111000111111001100",
+          "count": 20,
+          "value": 0.01953125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.439453125,
+    "qubits": 40,
+    "selected_candidate": "0100000110010010001101111000111111001110",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "48_19",
+    "collector_top_fraction": "0.673828125",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-48_19.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.1611328125,
+      "top": [
+        {
+          "bitstring": "011001010111101100111110000001011101001110010000",
+          "count": 690,
+          "value": 0.673828125
+        },
+        {
+          "bitstring": "011001010111101100111111000001011101001110010100",
+          "count": 46,
+          "value": 0.044921875
+        },
+        {
+          "bitstring": "011001010111101100111111000001011101001110010000",
+          "count": 41,
+          "value": 0.0400390625
+        },
+        {
+          "bitstring": "011001010111101100111110000011011101000110010000",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "011001010111101100011110000001011101001110010000",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "011001010111101110111110000011011101000110010000",
+          "count": 17,
+          "value": 0.0166015625
+        },
+        {
+          "bitstring": "011000011111101100111110000001011101001110010000",
+          "count": 14,
+          "value": 0.013671875
+        },
+        {
+          "bitstring": "011001010111101100111110010001011110101110010000",
+          "count": 12,
+          "value": 0.01171875
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.673828125,
+    "qubits": 48,
+    "selected_candidate": "011001010111101100111110000001011101001110010000",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "48_20",
+    "collector_top_fraction": "0.6123046875",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-48_20.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.1357421875,
+      "top": [
+        {
+          "bitstring": "101010100101001010000110101000001011110010000000",
+          "count": 627,
+          "value": 0.6123046875
+        },
+        {
+          "bitstring": "101010100101001010000110101000001001110010000000",
+          "count": 71,
+          "value": 0.0693359375
+        },
+        {
+          "bitstring": "101010101101001010000110101001001011110010000000",
+          "count": 59,
+          "value": 0.0576171875
+        },
+        {
+          "bitstring": "101010000101001010000110101000011011110010000000",
+          "count": 39,
+          "value": 0.0380859375
+        },
+        {
+          "bitstring": "101010100101001010000110101000001011110000010000",
+          "count": 24,
+          "value": 0.0234375
+        },
+        {
+          "bitstring": "101010100101001010000110100000001011110010000000",
+          "count": 23,
+          "value": 0.0224609375
+        },
+        {
+          "bitstring": "001010100011001010000110101000001011110010000000",
+          "count": 21,
+          "value": 0.0205078125
+        },
+        {
+          "bitstring": "101010100011001010000110101000001011110010000000",
+          "count": 21,
+          "value": 0.0205078125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.6123046875,
+    "qubits": 48,
+    "selected_candidate": "101010100101001010000110101000001011110010000000",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "48_21",
+    "collector_top_fraction": "0.44140625",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-48_21.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.3740234375,
+      "top": [
+        {
+          "bitstring": "111010101110101011110101000001101000100000001001",
+          "count": 452,
+          "value": 0.44140625
+        },
+        {
+          "bitstring": "111010101110101011110100000001101000100000001001",
+          "count": 61,
+          "value": 0.0595703125
+        },
+        {
+          "bitstring": "111000101110101011110101000001111000100000001001",
+          "count": 28,
+          "value": 0.02734375
+        },
+        {
+          "bitstring": "111010101110101010110101000001101000110000001001",
+          "count": 23,
+          "value": 0.0224609375
+        },
+        {
+          "bitstring": "111010101110001011110101000001101010100000001001",
+          "count": 22,
+          "value": 0.021484375
+        },
+        {
+          "bitstring": "111011101110101011110101000001101000100000000001",
+          "count": 21,
+          "value": 0.0205078125
+        },
+        {
+          "bitstring": "111010101110101011110101000001101100100000001001",
+          "count": 17,
+          "value": 0.0166015625
+        },
+        {
+          "bitstring": "111010101110101011110101000000101000100000001001",
+          "count": 17,
+          "value": 0.0166015625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.44140625,
+    "qubits": 48,
+    "selected_candidate": "111010101110101011110101000001101000100000001001",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "56_22",
+    "collector_top_fraction": "0.58984375",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-56_22.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.2353515625,
+      "top": [
+        {
+          "bitstring": "11100100100110010011110010110110011000000100010111111011",
+          "count": 604,
+          "value": 0.58984375
+        },
+        {
+          "bitstring": "11100100100110010011110010110110011000000100010110111011",
+          "count": 69,
+          "value": 0.0673828125
+        },
+        {
+          "bitstring": "11100100100110010111110010110110011000000100010111111011",
+          "count": 29,
+          "value": 0.0283203125
+        },
+        {
+          "bitstring": "11100100100110010011111010110110011000000100010111111011",
+          "count": 29,
+          "value": 0.0283203125
+        },
+        {
+          "bitstring": "11100100100110010011110010110110011000001000010110111011",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "11100100100110010011110010110110011000000000010110111011",
+          "count": 18,
+          "value": 0.017578125
+        },
+        {
+          "bitstring": "11100100100110010011110010110110011000000100010111011011",
+          "count": 8,
+          "value": 0.0078125
+        },
+        {
+          "bitstring": "11100100100110010111110010110110011000000100010110111011",
+          "count": 7,
+          "value": 0.0068359375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.58984375,
+    "qubits": 56,
+    "selected_candidate": "11100100100110010011110010110110011000000100010111111011",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "56_23",
+    "collector_top_fraction": "0.4970703125",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-56_23.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.3134765625,
+      "top": [
+        {
+          "bitstring": "01001101001111111100000101001110111011100011111100001101",
+          "count": 509,
+          "value": 0.4970703125
+        },
+        {
+          "bitstring": "01001000001111111100000111001110111011100011111100001101",
+          "count": 41,
+          "value": 0.0400390625
+        },
+        {
+          "bitstring": "01001101001111111100000101001110111011100001111100001111",
+          "count": 39,
+          "value": 0.0380859375
+        },
+        {
+          "bitstring": "01001101001111111100000101001110011011100011111100001101",
+          "count": 30,
+          "value": 0.029296875
+        },
+        {
+          "bitstring": "01001101001111111100000101011110111011100011111100001101",
+          "count": 30,
+          "value": 0.029296875
+        },
+        {
+          "bitstring": "01001101001111111100000101001100111011110011111100001100",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "00001101001111111100000101001110111011100011111100001101",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "01001101001111111100000101001110111110100011111100001101",
+          "count": 15,
+          "value": 0.0146484375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.4970703125,
+    "qubits": 56,
+    "selected_candidate": "01001101001111111100000101001110111011100011111100001101",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "56_24",
+    "collector_top_fraction": "0.517578125",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-56_24.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.3017578125,
+      "top": [
+        {
+          "bitstring": "10011001001111101111111011101011101101010011001011110001",
+          "count": 530,
+          "value": 0.517578125
+        },
+        {
+          "bitstring": "10010001001111101111111011101010101101010011001011110001",
+          "count": 45,
+          "value": 0.0439453125
+        },
+        {
+          "bitstring": "10011001001111101111111011101011101101010011001010110001",
+          "count": 34,
+          "value": 0.033203125
+        },
+        {
+          "bitstring": "10011001001111101111110011101011101101000011001011110001",
+          "count": 32,
+          "value": 0.03125
+        },
+        {
+          "bitstring": "10011001001111101111111011101011101101010011001111110001",
+          "count": 28,
+          "value": 0.02734375
+        },
+        {
+          "bitstring": "10011001001111101111111011101011101101010011001011110101",
+          "count": 17,
+          "value": 0.0166015625
+        },
+        {
+          "bitstring": "10011001001111101111111011101011101101111011001011110001",
+          "count": 16,
+          "value": 0.015625
+        },
+        {
+          "bitstring": "10011001001111101111111011101011101111010011001011111001",
+          "count": 13,
+          "value": 0.0126953125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.517578125,
+    "qubits": 56,
+    "selected_candidate": "10011001001111101111111011101011101101010011001011110001",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "64_25",
+    "collector_top_fraction": "0.396484375",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-64_25.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.3935546875,
+      "top": [
+        {
+          "bitstring": "0011101111110000110110111101011000010000010100110111000001111011",
+          "count": 406,
+          "value": 0.396484375
+        },
+        {
+          "bitstring": "0011101111110000110110011101011000010000010100110111000001111011",
+          "count": 72,
+          "value": 0.0703125
+        },
+        {
+          "bitstring": "0011101111110000110110111101011000010000010100110110000001110011",
+          "count": 49,
+          "value": 0.0478515625
+        },
+        {
+          "bitstring": "0001101011110000110110111101011000010000010100110111000001111011",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "0011101111110000111110111101011000010000010100110111000001111011",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "0011101111110000110110111101011000011000010100110111000001111011",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "0011101111110010110010111101011000010000000100110111010001111011",
+          "count": 18,
+          "value": 0.017578125
+        },
+        {
+          "bitstring": "0011101011110000110110111101011000010000010100110111000001111011",
+          "count": 17,
+          "value": 0.0166015625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.396484375,
+    "qubits": 64,
+    "selected_candidate": "0011101111110000110110111101011000010000010100110111000001111011",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "64_26",
+    "collector_top_fraction": "0.26171875",
+    "difficulty": "easy",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-64_26.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.4931640625,
+      "top": [
+        {
+          "bitstring": "0110101010100011010111011000011100010110110110011100011001100110",
+          "count": 268,
+          "value": 0.26171875
+        },
+        {
+          "bitstring": "0110101010100011010111011000011100010110110110011100010001100110",
+          "count": 86,
+          "value": 0.083984375
+        },
+        {
+          "bitstring": "0110101010100011010111011000011100010110110111011100011001100110",
+          "count": 43,
+          "value": 0.0419921875
+        },
+        {
+          "bitstring": "0110101010100011010111011000011100010110110110011101011001100110",
+          "count": 30,
+          "value": 0.029296875
+        },
+        {
+          "bitstring": "0110101010100011010111011000011100010110110010011100011001100110",
+          "count": 28,
+          "value": 0.02734375
+        },
+        {
+          "bitstring": "0110101010100011011111011000011100010110110110011100011001100110",
+          "count": 27,
+          "value": 0.0263671875
+        },
+        {
+          "bitstring": "0110101110100011010111011000011100010110110110011100011001100110",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "0110101010100011010111011000011100010110110111011100010001100110",
+          "count": 18,
+          "value": 0.017578125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.26171875,
+    "qubits": 64,
+    "selected_candidate": "0110101010100011010111011000011100010110110110011100011001100110",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "8_27",
+    "collector_top_fraction": "0.2879073385472982",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.5326944578042738,
+      "top": [
+        {
+          "bitstring": "11001001",
+          "rank": 1,
+          "value": 0.2879073385472982
+        },
+        {
+          "bitstring": "11001011",
+          "rank": 2,
+          "value": 0.0626945711035967
+        },
+        {
+          "bitstring": "01011001",
+          "rank": 3,
+          "value": 0.028597653301806223
+        },
+        {
+          "bitstring": "01000001",
+          "rank": 4,
+          "value": 0.020380977695414255
+        },
+        {
+          "bitstring": "11101001",
+          "rank": 5,
+          "value": 0.01873819703408229
+        },
+        {
+          "bitstring": "11001000",
+          "rank": 6,
+          "value": 0.017180788625629755
+        },
+        {
+          "bitstring": "11011010",
+          "rank": 7,
+          "value": 0.017136661484415314
+        },
+        {
+          "bitstring": "01001000",
+          "rank": 8,
+          "value": 0.01466935440348336
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.2879073385472982,
+    "qubits": 8,
+    "selected_candidate": "11001001",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "16_28",
+    "collector_top_fraction": "0.3962059348034266",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.48359912791805804,
+      "top": [
+        {
+          "bitstring": "1101001111011100",
+          "rank": 1,
+          "value": 0.3962059348034266
+        },
+        {
+          "bitstring": "1111001111011100",
+          "rank": 2,
+          "value": 0.02313111923314042
+        },
+        {
+          "bitstring": "1111001101011100",
+          "rank": 3,
+          "value": 0.02109054244602336
+        },
+        {
+          "bitstring": "0111001101011100",
+          "rank": 4,
+          "value": 0.020897627460934078
+        },
+        {
+          "bitstring": "0101001101011100",
+          "rank": 5,
+          "value": 0.01613893381276112
+        },
+        {
+          "bitstring": "1101011111011100",
+          "rank": 6,
+          "value": 0.016101059239107384
+        },
+        {
+          "bitstring": "0100001111011110",
+          "rank": 7,
+          "value": 0.01162064478453261
+        },
+        {
+          "bitstring": "0101001111011100",
+          "rank": 8,
+          "value": 0.01121501030201648
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "4",
+    "plotted_top_value": 0.3962059348034266,
+    "qubits": 16,
+    "selected_candidate": "1101001111011100",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "24_29",
+    "collector_top_fraction": "0.3900966376778103",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "exact",
+      "note": "Exact statevector probabilities; tail is all other basis states.",
+      "source": "exact_statevector",
+      "source_label": "exact statevector",
+      "status": "ok",
+      "tail_value": 0.5545524978302112,
+      "top": [
+        {
+          "bitstring": "110100010111100001001001",
+          "rank": 1,
+          "value": 0.3900966376778103
+        },
+        {
+          "bitstring": "110100110111000001001001",
+          "rank": 2,
+          "value": 0.013436270064882261
+        },
+        {
+          "bitstring": "110100010111100001011001",
+          "rank": 3,
+          "value": 0.011777952787485673
+        },
+        {
+          "bitstring": "110100010101100001001001",
+          "rank": 4,
+          "value": 0.009103024648788698
+        },
+        {
+          "bitstring": "100100110111100001001001",
+          "rank": 5,
+          "value": 0.006298391257051266
+        },
+        {
+          "bitstring": "110101010011110001001001",
+          "rank": 6,
+          "value": 0.005051951620317402
+        },
+        {
+          "bitstring": "110101010111110001101001",
+          "rank": 7,
+          "value": 0.004879830325825648
+        },
+        {
+          "bitstring": "110101010011110001101001",
+          "rank": 8,
+          "value": 0.004803443787627567
+        }
+      ],
+      "total": 1.0,
+      "value_label": "probability"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.3900966376778103,
+    "qubits": 24,
+    "selected_candidate": "110100010111100001001001",
+    "selected_source": "exact_statevector"
+  },
+  {
+    "challenge": "32_30",
+    "collector_top_fraction": "0.1357421875",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-32_30.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.728515625,
+      "top": [
+        {
+          "bitstring": "10011000010011110111101111010111",
+          "count": 139,
+          "value": 0.1357421875
+        },
+        {
+          "bitstring": "10011000010011110111101111010011",
+          "count": 31,
+          "value": 0.0302734375
+        },
+        {
+          "bitstring": "10011000011011110011101111010111",
+          "count": 29,
+          "value": 0.0283203125
+        },
+        {
+          "bitstring": "11011000010011110111101111010111",
+          "count": 21,
+          "value": 0.0205078125
+        },
+        {
+          "bitstring": "10011000011011110011101101010111",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "10011000010011110111111111010011",
+          "count": 14,
+          "value": 0.013671875
+        },
+        {
+          "bitstring": "10001000010011110111101111010111",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "10111000010011110111101111010111",
+          "count": 11,
+          "value": 0.0107421875
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.1357421875,
+    "qubits": 32,
+    "selected_candidate": "10011000010011110111101111010111",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "48_31",
+    "collector_top_fraction": "0.4208984375",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-48_31.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.4443359375,
+      "top": [
+        {
+          "bitstring": "101100111000101011111111101010111011011000110110",
+          "count": 431,
+          "value": 0.4208984375
+        },
+        {
+          "bitstring": "101100111000101011111111101010110011011000110010",
+          "count": 25,
+          "value": 0.0244140625
+        },
+        {
+          "bitstring": "101100111000101011111111101000111011111000110110",
+          "count": 22,
+          "value": 0.021484375
+        },
+        {
+          "bitstring": "101101111000101011111011101010111011011001110110",
+          "count": 21,
+          "value": 0.0205078125
+        },
+        {
+          "bitstring": "101100111000101001111111101010111011111000110110",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "101100111000101001111111101000111011111000110110",
+          "count": 18,
+          "value": 0.017578125
+        },
+        {
+          "bitstring": "101101101000101011111111101010111011011001110110",
+          "count": 16,
+          "value": 0.015625
+        },
+        {
+          "bitstring": "101100111000101011111110101010111011011000110110",
+          "count": 16,
+          "value": 0.015625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.4208984375,
+    "qubits": 48,
+    "selected_candidate": "101100111000101011111111101010111011011000110110",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "48_32",
+    "collector_top_fraction": "0.265625",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-48_32.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.5625,
+      "top": [
+        {
+          "bitstring": "011101010111011110001110010101010101101110001110",
+          "count": 272,
+          "value": 0.265625
+        },
+        {
+          "bitstring": "011101010111011110001110010101110001101110001110",
+          "count": 56,
+          "value": 0.0546875
+        },
+        {
+          "bitstring": "011101110111011110001110010101010101101110001110",
+          "count": 42,
+          "value": 0.041015625
+        },
+        {
+          "bitstring": "011101010111011110001110010001010101101110001110",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "011101010111111110001110010101010101101111101110",
+          "count": 19,
+          "value": 0.0185546875
+        },
+        {
+          "bitstring": "010101011111011110001110010101010100001110001110",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "011101010110011100101110010101010101101110001110",
+          "count": 13,
+          "value": 0.0126953125
+        },
+        {
+          "bitstring": "011101010110011110101110010101010101101110001110",
+          "count": 13,
+          "value": 0.0126953125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.265625,
+    "qubits": 48,
+    "selected_candidate": "011101010111011110001110010101010101101110001110",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "56_33",
+    "collector_top_fraction": "0.041015625",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-56_33.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.8818359375,
+      "top": [
+        {
+          "bitstring": "11001001100101001111010100100010010101111111011101010000",
+          "count": 42,
+          "value": 0.041015625
+        },
+        {
+          "bitstring": "11001001100100001111010100100010010101111111011101010000",
+          "count": 32,
+          "value": 0.03125
+        },
+        {
+          "bitstring": "11001001100100001111010100100010010101111101011101010000",
+          "count": 10,
+          "value": 0.009765625
+        },
+        {
+          "bitstring": "11001001100110001111010000100010010101111111011101010000",
+          "count": 10,
+          "value": 0.009765625
+        },
+        {
+          "bitstring": "10001001100100001111010100100010010101111111011101010000",
+          "count": 8,
+          "value": 0.0078125
+        },
+        {
+          "bitstring": "11001001100100001111010100100010010101110111011101010000",
+          "count": 7,
+          "value": 0.0068359375
+        },
+        {
+          "bitstring": "10011001100101001111010100100010010101111111011101010000",
+          "count": 6,
+          "value": 0.005859375
+        },
+        {
+          "bitstring": "11001001100101001111010100100010010101111101011101010000",
+          "count": 6,
+          "value": 0.005859375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.041015625,
+    "qubits": 56,
+    "selected_candidate": "11001001100101001111010100100010010101111111011101010000",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "64_34",
+    "collector_top_fraction": "0.1630859375",
+    "difficulty": "moderate",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all_cpu/json/challenge-64_34.quimb_tree_graph_mps.json",
+      "source": "quimb_cpu_all",
+      "source_label": "Quimb CPU",
+      "status": "ok",
+      "tail_value": 0.5615234375,
+      "top": [
+        {
+          "bitstring": "0011010100010011001110101110100101001011001011011001111011100110",
+          "count": 167,
+          "value": 0.1630859375
+        },
+        {
+          "bitstring": "0011010100010011001110101110100101101011001011011001111011100110",
+          "count": 158,
+          "value": 0.154296875
+        },
+        {
+          "bitstring": "0011000100010011001110101110110101101011001011011001111011100110",
+          "count": 33,
+          "value": 0.0322265625
+        },
+        {
+          "bitstring": "0011010100110011001110101110100101101011001011011001111011100110",
+          "count": 23,
+          "value": 0.0224609375
+        },
+        {
+          "bitstring": "0011010100011011101110101110100101101011001011011001111011100110",
+          "count": 20,
+          "value": 0.01953125
+        },
+        {
+          "bitstring": "0011010100010011001110101110100101101011001001011001111011100110",
+          "count": 17,
+          "value": 0.0166015625
+        },
+        {
+          "bitstring": "0011010100010011001110101110100101101011001111011001111011100110",
+          "count": 16,
+          "value": 0.015625
+        },
+        {
+          "bitstring": "0011000100010011001110101110110101001011001011011001111011100110",
+          "count": 15,
+          "value": 0.0146484375
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.1630859375,
+    "qubits": 64,
+    "selected_candidate": "0011010100010011001110101110100101001011001011011001111011100110",
+    "selected_source": "quimb_cpu_all"
+  },
+  {
+    "challenge": "40_35",
+    "collector_top_fraction": "0.001953125",
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-40_35.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.9912109375,
+      "top": [
+        {
+          "bitstring": "0101100110101111111000010101001110001001",
+          "count": 2,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "0111110111110111101000011110000100001011",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "1101100110110110101100100101011010001001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "0101101111111111101000011101101011001001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "0001100111111010101001000101000010001001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "0111100110110111111100000101001010001001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "0000101111011111101100101101001110001001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "0110100110111111110101011001100010001001",
+          "count": 1,
+          "value": 0.0009765625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.001953125,
+    "qubits": 40,
+    "selected_candidate": "0101100110101111111000010101001110001001",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "48_36",
+    "collector_top_fraction": "0.0078125",
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-48_36.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.9697265625,
+      "top": [
+        {
+          "bitstring": "001111011011001100110011001000101001101010111000",
+          "count": 8,
+          "value": 0.0078125
+        },
+        {
+          "bitstring": "000111011011001100110011001000001001101010111000",
+          "count": 5,
+          "value": 0.0048828125
+        },
+        {
+          "bitstring": "000111011011001100110011001000001001101011111000",
+          "count": 4,
+          "value": 0.00390625
+        },
+        {
+          "bitstring": "000111011011001100110011001000101001101011111000",
+          "count": 3,
+          "value": 0.0029296875
+        },
+        {
+          "bitstring": "000111011010001100110011001000101001101010111000",
+          "count": 3,
+          "value": 0.0029296875
+        },
+        {
+          "bitstring": "000111011011001100110011001000101001101010111000",
+          "count": 3,
+          "value": 0.0029296875
+        },
+        {
+          "bitstring": "000111011011001100110010001000101001101010111000",
+          "count": 3,
+          "value": 0.0029296875
+        },
+        {
+          "bitstring": "000111011011001000110011001000101001101110111001",
+          "count": 2,
+          "value": 0.001953125
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.0078125,
+    "qubits": 48,
+    "selected_candidate": "001111011011001100110011001000101001101010111000",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "48_37",
+    "collector_top_fraction": "0.0009765625",
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-48_37.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.9921875,
+      "top": [
+        {
+          "bitstring": "100101001010001101010100100101001001000101010001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "100111111110011111000110101100000001000101001011",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "101101001010100101011000100100001000000100011001",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "100101001110111111010100100000000000010100101010",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "101001110010000111010100100000000111011101001010",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "100101111110111101010001100100000010111100110000",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "101101110110111110010100100110000011110100101010",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "100001011110011110000100100110001011011101001011",
+          "count": 1,
+          "value": 0.0009765625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "3",
+    "plotted_top_value": 0.0009765625,
+    "qubits": 48,
+    "selected_candidate": "100101001010001101010100100101001001000101010001",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "56_38",
+    "collector_top_fraction": "0.001953125",
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/rcm_cpu/json/challenge-56_38.quimb_tree_graph_mps.json",
+      "source": "quimb_rcm_cpu",
+      "source_label": "Quimb RCM CPU",
+      "status": "ok",
+      "tail_value": 0.984375,
+      "top": [
+        {
+          "bitstring": "10011001011110000000010011010101100001001001110110110001",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "11001100111010101110010011011000100111000001000001001111",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "11001111111110010100110011010110011011101010001010111111",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "11011100101111000001111111100110100011000101010001001011",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10001110101100100011110101101001010111011011000110111001",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10011010101001001100111111000000010101111000001000100001",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "00011101011110101001011010001001000010100101000010000000",
+          "count": 1,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10000100111110000001010001101110010011110010011110001001",
+          "count": 1,
+          "value": 0.001953125
+        }
+      ],
+      "total": 512.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.001953125,
+    "qubits": 56,
+    "selected_candidate": "10011001011110000000010011010101100001001001110110110001",
+    "selected_source": "quimb_rcm_cpu"
+  },
+  {
+    "challenge": "56_39",
+    "collector_top_fraction": "0.001953125",
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "sample",
+      "note": "Sampled output distribution; tail is all observed outcomes outside the plotted top ranks.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/all/json/challenge-56_39.quimb_tree_graph_mps.json",
+      "source": "quimb_gpu_all",
+      "source_label": "Quimb GPU",
+      "status": "ok",
+      "tail_value": 0.9873046875,
+      "top": [
+        {
+          "bitstring": "10010111001101010101111111010110110110110000101001010000",
+          "count": 2,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10010101001101010101111111010110110110110000111001000000",
+          "count": 2,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10010111001101010101111111010110110100110000101001010000",
+          "count": 2,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10010111001001010101101101010110110100110000110001010000",
+          "count": 2,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10010111001101010101111111010111110100110000011001110000",
+          "count": 2,
+          "value": 0.001953125
+        },
+        {
+          "bitstring": "10010111001011010101111101010111010100111000101001010000",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "10010111001101011111111111010110100110110000101001010000",
+          "count": 1,
+          "value": 0.0009765625
+        },
+        {
+          "bitstring": "10000111001001010101111011010110100100110000101011110110",
+          "count": 1,
+          "value": 0.0009765625
+        }
+      ],
+      "total": 1024.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "2",
+    "plotted_top_value": 0.001953125,
+    "qubits": 56,
+    "selected_candidate": "10010111001101010101111111010110110110110000101001010000",
+    "selected_source": "quimb_gpu_all"
+  },
+  {
+    "challenge": "64_40",
+    "collector_top_fraction": null,
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "sample",
+      "note": "No answer was selected for this row; plotted data is the best completed low-confidence distribution found.",
+      "path": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction-tree-tensor/outputs/tree_tensor_sim/peaked_unswap_gpu/json/challenge-64_40.peaked_mpo_unswap.json",
+      "source": "peaked_mpo_unswap_gpu",
+      "source_label": "MPO unswap",
+      "status": "ok",
+      "tail_value": 0.992,
+      "top": [
+        {
+          "bitstring": "1011010011100010110100000000110000111001111010100100110100001100",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1010010111110010110000100000111010100111111110110000101101001110",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1010000110110111110110110001101100111001101010110110110101011110",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1110110110111000010100110011100100000011111110110110010101011100",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1010010111111010010011100001000010100111101010110010100101011110",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1000011010110010110101010001001001100011110010110110101100001110",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1010110011110000110011110101101010001001110110110011000101001100",
+          "count": 1,
+          "value": 0.001
+        },
+        {
+          "bitstring": "1010010011111010110000110101100010101001100010110111110101011110",
+          "count": 1,
+          "value": 0.001
+        }
+      ],
+      "total": 1000.0,
+      "value_label": "sample fraction"
+    },
+    "evidence_count": "0",
+    "plotted_top_value": 0.001,
+    "qubits": 64,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "64_41",
+    "collector_top_fraction": "0.167",
+    "difficulty": "hard",
+    "distribution": {
+      "kind": "aggregate",
+      "note": "MPS distillation aggregate across seed/shot/bond trials; support is repeated observations, not an exact probability.",
+      "source": "aer_mps_pilot",
+      "source_label": "Aer MPS distill",
+      "status": "ok",
+      "tail_value": 0.9916805324459235,
+      "top": [
+        {
+          "bitstring": "0001000111010011100110010011110111000000100011010001101010110010",
+          "support": 2,
+          "value": 0.0016638935108153079
+        },
+        {
+          "bitstring": "0001001100010011000101001011110101000000000011011010100011110010",
+          "support": 2,
+          "value": 0.0016638935108153079
+        },
+        {
+          "bitstring": "0001001100010011000101011011110101001000001011010101010010110010",
+          "support": 2,
+          "value": 0.0016638935108153079
+        },
+        {
+          "bitstring": "0011001100010011000101011011110101000000000011011000100011110011",
+          "support": 2,
+          "value": 0.0016638935108153079
+        },
+        {
+          "bitstring": "0001001100000011000101011010110111000000000101011000000011010010",
+          "support": 2,
+          "value": 0.0016638935108153079
+        }
+      ],
+      "total": 1.0,
+      "value_label": "aggregate support fraction"
+    },
+    "evidence_count": "1",
+    "plotted_top_value": 0.0016638935108153079,
+    "qubits": 64,
+    "selected_candidate": "0001000111010011100110010011110111000000100011010001101010110010",
+    "selected_source": "aer_mps_pilot"
+  },
+  {
+    "challenge": "48_42",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 48,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "56_43",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 56,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "64_44",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 64,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "72_45",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 72,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "80_46",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 80,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "88_47",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 88,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "96_48",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 96,
+    "selected_candidate": null,
+    "selected_source": null
+  },
+  {
+    "challenge": "104_49",
+    "collector_top_fraction": null,
+    "difficulty": "very_hard",
+    "distribution": {
+      "kind": "none",
+      "note": "No completed distribution was available in the session artifacts.",
+      "source": "",
+      "source_label": "",
+      "status": "missing",
+      "tail_value": 0.0,
+      "top": [],
+      "total": null,
+      "value_label": ""
+    },
+    "evidence_count": "0",
+    "plotted_top_value": null,
+    "qubits": 104,
+    "selected_candidate": null,
+    "selected_source": null
+  }
+]

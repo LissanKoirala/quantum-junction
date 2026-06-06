@@ -8,9 +8,11 @@ This folder contains the condensed research artifacts from the Codex session on 
 
 - `reports/session_report/quantum_junction_session_report.pdf`: primary compiled LaTeX report.
 - `reports/session_report/quantum_junction_session_report.tex`: primary report source.
+- `reports/session_report/figures/distribution_appendix_pages.pdf`: compact per-problem distribution appendix included at the end of the primary report.
 - `reports/tree_tensor_report/tree_tensor_report.pdf`: narrower tree-tensor/MPO-unswapping report.
 - `results/current_candidates/SUBMISSION_ANSWERS.tsv`: current candidate answer table.
 - `results/current_candidates/CANDIDATE_EVIDENCE.json`: source evidence used by the collector.
+- `results/distributions/distribution_summary.json`: compact distribution metadata used to generate the appendix.
 
 ## Snapshot Result
 

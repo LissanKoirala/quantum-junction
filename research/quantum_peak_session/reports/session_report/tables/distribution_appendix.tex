@@ -1,0 +1,70 @@
+\clearpage
+\section*{Appendix: Per-Problem Result Distributions}
+Each panel below shows the best distribution evidence retained for one challenge. Exact panels show the largest exact probabilities from statevector simulation. Sampled panels show the top observed bitstrings from Quimb MPS, MPO-unswap, or MPS distillation evidence; the grey tail is all unplotted probability or sample mass. Green bars mark a plotted bitstring that equals the selected candidate. Orange panels mean no answer was selected even though a low-confidence distribution was available. Bitstrings in plots are shortened for readability; the full selected bitstrings remain in the selected candidate table above. All bitstrings use Qiskit count order.
+
+\includepdf[pages=-,fitpaper=true]{figures/distribution_appendix_pages.pdf}
+\clearpage
+\subsection*{Distribution Metadata}
+The table records the source used in each appendix panel and the top plotted mass. For exact rows this is an exact probability; for sampled rows it is an observed sample fraction or aggregate support fraction. Rows with no completed distribution are left blank.
+\scriptsize
+\begin{longtable}{l l r l l r l}
+\toprule
+Challenge & difficulty & q & selected source & plotted source & top mass & appendix status \\
+\midrule
+\endfirsthead
+\toprule
+Challenge & difficulty & q & selected source & plotted source & top mass & appendix status \\
+\midrule
+\endhead
+8\_1 & very easy & 8 & exact statevector & exact statevector & 0.9126 & selected \\
+16\_2 & very easy & 16 & exact statevector & exact statevector & 0.467 & selected \\
+24\_3 & very easy & 24 & exact statevector & exact statevector & 0.724 & selected \\
+28\_4 & very easy & 28 & exact statevector & exact statevector & 0.3511 & selected \\
+32\_5 & very easy & 32 & Quimb CPU & Quimb CPU & 0.5322 & selected \\
+36\_6 & very easy & 36 & Quimb CPU & Quimb CPU & 0.6885 & selected \\
+40\_7 & very easy & 40 & Quimb CPU & Quimb CPU & 0.8789 & selected \\
+48\_8 & very easy & 48 & Quimb CPU & Quimb CPU & 0.6973 & selected \\
+56\_9 & very easy & 56 & Quimb CPU & Quimb CPU & 0.7812 & selected \\
+64\_10 & very easy & 64 & Quimb CPU & Quimb CPU & 0.7871 & selected \\
+8\_11 & easy & 8 & exact statevector & exact statevector & 0.5454 & selected \\
+16\_12 & easy & 16 & exact statevector & exact statevector & 0.4665 & selected \\
+24\_13 & easy & 24 & exact statevector & exact statevector & 0.5912 & selected \\
+32\_14 & easy & 32 & Quimb GPU & Quimb GPU & 0.4717 & selected \\
+36\_15 & easy & 36 & Quimb GPU & Quimb GPU & 0.03125 & selected \\
+40\_16 & easy & 40 & Quimb GPU & Quimb GPU & 0.4424 & selected \\
+40\_17 & easy & 40 & Quimb GPU & Quimb GPU & 0.5459 & selected \\
+40\_18 & easy & 40 & Quimb GPU & Quimb GPU & 0.4395 & selected \\
+48\_19 & easy & 48 & Quimb GPU & Quimb GPU & 0.6738 & selected \\
+48\_20 & easy & 48 & Quimb GPU & Quimb GPU & 0.6123 & selected \\
+48\_21 & easy & 48 & Quimb GPU & Quimb GPU & 0.4414 & selected \\
+56\_22 & easy & 56 & Quimb GPU & Quimb GPU & 0.5898 & selected \\
+56\_23 & easy & 56 & Quimb GPU & Quimb GPU & 0.4971 & selected \\
+56\_24 & easy & 56 & Quimb GPU & Quimb GPU & 0.5176 & selected \\
+64\_25 & easy & 64 & Quimb GPU & Quimb GPU & 0.3965 & selected \\
+64\_26 & easy & 64 & Quimb GPU & Quimb GPU & 0.2617 & selected \\
+8\_27 & moderate & 8 & exact statevector & exact statevector & 0.2879 & selected \\
+16\_28 & moderate & 16 & exact statevector & exact statevector & 0.3962 & selected \\
+24\_29 & moderate & 24 & exact statevector & exact statevector & 0.3901 & selected \\
+32\_30 & moderate & 32 & Quimb CPU & Quimb CPU & 0.1357 & selected \\
+48\_31 & moderate & 48 & Quimb CPU & Quimb CPU & 0.4209 & selected \\
+48\_32 & moderate & 48 & Quimb CPU & Quimb CPU & 0.2656 & selected \\
+56\_33 & moderate & 56 & Quimb CPU & Quimb CPU & 0.04102 & selected \\
+64\_34 & moderate & 64 & Quimb CPU & Quimb CPU & 0.1631 & selected \\
+40\_35 & hard & 40 & Quimb GPU & Quimb GPU & 0.001953 & selected \\
+48\_36 & hard & 48 & Quimb GPU & Quimb GPU & 0.007812 & selected \\
+48\_37 & hard & 48 & Quimb GPU & Quimb GPU & 0.0009766 & selected \\
+56\_38 & hard & 56 & Quimb RCM CPU & Quimb RCM CPU & 0.001953 & selected \\
+56\_39 & hard & 56 & Quimb GPU & Quimb GPU & 0.001953 & selected \\
+64\_40 & hard & 64 &  & MPO unswap & 0.001 & not selected \\
+64\_41 & hard & 64 & Aer MPS distill & Aer MPS distill & 0.001664 & selected \\
+48\_42 & very\_hard & 48 &  &  &  & no completed distribution \\
+56\_43 & very\_hard & 56 &  &  &  & no completed distribution \\
+64\_44 & very\_hard & 64 &  &  &  & no completed distribution \\
+72\_45 & very\_hard & 72 &  &  &  & no completed distribution \\
+80\_46 & very\_hard & 80 &  &  &  & no completed distribution \\
+88\_47 & very\_hard & 88 &  &  &  & no completed distribution \\
+96\_48 & very\_hard & 96 &  &  &  & no completed distribution \\
+104\_49 & very\_hard & 104 &  &  &  & no completed distribution \\
+\bottomrule
+\end{longtable}
+\normalsize

@@ -505,6 +505,7 @@ def build_tex(candidates: pd.DataFrame, evidence: list[dict[str, Any]], static_s
 \usepackage{{xcolor}}
 \usepackage{{float}}
 \usepackage{{caption}}
+\usepackage{{pdfpages}}
 \hypersetup{{colorlinks=true, linkcolor=blue, urlcolor=blue}}
 \setlength{{\parindent}}{{0pt}}
 \setlength{{\parskip}}{{4pt}}
@@ -678,6 +679,8 @@ The practical output of the session is a 40-row candidate answer set and a clear
 The exact and high-top-fraction Quimb rows are the most defensible. The hard weak rows should be treated as provisional.
 The best next direction is not another unconstrained graph-MPS sweep: it is bounded MPO-unswapping or optimized-U3 GPU runs
 with calibration checks and immediate collector refreshes.
+
+\input{{tables/distribution_appendix.tex}}
 
 \end{{document}}
 """
