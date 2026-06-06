@@ -81,6 +81,7 @@ EXTERNAL_SYNC_SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_veryhard_fast_cpu_g",
     "mpo_graph_tns_veryhard_fast_cpu_h",
+    "mpo_graph_tns_param_probe",
     "mpo_graph_tns_gpu_retry",
     "mpo_graph_tns_marginal_fallback_cpu",
 ]
@@ -114,8 +115,9 @@ CPU_JOB_IDS = [
     "34623203",
     "34620754",
     "34623041",
-    "34626239",
+    "34626293",
     "34626172",
+    "34626264",
 ]
 GPU_JOB_IDS = ["34616526", "34622515", "34624722"]
 
@@ -486,8 +488,8 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; "
         "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; "
         "`sample_top_post` records known-answer hits found below rank 1 in sampled distributions.",
-        "- Imported external all-GPU, fast very-hard, GPU retry, and marginal fallback outputs from `../hard-problems`: `34616526`, `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`, `34624347`, `34624722`, `34624738`, `34626172`.",
-        "- Current replacement dependency-gated jobs: `34626239` fallback array, `34626240` combined rollup.",
+        "- Imported external all-GPU, param-probe, fast very-hard, GPU retry, and marginal fallback outputs from `../hard-problems`: `34616526`, `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`, `34624347`, `34624722`, `34624738`, `34626172`, `34626264`.",
+        "- Current replacement dependency-gated jobs: `34626293` fallback array, `34626294` combined rollup.",
         "",
         "## Source Output Counts",
         "",
