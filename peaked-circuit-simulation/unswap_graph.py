@@ -181,6 +181,18 @@ def mpo_compress_unswap_graph(
         logging.info(f"[graph_ordering] initial ordering accepted (method={init_result['method']})")
     else:
         logging.info("[graph_ordering] initial ordering skipped (insufficient improvement), using identity")
+    init_graph_ordering_event = {
+        "time": time.perf_counter() - t0,
+        "stage": "graph_ordering",
+        "phase": "initial",
+        "call_num": -1,
+        "method": init_result["method"],
+        "bandwidth_cost_before": init_result["cost_before"],
+        "bandwidth_cost_after": init_result["cost_after"],
+        "improvement_ratio": init_result["improvement"],
+        "accepted": init_result["improvement"] >= graph_ordering_min_improvement,
+        "candidate_blocks": init_result["blocks"],
+    }
 
     layers_left = rewire_layers(layers_left, use_init_perm, seed=seed, sabre_trials=sabre_trials)
     layers_right = rewire_layers(layers_right, use_init_perm, seed=seed, sabre_trials=sabre_trials)
@@ -199,7 +211,7 @@ def mpo_compress_unswap_graph(
 
     total_u = total_u_left = total_u_right = current_u = 0
     graph_ordering_calls = 0
-    stats_data: list[dict] = []
+    stats_data: list[dict] = [init_graph_ordering_event]
 
     # ── Main absorption loop ──────────────────────────────────────────
     while ii_left < len(layers_left) or ii_right < len(layers_right):

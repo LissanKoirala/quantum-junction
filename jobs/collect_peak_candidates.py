@@ -38,6 +38,64 @@ def add_evidence(evidence: dict[str, list[dict[str, Any]]], label: str | None, r
     evidence.setdefault(label, []).append(row)
 
 
+def source_priority(source: str) -> int:
+    priorities = {
+        "exact_statevector": 98,
+        "quimb_gpu_all": 90,
+        "quimb_opt_u3_gpu": 88,
+        "quimb_cpu_all": 80,
+        "peaked_mpo_unswap_gpu": 70,
+        "quimb_rcm_cpu": 55,
+        "quimb_mst_cpu": 54,
+        "quimb_degree_cpu": 53,
+        "quimb_mid_cpu": 52,
+        "quimb_fast_cpu": 50,
+        "quimb_identity_cpu": 49,
+        "quimb_vh_multiseed_cpu": 48,
+        "sparse_beam": 45,
+        "aer_mps_pilot": 40,
+        "peaked_mpo_graph_tns_gpu_retry": 36,
+        "peaked_mpo_graph_tns": 35,
+        "peaked_mpo_graph_tns_cpu": 34,
+        "peaked_mpo_graph_tns_extra_cpu": 33,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu": 32,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_b": 31,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_c": 30,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_d": 29,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_e": 28,
+        "peaked_mpo_graph_tns_ultrafast_cpu": 27,
+        "peaked_mpo_graph_tns_ultrafast_cpu_s2": 26,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_f": 25,
+        "peaked_mpo_graph_tns_veryhard_fast_cpu_g": 24,
+        "peaked_mpo_graph_tns_marginal_fallback_cpu": 23,
+    }
+    return priorities.get(source, 10)
+
+
+def load_archived_candidate_rollup(root: Path, rel_path: str, evidence: dict[str, list[dict[str, Any]]]) -> None:
+    path = root / rel_path
+    if not path.exists():
+        return
+    with path.open(newline="") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            source = row.get("source") or "archived_rollup"
+            add_evidence(
+                evidence,
+                row.get("challenge"),
+                {
+                    "source": source,
+                    "priority": source_priority(source),
+                    "candidate": row.get("candidate"),
+                    "validation": row.get("validation") or "unknown",
+                    "top_fraction": row.get("top_fraction") or "",
+                    "max_bond": row.get("max_bond") or "",
+                    "seconds": row.get("seconds") or "",
+                    "path": str(path.relative_to(root)),
+                    "archived_evidence_count": row.get("evidence_count") or "",
+                },
+            )
+
+
 def load_exact(root: Path, evidence: dict[str, list[dict[str, Any]]]) -> None:
     path = root / "agent_work" / "exact_baseline" / "peaks_exact.csv"
     if not path.exists():
@@ -110,6 +168,40 @@ def load_quimb_dir(root: Path, rel_dir: str, source: str, priority: int, evidenc
         )
 
 
+def load_quimb_multiseed_dir(root: Path, rel_dir: str, source: str, priority: int, evidence: dict[str, list[dict[str, Any]]]) -> None:
+    base_dir = root / rel_dir
+    if not base_dir.exists():
+        return
+    for path in sorted(base_dir.glob("seed_*/json/*.json")):
+        try:
+            data = json.loads(path.read_text())
+        except Exception:
+            continue
+        if data.get("status") != "ok":
+            continue
+        if data.get("method") != "quimb_graph_tree_ordered_circuit_mps":
+            continue
+        label = data.get("challenge_label")
+        sampling = data.get("sampling", {})
+        validation = data.get("validation", {})
+        mps_info = data.get("mps_info", {})
+        add_evidence(
+            evidence,
+            label,
+            {
+                "source": source,
+                "priority": priority,
+                "candidate": data.get("final_candidate_qiskit_order"),
+                "validation": validation.get("status") or "unknown",
+                "top_fraction": sampling.get("top_fraction", ""),
+                "max_bond": mps_info.get("max_bond", ""),
+                "seconds": data.get("total_seconds", ""),
+                "path": str(path.relative_to(root)),
+                "seed": (data.get("parameters") or {}).get("seed", ""),
+            },
+        )
+
+
 def load_peaked_unswap_dir(root: Path, rel_dir: str, source: str, priority: int, evidence: dict[str, list[dict[str, Any]]]) -> None:
     json_dir = root / rel_dir / "json"
     if not json_dir.exists():
@@ -151,6 +243,52 @@ def load_peaked_unswap_dir(root: Path, rel_dir: str, source: str, priority: int,
                 "max_bond": mps_info.get("max_bond", ""),
                 "seconds": data.get("total_seconds", ""),
                 "path": str(path.relative_to(root)),
+            },
+        )
+
+
+def load_peaked_graph_tns_dir(root: Path, rel_dir: str, source: str, priority: int, evidence: dict[str, list[dict[str, Any]]]) -> None:
+    json_dir = root / rel_dir / "json"
+    if not json_dir.exists():
+        return
+    for path in sorted(json_dir.glob("*.json")):
+        try:
+            data = json.loads(path.read_text())
+        except Exception as exc:  # noqa: BLE001
+            add_evidence(
+                evidence,
+                path.stem,
+                {
+                    "source": source,
+                    "priority": 0,
+                    "candidate": "",
+                    "validation": "read_error",
+                    "error": repr(exc),
+                    "path": str(path.relative_to(root)),
+                },
+            )
+            continue
+        if data.get("status") != "ok":
+            continue
+        if data.get("method") != "peaked_mpo_graph_tns":
+            continue
+        label = data.get("challenge_label")
+        sampling = data.get("sampling", {})
+        validation = data.get("validation", {})
+        mps_info = data.get("mps_info", {})
+        add_evidence(
+            evidence,
+            label,
+            {
+                "source": source,
+                "priority": priority,
+                "candidate": data.get("final_candidate_qiskit_order"),
+                "validation": validation.get("status") or "unknown",
+                "top_fraction": sampling.get("top_fraction", ""),
+                "max_bond": mps_info.get("max_bond", ""),
+                "seconds": data.get("total_seconds", ""),
+                "path": str(path.relative_to(root)),
+                "candidate_strategy": data.get("candidate_strategy", ""),
             },
         )
 
@@ -396,16 +534,41 @@ def main() -> int:
 
     evidence: dict[str, list[dict[str, Any]]] = {}
     load_exact(root, evidence)
+    load_archived_candidate_rollup(root, "research/quantum_peak_session/results/current_candidates/CANDIDATES.tsv", evidence)
+    load_archived_candidate_rollup(root, "research/tree_tensor_sim_session/artifacts/collector/CANDIDATES.tsv", evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/all", "quimb_gpu_all", 90, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/opt_u3_gpu", "quimb_opt_u3_gpu", 88, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/all_cpu", "quimb_cpu_all", 80, evidence)
     load_peaked_unswap_dir(root, "outputs/tree_tensor_sim/peaked_unswap_gpu", "peaked_mpo_unswap_gpu", 70, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_gpu_retry", "peaked_mpo_graph_tns_gpu_retry", 36, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_all", "peaked_mpo_graph_tns", 35, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_all_cpu", "peaked_mpo_graph_tns_cpu", 34, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_missing_cpu", "peaked_mpo_graph_tns_cpu", 34, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu_b", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu_c", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu_d", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu_e", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu_f", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_extra_cpu_g", "peaked_mpo_graph_tns_extra_cpu", 33, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu", "peaked_mpo_graph_tns_veryhard_fast_cpu", 32, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_b", "peaked_mpo_graph_tns_veryhard_fast_cpu_b", 31, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_c", "peaked_mpo_graph_tns_veryhard_fast_cpu_c", 30, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_d", "peaked_mpo_graph_tns_veryhard_fast_cpu_d", 29, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_e", "peaked_mpo_graph_tns_veryhard_fast_cpu_e", 28, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_veryhard_ultrafast_cpu", "peaked_mpo_graph_tns_ultrafast_cpu", 27, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_veryhard_ultrafast_cpu_s2", "peaked_mpo_graph_tns_ultrafast_cpu_s2", 26, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_f", "peaked_mpo_graph_tns_veryhard_fast_cpu_f", 25, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_veryhard_fast_cpu_g", "peaked_mpo_graph_tns_veryhard_fast_cpu_g", 24, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_marginal_fallback_cpu", "peaked_mpo_graph_tns_marginal_fallback_cpu", 23, evidence)
+    load_peaked_graph_tns_dir(root, "outputs/mpo_graph_tns_param_probe", "peaked_mpo_graph_tns_veryhard_fast_cpu", 32, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/rcm_cpu", "quimb_rcm_cpu", 55, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/mst_cpu", "quimb_mst_cpu", 54, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/degree_cpu", "quimb_degree_cpu", 53, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/mid_cpu", "quimb_mid_cpu", 52, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/fast_cpu", "quimb_fast_cpu", 50, evidence)
     load_quimb_dir(root, "outputs/tree_tensor_sim/identity_cpu", "quimb_identity_cpu", 49, evidence)
+    load_quimb_multiseed_dir(root, "outputs/multiseed_vh_cpu", "quimb_vh_multiseed_cpu", 48, evidence)
     load_sparse_beam(root, evidence)
     load_mps_pilot(root, evidence)
 

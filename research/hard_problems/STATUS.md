@@ -1,0 +1,80 @@
+# Hard Problems Status
+
+Snapshot: 2026-06-06 12:12 BST
+
+Worktree: `hard-problems`
+
+## Current Rollup
+
+- Refreshed candidate rollup: `outputs/tree_tensor_sim/CANDIDATES.md`
+- Selected candidates: 41/49.
+- Newly restored hard candidate: `64_40`, selected from archived `peaked_mpo_unswap_gpu` evidence.
+- Remaining blank labels: `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`, `104_49`.
+
+## Method Direction
+
+Web check:
+
+- Kremer and Dupuis, "Efficient Classical Simulation of Heuristic Peaked Quantum Circuits", arXiv:2604.21908, submitted 2026-04-23: https://arxiv.org/abs/2604.21908
+- `d-kremer/peaked-circuit-simulation` repository: https://github.com/d-kremer/peaked-circuit-simulation
+- Rudolph and Tindall, "Simulating and Sampling from Quantum Circuits with 2D Tensor Networks", arXiv:2507.11424, revised 2025-09-14: https://arxiv.org/abs/2507.11424
+
+Conclusion: prioritize mirrored-circuit MPO cancellation plus unswapping/permutation extraction, with graph-aware ordering as a support heuristic. The local algebraic simplification artifacts show direct RX/pi extraction and local cancellation are not reliable on very-hard circuits.
+
+## Changes Made In This Worktree
+
+- Created `hard-problems` worktree from the advanced `klalee-graph` branch tip.
+- Imported graph/TNS Slurm wrappers and a lightweight snapshot of graph/TNS outputs.
+- Fixed DFS tree ordering on forests in `peaked-circuit-simulation/graph_ordering.py`.
+- Added collector support for archived candidate rollups and `peaked_mpo_graph_tns` JSON outputs.
+- Added initial graph-ordering event recording in `peaked-circuit-simulation/unswap_graph.py`.
+
+## Verification
+
+- `python3 -m py_compile jobs/collect_peak_candidates.py jobs/peaked_mpo_graph_tns_runner.py peaked-circuit-simulation/graph_ordering.py peaked-circuit-simulation/unswap_graph.py`
+- Local smoke on `challenges/very easy/challenge-8_1.qasm` with low samples returned candidate `10101101`, validation `correct`, and recorded the initial graph-ordering event.
+
+## Live Compute
+
+Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including five GPU tasks and multiple CPU retry/all-array tasks. No very-hard graph/TNS candidate had completed by this snapshot.
+
+## Update: 2026-06-06 13:46 BST
+
+- Candidate rollup remains 41/49. The unsolved labels are still `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`, and `104_49`.
+- Added `jobs/monitor_hard_slurm.py`, including `--sync-from ../klalee-graph/outputs`, so status checks pull sibling graph/TNS outputs before summarizing Slurm and very-hard JSON states.
+- Extended rollup/report ingestion to include `mpo_graph_tns_extra_cpu_f`, `mpo_graph_tns_extra_cpu_g`, and `mpo_graph_tns_veryhard_fast_cpu_b`.
+- Submitted fast very-hard CPU array `34619926` and second parameter variant `34620010`. `34619926_0` through `_4` were preempted; `_0` and `_1` were resubmitted as `34620567`, and stale JSONs for `_2` through `_4` were marked `preempted`.
+- Added a SIGTERM/SIGINT handler to `jobs/peaked_mpo_graph_tns_runner.py` so future preemptions write a terminal JSON status instead of leaving `started` placeholders.
+- Enforced the requested GPU cap: a separate `vh_mps_gpu` job `34620621` pushed running GPU count to 6, so it was cancelled. Running GPU count returned to 5.
+- Latest synced monitor snapshot at 2026-06-06T13:45:50+0100: running CPU 1932, running GPU 5, pending CPU 302, pending GPU 1. No very-hard attempt has written an `ok` candidate yet.
+
+## Update: 2026-06-06 14:09 BST
+
+- Fast very-hard CPU variant `34620010` produced candidates for `48_42` and `56_43`; `outputs/tree_tensor_sim/CANDIDATES.tsv` now selects 43/49 candidates.
+- Remaining blank labels are `104_49`, `64_44`, `72_45`, `80_46`, `88_47`, and `96_48`.
+- Cancelled redundant solved-label work after the two new hits landed: duplicate `48_42`/`56_43` fast/retry/all-array tasks, solved-label multiseed MPS job `34620622`, pending backups for `48_42`/`56_43`, and old exact-covered `16_28`/`24_29` retry tasks.
+- Enforced caps again after unrelated jobs started: cancelled `tno_gpu`/`tno_cpu` arrays and `tno_36_15` when they pushed GPU or CPU above the requested limits.
+- Extended `jobs/monitor_hard_slurm.py` with explicit CPU/GPU cap reporting, non-graph active-job reporting when over cap, and multiseed-output sync/status.
+- Added and submitted `jobs/run_mpo_graph_tns_veryhard_fast_c_cpu_array.slurm` as job `34621962`, targeting only indices `2-7` (`64_44`, `72_45`, `80_46`, `88_47`, `96_48`, `104_49`) with a different seed/search profile.
+- Latest monitor snapshot at 2026-06-06T14:08:44+0100: running CPU 1312, running GPU 5, pending CPU 142, pending GPU 1. `34621962_2` through `_7` are running, and no further very-hard candidates have completed yet.
+- Registered and submitted additional CPU-only fast variants using the same indices: `34622347` (`veryhard_fast_cpu_d`, lower-bond/faster-sampling profile) and `34622348` (`veryhard_fast_cpu_e`, higher-center tighter-cutoff profile). At submission, running CPU stayed below cap; `34622347_2` and `_3` were released after a transient Slurm env-retrieval hold.
+- Found same-worktree ultrafast jobs `34622360`/`34622374` writing `80_46`, `88_47`, `96_48`, and `104_49`. `34622374` was cancelled because it raced `34622360` in the same JSON directory; `run_mpo_veryhard_ultrafast_cpu_s2.slurm` now writes to `outputs/mpo_veryhard_ultrafast_cpu_s2`, and corrected ultrafast seed-2 job `34622453` was submitted pending priority.
+- GPU all-array tasks `34616526_41` (`104_49`) and `34616526_45` (`72_45`) were preempted and their local JSONs were marked terminal. Added `outputs/mpo_graph_tns_gpu_retry` to the rollup and submitted one-at-a-time GPU retry `34622515` for indices `41,45`; `34622515_41` started first.
+- Fast-B tasks for `64_44` and `72_45` ended with `ValueError: Probabilities contain NaN` after marginal extraction. Patched `jobs/peaked_mpo_graph_tns_runner.py` so sampling failures are recorded in `sampling` while marginal-derived candidates can still be selected. Submitted patched retry wrapper `34623019` for indices `2-3`.
+- Added patched fallback wrapper `34623203` for indices `4-7` (`80_46`, `88_47`, `96_48`, `104_49`) with `%3` throttle, so the larger remaining labels also get marginal fallback if sampling produces NaNs. It is pending on priority with running CPU still under cap.
+
+## Update: 2026-06-06 15:01 BST
+
+- Candidate rollup remains 43/49. The remaining blank labels are `104_49`, `64_44`, `72_45`, `80_46`, `88_47`, and `96_48`.
+- Verified current Python/Slurm syntax after the monitor and fallback changes: `python3 -m py_compile jobs/collect_peak_candidates.py jobs/monitor_hard_slurm.py jobs/generate_mpo_graph_tns_status_report.py jobs/peaked_mpo_graph_tns_runner.py` and `bash -n jobs/run_mpo_graph_tns_marginal_fallback_cpu_array.slurm`.
+- Submitted `jobs/run_mpo_graph_tns_marginal_fallback_cpu_array.slurm` as job `34624347`, targeting indices `2-7` with `samples=0` so marginal extraction can still produce terminal candidates when sampling would hit NaNs. All six tasks started immediately.
+- Cancelled unrelated `tno_36_15_np_cpu` job `34623693`, which was consuming 8 CPU cores on an already-covered label.
+- Latest monitor snapshot at 2026-06-06T15:00:33+0100: running CPU 1884/2000, running GPU 5/5, pending CPU 134, pending GPU 0. No cap breach and no additional very-hard `ok` candidate yet.
+
+## Update: 2026-06-06 15:08 BST
+
+- Generated the solved-candidate report at `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` and the probability plot at `research/hard_problems/solved_bitstring_probability.svg`.
+- The report is based on `outputs/tree_tensor_sim/CANDIDATES.tsv`; it lists 43/49 solved candidates and the 6 remaining open very-hard labels.
+- Added `jobs/generate_solved_candidates_report.py` so the report and plot can be regenerated from the current rollup.
+- Extended `jobs/monitor_hard_slurm.py` with dry-run/execute enforcement actions for unrelated cap breaches and tracked solved-label duplicates.
+- Ran solved-label cleanup through the monitor execute path, cancelling `34623041_7`, `34623041_5`, `34623041_3`, and `34623041_1`; running resources dropped to CPU 1804/2000 and GPU 4/5.

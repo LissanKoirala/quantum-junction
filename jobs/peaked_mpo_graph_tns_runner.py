@@ -27,6 +27,7 @@ import os
 import random
 import re
 import resource
+import signal
 import sys
 import time
 import traceback
@@ -50,6 +51,29 @@ KNOWN = {
     "16_28": "1101001111011100",
     "24_29": "110100010111100001001001",
 }
+_ACTIVE_RESULT: dict[str, Any] | None = None
+_ACTIVE_JSON_PATH: Path | None = None
+_ACTIVE_START_TIME: float | None = None
+
+
+def handle_termination(signum: int, _frame: Any) -> None:
+    if _ACTIVE_RESULT is not None and _ACTIVE_JSON_PATH is not None:
+        _ACTIVE_RESULT.update(
+            {
+                "status": "terminated",
+                "error_type": "SignalTerminated",
+                "error": f"received signal {signum}",
+                "terminated_signal": signum,
+                "total_seconds": (
+                    time.perf_counter() - _ACTIVE_START_TIME
+                    if _ACTIVE_START_TIME is not None
+                    else _ACTIVE_RESULT.get("total_seconds")
+                ),
+                "max_rss_mb": rss_mb(),
+            }
+        )
+        write_json(_ACTIVE_JSON_PATH, _ACTIVE_RESULT)
+    raise SystemExit(128 + signum)
 
 
 def rss_mb() -> float:
@@ -255,6 +279,8 @@ def extract_marginal_bitstring(mps: Any) -> tuple[str, list[float]]:
 
 
 def run(args: argparse.Namespace) -> dict[str, Any]:
+    global _ACTIVE_JSON_PATH, _ACTIVE_RESULT, _ACTIVE_START_TIME
+
     root = args.root.resolve()
     out_dir = (args.out_dir if args.out_dir.is_absolute() else root / args.out_dir).resolve()
     for sub in ["json", "stats", "logs"]:
@@ -312,9 +338,18 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         "started_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
     }
     write_json(json_path, result)
+    _ACTIVE_RESULT = result
+    _ACTIVE_JSON_PATH = json_path
 
     t0 = time.perf_counter()
+    _ACTIVE_START_TIME = t0
     stats_rows: list[dict[str, Any]] = []
+    previous_handlers = {
+        sig: signal.getsignal(sig)
+        for sig in (signal.SIGTERM, signal.SIGINT)
+    }
+    signal.signal(signal.SIGTERM, handle_termination)
+    signal.signal(signal.SIGINT, handle_termination)
 
     try:
         if str(PEAKED_SIM) not in sys.path:
@@ -416,7 +451,16 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 
         # ── Sample ────────────────────────────────────────────────────
         s0 = time.perf_counter()
-        sampling = sample_mps(mps, args.samples, perm)
+        try:
+            sampling = sample_mps(mps, args.samples, perm)
+        except Exception as exc:  # noqa: BLE001
+            sampling = {
+                "status": "error",
+                "samples": args.samples,
+                "error_type": type(exc).__name__,
+                "error": str(exc),
+                "traceback": traceback.format_exc(),
+            }
         result["sampling"] = sampling
         sample_variants = bit_variants(sampling.get("top_raw_site_order"), perm)
         result["sample_variants"] = sample_variants
@@ -449,6 +493,11 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         result["max_rss_mb"] = rss_mb()
         append_jsonl(stats_path, stats_rows)
         write_json(json_path, result)
+        for sig, handler in previous_handlers.items():
+            signal.signal(sig, handler)
+        _ACTIVE_RESULT = None
+        _ACTIVE_JSON_PATH = None
+        _ACTIVE_START_TIME = None
 
     return result
 
