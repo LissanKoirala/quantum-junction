@@ -88,7 +88,7 @@ CPU_JOB_IDS = [
     "34622347",
     "34622348",
     "34620754",
-    "34622438",
+    "34622577",
 ]
 GPU_JOB_IDS = ["34616526", "34622515"]
 
@@ -458,7 +458,7 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set.",
         "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`.",
-        "- Current replacement dependency-gated jobs: `34622438` fallback array, `34622439` combined rollup.",
+        "- Current replacement dependency-gated jobs: `34622577` fallback array, `34622578` combined rollup.",
         "",
         "## Source Output Counts",
         "",
