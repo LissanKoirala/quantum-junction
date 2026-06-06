@@ -190,6 +190,28 @@ def git_commit(root: Path) -> str:
     return out.strip()
 
 
+def source_commit(root: Path, path: Path) -> str:
+    """Return the last commit that touched a tracked source artifact.
+
+    Generated indexes should not change just because the index commit changed.
+    For untracked local raw artifacts, fall back to the raw-root HEAD.
+    """
+    root = root.resolve()
+    try:
+        rel = path.resolve().relative_to(root).as_posix()
+    except ValueError:
+        return git_commit(root)
+    try:
+        out = subprocess.check_output(
+            ["git", "-C", str(root), "log", "-1", "--format=%h", "--", rel],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return git_commit(root)
+    return out.strip() or git_commit(root)
+
+
 def method_family(method: str) -> str:
     if method.startswith("exact") or method in {"statevector", "selected_statevector"}:
         return "exact"
@@ -396,6 +418,7 @@ def add_collector_rows(
 ) -> None:
     selected = selected_map(challenges)
     collector_source = relpath(session.collector_tsv, repo_root)
+    collector_commit = source_commit(repo_root, session.collector_tsv)
 
     for label, row in challenges.items():
         if row.get("selected_bitstring"):
@@ -413,7 +436,7 @@ def add_collector_rows(
                     "status": row.get("validation"),
                     "source_path": collector_source,
                     "worktree": repo_root.name,
-                    "commit": git_commit(repo_root),
+                    "commit": collector_commit,
                     "notes": f"selected from {row.get('selected_method')}",
                 },
             )
@@ -441,12 +464,16 @@ def add_collector_rows(
             )
 
     evidence_source = relpath(session.collector_evidence_json, repo_root)
+    evidence_commit = source_commit(repo_root, session.collector_evidence_json)
     for item in evidence_records:
         label = as_text(item.get("label"))
         meta = challenges.get(label, {})
         for rank, ev in enumerate(item.get("evidence") or [], start=1):
             method = as_text(ev.get("source")) or "collector_evidence"
             run_id = f"collector_evidence:{label}:{rank}"
+            ev_source = as_text(ev.get("path")) or evidence_source
+            ev_source_path = repo_root / ev_source
+            ev_commit = source_commit(repo_root, ev_source_path) if ev_source_path.exists() else evidence_commit
             add_run(
                 runs,
                 {
@@ -458,9 +485,9 @@ def add_collector_rows(
                     "method_family": method_family(method),
                     "run_id": run_id,
                     "status": ev.get("validation"),
-                    "source_path": as_text(ev.get("path")) or evidence_source,
+                    "source_path": ev_source,
                     "worktree": repo_root.name,
-                    "commit": git_commit(repo_root),
+                    "commit": ev_commit,
                     "shots": "",
                     "max_bond": ev.get("max_bond"),
                     "seconds": ev.get("seconds"),
@@ -486,7 +513,7 @@ def add_collector_rows(
                     "selected": candidate_status(bitstring, selected.get(label, "")),
                     "validation": ev.get("validation"),
                     "status": ev.get("validation"),
-                    "source_path": as_text(ev.get("path")) or evidence_source,
+                    "source_path": ev_source,
                     "notes": f"collector priority {as_text(ev.get('priority'))}",
                 },
             )
@@ -504,7 +531,7 @@ def parse_exact_jsonl(
         path = root / "agent_work/exact_baseline/peaks_exact.jsonl"
         if not path.exists():
             continue
-        commit = git_commit(root)
+        commit = source_commit(root, path)
         for data in read_jsonl(path):
             label = source_challenge(path, data)
             if label not in challenges:
@@ -571,7 +598,7 @@ def parse_mps_distill_summary(
             continue
         seen_sources.add(path.resolve())
         data = read_json(path)
-        commit = git_commit(root)
+        commit = source_commit(root, path)
         source = relpath(path, repo_root)
         for item in data.get("circuits") or []:
             label = source_challenge(path, {"circuit": item.get("circuit")})
@@ -641,7 +668,6 @@ def parse_selected_sim_outputs(
         json_dir = root / "outputs/sim_11_26_34_41_49/json"
         if not json_dir.exists():
             continue
-        commit = git_commit(root)
         for path in sorted(json_dir.glob("*.json")):
             data = read_json(path)
             label = source_challenge(path, data)
@@ -652,6 +678,7 @@ def parse_selected_sim_outputs(
             if data.get("method") == "statevector":
                 method = "selected_statevector"
             source = relpath(path, repo_root)
+            commit = source_commit(root, path)
             run_id = path.stem
             add_run(
                 runs,
@@ -741,7 +768,6 @@ def parse_tree_tensor_outputs(
         base = root / "outputs/tree_tensor_sim"
         if not base.exists():
             continue
-        commit = git_commit(root)
         for path in sorted(base.glob("*/json/*.json")):
             data = read_json(path)
             label = source_challenge(path, data)
@@ -751,6 +777,7 @@ def parse_tree_tensor_outputs(
             method = normalize_tree_method(path, data)
             params = data.get("parameters") or {}
             source = relpath(path, repo_root)
+            commit = source_commit(root, path)
             status = as_text(data.get("status") or "ok")
             base_run = path.stem
 
@@ -955,7 +982,6 @@ def parse_peaked_outputs(
         ):
             if not json_dir.exists():
                 continue
-            commit = git_commit(root)
             for path in sorted(json_dir.glob("*.json")):
                 data = read_json(path)
                 label = source_challenge(path, data)
@@ -964,6 +990,7 @@ def parse_peaked_outputs(
                 meta = challenges[label]
                 params = data.get("parameters") or {}
                 source = relpath(path, repo_root)
+                commit = source_commit(root, path)
                 status = as_text(data.get("status") or "ok")
                 method = "peaked_mpo_mps"
                 run_id = path.stem
