@@ -1,0 +1,11 @@
+{
+  "method": "statevector",
+  "challenge_id": 49,
+  "path": "challenges/very_hard/challenge-104_49.qasm",
+  "num_qubits": 104,
+  "estimated_statevector_gib": 3.022314549036573e+23,
+  "max_qubits": 30,
+  "status": "skipped",
+  "reason": "statevector requires about 3.02e+23 GiB for amplitudes only",
+  "image": "outputs/sim_11_26_34_41_49/images/statevector/challenge-104_49.png"
+}

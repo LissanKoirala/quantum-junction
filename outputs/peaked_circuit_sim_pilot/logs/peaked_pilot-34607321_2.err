@@ -1,0 +1,13 @@
+/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:235: UserWarning: 
+NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb with CUDA capability sm_120 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
+If you want to use the NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+2026-06-05T23:11:54+0100 [INFO] Total unitaries: 0 = 0 (left) + 0 (right)
+2026-06-05T23:11:54+0100 [INFO] Pass: ElidePermutations - 0.01502 (ms)
+2026-06-05T23:11:54+0100 [INFO] Pass: SabreSwap - 1.26553 (ms)
+2026-06-05T23:11:54+0100 [INFO] Pass: ElidePermutations - 0.09012 (ms)
+2026-06-05T23:11:54+0100 [INFO] Pass: SabreSwap - 0.95224 (ms)
+2026-06-05T23:11:54+0100 [INFO] [start compressing] -> {'max_bond': 1, 'max_links': 4, 'total_elems': 32, 'total_shapes': 46, 'total_links': 30, 'num_tensors': 8}
+srun: error: erc-hpc-comp235: task 0: Exited with exit code 1

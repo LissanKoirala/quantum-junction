@@ -1,0 +1,135 @@
+{
+  "backend": {
+    "cuda_available": true,
+    "cuda_device_name": "NVIDIA A100 80GB PCIe",
+    "requested": "auto",
+    "selected": "cuda",
+    "torch_device_count": 1
+  },
+  "challenge_id": 1,
+  "challenge_label": "8_1",
+  "circuit_len": 46,
+  "circuit_ops": {
+    "cx": 14,
+    "rx": 17,
+    "rz": 14,
+    "swap": 1
+  },
+  "compression_seconds": 9.072030222043395,
+  "difficulty": "very easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "MKL_NUM_THREADS": "8",
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "SLURM_ARRAY_JOB_ID": "34607321",
+    "SLURM_ARRAY_TASK_ID": "0",
+    "SLURM_CPUS_PER_TASK": "8",
+    "SLURM_JOB_ID": "34607324",
+    "SLURM_JOB_PARTITION": "interruptible_gpu"
+  },
+  "final_perm": [
+    0,
+    1,
+    2,
+    5,
+    3,
+    4,
+    7,
+    6
+  ],
+  "finished_at": "2026-06-05T23:12:03+0100",
+  "leftover_layers_left": 2,
+  "leftover_layers_right": 2,
+  "max_rss_mb": 1000.078125,
+  "method": "peaked_mpo_unswap_mps_marginals",
+  "mpo_core_info": {
+    "max_bond": 16,
+    "max_links": 4,
+    "num_tensors": 8,
+    "total_elems": 604,
+    "total_links": 30,
+    "total_shapes": 96
+  },
+  "mps_info": {
+    "max_bond": 2,
+    "max_links": 3,
+    "num_tensors": 8,
+    "total_elems": 26,
+    "total_links": 22,
+    "total_shapes": 34
+  },
+  "mps_seconds": 0.5213513250346296,
+  "num_clbits": 0,
+  "num_qubits": 8,
+  "output_image": "outputs/peaked_circuit_sim_pilot/images/challenge-8_1.peaked_mpo_mps.png",
+  "output_json": "outputs/peaked_circuit_sim_pilot/json/challenge-8_1.peaked_mpo_mps.json",
+  "output_stats_jsonl": "outputs/peaked_circuit_sim_pilot/stats/challenge-8_1.stats.jsonl",
+  "p0s": [
+    0.024653587480230853,
+    0.9753456752598196,
+    0.024654324744868863,
+    0.9999999999999999,
+    1.7763468967905314e-05,
+    6.51403270990923e-12,
+    0.039884132253189444,
+    0.9999342021246632
+  ],
+  "p1_margin_max": 0.4999999999999999,
+  "p1_margin_mean": 0.485758758678839,
+  "p1_margin_min": 0.46011586774681057,
+  "p1s": [
+    0.9753464125197692,
+    0.024654324740180367,
+    0.9753456752551312,
+    1.1102230246251565e-16,
+    0.9999822365310321,
+    0.999999999993486,
+    0.9601158677468106,
+    6.579787533678161e-05
+  ],
+  "parameters": {
+    "backend_requested": "auto",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": -1,
+    "equal": false,
+    "figure_note": "pilot small set before full 49-circuit sweep; exact method/params/shims printed on this figure",
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 512,
+    "max_its": 10,
+    "rewire_trials": 64,
+    "seed": 123,
+    "unswap_threshold": 1000000.0
+  },
+  "pred_bitstring_permuted": "10110101",
+  "pred_bitstring_qiskit_order": "10101101",
+  "pred_bitstring_raw": "10101110",
+  "qasm": "challenges/very easy/challenge-8_1.qasm",
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction",
+  "runtime_changes": [
+    "No bundled peaked-circuit-simulation source files were edited.",
+    "Runtime shim: Qiskit 2 public bit-index recovery for merge_gates/merge_layers.",
+    "Runtime shim: bounded SabreSwap rewire_layers with trials=64.",
+    "Runtime shim: measure-safe mpo_to_mps that skips measure/barrier layers and records final permutation.",
+    "Runtime shim: extract_bitstring uses canonical one-site expectations when available."
+  ],
+  "started_at": "2026-06-05T23:10:51+0100",
+  "stats_rows": 36,
+  "status": "ok",
+  "total_seconds": 71.84728003299097,
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

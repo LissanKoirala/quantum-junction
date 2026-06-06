@@ -1,0 +1,252 @@
+2026-06-06T02:50:32+0100 [INFO] Total unitaries: 0 = 0 (left) + 0 (right)
+2026-06-06T02:50:32+0100 [INFO] Pass: ElidePermutations - 0.02813 (ms)
+2026-06-06T02:50:32+0100 [INFO] Pass: SabreSwap - 16.19935 (ms)
+2026-06-06T02:50:32+0100 [INFO] Pass: ElidePermutations - 0.38028 (ms)
+2026-06-06T02:50:32+0100 [INFO] Pass: SabreSwap - 11.44958 (ms)
+2026-06-06T02:50:33+0100 [INFO] [start compressing] -> {'max_bond': 1, 'max_links': 4, 'total_elems': 192, 'total_shapes': 286, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:33+0100 [INFO] [1L/302](swap: 3, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 1, 'max_links': 4, 'total_elems': 192, 'total_shapes': 286, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:33+0100 [INFO] [2L/302](swap: 1, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 264, 'total_shapes': 304, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:33+0100 [INFO] [3L/302](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 324, 'total_shapes': 310, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:33+0100 [INFO] [1R/376](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 396, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:33+0100 [INFO] [4L/302](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 552, 'total_shapes': 358, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:34+0100 [INFO] [2R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 948, 'total_shapes': 394, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:34+0100 [INFO] [5L/302](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 1284, 'total_shapes': 424, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:34+0100 [INFO] [3R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2256, 'total_shapes': 496, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:34+0100 [INFO] [6L/302](swap: 11, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 3408, 'total_shapes': 568, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:34+0100 [INFO] [4R/376](swap: 6, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 5256, 'total_shapes': 652, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:34+0100 [INFO] [5R/376](swap: 6, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 9152, 'total_shapes': 744, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:35+0100 [INFO] [6R/376](swap: 6, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 15836, 'total_shapes': 876, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:35+0100 [INFO] [7R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 18896, 'total_shapes': 966, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:35+0100 [INFO] [8R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 34440, 'total_shapes': 1234, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:35+0100 [INFO] [7L/302](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 49444, 'total_shapes': 1406, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:36+0100 [INFO] [8L/302](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 66372, 'total_shapes': 1708, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:36+0100 [INFO] [9R/376](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 89664, 'total_shapes': 1954, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:36+0100 [INFO] [10R/376](swap: 4, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 93792, 'total_shapes': 2032, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:37+0100 [INFO] [11R/376](swap: 4, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 118752, 'total_shapes': 2248, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:37+0100 [INFO] [12R/376](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 156128, 'total_shapes': 2400, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:37+0100 [INFO] [13R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 184736, 'total_shapes': 2648, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:38+0100 [INFO] [9L/302](swap: 11, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 251936, 'total_shapes': 3184, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:39+0100 [INFO] [14R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 342560, 'total_shapes': 3528, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:39+0100 [INFO] [10L/302](swap: 11, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 556640, 'total_shapes': 4408, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:41+0100 [INFO] [15R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 799328, 'total_shapes': 5464, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:43+0100 [INFO] [16R/376](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 923744, 'total_shapes': 5976, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:45+0100 [INFO]     [start unswap] -> {'max_bond': 256, 'max_links': 4, 'total_elems': 923744, 'total_shapes': 5976, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:51+0100 [INFO]     [0 | both | 0](new_swaps: 7 | total: 7) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 952416, 'total_shapes': 5256, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:55+0100 [INFO]     [0 | both | 1](new_swaps: 12 | total: 19) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 819360, 'total_shapes': 4224, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:56+0100 [INFO]     [0 | left | 0](new_swaps: 14 | total: 33) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 258276, 'total_shapes': 2834, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:57+0100 [INFO]     [0 | left | 1](new_swaps: 15 | total: 48) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 104484, 'total_shapes': 1878, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:57+0100 [INFO]     [0 | right | 0](new_swaps: 6 | total: 54) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 102264, 'total_shapes': 1780, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:58+0100 [INFO]     [0 | right | 1](new_swaps: 5 | total: 59) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 60912, 'total_shapes': 1550, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:59+0100 [INFO]     [1 | both | 0](new_swaps: 11 | total: 11) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 22180, 'total_shapes': 1052, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:59+0100 [INFO]     [1 | both | 1](new_swaps: 9 | total: 20) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 9736, 'total_shapes': 740, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:50:59+0100 [INFO]     [1 | left | 0](new_swaps: 7 | total: 27) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 7600, 'total_shapes': 652, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:00+0100 [INFO]     [1 | left | 1](new_swaps: 4 | total: 31) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 5848, 'total_shapes': 602, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:00+0100 [INFO]     [1 | right | 0](new_swaps: 5 | total: 36) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 4684, 'total_shapes': 554, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:00+0100 [INFO]     [1 | right | 1](new_swaps: 1 | total: 37) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 4624, 'total_shapes': 548, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:00+0100 [INFO]     [2 | both | 0](new_swaps: 6 | total: 6) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2484, 'total_shapes': 478, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:01+0100 [INFO]     [2 | both | 1](new_swaps: 7 | total: 13) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1428, 'total_shapes': 410, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:01+0100 [INFO]     [2 | left | 0](new_swaps: 2 | total: 15) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1308, 'total_shapes': 398, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:01+0100 [INFO]     [2 | left | 1](new_swaps: 4 | total: 19) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1104, 'total_shapes': 374, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:01+0100 [INFO]     [2 | right | 0](new_swaps: 2 | total: 21) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 744, 'total_shapes': 356, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:01+0100 [INFO]     [2 | right | 1](new_swaps: 1 | total: 22) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 648, 'total_shapes': 348, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:02+0100 [INFO]     [3 | both | 0](new_swaps: 5 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 416, 'total_shapes': 324, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:02+0100 [INFO]     [3 | both | 1](new_swaps: 0 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 416, 'total_shapes': 324, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:02+0100 [INFO]     [3 | left | 0](new_swaps: 0 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 416, 'total_shapes': 324, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:02+0100 [INFO]     [3 | left | 1](new_swaps: 3 | total: 8) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 332, 'total_shapes': 308, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:02+0100 [INFO]     [3 | right | 0](new_swaps: 1 | total: 9) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 272, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [3 | right | 1](new_swaps: 1 | total: 10) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 260, 'total_shapes': 300, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [4 | both | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 260, 'total_shapes': 300, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [4 | both | 1](new_swaps: 1 | total: 1) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [4 | left | 0](new_swaps: 0 | total: 1) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [4 | left | 1](new_swaps: 0 | total: 1) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [4 | right | 0](new_swaps: 0 | total: 1) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:03+0100 [INFO]     [4 | right | 1](new_swaps: 0 | total: 1) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [5 | both | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [5 | both | 1](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [5 | left | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [5 | left | 1](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [5 | right | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [5 | right | 1](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO]     [end unswap] -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:04+0100 [INFO] Pass: ElidePermutations - 0.44680 (ms)
+2026-06-06T02:51:04+0100 [INFO] Pass: SabreSwap - 11.58690 (ms)
+2026-06-06T02:51:04+0100 [INFO] Pass: ElidePermutations - 0.44847 (ms)
+2026-06-06T02:51:04+0100 [INFO] Pass: SabreSwap - 11.62004 (ms)
+2026-06-06T02:51:05+0100 [INFO] [1L/311](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 248, 'total_shapes': 298, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:05+0100 [INFO] [1R/402](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 452, 'total_shapes': 342, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:05+0100 [INFO] [2L/311](swap: 14, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 896, 'total_shapes': 402, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:05+0100 [INFO] [2R/402](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1308, 'total_shapes': 436, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:05+0100 [INFO] [3L/311](swap: 14, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2680, 'total_shapes': 536, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:05+0100 [INFO] [3R/402](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 5068, 'total_shapes': 632, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:06+0100 [INFO] [4L/311](swap: 14, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 9508, 'total_shapes': 814, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:06+0100 [INFO] [4R/402](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 17764, 'total_shapes': 982, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:06+0100 [INFO] [5R/402](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 32548, 'total_shapes': 1174, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:06+0100 [INFO] [5L/311](swap: 13, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 59776, 'total_shapes': 1586, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:06+0100 [INFO] [6R/402](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 93568, 'total_shapes': 1970, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:07+0100 [INFO] [7R/402](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144256, 'total_shapes': 2186, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:08+0100 [INFO] [6L/311](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 194880, 'total_shapes': 2818, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:09+0100 [INFO] [7L/311](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 281280, 'total_shapes': 3402, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:10+0100 [INFO] [8R/402](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 472416, 'total_shapes': 4080, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:10+0100 [INFO] [9R/402](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 483040, 'total_shapes': 4168, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:11+0100 [INFO] [10R/402](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 492192, 'total_shapes': 4320, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:12+0100 [INFO] [11R/402](swap: 6, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 552480, 'total_shapes': 4640, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:13+0100 [INFO] [12R/402](swap: 6, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 768672, 'total_shapes': 5520, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:15+0100 [INFO]     [start unswap] -> {'max_bond': 256, 'max_links': 4, 'total_elems': 768672, 'total_shapes': 5520, 'total_links': 190, 'num_tensors': 48}
+/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/autoray/autoray.py:1329: UserWarning: torch.linalg.svd: During SVD computation with the selected cusolver driver, batches 0 failed to converge. A more accurate method will be used to compute the SVD as a fallback. Check doc at https://pytorch.org/docs/stable/generated/torch.linalg.svd.html (Triggered internally at ../aten/src/ATen/native/cuda/linalg/BatchLinearAlgebraLib.cpp:697.)
+  return fn(*args, **kwargs)
+2026-06-06T02:51:25+0100 [INFO]     [0 | both | 0](new_swaps: 4 | total: 4) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 1315488, 'total_shapes': 6544, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:30+0100 [INFO]     [0 | both | 1](new_swaps: 12 | total: 16) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 496800, 'total_shapes': 4216, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:32+0100 [INFO]     [0 | left | 0](new_swaps: 12 | total: 28) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 247140, 'total_shapes': 2922, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:34+0100 [INFO]     [0 | left | 1](new_swaps: 12 | total: 40) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 119172, 'total_shapes': 2220, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:34+0100 [INFO]     [0 | right | 0](new_swaps: 11 | total: 51) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 66504, 'total_shapes': 1534, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:35+0100 [INFO]     [0 | right | 1](new_swaps: 9 | total: 60) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 44968, 'total_shapes': 1280, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:35+0100 [INFO]     [1 | both | 0](new_swaps: 11 | total: 11) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 27620, 'total_shapes': 1026, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:36+0100 [INFO]     [1 | both | 1](new_swaps: 7 | total: 18) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 15164, 'total_shapes': 836, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:36+0100 [INFO]     [1 | left | 0](new_swaps: 5 | total: 23) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 13280, 'total_shapes': 776, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:36+0100 [INFO]     [1 | left | 1](new_swaps: 9 | total: 32) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 8684, 'total_shapes': 680, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:36+0100 [INFO]     [1 | right | 0](new_swaps: 5 | total: 37) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 5876, 'total_shapes': 600, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:37+0100 [INFO]     [1 | right | 1](new_swaps: 0 | total: 37) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 5876, 'total_shapes': 600, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:37+0100 [INFO]     [2 | both | 0](new_swaps: 8 | total: 8) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 3428, 'total_shapes': 512, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:37+0100 [INFO]     [2 | both | 1](new_swaps: 10 | total: 18) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 1592, 'total_shapes': 426, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:38+0100 [INFO]     [2 | left | 0](new_swaps: 3 | total: 21) -> {'max_bond': 6, 'max_links': 4, 'total_elems': 1028, 'total_shapes': 392, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:38+0100 [INFO]     [2 | left | 1](new_swaps: 4 | total: 25) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 836, 'total_shapes': 370, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:38+0100 [INFO]     [2 | right | 0](new_swaps: 2 | total: 27) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 740, 'total_shapes': 358, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:38+0100 [INFO]     [2 | right | 1](new_swaps: 2 | total: 29) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 632, 'total_shapes': 348, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:38+0100 [INFO]     [3 | both | 0](new_swaps: 3 | total: 3) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 548, 'total_shapes': 338, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:39+0100 [INFO]     [3 | both | 1](new_swaps: 2 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 476, 'total_shapes': 330, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:39+0100 [INFO]     [3 | left | 0](new_swaps: 2 | total: 7) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 392, 'total_shapes': 318, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:39+0100 [INFO]     [3 | left | 1](new_swaps: 2 | total: 9) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 340, 'total_shapes': 312, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:39+0100 [INFO]     [3 | right | 0](new_swaps: 0 | total: 9) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 340, 'total_shapes': 312, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:39+0100 [INFO]     [3 | right | 1](new_swaps: 0 | total: 9) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 340, 'total_shapes': 312, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:40+0100 [INFO]     [4 | both | 0](new_swaps: 2 | total: 2) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 280, 'total_shapes': 304, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:40+0100 [INFO]     [4 | both | 1](new_swaps: 1 | total: 3) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:40+0100 [INFO]     [4 | left | 0](new_swaps: 0 | total: 3) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:40+0100 [INFO]     [4 | left | 1](new_swaps: 0 | total: 3) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:40+0100 [INFO]     [4 | right | 0](new_swaps: 0 | total: 3) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:40+0100 [INFO]     [4 | right | 1](new_swaps: 0 | total: 3) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [5 | both | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [5 | both | 1](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [5 | left | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [5 | left | 1](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [5 | right | 0](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [5 | right | 1](new_swaps: 0 | total: 0) -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO]     [end unswap] -> {'max_bond': 3, 'max_links': 4, 'total_elems': 268, 'total_shapes': 302, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:41+0100 [INFO] Pass: ElidePermutations - 0.41795 (ms)
+2026-06-06T02:51:41+0100 [INFO] Pass: SabreSwap - 10.98061 (ms)
+2026-06-06T02:51:41+0100 [INFO] Pass: ElidePermutations - 0.43583 (ms)
+2026-06-06T02:51:41+0100 [INFO] Pass: SabreSwap - 11.29889 (ms)
+2026-06-06T02:51:42+0100 [INFO] [1L/317](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 292, 'total_shapes': 306, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:42+0100 [INFO] [1R/390](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 520, 'total_shapes': 356, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:42+0100 [INFO] [2L/317](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 880, 'total_shapes': 404, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:42+0100 [INFO] [2R/390](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1544, 'total_shapes': 456, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:42+0100 [INFO] [3L/317](swap: 14, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2928, 'total_shapes': 546, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:42+0100 [INFO] [4L/317](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 6928, 'total_shapes': 710, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:43+0100 [INFO] [3R/390](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 13128, 'total_shapes': 858, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:43+0100 [INFO] [4R/390](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 30120, 'total_shapes': 1088, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:43+0100 [INFO] [5L/317](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 54424, 'total_shapes': 1410, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:43+0100 [INFO] [6L/317](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 60712, 'total_shapes': 1542, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:44+0100 [INFO] [7L/317](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 81988, 'total_shapes': 1736, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:44+0100 [INFO] [8L/317](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 89796, 'total_shapes': 1884, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:44+0100 [INFO] [9L/317](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 110084, 'total_shapes': 2140, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:45+0100 [INFO] [10L/317](swap: 9, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 128292, 'total_shapes': 2338, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:45+0100 [INFO] [11L/317](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 164388, 'total_shapes': 2786, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:45+0100 [INFO] [5R/390](swap: 13, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 281120, 'total_shapes': 3312, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:46+0100 [INFO] [12L/317](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 612320, 'total_shapes': 4544, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:47+0100 [INFO] [13L/317](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689504, 'total_shapes': 4968, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:48+0100 [INFO]     [start unswap] -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689504, 'total_shapes': 4968, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:55+0100 [INFO]     [0 | both | 0](new_swaps: 7 | total: 7) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 722528, 'total_shapes': 5072, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:58+0100 [INFO]     [0 | both | 1](new_swaps: 10 | total: 17) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 211104, 'total_shapes': 3024, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:51:59+0100 [INFO]     [0 | left | 0](new_swaps: 11 | total: 28) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 123680, 'total_shapes': 2272, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:00+0100 [INFO]     [0 | left | 1](new_swaps: 9 | total: 37) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 89312, 'total_shapes': 1960, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:00+0100 [INFO]     [0 | right | 0](new_swaps: 8 | total: 45) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 74984, 'total_shapes': 1716, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:01+0100 [INFO]     [0 | right | 1](new_swaps: 4 | total: 49) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 72008, 'total_shapes': 1640, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:02+0100 [INFO]     [1 | both | 0](new_swaps: 9 | total: 9) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 48616, 'total_shapes': 1378, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:02+0100 [INFO]     [1 | both | 1](new_swaps: 9 | total: 18) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 22288, 'total_shapes': 1058, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:03+0100 [INFO]     [1 | left | 0](new_swaps: 6 | total: 24) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 19808, 'total_shapes': 982, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:03+0100 [INFO]     [1 | left | 1](new_swaps: 3 | total: 27) -> {'max_bond': 32, 'max_links': 4, 'total_elems': 16576, 'total_shapes': 926, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:03+0100 [INFO]     [1 | right | 0](new_swaps: 3 | total: 30) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 11712, 'total_shapes': 830, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:03+0100 [INFO]     [1 | right | 1](new_swaps: 4 | total: 34) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 10548, 'total_shapes': 788, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:04+0100 [INFO]     [2 | both | 0](new_swaps: 9 | total: 9) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 6820, 'total_shapes': 672, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:04+0100 [INFO]     [2 | both | 1](new_swaps: 11 | total: 20) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 3868, 'total_shapes': 558, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:04+0100 [INFO]     [2 | left | 0](new_swaps: 4 | total: 24) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 3008, 'total_shapes': 512, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:05+0100 [INFO]     [2 | left | 1](new_swaps: 1 | total: 25) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2948, 'total_shapes': 506, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:05+0100 [INFO]     [2 | right | 0](new_swaps: 2 | total: 27) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2828, 'total_shapes': 494, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:05+0100 [INFO]     [2 | right | 1](new_swaps: 0 | total: 27) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2828, 'total_shapes': 494, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:05+0100 [INFO]     [3 | both | 0](new_swaps: 2 | total: 2) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2740, 'total_shapes': 486, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:06+0100 [INFO]     [3 | both | 1](new_swaps: 4 | total: 6) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2416, 'total_shapes': 460, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:06+0100 [INFO]     [3 | left | 0](new_swaps: 1 | total: 7) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2356, 'total_shapes': 454, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:06+0100 [INFO]     [3 | left | 1](new_swaps: 1 | total: 8) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2276, 'total_shapes': 450, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:06+0100 [INFO]     [3 | right | 0](new_swaps: 0 | total: 8) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2276, 'total_shapes': 450, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:06+0100 [INFO]     [3 | right | 1](new_swaps: 0 | total: 8) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2276, 'total_shapes': 450, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:06+0100 [INFO]     [4 | both | 0](new_swaps: 3 | total: 3) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 1912, 'total_shapes': 434, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:07+0100 [INFO]     [4 | both | 1](new_swaps: 4 | total: 7) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1112, 'total_shapes': 394, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:07+0100 [INFO]     [4 | left | 0](new_swaps: 1 | total: 8) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 1016, 'total_shapes': 386, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:07+0100 [INFO]     [4 | left | 1](new_swaps: 1 | total: 9) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 960, 'total_shapes': 382, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:07+0100 [INFO]     [4 | right | 0](new_swaps: 2 | total: 11) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 852, 'total_shapes': 370, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:08+0100 [INFO]     [4 | right | 1](new_swaps: 0 | total: 11) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 852, 'total_shapes': 370, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:08+0100 [INFO]     [5 | both | 0](new_swaps: 1 | total: 1) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 804, 'total_shapes': 366, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:08+0100 [INFO]     [5 | both | 1](new_swaps: 2 | total: 3) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 720, 'total_shapes': 360, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:08+0100 [INFO]     [5 | left | 0](new_swaps: 0 | total: 3) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 720, 'total_shapes': 360, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:08+0100 [INFO]     [5 | left | 1](new_swaps: 0 | total: 3) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 720, 'total_shapes': 360, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:09+0100 [INFO]     [5 | right | 0](new_swaps: 1 | total: 4) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 624, 'total_shapes': 352, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:09+0100 [INFO]     [5 | right | 1](new_swaps: 2 | total: 6) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 528, 'total_shapes': 342, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:09+0100 [INFO]     [6 | both | 0](new_swaps: 3 | total: 3) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 492, 'total_shapes': 336, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:09+0100 [INFO]     [6 | both | 1](new_swaps: 1 | total: 4) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 480, 'total_shapes': 334, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:10+0100 [INFO]     [6 | left | 0](new_swaps: 1 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 448, 'total_shapes': 330, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:10+0100 [INFO]     [6 | left | 1](new_swaps: 0 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 448, 'total_shapes': 330, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:10+0100 [INFO]     [6 | right | 0](new_swaps: 0 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 448, 'total_shapes': 330, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:10+0100 [INFO]     [6 | right | 1](new_swaps: 0 | total: 5) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 448, 'total_shapes': 330, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:10+0100 [INFO]     [7 | both | 0](new_swaps: 1 | total: 1) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [7 | both | 1](new_swaps: 0 | total: 1) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [7 | left | 0](new_swaps: 0 | total: 1) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [7 | left | 1](new_swaps: 0 | total: 1) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [7 | right | 0](new_swaps: 0 | total: 1) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [7 | right | 1](new_swaps: 0 | total: 1) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [8 | both | 0](new_swaps: 0 | total: 0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [8 | both | 1](new_swaps: 0 | total: 0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:11+0100 [INFO]     [8 | left | 0](new_swaps: 0 | total: 0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO]     [8 | left | 1](new_swaps: 0 | total: 0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO]     [8 | right | 0](new_swaps: 0 | total: 0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO]     [8 | right | 1](new_swaps: 0 | total: 0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO]     [end unswap] -> {'max_bond': 4, 'max_links': 4, 'total_elems': 436, 'total_shapes': 328, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO] Pass: ElidePermutations - 0.41866 (ms)
+2026-06-06T02:52:12+0100 [INFO] Pass: SabreSwap - 9.58586 (ms)
+2026-06-06T02:52:12+0100 [INFO] Pass: ElidePermutations - 0.43702 (ms)
+2026-06-06T02:52:12+0100 [INFO] Pass: SabreSwap - 10.38432 (ms)
+2026-06-06T02:52:12+0100 [INFO] [1L/303](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 444, 'total_shapes': 330, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO] [1R/314](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 8, 'max_links': 4, 'total_elems': 712, 'total_shapes': 376, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:12+0100 [INFO] [2L/303](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 1012, 'total_shapes': 408, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:13+0100 [INFO] [3L/303](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 1844, 'total_shapes': 468, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:13+0100 [INFO] [4L/303](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 3968, 'total_shapes': 542, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:13+0100 [INFO] [5L/303](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 6660, 'total_shapes': 666, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:13+0100 [INFO] [6L/303](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 11832, 'total_shapes': 778, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:13+0100 [INFO] [7L/303](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 25552, 'total_shapes': 1026, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:13+0100 [INFO] [8L/303](swap: 4, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 30260, 'total_shapes': 1108, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:14+0100 [INFO] [9L/303](swap: 4, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 39596, 'total_shapes': 1216, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:14+0100 [INFO] [10L/303](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 56108, 'total_shapes': 1348, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:14+0100 [INFO] [11L/303](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 82732, 'total_shapes': 1596, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:15+0100 [INFO] [2R/314](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 124840, 'total_shapes': 1878, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:15+0100 [INFO] [12L/303](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 178312, 'total_shapes': 2206, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:16+0100 [INFO] [3R/314](swap: 10, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 279832, 'total_shapes': 2632, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:17+0100 [INFO] [4R/314](swap: 7, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 260896, 'total_shapes': 2612, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:17+0100 [INFO] [5R/314](swap: 8, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 283656, 'total_shapes': 2776, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:18+0100 [INFO] [6R/314](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 285800, 'total_shapes': 2836, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:18+0100 [INFO] [7R/314](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 287400, 'total_shapes': 2916, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:19+0100 [INFO] [8R/314](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 309544, 'total_shapes': 3140, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:19+0100 [INFO] [9R/314](swap: 5, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 344296, 'total_shapes': 3420, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:20+0100 [INFO] [10R/314](swap: 4, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 465512, 'total_shapes': 3876, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:21+0100 [INFO] [11R/314](swap: 2, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 563816, 'total_shapes': 4260, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:22+0100 [INFO] [12R/314](swap: 2, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 664168, 'total_shapes': 4452, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:23+0100 [INFO] [13R/314](swap: 2, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 664168, 'total_shapes': 4452, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:23+0100 [INFO] [14R/314](swap: 3, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 664936, 'total_shapes': 4468, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:24+0100 [INFO] [15R/314](swap: 2, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689572, 'total_shapes': 4570, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:25+0100 [INFO] [16R/314](swap: 1, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689572, 'total_shapes': 4570, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:25+0100 [INFO] [17R/314](swap: 0, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689956, 'total_shapes': 4578, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:26+0100 [INFO] [18R/314](swap: 0, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689956, 'total_shapes': 4578, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:26+0100 [INFO] [19R/314](swap: 0, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 689956, 'total_shapes': 4578, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:27+0100 [INFO] [20R/314](swap: 2, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 705316, 'total_shapes': 4674, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:28+0100 [INFO] [21R/314](swap: 3, u: 0 | c_u: 0 | t_u_l: 0/0 | t_u_r: 0/0 | t_u: 0/0) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 955940, 'total_shapes': 5120, 'total_links': 190, 'num_tensors': 48}
+2026-06-06T02:52:29+0100 [INFO]     [start unswap] -> {'max_bond': 256, 'max_links': 4, 'total_elems': 955940, 'total_shapes': 5120, 'total_links': 190, 'num_tensors': 48}
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-06-06T02:52:35.698] error: *** JOB 34611843 ON erc-hpc-vm065 CANCELLED AT 2026-06-06T02:52:35 DUE to SIGNAL Terminated ***
+[2026-06-06T02:52:35.711] error: *** STEP 34611843.0 ON erc-hpc-vm065 CANCELLED AT 2026-06-06T02:52:35 DUE to SIGNAL Terminated ***

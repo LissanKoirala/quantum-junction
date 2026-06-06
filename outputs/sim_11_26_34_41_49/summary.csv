@@ -1,0 +1,11 @@
+challenge_id,method,path,num_qubits,status,peak,probability,shots,bond_dim,unique_samples,image,reason
+11,statevector,challenges/easy/challenge-8_11.qasm,8,ok,01001110,0.5454480750007801,,,,outputs/sim_11_26_34_41_49/images/statevector/challenge-8_11.png,
+11,mps,challenges/easy/challenge-8_11.qasm,8,ok,01001110,0.557861328125,4096,64,57,outputs/sim_11_26_34_41_49/images/mps/challenge-8_11.png,
+26,statevector,challenges/easy/challenge-64_26.qasm,64,skipped,,,,,,outputs/sim_11_26_34_41_49/images/statevector/challenge-64_26.png,statevector requires about 2.75e+11 GiB for amplitudes only
+26,mps,challenges/easy/challenge-64_26.qasm,64,ok,0110101010100011010111011000011100010110110110011100011001100110,0.070068359375,4096,64,1671,outputs/sim_11_26_34_41_49/images/mps/challenge-64_26.png,
+34,statevector,challenges/moderate/challenge-64_34.qasm,64,skipped,,,,,,outputs/sim_11_26_34_41_49/images/statevector/challenge-64_34.png,statevector requires about 2.75e+11 GiB for amplitudes only
+34,mps,challenges/moderate/challenge-64_34.qasm,64,ok,0011010100010011001110101110100101001011001011011001111011100110,0.134765625,4096,64,1228,outputs/sim_11_26_34_41_49/images/mps/challenge-64_34.png,
+41,statevector,challenges/hard/challenge-64_41.qasm,64,skipped,,,,,,outputs/sim_11_26_34_41_49/images/statevector/challenge-64_41.png,statevector requires about 2.75e+11 GiB for amplitudes only
+41,mps,challenges/hard/challenge-64_41.qasm,64,ok,0011001100010001000101010001110111001000000001011100011011110010,0.000244140625,4096,64,4096,outputs/sim_11_26_34_41_49/images/mps/challenge-64_41.png,
+49,statevector,challenges/very_hard/challenge-104_49.qasm,104,skipped,,,,,,outputs/sim_11_26_34_41_49/images/statevector/challenge-104_49.png,statevector requires about 3.02e+23 GiB for amplitudes only
+49,mps,challenges/very_hard/challenge-104_49.qasm,104,ok,11100011111110111011110101100011001001100100110010100000001110100001010111101110100010000011010100110101,0.0009765625,1024,32,1024,outputs/sim_11_26_34_41_49/images/mps/challenge-104_49.png,
