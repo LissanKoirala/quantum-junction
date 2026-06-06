@@ -1,0 +1,80 @@
+{
+  "backend": {
+    "cuda_visible_devices": "",
+    "selected": "numpy",
+    "torch_cuda_available": false
+  },
+  "challenge_id": 49,
+  "challenge_label": "104_49",
+  "circuit_len": 26361,
+  "circuit_ops": {
+    "cx": 5406,
+    "rx": 10310,
+    "rz": 10645
+  },
+  "difficulty": "very_hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": "32",
+    "OMP_NUM_THREADS": "32",
+    "OPENBLAS_NUM_THREADS": "32",
+    "SLURM_ARRAY_JOB_ID": "34624347",
+    "SLURM_ARRAY_TASK_ID": "7",
+    "SLURM_CPUS_PER_TASK": "32",
+    "SLURM_JOB_ID": "34624347",
+    "SLURM_JOB_PARTITION": "interruptible_cpu"
+  },
+  "error": "received signal 15",
+  "error_type": "SignalTerminated",
+  "max_rss_mb": 3658.28515625,
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "num_clbits": 0,
+  "num_qubits": 104,
+  "output_json": "outputs/mpo_graph_tns_marginal_fallback_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_marginal_fallback_cpu/stats/challenge-104_49.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.5,
+    "cutoff": 0.05,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 4,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 256,
+    "max_its": 6,
+    "mps_max_bond": 128,
+    "sabre_trials": 32,
+    "samples": 0,
+    "seed": 20260653,
+    "unswap_threshold": 120000.0
+  },
+  "qasm": "challenges/very_hard/challenge-104_49.qasm",
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems",
+  "started_at": "2026-06-06T15:00:18+0100",
+  "status": "terminated",
+  "terminated_signal": 15,
+  "total_seconds": 2374.9971885581035,
+  "unitary_circuit_len": 26361,
+  "unitary_circuit_ops": {
+    "cx": 5406,
+    "rx": 10310,
+    "rz": 10645
+  },
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

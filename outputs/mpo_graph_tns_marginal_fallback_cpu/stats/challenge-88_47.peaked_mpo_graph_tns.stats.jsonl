@@ -1,0 +1,2 @@
+{"cuda_visible_devices": "", "rss_mb": 452.0, "seconds": 1.3364944607019424e-05, "selected": "numpy", "stage": "backend", "torch_cuda_available": false}
+{"rss_mb": 469.0, "seconds": 0.261474478058517, "stage": "parse_qasm"}
