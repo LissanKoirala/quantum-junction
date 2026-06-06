@@ -119,3 +119,10 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - The focused-H CPU run completed with `no_candidate` for the remaining labels, mostly after sampling hit non-finite probabilities.
 - Parameter probe tasks `64_44`, `72_45`, and `104_49` completed with `no_candidate`; tasks `80_46`, `88_47`, and `96_48` re-entered Slurm's user-env-retrieval hold and were released again as `34626264_4`, `34626264_5`, and `34626264_6`.
 - GPU retry `34624722_48` for `96_48` is still running; earlier `88_47` retry terminated without a usable candidate.
+
+## Update: 2026-06-06 19:25 BST
+
+- Added collector and monitor support for `outputs/mpo_graph_tns_veryhard_fast_cpu_i`.
+- Added `jobs/run_mpo_graph_tns_veryhard_fast_i_cpu_array.slurm`, targeting only the five open labels (`64_44`, `72_45`, `80_46`, `88_47`, `96_48`) as array indices `2-6`.
+- Submitted the new focused CPU variant as Slurm job `34629015`; tasks `_2` through `_6` started immediately.
+- Latest monitor snapshot after submission: solved count remains 44/49; running CPU 732/2000, running GPU 1/5, pending CPU 166, pending GPU 0; no cap breach.
