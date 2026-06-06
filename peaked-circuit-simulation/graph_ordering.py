@@ -124,11 +124,29 @@ def maximum_spanning_tree(G):
     return nx.maximum_spanning_tree(G, weight="weight")
 
 
+def _forest_dfs_ordering(T, root):
+    """DFS order for a tree or forest, always including every node."""
+    seen = set()
+    order = []
+    starts = [root]
+    starts.extend(
+        min(comp)
+        for comp in nx.connected_components(T)
+        if root not in comp
+    )
+    for start in starts:
+        for node in nx.dfs_preorder_nodes(T, source=start):
+            if node not in seen:
+                seen.add(node)
+                order.append(node)
+    return order
+
+
 def best_tree_dfs_ordering(G, T):
     best_order = None
     best_cost = float("inf")
     for root in T.nodes:
-        order = list(nx.dfs_preorder_nodes(T, source=root))
+        order = _forest_dfs_ordering(T, root)
         cost = weighted_bandwidth_cost(G, order)
         if cost < best_cost:
             best_order = order

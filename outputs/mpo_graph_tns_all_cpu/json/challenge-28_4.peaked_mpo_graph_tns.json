@@ -1,0 +1,325 @@
+{
+  "backend": {
+    "cuda_visible_devices": "",
+    "selected": "numpy",
+    "torch_cuda_available": false
+  },
+  "candidate_strategy": "marginal_permuted_measurement_order_reversed",
+  "candidate_variants": {
+    "marginal_permuted_measurement_order": "1111100110110101010001111111",
+    "marginal_permuted_measurement_order_reversed": "1111111000101010110110011111",
+    "marginal_raw_site_order": "0011011111111011111011010010",
+    "marginal_raw_site_order_reversed": "0100101101111101111111101100",
+    "sample_permuted_measurement_order": "1111100110110101010001111111",
+    "sample_permuted_measurement_order_reversed": "1111111000101010110110011111",
+    "sample_raw_site_order": "0011011111111011111011010010",
+    "sample_raw_site_order_reversed": "0100101101111101111111101100"
+  },
+  "challenge_id": 4,
+  "challenge_label": "28_4",
+  "circuit_len": 1220,
+  "circuit_ops": {
+    "cx": 278,
+    "rx": 417,
+    "rz": 525
+  },
+  "compress_stats_count": 634,
+  "difficulty": "very easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": "32",
+    "OMP_NUM_THREADS": "32",
+    "OPENBLAS_NUM_THREADS": "32",
+    "SLURM_ARRAY_JOB_ID": "34616566",
+    "SLURM_ARRAY_TASK_ID": "33",
+    "SLURM_CPUS_PER_TASK": "32",
+    "SLURM_JOB_ID": "34617058",
+    "SLURM_JOB_PARTITION": "interruptible_cpu"
+  },
+  "final_candidate_qiskit_order": "1111111000101010110110011111",
+  "final_measurement_permutation": [
+    11,
+    7,
+    21,
+    15,
+    26,
+    13,
+    19,
+    14,
+    16,
+    1,
+    5,
+    23,
+    24,
+    10,
+    0,
+    2,
+    25,
+    3,
+    22,
+    4,
+    27,
+    17,
+    9,
+    18,
+    12,
+    6,
+    20,
+    8
+  ],
+  "graph_ordering_events": [],
+  "marginal": {
+    "p0s_raw_site_order": [
+      0.9950677405401577,
+      0.9600012333743154,
+      0.09623724129268732,
+      0.00025350923341681324,
+      0.7280111258408285,
+      0.05433074170618613,
+      0.3024493283879212,
+      0.05792378995291331,
+      0.2689334702803213,
+      0.28875718645110454,
+      0.009987483305487344,
+      0.2589676051392717,
+      0.08005620222223138,
+      0.5494231405579008,
+      0.10113534273055379,
+      0.04301325891901567,
+      0.0030076841606204237,
+      0.1733891475425712,
+      0.014058347243144502,
+      0.9251860116269276,
+      0.0011394578775900533,
+      0.054101199659836285,
+      0.8865011753256699,
+      0.3461045158023523,
+      0.9670447842065947,
+      0.9915302515159836,
+      0.0009333666222679841,
+      0.9662005051642175
+    ],
+    "raw_site_order": "0011011111111011111011010010",
+    "variants": {
+      "permuted_measurement_order": "1111100110110101010001111111",
+      "permuted_measurement_order_reversed": "1111111000101010110110011111",
+      "raw_site_order": "0011011111111011111011010010",
+      "raw_site_order_reversed": "0100101101111101111111101100"
+    }
+  },
+  "max_rss_mb": 1547.93359375,
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "mpo_info": {
+    "max_bond": 27,
+    "max_links": 4,
+    "max_tensor_elems": 1728,
+    "num_tensors": 28,
+    "total_elems": 6256
+  },
+  "mps_info": {
+    "max_bond": 6,
+    "max_links": 3,
+    "max_tensor_elems": 60,
+    "num_tensors": 28,
+    "total_elems": 608
+  },
+  "num_clbits": 0,
+  "num_qubits": 28,
+  "output_json": "outputs/mpo_graph_tns_all_cpu/json/challenge-28_4.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_all_cpu/stats/challenge-28_4.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 10,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 8192,
+    "max_its": 20,
+    "mps_max_bond": 4096,
+    "sabre_trials": 512,
+    "samples": 1000,
+    "seed": 20260612,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/very easy/challenge-28_4.qasm",
+  "remaining_layers_left": 232,
+  "remaining_layers_right": 205,
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/klalee-graph",
+  "sample_variants": {
+    "permuted_measurement_order": "1111100110110101010001111111",
+    "permuted_measurement_order_reversed": "1111111000101010110110011111",
+    "raw_site_order": "0011011111111011111011010010",
+    "raw_site_order_reversed": "0100101101111101111111101100"
+  },
+  "sampling": {
+    "samples": 1000,
+    "status": "ok",
+    "top": [
+      {
+        "count": 47,
+        "fraction": 0.047,
+        "permuted_measurement_order": "1111100110110101010001111111",
+        "raw_site_order": "0011011111111011111011010010"
+      },
+      {
+        "count": 27,
+        "fraction": 0.027,
+        "permuted_measurement_order": "0111100110110101010001111111",
+        "raw_site_order": "0011011111101011111011010010"
+      },
+      {
+        "count": 23,
+        "fraction": 0.023,
+        "permuted_measurement_order": "1111100110110101010001111011",
+        "raw_site_order": "0011010111111011111011010010"
+      },
+      {
+        "count": 19,
+        "fraction": 0.019,
+        "permuted_measurement_order": "1111100110100101010001111111",
+        "raw_site_order": "0011011111111011111011000010"
+      },
+      {
+        "count": 14,
+        "fraction": 0.014,
+        "permuted_measurement_order": "1111100110110101010001111110",
+        "raw_site_order": "0011011101111011111011010010"
+      },
+      {
+        "count": 13,
+        "fraction": 0.013,
+        "permuted_measurement_order": "1111110110110101010001111111",
+        "raw_site_order": "0011011111111111111011010010"
+      },
+      {
+        "count": 12,
+        "fraction": 0.012,
+        "permuted_measurement_order": "1111110110110101010101011111",
+        "raw_site_order": "0011111110111111111011010010"
+      },
+      {
+        "count": 11,
+        "fraction": 0.011,
+        "permuted_measurement_order": "1111100110100101010001111011",
+        "raw_site_order": "0011010111111011111011000010"
+      },
+      {
+        "count": 10,
+        "fraction": 0.01,
+        "permuted_measurement_order": "1111100110100101010001111110",
+        "raw_site_order": "0011011101111011111011000010"
+      },
+      {
+        "count": 10,
+        "fraction": 0.01,
+        "permuted_measurement_order": "1111110110100101010001111111",
+        "raw_site_order": "0011011111111111111011000010"
+      },
+      {
+        "count": 10,
+        "fraction": 0.01,
+        "permuted_measurement_order": "1111100110110101010000111111",
+        "raw_site_order": "0011011111111011101011010010"
+      },
+      {
+        "count": 10,
+        "fraction": 0.01,
+        "permuted_measurement_order": "0111100110110101010001111011",
+        "raw_site_order": "0011010111101011111011010010"
+      },
+      {
+        "count": 9,
+        "fraction": 0.009,
+        "permuted_measurement_order": "1111110110110101010001011111",
+        "raw_site_order": "0011011110111111111011010010"
+      },
+      {
+        "count": 8,
+        "fraction": 0.008,
+        "permuted_measurement_order": "0111100110110101010001111110",
+        "raw_site_order": "0011011101101011111011010010"
+      },
+      {
+        "count": 7,
+        "fraction": 0.007,
+        "permuted_measurement_order": "1111110110110101010101111111",
+        "raw_site_order": "0011111111111111111011010010"
+      },
+      {
+        "count": 7,
+        "fraction": 0.007,
+        "permuted_measurement_order": "1111110110100101010001111110",
+        "raw_site_order": "0011011101111111111011000010"
+      },
+      {
+        "count": 6,
+        "fraction": 0.006,
+        "permuted_measurement_order": "1111100110110101010101111011",
+        "raw_site_order": "0011110111111011111011010010"
+      },
+      {
+        "count": 6,
+        "fraction": 0.006,
+        "permuted_measurement_order": "1111110110110101010001011011",
+        "raw_site_order": "0011010110111111111011010010"
+      },
+      {
+        "count": 6,
+        "fraction": 0.006,
+        "permuted_measurement_order": "1111100110100101010000111111",
+        "raw_site_order": "0011011111111011101011000010"
+      },
+      {
+        "count": 6,
+        "fraction": 0.006,
+        "permuted_measurement_order": "1111100110110101010101111111",
+        "raw_site_order": "0011111111111011111011010010"
+      }
+    ],
+    "top_fraction": 0.047,
+    "top_permuted_measurement_order": "1111100110110101010001111111",
+    "top_raw_site_order": "0011011111111011111011010010"
+  },
+  "started_at": "2026-06-06T10:35:40+0100",
+  "status": "ok",
+  "total_seconds": 5384.304961711008,
+  "unitary_circuit_len": 1220,
+  "unitary_circuit_ops": {
+    "cx": 278,
+    "rx": 417,
+    "rz": 525
+  },
+  "validation": {
+    "candidate_results": {
+      "marginal_permuted_measurement_order": false,
+      "marginal_permuted_measurement_order_reversed": true,
+      "marginal_raw_site_order": false,
+      "marginal_raw_site_order_reversed": false,
+      "sample_permuted_measurement_order": false,
+      "sample_permuted_measurement_order_reversed": true,
+      "sample_raw_site_order": false,
+      "sample_raw_site_order_reversed": false
+    },
+    "known_answer_qiskit_order": "1111111000101010110110011111",
+    "status": "correct"
+  },
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

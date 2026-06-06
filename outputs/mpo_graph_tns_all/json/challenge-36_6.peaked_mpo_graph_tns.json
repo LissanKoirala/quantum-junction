@@ -1,0 +1,333 @@
+{
+  "backend": {
+    "cuda_visible_devices": "0",
+    "device_name": "NVIDIA A100 80GB PCIe",
+    "selected": "cuda",
+    "torch_cuda_available": true
+  },
+  "candidate_strategy": "sample_permuted_measurement_order_reversed",
+  "candidate_variants": {
+    "marginal_permuted_measurement_order": "000100110011101100100101111001011001",
+    "marginal_permuted_measurement_order_reversed": "100110100111101001001101110011001000",
+    "marginal_raw_site_order": "011000000011110111011111100000101010",
+    "marginal_raw_site_order_reversed": "010101000001111110111011110000000110",
+    "sample_permuted_measurement_order": "000100110011101100100101111001011001",
+    "sample_permuted_measurement_order_reversed": "100110100111101001001101110011001000",
+    "sample_raw_site_order": "011000000011110111011111100000101010",
+    "sample_raw_site_order_reversed": "010101000001111110111011110000000110"
+  },
+  "challenge_id": 6,
+  "challenge_label": "36_6",
+  "circuit_len": 426,
+  "circuit_ops": {
+    "cx": 94,
+    "rx": 146,
+    "rz": 186
+  },
+  "compress_stats_count": 176,
+  "difficulty": "very easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "MKL_NUM_THREADS": "16",
+    "OMP_NUM_THREADS": "16",
+    "OPENBLAS_NUM_THREADS": "16",
+    "SLURM_ARRAY_JOB_ID": "34616526",
+    "SLURM_ARRAY_TASK_ID": "35",
+    "SLURM_CPUS_PER_TASK": "16",
+    "SLURM_JOB_ID": "34618699",
+    "SLURM_JOB_PARTITION": "interruptible_gpu"
+  },
+  "final_candidate_qiskit_order": "100110100111101001001101110011001000",
+  "final_measurement_permutation": [
+    25,
+    5,
+    27,
+    22,
+    0,
+    9,
+    13,
+    16,
+    26,
+    3,
+    2,
+    24,
+    30,
+    31,
+    19,
+    10,
+    28,
+    14,
+    32,
+    18,
+    33,
+    34,
+    29,
+    21,
+    12,
+    15,
+    17,
+    8,
+    35,
+    23,
+    4,
+    20,
+    11,
+    7,
+    6,
+    1
+  ],
+  "graph_ordering_events": [],
+  "marginal": {
+    "p0s_raw_site_order": [
+      0.9999999999999999,
+      0.00902406971836023,
+      5.195520389557128e-05,
+      0.9998108491641553,
+      0.9994666332949103,
+      0.9117865295651221,
+      0.9958516497914297,
+      0.9999999986063564,
+      1.0,
+      0.9864190190498032,
+      0.0005643137825950519,
+      4.23775971227368e-05,
+      1.5836633113403023e-11,
+      0.03576007174442662,
+      0.9999999998040837,
+      1.4988482426499542e-12,
+      2.830642574245708e-06,
+      3.75154231187272e-09,
+      0.9999787395596146,
+      0.00032626002639496004,
+      5.848890132542885e-14,
+      0.02824250959854592,
+      0.04861260611746459,
+      0.05023405655291113,
+      3.918339988722345e-06,
+      0.99967613981061,
+      0.9999009044124013,
+      0.9997692426129103,
+      0.9722486727026919,
+      0.999999656635115,
+      1.869131200166628e-32,
+      1.0,
+      3.143611217509083e-32,
+      0.9999999999999999,
+      4.459501806063507e-05,
+      1.0
+    ],
+    "raw_site_order": "011000000011110111011111100000101010",
+    "variants": {
+      "permuted_measurement_order": "000100110011101100100101111001011001",
+      "permuted_measurement_order_reversed": "100110100111101001001101110011001000",
+      "raw_site_order": "011000000011110111011111100000101010",
+      "raw_site_order_reversed": "010101000001111110111011110000000110"
+    }
+  },
+  "max_rss_mb": 885.9375,
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "mpo_info": {
+    "max_bond": 64,
+    "max_links": 4,
+    "max_tensor_elems": 16384,
+    "num_tensors": 36,
+    "total_elems": 64224
+  },
+  "mps_info": {
+    "max_bond": 2,
+    "max_links": 3,
+    "max_tensor_elems": 8,
+    "num_tensors": 36,
+    "total_elems": 122
+  },
+  "num_clbits": 0,
+  "num_qubits": 36,
+  "output_json": "outputs/mpo_graph_tns_all/json/challenge-36_6.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_all/stats/challenge-36_6.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "cuda",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 10,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 8192,
+    "max_its": 20,
+    "mps_max_bond": 4096,
+    "sabre_trials": 512,
+    "samples": 1000,
+    "seed": 20260612,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/very easy/challenge-36_6.qasm",
+  "remaining_layers_left": 32,
+  "remaining_layers_right": 43,
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/klalee-graph",
+  "sample_variants": {
+    "permuted_measurement_order": "000100110011101100100101111001011001",
+    "permuted_measurement_order_reversed": "100110100111101001001101110011001000",
+    "raw_site_order": "011000000011110111011111100000101010",
+    "raw_site_order_reversed": "010101000001111110111011110000000110"
+  },
+  "sampling": {
+    "samples": 1000,
+    "status": "ok",
+    "top": [
+      {
+        "count": 781,
+        "fraction": 0.781,
+        "permuted_measurement_order": "000100110011101100100101111001011001",
+        "raw_site_order": "011000000011110111011111100000101010"
+      },
+      {
+        "count": 67,
+        "fraction": 0.067,
+        "permuted_measurement_order": "010100110011101100100101111001011001",
+        "raw_site_order": "011001000011110111011111100000101010"
+      },
+      {
+        "count": 28,
+        "fraction": 0.028,
+        "permuted_measurement_order": "000000110011101100100101111000011001",
+        "raw_site_order": "011000000011110111011100100000101010"
+      },
+      {
+        "count": 26,
+        "fraction": 0.026,
+        "permuted_measurement_order": "000100010011101100100101111001011001",
+        "raw_site_order": "011000000011100111011111100000101010"
+      },
+      {
+        "count": 23,
+        "fraction": 0.023,
+        "permuted_measurement_order": "000100110011101110100101111001011001",
+        "raw_site_order": "011000000011110111011111100010101010"
+      },
+      {
+        "count": 19,
+        "fraction": 0.019,
+        "permuted_measurement_order": "000100110011101100100100111001011001",
+        "raw_site_order": "011000000011110111011011100000101010"
+      },
+      {
+        "count": 16,
+        "fraction": 0.016,
+        "permuted_measurement_order": "000100110011101100100101111000011001",
+        "raw_site_order": "011000000011110111011110100000101010"
+      },
+      {
+        "count": 9,
+        "fraction": 0.009,
+        "permuted_measurement_order": "000000110011101100100101111001011001",
+        "raw_site_order": "011000000011110111011101100000101010"
+      },
+      {
+        "count": 7,
+        "fraction": 0.007,
+        "permuted_measurement_order": "010000110011101100100101111000011001",
+        "raw_site_order": "011001000011110111011100100000101010"
+      },
+      {
+        "count": 4,
+        "fraction": 0.004,
+        "permuted_measurement_order": "000101110011101100100101111001011000",
+        "raw_site_order": "001000000111110111011111100000101010"
+      },
+      {
+        "count": 2,
+        "fraction": 0.002,
+        "permuted_measurement_order": "000101110011101100100101111001011010",
+        "raw_site_order": "001000100111110111011111100000101010"
+      },
+      {
+        "count": 2,
+        "fraction": 0.002,
+        "permuted_measurement_order": "010100010011101100100101111001011001",
+        "raw_site_order": "011001000011100111011111100000101010"
+      },
+      {
+        "count": 2,
+        "fraction": 0.002,
+        "permuted_measurement_order": "000101110011101100100101111001011001",
+        "raw_site_order": "011000000111110111011111100000101010"
+      },
+      {
+        "count": 2,
+        "fraction": 0.002,
+        "permuted_measurement_order": "000100010011101100100100111001011001",
+        "raw_site_order": "011000000011100111011011100000101010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000101110011101100100101111000011000",
+        "raw_site_order": "001000000111110111011110100000101010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "010100110011101110100101111001011001",
+        "raw_site_order": "011001000011110111011111100010101010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "010100110011101100100100111001011001",
+        "raw_site_order": "011001000011110111011011100000101010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000100110011100100100101111001011001",
+        "raw_site_order": "011000000011110111001111100000101010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000100110011101100100101111001011010",
+        "raw_site_order": "001000100011110111011111100000101010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "010000110011101110100101111000011001",
+        "raw_site_order": "011001000011110111011100100010101010"
+      }
+    ],
+    "top_fraction": 0.781,
+    "top_permuted_measurement_order": "000100110011101100100101111001011001",
+    "top_raw_site_order": "011000000011110111011111100000101010"
+  },
+  "started_at": "2026-06-06T11:45:37+0100",
+  "status": "ok",
+  "total_seconds": 131.47361962299328,
+  "unitary_circuit_len": 426,
+  "unitary_circuit_ops": {
+    "cx": 94,
+    "rx": 146,
+    "rz": 186
+  },
+  "validation": {
+    "candidate_results": {},
+    "known_answer_qiskit_order": null,
+    "status": "unknown"
+  },
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

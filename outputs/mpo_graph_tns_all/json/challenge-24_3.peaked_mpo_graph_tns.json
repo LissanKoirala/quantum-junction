@@ -1,0 +1,296 @@
+{
+  "backend": {
+    "cuda_visible_devices": "0",
+    "device_name": "NVIDIA A100 80GB PCIe",
+    "selected": "cuda",
+    "torch_cuda_available": true
+  },
+  "candidate_strategy": "marginal_permuted_measurement_order_reversed",
+  "candidate_variants": {
+    "marginal_permuted_measurement_order": "000100010101000010011110",
+    "marginal_permuted_measurement_order_reversed": "011110010000101010001000",
+    "marginal_raw_site_order": "100001111010100000000011",
+    "marginal_raw_site_order_reversed": "110000000001010111100001",
+    "sample_permuted_measurement_order": "000100010101000010011110",
+    "sample_permuted_measurement_order_reversed": "011110010000101010001000",
+    "sample_raw_site_order": "100001111010100000000011",
+    "sample_raw_site_order_reversed": "110000000001010111100001"
+  },
+  "challenge_id": 3,
+  "challenge_label": "24_3",
+  "circuit_len": 363,
+  "circuit_ops": {
+    "cx": 126,
+    "rx": 116,
+    "rz": 116,
+    "swap": 5
+  },
+  "compress_stats_count": 177,
+  "difficulty": "very easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "MKL_NUM_THREADS": "16",
+    "OMP_NUM_THREADS": "16",
+    "OPENBLAS_NUM_THREADS": "16",
+    "SLURM_ARRAY_JOB_ID": "34616526",
+    "SLURM_ARRAY_TASK_ID": "32",
+    "SLURM_CPUS_PER_TASK": "16",
+    "SLURM_JOB_ID": "34618624",
+    "SLURM_JOB_PARTITION": "interruptible_gpu"
+  },
+  "final_candidate_qiskit_order": "011110010000101010001000",
+  "final_measurement_permutation": [
+    17,
+    19,
+    4,
+    0,
+    11,
+    13,
+    1,
+    10,
+    3,
+    6,
+    2,
+    22,
+    21,
+    15,
+    20,
+    18,
+    12,
+    14,
+    9,
+    23,
+    8,
+    5,
+    7,
+    16
+  ],
+  "graph_ordering_events": [],
+  "marginal": {
+    "p0s_raw_site_order": [
+      0.001192937134899154,
+      1.0,
+      0.9982215492980231,
+      0.9998824957496519,
+      0.9999999999999546,
+      3.8688163792218897e-10,
+      0.0010834802963693277,
+      9.998032425412922e-05,
+      7.09458923923301e-09,
+      0.999999988927651,
+      0.002291399620059926,
+      0.9719436938739495,
+      0.1340182182942401,
+      0.9627203388111094,
+      0.9994491198156099,
+      0.9995992172309963,
+      0.9999999999999999,
+      0.9997397586418677,
+      0.9988454774433262,
+      0.9999944556729864,
+      0.9999999988075423,
+      0.9619349207238844,
+      2.218784609761777e-28,
+      0.05300580276375144
+    ],
+    "raw_site_order": "100001111010100000000011",
+    "variants": {
+      "permuted_measurement_order": "000100010101000010011110",
+      "permuted_measurement_order_reversed": "011110010000101010001000",
+      "raw_site_order": "100001111010100000000011",
+      "raw_site_order_reversed": "110000000001010111100001"
+    }
+  },
+  "max_rss_mb": 826.0,
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "mpo_info": {
+    "max_bond": 8,
+    "max_links": 4,
+    "max_tensor_elems": 128,
+    "num_tensors": 24,
+    "total_elems": 932
+  },
+  "mps_info": {
+    "max_bond": 2,
+    "max_links": 3,
+    "max_tensor_elems": 8,
+    "num_tensors": 24,
+    "total_elems": 106
+  },
+  "num_clbits": 0,
+  "num_qubits": 24,
+  "output_json": "outputs/mpo_graph_tns_all/json/challenge-24_3.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_all/stats/challenge-24_3.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "cuda",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 10,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 8192,
+    "max_its": 20,
+    "mps_max_bond": 4096,
+    "sabre_trials": 512,
+    "samples": 1000,
+    "seed": 20260612,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/very easy/challenge-24_3.qasm",
+  "remaining_layers_left": 2,
+  "remaining_layers_right": 65,
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/klalee-graph",
+  "sample_variants": {
+    "permuted_measurement_order": "000100010101000010011110",
+    "permuted_measurement_order_reversed": "011110010000101010001000",
+    "raw_site_order": "100001111010100000000011",
+    "raw_site_order_reversed": "110000000001010111100001"
+  },
+  "sampling": {
+    "samples": 1000,
+    "status": "ok",
+    "top": [
+      {
+        "count": 814,
+        "fraction": 0.814,
+        "permuted_measurement_order": "000100010101000010011110",
+        "raw_site_order": "100001111010100000000011"
+      },
+      {
+        "count": 41,
+        "fraction": 0.041,
+        "permuted_measurement_order": "000100010101000010001110",
+        "raw_site_order": "100001111010100000000010"
+      },
+      {
+        "count": 41,
+        "fraction": 0.041,
+        "permuted_measurement_order": "000100010101000000011110",
+        "raw_site_order": "100001111010000000000011"
+      },
+      {
+        "count": 31,
+        "fraction": 0.031,
+        "permuted_measurement_order": "000100010101100000011110",
+        "raw_site_order": "100001111010000000000111"
+      },
+      {
+        "count": 31,
+        "fraction": 0.031,
+        "permuted_measurement_order": "000101010101000000011110",
+        "raw_site_order": "100001111010010000000011"
+      },
+      {
+        "count": 24,
+        "fraction": 0.024,
+        "permuted_measurement_order": "000110010101000000011110",
+        "raw_site_order": "100001111011000000000011"
+      },
+      {
+        "count": 3,
+        "fraction": 0.003,
+        "permuted_measurement_order": "000100010101100000001110",
+        "raw_site_order": "100001111010000000000110"
+      },
+      {
+        "count": 3,
+        "fraction": 0.003,
+        "permuted_measurement_order": "000100010101100010011110",
+        "raw_site_order": "100001111010100000000111"
+      },
+      {
+        "count": 3,
+        "fraction": 0.003,
+        "permuted_measurement_order": "000100010101000000001110",
+        "raw_site_order": "100001111010000000000010"
+      },
+      {
+        "count": 2,
+        "fraction": 0.002,
+        "permuted_measurement_order": "000101010101000000001110",
+        "raw_site_order": "100001111010010000000010"
+      },
+      {
+        "count": 2,
+        "fraction": 0.002,
+        "permuted_measurement_order": "000110010101000010011110",
+        "raw_site_order": "100001111011100000000011"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000110010101000000001110",
+        "raw_site_order": "100001111011000000000010"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000000010101000010011110",
+        "raw_site_order": "000001111010100000000011"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000100010101000011011110",
+        "raw_site_order": "100001111010101000000011"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000001010101000000011110",
+        "raw_site_order": "000001111010010000000011"
+      },
+      {
+        "count": 1,
+        "fraction": 0.001,
+        "permuted_measurement_order": "000100010001000010011110",
+        "raw_site_order": "100001011010100000000011"
+      }
+    ],
+    "top_fraction": 0.814,
+    "top_permuted_measurement_order": "000100010101000010011110",
+    "top_raw_site_order": "100001111010100000000011"
+  },
+  "started_at": "2026-06-06T11:40:32+0100",
+  "status": "ok",
+  "total_seconds": 59.551701514050364,
+  "unitary_circuit_len": 363,
+  "unitary_circuit_ops": {
+    "cx": 126,
+    "rx": 116,
+    "rz": 116,
+    "swap": 5
+  },
+  "validation": {
+    "candidate_results": {
+      "marginal_permuted_measurement_order": false,
+      "marginal_permuted_measurement_order_reversed": true,
+      "marginal_raw_site_order": false,
+      "marginal_raw_site_order_reversed": false,
+      "sample_permuted_measurement_order": false,
+      "sample_permuted_measurement_order_reversed": true,
+      "sample_raw_site_order": false,
+      "sample_raw_site_order_reversed": false
+    },
+    "known_answer_qiskit_order": "011110010000101010001000",
+    "status": "correct"
+  },
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

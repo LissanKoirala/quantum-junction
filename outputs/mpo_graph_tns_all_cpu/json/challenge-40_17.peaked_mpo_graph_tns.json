@@ -1,0 +1,342 @@
+{
+  "backend": {
+    "cuda_visible_devices": "",
+    "selected": "numpy",
+    "torch_cuda_available": false
+  },
+  "candidate_strategy": "sample_permuted_measurement_order_reversed",
+  "candidate_variants": {
+    "marginal_permuted_measurement_order": "1001000001000100001001001110101010100100",
+    "marginal_permuted_measurement_order_reversed": "0010010101010111001001000010001000001001",
+    "marginal_raw_site_order": "1000000001100000011001001001101001001101",
+    "marginal_raw_site_order_reversed": "1011001001011001001001100000011000000001",
+    "sample_permuted_measurement_order": "1001000001000100001001001110101010100100",
+    "sample_permuted_measurement_order_reversed": "0010010101010111001001000010001000001001",
+    "sample_raw_site_order": "1000000001100000011001001001101001001101",
+    "sample_raw_site_order_reversed": "1011001001011001001001100000011000000001"
+  },
+  "challenge_id": 17,
+  "challenge_label": "40_17",
+  "circuit_len": 779,
+  "circuit_ops": {
+    "cx": 326,
+    "rx": 208,
+    "rz": 233,
+    "swap": 12
+  },
+  "compress_stats_count": 328,
+  "difficulty": "easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": "32",
+    "OMP_NUM_THREADS": "32",
+    "OPENBLAS_NUM_THREADS": "32",
+    "SLURM_ARRAY_JOB_ID": "34616566",
+    "SLURM_ARRAY_TASK_ID": "5",
+    "SLURM_CPUS_PER_TASK": "32",
+    "SLURM_JOB_ID": "34616581",
+    "SLURM_JOB_PARTITION": "interruptible_cpu"
+  },
+  "final_candidate_qiskit_order": "0010010101010111001001000010001000001001",
+  "final_measurement_permutation": [
+    21,
+    12,
+    34,
+    37,
+    29,
+    15,
+    14,
+    16,
+    5,
+    39,
+    38,
+    11,
+    6,
+    24,
+    3,
+    19,
+    31,
+    4,
+    33,
+    2,
+    22,
+    17,
+    32,
+    8,
+    10,
+    18,
+    30,
+    25,
+    28,
+    35,
+    36,
+    20,
+    9,
+    23,
+    0,
+    13,
+    7,
+    27,
+    1,
+    26
+  ],
+  "graph_ordering_events": [],
+  "marginal": {
+    "p0s_raw_site_order": [
+      0.0,
+      1.0,
+      1.0,
+      0.9985460578583559,
+      0.9433299969795147,
+      0.9430259195247169,
+      0.9421606694116306,
+      0.971386205573425,
+      0.999868262165647,
+      0.12085673317299922,
+      0.09810693140638882,
+      0.9991985572050311,
+      0.9999031968387929,
+      0.9086855797357724,
+      0.9999430774356336,
+      0.8966968509780195,
+      0.9998051927521417,
+      0.11080338226205998,
+      0.00024099937141650689,
+      0.9432594718192666,
+      0.869213672885127,
+      3.08328239982242e-06,
+      0.9999977543029509,
+      0.7983184515253979,
+      0.026131311051037335,
+      0.9682431855177681,
+      0.9133233757652129,
+      0.00388942629687687,
+      0.0034645166724159605,
+      0.9934050746470403,
+      8.007622318319135e-06,
+      0.9957977199264008,
+      0.993928708857154,
+      0.004917292082806923,
+      0.9999893906061421,
+      0.9999998517274121,
+      0.000366388296234972,
+      7.88860905221012e-31,
+      0.9452837592837443,
+      0.00022013584263924532
+    ],
+    "raw_site_order": "1000000001100000011001001001101001001101",
+    "variants": {
+      "permuted_measurement_order": "1001000001000100001001001110101010100100",
+      "permuted_measurement_order_reversed": "0010010101010111001001000010001000001001",
+      "raw_site_order": "1000000001100000011001001001101001001101",
+      "raw_site_order_reversed": "1011001001011001001001100000011000000001"
+    }
+  },
+  "max_rss_mb": 1976.42578125,
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "mpo_info": {
+    "max_bond": 72,
+    "max_links": 4,
+    "max_tensor_elems": 13824,
+    "num_tensors": 40,
+    "total_elems": 95792
+  },
+  "mps_info": {
+    "max_bond": 4,
+    "max_links": 3,
+    "max_tensor_elems": 24,
+    "num_tensors": 40,
+    "total_elems": 300
+  },
+  "num_clbits": 0,
+  "num_qubits": 40,
+  "output_json": "outputs/mpo_graph_tns_all_cpu/json/challenge-40_17.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_graph_tns_all_cpu/stats/challenge-40_17.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 10,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 8192,
+    "max_its": 20,
+    "mps_max_bond": 4096,
+    "sabre_trials": 512,
+    "samples": 1000,
+    "seed": 20260612,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/easy/challenge-40_17.qasm",
+  "remaining_layers_left": 129,
+  "remaining_layers_right": 168,
+  "removed_final_measurements": false,
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/klalee-graph",
+  "sample_variants": {
+    "permuted_measurement_order": "1001000001000100001001001110101010100100",
+    "permuted_measurement_order_reversed": "0010010101010111001001000010001000001001",
+    "raw_site_order": "1000000001100000011001001001101001001101",
+    "raw_site_order_reversed": "1011001001011001001001100000011000000001"
+  },
+  "sampling": {
+    "samples": 1000,
+    "status": "ok",
+    "top": [
+      {
+        "count": 354,
+        "fraction": 0.354,
+        "permuted_measurement_order": "1001000001000100001001001110101010100100",
+        "raw_site_order": "1000000001100000011001001001101001001101"
+      },
+      {
+        "count": 106,
+        "fraction": 0.106,
+        "permuted_measurement_order": "1001000001000100001001001110101011100100",
+        "raw_site_order": "1000000001100000011001011001101001001101"
+      },
+      {
+        "count": 42,
+        "fraction": 0.042,
+        "permuted_measurement_order": "1001000001000100001000001110101010110100",
+        "raw_site_order": "1000000001100100001001001001101001001101"
+      },
+      {
+        "count": 25,
+        "fraction": 0.025,
+        "permuted_measurement_order": "1001000001000100001001001110101110100100",
+        "raw_site_order": "1000000001100000011011001001101001001101"
+      },
+      {
+        "count": 24,
+        "fraction": 0.024,
+        "permuted_measurement_order": "1001000001100100001001001110101010100100",
+        "raw_site_order": "1000000001100000011001001001101001001111"
+      },
+      {
+        "count": 18,
+        "fraction": 0.018,
+        "permuted_measurement_order": "1001010001000100001001001110101010100100",
+        "raw_site_order": "1000000001100001011001001001101001001101"
+      },
+      {
+        "count": 17,
+        "fraction": 0.017,
+        "permuted_measurement_order": "1001000001000100001001001110101110100101",
+        "raw_site_order": "1000000001100000011011001011101001001101"
+      },
+      {
+        "count": 15,
+        "fraction": 0.015,
+        "permuted_measurement_order": "1001000001000100001001001110101010101100",
+        "raw_site_order": "1000000101100000011001001001101001001101"
+      },
+      {
+        "count": 14,
+        "fraction": 0.014,
+        "permuted_measurement_order": "1001000001000000001001001111101010100100",
+        "raw_site_order": "1000000001100000011001000101101001001101"
+      },
+      {
+        "count": 13,
+        "fraction": 0.013,
+        "permuted_measurement_order": "1001000001000100001001000110101000100100",
+        "raw_site_order": "1000000000000000011001001001101001001101"
+      },
+      {
+        "count": 13,
+        "fraction": 0.013,
+        "permuted_measurement_order": "1001000001000101001001001110101110100100",
+        "raw_site_order": "1000000001100000011111001001101001001101"
+      },
+      {
+        "count": 12,
+        "fraction": 0.012,
+        "permuted_measurement_order": "1001000001000100001000001110101011110100",
+        "raw_site_order": "1000000001100100001001011001101001001101"
+      },
+      {
+        "count": 12,
+        "fraction": 0.012,
+        "permuted_measurement_order": "1001010001000100001001000110101010100100",
+        "raw_site_order": "1000000001000001011001001001101001001101"
+      },
+      {
+        "count": 11,
+        "fraction": 0.011,
+        "permuted_measurement_order": "1001000001000100001001001110101010100101",
+        "raw_site_order": "1000000001100000011001001011101001001101"
+      },
+      {
+        "count": 10,
+        "fraction": 0.01,
+        "permuted_measurement_order": "1001010001000100001001001110101011100100",
+        "raw_site_order": "1000000001100001011001011001101001001101"
+      },
+      {
+        "count": 9,
+        "fraction": 0.009,
+        "permuted_measurement_order": "1001000001000100001000001110101010100100",
+        "raw_site_order": "1000000001100000001001001001101001001101"
+      },
+      {
+        "count": 8,
+        "fraction": 0.008,
+        "permuted_measurement_order": "1001000001000100001001001110101000100100",
+        "raw_site_order": "1000000000100000011001001001101001001101"
+      },
+      {
+        "count": 7,
+        "fraction": 0.007,
+        "permuted_measurement_order": "1001000001000100001001000110101010100100",
+        "raw_site_order": "1000000001000000011001001001101001001101"
+      },
+      {
+        "count": 7,
+        "fraction": 0.007,
+        "permuted_measurement_order": "1001000001000100001001001110101111100100",
+        "raw_site_order": "1000000001100000011011011001101001001101"
+      },
+      {
+        "count": 6,
+        "fraction": 0.006,
+        "permuted_measurement_order": "1001100001000100001001001110101010100100",
+        "raw_site_order": "1000000001100000011001001001111001001101"
+      }
+    ],
+    "top_fraction": 0.354,
+    "top_permuted_measurement_order": "1001000001000100001001001110101010100100",
+    "top_raw_site_order": "1000000001100000011001001001101001001101"
+  },
+  "started_at": "2026-06-06T09:43:43+0100",
+  "status": "ok",
+  "total_seconds": 7997.998469222046,
+  "unitary_circuit_len": 779,
+  "unitary_circuit_ops": {
+    "cx": 326,
+    "rx": 208,
+    "rz": 233,
+    "swap": 12
+  },
+  "validation": {
+    "candidate_results": {},
+    "known_answer_qiskit_order": null,
+    "status": "unknown"
+  },
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}
