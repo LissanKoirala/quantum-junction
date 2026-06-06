@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="606" viewBox="0 0 1500 606" role="img">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="0" y="0" width="1500" height="606" fill="#ffffff" stroke="#d9dde6"/>
+<text x="36.0" y="42.0" font-family="Arial" font-size="24" font-weight="700" fill="#172033">48_42 bitstring probability distribution</text>
+<text x="36.0" y="72.0" font-family="Arial" font-size="15" font-weight="400" fill="#172033">difficulty=very_hard q=48 source=peaked_mpo_graph_tns_veryhard_fast_cpu_b kind=sample</text>
+<text x="36.0" y="96.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033">Selected bitstring: 101101000011000100111110110110110111010000010010</text>
+<text x="96.0" y="124.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">sample fraction</text>
+<text x="550.0" y="124.0" font-family="Courier New" font-size="13" font-weight="700" fill="#172033">qiskit_order bitstring</text>
+<text x="36.0" y="154.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 1</text>
+<rect x="96" y="132" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="132" width="2" height="26" fill="#287271" rx="4"/>
+<text x="106.0" y="151.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="150.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">101101000011000100111110110110110111010000010010</text>
+<text x="36.0" y="202.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 2</text>
+<rect x="96" y="180" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="180" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="199.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="198.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">001111101110001000110000110010111110111101011111</text>
+<text x="36.0" y="250.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 3</text>
+<rect x="96" y="228" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="228" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="247.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="246.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">000010011111000000011100011011100011110001011110</text>
+<text x="36.0" y="298.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 4</text>
+<rect x="96" y="276" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="276" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="295.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="294.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">110010001011000110111100000010100111110011001110</text>
+<text x="36.0" y="346.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 5</text>
+<rect x="96" y="324" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="324" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="343.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="342.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">010111010101010010111000110011011110001100011010</text>
+<text x="36.0" y="394.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 6</text>
+<rect x="96" y="372" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="372" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="391.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="390.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">110111010010011111011010010111101100110001011100</text>
+<text x="36.0" y="442.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 7</text>
+<rect x="96" y="420" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="420" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="439.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="438.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">100111011011000101111001111111101011110100011000</text>
+<text x="36.0" y="490.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033"> 8</text>
+<rect x="96" y="468" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="468" width="2" height="26" fill="#4c78a8" rx="4"/>
+<text x="106.0" y="487.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">1 / 2.604e-03</text>
+<text x="550.0" y="486.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">110110110000010110111010111010101001111001001100</text>
+<text x="36.0" y="538.0" font-family="Courier New" font-size="14" font-weight="700" fill="#172033">tail</text>
+<rect x="96" y="516" width="420" height="26" fill="#eef2f7" rx="4"/>
+<rect x="96" y="516" width="420" height="26" fill="#d0d0d0" rx="4"/>
+<text x="106.0" y="535.0" font-family="Arial" font-size="13" font-weight="700" fill="#172033">0.947917</text>
+<text x="550.0" y="534.0" font-family="Courier New" font-size="14" font-weight="400" fill="#172033">tail</text>
+</svg>

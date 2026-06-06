@@ -86,3 +86,10 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Patched `jobs/collect_peak_candidates.py` and `jobs/monitor_hard_slurm.py` so existing non-finite marginal JSONs are ignored in the rollup and shown as `ok_unusable` in the monitor.
 - Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` and `research/hard_problems/solved_bitstring_probability.svg`; the honest rollup remains 43/49 solved.
 - Submitted GPU retry `34624722` for `88_47` and `96_48` with `%1` throttle, and resubmitted patched marginal fallback `34624738` for `64_44` and `72_45` to overwrite the unusable JSONs with terminal `no_candidate` or finite candidates.
+
+## Update: 2026-06-06 16:02 BST
+
+- Added per-problem bitstring probability SVGs under `research/hard_problems/bitstring_probability_images/`.
+- Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` so every solved row embeds its own bitstring probability graph as an inline SVG data image, matching 43/43 solved candidates in the current rollup.
+- The per-problem graphs use retained top-k distribution evidence where available, graph-TNS sampling JSONs for the new `48_42` and `56_43` hits, and a selected-candidate-only fallback when no retained top-k distribution exists.
+- Verified the regenerated report: 49 total rows, 43 solved rows, 43 SVG files, 43 embedded SVG data images, and no external per-problem graph references.
