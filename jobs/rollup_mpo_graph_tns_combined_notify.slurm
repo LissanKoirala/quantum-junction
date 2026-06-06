@@ -45,6 +45,7 @@ sources = {
     "cpu_extra_retry_d": Path("outputs/mpo_graph_tns_extra_cpu_d/json"),
     "cpu_extra_retry_e": Path("outputs/mpo_graph_tns_extra_cpu_e/json"),
     "cpu_extra_retry_f": Path("outputs/mpo_graph_tns_extra_cpu_f/json"),
+    "cpu_extra_retry_g": Path("outputs/mpo_graph_tns_extra_cpu_g/json"),
 }
 expected_paths = sorted(Path("challenges").glob("*/*.qasm"), key=lambda p: (p.parent.name, p.name))
 expected = []

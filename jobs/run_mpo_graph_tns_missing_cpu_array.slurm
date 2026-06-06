@@ -56,6 +56,7 @@ coverage_dirs = [
     Path("outputs/mpo_graph_tns_extra_cpu_d/json"),
     Path("outputs/mpo_graph_tns_extra_cpu_e/json"),
     Path("outputs/mpo_graph_tns_extra_cpu_f/json"),
+    Path("outputs/mpo_graph_tns_extra_cpu_g/json"),
     out_dir / "json",
 ]
 

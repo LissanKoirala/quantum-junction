@@ -23,6 +23,7 @@ SOURCE_NAMES = [
     "mpo_graph_tns_extra_cpu_d",
     "mpo_graph_tns_extra_cpu_e",
     "mpo_graph_tns_extra_cpu_f",
+    "mpo_graph_tns_extra_cpu_g",
     "mpo_graph_tns_combined",
 ]
 SOURCE_LABELS = {
@@ -36,6 +37,7 @@ SOURCE_LABELS = {
     "mpo_graph_tns_extra_cpu_d": "extra_cpu_d",
     "mpo_graph_tns_extra_cpu_e": "extra_cpu_e",
     "mpo_graph_tns_extra_cpu_f": "extra_cpu_f",
+    "mpo_graph_tns_extra_cpu_g": "extra_cpu_g",
     "mpo_graph_tns_combined": "combined",
 }
 CPU_JOB_IDS = [
@@ -58,7 +60,8 @@ CPU_JOB_IDS = [
     "34619634",
     "34619647",
     "34619942",
-    "34619943",
+    "34620754",
+    "34620755",
 ]
 GPU_JOB_ID = "34616526"
 
@@ -402,8 +405,9 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         f"- Chosen-record source counts: {chosen_sources}",
         "- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; "
         "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
-        "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`.",
-        "- Current replacement dependency-gated jobs: `34619943` fallback array, `34619944` combined rollup.",
+        "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
+        "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set.",
+        "- Current replacement dependency-gated jobs: `34620755` fallback array, `34620756` combined rollup.",
         "",
         "## Source Output Counts",
         "",
