@@ -4,7 +4,7 @@ from __future__ import annotations
 import csv
 import json
 import shutil
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import matplotlib
@@ -237,9 +237,200 @@ def copy_existing_figures() -> None:
         "peaked_40_16.png": ROOT / "outputs/peaked_circuit_sim_all/images/challenge-40_16.peaked_mpo_mps.png",
         "peaked_16_12.png": ROOT / "outputs/peaked_circuit_sim_all/images/challenge-16_12.peaked_mpo_mps.png",
     }
+    for src in sorted((ROOT / "outputs/peaked_circuit_sim_all/images").glob("*.png")):
+        label = src.name.removeprefix("challenge-").removesuffix(".peaked_mpo_mps.png")
+        copies[f"appendix_peaked_{label}.png"] = src
+    for src in sorted((ROOT / "outputs/peaked_circuit_sim_pilot/images").glob("*.png")):
+        label = src.name.removeprefix("challenge-").removesuffix(".peaked_mpo_mps.png")
+        copies.setdefault(f"appendix_peaked_{label}.png", src)
     for name, src in copies.items():
         if src.exists():
             shutil.copy2(src, FIG / name)
+
+
+def plot_exact_appendix() -> None:
+    exact_dir = FIG / "appendix_exact"
+    exact_dir.mkdir(parents=True, exist_ok=True)
+    for row in sorted(exact_results(), key=lambda r: (r["qubits"], r["difficulty"], r["challenge"])):
+        top = row.get("top", [])
+        labels = [str(item["rank"]) for item in top]
+        probs = [item["probability"] for item in top]
+        plt.figure(figsize=(5.2, 3.2))
+        plt.bar(labels, probs, color="#287271")
+        plt.ylim(0, max(probs + [0.01]) * 1.18)
+        plt.xlabel("Ranked bitstring")
+        plt.ylabel("Exact probability")
+        plt.title(f"Exact statevector: {row['challenge']} ({row['qubits']}q)")
+        for idx, item in enumerate(top[:3]):
+            short = item["bitstring"]
+            if len(short) > 18:
+                short = short[:8] + "..." + short[-8:]
+            plt.text(idx, probs[idx] + max(probs) * 0.025, short, ha="center", va="bottom", fontsize=6, rotation=25)
+        savefig(exact_dir / f"exact_{row['challenge']}.png")
+
+
+def mps_distill_results_by_challenge() -> dict[str, list[dict]]:
+    out: dict[str, list[dict]] = defaultdict(list)
+    for path in sorted((ROOT / "agent_work/mps_distill/results").glob("*.json")):
+        data = read_json(path)
+        if data.get("status") != "ok":
+            continue
+        circuit = data.get("config", {}).get("circuit", "")
+        if not circuit:
+            continue
+        challenge = Path(circuit).stem.replace("challenge-", "")
+        out[challenge].append(data)
+    return out
+
+
+def plot_mps_distill_appendix() -> None:
+    out_dir = FIG / "appendix_mps_distill"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    summary = {Path(row["circuit"]).stem.replace("challenge-", ""): row for row in mps_distill_summary()}
+    for challenge, rows in sorted(mps_distill_results_by_challenge().items()):
+        counts: Counter[str] = Counter()
+        total_shots = 0
+        for row in rows:
+            sampling = row.get("sampling", {})
+            total_shots += int(sampling.get("shots", 0))
+            for bitstring, count in sampling.get("top_counts", []):
+                counts[bitstring] += int(count)
+        top = counts.most_common(12)
+        vals = [count for _, count in top]
+        labels = [str(i + 1) for i in range(len(top))]
+        plt.figure(figsize=(5.4, 3.2))
+        plt.bar(labels, vals, color="#b08900")
+        plt.xlabel("Aggregate rank")
+        plt.ylabel("Aggregate sample count")
+        meta = summary.get(challenge, {})
+        cls = meta.get("classification", "unknown")
+        plt.title(f"MPS distill aggregate: {challenge} ({cls})")
+        if total_shots:
+            plt.text(
+                0.02,
+                0.94,
+                f"trials={len(rows)}, shots={total_shots}, winner support={vals[0] if vals else 0}",
+                transform=plt.gca().transAxes,
+                fontsize=8,
+                va="top",
+            )
+        savefig(out_dir / f"mps_distill_{challenge}.png")
+
+
+def write_distribution_appendix() -> None:
+    lines = [
+        r"\clearpage",
+        r"\appendix",
+        r"\section{Distribution Gallery for This Session}",
+        r"This appendix collects the distribution-style outputs generated in this session. Exact statevector plots show true top-$k$ bitstring probabilities. Aer MPS plots show empirical sample counts, so their probabilities are count estimates. The MPS-distillation plots aggregate counts across seeds, shot counts, and bond dimensions. The peaked-circuit plots are different: they are one-qubit marginal distributions, not full bitstring distributions; their candidate is formed by thresholding each qubit at $P(1)=0.5$.",
+        "",
+        r"\subsection{How to Read These Plots}",
+        r"\begin{itemize}",
+        r"  \item A tall rank-1 bar separated from rank 2 is strong evidence for the exact or sampled peak.",
+        r"  \item Repeated MPS winners across seeds/settings are more useful than a single top sample.",
+        r"  \item If every sampled bitstring is unique, the plotted top bitstring is not reliable peak evidence.",
+        r"  \item In peaked-circuit marginal plots, any bar close to $0.5$ is a bit-level warning. This is exactly why \code{24\_13} was one bit off.",
+        r"  \item Cancelled or partial jobs produced JSON/logs but no trustworthy distribution figure; those are documented in \code{outputs/peaked\_circuit\_sim\_all/RUN\_LOG.md}.",
+        r"\end{itemize}",
+        "",
+        r"\subsection{Exact Statevector Top-k Distributions}",
+    ]
+
+    exact_paths = sorted((FIG / "appendix_exact").glob("*.png"), key=lambda p: p.name)
+    for i in range(0, len(exact_paths), 2):
+        pair = exact_paths[i : i + 2]
+        lines.extend([r"\begin{figure}[H]", r"\centering"])
+        for path in pair:
+            label = path.stem.removeprefix("exact_")
+            lines.extend(
+                [
+                    r"\begin{minipage}{0.48\linewidth}",
+                    rf"\includegraphics[width=\linewidth]{{figures/appendix_exact/{path.name}}}",
+                    rf"\caption*{{\code{{{esc(label)}}}: exact statevector top probabilities.}}",
+                    r"\end{minipage}" + (r"\hfill" if path != pair[-1] else ""),
+                ]
+            )
+        lines.extend([r"\caption{Exact statevector top-k distributions.}", r"\end{figure}", ""])
+
+    lines.extend(
+        [
+            r"\subsection{Requested Statevector/MPS Runs: IDs 11, 26, 34, 41, 49}",
+            r"Only \code{8\_11} was small enough for exact statevector in this requested set. The other statevector entries were skipped by design; the useful distributions are the MPS sample-count plots below.",
+        ]
+    )
+    selected = [
+        ("8_11", "mps_8_11.png", "MPS sample distribution; matches exact."),
+        ("64_26", "mps_64_26.png", "MPS sample distribution; repeated top sample, medium confidence."),
+        ("64_34", "mps_64_34.png", "MPS sample distribution; repeated top sample, medium confidence."),
+        ("64_41", "mps_64_41.png", "MPS sample distribution; all-unique behavior, low confidence."),
+        ("104_49", "mps_104_49.png", "MPS sample distribution; all-unique behavior, low confidence."),
+    ]
+    for i in range(0, len(selected), 2):
+        pair = selected[i : i + 2]
+        lines.extend([r"\begin{figure}[H]", r"\centering"])
+        for item in pair:
+            label, path, desc = item
+            lines.extend(
+                [
+                    r"\begin{minipage}{0.48\linewidth}",
+                    rf"\includegraphics[width=\linewidth]{{figures/{path}}}",
+                    rf"\caption*{{\code{{{esc(label)}}}: {esc(desc)}}}",
+                    r"\end{minipage}" + (r"\hfill" if item != pair[-1] else ""),
+                ]
+            )
+        lines.extend([r"\caption{Requested MPS sample-count distributions.}", r"\end{figure}", ""])
+
+    lines.extend(
+        [
+            r"\subsection{MPS Distillation Aggregate Distributions}",
+            r"These plots aggregate the top samples reported by the six pilot trials per circuit. Stable circuits have one repeated winner; unstable circuits have nearly flat counts.",
+        ]
+    )
+    distill_paths = sorted((FIG / "appendix_mps_distill").glob("*.png"), key=lambda p: p.name)
+    for i in range(0, len(distill_paths), 2):
+        pair = distill_paths[i : i + 2]
+        lines.extend([r"\begin{figure}[H]", r"\centering"])
+        for path in pair:
+            label = path.stem.removeprefix("mps_distill_")
+            lines.extend(
+                [
+                    r"\begin{minipage}{0.48\linewidth}",
+                    rf"\includegraphics[width=\linewidth]{{figures/appendix_mps_distill/{path.name}}}",
+                    rf"\caption*{{\code{{{esc(label)}}}: aggregate MPS-distillation counts.}}",
+                    r"\end{minipage}" + (r"\hfill" if path != pair[-1] else ""),
+                ]
+            )
+        lines.extend([r"\caption{MPS-distillation aggregate distributions.}", r"\end{figure}", ""])
+
+    lines.extend(
+        [
+            r"\subsection{\code{peaked-circuit-simulation} Marginal Distributions}",
+            r"The following plots show one-qubit $P(1)$ marginals from the MPO/unswapping pipeline. They are useful as bit-level diagnostics, but the \code{24\_13} exact check shows why marginal thresholding alone is not submission-safe.",
+        ]
+    )
+    peaked_paths = sorted(FIG.glob("appendix_peaked_*.png"), key=lambda p: p.name)
+    for i in range(0, len(peaked_paths), 2):
+        pair = peaked_paths[i : i + 2]
+        lines.extend([r"\begin{figure}[H]", r"\centering"])
+        for path in pair:
+            label = path.stem.removeprefix("appendix_peaked_")
+            lines.extend(
+                [
+                    r"\begin{minipage}{0.48\linewidth}",
+                    rf"\includegraphics[width=\linewidth]{{figures/{path.name}}}",
+                    rf"\caption*{{\code{{{esc(label)}}}: per-qubit marginal distribution.}}",
+                    r"\end{minipage}" + (r"\hfill" if path != pair[-1] else ""),
+                ]
+            )
+        lines.extend([r"\caption{\code{peaked-circuit-simulation} marginal distributions.}", r"\end{figure}", ""])
+
+    lines.extend(
+        [
+            r"\subsection{Partial or Missing Peaked-Circuit Results}",
+            r"The full peaked sweep did not complete. It left 9 \code{started} JSON files and 28 missing outputs after Slurm cancellation. Those entries have no valid distribution plot and should not be interpreted as answers. The completed marginal plots above are the complete usable visual set from the peaked-circuit run in this session.",
+        ]
+    )
+    (TAB / "distribution_appendix.tex").write_text("\n".join(lines) + "\n")
 
 
 def write_exact_table() -> None:
@@ -360,11 +551,14 @@ def main() -> int:
     plot_mps_stability()
     plot_selected_mps_counts()
     plot_static_summary()
+    plot_exact_appendix()
+    plot_mps_distill_appendix()
     copy_existing_figures()
     write_exact_table()
     write_candidate_table()
     write_peaked_table()
     write_mps_selected_table()
+    write_distribution_appendix()
     write_summary_json()
     return 0
 
