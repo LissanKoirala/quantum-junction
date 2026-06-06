@@ -93,6 +93,13 @@ def run_one(qc_raw, label: str, params, args, to_backend=None) -> dict:
         flip_freq=args.flip_freq,
         sabre_trials=args.sabre_trials,
         executor_mode=args.executor_mode,
+        peak_num_samples=args.peak_num_samples,
+        peak_sample_top_k=args.peak_sample_top_k,
+        peak_sample_max_distance=args.peak_sample_max_distance,
+        refine_bitflips=not args.disable_bitflip_refinement,
+        bitflip_rounds=args.bitflip_rounds,
+        min_bitflip_improvement=args.min_bitflip_improvement,
+        peak_optimize=args.peak_optimize,
         to_backend=to_backend,
         exact_validate=args.exact_validate,
         max_exact_qubits=args.max_exact_qubits,
@@ -117,6 +124,11 @@ def run_one(qc_raw, label: str, params, args, to_backend=None) -> dict:
         "early_stopping_gates": args.early_stopping_gates,
         "max_bond": params.max_bond,
         "cutoff_final": params.cutoff_final,
+        "peak_num_samples": args.peak_num_samples,
+        "peak_sample_top_k": args.peak_sample_top_k,
+        "bitflip_refinement": not args.disable_bitflip_refinement,
+        "bitflip_rounds": args.bitflip_rounds,
+        "min_bitflip_improvement": args.min_bitflip_improvement,
         "seed": params.seed,
     }
 
@@ -130,6 +142,16 @@ def run_one(qc_raw, label: str, params, args, to_backend=None) -> dict:
     print(f"center layer/instruction: {payload['center_layer']} / {payload['center_instruction']}")
     print(f"raw site bits          : {payload['raw_site_bitstring']}")
     print(f"original-order bits   : {payload['bitstring_original_order']}")
+    print(f"probability estimate  : {payload['extracted_probability_estimate']}")
+    if payload.get("peak_extraction"):
+        print(
+            "marginal bits         : "
+            f"{payload['peak_extraction']['marginal_original_order']}"
+        )
+        print(
+            "prob evals            : "
+            f"{payload['peak_extraction']['n_probability_evaluations']}"
+        )
     print(f"mps max bond          : {payload['mps_max_bond']}")
     if payload["exact_peak_bitstring"] is not None:
         print(f"exact peak            : {payload['exact_peak_bitstring']} p={payload['exact_peak_probability']}")
@@ -161,9 +183,9 @@ def main() -> None:
     parser.add_argument("--trial-unswap-trigger", choices=["threshold", "final", "never"],
                         default="threshold")
     parser.add_argument("--trial-unswap-threshold-elems", type=int, default=1_000_000)
-    parser.add_argument("--executor-mode", choices=["no_rewire", "existing_unswap"],
+    parser.add_argument("--executor-mode", choices=["no_rewire", "explicit_rewire", "existing_unswap"],
                         default="no_rewire",
-                        help="Use no_rewire for temporal-only baseline; existing_unswap enables the old executor.")
+                        help="Use no_rewire baseline, explicit_rewire for transparent unswap+rewire, or existing_unswap for old executor comparison.")
     parser.add_argument("--run-global-unswap", action="store_true",
                         help="Enable threshold unswapping in executor modes that support it.")
     parser.add_argument("--disable-global-unswap", dest="run_global_unswap",
@@ -183,6 +205,19 @@ def main() -> None:
     parser.add_argument("--mpo-cost-eta", type=float, default=0.01)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--backend", choices=["auto", "cpu", "cuda"], default="cpu")
+    parser.add_argument("--peak-num-samples", type=int, default=0,
+                        help="Optional MPS samples to add as peak candidates.")
+    parser.add_argument("--peak-sample-top-k", type=int, default=32,
+                        help="Number of most common sampled strings to rescore.")
+    parser.add_argument("--peak-sample-max-distance", type=int, default=0)
+    parser.add_argument("--disable-bitflip-refinement", action="store_true",
+                        help="Disable greedy one-bit-flip probability refinement.")
+    parser.add_argument("--bitflip-rounds", type=int, default=2,
+                        help="Maximum greedy single-bit-flip improvement rounds.")
+    parser.add_argument("--min-bitflip-improvement", type=float, default=0.0,
+                        help="Minimum MPS-probability gain required to accept a flip.")
+    parser.add_argument("--peak-optimize", default="auto-hq",
+                        help="Contraction optimizer for candidate probability checks.")
     parser.add_argument("--exact-validate", action="store_true",
                         help="For baby cases, compute exact peak and compare.")
     parser.add_argument("--max-exact-qubits", type=int, default=10)

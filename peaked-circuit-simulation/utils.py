@@ -187,7 +187,8 @@ def extract_bitstring(tne):
         if tne[0].backend == 'numpy':
             Pi0 = np.array([[1., 0.],[0., 0.]])
         else:
-            Pi0 = torch.tensor(np.array([[1., 0.],[0., 0.]]), device=DEVICE, dtype=torch.cfloat)
+            _t0 = tne[tne.sites[0]].data
+            Pi0 = torch.tensor([[1., 0.],[0., 0.]], device=_t0.device, dtype=_t0.dtype)
         try:
             p0 = tne.local_expectation_canonical(Pi0, where=ii, normalized=True, info=info)
         except AttributeError:
