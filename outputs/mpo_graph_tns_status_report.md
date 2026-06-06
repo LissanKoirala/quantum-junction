@@ -1,6 +1,6 @@
 # MPO Graph TNS Current Report
 
-Generated: 2026-06-06T13:00:14+01:00
+Generated: 2026-06-06T13:10:25+01:00
 
 This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. Each challenge detail includes an SVG image of the selected bitstring distribution; challenges without sampled results include a placeholder image.
 
@@ -9,13 +9,13 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 - Usable coverage: 39 / 49
 - Missing or only incorrect: 16_28, 24_29, 104_49, 48_42, 56_43, 64_44, 72_45, 80_46, 88_47, 96_48
 - Known incorrect completed outputs present: 16_28, 24_29, 28_4
-- Workload CPU running now: 31 tasks, 992 cores
+- Workload CPU running now: 32 tasks, 1000 cores
 - GPU array running now: 5 tasks
 - Chosen-record status counts: {'ok': 41, 'started': 8}
 - Chosen-record validation counts: {'correct': 8, 'unknown': 31, 'incorrect': 2, 'None': 8}
 - Chosen-record source counts: {'all_gpu': 36, 'all_cpu': 13}
-- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; `34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`.
-- Current replacement dependency-gated jobs: `34619648` fallback array, `34619649` combined rollup.
+- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; `34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`.
+- Current replacement dependency-gated jobs: `34619943` fallback array, `34619944` combined rollup.
 
 ## Source Output Counts
 
@@ -30,6 +30,7 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | `extra_cpu_c` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `extra_cpu_d` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `extra_cpu_e` | 1 | `{'started': 1}` | `{'None': 1}` |
+| `extra_cpu_f` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `combined` | 0 | `{}` | `{}` |
 
 ## Challenge Overview
@@ -790,7 +791,7 @@ Bitstring distribution, top 10 of 1000 samples:
 - Known answer, Qiskit order: `1101001111011100`
 - Runtime seconds: 541.8
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-16_28.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:started, extra_cpu_d:started
+- Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:started, extra_cpu_d:started, extra_cpu_f:started
 - Marginal P(0) raw-site prefix: `0.515, 0.320, 0.518, 0.500, 0.145, 0.147, 0.940, 0.500, 0.269, 0.254, 0.500, 0.990, ...`
 
 Bitstring distribution image:
