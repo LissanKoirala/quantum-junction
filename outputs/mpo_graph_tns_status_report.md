@@ -1,6 +1,6 @@
 # MPO Graph TNS Current Report
 
-Generated: 2026-06-06T13:35:36+01:00
+Generated: 2026-06-06T13:52:26+01:00
 
 This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. Each challenge detail includes an SVG image of the selected bitstring distribution; challenges without sampled results include a placeholder image.
 
@@ -9,7 +9,7 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 - Usable coverage: 39 / 49
 - Missing or only incorrect: 16_28, 24_29, 104_49, 48_42, 56_43, 64_44, 72_45, 80_46, 88_47, 96_48
 - Known incorrect completed outputs present: 16_28, 24_29, 28_4
-- Workload CPU running now: 37 tasks, 968 cores
+- Workload CPU running now: 39 tasks, 984 cores
 - GPU array running now: 5 tasks
 - Chosen-record status counts: {'ok': 41, 'started': 8}
 - Chosen-record validation counts: {'correct': 8, 'unknown': 31, 'incorrect': 2, 'None': 8}
@@ -30,8 +30,8 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | `extra_cpu_c` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `extra_cpu_d` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `extra_cpu_e` | 1 | `{'started': 1}` | `{'None': 1}` |
-| `extra_cpu_f` | 9 | `{'started': 9}` | `{'None': 9}` |
-| `extra_cpu_g` | 0 | `{}` | `{}` |
+| `extra_cpu_f` | 10 | `{'started': 10}` | `{'None': 10}` |
+| `extra_cpu_g` | 5 | `{'started': 5}` | `{'None': 5}` |
 | `combined` | 0 | `{}` | `{}` |
 
 ## Challenge Overview
@@ -792,7 +792,7 @@ Bitstring distribution, top 10 of 1000 samples:
 - Known answer, Qiskit order: `1101001111011100`
 - Runtime seconds: 541.8
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-16_28.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_d:started, extra_cpu_f:started
+- Source records: all_cpu:started, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_d:started, extra_cpu_f:started, extra_cpu_g:started
 - Marginal P(0) raw-site prefix: `0.515, 0.320, 0.518, 0.500, 0.145, 0.147, 0.940, 0.500, 0.269, 0.254, 0.500, 0.990, ...`
 
 Bitstring distribution image:
@@ -823,7 +823,7 @@ Bitstring distribution, top 10 of 1000 samples:
 - Known answer, Qiskit order: `110100010111100001001001`
 - Runtime seconds: 608.0
 - JSON: `outputs/mpo_graph_tns_all/json/challenge-24_29.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started, extra_cpu_f:started
+- Source records: all_cpu:ok/incorrect, all_gpu:ok/incorrect, missing_cpu:ok/incorrect, extra_cpu:ok/incorrect, extra_cpu_b:started, extra_cpu_c:started, extra_cpu_e:started, extra_cpu_f:started, extra_cpu_g:started
 - Marginal P(0) raw-site prefix: `0.756, 0.385, 0.057, 0.779, 0.354, 0.343, 0.723, 0.500, 0.500, 0.500, 0.500, 0.026, ...`
 
 Bitstring distribution image:
@@ -1332,7 +1332,7 @@ Bitstring distribution, top 6 of 1000 samples:
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started
+- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, extra_cpu_g:started
 
 Bitstring distribution image:
 
@@ -1346,7 +1346,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-48_42.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started
+- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, extra_cpu_g:started
 
 Bitstring distribution image:
 
@@ -1360,7 +1360,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-56_43.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started
+- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, extra_cpu_g:started
 
 Bitstring distribution image:
 
@@ -1430,7 +1430,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-96_48.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, extra_cpu:started, extra_cpu_b:started
+- Source records: all_cpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started
 
 Bitstring distribution image:
 
