@@ -274,7 +274,7 @@ def extract_marginal_bitstring(mps: Any) -> tuple[str, list[float]]:
             else np.real(value)
         )
         p0s.append(p0)
-        bits.append("1" if p0 < 0.5 else "0")
+        bits.append("1" if np.isfinite(p0) and p0 < 0.5 else "0")
     return "".join(bits), p0s
 
 
@@ -441,8 +441,10 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         # ── Extract marginals ─────────────────────────────────────────
         e0 = time.perf_counter()
         marginal_raw, p0s = extract_marginal_bitstring(mps)
-        marginal_variants = bit_variants(marginal_raw, perm)
+        finite_marginals = bool(p0s) and all(np.isfinite(float(p0)) for p0 in p0s)
+        marginal_variants = bit_variants(marginal_raw, perm) if finite_marginals else {}
         result["marginal"] = {
+            "status": "ok" if finite_marginals else "nonfinite",
             "raw_site_order": marginal_raw,
             "variants": marginal_variants,
             "p0s_raw_site_order": p0s,

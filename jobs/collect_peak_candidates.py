@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import re
 import time
 from pathlib import Path
@@ -36,6 +37,25 @@ def add_evidence(evidence: dict[str, list[dict[str, Any]]], label: str | None, r
     if not label or not row.get("candidate"):
         return
     evidence.setdefault(label, []).append(row)
+
+
+def has_finite_marginals(data: dict[str, Any]) -> bool:
+    p0s = ((data.get("marginal") or {}).get("p0s_raw_site_order") or [])
+    if not p0s:
+        return False
+    try:
+        return all(math.isfinite(float(p0)) for p0 in p0s)
+    except Exception:
+        return False
+
+
+def has_usable_graph_tns_candidate(data: dict[str, Any]) -> bool:
+    if not data.get("final_candidate_qiskit_order"):
+        return False
+    strategy = data.get("candidate_strategy") or ""
+    if strategy.startswith("marginal_") and not has_finite_marginals(data):
+        return False
+    return True
 
 
 def source_priority(source: str) -> int:
@@ -271,6 +291,8 @@ def load_peaked_graph_tns_dir(root: Path, rel_dir: str, source: str, priority: i
         if data.get("status") != "ok":
             continue
         if data.get("method") != "peaked_mpo_graph_tns":
+            continue
+        if not has_usable_graph_tns_candidate(data):
             continue
         label = data.get("challenge_label")
         sampling = data.get("sampling", {})

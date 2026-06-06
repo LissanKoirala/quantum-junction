@@ -10,6 +10,8 @@ import time
 from pathlib import Path
 from typing import Any
 
+from collect_peak_candidates import has_usable_graph_tns_candidate, source_priority
+
 
 ROOT = Path(__file__).resolve().parents[1]
 VERY_HARD = ["48_42", "56_43", "64_44", "72_45", "80_46", "88_47", "96_48", "104_49"]
@@ -183,10 +185,13 @@ def graph_records(root: Path) -> dict[str, list[dict[str, Any]]]:
                 continue
             sampling = data.get("sampling") or {}
             validation = data.get("validation") or {}
+            status = data.get("status") or ""
+            if status == "ok" and not has_usable_graph_tns_candidate(data):
+                status = "ok_unusable"
             records[label].append(
                 {
                     "source": dirname,
-                    "status": data.get("status") or "",
+                    "status": status,
                     "candidate": data.get("final_candidate_qiskit_order") or "",
                     "validation": validation.get("status") or "",
                     "top_fraction": sampling.get("top_fraction"),
@@ -241,6 +246,7 @@ def candidate_status(root: Path) -> dict[str, Any]:
         return {"path": str(path.relative_to(root)), "exists": False}
     solved = []
     solved_labels = []
+    selected_by_label = {}
     missing = []
     with path.open(newline="") as f:
         for row in csv.DictReader(f, delimiter="\t"):
@@ -248,6 +254,14 @@ def candidate_status(root: Path) -> dict[str, Any]:
             if row.get("candidate"):
                 solved.append(label)
                 solved_labels.append(label)
+                source = row.get("source") or ""
+                selected_by_label[label] = {
+                    "candidate": row.get("candidate") or "",
+                    "source": source,
+                    "priority": source_priority(source),
+                    "validation": row.get("validation") or "",
+                    "top_fraction": row.get("top_fraction") or "",
+                }
             else:
                 missing.append(label)
     return {
@@ -255,6 +269,7 @@ def candidate_status(root: Path) -> dict[str, Any]:
         "exists": True,
         "solved": len(solved),
         "solved_labels": solved_labels,
+        "selected_by_label": selected_by_label,
         "missing": len(missing),
         "missing_labels": missing,
     }
@@ -267,7 +282,7 @@ def is_unrelated_cap_candidate(row: dict[str, Any]) -> bool:
     return bool(row.get("gpus")) or name.startswith(("tno_", "vh_mps", "extra_g"))
 
 
-def enforcement_actions(root: Path, data: dict[str, Any], cancel_solved: bool) -> list[dict[str, Any]]:
+def enforcement_actions(root: Path, data: dict[str, Any], cancel_solved: bool, cancel_solved_min_priority: int) -> list[dict[str, Any]]:
     actions: list[dict[str, Any]] = []
     slurm = data["slurm"]
 
@@ -320,11 +335,16 @@ def enforcement_actions(root: Path, data: dict[str, Any], cancel_solved: bool) -
 
     if cancel_solved:
         solved_labels = set(data.get("candidates", {}).get("solved_labels") or [])
+        selected_by_label = data.get("candidates", {}).get("selected_by_label") or {}
         for row in slurm["tracked_jobs"]:
             if row.get("state") not in {"RUNNING", "PENDING"}:
                 continue
             label = job_challenge_label(root, row)
             if not label or label not in solved_labels:
+                continue
+            selected = selected_by_label.get(label) or {}
+            priority = int(selected.get("priority") or 0)
+            if priority < cancel_solved_min_priority:
                 continue
             if any(action["job"] == row["job"] for action in actions):
                 continue
@@ -335,6 +355,8 @@ def enforcement_actions(root: Path, data: dict[str, Any], cancel_solved: bool) -
                     "reason": "solved_label_duplicate",
                     "name": row["name"],
                     "label": label,
+                    "selected_source": selected.get("source", ""),
+                    "selected_priority": priority,
                     "cpus": row["cpus"],
                     "gpus": row["gpus"],
                 }
@@ -414,9 +436,14 @@ def print_human(root: Path, data: dict[str, Any]) -> None:
         print("enforcement_actions:")
         for action in actions:
             label = f" label={action['label']}" if action.get("label") else ""
+            selected = (
+                f" selected={action['selected_source']}:{action['selected_priority']}"
+                if action.get("selected_source")
+                else ""
+            )
             print(
                 f"  {action['action']} {action['job']} reason={action['reason']}"
-                f"{label} cpus={action.get('cpus', 0)} gpus={action.get('gpus', 0)} "
+                f"{label}{selected} cpus={action.get('cpus', 0)} gpus={action.get('gpus', 0)} "
                 f"name={action.get('name', '')}"
             )
 
@@ -437,6 +464,12 @@ def main() -> int:
         "--cancel-solved",
         action="store_true",
         help="Compute cancellation actions for tracked Slurm tasks whose labels already have candidates.",
+    )
+    parser.add_argument(
+        "--cancel-solved-min-priority",
+        type=int,
+        default=30,
+        help="Minimum selected source priority required before solved-label tasks are cancelled.",
     )
     parser.add_argument(
         "--execute",
@@ -474,7 +507,12 @@ def main() -> int:
         "multiseed": multiseed_records(root),
     }
     if args.enforce_caps or args.cancel_solved:
-        data["enforcement_actions"] = enforcement_actions(root, data, args.cancel_solved)
+        data["enforcement_actions"] = enforcement_actions(
+            root,
+            data,
+            args.cancel_solved,
+            args.cancel_solved_min_priority,
+        )
         if args.execute:
             execute_actions(data["enforcement_actions"])
             data["enforcement_executed"] = True

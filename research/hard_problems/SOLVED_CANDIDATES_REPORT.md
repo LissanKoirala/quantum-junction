@@ -1,6 +1,6 @@
 # Solved Candidate Report
 
-Generated: 2026-06-06T15:07:25+0100
+Generated: 2026-06-06T15:26:48+0100
 
 Source rollup: `outputs/tree_tensor_sim/CANDIDATES.tsv`
 
@@ -20,6 +20,7 @@ Open labels:
 ## Probability Plot
 
 The chart uses the rollup `top_fraction` field. For exact statevector rows this is the exact peak probability; for sampled tensor-network rows this is the observed top fraction or candidate score reported by that run.
+The SVG contains one plotted bar for every solved candidate in the rollup; each bar tooltip includes the full selected bitstring.
 
 ![Solved candidate bitstring probability](solved_bitstring_probability.svg)
 

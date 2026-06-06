@@ -54,7 +54,7 @@ def difficulty_color(difficulty: str) -> str:
 
 
 def svg_probability_plot(solved: list[dict[str, Any]], path: Path) -> None:
-    rows = [row for row in solved if row.get("probability_f") is not None and float(row["probability_f"]) > 0.0]
+    rows = list(solved)
     width = max(1200, 26 * len(rows) + 180)
     height = 620
     left = 80
@@ -63,8 +63,13 @@ def svg_probability_plot(solved: list[dict[str, Any]], path: Path) -> None:
     bottom = 150
     plot_w = width - left - right
     plot_h = height - top - bottom
-    min_v = min(float(row["probability_f"]) for row in rows) if rows else 1e-3
-    max_v = max(float(row["probability_f"]) for row in rows) if rows else 1.0
+    reported = [
+        float(row["probability_f"])
+        for row in rows
+        if row.get("probability_f") is not None and float(row["probability_f"]) > 0.0
+    ]
+    min_v = min(reported) if reported else 1e-3
+    max_v = max(reported) if reported else 1.0
     min_log = math.floor(math.log10(max(min_v, 1e-12)))
     max_log = math.ceil(math.log10(max_v))
     if min_log == max_log:
@@ -101,14 +106,16 @@ def svg_probability_plot(solved: list[dict[str, Any]], path: Path) -> None:
     parts.append(f'<line x1="{left}" x2="{width - right}" y1="{height - bottom}" y2="{height - bottom}" stroke="#333"/>')
     for idx, row in enumerate(rows):
         x = left + idx * (bar_w + bar_gap)
-        value = float(row["probability_f"])
-        y = y_for(value)
+        value = float(row["probability_f"] or 0.0)
+        display_value = value if value > 0.0 else 10 ** min_log
+        y = y_for(display_value)
         h = height - bottom - y
         label = html.escape(row["challenge"])
-        prob = html.escape(fmt_probability(value))
+        bitstring = html.escape(row.get("candidate") or "")
+        prob = html.escape(fmt_probability(value) if value > 0.0 else "not reported")
         source = html.escape(row.get("source") or "")
         color = difficulty_color(row.get("difficulty") or "")
-        parts.append(f"<g><title>{label}: {prob} ({source})</title>")
+        parts.append(f"<g><title>{label}: {prob} ({source}) bitstring={bitstring}</title>")
         parts.append(f'<rect x="{x:.2f}" y="{y:.2f}" width="{bar_w:.2f}" height="{h:.2f}" fill="{color}"/>')
         parts.append(
             f'<text x="{x + bar_w / 2:.2f}" y="{height - bottom + 16}" transform="rotate(65 {x + bar_w / 2:.2f} {height - bottom + 16})" '
@@ -168,6 +175,7 @@ def markdown_report(rows: list[dict[str, Any]], report_path: Path, plot_path: Pa
             "## Probability Plot",
             "",
             "The chart uses the rollup `top_fraction` field. For exact statevector rows this is the exact peak probability; for sampled tensor-network rows this is the observed top fraction or candidate score reported by that run.",
+            "The SVG contains one plotted bar for every solved candidate in the rollup; each bar tooltip includes the full selected bitstring.",
             "",
             f"![Solved candidate bitstring probability]({plot_rel})",
             "",

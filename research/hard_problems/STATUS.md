@@ -78,3 +78,11 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Added `jobs/generate_solved_candidates_report.py` so the report and plot can be regenerated from the current rollup.
 - Extended `jobs/monitor_hard_slurm.py` with dry-run/execute enforcement actions for unrelated cap breaches and tracked solved-label duplicates.
 - Ran solved-label cleanup through the monitor execute path, cancelling `34623041_7`, `34623041_5`, `34623041_3`, and `34623041_1`; running resources dropped to CPU 1804/2000 and GPU 4/5.
+
+## Update: 2026-06-06 15:26 BST
+
+- A patched marginal fallback wrote all-zero candidates for `64_44` and `72_45`, but inspection showed their marginal probability arrays were non-finite (`NaN`). These are now treated as unusable evidence rather than solved candidates.
+- Patched `jobs/peaked_mpo_graph_tns_runner.py` so future non-finite marginal extraction produces no marginal candidate instead of silently selecting all zeros.
+- Patched `jobs/collect_peak_candidates.py` and `jobs/monitor_hard_slurm.py` so existing non-finite marginal JSONs are ignored in the rollup and shown as `ok_unusable` in the monitor.
+- Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md` and `research/hard_problems/solved_bitstring_probability.svg`; the honest rollup remains 43/49 solved.
+- Submitted GPU retry `34624722` for `88_47` and `96_48` with `%1` throttle, and resubmitted patched marginal fallback `34624738` for `64_44` and `72_45` to overwrite the unusable JSONs with terminal `no_candidate` or finite candidates.
