@@ -109,3 +109,13 @@ Existing Slurm graph/TNS jobs are still running from `klalee-graph`, including f
 - Initial `34626264` state: tasks `2`, `3`, and `7` running; tasks `4`, `5`, and `6` pending on Slurm environment retrieval.
 - Latest monitor snapshot after both submissions: running CPU 1500/2000, running GPU 5/5, pending CPU 279, pending GPU 1; no cap breach.
 - Released `34626264_4`, `34626264_5`, and `34626264_6` from Slurm's transient user-env-retrieval hold; after release they were pending with no hold reason.
+
+## Update: 2026-06-06 19:20 BST
+
+- Refreshed the candidate rollup; solved count advanced to 44/49. New solved label: `104_49`, selected from `peaked_mpo_graph_tns_gpu_retry` with top fraction `0.001`.
+- Remaining open labels are `64_44`, `72_45`, `80_46`, `88_47`, and `96_48`.
+- Regenerated `research/hard_problems/SOLVED_CANDIDATES_REPORT.md`, `research/hard_problems/solved_bitstring_probability.svg`, and all per-problem bitstring-probability SVGs. The report now has 44 solved rows, 44 relative SVG references, and no blocked `data:image` embeds.
+- Latest monitor snapshot: running CPU 492/2000, running GPU 2/5, pending CPU 264, pending GPU 0; no cap breach.
+- The focused-H CPU run completed with `no_candidate` for the remaining labels, mostly after sampling hit non-finite probabilities.
+- Parameter probe tasks `64_44`, `72_45`, and `104_49` completed with `no_candidate`; tasks `80_46`, `88_47`, and `96_48` re-entered Slurm's user-env-retrieval hold and were released again as `34626264_4`, `34626264_5`, and `34626264_6`.
+- GPU retry `34624722_48` for `96_48` is still running; earlier `88_47` retry terminated without a usable candidate.

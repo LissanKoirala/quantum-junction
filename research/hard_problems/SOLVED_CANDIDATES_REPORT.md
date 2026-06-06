@@ -1,21 +1,21 @@
 # Solved Candidate Report
 
-Generated: 2026-06-06T16:11:01+0100
+Generated: 2026-06-06T19:20:52+0100
 
 Source rollup: `outputs/tree_tensor_sim/CANDIDATES.tsv`
 
-Solved candidates: 43/49.
-Open candidates: 6.
+Solved candidates: 44/49.
+Open candidates: 5.
 
 Solved by difficulty:
 - easy: 16
 - hard: 7
 - moderate: 8
 - very easy: 10
-- very_hard: 2
+- very_hard: 3
 
 Open labels:
-- 64_44, 72_45, 80_46, 88_47, 96_48, 104_49
+- 64_44, 72_45, 80_46, 88_47, 96_48
 
 ## Probability Plot
 
@@ -75,6 +75,7 @@ Each solved problem below embeds its own bitstring probability graph from the co
 | 64_41 | <img src="bitstring_probability_images/challenge-64_41.bitstring_probability.svg" alt="Bitstring probability graph for 64_41" width="360"> | hard | 64 | `0001000111010011100110010011110111000000100011010001101010110010` | 0.167 | aer_mps_pilot | unstable_top1_vs_aggregate |
 | 48_42 | <img src="bitstring_probability_images/challenge-48_42.bitstring_probability.svg" alt="Bitstring probability graph for 48_42" width="360"> | very_hard | 48 | `101101000011000100111110110110110111010000010010` | 2.604e-03 | peaked_mpo_graph_tns_veryhard_fast_cpu_b | unknown |
 | 56_43 | <img src="bitstring_probability_images/challenge-56_43.bitstring_probability.svg" alt="Bitstring probability graph for 56_43" width="360"> | very_hard | 56 | `01101110110101000111010100001001000110110101010010011000` | 2.604e-03 | peaked_mpo_graph_tns_veryhard_fast_cpu_b | unknown |
+| 104_49 | <img src="bitstring_probability_images/challenge-104_49.bitstring_probability.svg" alt="Bitstring probability graph for 104_49" width="360"> | very_hard | 104 | `10000011001100000010101010100101001001011001110000000111100011100000010000101010101101111111110100000111` | 1.000e-03 | peaked_mpo_graph_tns_gpu_retry | unknown |
 
 ## Not Yet Solved
 
@@ -85,6 +86,5 @@ Each solved problem below embeds its own bitstring probability graph from the co
 | 80_46 | very_hard | 80 | `challenges/very_hard/challenge-80_46.qasm` |
 | 88_47 | very_hard | 88 | `challenges/very_hard/challenge-88_47.qasm` |
 | 96_48 | very_hard | 96 | `challenges/very_hard/challenge-96_48.qasm` |
-| 104_49 | very_hard | 104 | `challenges/very_hard/challenge-104_49.qasm` |
 
 Bit order: candidates are in Qiskit/counts order, with the right-most bit corresponding to qubit 0.

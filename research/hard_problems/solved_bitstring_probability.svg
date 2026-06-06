@@ -1,191 +1,195 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1298" height="620" viewBox="0 0 1298 620" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1324" height="620" viewBox="0 0 1324 620" role="img" aria-labelledby="title desc">
 <title id="title">Solved candidate bitstring probability</title>
 <desc id="desc">Log-scale bar chart of reported candidate probabilities or top fractions.</desc>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="80" y="24" font-family="Arial, sans-serif" font-size="18" font-weight="700">Solved candidate bitstring probability / top fraction</text>
-<line x1="80" x2="1268" y1="470.00" y2="470.00" stroke="#e6e6e6"/>
+<line x1="80" x2="1294" y1="470.00" y2="470.00" stroke="#e6e6e6"/>
 <text x="70" y="474.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333">1e-4</text>
-<line x1="80" x2="1268" y1="363.00" y2="363.00" stroke="#e6e6e6"/>
+<line x1="80" x2="1294" y1="363.00" y2="363.00" stroke="#e6e6e6"/>
 <text x="70" y="367.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333">1e-3</text>
-<line x1="80" x2="1268" y1="256.00" y2="256.00" stroke="#e6e6e6"/>
+<line x1="80" x2="1294" y1="256.00" y2="256.00" stroke="#e6e6e6"/>
 <text x="70" y="260.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333">1e-2</text>
-<line x1="80" x2="1268" y1="149.00" y2="149.00" stroke="#e6e6e6"/>
+<line x1="80" x2="1294" y1="149.00" y2="149.00" stroke="#e6e6e6"/>
 <text x="70" y="153.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333">1e-1</text>
-<line x1="80" x2="1268" y1="42.00" y2="42.00" stroke="#e6e6e6"/>
+<line x1="80" x2="1294" y1="42.00" y2="42.00" stroke="#e6e6e6"/>
 <text x="70" y="46.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333">1e0</text>
 <line x1="80" x2="80" y1="42" y2="470" stroke="#333"/>
-<line x1="80" x2="1268" y1="470" y2="470" stroke="#333"/>
+<line x1="80" x2="1294" y1="470" y2="470" stroke="#333"/>
 <g><title>8_1: 0.912638 (exact_statevector) bitstring=10101101</title>
-<rect x="80.00" y="46.25" width="23.72" height="423.75" fill="#2f7d32"/>
-<text x="91.86" y="486" transform="rotate(65 91.86 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">8_1</text>
+<rect x="80.00" y="46.25" width="23.68" height="423.75" fill="#2f7d32"/>
+<text x="91.84" y="486" transform="rotate(65 91.84 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">8_1</text>
 </g>
 <g><title>16_2: 0.46697 (exact_statevector) bitstring=1010101011001000</title>
-<rect x="107.72" y="77.39" width="23.72" height="392.61" fill="#2f7d32"/>
-<text x="119.58" y="486" transform="rotate(65 119.58 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">16_2</text>
+<rect x="107.68" y="77.39" width="23.68" height="392.61" fill="#2f7d32"/>
+<text x="119.52" y="486" transform="rotate(65 119.52 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">16_2</text>
 </g>
 <g><title>24_3: 0.723984 (exact_statevector) bitstring=011110010000101010001000</title>
-<rect x="135.44" y="57.01" width="23.72" height="412.99" fill="#2f7d32"/>
-<text x="147.30" y="486" transform="rotate(65 147.30 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">24_3</text>
+<rect x="135.36" y="57.01" width="23.68" height="412.99" fill="#2f7d32"/>
+<text x="147.20" y="486" transform="rotate(65 147.20 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">24_3</text>
 </g>
 <g><title>28_4: 0.351112 (exact_statevector) bitstring=1111111000101010110110011111</title>
-<rect x="163.16" y="90.64" width="23.72" height="379.36" fill="#2f7d32"/>
-<text x="175.02" y="486" transform="rotate(65 175.02 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">28_4</text>
+<rect x="163.05" y="90.64" width="23.68" height="379.36" fill="#2f7d32"/>
+<text x="174.89" y="486" transform="rotate(65 174.89 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">28_4</text>
 </g>
 <g><title>32_5: 0.532227 (quimb_cpu_all) bitstring=00111000101010100001000000010000</title>
-<rect x="190.88" y="71.31" width="23.72" height="398.69" fill="#2f7d32"/>
-<text x="202.74" y="486" transform="rotate(65 202.74 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">32_5</text>
+<rect x="190.73" y="71.31" width="23.68" height="398.69" fill="#2f7d32"/>
+<text x="202.57" y="486" transform="rotate(65 202.57 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">32_5</text>
 </g>
 <g><title>36_6: 0.688477 (quimb_cpu_all) bitstring=100110100111101001001101110011001000</title>
-<rect x="218.60" y="59.35" width="23.72" height="410.65" fill="#2f7d32"/>
-<text x="230.47" y="486" transform="rotate(65 230.47 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">36_6</text>
+<rect x="218.41" y="59.35" width="23.68" height="410.65" fill="#2f7d32"/>
+<text x="230.25" y="486" transform="rotate(65 230.25 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">36_6</text>
 </g>
 <g><title>40_7: 0.878906 (quimb_cpu_all) bitstring=0110111011010001010011111110010011000111</title>
-<rect x="246.33" y="48.00" width="23.72" height="422.00" fill="#2f7d32"/>
-<text x="258.19" y="486" transform="rotate(65 258.19 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_7</text>
+<rect x="246.09" y="48.00" width="23.68" height="422.00" fill="#2f7d32"/>
+<text x="257.93" y="486" transform="rotate(65 257.93 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_7</text>
 </g>
 <g><title>48_8: 0.697266 (quimb_cpu_all) bitstring=000100100110111001001111111100101011001110010100</title>
-<rect x="274.05" y="58.76" width="23.72" height="411.24" fill="#2f7d32"/>
-<text x="285.91" y="486" transform="rotate(65 285.91 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_8</text>
+<rect x="273.77" y="58.76" width="23.68" height="411.24" fill="#2f7d32"/>
+<text x="285.61" y="486" transform="rotate(65 285.61 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_8</text>
 </g>
 <g><title>56_9: 0.78125 (quimb_cpu_all) bitstring=10010110101100101110100110010110011101100110001101010100</title>
-<rect x="301.77" y="53.47" width="23.72" height="416.53" fill="#2f7d32"/>
-<text x="313.63" y="486" transform="rotate(65 313.63 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_9</text>
+<rect x="301.45" y="53.47" width="23.68" height="416.53" fill="#2f7d32"/>
+<text x="313.30" y="486" transform="rotate(65 313.30 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_9</text>
 </g>
 <g><title>64_10: 0.787109 (quimb_cpu_all) bitstring=0011010010110001110010111001100100101100010111110110010100101011</title>
-<rect x="329.49" y="53.12" width="23.72" height="416.88" fill="#2f7d32"/>
-<text x="341.35" y="486" transform="rotate(65 341.35 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_10</text>
+<rect x="329.14" y="53.12" width="23.68" height="416.88" fill="#2f7d32"/>
+<text x="340.98" y="486" transform="rotate(65 340.98 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_10</text>
 </g>
 <g><title>8_11: 0.545448 (exact_statevector) bitstring=01001110</title>
-<rect x="357.21" y="70.17" width="23.72" height="399.83" fill="#1976a2"/>
-<text x="369.07" y="486" transform="rotate(65 369.07 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">8_11</text>
+<rect x="356.82" y="70.17" width="23.68" height="399.83" fill="#1976a2"/>
+<text x="368.66" y="486" transform="rotate(65 368.66 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">8_11</text>
 </g>
 <g><title>16_12: 0.466537 (exact_statevector) bitstring=1111000101101011</title>
-<rect x="384.93" y="77.43" width="23.72" height="392.57" fill="#1976a2"/>
-<text x="396.79" y="486" transform="rotate(65 396.79 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">16_12</text>
+<rect x="384.50" y="77.43" width="23.68" height="392.57" fill="#1976a2"/>
+<text x="396.34" y="486" transform="rotate(65 396.34 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">16_12</text>
 </g>
 <g><title>24_13: 0.591248 (exact_statevector) bitstring=111110011111001011010001</title>
-<rect x="412.65" y="66.42" width="23.72" height="403.58" fill="#1976a2"/>
-<text x="424.51" y="486" transform="rotate(65 424.51 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">24_13</text>
+<rect x="412.18" y="66.42" width="23.68" height="403.58" fill="#1976a2"/>
+<text x="424.02" y="486" transform="rotate(65 424.02 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">24_13</text>
 </g>
 <g><title>32_14: 0.47168 (quimb_gpu_all) bitstring=00000101001101000001011111101100</title>
-<rect x="440.37" y="76.92" width="23.72" height="393.08" fill="#1976a2"/>
-<text x="452.23" y="486" transform="rotate(65 452.23 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">32_14</text>
+<rect x="439.86" y="76.92" width="23.68" height="393.08" fill="#1976a2"/>
+<text x="451.70" y="486" transform="rotate(65 451.70 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">32_14</text>
 </g>
 <g><title>36_15: 0.03125 (quimb_gpu_all) bitstring=110110011011111111011001011110101111</title>
-<rect x="468.09" y="203.05" width="23.72" height="266.95" fill="#1976a2"/>
-<text x="479.95" y="486" transform="rotate(65 479.95 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">36_15</text>
+<rect x="467.55" y="203.05" width="23.68" height="266.95" fill="#1976a2"/>
+<text x="479.39" y="486" transform="rotate(65 479.39 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">36_15</text>
 </g>
 <g><title>40_16: 0.442383 (quimb_gpu_all) bitstring=0101110101001110011000111011100110010110</title>
-<rect x="495.81" y="79.90" width="23.72" height="390.10" fill="#1976a2"/>
-<text x="507.67" y="486" transform="rotate(65 507.67 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_16</text>
+<rect x="495.23" y="79.90" width="23.68" height="390.10" fill="#1976a2"/>
+<text x="507.07" y="486" transform="rotate(65 507.07 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_16</text>
 </g>
 <g><title>40_17: 0.545898 (quimb_gpu_all) bitstring=0010010101010111001001000010001000001001</title>
-<rect x="523.53" y="70.13" width="23.72" height="399.87" fill="#1976a2"/>
-<text x="535.40" y="486" transform="rotate(65 535.40 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_17</text>
+<rect x="522.91" y="70.13" width="23.68" height="399.87" fill="#1976a2"/>
+<text x="534.75" y="486" transform="rotate(65 534.75 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_17</text>
 </g>
 <g><title>40_18: 0.439453 (quimb_gpu_all) bitstring=0100000110010010001101111000111111001110</title>
-<rect x="551.26" y="80.21" width="23.72" height="389.79" fill="#1976a2"/>
-<text x="563.12" y="486" transform="rotate(65 563.12 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_18</text>
+<rect x="550.59" y="80.21" width="23.68" height="389.79" fill="#1976a2"/>
+<text x="562.43" y="486" transform="rotate(65 562.43 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_18</text>
 </g>
 <g><title>48_19: 0.673828 (quimb_gpu_all) bitstring=011001010111101100111110000001011101001110010000</title>
-<rect x="578.98" y="60.35" width="23.72" height="409.65" fill="#1976a2"/>
-<text x="590.84" y="486" transform="rotate(65 590.84 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_19</text>
+<rect x="578.27" y="60.35" width="23.68" height="409.65" fill="#1976a2"/>
+<text x="590.11" y="486" transform="rotate(65 590.11 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_19</text>
 </g>
 <g><title>48_20: 0.612305 (quimb_gpu_all) bitstring=101010100101001010000110101000001011110010000000</title>
-<rect x="606.70" y="64.79" width="23.72" height="405.21" fill="#1976a2"/>
-<text x="618.56" y="486" transform="rotate(65 618.56 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_20</text>
+<rect x="605.95" y="64.79" width="23.68" height="405.21" fill="#1976a2"/>
+<text x="617.80" y="486" transform="rotate(65 617.80 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_20</text>
 </g>
 <g><title>48_21: 0.441406 (quimb_gpu_all) bitstring=111010101110101011110101000001101000100000001001</title>
-<rect x="634.42" y="80.00" width="23.72" height="390.00" fill="#1976a2"/>
-<text x="646.28" y="486" transform="rotate(65 646.28 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_21</text>
+<rect x="633.64" y="80.00" width="23.68" height="390.00" fill="#1976a2"/>
+<text x="645.48" y="486" transform="rotate(65 645.48 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_21</text>
 </g>
 <g><title>56_22: 0.589844 (quimb_gpu_all) bitstring=11100100100110010011110010110110011000000100010111111011</title>
-<rect x="662.14" y="66.53" width="23.72" height="403.47" fill="#1976a2"/>
-<text x="674.00" y="486" transform="rotate(65 674.00 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_22</text>
+<rect x="661.32" y="66.53" width="23.68" height="403.47" fill="#1976a2"/>
+<text x="673.16" y="486" transform="rotate(65 673.16 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_22</text>
 </g>
 <g><title>56_23: 0.49707 (quimb_gpu_all) bitstring=01001101001111111100000101001110111011100011111100001101</title>
-<rect x="689.86" y="74.48" width="23.72" height="395.52" fill="#1976a2"/>
-<text x="701.72" y="486" transform="rotate(65 701.72 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_23</text>
+<rect x="689.00" y="74.48" width="23.68" height="395.52" fill="#1976a2"/>
+<text x="700.84" y="486" transform="rotate(65 700.84 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_23</text>
 </g>
 <g><title>56_24: 0.517578 (quimb_gpu_all) bitstring=10011001001111101111111011101011101101010011001011110001</title>
-<rect x="717.58" y="72.60" width="23.72" height="397.40" fill="#1976a2"/>
-<text x="729.44" y="486" transform="rotate(65 729.44 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_24</text>
+<rect x="716.68" y="72.60" width="23.68" height="397.40" fill="#1976a2"/>
+<text x="728.52" y="486" transform="rotate(65 728.52 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_24</text>
 </g>
 <g><title>64_25: 0.396484 (quimb_gpu_all) bitstring=0011101111110000110110111101011000010000010100110111000001111011</title>
-<rect x="745.30" y="84.99" width="23.72" height="385.01" fill="#1976a2"/>
-<text x="757.16" y="486" transform="rotate(65 757.16 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_25</text>
+<rect x="744.36" y="84.99" width="23.68" height="385.01" fill="#1976a2"/>
+<text x="756.20" y="486" transform="rotate(65 756.20 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_25</text>
 </g>
 <g><title>64_26: 0.261719 (quimb_gpu_all) bitstring=0110101010100011010111011000011100010110110110011100011001100110</title>
-<rect x="773.02" y="104.29" width="23.72" height="365.71" fill="#1976a2"/>
-<text x="784.88" y="486" transform="rotate(65 784.88 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_26</text>
+<rect x="772.05" y="104.29" width="23.68" height="365.71" fill="#1976a2"/>
+<text x="783.89" y="486" transform="rotate(65 783.89 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_26</text>
 </g>
 <g><title>8_27: 0.287907 (exact_statevector) bitstring=11001001</title>
-<rect x="800.74" y="99.86" width="23.72" height="370.14" fill="#9a6a00"/>
-<text x="812.60" y="486" transform="rotate(65 812.60 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">8_27</text>
+<rect x="799.73" y="99.86" width="23.68" height="370.14" fill="#9a6a00"/>
+<text x="811.57" y="486" transform="rotate(65 811.57 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">8_27</text>
 </g>
 <g><title>16_28: 0.396206 (exact_statevector) bitstring=1101001111011100</title>
-<rect x="828.47" y="85.02" width="23.72" height="384.98" fill="#9a6a00"/>
-<text x="840.33" y="486" transform="rotate(65 840.33 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">16_28</text>
+<rect x="827.41" y="85.02" width="23.68" height="384.98" fill="#9a6a00"/>
+<text x="839.25" y="486" transform="rotate(65 839.25 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">16_28</text>
 </g>
 <g><title>24_29: 0.390097 (exact_statevector) bitstring=110100010111100001001001</title>
-<rect x="856.19" y="85.74" width="23.72" height="384.26" fill="#9a6a00"/>
-<text x="868.05" y="486" transform="rotate(65 868.05 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">24_29</text>
+<rect x="855.09" y="85.74" width="23.68" height="384.26" fill="#9a6a00"/>
+<text x="866.93" y="486" transform="rotate(65 866.93 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">24_29</text>
 </g>
 <g><title>32_30: 0.135742 (quimb_cpu_all) bitstring=10011000010011110111101111010111</title>
-<rect x="883.91" y="134.80" width="23.72" height="335.20" fill="#9a6a00"/>
-<text x="895.77" y="486" transform="rotate(65 895.77 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">32_30</text>
+<rect x="882.77" y="134.80" width="23.68" height="335.20" fill="#9a6a00"/>
+<text x="894.61" y="486" transform="rotate(65 894.61 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">32_30</text>
 </g>
 <g><title>48_31: 0.420898 (quimb_cpu_all) bitstring=101100111000101011111111101010111011011000110110</title>
-<rect x="911.63" y="82.21" width="23.72" height="387.79" fill="#9a6a00"/>
-<text x="923.49" y="486" transform="rotate(65 923.49 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_31</text>
+<rect x="910.45" y="82.21" width="23.68" height="387.79" fill="#9a6a00"/>
+<text x="922.30" y="486" transform="rotate(65 922.30 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_31</text>
 </g>
 <g><title>48_32: 0.265625 (quimb_cpu_all) bitstring=011101010111011110001110010101010101101110001110</title>
-<rect x="939.35" y="103.60" width="23.72" height="366.40" fill="#9a6a00"/>
-<text x="951.21" y="486" transform="rotate(65 951.21 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_32</text>
+<rect x="938.14" y="103.60" width="23.68" height="366.40" fill="#9a6a00"/>
+<text x="949.98" y="486" transform="rotate(65 949.98 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_32</text>
 </g>
 <g><title>56_33: 0.041016 (quimb_cpu_all) bitstring=11001001100101001111010100100010010101111111011101010000</title>
-<rect x="967.07" y="190.41" width="23.72" height="279.59" fill="#9a6a00"/>
-<text x="978.93" y="486" transform="rotate(65 978.93 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_33</text>
+<rect x="965.82" y="190.41" width="23.68" height="279.59" fill="#9a6a00"/>
+<text x="977.66" y="486" transform="rotate(65 977.66 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_33</text>
 </g>
 <g><title>64_34: 0.163086 (quimb_cpu_all) bitstring=0011010100010011001110101110100101001011001011011001111011100110</title>
-<rect x="994.79" y="126.27" width="23.72" height="343.73" fill="#9a6a00"/>
-<text x="1006.65" y="486" transform="rotate(65 1006.65 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_34</text>
+<rect x="993.50" y="126.27" width="23.68" height="343.73" fill="#9a6a00"/>
+<text x="1005.34" y="486" transform="rotate(65 1005.34 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_34</text>
 </g>
 <g><title>40_35: 1.953e-03 (quimb_gpu_all) bitstring=0101100110101111111000010101001110001001</title>
-<rect x="1022.51" y="331.89" width="23.72" height="138.11" fill="#b03a2e"/>
-<text x="1034.37" y="486" transform="rotate(65 1034.37 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_35</text>
+<rect x="1021.18" y="331.89" width="23.68" height="138.11" fill="#b03a2e"/>
+<text x="1033.02" y="486" transform="rotate(65 1033.02 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">40_35</text>
 </g>
 <g><title>48_36: 7.812e-03 (quimb_gpu_all) bitstring=001111011011001100110011001000101001101010111000</title>
-<rect x="1050.23" y="267.47" width="23.72" height="202.53" fill="#b03a2e"/>
-<text x="1062.09" y="486" transform="rotate(65 1062.09 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_36</text>
+<rect x="1048.86" y="267.47" width="23.68" height="202.53" fill="#b03a2e"/>
+<text x="1060.70" y="486" transform="rotate(65 1060.70 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_36</text>
 </g>
 <g><title>48_37: 9.766e-04 (quimb_gpu_all) bitstring=100101001010001101010100100101001001000101010001</title>
-<rect x="1077.95" y="364.10" width="23.72" height="105.90" fill="#b03a2e"/>
-<text x="1089.81" y="486" transform="rotate(65 1089.81 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_37</text>
+<rect x="1076.55" y="364.10" width="23.68" height="105.90" fill="#b03a2e"/>
+<text x="1088.39" y="486" transform="rotate(65 1088.39 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_37</text>
 </g>
 <g><title>56_38: 1.953e-03 (quimb_rcm_cpu) bitstring=10011001011110000000010011010101100001001001110110110001</title>
-<rect x="1105.67" y="331.89" width="23.72" height="138.11" fill="#b03a2e"/>
-<text x="1117.53" y="486" transform="rotate(65 1117.53 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_38</text>
+<rect x="1104.23" y="331.89" width="23.68" height="138.11" fill="#b03a2e"/>
+<text x="1116.07" y="486" transform="rotate(65 1116.07 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_38</text>
 </g>
 <g><title>56_39: 1.953e-03 (quimb_gpu_all) bitstring=10010111001101010101111111010110110110110000101001010000</title>
-<rect x="1133.40" y="331.89" width="23.72" height="138.11" fill="#b03a2e"/>
-<text x="1145.26" y="486" transform="rotate(65 1145.26 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_39</text>
+<rect x="1131.91" y="331.89" width="23.68" height="138.11" fill="#b03a2e"/>
+<text x="1143.75" y="486" transform="rotate(65 1143.75 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_39</text>
 </g>
 <g><title>64_40: 1.000e-03 (peaked_mpo_unswap_gpu) bitstring=1011010011100010110100000000110000111001111010100100110100001100</title>
-<rect x="1161.12" y="363.00" width="23.72" height="107.00" fill="#b03a2e"/>
-<text x="1172.98" y="486" transform="rotate(65 1172.98 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_40</text>
+<rect x="1159.59" y="363.00" width="23.68" height="107.00" fill="#b03a2e"/>
+<text x="1171.43" y="486" transform="rotate(65 1171.43 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_40</text>
 </g>
 <g><title>64_41: 0.167 (aer_mps_pilot) bitstring=0001000111010011100110010011110111000000100011010001101010110010</title>
-<rect x="1188.84" y="125.17" width="23.72" height="344.83" fill="#b03a2e"/>
-<text x="1200.70" y="486" transform="rotate(65 1200.70 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_41</text>
+<rect x="1187.27" y="125.17" width="23.68" height="344.83" fill="#b03a2e"/>
+<text x="1199.11" y="486" transform="rotate(65 1199.11 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">64_41</text>
 </g>
 <g><title>48_42: 2.604e-03 (peaked_mpo_graph_tns_veryhard_fast_cpu_b) bitstring=101101000011000100111110110110110111010000010010</title>
-<rect x="1216.56" y="318.52" width="23.72" height="151.48" fill="#6f3fb3"/>
-<text x="1228.42" y="486" transform="rotate(65 1228.42 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_42</text>
+<rect x="1214.95" y="318.52" width="23.68" height="151.48" fill="#6f3fb3"/>
+<text x="1226.80" y="486" transform="rotate(65 1226.80 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">48_42</text>
 </g>
 <g><title>56_43: 2.604e-03 (peaked_mpo_graph_tns_veryhard_fast_cpu_b) bitstring=01101110110101000111010100001001000110110101010010011000</title>
-<rect x="1244.28" y="318.52" width="23.72" height="151.48" fill="#6f3fb3"/>
-<text x="1256.14" y="486" transform="rotate(65 1256.14 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_43</text>
+<rect x="1242.64" y="318.52" width="23.68" height="151.48" fill="#6f3fb3"/>
+<text x="1254.48" y="486" transform="rotate(65 1254.48 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">56_43</text>
+</g>
+<g><title>104_49: 1.000e-03 (peaked_mpo_graph_tns_gpu_retry) bitstring=10000011001100000010101010100101001001011001110000000111100011100000010000101010101101111111110100000111</title>
+<rect x="1270.32" y="363.00" width="23.68" height="107.00" fill="#6f3fb3"/>
+<text x="1282.16" y="486" transform="rotate(65 1282.16 486)" font-family="Arial, sans-serif" font-size="11" fill="#222">104_49</text>
 </g>
 <rect x="80" y="578" width="12" height="12" fill="#2f7d32"/>
 <text x="98" y="588" font-family="Arial, sans-serif" font-size="12" fill="#222">very easy</text>
