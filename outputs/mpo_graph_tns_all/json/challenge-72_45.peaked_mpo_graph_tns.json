@@ -13,6 +13,7 @@
     "SLURM_JOB_ID": "34618855",
     "SLURM_JOB_PARTITION": "interruptible_gpu"
   },
+  "error_type": "SlurmPreempted",
   "method": "peaked_mpo_graph_tns",
   "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
   "output_json": "outputs/mpo_graph_tns_all/json/challenge-72_45.peaked_mpo_graph_tns.json",
@@ -41,8 +42,10 @@
   },
   "qasm": "challenges/very_hard/challenge-72_45.qasm",
   "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/klalee-graph",
+  "slurm_job_id": "34616526_45",
   "started_at": "2026-06-06T11:53:53+0100",
-  "status": "started",
+  "status": "preempted",
+  "terminated_at": "2026-06-06T14:19:51+0100",
   "versions": {
     "networkx": "3.4.2",
     "numpy": "2.2.6",

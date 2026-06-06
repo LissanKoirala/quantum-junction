@@ -68,6 +68,7 @@ SOURCE_LABELS = {
     "mpo_graph_tns_combined": "combined",
 }
 EXTERNAL_SYNC_SOURCE_NAMES = [
+    "mpo_graph_tns_all",
     "mpo_graph_tns_veryhard_fast_cpu",
     "mpo_graph_tns_veryhard_fast_cpu_b",
     "mpo_graph_tns_veryhard_fast_cpu_c",
@@ -107,9 +108,9 @@ CPU_JOB_IDS = [
     "34623203",
     "34620754",
     "34623041",
-    "34623543",
+    "34625716",
 ]
-GPU_JOB_IDS = ["34616526", "34622515"]
+GPU_JOB_IDS = ["34616526", "34622515", "34624722"]
 
 
 def label_from_json_path(path: Path) -> str:
@@ -478,8 +479,8 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; "
         "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; "
         "`sample_top_post` records known-answer hits found below rank 1 in sampled distributions.",
-        "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`.",
-        "- Current replacement dependency-gated jobs: `34623543` fallback array, `34623544` combined rollup.",
+        "- Imported external all-GPU, fast very-hard, and GPU retry outputs from `../hard-problems`: `34616526`, `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`, `34624722`.",
+        "- Current replacement dependency-gated jobs: `34625716` fallback array, `34625717` combined rollup.",
         "",
         "## Source Output Counts",
         "",

@@ -1,29 +1,29 @@
 # MPO Graph TNS Current Report
 
-Generated: 2026-06-06T14:42:02+01:00
+Generated: 2026-06-06T16:00:44+01:00
 
 This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee-graph` worktree. For completed runs, the bitstring distribution is the sampled `sampling.top` list from the selected record for that challenge. `qiskit_order` is derived as the reverse of `permuted_measurement_order`, matching `final_candidate_qiskit_order`. The overview table embeds a distribution image thumbnail for every challenge, and each challenge detail includes the full SVG. Challenges without sampled results include a placeholder image.
 
 ## Summary
 
-- Usable coverage: 42 / 49
-- Missing or only incorrect: 24_29, 104_49, 64_44, 72_45, 80_46, 88_47, 96_48
+- Usable coverage: 44 / 49
+- Missing or only incorrect: 24_29, 104_49, 80_46, 88_47, 96_48
 - Known incorrect completed outputs present: 16_28, 24_29, 28_4
-- Workload CPU running now: 56 tasks, 1608 cores
-- GPU array running now: 5 tasks
-- Chosen-record status counts: {'ok': 43, 'started': 6}
-- Chosen-record validation counts: {'correct': 9, 'unknown': 33, 'incorrect': 1, 'None': 6}
-- Chosen-record source counts: {'all_gpu': 35, 'sample_top_post': 1, 'all_cpu': 11, 'vhard_fast_b': 2}
+- Workload CPU running now: 38 tasks, 1096 cores
+- GPU array running now: 4 tasks
+- Chosen-record status counts: {'ok': 45, 'started': 4}
+- Chosen-record validation counts: {'correct': 9, 'unknown': 35, 'incorrect': 1, 'None': 4}
+- Chosen-record source counts: {'all_gpu': 35, 'sample_top_post': 1, 'all_cpu': 9, 'vhard_fast_b': 2, 'vhard_fast_f': 2}
 - Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; `34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; `34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`; `sample_top_post` records known-answer hits found below rank 1 in sampled distributions.
-- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`.
-- Current replacement dependency-gated jobs: `34623543` fallback array, `34623544` combined rollup.
+- Imported external all-GPU, fast very-hard, and GPU retry outputs from `../hard-problems`: `34616526`, `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`, `34623203`, `34624722`.
+- Current replacement dependency-gated jobs: `34625716` fallback array, `34625717` combined rollup.
 
 ## Source Output Counts
 
 | source | jsons | status counts | validation counts |
 |---|---:|---|---|
 | `all_cpu` | 49 | `{'started': 24, 'ok': 25}` | `{'None': 24, 'correct': 8, 'incorrect': 1, 'unknown': 16}` |
-| `all_gpu` | 49 | `{'started': 8, 'ok': 41}` | `{'None': 8, 'correct': 7, 'incorrect': 3, 'unknown': 31}` |
+| `all_gpu` | 49 | `{'preempted': 2, 'ok': 41, 'started': 6}` | `{'None': 8, 'correct': 7, 'incorrect': 3, 'unknown': 31}` |
 | `gpu_retry` | 2 | `{'started': 2}` | `{'None': 2}` |
 | `param_probe` | 2 | `{'started': 1, 'ok': 1}` | `{'None': 1, 'correct': 1}` |
 | `missing_cpu` | 9 | `{'started': 7, 'ok': 2}` | `{'None': 7, 'incorrect': 2}` |
@@ -39,13 +39,13 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | `mod_retry_j` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `mod_retry_k` | 1 | `{'started': 1}` | `{'None': 1}` |
 | `sample_top_post` | 1 | `{'ok': 1}` | `{'correct': 1}` |
-| `vhard_fast` | 8 | `{'started': 3, 'cancelled': 2, 'preempted': 3}` | `{'None': 8}` |
-| `vhard_fast_b` | 8 | `{'started': 4, 'ok': 2, 'error': 2}` | `{'None': 6, 'unknown': 2}` |
-| `vhard_fast_c` | 6 | `{'started': 6}` | `{'None': 6}` |
-| `vhard_fast_d` | 6 | `{'started': 6}` | `{'None': 6}` |
-| `vhard_fast_e` | 6 | `{'started': 6}` | `{'None': 6}` |
-| `vhard_fast_f` | 2 | `{'started': 2}` | `{'None': 2}` |
-| `vhard_fast_g` | 1 | `{'started': 1}` | `{'None': 1}` |
+| `vhard_fast` | 8 | `{'error': 2, 'cancelled': 2, 'preempted': 3, 'started': 1}` | `{'None': 8}` |
+| `vhard_fast_b` | 8 | `{'error': 6, 'ok': 2}` | `{'None': 6, 'unknown': 2}` |
+| `vhard_fast_c` | 6 | `{'started': 5, 'error': 1}` | `{'None': 6}` |
+| `vhard_fast_d` | 6 | `{'error': 6}` | `{'None': 6}` |
+| `vhard_fast_e` | 6 | `{'started': 5, 'terminated': 1}` | `{'None': 6}` |
+| `vhard_fast_f` | 2 | `{'ok': 2}` | `{'unknown': 2}` |
+| `vhard_fast_g` | 4 | `{'started': 3, 'error': 1}` | `{'None': 4}` |
 | `combined` | 0 | `{}` | `{}` |
 
 ## Challenge Overview
@@ -96,8 +96,8 @@ This report summarizes the current `peaked_mpo_graph_tns` outputs in the `klalee
 | 41 | `104_49` | very_hard | all_cpu | started |  |  |  |  | <img src="mpo_graph_tns_distribution_images/challenge-104_49.bitstring_distribution.svg" alt="Bitstring distribution for 104_49" width="360"> | `outputs/mpo_graph_tns_all_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json` |
 | 42 | `48_42` | very_hard | vhard_fast_b | ok | unknown | `101101000011000100111110110110110111010000010010` | 0.003 | 2543.6 | <img src="mpo_graph_tns_distribution_images/challenge-48_42.bitstring_distribution.svg" alt="Bitstring distribution for 48_42" width="360"> | `outputs/mpo_graph_tns_veryhard_fast_cpu_b/json/challenge-48_42.peaked_mpo_graph_tns.json` |
 | 43 | `56_43` | very_hard | vhard_fast_b | ok | unknown | `01101110110101000111010100001001000110110101010010011000` | 0.003 | 2530.0 | <img src="mpo_graph_tns_distribution_images/challenge-56_43.bitstring_distribution.svg" alt="Bitstring distribution for 56_43" width="360"> | `outputs/mpo_graph_tns_veryhard_fast_cpu_b/json/challenge-56_43.peaked_mpo_graph_tns.json` |
-| 44 | `64_44` | very_hard | all_cpu | started |  |  |  |  | <img src="mpo_graph_tns_distribution_images/challenge-64_44.bitstring_distribution.svg" alt="Bitstring distribution for 64_44" width="360"> | `outputs/mpo_graph_tns_all_cpu/json/challenge-64_44.peaked_mpo_graph_tns.json` |
-| 45 | `72_45` | very_hard | all_cpu | started |  |  |  |  | <img src="mpo_graph_tns_distribution_images/challenge-72_45.bitstring_distribution.svg" alt="Bitstring distribution for 72_45" width="360"> | `outputs/mpo_graph_tns_all_cpu/json/challenge-72_45.peaked_mpo_graph_tns.json` |
+| 44 | `64_44` | very_hard | vhard_fast_f | ok | unknown | `0000000000000000000000000000000000000000000000000000000000000000` |  | 5241.2 | <img src="mpo_graph_tns_distribution_images/challenge-64_44.bitstring_distribution.svg" alt="Bitstring distribution for 64_44" width="360"> | `outputs/mpo_graph_tns_veryhard_fast_cpu_f/json/challenge-64_44.peaked_mpo_graph_tns.json` |
+| 45 | `72_45` | very_hard | vhard_fast_f | ok | unknown | `000000000000000000000000000000000000000000000000000000000000000000000000` |  | 5358.8 | <img src="mpo_graph_tns_distribution_images/challenge-72_45.bitstring_distribution.svg" alt="Bitstring distribution for 72_45" width="360"> | `outputs/mpo_graph_tns_veryhard_fast_cpu_f/json/challenge-72_45.peaked_mpo_graph_tns.json` |
 | 46 | `80_46` | very_hard | all_cpu | started |  |  |  |  | <img src="mpo_graph_tns_distribution_images/challenge-80_46.bitstring_distribution.svg" alt="Bitstring distribution for 80_46" width="360"> | `outputs/mpo_graph_tns_all_cpu/json/challenge-80_46.peaked_mpo_graph_tns.json` |
 | 47 | `88_47` | very_hard | all_cpu | started |  |  |  |  | <img src="mpo_graph_tns_distribution_images/challenge-88_47.bitstring_distribution.svg" alt="Bitstring distribution for 88_47" width="360"> | `outputs/mpo_graph_tns_all_cpu/json/challenge-88_47.peaked_mpo_graph_tns.json` |
 | 48 | `96_48` | very_hard | all_cpu | started |  |  |  |  | <img src="mpo_graph_tns_distribution_images/challenge-96_48.bitstring_distribution.svg" alt="Bitstring distribution for 96_48" width="360"> | `outputs/mpo_graph_tns_all_cpu/json/challenge-96_48.peaked_mpo_graph_tns.json` |
@@ -1345,7 +1345,7 @@ Bitstring distribution, top 6 of 1000 samples:
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-104_49.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, gpu_retry:started, missing_cpu:started, extra_cpu:started, extra_cpu_e:started, extra_cpu_f:started, extra_cpu_g:started, vhard_fast:started, vhard_fast_b:started, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started
+- Source records: all_cpu:started, all_gpu:preempted, gpu_retry:started, missing_cpu:started, extra_cpu:started, extra_cpu_e:started, extra_cpu_f:started, extra_cpu_g:started, vhard_fast:error, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:error, vhard_fast_e:started, vhard_fast_g:started
 
 Bitstring distribution image:
 
@@ -1416,30 +1416,36 @@ Bitstring distribution, top 10 of 384 samples:
 ### 44. `64_44` (very_hard)
 
 - QASM: `challenges/very_hard/challenge-64_44.qasm`
-- Chosen source: `all_cpu`
-- Status: `started`; validation: `none`
-- JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-64_44.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started, vhard_fast_f:started
+- Chosen source: `vhard_fast_f`
+- Status: `ok`; validation: `unknown`
+- Final candidate, Qiskit order: `0000000000000000000000000000000000000000000000000000000000000000`
+- Runtime seconds: 5241.2
+- JSON: `outputs/mpo_graph_tns_veryhard_fast_cpu_f/json/challenge-64_44.peaked_mpo_graph_tns.json`
+- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:error, vhard_fast_e:terminated, vhard_fast_f:ok/unknown
+- Marginal P(0) raw-site prefix: `, , , , , , , , , , , , ...`
 
 Bitstring distribution image:
 
 ![Bitstring distribution for 64_44](mpo_graph_tns_distribution_images/challenge-64_44.bitstring_distribution.svg)
 
-Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
+Bitstring distribution: not available in the selected JSON record.
 
 ### 45. `72_45` (very_hard)
 
 - QASM: `challenges/very_hard/challenge-72_45.qasm`
-- Chosen source: `all_cpu`
-- Status: `started`; validation: `none`
-- JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-72_45.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, gpu_retry:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started, vhard_fast_f:started
+- Chosen source: `vhard_fast_f`
+- Status: `ok`; validation: `unknown`
+- Final candidate, Qiskit order: `000000000000000000000000000000000000000000000000000000000000000000000000`
+- Runtime seconds: 5358.8
+- JSON: `outputs/mpo_graph_tns_veryhard_fast_cpu_f/json/challenge-72_45.peaked_mpo_graph_tns.json`
+- Source records: all_cpu:started, all_gpu:preempted, gpu_retry:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:error, vhard_fast_c:error, vhard_fast_d:error, vhard_fast_e:started, vhard_fast_f:ok/unknown
+- Marginal P(0) raw-site prefix: `, , , , , , , , , , , , ...`
 
 Bitstring distribution image:
 
 ![Bitstring distribution for 72_45](mpo_graph_tns_distribution_images/challenge-72_45.bitstring_distribution.svg)
 
-Bitstring distribution: not available yet; the selected attempt is still running and has not written sampled results.
+Bitstring distribution: not available in the selected JSON record.
 
 ### 46. `80_46` (very_hard)
 
@@ -1447,7 +1453,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-80_46.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:started, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started, vhard_fast_g:started
+- Source records: all_cpu:started, all_gpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started, vhard_fast:preempted, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:error, vhard_fast_e:started, vhard_fast_g:started
 
 Bitstring distribution image:
 
@@ -1461,7 +1467,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-88_47.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, vhard_fast:started, vhard_fast_b:started, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started
+- Source records: all_cpu:started, all_gpu:started, missing_cpu:started, extra_cpu:started, extra_cpu_f:started, vhard_fast:started, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:error, vhard_fast_e:started, vhard_fast_g:error
 
 Bitstring distribution image:
 
@@ -1475,7 +1481,7 @@ Bitstring distribution: not available yet; the selected attempt is still running
 - Chosen source: `all_cpu`
 - Status: `started`; validation: `none`
 - JSON: `outputs/mpo_graph_tns_all_cpu/json/challenge-96_48.peaked_mpo_graph_tns.json`
-- Source records: all_cpu:started, all_gpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started, vhard_fast:started, vhard_fast_b:started, vhard_fast_c:started, vhard_fast_d:started, vhard_fast_e:started
+- Source records: all_cpu:started, all_gpu:started, extra_cpu:started, extra_cpu_b:started, extra_cpu_f:started, vhard_fast:error, vhard_fast_b:error, vhard_fast_c:started, vhard_fast_d:error, vhard_fast_e:started, vhard_fast_g:started
 
 Bitstring distribution image:
 

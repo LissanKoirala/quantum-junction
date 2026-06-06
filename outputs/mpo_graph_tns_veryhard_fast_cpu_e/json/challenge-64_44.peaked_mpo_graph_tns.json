@@ -1,6 +1,17 @@
 {
+  "backend": {
+    "cuda_visible_devices": "",
+    "selected": "numpy",
+    "torch_cuda_available": false
+  },
   "challenge_id": 44,
   "challenge_label": "64_44",
+  "circuit_len": 28787,
+  "circuit_ops": {
+    "cx": 5844,
+    "rx": 11016,
+    "rz": 11927
+  },
   "difficulty": "very_hard",
   "env": {
     "CUDA_VISIBLE_DEVICES": null,
@@ -13,8 +24,13 @@
     "SLURM_JOB_ID": "34622355",
     "SLURM_JOB_PARTITION": "interruptible_cpu"
   },
+  "error": "received signal 15",
+  "error_type": "SignalTerminated",
+  "max_rss_mb": 4338.40234375,
   "method": "peaked_mpo_graph_tns",
   "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "num_clbits": 0,
+  "num_qubits": 64,
   "output_json": "outputs/mpo_graph_tns_veryhard_fast_cpu_e/json/challenge-64_44.peaked_mpo_graph_tns.json",
   "output_stats_jsonl": "outputs/mpo_graph_tns_veryhard_fast_cpu_e/stats/challenge-64_44.peaked_mpo_graph_tns.stats.jsonl",
   "parameters": {
@@ -40,9 +56,18 @@
     "unswap_threshold": 240000.0
   },
   "qasm": "challenges/very_hard/challenge-64_44.qasm",
+  "removed_final_measurements": false,
   "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/hard-problems",
   "started_at": "2026-06-06T14:14:09+0100",
-  "status": "started",
+  "status": "terminated",
+  "terminated_signal": 15,
+  "total_seconds": 5483.474845916964,
+  "unitary_circuit_len": 28787,
+  "unitary_circuit_ops": {
+    "cx": 5844,
+    "rx": 11016,
+    "rz": 11927
+  },
   "versions": {
     "networkx": "3.4.2",
     "numpy": "2.2.6",
