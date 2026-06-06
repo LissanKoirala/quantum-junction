@@ -1041,11 +1041,31 @@
   {
     "challenge_id": 40,
     "difficulty": "hard",
-    "evidence": [],
+    "evidence": [
+      {
+        "candidate": "1011010011100010110100000000110000111001111010100100110100001100",
+        "max_bond": 19,
+        "path": "outputs/tree_tensor_sim/peaked_unswap_gpu/json/challenge-64_40.peaked_mpo_unswap.json",
+        "priority": 70,
+        "seconds": 1840.6486675189808,
+        "source": "peaked_mpo_unswap_gpu",
+        "top_fraction": 0.001,
+        "validation": "unknown"
+      }
+    ],
     "label": "64_40",
     "num_qubits": 64,
     "qasm": "challenges/hard/challenge-64_40.qasm",
-    "selected": null
+    "selected": {
+      "candidate": "1011010011100010110100000000110000111001111010100100110100001100",
+      "max_bond": 19,
+      "path": "outputs/tree_tensor_sim/peaked_unswap_gpu/json/challenge-64_40.peaked_mpo_unswap.json",
+      "priority": 70,
+      "seconds": 1840.6486675189808,
+      "source": "peaked_mpo_unswap_gpu",
+      "top_fraction": 0.001,
+      "validation": "unknown"
+    }
   },
   {
     "challenge_id": 41,

@@ -16,23 +16,22 @@
 
 \title{Quantum Junction Challenge: Condensed Codex Session Report}
 \author{Codex run summary}
-\date{Built 2026-06-06 06:33:07 }
+\date{Built 2026-06-06 08:18:38 }
 
 \begin{document}
 \maketitle
 
 \section*{Executive Summary}
-The session produced selected peak bitstrings for \textbf{40/49} challenge files. The remaining blanks are
-\texttt{64\_40, 104\_49, 48\_42, 56\_43, 64\_44, 72\_45, 80\_46, 88\_47, 96\_48}. The selected set contains \textbf{10} exact statevector answers and
-\textbf{30} tensor-network or MPS-derived candidates. Among the approximate selected rows, \textbf{17}
-are from the canonical Quimb GPU pass, \textbf{11} from canonical Quimb CPU, and \textbf{1} from an RCM-order CPU
-fallback. Exact statevector peaks had mean peak probability 0.513 and mean gap to the second bitstring
+The session produced selected peak bitstrings for \textbf{41/49} challenge files. The remaining blanks are
+\texttt{104\_49, 48\_42, 56\_43, 64\_44, 72\_45, 80\_46, 88\_47, 96\_48}. The selected set contains \textbf{10} exact statevector answers and
+\textbf{31} tensor-network or MPS-derived candidates. Among the approximate selected rows: \textbf{17} from quimb GPU; \textbf{11} from quimb CPU; \textbf{1} from Aer MPS; \textbf{1} from MPO unswap; \textbf{1} from RCM CPU.
+Exact statevector peaks had mean peak probability 0.513 and mean gap to the second bitstring
 0.459.
 
 The main result is a usable candidate set, not a proof of correctness for every approximate row. Easy and moderate
 instances often had large sampled peak fractions and/or corroborating evidence. Several hard rows are weak: they were
 selected because they were the best available evidence, but their sampled top fractions are near one or two samples out of
-512/1024. The session later pivoted away from long-running graph-MPS sweeps after the user set a practical
+512/1024, and the newly selected MPO-unswap row for \texttt{64\_40} is similarly diffuse. The session later pivoted away from long-running graph-MPS sweeps after the user set a practical
 ``about 2 hours'' per-attempt budget.
 
 \section*{Candidate Selection Rule}
@@ -47,7 +46,7 @@ count.
 \centering
 \includegraphics[width=0.48\linewidth]{figures/coverage_by_difficulty.pdf}
 \includegraphics[width=0.48\linewidth]{figures/selected_source_counts.pdf}
-\caption{Coverage and winning evidence sources. The nine missing rows are all hard or very hard.}
+\caption{Coverage and winning evidence sources. The 8 missing rows are all very hard.}
 \end{figure}
 
 \section*{What Was Tried}
@@ -61,7 +60,7 @@ Ordering fallbacks & Tried RCM, MST, degree, mid, fast, and identity orderings t
 Sparse computational-basis beam & Added a C++ top-K sparse branch propagator through RX/RZ/CX. & Rejected for answer selection: on known 16\_28 the exact answer was only rank 3. \\
 Static QASM forensics & Counted gates, angle classes, pair repetitions, connectivity, leading one-qubit prefixes, and operation 5-gram similarity. & Confirmed all circuits are RX/RZ/CX/SWAP style, very-hard files are a distinct dense-obfuscation regime, and Clifford shortcuts are not appropriate. \\
 Optimized-U3 transpilation & Transpiled the remaining blanks to U3+CX to reduce single-qubit gate count. & Reduced total gate count by roughly 39--42\% on blanks; not yet selected as evidence. \\
-MPO unswapping & Patched the local Kremer-Dupuis style MPO cancellation/unswapping code: parameterized SABRE trials, fixed Quimb local expectation API, fixed quantum-op progress counting. & Calibrated on known 16\_28 in 93.26 s and recovered the exact answer. Unresolved runs were still active at report build time and are not counted as solved. \\
+MPO unswapping & Patched the local Kremer-Dupuis style MPO cancellation/unswapping code: parameterized SABRE trials, fixed Quimb local expectation API, fixed quantum-op progress counting. & Calibrated on known 16\_28 in 93.26 s and recovered the exact answer. The completed 64\_40 run is included as weak evidence; the remaining very-hard runs were still active or incomplete at report build time. \\
 \bottomrule
 \end{longtable}
 
@@ -133,6 +132,7 @@ Challenge & difficulty & source & top frac. & evidence & candidate \\
 48\_37 & hard & quimb GPU & 0.0009766 & 3 & \texttt{\scriptsize 10010100\allowbreak 10100011\allowbreak 01010100\allowbreak 10010100\allowbreak 10010001\allowbreak 01010001} \\
 56\_38 & hard & RCM CPU & 0.001953 & 1 & \texttt{\scriptsize 10011001\allowbreak 01111000\allowbreak 00000100\allowbreak 11010101\allowbreak 10000100\allowbreak 10011101\allowbreak 10110001} \\
 56\_39 & hard & quimb GPU & 0.001953 & 3 & \texttt{\scriptsize 10010111\allowbreak 00110101\allowbreak 01011111\allowbreak 11010110\allowbreak 11011011\allowbreak 00001010\allowbreak 01010000} \\
+64\_40 & hard & MPO unswap & 0.001 & 1 & \texttt{\scriptsize 10110100\allowbreak 11100010\allowbreak 11010000\allowbreak 00001100\allowbreak 00111001\allowbreak 11101010\allowbreak 01001101\allowbreak 00001100} \\
 64\_41 & hard & Aer MPS & 0.167 & 1 & \texttt{\scriptsize 00010001\allowbreak 11010011\allowbreak 10011001\allowbreak 00111101\allowbreak 11000000\allowbreak 10001101\allowbreak 00011010\allowbreak 10110010} \\
 32\_5 & very easy & quimb CPU & 0.5322 & 1 & \texttt{\scriptsize 00111000\allowbreak 10101010\allowbreak 00010000\allowbreak 00010000} \\
 36\_6 & very easy & quimb CPU & 0.6885 & 1 & \texttt{\scriptsize 10011010\allowbreak 01111010\allowbreak 01001101\allowbreak 11001100\allowbreak 1000} \\
@@ -173,19 +173,20 @@ Blank & q & original gates & U3 gates & reduction \\
 
 \section*{Current Slurm Snapshot}
 The report is an as-of snapshot. Any active unresolved MPO-unswap jobs below were still running or pending when the PDF was built,
-and their outputs are not counted in the \textbf{40/49} result.
+and their outputs are not counted in the \textbf{41/49} result.
 
 \begin{longtable}{l l l r p{0.24\linewidth} p{0.24\linewidth}}
 \toprule
 JobID & state & elapsed & CPUs & name & node/reason \\
 \midrule
+34614305 & RUNNING & 1:45:09 & 4 & bash & erc-hpc-comp025 \\
 34614255 & PENDING & 0:00 & 2 & peaked\_unswap\_rollup & (Dependency) \\
-34614254\_[46-48\%5] & PENDING & 0:00 & 16 & peaked\_unswap\_unresolved & (JobArrayTaskLimit) \\
-34614254\_45 & RUNNING & 3:12 & 16 & peaked\_unswap\_unresolved & erc-hpc-comp202 \\
-34614254\_21 & RUNNING & 4:44 & 16 & peaked\_unswap\_unresolved & erc-hpc-comp192 \\
-34614254\_41 & RUNNING & 4:44 & 16 & peaked\_unswap\_unresolved & erc-hpc-comp195 \\
-34614254\_43 & RUNNING & 4:44 & 16 & peaked\_unswap\_unresolved & erc-hpc-vm064 \\
-34614254\_44 & RUNNING & 4:44 & 16 & peaked\_unswap\_unresolved & erc-hpc-vm065 \\
+34614254\_[47-48\%5] & PENDING & 0:00 & 16 & peaked\_unswap\_unresolved & (JobArrayTaskLimit) \\
+34614254\_46 & RUNNING & 1:19:04 & 16 & peaked\_unswap\_unresolved & erc-hpc-comp192 \\
+34614254\_45 & RUNNING & 1:48:43 & 16 & peaked\_unswap\_unresolved & erc-hpc-comp202 \\
+34614254\_41 & RUNNING & 1:50:15 & 16 & peaked\_unswap\_unresolved & erc-hpc-comp195 \\
+34614254\_43 & RUNNING & 1:50:15 & 16 & peaked\_unswap\_unresolved & erc-hpc-vm064 \\
+34614254\_44 & RUNNING & 1:50:15 & 16 & peaked\_unswap\_unresolved & erc-hpc-vm065 \\
 \bottomrule
 \end{longtable}
 
@@ -196,7 +197,7 @@ Source & selected winners & candidate evidence rows & attempted evidence rows \\
 \midrule
 Aer MPS & 1 & 6 & 6 \\
 exact & 10 & 10 & 10 \\
-MPO unswap & 0 & 1 & 1 \\
+MPO unswap & 1 & 2 & 2 \\
 quimb CPU & 11 & 36 & 36 \\
 degree CPU & 0 & 1 & 1 \\
 fast CPU & 0 & 5 & 5 \\
@@ -253,7 +254,7 @@ Challenge & difficulty & q & candidate & source & validation & top frac. & evide
 48\_37 & hard & 48 & \texttt{\scriptsize 10010100\allowbreak 10100011\allowbreak 01010100\allowbreak 10010100\allowbreak 10010001\allowbreak 01010001} & quimb GPU & unknown & 0.0009766 & 3 \\
 56\_38 & hard & 56 & \texttt{\scriptsize 10011001\allowbreak 01111000\allowbreak 00000100\allowbreak 11010101\allowbreak 10000100\allowbreak 10011101\allowbreak 10110001} & RCM CPU & unknown & 0.001953 & 1 \\
 56\_39 & hard & 56 & \texttt{\scriptsize 10010111\allowbreak 00110101\allowbreak 01011111\allowbreak 11010110\allowbreak 11011011\allowbreak 00001010\allowbreak 01010000} & quimb GPU & unknown & 0.001953 & 3 \\
-64\_40 & hard & 64 &  &  &  &  & 0 \\
+64\_40 & hard & 64 & \texttt{\scriptsize 10110100\allowbreak 11100010\allowbreak 11010000\allowbreak 00001100\allowbreak 00111001\allowbreak 11101010\allowbreak 01001101\allowbreak 00001100} & MPO unswap & unknown & 0.001 & 1 \\
 64\_41 & hard & 64 & \texttt{\scriptsize 00010001\allowbreak 11010011\allowbreak 10011001\allowbreak 00111101\allowbreak 11000000\allowbreak 10001101\allowbreak 00011010\allowbreak 10110010} & Aer MPS & unstable\_top1\_vs\_aggregate & 0.167 & 1 \\
 48\_42 & very hard & 48 &  &  &  &  & 0 \\
 56\_43 & very hard & 56 &  &  &  &  & 0 \\
@@ -268,9 +269,79 @@ Challenge & difficulty & q & candidate & source & validation & top frac. & evide
 \normalsize
 
 \section*{Conclusions}
-The practical output of the session is a 40-row candidate answer set and a clear split between reliable and weak evidence.
+The practical output of the session is a 41-row candidate answer set and a clear split between reliable and weak evidence.
 The exact and high-top-fraction Quimb rows are the most defensible. The hard weak rows should be treated as provisional.
 The best next direction is not another unconstrained graph-MPS sweep: it is bounded MPO-unswapping or optimized-U3 GPU runs
 with calibration checks and immediate collector refreshes.
+
+
+\clearpage
+\section*{Appendix: Per-Problem Result Distributions}
+This appendix shows the distribution evidence used for each challenge in this session, ordered by challenge number. For exact rows, the bars are exact statevector probabilities for the top outcomes. For Quimb graph-MPS, MPO-unswapping, and Aer pilot rows, the bars are sampled output fractions from the selected or current evidence source. All bitstrings are in Qiskit/counts order, with the right-most bit corresponding to qubit 0. Panels with no bars had no completed distribution evidence at the report snapshot; those rows were still blank or only had started/pending jobs.
+
+The appendix is deliberately compact: it shows the top reported outcomes rather than every sampled bitstring, because several hard and very-hard runs produced hundreds or thousands of singleton samples. The unlisted fraction annotation is therefore part of the interpretation. A large unlisted fraction means the observed distribution was diffuse and the selected bitstring should be treated as weak evidence.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_01.pdf}
+\caption{Per-problem result distributions, page 1. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_02.pdf}
+\caption{Per-problem result distributions, page 2. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_03.pdf}
+\caption{Per-problem result distributions, page 3. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_04.pdf}
+\caption{Per-problem result distributions, page 4. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_05.pdf}
+\caption{Per-problem result distributions, page 5. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_06.pdf}
+\caption{Per-problem result distributions, page 6. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_07.pdf}
+\caption{Per-problem result distributions, page 7. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_08.pdf}
+\caption{Per-problem result distributions, page 8. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{figures/appendix_distributions_page_09.pdf}
+\caption{Per-problem result distributions, page 9. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}
+\end{figure}
+
 
 \end{document}

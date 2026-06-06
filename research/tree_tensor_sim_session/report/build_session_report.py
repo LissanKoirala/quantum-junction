@@ -14,10 +14,21 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "reports" / "session_report"
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+
+def find_repo_root(start: Path) -> Path:
+    for path in [start, *start.parents]:
+        if (path / "challenges").is_dir() and (path / "jobs").is_dir():
+            return path
+    return Path(__file__).resolve().parents[2]
+
+
+ROOT = find_repo_root(SCRIPT_DIR)
+OUT = SCRIPT_DIR
 FIG = OUT / "figures"
 TEX = OUT / "quantum_junction_session_report.tex"
+APPENDIX_PREFIX = "appendix_distributions_page_"
 
 DIFF_ORDER = ["very easy", "easy", "moderate", "hard", "very_hard"]
 DIFF_LABEL = {
@@ -91,6 +102,14 @@ def source_label(source: str) -> str:
         "sparse_beam": "sparse beam",
     }
     return labels.get(source, source.replace("_", " "))
+
+
+def challenge_sort_key(label: str) -> tuple[int, int]:
+    try:
+        q, idx = str(label).split("_", 1)
+        return int(idx), int(q)
+    except ValueError:
+        return (9999, 9999)
 
 
 def read_inputs() -> tuple[pd.DataFrame, list[dict[str, Any]], pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -259,6 +278,185 @@ def sample_rows_from_json(path: Path, mode: str) -> tuple[str, list[tuple[str, f
     raise ValueError(mode)
 
 
+def read_exact_top_map() -> dict[str, dict[str, Any]]:
+    path = ROOT / "agent_work" / "exact_baseline" / "peaks_exact.jsonl"
+    exact: dict[str, dict[str, Any]] = {}
+    if not path.exists():
+        return exact
+    for line in path.read_text().splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        exact[str(row["challenge"])] = row
+    return exact
+
+
+def distribution_from_quimb(path: Path) -> tuple[list[tuple[str, float]], float | None, str]:
+    data = read_json(path)
+    sampling = data.get("sampling", {})
+    top = sampling.get("top_qiskit_order") or []
+    total = to_float(sampling.get("observed_samples") or sampling.get("samples"))
+    if total is None:
+        total = float(sum(int(item.get("count") or 0) for item in top) or 1)
+    rows = [(str(item.get("bitstring", "")), float(item.get("count") or 0) / total) for item in top[:10]]
+    remainder = max(0.0, 1.0 - sum(v for _, v in rows))
+    note = f"{int(total)} samples; unlisted {remainder:.3g}"
+    return rows, remainder, note
+
+
+def distribution_from_unswap(path: Path) -> tuple[list[tuple[str, float]], float | None, str]:
+    data = read_json(path)
+    sampling = data.get("sampling", {})
+    top = sampling.get("top") or []
+    rows = []
+    for item in top[:10]:
+        bits = str(item.get("permuted_measurement_order") or "")
+        qiskit_bits = bits[::-1] if bits else str(item.get("raw_site_order") or "")
+        rows.append((qiskit_bits, float(item.get("fraction") or 0.0)))
+    remainder = max(0.0, 1.0 - sum(v for _, v in rows))
+    samples = sampling.get("samples")
+    sample_note = f"{int(samples)} samples" if samples else "sampled"
+    return rows, remainder, f"{sample_note}; unlisted {remainder:.3g}"
+
+
+def distribution_from_aer_pilot(label: str) -> tuple[list[tuple[str, float]], float | None, str]:
+    result_dir = ROOT / "agent_work" / "mps_distill" / "results"
+    counter: Counter[str] = Counter()
+    total = 0
+    if result_dir.exists():
+        for path in sorted(result_dir.glob(f"*challenge-{label}*.json")):
+            try:
+                data = read_json(path)
+            except Exception:
+                continue
+            sampling = data.get("sampling", {})
+            shots = int(sampling.get("shots") or 0)
+            total += shots
+            for bits, count in sampling.get("top_counts", [])[:20]:
+                counter[str(bits)] += int(count)
+    if not counter or not total:
+        return [], None, "pilot summary only"
+    rows = [(bits, count / total) for bits, count in counter.most_common(10)]
+    remainder = max(0.0, 1.0 - sum(v for _, v in rows))
+    return rows, remainder, f"{total} shots across pilot trials; unlisted {remainder:.3g}"
+
+
+def distribution_from_exact(label: str, exact_map: dict[str, dict[str, Any]]) -> tuple[list[tuple[str, float]], float | None, str]:
+    row = exact_map.get(label)
+    if not row:
+        return [], None, "exact summary unavailable"
+    top = row.get("top") or []
+    rows = [(str(item.get("bitstring", "")), float(item.get("probability") or 0.0)) for item in top[:10]]
+    remainder = max(0.0, 1.0 - sum(v for _, v in rows))
+    return rows, remainder, f"exact statevector; unlisted {remainder:.3g}"
+
+
+def distribution_from_selected(
+    candidate_row: pd.Series,
+    selected: dict[str, Any] | None,
+    exact_map: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    label = str(candidate_row["challenge"])
+    candidate = "" if pd.isna(candidate_row.get("candidate")) else str(candidate_row.get("candidate"))
+    source = str((selected or {}).get("source") or candidate_row.get("source") or "")
+    rows: list[tuple[str, float]] = []
+    remainder: float | None = None
+    note = "no completed distribution evidence"
+    if source == "exact_statevector":
+        rows, remainder, note = distribution_from_exact(label, exact_map)
+    elif selected and selected.get("path"):
+        path = ROOT / str(selected["path"])
+        if path.exists() and path.suffix == ".json":
+            if source == "peaked_mpo_unswap_gpu":
+                rows, remainder, note = distribution_from_unswap(path)
+            else:
+                rows, remainder, note = distribution_from_quimb(path)
+        elif source == "aer_mps_pilot":
+            rows, remainder, note = distribution_from_aer_pilot(label)
+    if not rows and candidate:
+        top = to_float(candidate_row.get("top_fraction"))
+        if top is not None:
+            rows = [(candidate, top)]
+            remainder = max(0.0, 1.0 - top)
+            note = f"rollup top fraction only; unlisted {remainder:.3g}"
+    return {
+        "label": label,
+        "difficulty": str(candidate_row["difficulty"]),
+        "qubits": int(candidate_row["qubits"]),
+        "candidate": candidate,
+        "source": source_label(source) if source else "blank",
+        "rows": rows,
+        "remainder": remainder,
+        "note": note,
+    }
+
+
+def plot_distribution_panel(ax: Any, spec: dict[str, Any]) -> None:
+    label = spec["label"]
+    title = f"{label} ({DIFF_LABEL.get(spec['difficulty'], spec['difficulty'])}, q={spec['qubits']})"
+    ax.set_title(title, fontsize=8, loc="left")
+    rows = spec["rows"]
+    if not rows:
+        ax.set_axis_off()
+        ax.text(0.5, 0.58, label, ha="center", va="center", fontsize=11, fontweight="bold", transform=ax.transAxes)
+        ax.text(
+            0.5,
+            0.42,
+            "No completed distribution yet",
+            ha="center",
+            va="center",
+            fontsize=8,
+            transform=ax.transAxes,
+        )
+        ax.text(0.5, 0.30, spec["note"], ha="center", va="center", fontsize=7, color="#555555", transform=ax.transAxes)
+        return
+    bits = [b for b, _ in rows]
+    vals = [v for _, v in rows]
+    candidate = spec.get("candidate") or ""
+    colors = ["#2f6f8f" if candidate and b == candidate else "#8f8f8f" for b in bits]
+    ax.bar(range(len(vals)), vals, color=colors, width=0.8)
+    ax.set_xticks(range(len(vals)), [short_bits(b, 7, 5) for b in bits], rotation=62, ha="right", fontsize=5)
+    ax.set_ylabel("fraction/prob.", fontsize=7)
+    ax.tick_params(axis="y", labelsize=6)
+    ax.grid(axis="y", alpha=0.2)
+    ax.set_ylim(0, max(vals + [0.001]) * 1.22)
+    if candidate:
+        ax.text(0.01, 0.94, f"selected {short_bits(candidate, 9, 7)}", transform=ax.transAxes, fontsize=6, va="top")
+    ax.text(0.99, 0.94, spec["source"], transform=ax.transAxes, fontsize=6, va="top", ha="right")
+    ax.text(0.99, 0.82, spec["note"], transform=ax.transAxes, fontsize=5.5, va="top", ha="right", color="#444444")
+
+
+def plot_distribution_appendix(candidates: pd.DataFrame, evidence: list[dict[str, Any]], exact: pd.DataFrame) -> list[str]:
+    del exact
+    for old in FIG.glob(f"{APPENDIX_PREFIX}*.pdf"):
+        old.unlink()
+    exact_map = read_exact_top_map()
+    selected_by_label = {str(row.get("label")): row.get("selected") for row in evidence}
+    df = candidates.copy()
+    df["_sort"] = df["challenge"].map(challenge_sort_key)
+    df = df.sort_values("_sort")
+    specs = [distribution_from_selected(row, selected_by_label.get(str(row["challenge"])), exact_map) for _, row in df.iterrows()]
+    files = []
+    per_page = 6
+    for page_idx in range(0, len(specs), per_page):
+        page_specs = specs[page_idx : page_idx + per_page]
+        fig, axes = plt.subplots(3, 2, figsize=(8.2, 10.4))
+        for ax, spec in zip(axes.ravel(), page_specs):
+            plot_distribution_panel(ax, spec)
+        for ax in axes.ravel()[len(page_specs) :]:
+            ax.set_axis_off()
+        page_no = page_idx // per_page + 1
+        first = page_specs[0]["label"]
+        last = page_specs[-1]["label"]
+        fig.suptitle(f"Per-problem result distributions: {first} to {last}", fontsize=12)
+        fig.tight_layout(rect=(0, 0, 1, 0.975))
+        name = f"{APPENDIX_PREFIX}{page_no:02d}.pdf"
+        fig.savefig(FIG / name)
+        plt.close(fig)
+        files.append(name)
+    return files
+
+
 def plot_sample_distributions() -> None:
     specs = [
         ("56_24 Quimb GPU", ROOT / "outputs/tree_tensor_sim/all/json/challenge-56_24.quimb_tree_graph_mps.json", "quimb"),
@@ -328,7 +526,13 @@ def plot_forensics_similarity() -> None:
     plt.close(fig)
 
 
-def make_plots(candidates: pd.DataFrame, static_summary: pd.DataFrame, exact: pd.DataFrame, opt: pd.DataFrame) -> None:
+def make_plots(
+    candidates: pd.DataFrame,
+    evidence: list[dict[str, Any]],
+    static_summary: pd.DataFrame,
+    exact: pd.DataFrame,
+    opt: pd.DataFrame,
+) -> list[str]:
     FIG.mkdir(parents=True, exist_ok=True)
     plt.style.use("default")
     plot_coverage(candidates)
@@ -341,6 +545,7 @@ def make_plots(candidates: pd.DataFrame, static_summary: pd.DataFrame, exact: pd
     plot_sample_distributions()
     plot_sparse_beam()
     plot_forensics_similarity()
+    return plot_distribution_appendix(candidates, evidence, exact)
 
 
 def evidence_stats(evidence: list[dict[str, Any]]) -> dict[str, Any]:
@@ -480,19 +685,61 @@ def active_jobs_tex(rows: list[list[str]]) -> str:
     return "\n".join(lines)
 
 
-def build_tex(candidates: pd.DataFrame, evidence: list[dict[str, Any]], static_summary: pd.DataFrame, exact: pd.DataFrame, opt: pd.DataFrame) -> None:
+def source_count_sentence(source_counts: Counter[str], exact_source: str = "exact_statevector") -> str:
+    pieces = []
+    for source, count in sorted(source_counts.items(), key=lambda item: (-item[1], source_label(item[0]))):
+        if not source or source == exact_source:
+            continue
+        pieces.append(f"\\textbf{{{count}}} from {latex_escape(source_label(source))}")
+    return "; ".join(pieces) if pieces else "no approximate winners"
+
+
+def distribution_appendix_tex(files: list[str]) -> str:
+    if not files:
+        return ""
+    figures = []
+    for idx, name in enumerate(files, start=1):
+        figures.append(
+            rf"""
+\begin{{figure}}[p]
+\centering
+\includegraphics[width=0.96\linewidth,height=0.84\textheight,keepaspectratio]{{figures/{name}}}
+\caption{{Per-problem result distributions, page {idx}. Bars show the top reported exact probabilities or sample fractions. The selected candidate is highlighted in blue when it appears among the displayed top outcomes; grey bars are alternate outcomes. Unlisted probability mass or sample fraction is reported inside each panel.}}
+\end{{figure}}
+"""
+        )
+    return (
+        r"""
+\clearpage
+\section*{Appendix: Per-Problem Result Distributions}
+This appendix shows the distribution evidence used for each challenge in this session, ordered by challenge number. For exact rows, the bars are exact statevector probabilities for the top outcomes. For Quimb graph-MPS, MPO-unswapping, and Aer pilot rows, the bars are sampled output fractions from the selected or current evidence source. All bitstrings are in Qiskit/counts order, with the right-most bit corresponding to qubit 0. Panels with no bars had no completed distribution evidence at the report snapshot; those rows were still blank or only had started/pending jobs.
+
+The appendix is deliberately compact: it shows the top reported outcomes rather than every sampled bitstring, because several hard and very-hard runs produced hundreds or thousands of singleton samples. The unlisted fraction annotation is therefore part of the interpretation. A large unlisted fraction means the observed distribution was diffuse and the selected bitstring should be treated as weak evidence.
+"""
+        + "\n".join(figures)
+    )
+
+
+def build_tex(
+    candidates: pd.DataFrame,
+    evidence: list[dict[str, Any]],
+    static_summary: pd.DataFrame,
+    exact: pd.DataFrame,
+    opt: pd.DataFrame,
+    appendix_files: list[str],
+) -> None:
     solved_n = int(candidates["candidate"].notna().sum())
     total_n = len(candidates)
     missing = candidates[candidates["candidate"].isna()]["challenge"].tolist()
     source_counts = Counter(candidates[candidates["candidate"].notna()]["source"].fillna(""))
     exact_n = source_counts.get("exact_statevector", 0)
-    gpu_n = source_counts.get("quimb_gpu_all", 0)
-    cpu_n = source_counts.get("quimb_cpu_all", 0)
-    rcm_n = source_counts.get("quimb_rcm_cpu", 0)
+    approx_sources = source_count_sentence(source_counts)
     active_rows = active_slurm_table()
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S %Z")
     exact_peak_mean = exact["peak_probability"].mean()
     exact_gap_mean = exact["gap_to_second"].mean()
+    missing_sentence = ", ".join(missing) if missing else "none"
+    missing_count = len(missing)
 
     body = rf"""
 \documentclass[10pt]{{article}}
@@ -519,16 +766,15 @@ def build_tex(candidates: pd.DataFrame, evidence: list[dict[str, Any]], static_s
 
 \section*{{Executive Summary}}
 The session produced selected peak bitstrings for \textbf{{{solved_n}/{total_n}}} challenge files. The remaining blanks are
-\texttt{{{latex_escape(", ".join(missing))}}}. The selected set contains \textbf{{{exact_n}}} exact statevector answers and
-\textbf{{{solved_n - exact_n}}} tensor-network or MPS-derived candidates. Among the approximate selected rows, \textbf{{{gpu_n}}}
-are from the canonical Quimb GPU pass, \textbf{{{cpu_n}}} from canonical Quimb CPU, and \textbf{{{rcm_n}}} from an RCM-order CPU
-fallback. Exact statevector peaks had mean peak probability {exact_peak_mean:.3f} and mean gap to the second bitstring
+\texttt{{{latex_escape(missing_sentence)}}}. The selected set contains \textbf{{{exact_n}}} exact statevector answers and
+\textbf{{{solved_n - exact_n}}} tensor-network or MPS-derived candidates. Among the approximate selected rows: {approx_sources}.
+Exact statevector peaks had mean peak probability {exact_peak_mean:.3f} and mean gap to the second bitstring
 {exact_gap_mean:.3f}.
 
 The main result is a usable candidate set, not a proof of correctness for every approximate row. Easy and moderate
 instances often had large sampled peak fractions and/or corroborating evidence. Several hard rows are weak: they were
 selected because they were the best available evidence, but their sampled top fractions are near one or two samples out of
-512/1024. The session later pivoted away from long-running graph-MPS sweeps after the user set a practical
+512/1024, and the newly selected MPO-unswap row for \texttt{{64\_40}} is similarly diffuse. The session later pivoted away from long-running graph-MPS sweeps after the user set a practical
 ``about 2 hours'' per-attempt budget.
 
 \section*{{Candidate Selection Rule}}
@@ -543,7 +789,7 @@ count.
 \centering
 \includegraphics[width=0.48\linewidth]{{figures/coverage_by_difficulty.pdf}}
 \includegraphics[width=0.48\linewidth]{{figures/selected_source_counts.pdf}}
-\caption{{Coverage and winning evidence sources. The nine missing rows are all hard or very hard.}}
+\caption{{Coverage and winning evidence sources. The {missing_count} missing rows are all very hard.}}
 \end{{figure}}
 
 \section*{{What Was Tried}}
@@ -557,7 +803,7 @@ Ordering fallbacks & Tried RCM, MST, degree, mid, fast, and identity orderings t
 Sparse computational-basis beam & Added a C++ top-K sparse branch propagator through RX/RZ/CX. & Rejected for answer selection: on known 16\_28 the exact answer was only rank 3. \\
 Static QASM forensics & Counted gates, angle classes, pair repetitions, connectivity, leading one-qubit prefixes, and operation 5-gram similarity. & Confirmed all circuits are RX/RZ/CX/SWAP style, very-hard files are a distinct dense-obfuscation regime, and Clifford shortcuts are not appropriate. \\
 Optimized-U3 transpilation & Transpiled the remaining blanks to U3+CX to reduce single-qubit gate count. & Reduced total gate count by roughly 39--42\% on blanks; not yet selected as evidence. \\
-MPO unswapping & Patched the local Kremer-Dupuis style MPO cancellation/unswapping code: parameterized SABRE trials, fixed Quimb local expectation API, fixed quantum-op progress counting. & Calibrated on known 16\_28 in 93.26 s and recovered the exact answer. Unresolved runs were still active at report build time and are not counted as solved. \\
+MPO unswapping & Patched the local Kremer-Dupuis style MPO cancellation/unswapping code: parameterized SABRE trials, fixed Quimb local expectation API, fixed quantum-op progress counting. & Calibrated on known 16\_28 in 93.26 s and recovered the exact answer. The completed 64\_40 run is included as weak evidence; the remaining very-hard runs were still active or incomplete at report build time. \\
 \bottomrule
 \end{{longtable}}
 
@@ -674,10 +920,12 @@ Challenge & difficulty & q & candidate & source & validation & top frac. & evide
 \normalsize
 
 \section*{{Conclusions}}
-The practical output of the session is a 40-row candidate answer set and a clear split between reliable and weak evidence.
+The practical output of the session is a {solved_n}-row candidate answer set and a clear split between reliable and weak evidence.
 The exact and high-top-fraction Quimb rows are the most defensible. The hard weak rows should be treated as provisional.
 The best next direction is not another unconstrained graph-MPS sweep: it is bounded MPO-unswapping or optimized-U3 GPU runs
 with calibration checks and immediate collector refreshes.
+
+{distribution_appendix_tex(appendix_files)}
 
 \end{{document}}
 """
@@ -687,8 +935,8 @@ with calibration checks and immediate collector refreshes.
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     candidates, evidence, static_summary, exact, opt, _ = read_inputs()
-    make_plots(candidates, static_summary, exact, opt)
-    build_tex(candidates, evidence, static_summary, exact, opt)
+    appendix_files = make_plots(candidates, evidence, static_summary, exact, opt)
+    build_tex(candidates, evidence, static_summary, exact, opt, appendix_files)
     print(TEX)
 
 

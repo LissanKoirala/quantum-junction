@@ -1,7 +1,7 @@
 # Peak Candidate Rollup
 
-Generated: 2026-06-06T06:32:59+0100
-Selected candidates: 40/49.
+Generated: 2026-06-06T08:12:59+0100
+Selected candidates: 41/49.
 
 | challenge | difficulty | q | candidate | source | validation | top fraction | max bond | evidence |
 | --- | --- | ---: | --- | --- | --- | ---: | ---: | ---: |
@@ -26,7 +26,7 @@ Selected candidates: 40/49.
 | 48_37 | hard | 48 | `100101001010001101010100100101001001000101010001` | quimb_gpu_all | unknown | 0.0009765625 | 512 | 3 |
 | 56_38 | hard | 56 | `10011001011110000000010011010101100001001001110110110001` | quimb_rcm_cpu | unknown | 0.001953125 | 70 | 1 |
 | 56_39 | hard | 56 | `10010111001101010101111111010110110110110000101001010000` | quimb_gpu_all | unknown | 0.001953125 | 1848 | 3 |
-| 64_40 | hard | 64 |  |  |  |  |  | 0 |
+| 64_40 | hard | 64 | `1011010011100010110100000000110000111001111010100100110100001100` | peaked_mpo_unswap_gpu | unknown | 0.001 | 19 | 1 |
 | 64_41 | hard | 64 | `0001000111010011100110010011110111000000100011010001101010110010` | aer_mps_pilot | unstable_top1_vs_aggregate | 0.167 |  | 1 |
 | 16_28 | moderate | 16 | `1101001111011100` | exact_statevector | exact | 0.3962059348034266 |  | 6 |
 | 24_29 | moderate | 24 | `110100010111100001001001` | exact_statevector | exact | 0.3900966376778103 |  | 4 |
@@ -56,8 +56,8 @@ Selected candidates: 40/49.
 | 96_48 | very_hard | 96 |  |  |  |  |  | 0 |
 
 Artifacts:
-- `outputs/tree_tensor_sim/collector_current/CANDIDATES.tsv`
-- `outputs/tree_tensor_sim/collector_current/CANDIDATE_EVIDENCE.json`
-- `outputs/tree_tensor_sim/collector_current/SUBMISSION_ANSWERS.tsv`
+- `outputs/tree_tensor_sim/CANDIDATES.tsv`
+- `outputs/tree_tensor_sim/CANDIDATE_EVIDENCE.json`
+- `outputs/tree_tensor_sim/SUBMISSION_ANSWERS.tsv`
 
 Bit order: candidates are in Qiskit/counts order, with the right-most bit corresponding to qubit 0.

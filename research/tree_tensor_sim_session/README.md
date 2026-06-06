@@ -2,19 +2,23 @@
 
 Snapshot generated during the Codex tree-tensor simulation work on 2026-06-06.
 
+This folder is intentionally separate from `research/quantum_peak_session`, which contains a different report/distribution package already present on `main`.
+
 ## Report
 
-- `report/quantum_junction_session_report.pdf` - compiled 7-page concise report.
+- `report/quantum_junction_session_report.pdf` - compiled 17-page concise report with a per-problem distribution appendix.
 - `report/quantum_junction_session_report.tex` - LaTeX source.
 - `report/build_session_report.py` - script used to generate the report and figures from the working artifacts.
-- `report/figures/` - PDF plots included in the report.
+- `report/figures/` - PDF plots included in the report, including appendix distribution pages.
 
 ## Result Snapshot
 
-The collector snapshot included here selected candidates for `40/49` challenges.
+The collector snapshot included here selected candidates for `41/49` challenges.
 The unsolved labels at report build time were:
 
-`64_40`, `104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`.
+`104_49`, `48_42`, `56_43`, `64_44`, `72_45`, `80_46`, `88_47`, `96_48`.
+
+The `64_40` candidate is included as weak MPO-unswap evidence with top sampled fraction `0.001`.
 
 Important artifacts:
 
