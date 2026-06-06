@@ -444,6 +444,20 @@ def _mpo_compress_explicit_rewire(
         ii_left = 0
         ii_right = 0
 
+        after_elems = get_tn_info(mpo_core)["total_elems"]
+        if after_elems >= before["total_elems"] * 0.98:
+            # Unswap made no meaningful progress; disable further threshold
+            # triggers to prevent an infinite loop on circuits with no
+            # swap-cancellable structure.
+            unswap_threshold = float("inf")
+            stats.append({
+                "time": time.perf_counter() - t0,
+                "stage": "explicit_rewire_unswap_disabled",
+                "reason": "no_progress",
+                "before_elems": before["total_elems"],
+                "after_elems": after_elems,
+            })
+
         if (total_ops - total_consumed) <= early_stopping_gates:
             stats.append({
                 "time": time.perf_counter() - t0,
