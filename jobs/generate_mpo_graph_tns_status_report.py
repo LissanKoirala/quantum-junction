@@ -26,11 +26,16 @@ SOURCE_NAMES = [
     "mpo_graph_tns_extra_cpu_e",
     "mpo_graph_tns_extra_cpu_f",
     "mpo_graph_tns_extra_cpu_g",
+    "mpo_graph_tns_moderate_retry_h",
+    "mpo_graph_tns_moderate_retry_i",
+    "mpo_graph_tns_moderate_retry_j",
+    "mpo_graph_tns_moderate_retry_k",
     "mpo_graph_tns_veryhard_fast_cpu",
     "mpo_graph_tns_veryhard_fast_cpu_b",
     "mpo_graph_tns_veryhard_fast_cpu_c",
     "mpo_graph_tns_veryhard_fast_cpu_d",
     "mpo_graph_tns_veryhard_fast_cpu_e",
+    "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_combined",
 ]
 SOURCE_LABELS = {
@@ -46,11 +51,16 @@ SOURCE_LABELS = {
     "mpo_graph_tns_extra_cpu_e": "extra_cpu_e",
     "mpo_graph_tns_extra_cpu_f": "extra_cpu_f",
     "mpo_graph_tns_extra_cpu_g": "extra_cpu_g",
+    "mpo_graph_tns_moderate_retry_h": "mod_retry_h",
+    "mpo_graph_tns_moderate_retry_i": "mod_retry_i",
+    "mpo_graph_tns_moderate_retry_j": "mod_retry_j",
+    "mpo_graph_tns_moderate_retry_k": "mod_retry_k",
     "mpo_graph_tns_veryhard_fast_cpu": "vhard_fast",
     "mpo_graph_tns_veryhard_fast_cpu_b": "vhard_fast_b",
     "mpo_graph_tns_veryhard_fast_cpu_c": "vhard_fast_c",
     "mpo_graph_tns_veryhard_fast_cpu_d": "vhard_fast_d",
     "mpo_graph_tns_veryhard_fast_cpu_e": "vhard_fast_e",
+    "mpo_graph_tns_veryhard_fast_cpu_f": "vhard_fast_f",
     "mpo_graph_tns_combined": "combined",
 }
 EXTERNAL_SYNC_SOURCE_NAMES = [
@@ -59,6 +69,7 @@ EXTERNAL_SYNC_SOURCE_NAMES = [
     "mpo_graph_tns_veryhard_fast_cpu_c",
     "mpo_graph_tns_veryhard_fast_cpu_d",
     "mpo_graph_tns_veryhard_fast_cpu_e",
+    "mpo_graph_tns_veryhard_fast_cpu_f",
     "mpo_graph_tns_gpu_retry",
 ]
 CPU_JOB_IDS = [
@@ -87,8 +98,10 @@ CPU_JOB_IDS = [
     "34621962",
     "34622347",
     "34622348",
+    "34623019",
     "34620754",
-    "34622577",
+    "34623041",
+    "34623110",
 ]
 GPU_JOB_IDS = ["34616526", "34622515"]
 
@@ -456,9 +469,10 @@ def build_report(root: Path, output: Path, image_dir: Path, top_limit: int) -> d
         "- Active extra retry jobs added after the first report pass: `34619634` -> `extra_cpu_d` for `16_28`; "
         "`34619647` -> throttled `extra_cpu_e` for `24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
         "`34619942` -> 8-core throttled `extra_cpu_f` for `16_28,24_29,104_49,48_42,56_43,64_44,72_45,80_46,88_47,96_48`; "
-        "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set.",
-        "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`.",
-        "- Current replacement dependency-gated jobs: `34622577` fallback array, `34622578` combined rollup.",
+        "`34620754` -> 8-core throttled `extra_cpu_g` for the same unresolved set; "
+        "moderate-only retries use `34623041` -> `mod_retry_h` through `mod_retry_k`.",
+        "- Imported external fast very-hard and GPU retry outputs from `../hard-problems`: `34619926`, `34620010`, `34620567`, `34621962`, `34622347`, `34622348`, `34622515`, `34623019`.",
+        "- Current replacement dependency-gated jobs: `34623110` fallback array, `34623111` combined rollup.",
         "",
         "## Source Output Counts",
         "",

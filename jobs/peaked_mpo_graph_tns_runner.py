@@ -205,9 +205,11 @@ def sample_mps(mps: Any, count: int, perm: list[int]) -> dict[str, Any]:
     top_permuted = []
     for bits, c in top:
         v = bit_variants(bits, perm)
+        qiskit_order = v.get("permuted_measurement_order_reversed", "")
         top_permuted.append({
             "raw_site_order": bits,
             "permuted_measurement_order": v.get("permuted_measurement_order", ""),
+            "qiskit_order": qiskit_order,
             "count": c,
             "fraction": c / count,
         })
@@ -425,6 +427,9 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         all_variants: dict[str, str] = {}
         all_variants.update({f"marginal_{k}": v for k, v in marginal_variants.items()})
         all_variants.update({f"sample_{k}": v for k, v in sample_variants.items()})
+        for rank, entry in enumerate(sampling.get("top") or [], start=1):
+            for key, value in bit_variants(entry.get("raw_site_order"), perm).items():
+                all_variants[f"sample_top_{rank}_{key}"] = value
         preferred = (
             "sample_permuted_measurement_order_reversed"
             if "sample_permuted_measurement_order_reversed" in all_variants
