@@ -9,7 +9,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[0]
 SPACETIME = ROOT / "spacetime_unswapping"
-for path in (ROOT, SPACETIME):
+MULTI_CENTER = ROOT / "multi_center_temporal"
+PEAKED_SIM = ROOT / "peaked-circuit-simulation"
+for path in (ROOT, SPACETIME, MULTI_CENTER, PEAKED_SIM):
     if str(path) not in sys.path:
         sys.path.insert(0, str(path))
 

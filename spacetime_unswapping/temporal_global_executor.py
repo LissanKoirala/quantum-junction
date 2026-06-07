@@ -161,11 +161,17 @@ def _apply_layer_to_mps(mps, layer, *, max_bond, cutoff, to_backend):
     _ensure_peaked_sim_on_path()
     from quimb.tensor import Circuit
     from qiskit_quimb import quimb_circuit
-    from circuit_mpo import mpo_from_circuit
+    from circuit_mpo import mpo_from_circuit, stable_apply_operator
 
     q2c = lambda qc: quimb_circuit(qc.decompose("unitary"), Circuit, to_backend=to_backend)
     layer_mpo = mpo_from_circuit(q2c(layer))
-    return layer_mpo.apply(mps, compress=True, max_bond=max_bond, cutoff=cutoff)
+    return stable_apply_operator(
+        layer_mpo,
+        mps,
+        compress=True,
+        max_bond=max_bond,
+        cutoff=cutoff,
+    )
 
 
 def _mpo_compress_no_rewire(
@@ -510,7 +516,15 @@ def _mpo_to_mps_no_rewire(
             to_backend=to_backend,
         )
 
-    final_mps = mpo_core.apply(final_mps, compress=True, max_bond=max_bond, cutoff=cutoff)
+    from circuit_mpo import stable_apply_operator
+
+    final_mps = stable_apply_operator(
+        mpo_core,
+        final_mps,
+        compress=True,
+        max_bond=max_bond,
+        cutoff=cutoff,
+    )
 
     for layer in layers_right:
         final_mps = _apply_layer_to_mps(
@@ -531,7 +545,10 @@ def _score_site_candidate(mps, bitstring: str, cache: dict[str, float | None], o
     from utils import bitstring_probability
 
     try:
-        value = float(bitstring_probability(mps, bitstring, optimize=optimize))
+        raw_value = bitstring_probability(mps, bitstring, optimize=optimize)
+        if hasattr(raw_value, "item"):
+            raw_value = raw_value.item()
+        value = float(raw_value)
     except Exception:
         value = None
     cache[bitstring] = value
@@ -634,12 +651,29 @@ def extract_peak_from_mps(
     from utils import extract_bitstring, sample_tns
 
     risk_flags: list[str] = ["mps_peak_extraction"]
-    raw_bits, p0s = extract_bitstring(mps)
+    try:
+        raw_bits, p0s = extract_bitstring(mps)
+    except Exception as exc:
+        risk_flags.append("marginal_extraction_failed")
+        risk_flags.append(repr(exc))
+        raw_bits = "0" * len(site_to_qubit)
+        p0s = [0.5 for _ in site_to_qubit]
     cache: dict[str, float | None] = {}
     candidate_sources: dict[str, set[str]] = {raw_bits: {"marginal"}}
     sample_counts: Counter[str] = Counter()
+    exhaustive_rescore = False
 
-    if num_samples > 0:
+    if "marginal_extraction_failed" in risk_flags:
+        if len(raw_bits) <= 12:
+            for idx in range(1 << len(raw_bits)):
+                bits = format(idx, f"0{len(raw_bits)}b")
+                candidate_sources.setdefault(bits, set()).add("exhaustive")
+            exhaustive_rescore = True
+            risk_flags.append("small_system_exhaustive_mps_rescore")
+        else:
+            risk_flags.append("exhaustive_mps_rescore_skipped_large_system")
+
+    if num_samples > 0 and not exhaustive_rescore:
         try:
             samples = sample_tns(
                 mps,
@@ -653,10 +687,17 @@ def extract_peak_from_mps(
         except Exception as exc:
             risk_flags.append("mps_sampling_failed")
             risk_flags.append(repr(exc))
+    elif num_samples > 0:
+        risk_flags.append("mps_sampling_skipped_exhaustive_rescore")
 
     candidates: list[dict[str, Any]] = []
     for bits, sources in candidate_sources.items():
-        probability = _score_site_candidate(mps, bits, cache, optimize)
+        probability = _score_site_candidate(
+            mps,
+            bits,
+            cache,
+            "auto" if "exhaustive" in sources else optimize,
+        )
         candidates.append(_candidate_row(
             site_bitstring=bits,
             site_to_qubit=site_to_qubit,

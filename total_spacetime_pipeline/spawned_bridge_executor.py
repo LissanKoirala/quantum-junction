@@ -105,10 +105,23 @@ def _gate_circuit_in_current_order(
     return circ
 
 
+def _array_for_mps_backend(array: np.ndarray, mps):
+    try:
+        import torch
+    except Exception:
+        return array
+
+    for tensor in mps:
+        data = tensor.data
+        if isinstance(data, torch.Tensor):
+            return torch.as_tensor(array, dtype=data.dtype, device=data.device)
+    return array
+
+
 def _apply_gate_to_mps(mps, gate: GateInfo, current_order: list[int], *, max_bond: int, cutoff: float):
     qubit_to_site = {q: i for i, q in enumerate(current_order)}
     sites = tuple(qubit_to_site[q] for q in gate.qubits)
-    G = np.array(Operator(gate.operation).data, dtype=complex)
+    G = _array_for_mps_backend(np.array(Operator(gate.operation).data, dtype=complex), mps)
     if len(sites) == 1:
         return mps.gate(
             G.reshape(2, 2),
@@ -194,9 +207,17 @@ def _apply_spawned_bridge_block(
 ):
     if not gates:
         return mps
+    from circuit_mpo import stable_apply_operator
+
     circ = _gate_circuit_in_current_order(gates, n_qubits, current_order)
     mpo = _bridge_mpo_from_circuit(circ, to_backend=to_backend)
-    return mpo.apply(mps, compress=True, max_bond=max_bond, cutoff=cutoff)
+    return stable_apply_operator(
+        mpo,
+        mps,
+        compress=True,
+        max_bond=max_bond,
+        cutoff=cutoff,
+    )
 
 
 def run_spawned_bridge_contraction(

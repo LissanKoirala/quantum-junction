@@ -161,8 +161,8 @@ def _audit_all_partitions(
 
     all_violations = [v for a in audits for v in a.violations]
     all_flags = list(dict.fromkeys(
-        f for a in audits for f in a.risk_flags
-    ) | {"multi_partition_boundary_audit"})
+        [f for a in audits for f in a.risk_flags] + ["multi_partition_boundary_audit"]
+    ))
     worst_error = max(
         (a.deferred_boundary_unitary_error for a in audits if a.deferred_boundary_unitary_error is not None),
         default=None,

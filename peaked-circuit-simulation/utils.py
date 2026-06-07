@@ -191,8 +191,8 @@ def extract_bitstring(tne):
             Pi0 = torch.tensor([[1., 0.],[0., 0.]], device=_t0.device, dtype=_t0.dtype)
         try:
             p0 = tne.local_expectation_canonical(Pi0, where=ii, normalized=True, info=info)
-        except AttributeError:
-            p0 = tne.local_expectation(Pi0, where=[ii], max_bond=2, optimize="auto", normalized=True)
+        except Exception:
+            p0 = tne.local_expectation(Pi0, where=[ii], max_bond=64, optimize="auto", normalized=True)
         p0 = p0.real.item()
         p0s.append(p0)
         pred_bs += '1' if p0 < 0.5 else '0'

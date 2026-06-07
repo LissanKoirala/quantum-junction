@@ -1,0 +1,335 @@
+{
+  "best_reported_original_order": "10101101",
+  "best_reported_working_order": "11010110",
+  "label": "challenge-8_1",
+  "n_observations": 126,
+  "n_qubits": 8,
+  "n_unique_bitstrings": 18,
+  "source_json": "outputs/total_spacetime/small_rocm/challenge-8_1_b256_fast.json",
+  "top_bitstrings": [
+    {
+      "bitstring": "01101011",
+      "mean_probability": 0.912637845250552,
+      "observation_count": 22,
+      "order": "site",
+      "probability_count": 22,
+      "probability_sum": 20.078032595512145,
+      "sample_count_sum": 1062,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.best_site_bitstring",
+        "temporal_ensemble.runs[0].peak_extraction.candidates[0].site_bitstring",
+        "temporal_ensemble.runs[0].raw_site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.best_site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[0].site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.marginal_site_bitstring",
+        "temporal_ensemble.runs[1].raw_site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.best_site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[0].site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.marginal_site_bitstring",
+        "temporal_ensemble.runs[2].raw_site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.best_site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[0].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].raw_site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.best_site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[0].site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.marginal_site_bitstring",
+        "tracks.temporal.ensemble.runs[1].raw_site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.best_site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[0].site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.marginal_site_bitstring",
+        "tracks.temporal.ensemble.runs[2].raw_site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "11010110",
+      "mean_probability": 0.912637845785069,
+      "observation_count": 14,
+      "order": "original",
+      "probability_count": 14,
+      "probability_sum": 12.776929840990967,
+      "sample_count_sum": 1062,
+      "sources": [
+        "temporal_ensemble.best_bitstring_original_order",
+        "temporal_ensemble.runs[0].bitstring_original_order",
+        "temporal_ensemble.runs[0].peak_extraction.candidates[0].bitstring_original_order",
+        "temporal_ensemble.runs[1].bitstring_original_order",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[0].bitstring_original_order",
+        "temporal_ensemble.runs[2].bitstring_original_order",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[0].bitstring_original_order",
+        "tracks.temporal.ensemble.best_bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[0].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[0].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[0].bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "11010110",
+      "mean_probability": 0.9126378498001587,
+      "observation_count": 8,
+      "order": "working",
+      "probability_count": 4,
+      "probability_sum": 3.650551399200635,
+      "sample_count_sum": 0,
+      "sources": [
+        "baby_multi_front_result.exact_peak_bitstring",
+        "best_bitstring_working_order",
+        "spawned_bridge_result.bitstring_working_order",
+        "tracks.spacetime_block.baby_multi_front_result.exact_peak_bitstring",
+        "tracks.spacetime_block.progress.peak_bitstring",
+        "tracks.spacetime_block.spawned_bridge_result.bitstring_working_order",
+        "tracks.temporal.best_bitstring_working_order",
+        "tracks.temporal.progress.peak_bitstring"
+      ]
+    },
+    {
+      "bitstring": "11010010",
+      "mean_probability": 0.037911850710824646,
+      "observation_count": 6,
+      "order": "original",
+      "probability_count": 6,
+      "probability_sum": 0.22747110426494788,
+      "sample_count_sum": 46,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[1].bitstring_original_order",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[1].bitstring_original_order",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[1].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[1].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[1].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[1].bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "01001011",
+      "mean_probability": 0.037911850710824646,
+      "observation_count": 6,
+      "order": "site",
+      "probability_count": 6,
+      "probability_sum": 0.22747110426494788,
+      "sample_count_sum": 46,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[1].site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[1].site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[1].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[1].site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[1].site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[1].site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "01100010",
+      "mean_probability": 0.01183336185867367,
+      "observation_count": 6,
+      "order": "site",
+      "probability_count": 6,
+      "probability_sum": 0.07100017115204202,
+      "sample_count_sum": 42,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[4].site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[4].site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[4].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[4].site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[4].site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[4].site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "01000110",
+      "mean_probability": 0.01183336185867367,
+      "observation_count": 6,
+      "order": "original",
+      "probability_count": 6,
+      "probability_sum": 0.07100017115204202,
+      "sample_count_sum": 42,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[4].bitstring_original_order",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[4].bitstring_original_order",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[4].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[4].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[4].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[4].bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "11110110",
+      "mean_probability": 0.011834069580538217,
+      "observation_count": 6,
+      "order": "original",
+      "probability_count": 6,
+      "probability_sum": 0.0710044174832293,
+      "sample_count_sum": 30,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[3].bitstring_original_order",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[3].bitstring_original_order",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[3].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[3].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[3].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[3].bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "01101111",
+      "mean_probability": 0.011834069580538217,
+      "observation_count": 6,
+      "order": "site",
+      "probability_count": 6,
+      "probability_sum": 0.0710044174832293,
+      "sample_count_sum": 30,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[3].site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[3].site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[3].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[3].site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[3].site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[3].site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "11000110",
+      "mean_probability": 0.01183411947063414,
+      "observation_count": 6,
+      "order": "original",
+      "probability_count": 6,
+      "probability_sum": 0.07100471682380484,
+      "sample_count_sum": 14,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[2].bitstring_original_order",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[2].bitstring_original_order",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[2].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[2].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[2].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[2].bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "01100011",
+      "mean_probability": 0.01183411947063414,
+      "observation_count": 6,
+      "order": "site",
+      "probability_count": 6,
+      "probability_sum": 0.07100471682380484,
+      "sample_count_sum": 14,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[2].site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[2].site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[2].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[2].site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[2].site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[2].site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "11110010",
+      "mean_probability": 0.0004915985913487049,
+      "observation_count": 6,
+      "order": "original",
+      "probability_count": 6,
+      "probability_sum": 0.0029495915480922293,
+      "sample_count_sum": 6,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[5].bitstring_original_order",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[5].bitstring_original_order",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[5].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[5].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[5].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[5].bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "01001111",
+      "mean_probability": 0.0004915985913487049,
+      "observation_count": 6,
+      "order": "site",
+      "probability_count": 6,
+      "probability_sum": 0.0029495915480922293,
+      "sample_count_sum": 6,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[5].site_bitstring",
+        "temporal_ensemble.runs[1].peak_extraction.candidates[5].site_bitstring",
+        "temporal_ensemble.runs[2].peak_extraction.candidates[5].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[5].site_bitstring",
+        "tracks.temporal.ensemble.runs[1].peak_extraction.candidates[5].site_bitstring",
+        "tracks.temporal.ensemble.runs[2].peak_extraction.candidates[5].site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "11011100",
+      "mean_probability": 0.9505496990276042,
+      "observation_count": 6,
+      "order": "working",
+      "probability_count": 6,
+      "probability_sum": 5.703298194165625,
+      "sample_count_sum": 0,
+      "sources": [
+        "baby_multi_front_result.segment_plan.rejected_candidates[1].peak_bitstring",
+        "identity_window_candidates[1].peak_bitstring",
+        "multi_front_segment_plan.rejected_candidates[1].peak_bitstring",
+        "tracks.spacetime_block.baby_multi_front_result.segment_plan.rejected_candidates[1].peak_bitstring",
+        "tracks.spacetime_block.identity_window_candidates[1].peak_bitstring",
+        "tracks.spacetime_block.multi_front_segment_plan.rejected_candidates[1].peak_bitstring"
+      ]
+    },
+    {
+      "bitstring": "10110000",
+      "mean_probability": 0.13406904411266962,
+      "observation_count": 6,
+      "order": "working",
+      "probability_count": 6,
+      "probability_sum": 0.8044142646760177,
+      "sample_count_sum": 0,
+      "sources": [
+        "baby_multi_front_result.segment_plan.rejected_candidates[0].peak_bitstring",
+        "identity_window_candidates[0].peak_bitstring",
+        "multi_front_segment_plan.rejected_candidates[0].peak_bitstring",
+        "tracks.spacetime_block.baby_multi_front_result.segment_plan.rejected_candidates[0].peak_bitstring",
+        "tracks.spacetime_block.identity_window_candidates[0].peak_bitstring",
+        "tracks.spacetime_block.multi_front_segment_plan.rejected_candidates[0].peak_bitstring"
+      ]
+    },
+    {
+      "bitstring": "01111011",
+      "mean_probability": 0.4563189238724867,
+      "observation_count": 4,
+      "order": "site",
+      "probability_count": 4,
+      "probability_sum": 1.8252756954899467,
+      "sample_count_sum": 0,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[6].site_bitstring",
+        "temporal_ensemble.runs[0].peak_extraction.marginal_site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[6].site_bitstring",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.marginal_site_bitstring"
+      ]
+    },
+    {
+      "bitstring": "10101101",
+      "mean_probability": null,
+      "observation_count": 4,
+      "order": "original",
+      "probability_count": 0,
+      "probability_sum": 0.0,
+      "sample_count_sum": 0,
+      "sources": [
+        "best_bitstring_original_order",
+        "spawned_bridge_bitstring_original_order",
+        "tracks.spacetime_block.spawned_bridge_bitstring_original_order",
+        "tracks.temporal.best_bitstring_original_order"
+      ]
+    },
+    {
+      "bitstring": "11011110",
+      "mean_probability": 7.11667492397247e-15,
+      "observation_count": 2,
+      "order": "original",
+      "probability_count": 2,
+      "probability_sum": 1.423334984794494e-14,
+      "sample_count_sum": 0,
+      "sources": [
+        "temporal_ensemble.runs[0].peak_extraction.candidates[6].bitstring_original_order",
+        "tracks.temporal.ensemble.runs[0].peak_extraction.candidates[6].bitstring_original_order"
+      ]
+    }
+  ]
+}
