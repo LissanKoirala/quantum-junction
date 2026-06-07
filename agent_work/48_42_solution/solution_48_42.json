@@ -1,0 +1,233 @@
+{
+  "bit_order": "Qiskit/counts order: left-most bit is highest qubit; right-most bit is q0.",
+  "challenge": "48_42",
+  "direct_mps_bd32_probability_rank_top8": [
+    {
+      "bitstring": "001100001011001101110011111100001010101010011001",
+      "flipped_qiskit_positions": [
+        33
+      ],
+      "mps_probability": 4.495180223847e-21
+    },
+    {
+      "bitstring": "001100001011001101110011111100001110101010011001",
+      "flipped_qiskit_positions": [],
+      "mps_probability": 4.330577047056e-21
+    },
+    {
+      "bitstring": "001100001011001101110011111100001010101110011001",
+      "flipped_qiskit_positions": [
+        33,
+        39
+      ],
+      "mps_probability": 1.066661914871e-21
+    },
+    {
+      "bitstring": "001100001011001101110011111100001010101010011011",
+      "flipped_qiskit_positions": [
+        33,
+        46
+      ],
+      "mps_probability": 8.967022976237e-22
+    },
+    {
+      "bitstring": "001100001011000101110011111100001010101010011001",
+      "flipped_qiskit_positions": [
+        14,
+        33
+      ],
+      "mps_probability": 5.242201691708e-22
+    },
+    {
+      "bitstring": "001100001011000101110011111100001110101010011001",
+      "flipped_qiskit_positions": [
+        14
+      ],
+      "mps_probability": 4.929228434494e-22
+    },
+    {
+      "bitstring": "001100001011001101110011111100001110101010011011",
+      "flipped_qiskit_positions": [
+        46
+      ],
+      "mps_probability": 4.764807469552e-22
+    },
+    {
+      "bitstring": "001100001011001101110011111100001110101110011001",
+      "flipped_qiskit_positions": [
+        39
+      ],
+      "mps_probability": 4.019261341466e-22
+    }
+  ],
+  "evidence": {
+    "aer_mps_bd64_majority_from_4096_samples": {
+      "bitstring": "001100001011000101110011111100001010101110011011",
+      "distinct_outcomes": 4096,
+      "hamming_to_selected": 4,
+      "shots": 4096
+    },
+    "aer_z_marginal_bd64": {
+      "bitstring": "001100001011001101110011111100001110101010011001",
+      "max_margin": 0.42540427488565813,
+      "mean_margin": 0.11373063275004391,
+      "min_margin": 0.0005042529516440242
+    },
+    "quimb_bd32_marginal": {
+      "bitstring": "111000000011011110010000000100001101010101011110",
+      "hamming_to_selected": 24,
+      "mean_margin": 0.17654631349310668,
+      "min_margin": 0.0001217413334555495
+    },
+    "quimb_bd32_sample_top": {
+      "bitstring": "101101000111011111010000010100000101100011011000",
+      "hamming_to_selected": 17,
+      "top_count": 1,
+      "top_fraction": 0.001953125
+    }
+  },
+  "low_margin_disagreements_vs_sample_majority": [
+    {
+      "qiskit_position": 14,
+      "qubit": 33,
+      "sample_majority_bit": "0",
+      "sample_margin": 0.010986328125,
+      "sample_p1": 0.489013671875,
+      "z_bit": "1",
+      "z_margin": 0.0043252729666865,
+      "z_p1": 0.5043252729666865
+    },
+    {
+      "qiskit_position": 33,
+      "qubit": 14,
+      "sample_majority_bit": "0",
+      "sample_margin": 0.001220703125,
+      "sample_p1": 0.498779296875,
+      "z_bit": "1",
+      "z_margin": 0.0005042529516440242,
+      "z_p1": 0.500504252951644
+    },
+    {
+      "qiskit_position": 39,
+      "qubit": 8,
+      "sample_majority_bit": "1",
+      "sample_margin": 0.001220703125,
+      "sample_p1": 0.501220703125,
+      "z_bit": "0",
+      "z_margin": 0.02187130998805864,
+      "z_p1": 0.47812869001194136
+    },
+    {
+      "qiskit_position": 46,
+      "qubit": 1,
+      "sample_majority_bit": "1",
+      "sample_margin": 0.0048828125,
+      "sample_p1": 0.5048828125,
+      "z_bit": "0",
+      "z_margin": 0.003617159859032326,
+      "z_p1": 0.4963828401409677
+    }
+  ],
+  "num_qubits": 48,
+  "rejected_bitstrings_qiskit_order": [
+    "001100001011001101110011111100001010101010011001",
+    "001100001011001101110011111100001010101110011001",
+    "001100001011001101110011111100001110101010011001"
+  ],
+  "selected_bitstring_qiskit_order": "001100001011000101110011111100001010101110011011",
+  "selected_direct_mps_bd32_probability_row_after_rejections": {
+    "bitstring": "001100001011001101110011111100001010101010011011",
+    "flipped_qiskit_positions": [
+      33,
+      46
+    ],
+    "mps_probability": 8.967022976237e-22
+  },
+  "selection_rule": "Three close marginal/probability variants were rejected by the judge. Switch to the paper's low-bond MPS distillation rule: use the full 4096-shot bond-64 MPS per-bit majority candidate, which flips all four bd64-marginal/sample-majority disagreement bits.",
+  "top_low_margin_variants_by_z_score": [
+    {
+      "bitstring": "001100001011001101110011111100001110101010011001",
+      "flipped_qiskit_positions": [],
+      "hamming_to_sample_majority": 4,
+      "z_product_rank_score": 29.459070372002103
+    },
+    {
+      "bitstring": "001100001011001101110011111100001010101010011001",
+      "flipped_qiskit_positions": [
+        33
+      ],
+      "hamming_to_sample_majority": 3,
+      "z_product_rank_score": 29.458061866098816
+    },
+    {
+      "bitstring": "001100001011001101110011111100001110101010011011",
+      "flipped_qiskit_positions": [
+        46
+      ],
+      "hamming_to_sample_majority": 3,
+      "z_product_rank_score": 29.451836052284037
+    },
+    {
+      "bitstring": "001100001011001101110011111100001010101010011011",
+      "flipped_qiskit_positions": [
+        33,
+        46
+      ],
+      "hamming_to_sample_majority": 2,
+      "z_product_rank_score": 29.45082754638075
+    },
+    {
+      "bitstring": "001100001011000101110011111100001110101010011001",
+      "flipped_qiskit_positions": [
+        14
+      ],
+      "hamming_to_sample_majority": 3,
+      "z_product_rank_score": 29.450419826068728
+    },
+    {
+      "bitstring": "001100001011000101110011111100001010101010011001",
+      "flipped_qiskit_positions": [
+        14,
+        33
+      ],
+      "hamming_to_sample_majority": 2,
+      "z_product_rank_score": 29.449411320165442
+    },
+    {
+      "bitstring": "001100001011000101110011111100001110101010011011",
+      "flipped_qiskit_positions": [
+        14,
+        46
+      ],
+      "hamming_to_sample_majority": 2,
+      "z_product_rank_score": 29.443185506350662
+    },
+    {
+      "bitstring": "001100001011000101110011111100001010101010011011",
+      "flipped_qiskit_positions": [
+        14,
+        33,
+        46
+      ],
+      "hamming_to_sample_majority": 1,
+      "z_product_rank_score": 29.442177000447376
+    },
+    {
+      "bitstring": "001100001011001101110011111100001110101110011001",
+      "flipped_qiskit_positions": [
+        39
+      ],
+      "hamming_to_sample_majority": 3,
+      "z_product_rank_score": 29.415327752025988
+    },
+    {
+      "bitstring": "001100001011001101110011111100001010101110011001",
+      "flipped_qiskit_positions": [
+        33,
+        39
+      ],
+      "hamming_to_sample_majority": 2,
+      "z_product_rank_score": 29.4143192461227
+    }
+  ]
+}
