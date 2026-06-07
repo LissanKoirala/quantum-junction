@@ -851,8 +851,8 @@ def parse_method_selector(repo_root: Path) -> list[dict[str, str]]:
 
 
 def label_in_path(label: str, path: Path) -> bool:
-    normalized = path.name.replace("-", "_")
-    return label in normalized or label in path.as_posix()
+    pattern = re.compile(rf"(?<![0-9]){re.escape(label)}(?![0-9])")
+    return bool(pattern.search(path.name) or pattern.search(path.as_posix()))
 
 
 def figure_caption(path: Path, namespace: str) -> str:
@@ -1245,6 +1245,30 @@ def write_readme(
             + " |"
         )
 
+    lines.extend(["", "## Distribution Figures By Challenge", ""])
+    for row in challenges:
+        label = row["challenge"]
+        selected = clean(row.get("selected_bitstring", ""))
+        page = output_dir / "challenges" / f"{label}.md"
+        figures = figures_by_challenge.get(label, [])
+        selected_text = f" selected `{selected}`" if selected else " no selected answer"
+        lines.extend(
+            [
+                f"### Challenge {label}",
+                "",
+                f"[Open full challenge page]({rel_link(page, output_dir)}) - {row.get('difficulty', '')}, {row.get('qubits', '')} qubits,{selected_text}.",
+                "",
+            ]
+        )
+        if not figures:
+            lines.extend(["No committed bitstring-distribution figure was matched for this challenge.", ""])
+            continue
+        for figure in figures:
+            target = output_dir / figure["path"]
+            link = rel_link(target, output_dir)
+            caption = md_escape(figure["caption"])
+            lines.extend([f"#### {caption}", "", f"![{caption}]({link})", ""])
+
     lines.extend(["", "## Methods", "", "| method | run rows |", "|---|---:|"])
     for method, count in sorted(method_counts.items()):
         lines.append(f"| {md_escape(method)} | {count} |")
@@ -1253,7 +1277,9 @@ def write_readme(
         lines.extend(["", "## Global Figures", ""])
         for figure in global_figures:
             target = output_dir / figure["path"]
-            lines.append(f"- [{md_escape(figure['caption'])}]({rel_link(target, output_dir)})")
+            link = rel_link(target, output_dir)
+            caption = md_escape(figure["caption"])
+            lines.extend([f"### {caption}", "", f"![{caption}]({link})", ""])
 
     lines.extend(
         [
