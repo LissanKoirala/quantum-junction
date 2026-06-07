@@ -27,9 +27,58 @@ The charts use the stored `sampling.top_counts` from each completed trial. For e
 
 ## Figures
 
-- All-challenge distribution chart: `figures/probability_distributions/all_challenges_distribution.png`
-- Top-candidate support overview: `figures/probability_distributions/top_candidate_support_overview.png`
-- Per-challenge charts: `figures/probability_distributions/challenge-*.png`
+### All Challenges
+
+![All-challenge MPS probability distribution chart](figures/probability_distributions/all_challenges_distribution.png)
+
+### Top Candidate Support
+
+![Top MPS candidate support overview](figures/probability_distributions/top_candidate_support_overview.png)
+
+### Per-Challenge Distribution Charts
+
+| Challenge | Chart |
+| --- | --- |
+| `8_1` | ![MPS distribution for challenge 8_1](figures/probability_distributions/challenge-8_1.png) |
+| `16_2` | ![MPS distribution for challenge 16_2](figures/probability_distributions/challenge-16_2.png) |
+| `24_3` | ![MPS distribution for challenge 24_3](figures/probability_distributions/challenge-24_3.png) |
+| `28_4` | ![MPS distribution for challenge 28_4](figures/probability_distributions/challenge-28_4.png) |
+| `32_5` | ![MPS distribution for challenge 32_5](figures/probability_distributions/challenge-32_5.png) |
+| `36_6` | ![MPS distribution for challenge 36_6](figures/probability_distributions/challenge-36_6.png) |
+| `40_7` | ![MPS distribution for challenge 40_7](figures/probability_distributions/challenge-40_7.png) |
+| `48_8` | ![MPS distribution for challenge 48_8](figures/probability_distributions/challenge-48_8.png) |
+| `56_9` | ![MPS distribution for challenge 56_9](figures/probability_distributions/challenge-56_9.png) |
+| `64_10` | ![MPS distribution for challenge 64_10](figures/probability_distributions/challenge-64_10.png) |
+| `8_11` | ![MPS distribution for challenge 8_11](figures/probability_distributions/challenge-8_11.png) |
+| `16_12` | ![MPS distribution for challenge 16_12](figures/probability_distributions/challenge-16_12.png) |
+| `24_13` | ![MPS distribution for challenge 24_13](figures/probability_distributions/challenge-24_13.png) |
+| `32_14` | ![MPS distribution for challenge 32_14](figures/probability_distributions/challenge-32_14.png) |
+| `36_15` | ![MPS distribution for challenge 36_15](figures/probability_distributions/challenge-36_15.png) |
+| `40_16` | ![MPS distribution for challenge 40_16](figures/probability_distributions/challenge-40_16.png) |
+| `40_17` | ![MPS distribution for challenge 40_17](figures/probability_distributions/challenge-40_17.png) |
+| `40_18` | ![MPS distribution for challenge 40_18](figures/probability_distributions/challenge-40_18.png) |
+| `48_19` | ![MPS distribution for challenge 48_19](figures/probability_distributions/challenge-48_19.png) |
+| `48_20` | ![MPS distribution for challenge 48_20](figures/probability_distributions/challenge-48_20.png) |
+| `48_21` | ![MPS distribution for challenge 48_21](figures/probability_distributions/challenge-48_21.png) |
+| `56_22` | ![MPS distribution for challenge 56_22](figures/probability_distributions/challenge-56_22.png) |
+| `56_23` | ![MPS distribution for challenge 56_23](figures/probability_distributions/challenge-56_23.png) |
+| `56_24` | ![MPS distribution for challenge 56_24](figures/probability_distributions/challenge-56_24.png) |
+| `64_25` | ![MPS distribution for challenge 64_25](figures/probability_distributions/challenge-64_25.png) |
+| `64_26` | ![MPS distribution for challenge 64_26](figures/probability_distributions/challenge-64_26.png) |
+| `8_27` | ![MPS distribution for challenge 8_27](figures/probability_distributions/challenge-8_27.png) |
+| `16_28` | ![MPS distribution for challenge 16_28](figures/probability_distributions/challenge-16_28.png) |
+| `24_29` | ![MPS distribution for challenge 24_29](figures/probability_distributions/challenge-24_29.png) |
+| `32_30` | ![MPS distribution for challenge 32_30](figures/probability_distributions/challenge-32_30.png) |
+| `48_31` | ![MPS distribution for challenge 48_31](figures/probability_distributions/challenge-48_31.png) |
+| `48_32` | ![MPS distribution for challenge 48_32](figures/probability_distributions/challenge-48_32.png) |
+| `56_33` | ![MPS distribution for challenge 56_33](figures/probability_distributions/challenge-56_33.png) |
+| `64_34` | ![MPS distribution for challenge 64_34](figures/probability_distributions/challenge-64_34.png) |
+| `40_35` | ![MPS distribution for challenge 40_35](figures/probability_distributions/challenge-40_35.png) |
+| `48_36` | ![MPS distribution for challenge 48_36](figures/probability_distributions/challenge-48_36.png) |
+| `48_37` | ![MPS distribution for challenge 48_37](figures/probability_distributions/challenge-48_37.png) |
+| `56_38` | ![MPS distribution for challenge 56_38](figures/probability_distributions/challenge-56_38.png) |
+| `56_39` | ![MPS distribution for challenge 56_39](figures/probability_distributions/challenge-56_39.png) |
+| `104_49` | ![MPS distribution for challenge 104_49](figures/probability_distributions/challenge-104_49.png) |
 
 ## Summary Table
 
