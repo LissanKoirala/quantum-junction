@@ -88,6 +88,7 @@ def compress_to_convergence(
     graph_min_improve: float = 0.02,
     graph_max_calls: int = 30,
     stall_patience: int = 2,
+    force_batch: int = 8,
     equal: bool = False,
 ):
     q2c = lambda qc: quimb_circuit(qc.decompose("unitary"), Circuit, to_backend=to_backend)
@@ -122,7 +123,8 @@ def compress_to_convergence(
     mpo_core = mpo_from_circuit(q2c(QuantumCircuit(n)))
     ii_left = ii_right = 0
     total_u = 0
-    stalls = 0
+    unswap_since_absorb = 0   # consecutive unswap cycles with NO absorption progress
+    force_remaining = 0       # remaining layers in the current force-absorb batch
     forced = 0
     graph_calls = 0
     max_bond_seen = 1
@@ -158,9 +160,15 @@ def compress_to_convergence(
 
         do_left = counts_left < counts_right
         chosen_count = counts_left if do_left else counts_right
-        force = stalls >= stall_patience
+        natural = chosen_count < soft_elems
+        # When unswap fails to enable absorption for `stall_patience` cycles, enter a
+        # force-absorb batch: absorb `force_batch` layers unconditionally (bounded by
+        # max_bond) to push through the high-entanglement region instead of spinning.
+        if (not natural) and unswap_since_absorb >= stall_patience and force_remaining == 0:
+            force_remaining = force_batch
+        force = (not natural) and force_remaining > 0
 
-        if chosen_count < soft_elems or force:
+        if natural or force:
             # ---- absorb chosen side ----
             if do_left:
                 mpo_core = mpo_left
@@ -169,16 +177,18 @@ def compress_to_convergence(
                 mpo_core = mpo_right
                 total_u += count_quantum_ops(layers_right[ii_right]); ii_right += 1; tag = "R"
             mb = mpo_core.max_bond(); max_bond_seen = max(max_bond_seen, mb)
-            if force:
-                forced += 1
-                log.info(f"[FORCE-ABSORB {tag}] stalls={stalls} bond={mb} elems={chosen_count:.2e} "
-                         f"t_u={total_u}/{T_U}")
-                stalls = 0
+            if natural:
+                force_remaining = 0
+            else:
+                forced += 1; force_remaining -= 1
+                log.info(f"[FORCE-ABSORB {tag}] left={force_remaining} bond={mb} "
+                         f"elems={chosen_count:.2e} t_u={total_u}/{T_U}")
+            unswap_since_absorb = 0
             stats.append({"t": time.perf_counter() - t0, "stage": "absorb", "side": tag,
                           "il": ii_left, "ir": ii_right, "forced": force,
                           "t_u": total_u, **get_tn_info(mpo_core)})
         else:
-            # ---- both too big: unswap, maybe graph reorder ----
+            # ---- both too big: unswap, and graph-reorder if absorption is stalled ----
             try:
                 mpo_core, (perm_l, perm_r), us_stats = unswap(
                     mpo_core, hows=hows, max_bond=max_bond, cutoff=cutoff,
@@ -189,7 +199,9 @@ def compress_to_convergence(
             max_bond_seen = max(max_bond_seen, mpo_core.max_bond())
             rewire_l, rewire_r = perm_l, perm_r
 
-            if use_graph and improvements == 0 and graph_calls < graph_max_calls:
+            # Trigger graph reorder when absorption is stalled (not just when unswap
+            # found nothing) -- the spin has improvements>0 but no absorb progress.
+            if use_graph and unswap_since_absorb >= 1 and graph_calls < graph_max_calls:
                 rem_l = layers_left[ii_left:] if ii_left < len(layers_left) else []
                 rem_r = layers_right[ii_right:] if ii_right < len(layers_right) else []
                 if rem_l or rem_r:
@@ -198,10 +210,10 @@ def compress_to_convergence(
                     if gr["improvement"] >= graph_min_improve:
                         rewire_l = rewire_r = gr["ordering"]
                         graph_calls += 1
-                        improvements = 1  # treat as progress for stall accounting
 
-            stalls = stalls + 1 if improvements == 0 else 0
-            log.info(f"[unswap] improvements={improvements} stalls={stalls} bond={mpo_core.max_bond()}")
+            unswap_since_absorb += 1
+            log.info(f"[unswap] improvements={improvements} no_absorb_cycles={unswap_since_absorb} "
+                     f"bond={mpo_core.max_bond()}")
 
             # rewire remaining + reset
             if ii_left < len(layers_left):
