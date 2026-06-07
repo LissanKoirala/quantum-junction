@@ -126,17 +126,27 @@ def count_quantum_ops(circuit):
     ignored = {"barrier", "measure", "delay"}
     return sum(v for k, v in circuit.count_ops().items() if k not in ignored)
 
-def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, unswap_threshold=1e6, early_stopping_gates=100, center_ratio=0.5, equal=False, flip_freq=None, max_its=20, to_backend=None, seed=None, hows=("both", "left", "right"), mpo_core=None, sabre_trials=10000):
+def _merge_gate_slice(gates, num_qubits):
+    gates = list(gates)
+    if not gates:
+        return QuantumCircuit(num_qubits)
+    return merge_gates(gates, num_qubits)
+
+def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, unswap_threshold=1e6, early_stopping_gates=100, center_ratio=0.5, equal=False, flip_freq=None, max_its=20, to_backend=None, seed=None, hows=("both", "left", "right"), mpo_core=None, sabre_trials=10000, core_window_gates=0):
     q2c = lambda qc: quimb_circuit(qc.decompose("unitary"), Circuit, to_backend=to_backend)
     t0 = time.perf_counter()
 
-    # Split circuit into left and right
+    # Split circuit into left, optional central MPO core, and right.
     if type(center_ratio) is float:
         C = int(len(circuit) * center_ratio)
     elif type(center_ratio) is int:
         C = center_ratio
-    circuit_left = merge_gates(circuit[:C], circuit.num_qubits).inverse()
-    circuit_right = merge_gates(circuit[C:], circuit.num_qubits)
+    core_window_gates = int(core_window_gates or 0)
+    core_left = max(0, C - core_window_gates)
+    core_right = min(len(circuit), C + core_window_gates)
+    circuit_left = _merge_gate_slice(circuit[:core_left], circuit.num_qubits).inverse()
+    circuit_core = _merge_gate_slice(circuit[core_left:core_right], circuit.num_qubits)
+    circuit_right = _merge_gate_slice(circuit[core_right:], circuit.num_qubits)
     if "measure" not in circuit_right.count_ops():
         circuit_right.measure_all()
     if "measure" not in circuit_left.count_ops():
@@ -166,16 +176,27 @@ def mpo_compress_unswap(circuit: QuantumCircuit, max_bond=8192, cutoff=0.001, un
     ii_right = 0
     do_left = False
     if mpo_core is None:
-        mpo_core = mpo_from_circuit(q2c(QuantumCircuit(circuit.num_qubits)))
+        if core_window_gates > 0 and count_quantum_ops(circuit_core) > 0:
+            mpo_core = mpo_from_circuit(q2c(circuit_core))
+        else:
+            mpo_core = mpo_from_circuit(q2c(QuantumCircuit(circuit.num_qubits)))
     logging.info("[start compressing] -> " + str(get_tn_info(mpo_core)))
+    stats_data = [{
+        "time": time.perf_counter() - t0,
+        "stage": "initial_core",
+        "center_index": C,
+        "core_left": core_left,
+        "core_right": core_right,
+        "core_window_gates": core_window_gates,
+        "core_quantum_ops": count_quantum_ops(circuit_core),
+        **get_tn_info(mpo_core),
+    }]
 
 
     total_u_consumed = 0
     current_u_consumed = 0
     total_u_consumed_left = 0
     total_u_consumed_right = 0
-
-    stats_data = []
 
     # Start loop
     while ii_left < len(layers_left) or ii_right < len(layers_right):

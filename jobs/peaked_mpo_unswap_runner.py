@@ -198,6 +198,7 @@ def sample_mps(mps: Any, count: int, perm: list[int]) -> dict[str, Any]:
             {
                 "raw_site_order": bits,
                 "permuted_measurement_order": variants.get("permuted_measurement_order", ""),
+                "permuted_measurement_order_reversed": variants.get("permuted_measurement_order_reversed", ""),
                 "count": c,
                 "fraction": c / count,
             }
@@ -261,6 +262,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         "unswap_threshold": args.unswap_threshold,
         "early_stopping_gates": args.early_stopping_gates,
         "center_ratio": args.center_ratio,
+        "core_window_gates": args.core_window_gates,
         "equal": args.equal,
         "flip_freq": args.flip_freq,
         "max_its": args.max_its,
@@ -345,6 +347,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             unswap_threshold=args.unswap_threshold,
             early_stopping_gates=args.early_stopping_gates,
             center_ratio=args.center_ratio,
+            core_window_gates=args.core_window_gates,
             equal=args.equal,
             flip_freq=args.flip_freq,
             max_its=args.max_its,
@@ -486,6 +489,7 @@ def main() -> int:
     parser.add_argument("--unswap-threshold", type=float, default=1e6)
     parser.add_argument("--early-stopping-gates", type=int, default=0)
     parser.add_argument("--center-ratio", type=float, default=0.5)
+    parser.add_argument("--core-window-gates", type=int, default=0)
     parser.add_argument("--equal", action="store_true")
     parser.add_argument("--flip-freq", type=int)
     parser.add_argument("--max-its", type=int, default=20)
