@@ -1,0 +1,104 @@
+{
+  "challenge": "challenge-24_13.qasm",
+  "n_qubits": 24,
+  "n_ops_after_precond": 187,
+  "snapped_gates": 263,
+  "params": {
+    "max_bond": 8192,
+    "cutoff": 1e-05,
+    "unswap_threshold": 1000000.0,
+    "center_ratio": 0.5,
+    "max_its": 16,
+    "seed": 123,
+    "snap_tol": 0.01,
+    "consolidate": true,
+    "use_graph": true,
+    "use_gpu": false,
+    "sabre_trials": 1000
+  },
+  "converged": true,
+  "stopped_reason": "complete",
+  "remaining_layers": 0,
+  "remaining_left": 0,
+  "remaining_right": 0,
+  "forced_absorptions": 0,
+  "graph_ordering_calls": 0,
+  "max_bond_seen": 338,
+  "mpo_max_bond": 56,
+  "compress_seconds": 8165.4,
+  "readout_seconds": 0.2,
+  "sample_top_fraction": 0.5925,
+  "sample_distinct": 185,
+  "sample_orderings": {
+    "raw": "001011101111011110011010",
+    "raw_rev": "010110011110111101110100",
+    "perm": "110110111000000111111011",
+    "perm_rev": "110111111000000111011011"
+  },
+  "sample_top5": [
+    [
+      "001011101111011110011010",
+      2370
+    ],
+    [
+      "001011101111011110010110",
+      196
+    ],
+    [
+      "001001111111010111011010",
+      120
+    ],
+    [
+      "001011101111110110011010",
+      113
+    ],
+    [
+      "001111101111011110011010",
+      111
+    ]
+  ],
+  "marginal_orderings": {
+    "raw": "001011101111011110011010",
+    "raw_rev": "010110011110111101110100",
+    "perm": "110110111000000111111011",
+    "perm_rev": "110111111000000111011011"
+  },
+  "marginal_min_margin": 0.3162733624832556,
+  "marginal_mean_margin": 0.451446974543593,
+  "marginal_undecided": 0,
+  "marginal_p0s": [
+    0.9981,
+    0.9983,
+    0.0383,
+    0.9267,
+    0.0727,
+    0.0733,
+    0.0001,
+    0.8534,
+    0.0147,
+    0.0395,
+    0.0219,
+    0.0,
+    0.9506,
+    0.0285,
+    0.1837,
+    0.0126,
+    0.0179,
+    0.8402,
+    0.9739,
+    0.0035,
+    0.1101,
+    0.9109,
+    0.0002,
+    1.0
+  ],
+  "total_seconds": 8186.0,
+  "validation": {
+    "known_answer": "111110011111001011010001",
+    "matches": {},
+    "solved": false
+  },
+  "status": "ok",
+  "label": "c1e-05_snap",
+  "wall_seconds": 8186.0
+}

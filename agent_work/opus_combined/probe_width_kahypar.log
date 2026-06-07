@@ -1,0 +1,2 @@
+{"challenge": "challenge-64_41.qasm", "n_qubits": 64, "n_gates_quimb": 3428, "contraction_width_log2": 154.0, "largest_tensor_bytes_est": 3.6537540933272573e+47, "contraction_cost_flops_log10": 48.26, "path_search_seconds": 134.1}
+{"challenge": "challenge-104_49.qasm", "n_qubits": 104, "n_gates_quimb": 26361, "contraction_width_log2": 329.0, "largest_tensor_bytes_est": 1.7498005798264095e+100, "contraction_cost_flops_log10": 100.97, "path_search_seconds": 238.7}

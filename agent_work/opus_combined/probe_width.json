@@ -1,0 +1,15 @@
+[
+  {
+    "challenge": "--qasm",
+    "error": "FileNotFoundError(2, 'No such file or directory')"
+  },
+  {
+    "challenge": "challenge-56_38.qasm",
+    "n_qubits": 56,
+    "n_gates_quimb": 5939,
+    "contraction_width_log2": 159.0,
+    "largest_tensor_bytes_est": 1.1692013098647223e+49,
+    "contraction_cost_flops_log10": 49.22,
+    "path_search_seconds": 119.7
+  }
+]
