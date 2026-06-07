@@ -1,0 +1,55 @@
+{
+  "backend": "cuda",
+  "challenge_id": 12,
+  "challenge_label": "16_12",
+  "circuit_len": 291,
+  "circuit_ops": {
+    "cx": 129,
+    "rx": 65,
+    "rz": 89,
+    "swap": 8
+  },
+  "difficulty": "easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OMP_NUM_THREADS": "8",
+    "SLURM_ARRAY_JOB_ID": "34621209",
+    "SLURM_ARRAY_TASK_ID": "0",
+    "SLURM_CPUS_PER_TASK": "8",
+    "SLURM_JOB_ID": "34621211",
+    "SLURM_JOB_PARTITION": "interruptible_gpu"
+  },
+  "error": "CUDA out of memory. Tried to allocate 3.88 GiB. GPU 0 has a total capacity of 23.50 GiB of which 1.69 GiB is free. Including non-PyTorch memory, this process has 21.80 GiB memory in use. Of the allocated memory 17.59 GiB is allocated by PyTorch, and 3.91 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+  "error_type": "OutOfMemoryError",
+  "finished_at": "2026-06-06T13:57:21+0100",
+  "layer_seconds": 0.010022168979048729,
+  "max_rss_mb": 833.25,
+  "method": "tno_contract_core",
+  "num_layers": 96,
+  "num_qubits": 16,
+  "output_json": "outputs/tno_sim_gpu/json/challenge-16_12.tno.json",
+  "output_stats_jsonl": "outputs/tno_sim_gpu/stats/challenge-16_12.tno_stats.jsonl",
+  "parameters": {
+    "backend_requested": "cuda",
+    "chunk_size": 2,
+    "cutoff": 0.01,
+    "max_bond_tne": 16,
+    "max_bond_tno": 32,
+    "method": "local-late"
+  },
+  "qasm": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/challenges/easy/challenge-16_12.qasm",
+  "removed_final_measurements": false,
+  "started_at": "2026-06-06T13:56:15+0100",
+  "status": "error",
+  "total_seconds": 65.31754409405403,
+  "traceback": "Traceback (most recent call last):\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/jobs/tno_runner.py\", line 172, in run\n    tno, stats = utils_mod.contract_core(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/peaked-circuit-simulation/utils.py\", line 128, in contract_core\n    tno_core = tensor_network_ag_compress(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_arbgeom_compress.py\", line 578, in tensor_network_ag_compress\n    return _TNAG_COMPRESS_METHODS[method](\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_arbgeom_compress.py\", line 332, in tensor_network_ag_compress_local_late\n    tnc.compress_all_(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 6741, in compress_all\n    tn._compress_between_tids(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 6575, in _compress_between_tids\n    self._compress_between_virtual_tree_tids(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 6303, in _compress_between_virtual_tree_tids\n    Rl, Rr = self._compute_tree_gauges(tree, [(tidl, bix), (tidr, bix)])\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 6250, in _compute_tree_gauges\n    new_G = t_outer.compute_reduced_factor(\"right\", outer_ix, inner_ix)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 2583, in compute_reduced_factor\n    return tensor_split(self, **split_opts)[which]\n  File \"/usr/lib/python3.10/functools.py\", line 889, in wrapper\n    return dispatch(args[0].__class__)(*args, **kw)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 633, in tensor_split\n    left, s, right = _SPLIT_FNS[method](array, **opts)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/autoray/autoray.py\", line 1108, in __call__\n    return fn(*args, **kwargs)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/decomp.py\", line 689, in qr_stabilized\n    Q, R = do(\"linalg.qr\", x)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/autoray/autoray.py\", line 96, in do\n    return func(*args, **kwargs)\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.88 GiB. GPU 0 has a total capacity of 23.50 GiB of which 1.69 GiB is free. Including non-PyTorch memory, this process has 21.80 GiB memory in use. Of the allocated memory 17.59 GiB is allocated by PyTorch, and 3.91 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

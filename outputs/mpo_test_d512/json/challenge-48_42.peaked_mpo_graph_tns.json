@@ -1,0 +1,55 @@
+{
+  "challenge_id": 42,
+  "challenge_label": "48_42",
+  "difficulty": "very_hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": null,
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": null,
+    "SLURM_JOB_ID": null,
+    "SLURM_JOB_PARTITION": null
+  },
+  "method": "peaked_mpo_graph_tns",
+  "method_classification": "mpo_iterative_cancellation_graph_ordering_tree_tns",
+  "output_json": "outputs/mpo_test_d512/json/challenge-48_42.peaked_mpo_graph_tns.json",
+  "output_stats_jsonl": "outputs/mpo_test_d512/stats/challenge-48_42.peaked_mpo_graph_tns.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.5,
+    "cutoff": 0.01,
+    "early_stopping_gates": 0,
+    "equal": false,
+    "flip_freq": null,
+    "graph_ordering_max_calls": 10,
+    "graph_ordering_min_improvement": 0.02,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 512,
+    "max_its": 3,
+    "mps_max_bond": 256,
+    "sabre_trials": 32,
+    "samples": 200,
+    "seed": 20260606,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/very_hard/challenge-48_42.qasm",
+  "root": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction",
+  "started_at": "2026-06-06T13:03:55+0100",
+  "status": "started",
+  "versions": {
+    "networkx": "3.4.2",
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

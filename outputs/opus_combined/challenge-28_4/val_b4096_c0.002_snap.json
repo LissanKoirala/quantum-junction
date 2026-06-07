@@ -1,0 +1,111 @@
+{
+  "challenge": "challenge-28_4.qasm",
+  "n_qubits": 28,
+  "n_ops_after_precond": 265,
+  "snapped_gates": 473,
+  "params": {
+    "max_bond": 4096,
+    "cutoff": 0.002,
+    "unswap_threshold": 1000000.0,
+    "center_ratio": 0.5,
+    "max_its": 12,
+    "seed": 123,
+    "snap_tol": 0.01,
+    "consolidate": true,
+    "use_graph": true,
+    "use_gpu": false,
+    "sabre_trials": 1000
+  },
+  "converged": false,
+  "stopped_reason": "time_budget",
+  "remaining_layers": 224,
+  "remaining_left": 159,
+  "remaining_right": 65,
+  "forced_absorptions": 0,
+  "graph_ordering_calls": 0,
+  "max_bond_seen": 256,
+  "mpo_max_bond": 110,
+  "compress_seconds": 7283.5,
+  "readout_seconds": 24.0,
+  "sample_top_fraction": 0.15375,
+  "sample_distinct": 942,
+  "sample_orderings": {
+    "raw": "0001110111111101010111011011",
+    "raw_rev": "1101101110101011111110111000",
+    "perm": "1111100110110101010001111111",
+    "perm_rev": "1111111000101010110110011111"
+  },
+  "sample_top5": [
+    [
+      "0001110111111101010111011011",
+      615
+    ],
+    [
+      "0001110111111101000111011011",
+      366
+    ],
+    [
+      "0001111111111101010111011011",
+      147
+    ],
+    [
+      "0001111111111101000111011011",
+      77
+    ],
+    [
+      "0001110110111101010111011011",
+      74
+    ]
+  ],
+  "marginal_orderings": {
+    "raw": "0001110111111101010111011011",
+    "raw_rev": "1101101110101011111110111000",
+    "perm": "1111100110110101010001111111",
+    "perm_rev": "1111111000101010110110011111"
+  },
+  "marginal_min_margin": 0.13588507995798943,
+  "marginal_mean_margin": 0.430650693936121,
+  "marginal_undecided": 0,
+  "marginal_p0s": [
+    0.9991,
+    0.9953,
+    0.9613,
+    0.1409,
+    0.087,
+    0.157,
+    0.7683,
+    0.063,
+    0.0001,
+    0.143,
+    0.0175,
+    0.0912,
+    0.0916,
+    0.0013,
+    0.8824,
+    0.0614,
+    0.9666,
+    0.3641,
+    0.9774,
+    0.038,
+    0.0364,
+    0.0484,
+    0.9693,
+    0.0406,
+    0.0436,
+    0.9718,
+    0.0001,
+    0.008
+  ],
+  "total_seconds": 7332.1,
+  "validation": {
+    "known_answer": "1111111000101010110110011111",
+    "matches": {
+      "sample_orderings:perm_rev": true,
+      "marginal_orderings:perm_rev": true
+    },
+    "solved": true
+  },
+  "status": "ok",
+  "label": "val_b4096_c0.002_snap",
+  "wall_seconds": 7332.1
+}

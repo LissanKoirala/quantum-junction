@@ -1,0 +1,70 @@
+{
+  "challenge": "challenge-24_13.qasm",
+  "n_qubits": 24,
+  "n_ops_after_precond": 187,
+  "snapped_gates": 263,
+  "params": {
+    "max_bond": 8192,
+    "cutoff": 1e-05,
+    "unswap_threshold": 1000000.0,
+    "center_ratio": 0.5,
+    "max_its": 16,
+    "seed": 123,
+    "snap_tol": 0.01,
+    "consolidate": true,
+    "use_graph": true,
+    "use_gpu": true,
+    "sabre_trials": 1000
+  },
+  "converged": true,
+  "stopped_reason": "complete",
+  "remaining_layers": 0,
+  "remaining_left": 0,
+  "remaining_right": 0,
+  "forced_absorptions": 0,
+  "graph_ordering_calls": 0,
+  "max_bond_seen": 384,
+  "mpo_max_bond": 128,
+  "compress_seconds": 106.9,
+  "readout_seconds": 0.0,
+  "sample_top_fraction": 0.58375,
+  "sample_distinct": 199,
+  "sample_orderings": {
+    "raw": "001011011111011101011010",
+    "raw_rev": "010110101110111110110100",
+    "perm": "010110101000101111111011",
+    "perm_rev": "110111111101000101011010"
+  },
+  "sample_top5": [
+    [
+      "001011011111011101011010",
+      2335
+    ],
+    [
+      "001011011111011101010110",
+      202
+    ],
+    [
+      "001011011111110101011010",
+      119
+    ],
+    [
+      "001011111111010111011010",
+      108
+    ],
+    [
+      "001011101111010111011010",
+      105
+    ]
+  ],
+  "marginal_error": "RuntimeError('expected mat1 and mat2 to have the same dtype, but got: c10::complex<float> != c10::complex<double>')",
+  "total_seconds": 151.1,
+  "validation": {
+    "known_answer": "111110011111001011010001",
+    "matches": {},
+    "solved": false
+  },
+  "status": "ok",
+  "label": "gpu_c1e-5_snap_b8192",
+  "wall_seconds": 151.1
+}

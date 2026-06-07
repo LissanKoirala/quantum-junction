@@ -1,0 +1,74 @@
+{
+  "backend": "cuda",
+  "challenge_id": 13,
+  "challenge_label": "24_13",
+  "circuit_len": 550,
+  "circuit_ops": {
+    "cx": 206,
+    "rx": 176,
+    "rz": 163,
+    "swap": 5
+  },
+  "difficulty": "easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OMP_NUM_THREADS": "8",
+    "SLURM_ARRAY_JOB_ID": "34621209",
+    "SLURM_ARRAY_TASK_ID": "1",
+    "SLURM_CPUS_PER_TASK": "8",
+    "SLURM_JOB_ID": "34621212",
+    "SLURM_JOB_PARTITION": "interruptible_gpu"
+  },
+  "error": "CUDA out of memory. Tried to allocate 9.00 GiB. GPU 0 has a total capacity of 7.79 GiB of which 7.33 GiB is free. Including non-PyTorch memory, this process has 462.00 MiB memory in use. Of the allocated memory 217.52 MiB is allocated by PyTorch, and 22.48 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+  "error_type": "OutOfMemoryError",
+  "finished_at": "2026-06-06T13:58:32+0100",
+  "layer_seconds": 0.032241469249129295,
+  "max_rss_mb": 864.75,
+  "method": "tno_contract_core",
+  "num_layers": 138,
+  "num_qubits": 24,
+  "output_json": "outputs/tno_sim_gpu/json/challenge-24_13.tno.json",
+  "output_stats_jsonl": "outputs/tno_sim_gpu/stats/challenge-24_13.tno_stats.jsonl",
+  "parameters": {
+    "backend_requested": "cuda",
+    "chunk_size": 2,
+    "cutoff": 0.01,
+    "max_bond_tne": 16,
+    "max_bond_tno": 32,
+    "method": "local-late"
+  },
+  "qasm": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/challenges/easy/challenge-24_13.qasm",
+  "removed_final_measurements": false,
+  "started_at": "2026-06-06T13:56:16+0100",
+  "stats_rows": 35,
+  "status": "error",
+  "tne_info": {
+    "max_bond": 16,
+    "max_links": 12,
+    "num_tensors": 24,
+    "total_elems": 4345654,
+    "total_links": 126,
+    "total_shapes": 434
+  },
+  "tne_seconds": 4.674302285537124,
+  "tno_info": {
+    "max_bond": 32,
+    "max_links": 13,
+    "num_tensors": 24,
+    "total_elems": 8950516,
+    "total_links": 154,
+    "total_shapes": 550
+  },
+  "tno_seconds": 97.71397295594215,
+  "total_seconds": 135.54813492298126,
+  "traceback": "Traceback (most recent call last):\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/peaked-circuit-simulation/utils.py\", line 192, in extract_bitstring\n    p0 = tne.local_expectation_canonical(Pi0, where=ii, normalized=True, info=info)\nAttributeError: 'TensorNetworkGenVector' object has no attribute 'local_expectation_canonical'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/jobs/tno_runner.py\", line 201, in run\n    pred_bitstring, p0s = utils_mod.extract_bitstring(tne)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/peaked-circuit-simulation/utils.py\", line 194, in extract_bitstring\n    p0 = tne.local_expectation(Pi0, where=[ii], max_bond=2, optimize=\"auto\", normalized=True)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_arbgeom.py\", line 3103, in local_expectation\n    rho = self.partial_trace(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_arbgeom.py\", line 2988, in partial_trace\n    tn ^= tag\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 9545, in __ixor__\n    return self.contract(tags, inplace=True)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 9295, in contract\n    return self.contract_tags(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 9113, in contract_tags\n    t = tensor_contract(\n  File \"/usr/lib/python3.10/functools.py\", line 889, in wrapper\n    return dispatch(args[0].__class__)(*args, **kw)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/tensor_core.py\", line 309, in tensor_contract\n    data_out = array_contract(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/quimb/tensor/contraction.py\", line 285, in array_contract\n    return ctg.array_contract(\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/cotengra/interface.py\", line 872, in array_contract\n    return expr(*arrays, backend=backend)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/cotengra/contract.py\", line 810, in __call__\n    p_array = _tensordot(l_array, r_array, arg)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/autoray/autoray.py\", line 2574, in numpy_like\n    return fn(a, b, dims=axes)\n  File \"/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/.venv/lib/python3.10/site-packages/torch/functional.py\", line 1355, in tensordot\n    return _VF.tensordot(a, b, dims_a, dims_b)  # type: ignore[attr-defined]\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.00 GiB. GPU 0 has a total capacity of 7.79 GiB of which 7.33 GiB is free. Including non-PyTorch memory, this process has 462.00 MiB memory in use. Of the allocated memory 217.52 MiB is allocated by PyTorch, and 22.48 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

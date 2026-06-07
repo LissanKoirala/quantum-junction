@@ -1,0 +1,210 @@
+challenge	caption	path	source	embedded
+	Adaptive Aer MPS distribution: all_challenges_distribution.png	figures/adaptive_mps/all_challenges_distribution.png	adaptive_mps	1
+	Adaptive Aer MPS distribution: top_candidate_support_overview.png	figures/adaptive_mps/top_candidate_support_overview.png	adaptive_mps	1
+	Distribution figure: exact_peak_probabilities.png	figures/quantum_peak_report/exact_peak_probabilities.png	quantum_peak_report	1
+	Distribution figure: method_agreement.png	figures/quantum_peak_report/method_agreement.png	quantum_peak_report	1
+	Aer MPS distribution: mps_stability.png	figures/quantum_peak_report/mps_stability.png	quantum_peak_report	1
+	Peaked MPO/MPS distribution: peaked_margins.png	figures/quantum_peak_report/peaked_margins.png	quantum_peak_report	1
+	Distribution figure: selected_mps_top_counts.png	figures/quantum_peak_report/selected_mps_top_counts.png	quantum_peak_report	1
+	Distribution figure: selected_overview.png	figures/quantum_peak_report/selected_overview.png	quantum_peak_report	1
+	Distribution figure: static_difficulty.png	figures/quantum_peak_report/static_difficulty.png	quantum_peak_report	1
+	Distribution figure: coverage_by_source.png	figures/tree_tensor_report/coverage_by_source.png	tree_tensor_report	1
+	Distribution figure: sample_distributions.png	figures/tree_tensor_report/sample_distributions.png	tree_tensor_report	1
+	Distribution figure: top_fraction_runtime.png	figures/tree_tensor_report/top_fraction_runtime.png	tree_tensor_report	1
+104_49	Adaptive Aer MPS distribution: challenge-104_49.png	figures/adaptive_mps/challenge-104_49.png	adaptive_mps	1
+104_49	Aer MPS distribution: mps_104_49.png	figures/quantum_peak_report/mps_104_49.png	quantum_peak_report	1
+104_49	Aer MPS distribution: challenge-104_49.png	figures/selected_sim/mps/challenge-104_49.png	selected_sim	1
+104_49	Statevector distribution: challenge-104_49.png	figures/selected_sim/statevector/challenge-104_49.png	selected_sim	1
+16_12	Adaptive Aer MPS distribution: challenge-16_12.png	figures/adaptive_mps/challenge-16_12.png	adaptive_mps	1
+16_12	Peaked MPO/MPS distribution: challenge-16_12.peaked_mpo_mps.png	figures/peaked_all/challenge-16_12.peaked_mpo_mps.png	peaked_all	1
+16_12	Peaked MPO/MPS distribution: peaked_16_12.png	figures/quantum_peak_report/peaked_16_12.png	quantum_peak_report	1
+16_12	Quimb graph-ordered MPS distribution: challenge-16_12.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_12.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_12	Tree/order MPS distribution: challenge-16_12.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_12.tree_tensor_mps.png	tree_tensor_sim	1
+16_12	Quimb graph-ordered MPS distribution: challenge-16_12.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-16_12.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_12	Tree/order MPS distribution: challenge-16_12.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-16_12.tree_tensor_mps.png	tree_tensor_sim	1
+16_12	Quimb graph-ordered MPS distribution: challenge-16_12.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-16_12.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_2	Adaptive Aer MPS distribution: challenge-16_2.png	figures/adaptive_mps/challenge-16_2.png	adaptive_mps	1
+16_2	Adaptive Aer MPS distribution: challenge-16_28.png	figures/adaptive_mps/challenge-16_28.png	adaptive_mps	1
+16_2	Tree/order MPS distribution: challenge-16_2.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_2.tree_tensor_mps.png	tree_tensor_sim	1
+16_2	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_2	Tree/order MPS distribution: challenge-16_28.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_28.tree_tensor_mps.png	tree_tensor_sim	1
+16_2	Quimb graph-ordered MPS distribution: challenge-16_2.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-16_2.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_2	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_2	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/fast_cpu/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_2	Tree/order MPS distribution: challenge-16_28.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-16_28.tree_tensor_mps.png	tree_tensor_sim	1
+16_2	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_28	Adaptive Aer MPS distribution: challenge-16_28.png	figures/adaptive_mps/challenge-16_28.png	adaptive_mps	1
+16_28	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_28	Tree/order MPS distribution: challenge-16_28.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-16_28.tree_tensor_mps.png	tree_tensor_sim	1
+16_28	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_28	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/fast_cpu/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+16_28	Tree/order MPS distribution: challenge-16_28.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-16_28.tree_tensor_mps.png	tree_tensor_sim	1
+16_28	Quimb graph-ordered MPS distribution: challenge-16_28.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-16_28.quimb_tree_graph_mps.png	tree_tensor_sim	1
+24_13	Adaptive Aer MPS distribution: challenge-24_13.png	figures/adaptive_mps/challenge-24_13.png	adaptive_mps	1
+24_13	Peaked MPO/MPS distribution: challenge-24_13.peaked_mpo_mps.png	figures/peaked_all/challenge-24_13.peaked_mpo_mps.png	peaked_all	1
+24_13	Peaked MPO/MPS distribution: peaked_24_13.png	figures/quantum_peak_report/peaked_24_13.png	quantum_peak_report	1
+24_13	Quimb graph-ordered MPS distribution: challenge-24_13.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-24_13.quimb_tree_graph_mps.png	tree_tensor_sim	1
+24_13	Tree/order MPS distribution: challenge-24_13.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-24_13.tree_tensor_mps.png	tree_tensor_sim	1
+24_13	Quimb graph-ordered MPS distribution: challenge-24_13.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-24_13.quimb_tree_graph_mps.png	tree_tensor_sim	1
+24_13	Tree/order MPS distribution: challenge-24_13.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-24_13.tree_tensor_mps.png	tree_tensor_sim	1
+24_29	Adaptive Aer MPS distribution: challenge-24_29.png	figures/adaptive_mps/challenge-24_29.png	adaptive_mps	1
+24_29	Quimb graph-ordered MPS distribution: challenge-24_29.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-24_29.quimb_tree_graph_mps.png	tree_tensor_sim	1
+24_29	Quimb graph-ordered MPS distribution: challenge-24_29.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-24_29.quimb_tree_graph_mps.png	tree_tensor_sim	1
+24_3	Adaptive Aer MPS distribution: challenge-24_3.png	figures/adaptive_mps/challenge-24_3.png	adaptive_mps	1
+24_3	Tree/order MPS distribution: challenge-24_3.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-24_3.tree_tensor_mps.png	tree_tensor_sim	1
+24_3	Quimb graph-ordered MPS distribution: challenge-24_3.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-24_3.quimb_tree_graph_mps.png	tree_tensor_sim	1
+28_4	Adaptive Aer MPS distribution: challenge-28_4.png	figures/adaptive_mps/challenge-28_4.png	adaptive_mps	1
+28_4	Quimb graph-ordered MPS distribution: challenge-28_4.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-28_4.quimb_tree_graph_mps.png	tree_tensor_sim	1
+32_14	Adaptive Aer MPS distribution: challenge-32_14.png	figures/adaptive_mps/challenge-32_14.png	adaptive_mps	1
+32_14	Peaked MPO/MPS distribution: challenge-32_14.peaked_mpo_mps.png	figures/peaked_all/challenge-32_14.peaked_mpo_mps.png	peaked_all	1
+32_14	Quimb graph-ordered MPS distribution: challenge-32_14.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-32_14.quimb_tree_graph_mps.png	tree_tensor_sim	1
+32_14	Quimb graph-ordered MPS distribution: challenge-32_14.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-32_14.quimb_tree_graph_mps.png	tree_tensor_sim	1
+32_14	Quimb graph-ordered MPS distribution: challenge-32_14.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-32_14.quimb_tree_graph_mps.png	tree_tensor_sim	1
+32_30	Adaptive Aer MPS distribution: challenge-32_30.png	figures/adaptive_mps/challenge-32_30.png	adaptive_mps	1
+32_30	Quimb graph-ordered MPS distribution: challenge-32_30.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-32_30.quimb_tree_graph_mps.png	tree_tensor_sim	1
+32_30	Quimb graph-ordered MPS distribution: challenge-32_30.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-32_30.quimb_tree_graph_mps.png	tree_tensor_sim	1
+32_5	Adaptive Aer MPS distribution: challenge-32_5.png	figures/adaptive_mps/challenge-32_5.png	adaptive_mps	1
+32_5	Quimb graph-ordered MPS distribution: challenge-32_5.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-32_5.quimb_tree_graph_mps.png	tree_tensor_sim	1
+36_15	Adaptive Aer MPS distribution: challenge-36_15.png	figures/adaptive_mps/challenge-36_15.png	adaptive_mps	1
+36_15	Peaked MPO/MPS distribution: challenge-36_15.peaked_mpo_mps.png	figures/peaked_all/challenge-36_15.peaked_mpo_mps.png	peaked_all	1
+36_15	Quimb graph-ordered MPS distribution: challenge-36_15.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-36_15.quimb_tree_graph_mps.png	tree_tensor_sim	1
+36_15	Quimb graph-ordered MPS distribution: challenge-36_15.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-36_15.quimb_tree_graph_mps.png	tree_tensor_sim	1
+36_15	Quimb graph-ordered MPS distribution: challenge-36_15.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-36_15.quimb_tree_graph_mps.png	tree_tensor_sim	1
+36_6	Adaptive Aer MPS distribution: challenge-36_6.png	figures/adaptive_mps/challenge-36_6.png	adaptive_mps	1
+36_6	Quimb graph-ordered MPS distribution: challenge-36_6.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-36_6.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_16	Adaptive Aer MPS distribution: challenge-40_16.png	figures/adaptive_mps/challenge-40_16.png	adaptive_mps	1
+40_16	Peaked MPO/MPS distribution: challenge-40_16.peaked_mpo_mps.png	figures/peaked_all/challenge-40_16.peaked_mpo_mps.png	peaked_all	1
+40_16	Peaked MPO/MPS distribution: peaked_40_16.png	figures/quantum_peak_report/peaked_40_16.png	quantum_peak_report	1
+40_16	Quimb graph-ordered MPS distribution: challenge-40_16.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-40_16.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_16	Quimb graph-ordered MPS distribution: challenge-40_16.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-40_16.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_16	Quimb graph-ordered MPS distribution: challenge-40_16.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/fast_cpu/images/challenge-40_16.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_17	Adaptive Aer MPS distribution: challenge-40_17.png	figures/adaptive_mps/challenge-40_17.png	adaptive_mps	1
+40_17	Peaked MPO/MPS distribution: challenge-40_17.peaked_mpo_mps.png	figures/peaked_all/challenge-40_17.peaked_mpo_mps.png	peaked_all	1
+40_17	Quimb graph-ordered MPS distribution: challenge-40_17.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-40_17.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_17	Tree/order MPS distribution: challenge-40_17.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-40_17.tree_tensor_mps.png	tree_tensor_sim	1
+40_17	Quimb graph-ordered MPS distribution: challenge-40_17.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-40_17.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_17	Quimb graph-ordered MPS distribution: challenge-40_17.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/fast_cpu/images/challenge-40_17.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_17	Quimb graph-ordered MPS distribution: challenge-40_17.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-40_17.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_18	Adaptive Aer MPS distribution: challenge-40_18.png	figures/adaptive_mps/challenge-40_18.png	adaptive_mps	1
+40_18	Peaked MPO/MPS distribution: challenge-40_18.peaked_mpo_mps.png	figures/peaked_all/challenge-40_18.peaked_mpo_mps.png	peaked_all	1
+40_18	Quimb graph-ordered MPS distribution: challenge-40_18.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-40_18.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_18	Quimb graph-ordered MPS distribution: challenge-40_18.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-40_18.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_18	Quimb graph-ordered MPS distribution: challenge-40_18.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-40_18.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_35	Adaptive Aer MPS distribution: challenge-40_35.png	figures/adaptive_mps/challenge-40_35.png	adaptive_mps	1
+40_35	Quimb graph-ordered MPS distribution: challenge-40_35.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-40_35.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_35	Quimb graph-ordered MPS distribution: challenge-40_35.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-40_35.quimb_tree_graph_mps.png	tree_tensor_sim	1
+40_7	Adaptive Aer MPS distribution: challenge-40_7.png	figures/adaptive_mps/challenge-40_7.png	adaptive_mps	1
+40_7	Quimb graph-ordered MPS distribution: challenge-40_7.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-40_7.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_19	Adaptive Aer MPS distribution: challenge-48_19.png	figures/adaptive_mps/challenge-48_19.png	adaptive_mps	1
+48_19	Peaked MPO/MPS distribution: challenge-48_19.peaked_mpo_mps.png	figures/peaked_all/challenge-48_19.peaked_mpo_mps.png	peaked_all	1
+48_19	Quimb graph-ordered MPS distribution: challenge-48_19.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_19.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_19	Tree/order MPS distribution: challenge-48_19.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_19.tree_tensor_mps.png	tree_tensor_sim	1
+48_19	Quimb graph-ordered MPS distribution: challenge-48_19.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_19.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_20	Adaptive Aer MPS distribution: challenge-48_20.png	figures/adaptive_mps/challenge-48_20.png	adaptive_mps	1
+48_20	Peaked MPO/MPS distribution: challenge-48_20.peaked_mpo_mps.png	figures/peaked_all/challenge-48_20.peaked_mpo_mps.png	peaked_all	1
+48_20	Quimb graph-ordered MPS distribution: challenge-48_20.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_20.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_20	Tree/order MPS distribution: challenge-48_20.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_20.tree_tensor_mps.png	tree_tensor_sim	1
+48_20	Quimb graph-ordered MPS distribution: challenge-48_20.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_20.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_20	Quimb graph-ordered MPS distribution: challenge-48_20.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/fast_cpu/images/challenge-48_20.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_21	Adaptive Aer MPS distribution: challenge-48_21.png	figures/adaptive_mps/challenge-48_21.png	adaptive_mps	1
+48_21	Quimb graph-ordered MPS distribution: challenge-48_21.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_21.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_21	Quimb graph-ordered MPS distribution: challenge-48_21.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_21.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_21	Quimb graph-ordered MPS distribution: challenge-48_21.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/fast_cpu/images/challenge-48_21.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_31	Adaptive Aer MPS distribution: challenge-48_31.png	figures/adaptive_mps/challenge-48_31.png	adaptive_mps	1
+48_31	Quimb graph-ordered MPS distribution: challenge-48_31.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_31.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_31	Quimb graph-ordered MPS distribution: challenge-48_31.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-48_31.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_32	Adaptive Aer MPS distribution: challenge-48_32.png	figures/adaptive_mps/challenge-48_32.png	adaptive_mps	1
+48_32	Quimb graph-ordered MPS distribution: challenge-48_32.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_32.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_32	Quimb graph-ordered MPS distribution: challenge-48_32.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-48_32.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_36	Adaptive Aer MPS distribution: challenge-48_36.png	figures/adaptive_mps/challenge-48_36.png	adaptive_mps	1
+48_36	Quimb graph-ordered MPS distribution: challenge-48_36.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_36.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_36	Quimb graph-ordered MPS distribution: challenge-48_36.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-48_36.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_37	Adaptive Aer MPS distribution: challenge-48_37.png	figures/adaptive_mps/challenge-48_37.png	adaptive_mps	1
+48_37	Quimb graph-ordered MPS distribution: challenge-48_37.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_37.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_37	Quimb graph-ordered MPS distribution: challenge-48_37.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_37.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_37	Quimb graph-ordered MPS distribution: challenge-48_37.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-48_37.quimb_tree_graph_mps.png	tree_tensor_sim	1
+48_8	Adaptive Aer MPS distribution: challenge-48_8.png	figures/adaptive_mps/challenge-48_8.png	adaptive_mps	1
+48_8	Quimb graph-ordered MPS distribution: challenge-48_8.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_8.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_22	Adaptive Aer MPS distribution: challenge-56_22.png	figures/adaptive_mps/challenge-56_22.png	adaptive_mps	1
+56_22	Peaked MPO/MPS distribution: challenge-56_22.peaked_mpo_mps.png	figures/peaked_all/challenge-56_22.peaked_mpo_mps.png	peaked_all	1
+56_22	Quimb graph-ordered MPS distribution: challenge-56_22.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-56_22.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_22	Tree/order MPS distribution: challenge-56_22.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-56_22.tree_tensor_mps.png	tree_tensor_sim	1
+56_22	Quimb graph-ordered MPS distribution: challenge-56_22.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-56_22.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_23	Adaptive Aer MPS distribution: challenge-56_23.png	figures/adaptive_mps/challenge-56_23.png	adaptive_mps	1
+56_23	Peaked MPO/MPS distribution: challenge-56_23.peaked_mpo_mps.png	figures/peaked_all/challenge-56_23.peaked_mpo_mps.png	peaked_all	1
+56_23	Quimb graph-ordered MPS distribution: challenge-56_23.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-56_23.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_23	Quimb graph-ordered MPS distribution: challenge-56_23.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-56_23.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_24	Adaptive Aer MPS distribution: challenge-56_24.png	figures/adaptive_mps/challenge-56_24.png	adaptive_mps	1
+56_24	Quimb graph-ordered MPS distribution: challenge-56_24.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-56_24.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_24	Quimb graph-ordered MPS distribution: challenge-56_24.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-56_24.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_24	Quimb graph-ordered MPS distribution: challenge-56_24.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-56_24.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_33	Adaptive Aer MPS distribution: challenge-56_33.png	figures/adaptive_mps/challenge-56_33.png	adaptive_mps	1
+56_33	Quimb graph-ordered MPS distribution: challenge-56_33.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-56_33.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_33	Quimb graph-ordered MPS distribution: challenge-56_33.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-56_33.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_38	Adaptive Aer MPS distribution: challenge-56_38.png	figures/adaptive_mps/challenge-56_38.png	adaptive_mps	1
+56_38	Quimb graph-ordered MPS distribution: challenge-56_38.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-56_38.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_39	Adaptive Aer MPS distribution: challenge-56_39.png	figures/adaptive_mps/challenge-56_39.png	adaptive_mps	1
+56_39	Quimb graph-ordered MPS distribution: challenge-56_39.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-56_39.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_39	Quimb graph-ordered MPS distribution: challenge-56_39.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/degree_cpu/images/challenge-56_39.quimb_tree_graph_mps.png	tree_tensor_sim	1
+56_9	Adaptive Aer MPS distribution: challenge-56_9.png	figures/adaptive_mps/challenge-56_9.png	adaptive_mps	1
+56_9	Quimb graph-ordered MPS distribution: challenge-56_9.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-56_9.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_10	Adaptive Aer MPS distribution: challenge-64_10.png	figures/adaptive_mps/challenge-64_10.png	adaptive_mps	1
+64_10	Quimb graph-ordered MPS distribution: challenge-64_10.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-64_10.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_25	Adaptive Aer MPS distribution: challenge-64_25.png	figures/adaptive_mps/challenge-64_25.png	adaptive_mps	1
+64_25	Quimb graph-ordered MPS distribution: challenge-64_25.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-64_25.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_25	Quimb graph-ordered MPS distribution: challenge-64_25.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-64_25.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_25	Quimb graph-ordered MPS distribution: challenge-64_25.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-64_25.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_26	Adaptive Aer MPS distribution: challenge-64_26.png	figures/adaptive_mps/challenge-64_26.png	adaptive_mps	1
+64_26	Aer MPS distribution: mps_64_26.png	figures/quantum_peak_report/mps_64_26.png	quantum_peak_report	1
+64_26	Aer MPS distribution: challenge-64_26.png	figures/selected_sim/mps/challenge-64_26.png	selected_sim	1
+64_26	Statevector distribution: challenge-64_26.png	figures/selected_sim/statevector/challenge-64_26.png	selected_sim	1
+64_26	Quimb graph-ordered MPS distribution: challenge-64_26.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-64_26.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_26	Quimb graph-ordered MPS distribution: challenge-64_26.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-64_26.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_26	Quimb graph-ordered MPS distribution: challenge-64_26.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-64_26.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_34	Adaptive Aer MPS distribution: challenge-64_34.png	figures/adaptive_mps/challenge-64_34.png	adaptive_mps	1
+64_34	Aer MPS distribution: mps_64_34.png	figures/quantum_peak_report/mps_64_34.png	quantum_peak_report	1
+64_34	Aer MPS distribution: challenge-64_34.png	figures/selected_sim/mps/challenge-64_34.png	selected_sim	1
+64_34	Statevector distribution: challenge-64_34.png	figures/selected_sim/statevector/challenge-64_34.png	selected_sim	1
+64_34	Quimb graph-ordered MPS distribution: challenge-64_34.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-64_34.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_34	Quimb graph-ordered MPS distribution: challenge-64_34.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/rcm_cpu/images/challenge-64_34.quimb_tree_graph_mps.png	tree_tensor_sim	1
+64_41	Aer MPS distribution: mps_64_41.png	figures/quantum_peak_report/mps_64_41.png	quantum_peak_report	1
+64_41	Aer MPS distribution: challenge-64_41.png	figures/selected_sim/mps/challenge-64_41.png	selected_sim	1
+64_41	Statevector distribution: challenge-64_41.png	figures/selected_sim/statevector/challenge-64_41.png	selected_sim	1
+8_1	Adaptive Aer MPS distribution: challenge-48_19.png	figures/adaptive_mps/challenge-48_19.png	adaptive_mps	1
+8_1	Adaptive Aer MPS distribution: challenge-8_1.png	figures/adaptive_mps/challenge-8_1.png	adaptive_mps	1
+8_1	Adaptive Aer MPS distribution: challenge-8_11.png	figures/adaptive_mps/challenge-8_11.png	adaptive_mps	1
+8_1	Peaked MPO/MPS distribution: challenge-48_19.peaked_mpo_mps.png	figures/peaked_all/challenge-48_19.peaked_mpo_mps.png	peaked_all	1
+8_1	Peaked MPO/MPS distribution: challenge-8_11.peaked_mpo_mps.png	figures/peaked_all/challenge-8_11.peaked_mpo_mps.png	peaked_all	1
+8_1	Peaked MPO/MPS distribution: challenge-8_1.peaked_mpo_mps.png	figures/peaked_pilot/challenge-8_1.peaked_mpo_mps.png	peaked_pilot	1
+8_1	Peaked MPO/MPS distribution: challenge-8_11.peaked_mpo_mps.png	figures/peaked_pilot/challenge-8_11.peaked_mpo_mps.png	peaked_pilot	1
+8_1	Aer MPS distribution: mps_8_11.png	figures/quantum_peak_report/mps_8_11.png	quantum_peak_report	1
+8_1	Aer MPS distribution: challenge-8_11.png	figures/selected_sim/mps/challenge-8_11.png	selected_sim	1
+8_1	Statevector distribution: challenge-8_11.png	figures/selected_sim/statevector/challenge-8_11.png	selected_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-48_19.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_19.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_1	Tree/order MPS distribution: challenge-48_19.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-48_19.tree_tensor_mps.png	tree_tensor_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-8_11.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-8_11.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_1	Tree/order MPS distribution: challenge-8_11.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-8_11.tree_tensor_mps.png	tree_tensor_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-48_19.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-48_19.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-8_1.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-8_1.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-8_11.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-8_11.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_1	Tree/order MPS distribution: challenge-8_1.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-8_1.tree_tensor_mps.png	tree_tensor_sim	1
+8_1	Tree/order MPS distribution: challenge-8_11.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-8_11.tree_tensor_mps.png	tree_tensor_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-8_1.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-8_1.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_1	Quimb graph-ordered MPS distribution: challenge-8_11.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-8_11.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_11	Adaptive Aer MPS distribution: challenge-8_11.png	figures/adaptive_mps/challenge-8_11.png	adaptive_mps	1
+8_11	Peaked MPO/MPS distribution: challenge-8_11.peaked_mpo_mps.png	figures/peaked_all/challenge-8_11.peaked_mpo_mps.png	peaked_all	1
+8_11	Peaked MPO/MPS distribution: challenge-8_11.peaked_mpo_mps.png	figures/peaked_pilot/challenge-8_11.peaked_mpo_mps.png	peaked_pilot	1
+8_11	Aer MPS distribution: mps_8_11.png	figures/quantum_peak_report/mps_8_11.png	quantum_peak_report	1
+8_11	Aer MPS distribution: challenge-8_11.png	figures/selected_sim/mps/challenge-8_11.png	selected_sim	1
+8_11	Statevector distribution: challenge-8_11.png	figures/selected_sim/statevector/challenge-8_11.png	selected_sim	1
+8_11	Quimb graph-ordered MPS distribution: challenge-8_11.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-8_11.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_11	Tree/order MPS distribution: challenge-8_11.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-8_11.tree_tensor_mps.png	tree_tensor_sim	1
+8_11	Quimb graph-ordered MPS distribution: challenge-8_11.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-8_11.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_11	Tree/order MPS distribution: challenge-8_11.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-8_11.tree_tensor_mps.png	tree_tensor_sim	1
+8_11	Quimb graph-ordered MPS distribution: challenge-8_11.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-8_11.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_27	Adaptive Aer MPS distribution: challenge-8_27.png	figures/adaptive_mps/challenge-8_27.png	adaptive_mps	1
+8_27	Peaked MPO/MPS distribution: challenge-8_27.peaked_mpo_mps.png	figures/peaked_pilot/challenge-8_27.peaked_mpo_mps.png	peaked_pilot	1
+8_27	Tree/order MPS distribution: challenge-8_27.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all/images/challenge-8_27.tree_tensor_mps.png	tree_tensor_sim	1
+8_27	Quimb graph-ordered MPS distribution: challenge-8_27.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/all_cpu/images/challenge-8_27.quimb_tree_graph_mps.png	tree_tensor_sim	1
+8_27	Tree/order MPS distribution: challenge-8_27.tree_tensor_mps.png	figures/tree_tensor_sim/tree_tensor_sim/pilot/images/challenge-8_27.tree_tensor_mps.png	tree_tensor_sim	1
+8_27	Quimb graph-ordered MPS distribution: challenge-8_27.quimb_tree_graph_mps.png	figures/tree_tensor_sim/tree_tensor_sim/quimb_pilot/images/challenge-8_27.quimb_tree_graph_mps.png	tree_tensor_sim	1

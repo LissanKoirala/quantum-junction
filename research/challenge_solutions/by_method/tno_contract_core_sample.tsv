@@ -1,0 +1,3 @@
+challenge	difficulty	qubits	method	method_family	source_sessions	run_id	rank_type	rank	bitstring_qiskit	score_type	score	count	support	fraction	selected	review	validation	status	source_path	notes
+36_15	easy	36	tno_contract_core_sample	tno	tno_contract_core_sample	challenge-36_15.tno	marginal_candidate	1	110110011111111111011011010111101100	p1_margin_min	0.0015859156370567895				0			ok	outputs/tno_sim_sample/json/challenge-36_15.tno.json	
+8_1	very easy	8	tno_contract_core_sample	tno	tno_contract_core_sample	challenge-8_1.tno	marginal_candidate	1	10101101	p1_margin_min	0.4601158663020227				1			ok	outputs/tno_sim_sample/json/challenge-8_1.tno.json	

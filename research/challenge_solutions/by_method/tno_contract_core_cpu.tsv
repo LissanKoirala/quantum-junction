@@ -1,0 +1,2 @@
+challenge	difficulty	qubits	method	method_family	source_sessions	run_id	rank_type	rank	bitstring_qiskit	score_type	score	count	support	fraction	selected	review	validation	status	source_path	notes
+8_11	easy	8	tno_contract_core_cpu	tno	tno_contract_core_cpu	challenge-8_11.tno	marginal_candidate	1	01011111	p1_margin_min	0.0452032537027478				0			ok	outputs/tno_sim_cpu/json/challenge-8_11.tno.json	

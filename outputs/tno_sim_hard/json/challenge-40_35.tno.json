@@ -1,0 +1,38 @@
+{
+  "challenge_id": 35,
+  "challenge_label": "40_35",
+  "difficulty": "hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "8",
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": "4",
+    "SLURM_JOB_ID": "34614305",
+    "SLURM_JOB_PARTITION": "cpu"
+  },
+  "method": "tno_contract_core",
+  "output_json": "outputs/tno_sim_hard/json/challenge-40_35.tno.json",
+  "output_stats_jsonl": "outputs/tno_sim_hard/stats/challenge-40_35.tno_stats.jsonl",
+  "output_tne_pickle": "outputs/tno_sim_hard/intermediate/challenge-40_35.tne.pkl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "chunk_size": 2,
+    "cutoff": 0.01,
+    "max_bond_tne": 8,
+    "max_bond_tno": 16,
+    "method": "local-late"
+  },
+  "qasm": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/challenges/hard/challenge-40_35.qasm",
+  "started_at": "2026-06-06T17:23:27+0100",
+  "status": "started",
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

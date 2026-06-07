@@ -1,0 +1,3 @@
+challenge	bitstring_qiskit	status	note	date	source	source_sessions
+64_41	0001000111010011100110010011110111000000100011010001101010110010	rejected	User reported the first 64_41 bitstring is wrong.	2026-06-06	user	quantum_peak_session,tree_tensor_sim_session
+64_41	0001001100010011000101001011110101000000000011011010100011110010	try_next	User asked to try the second aggregate-rank candidate next.	2026-06-06	user	quantum_peak_session,tree_tensor_sim_session

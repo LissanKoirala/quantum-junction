@@ -1,0 +1,97 @@
+{
+  "backend": "numpy",
+  "challenge_id": 1,
+  "challenge_label": "8_1",
+  "circuit_len": 46,
+  "circuit_ops": {
+    "cx": 14,
+    "rx": 17,
+    "rz": 14,
+    "swap": 1
+  },
+  "difficulty": "very easy",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": null,
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": "4",
+    "SLURM_JOB_ID": "34614305",
+    "SLURM_JOB_PARTITION": "cpu"
+  },
+  "extract_seconds": 0.05114773701643571,
+  "finished_at": "2026-06-06T13:55:30+0100",
+  "layer_seconds": 0.002310996991582215,
+  "max_rss_mb": 480.0,
+  "method": "tno_contract_core",
+  "num_layers": 21,
+  "num_qubits": 8,
+  "output_json": "outputs/tno_sim_sample/json/challenge-8_1.tno.json",
+  "output_stats_jsonl": "outputs/tno_sim_sample/stats/challenge-8_1.tno_stats.jsonl",
+  "p0s": [
+    0.0008256707062515304,
+    0.9938268093791488,
+    0.012364456538624544,
+    6.516745687675608e-12,
+    1.0,
+    1.7763468967900374e-05,
+    0.9999999999999921,
+    0.039884133697977234
+  ],
+  "p1_margin_max": 0.5,
+  "p1_margin_mean": 0.4925918481201004,
+  "p1_margin_min": 0.4601158663020227,
+  "p1s": [
+    0.9991743292937485,
+    0.006173190620851199,
+    0.9876355434613755,
+    0.9999999999934832,
+    0.0,
+    0.9999822365310321,
+    7.882583474838611e-15,
+    0.9601158663020227
+  ],
+  "parameters": {
+    "backend_requested": "numpy",
+    "chunk_size": 2,
+    "cutoff": 0.01,
+    "max_bond_tne": 16,
+    "max_bond_tno": 32,
+    "method": "local-late"
+  },
+  "pred_bitstring_qiskit_order": "10101101",
+  "pred_bitstring_raw": "10110101",
+  "qasm": "/cephfs/volumes/hpc_data_usr/k23067196/4b836cf6-c724-4582-b3ee-c8bf7092b2fd/JUNCTION-HACKATHON/quantum-junction/challenges/very easy/challenge-8_1.qasm",
+  "removed_final_measurements": false,
+  "started_at": "2026-06-06T13:54:29+0100",
+  "stats_rows": 6,
+  "status": "ok",
+  "tne_info": {
+    "max_bond": 2,
+    "max_links": 2,
+    "num_tensors": 8,
+    "total_elems": 20,
+    "total_links": 10,
+    "total_shapes": 20
+  },
+  "tne_seconds": 0.004360163991805166,
+  "tno_info": {
+    "max_bond": 4,
+    "max_links": 4,
+    "num_tensors": 8,
+    "total_elems": 156,
+    "total_links": 28,
+    "total_shapes": 64
+  },
+  "tno_seconds": 2.0385463499696925,
+  "total_seconds": 61.238040877040476,
+  "versions": {
+    "numpy": "2.2.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.11.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1+cu121"
+  }
+}

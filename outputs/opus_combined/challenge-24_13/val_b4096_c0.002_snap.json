@@ -1,0 +1,104 @@
+{
+  "challenge": "challenge-24_13.qasm",
+  "n_qubits": 24,
+  "n_ops_after_precond": 187,
+  "snapped_gates": 263,
+  "params": {
+    "max_bond": 4096,
+    "cutoff": 0.002,
+    "unswap_threshold": 1000000.0,
+    "center_ratio": 0.5,
+    "max_its": 12,
+    "seed": 123,
+    "snap_tol": 0.01,
+    "consolidate": true,
+    "use_graph": true,
+    "use_gpu": false,
+    "sabre_trials": 1000
+  },
+  "converged": true,
+  "stopped_reason": "complete",
+  "remaining_layers": 0,
+  "remaining_left": 0,
+  "remaining_right": 0,
+  "forced_absorptions": 0,
+  "graph_ordering_calls": 0,
+  "max_bond_seen": 256,
+  "mpo_max_bond": 64,
+  "compress_seconds": 1419.5,
+  "readout_seconds": 0.1,
+  "sample_top_fraction": 0.687,
+  "sample_distinct": 98,
+  "sample_orderings": {
+    "raw": "001011111011011011011010",
+    "raw_rev": "010110110110110111110100",
+    "perm": "110110111000101111001011",
+    "perm_rev": "110100111101000111011011"
+  },
+  "sample_top5": [
+    [
+      "001011111011011011011010",
+      2748
+    ],
+    [
+      "001011111011011011001110",
+      197
+    ],
+    [
+      "001011111001111011011010",
+      142
+    ],
+    [
+      "000111111011011011011010",
+      112
+    ],
+    [
+      "001011110011011011011010",
+      99
+    ]
+  ],
+  "marginal_orderings": {
+    "raw": "001011111011011011011010",
+    "raw_rev": "010110110110110111110100",
+    "perm": "110110111000101111001011",
+    "perm_rev": "110100111101000111011011"
+  },
+  "marginal_min_margin": 0.4110896562406915,
+  "marginal_mean_margin": 0.47474316732485944,
+  "marginal_undecided": 0,
+  "marginal_p0s": [
+    1.0,
+    0.9999,
+    0.0381,
+    0.9268,
+    0.0,
+    0.0,
+    0.0166,
+    0.0424,
+    0.0638,
+    0.9995,
+    0.0496,
+    0.0667,
+    0.9513,
+    0.0002,
+    0.0004,
+    0.9994,
+    0.0,
+    0.0,
+    0.973,
+    0.0873,
+    0.0017,
+    0.9111,
+    0.0002,
+    1.0
+  ],
+  "total_seconds": 1437.4,
+  "validation": {
+    "known_answer": "111110011111001011010001",
+    "matches": {},
+    "solved": false
+  },
+  "status": "ok",
+  "label": "val_b4096_c0.002_snap",
+  "wall_seconds": 1437.4
+}
