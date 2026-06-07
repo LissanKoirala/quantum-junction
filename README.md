@@ -1,4 +1,4 @@
-# Quantum Junction: Quantum Peak Challenge Winner Write-Up
+# Quantum Junction: QMill Challenge
 
 This repository contains our Quantum Peak hackathon pipeline for finding the
 hidden output bitstring of obfuscated peaked quantum circuits. The core idea was
