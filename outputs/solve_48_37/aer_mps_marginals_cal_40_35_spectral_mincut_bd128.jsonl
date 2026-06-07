@@ -1,0 +1,1 @@
+{"bond_dims": [128], "event": "start", "ops": 2950, "order_methods": ["spectral", "mincut"], "qasm": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-40_35.qasm", "qubits": 40, "truncation_threshold": 1e-12}

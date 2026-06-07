@@ -1,0 +1,62 @@
+{
+  "api_features": {
+    "CircuitMPS_signature": "(N=None, *, psi0=None, max_bond=None, cutoff=1e-10, gate_opts=None, gate_contract='auto-mps', dtype=None, to_backend=None, convert_eager=True, **circuit_opts)",
+    "quimb_circuit_signature": "(circuit: 'QuantumCircuit', quimb_circuit_class: 'type[quimb.tensor.Circuit]' = <class 'quimb.tensor.circuit.Circuit'>, **kwargs) -> 'quimb.tensor.Circuit'",
+    "quimb_has_CircuitMPS": true,
+    "quimb_has_CircuitPermMPS": true,
+    "quimb_tree_like_public_names": [
+      "TN_rand_tree",
+      "edges_tree_rand",
+      "jax_register_pytree"
+    ]
+  },
+  "challenge_id": 38,
+  "challenge_label": "56_38",
+  "difficulty": "Downloads",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": null,
+    "SLURM_JOB_ID": null,
+    "SLURM_JOB_PARTITION": null
+  },
+  "method": "quimb_graph_tree_ordered_circuit_mps",
+  "method_classification": "graph_ordered_mps_fallback",
+  "output_image": "outputs/local_probe_56_38_rcm_bd64_fast/images/challenge-56_38.quimb_tree_graph_mps.png",
+  "output_json": "outputs/local_probe_56_38_rcm_bd64_fast/json/challenge-56_38.quimb_tree_graph_mps.json",
+  "output_stats_jsonl": "outputs/local_probe_56_38_rcm_bd64_fast/stats/challenge-56_38.quimb_tree_graph_mps.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "cutoff": 0.001,
+    "dtype": "complex128",
+    "figure_note": "",
+    "gate_contract": "swap+split",
+    "graph_ops": [
+      "cx",
+      "swap"
+    ],
+    "max_bond": 64,
+    "order_method": "rcm",
+    "recency_alpha": 0.15,
+    "sample_top_k": 5,
+    "samples": 0,
+    "seed": 56038
+  },
+  "qasm": "/Users/ecemguvener/Downloads/challenge-56_38.qasm",
+  "root": "/Users/ecemguvener/Desktop/quantum/quantum-junction",
+  "started_at": "2026-06-06T23:36:29+0300",
+  "status": "started",
+  "versions": {
+    "numpy": "2.4.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.14.0",
+    "scipy": "1.17.1",
+    "torch": "2.12.0"
+  }
+}

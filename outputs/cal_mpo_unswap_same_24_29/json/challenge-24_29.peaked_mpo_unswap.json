@@ -1,0 +1,177 @@
+{
+  "backend": {
+    "cuda_visible_devices": "",
+    "selected": "numpy",
+    "torch_cuda_available": false
+  },
+  "candidate_strategy": "marginal_permuted_measurement_order_reversed",
+  "candidate_variants": {
+    "marginal_permuted_measurement_order": "110000101000000100001010",
+    "marginal_permuted_measurement_order_reversed": "010100001000000101000011",
+    "marginal_raw_site_order": "011000000000010010101010",
+    "marginal_raw_site_order_reversed": "010101010010000000000110"
+  },
+  "challenge_id": 29,
+  "challenge_label": "24_29",
+  "circuit_len": 3086,
+  "circuit_ops": {
+    "cx": 1267,
+    "rx": 752,
+    "rz": 1064,
+    "swap": 3
+  },
+  "difficulty": "moderate",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": null,
+    "SLURM_JOB_ID": null,
+    "SLURM_JOB_PARTITION": null
+  },
+  "final_candidate_qiskit_order": "010100001000000101000011",
+  "final_measurement_permutation": [
+    2,
+    1,
+    19,
+    11,
+    3,
+    12,
+    13,
+    0,
+    16,
+    7,
+    21,
+    9,
+    8,
+    17,
+    14,
+    20,
+    15,
+    23,
+    6,
+    10,
+    18,
+    5,
+    22,
+    4
+  ],
+  "marginal": {
+    "p0s_raw_site_order": [
+      0.5000000000000039,
+      0.4999999999999995,
+      0.2823228457046503,
+      0.558550353508414,
+      0.5000245574452451,
+      0.5291618816051818,
+      0.9670607428702027,
+      0.500827245654818,
+      0.5122599643352488,
+      0.5020683436919948,
+      0.5033384565063722,
+      0.5001490330557804,
+      0.5000001996879088,
+      0.49999999725617694,
+      0.5000000000000002,
+      0.5000000403568797,
+      0.3400400541682189,
+      0.5013219709327875,
+      0.4984500715973515,
+      0.738970420114622,
+      0.49999999999502787,
+      0.5054738188523519,
+      0.3286980583196267,
+      0.5489701255912014
+    ],
+    "raw_site_order": "011000000000010010101010",
+    "variants": {
+      "permuted_measurement_order": "110000101000000100001010",
+      "permuted_measurement_order_reversed": "010100001000000101000011",
+      "raw_site_order": "011000000000010010101010",
+      "raw_site_order_reversed": "010101010010000000000110"
+    }
+  },
+  "max_rss_mb": 529424.0,
+  "method": "peaked_mpo_unswap",
+  "method_classification": "mpo_iterative_cancellation_unswapping",
+  "mpo_info": {
+    "max_bond": 8,
+    "max_links": 4,
+    "max_tensor_elems": 256,
+    "num_tensors": 24,
+    "total_elems": 1384
+  },
+  "mps_info": {
+    "max_bond": 5,
+    "max_links": 3,
+    "max_tensor_elems": 50,
+    "num_tensors": 24,
+    "total_elems": 420
+  },
+  "num_clbits": 0,
+  "num_qubits": 24,
+  "output_json": "outputs/cal_mpo_unswap_same_24_29/json/challenge-24_29.peaked_mpo_unswap.json",
+  "output_stats_jsonl": "outputs/cal_mpo_unswap_same_24_29/stats/challenge-24_29.peaked_mpo_unswap.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.5,
+    "cutoff": 0.005,
+    "early_stopping_gates": 1200,
+    "equal": false,
+    "flip_freq": null,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 64,
+    "max_its": 4,
+    "mps_max_bond": 64,
+    "sabre_trials": 16,
+    "samples": 0,
+    "seed": 56038,
+    "unswap_threshold": 20000.0
+  },
+  "qasm": "challenges/moderate/challenge-24_29.qasm",
+  "remaining_layers_left": 858,
+  "remaining_layers_right": 919,
+  "removed_final_measurements": false,
+  "root": "/Users/ecemguvener/Desktop/quantum/quantum-junction",
+  "sample_variants": {},
+  "sampling": {
+    "samples": 0,
+    "status": "skipped"
+  },
+  "started_at": "2026-06-07T00:30:59+0300",
+  "status": "ok",
+  "total_seconds": 252.24628783300432,
+  "unitary_circuit_len": 3086,
+  "unitary_circuit_ops": {
+    "cx": 1267,
+    "rx": 752,
+    "rz": 1064,
+    "swap": 3
+  },
+  "unswap_stats_count": 1701,
+  "validation": {
+    "candidate_results": {
+      "marginal_permuted_measurement_order": false,
+      "marginal_permuted_measurement_order_reversed": false,
+      "marginal_raw_site_order": false,
+      "marginal_raw_site_order_reversed": false
+    },
+    "known_answer_qiskit_order": "110100010111100001001001",
+    "status": "incorrect"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.14.0",
+    "scipy": "1.17.1",
+    "torch": "2.12.0"
+  }
+}

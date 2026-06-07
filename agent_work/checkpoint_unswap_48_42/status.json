@@ -1,0 +1,52 @@
+{
+  "T_U": 20733,
+  "circuit_len": 20733,
+  "circuit_ops": {
+    "cx": 4221,
+    "rx": 7087,
+    "rz": 9425
+  },
+  "cycles": 78,
+  "elapsed_this_slice": 211.5968599589978,
+  "ii_left": 0,
+  "ii_right": 0,
+  "layers_left": 3550,
+  "layers_right": 3743,
+  "max_rss_mb": 1177264.0,
+  "mpo_info": {
+    "max_bond": 2,
+    "max_links": 4,
+    "max_tensor_elems": 16,
+    "num_tensors": 48,
+    "total_elems": 228
+  },
+  "num_qubits": 48,
+  "parameters": {
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": 500,
+    "equal": false,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 512,
+    "max_its": 6,
+    "mps_max_bond": 512,
+    "out_dir": "agent_work/checkpoint_unswap_48_42",
+    "qasm": "challenges/very_hard/challenge-48_42.qasm",
+    "sabre_trials": 64,
+    "samples": 512,
+    "seed": 4242,
+    "time_budget": 240.0,
+    "unswap_threshold": 500000.0
+  },
+  "qasm": "challenges/very_hard/challenge-48_42.qasm",
+  "remaining_estimate": -84,
+  "status": "checkpoint",
+  "total_u_consumed": 20817,
+  "total_u_consumed_left": 10333,
+  "total_u_consumed_right": 10484,
+  "updated_at": "2026-06-07T01:33:45+0300"
+}

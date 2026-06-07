@@ -1,0 +1,62 @@
+{
+  "api_features": {
+    "CircuitMPS_signature": "(N=None, *, psi0=None, max_bond=None, cutoff=1e-10, gate_opts=None, gate_contract='auto-mps', dtype=None, to_backend=None, convert_eager=True, **circuit_opts)",
+    "quimb_circuit_signature": "(circuit: 'QuantumCircuit', quimb_circuit_class: 'type[quimb.tensor.Circuit]' = <class 'quimb.tensor.circuit.Circuit'>, **kwargs) -> 'quimb.tensor.Circuit'",
+    "quimb_has_CircuitMPS": true,
+    "quimb_has_CircuitPermMPS": true,
+    "quimb_tree_like_public_names": [
+      "TN_rand_tree",
+      "edges_tree_rand",
+      "jax_register_pytree"
+    ]
+  },
+  "challenge_id": 42,
+  "challenge_label": "48_42",
+  "difficulty": "very_hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": null,
+    "SLURM_JOB_ID": null,
+    "SLURM_JOB_PARTITION": null
+  },
+  "method": "quimb_graph_tree_ordered_circuit_mps",
+  "method_classification": "graph_ordered_mps_fallback",
+  "output_image": "outputs/tree_tensor_sim/48_42_quimb_ws_bd64_c1e7_marginal/images/challenge-48_42.quimb_tree_graph_mps.png",
+  "output_json": "outputs/tree_tensor_sim/48_42_quimb_ws_bd64_c1e7_marginal/json/challenge-48_42.quimb_tree_graph_mps.json",
+  "output_stats_jsonl": "outputs/tree_tensor_sim/48_42_quimb_ws_bd64_c1e7_marginal/stats/challenge-48_42.quimb_tree_graph_mps.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "cutoff": 1e-07,
+    "dtype": "complex128",
+    "figure_note": "focus_48_42_ws_bd64_c1e7_marginal",
+    "gate_contract": "swap+split",
+    "graph_ops": [
+      "cx",
+      "swap"
+    ],
+    "max_bond": 64,
+    "order_method": "weighted_spectral",
+    "recency_alpha": 0.15,
+    "sample_top_k": 0,
+    "samples": 0,
+    "seed": 424264
+  },
+  "qasm": "challenges/very_hard/challenge-48_42.qasm",
+  "root": "/Users/ecemguvener/Desktop/quantum/quantum-junction",
+  "started_at": "2026-06-07T02:04:55+0300",
+  "status": "started",
+  "versions": {
+    "numpy": "2.4.6",
+    "qiskit": "2.4.1",
+    "qiskit-aer": "0.17.2",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.14.0",
+    "scipy": "1.17.1",
+    "torch": "2.12.0"
+  }
+}

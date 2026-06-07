@@ -1,0 +1,1 @@
+{"bond_dims": [64], "event": "start", "ops": 5939, "order_methods": ["rcm"], "qasm": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-56_38.qasm", "qubits": 56, "truncation_threshold": 1e-12}

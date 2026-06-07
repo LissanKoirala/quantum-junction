@@ -1,0 +1,5 @@
+Problem 38
+Bitstring: 01000101011010101110011111101110110011101100000010110101
+
+Explanation:
+I discarded the two rejected Quimb marginal candidates and ran an independent Qiskit Aer MPS marginal extraction with RCM qubit ordering. This candidate is the fresh Aer RCM bd32 marginal result; higher-bond RCM checks were too slow to complete locally, so this is the best distinct next attempt.

@@ -1,0 +1,5 @@
+Problem 38
+Bitstring: 11001101111010101110010101100110101001111001100100100001
+
+Explanation:
+After the native bd64 and RCM bd32 marginals were rejected, I recalibrated against the solved Problem 35 pattern, where the correct answer was a one-bit correction of a high-bond marginal rather than a sample-top string. For Problem 38, the best-supported one-bit correction of the rejected high-bond RCM marginal flips logical q3, using agreement from the new Aer spectral/mincut/greedy marginal sweep plus the existing Quimb marginal sources.

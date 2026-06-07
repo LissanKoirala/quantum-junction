@@ -1,0 +1,1 @@
+{"bond_dims": [128], "event": "start", "ops": 3428, "order_methods": ["native"], "qasm": "/Users/ecemguvener/Downloads/challenge-64_41.qasm", "qubits": 64, "truncation_threshold": 1e-12}

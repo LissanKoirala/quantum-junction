@@ -1,0 +1,5 @@
+Problem 38
+Bitstring: 01001101011011100100010111000110000001011100000110000001
+
+Explanation:
+I rebuilt the candidate pool after rejecting the native bd64, RCM bd32, high-bond RCM marginal, and the q3 flip. The remaining strongest family is the all-source marginal consensus; its only unresolved bits are q5, q17, and q22, and I resolve those to 0 because the independent weighted, degree, and spectral runs agree on that three-bit pattern while rejected submissions already cover the main alternatives.

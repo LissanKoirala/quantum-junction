@@ -1,0 +1,7 @@
+{"backend": {"cuda_available": false, "requested": "numpy", "selected": "numpy"}, "rss_mb": 189312.0, "seconds": 1.412499841535464e-05, "stage": "backend"}
+{"rss_mb": 191344.0, "seconds": 0.11295483399590012, "stage": "parse_qasm"}
+{"num_edges": 1354, "rss_mb": 198240.0, "seconds": 0.07281091700133402, "stage": "graph_order"}
+{"rss_mb": 198832.0, "seconds": 0.20187412500672508, "stage": "remap"}
+{"mps_info": {"max_bond": 1, "num_indices": 111, "num_tensors": 56, "total_tensor_elements": 112}, "rss_mb": 249248.0, "seconds": 56.89419437500328, "stage": "simulate_quimb_circuit_mps"}
+{"p1_margin_min": 0.5, "rss_mb": 249248.0, "seconds": 0.7911967499967432, "stage": "extract_marginals"}
+{"rss_mb": 249248.0, "sampling_status": "error", "seconds": 0.029550790997745935, "stage": "sample_mps"}

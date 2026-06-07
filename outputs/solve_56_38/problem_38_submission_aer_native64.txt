@@ -1,0 +1,5 @@
+Problem 38
+Bitstring: 11000101111101100100110011001110010000111000100110000101
+
+Explanation:
+The previous RCM-ordered Aer MPS marginal was rejected, so I switched to the completed native-order Aer MPS bd64 result rather than another RCM-only estimate. This uses a higher MPS bond dimension than the bd32 native run and is independent from the failed Quimb RCM marginal candidates.

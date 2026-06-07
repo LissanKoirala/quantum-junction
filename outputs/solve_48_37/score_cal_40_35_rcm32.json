@@ -1,0 +1,120 @@
+{
+  "candidate_count": 5,
+  "challenge": "40_35",
+  "created_at": "2026-06-07T02:23:38+0300",
+  "qasm": "challenges/hard/challenge-40_35.qasm",
+  "settings": [
+    {
+      "marginal_candidate_qiskit_order": "0101101110100101011101100100000010000001",
+      "mps_info": {
+        "max_bond": 32,
+        "num_indices": 79,
+        "num_tensors": 40,
+        "total_tensor_elements": 26028
+      },
+      "p1_margin_max": 0.44535029455473407,
+      "p1_margin_mean": 0.11087120934460923,
+      "p1_margin_min": 2.984867908395472e-11,
+      "parameters": {
+        "backend": {
+          "cuda_available": false,
+          "requested": "numpy",
+          "selected": "numpy"
+        },
+        "cutoff": 0.0001,
+        "gate_contract": "swap+split",
+        "max_bond": 32,
+        "order_method": "rcm",
+        "prob_optimize": "greedy",
+        "recency_alpha": 0.15
+      },
+      "removed_measurements": false,
+      "scores_by_marginal_likelihood": [
+        {
+          "bitstring": "0101100110101111111000010101001110001001",
+          "hamming_to_setting_marginal": 12,
+          "label": "failed_selected_sample",
+          "marginal_log_likelihood": -21.926487315022175,
+          "marginal_mean_log_likelihood": -0.5481621828755544,
+          "mps_probability": 2.2635443023083514e-22
+        },
+        {
+          "bitstring": "0101100110111111101000001101001010001001",
+          "hamming_to_setting_marginal": 13,
+          "label": "quimb_gpu_marginal",
+          "marginal_log_likelihood": -22.36703048489352,
+          "marginal_mean_log_likelihood": -0.559175762122338,
+          "mps_probability": 8.020931684990744e-23
+        },
+        {
+          "bitstring": "0101100110111111101000011101001010001001",
+          "hamming_to_setting_marginal": 14,
+          "label": "known_correct",
+          "marginal_log_likelihood": -22.367030485012915,
+          "marginal_mean_log_likelihood": -0.5591757621253228,
+          "mps_probability": 8.020931685271217e-23
+        },
+        {
+          "bitstring": "0100000101011110011001001101010110100001",
+          "hamming_to_setting_marginal": 17,
+          "label": "degree_bad",
+          "marginal_log_likelihood": -24.24533411646591,
+          "marginal_mean_log_likelihood": -0.6061333529116477,
+          "mps_probability": 1.0074989041557245e-23
+        },
+        {
+          "bitstring": "0111110111110111101000011110000100001011",
+          "hamming_to_setting_marginal": 18,
+          "label": "quimb_cpu_sample",
+          "marginal_log_likelihood": -28.59435188662658,
+          "marginal_mean_log_likelihood": -0.7148587971656645,
+          "mps_probability": 2.8420019722492475e-25
+        }
+      ],
+      "scores_by_probability": [
+        {
+          "bitstring": "0101100110101111111000010101001110001001",
+          "hamming_to_setting_marginal": 12,
+          "label": "failed_selected_sample",
+          "marginal_log_likelihood": -21.926487315022175,
+          "marginal_mean_log_likelihood": -0.5481621828755544,
+          "mps_probability": 2.2635443023083514e-22
+        },
+        {
+          "bitstring": "0101100110111111101000011101001010001001",
+          "hamming_to_setting_marginal": 14,
+          "label": "known_correct",
+          "marginal_log_likelihood": -22.367030485012915,
+          "marginal_mean_log_likelihood": -0.5591757621253228,
+          "mps_probability": 8.020931685271217e-23
+        },
+        {
+          "bitstring": "0101100110111111101000001101001010001001",
+          "hamming_to_setting_marginal": 13,
+          "label": "quimb_gpu_marginal",
+          "marginal_log_likelihood": -22.36703048489352,
+          "marginal_mean_log_likelihood": -0.559175762122338,
+          "mps_probability": 8.020931684990744e-23
+        },
+        {
+          "bitstring": "0100000101011110011001001101010110100001",
+          "hamming_to_setting_marginal": 17,
+          "label": "degree_bad",
+          "marginal_log_likelihood": -24.24533411646591,
+          "marginal_mean_log_likelihood": -0.6061333529116477,
+          "mps_probability": 1.0074989041557245e-23
+        },
+        {
+          "bitstring": "0111110111110111101000011110000100001011",
+          "hamming_to_setting_marginal": 18,
+          "label": "quimb_cpu_sample",
+          "marginal_log_likelihood": -28.59435188662658,
+          "marginal_mean_log_likelihood": -0.7148587971656645,
+          "mps_probability": 2.8420019722492475e-25
+        }
+      ],
+      "seconds": 39.81226395900012,
+      "status": "ok"
+    }
+  ]
+}

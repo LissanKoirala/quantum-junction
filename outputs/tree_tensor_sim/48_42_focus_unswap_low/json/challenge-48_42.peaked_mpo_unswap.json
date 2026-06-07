@@ -1,0 +1,52 @@
+{
+  "challenge_id": 42,
+  "challenge_label": "48_42",
+  "difficulty": "very_hard",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "SLURM_ARRAY_JOB_ID": null,
+    "SLURM_ARRAY_TASK_ID": null,
+    "SLURM_CPUS_PER_TASK": null,
+    "SLURM_JOB_ID": null,
+    "SLURM_JOB_PARTITION": null
+  },
+  "method": "peaked_mpo_unswap",
+  "method_classification": "mpo_iterative_cancellation_unswapping",
+  "output_json": "outputs/tree_tensor_sim/48_42_focus_unswap_low/json/challenge-48_42.peaked_mpo_unswap.json",
+  "output_stats_jsonl": "outputs/tree_tensor_sim/48_42_focus_unswap_low/stats/challenge-48_42.peaked_mpo_unswap.stats.jsonl",
+  "parameters": {
+    "backend_requested": "numpy",
+    "center_ratio": 0.5,
+    "cutoff": 0.002,
+    "early_stopping_gates": 500,
+    "equal": false,
+    "flip_freq": null,
+    "hows": [
+      "both",
+      "left",
+      "right"
+    ],
+    "max_bond": 512,
+    "max_its": 10,
+    "mps_max_bond": 512,
+    "sabre_trials": 64,
+    "samples": 256,
+    "seed": 4242,
+    "unswap_threshold": 1000000.0
+  },
+  "qasm": "challenges/very_hard/challenge-48_42.qasm",
+  "root": "/Users/ecemguvener/Desktop/quantum/quantum-junction",
+  "started_at": "2026-06-06T21:23:45+0300",
+  "status": "started",
+  "versions": {
+    "numpy": "2.4.6",
+    "qiskit": "2.4.1",
+    "qiskit-quimb": "0.0.10",
+    "quimb": "1.14.0",
+    "scipy": "1.17.1",
+    "torch": "2.12.0"
+  }
+}

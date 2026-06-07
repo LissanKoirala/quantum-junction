@@ -1,0 +1,332 @@
+{
+  "created_at": "2026-06-07T03:23:56+0300",
+  "settings": [
+    {
+      "marginal_candidate_qiskit_order": "10011101011000010010010101000000000001011101100010100001",
+      "mps_build_seconds": 129.4641909589991,
+      "mps_info": {
+        "max_bond": 18,
+        "num_indices": 111,
+        "num_tensors": 56,
+        "total_tensor_elements": 11280
+      },
+      "num_qubits": 56,
+      "p1_margin_max": 0.493819699540057,
+      "p1_margin_mean": 0.10340267220504853,
+      "p1_margin_min": 1.1102230246251565e-16,
+      "parameters": {
+        "backend": {
+          "cuda_available": false,
+          "requested": "numpy",
+          "selected": "numpy"
+        },
+        "cutoff": 0.0001,
+        "gate_contract": "swap+split",
+        "graph_ops": [
+          "cx",
+          "swap"
+        ],
+        "max_bond": 32,
+        "order_method": "rcm",
+        "prob_optimize": "greedy",
+        "recency_alpha": 0.15
+      },
+      "qasm": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-56_38.qasm",
+      "removed_measurements": false,
+      "scores_by_marginal_likelihood": [
+        {
+          "bitstring": "10011101011000010010010101000000000001011101100010100001",
+          "hamming_to_setting_marginal": 0,
+          "label": "local_rcm_bd32_marginal",
+          "marginal_log_likelihood": -29.551404298827038,
+          "marginal_mean_log_likelihood": -0.5277036481933399,
+          "mps_probability": 9.581803313237965e-35
+        },
+        {
+          "bitstring": "01001101011011100100010111000110010001111100000110100001",
+          "hamming_to_setting_marginal": 17,
+          "label": "consensus_all_sources",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.293549045991286e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110010001011100000110100001",
+          "hamming_to_setting_marginal": 16,
+          "label": "consensus_flip_q17",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.2935490459912905e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110000001111100000110100001",
+          "hamming_to_setting_marginal": 16,
+          "label": "consensus_flip_q22",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.2935490459912822e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110000001011100000110000001",
+          "hamming_to_setting_marginal": 16,
+          "label": "consensus_flip_q5_q17_q22",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.2935490459912765e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110010001111100000110000001",
+          "hamming_to_setting_marginal": 18,
+          "label": "consensus_flip_q5",
+          "marginal_log_likelihood": -32.78416663039345,
+          "marginal_mean_log_likelihood": -0.5854315469713116,
+          "mps_probability": 2.293549045991277e-36
+        },
+        {
+          "bitstring": "11001101111010101110010101100110001001111001100100101001",
+          "hamming_to_setting_marginal": 17,
+          "label": "historical_rcm_marginal_flip_q23",
+          "marginal_log_likelihood": -36.08131146980099,
+          "marginal_mean_log_likelihood": -0.6443091333893033,
+          "mps_probability": 6.986874429515622e-39
+        },
+        {
+          "bitstring": "11001101111010101110010101000110101001111001100100101001",
+          "hamming_to_setting_marginal": 17,
+          "label": "historical_rcm_marginal_flip_q29",
+          "marginal_log_likelihood": -36.44516468682209,
+          "marginal_mean_log_likelihood": -0.6508065122646801,
+          "mps_probability": 1.2506773644375354e-39
+        },
+        {
+          "bitstring": "11001101111010101110010101100110100001111001100100101001",
+          "hamming_to_setting_marginal": 17,
+          "label": "historical_rcm_marginal_flip_q21",
+          "marginal_log_likelihood": -36.66769526496439,
+          "marginal_mean_log_likelihood": -0.6547802725886498,
+          "mps_probability": 3.947783748142617e-39
+        },
+        {
+          "bitstring": "11001101111010101110010101100110101001111001100100101001",
+          "hamming_to_setting_marginal": 18,
+          "label": "historical_rcm_marginal",
+          "marginal_log_likelihood": -36.67518282787426,
+          "marginal_mean_log_likelihood": -0.6549139790691832,
+          "mps_probability": 3.91833494788685e-39
+        },
+        {
+          "bitstring": "00011001011111100101010111000000100101001111001111000100",
+          "hamming_to_setting_marginal": 22,
+          "label": "local_degree_bd32_marginal",
+          "marginal_log_likelihood": -36.928001156835705,
+          "marginal_mean_log_likelihood": -0.6594285920863519,
+          "mps_probability": 1.559256770597136e-37
+        },
+        {
+          "bitstring": "11011101010110111101010011001100010011111100100111101101",
+          "hamming_to_setting_marginal": 21,
+          "label": "local_mpo_early_marginal",
+          "marginal_log_likelihood": -37.338828716172564,
+          "marginal_mean_log_likelihood": -0.6667647985030815,
+          "mps_probability": 4.228414866323375e-39
+        },
+        {
+          "bitstring": "10011001011110000000010011010101100001001001110110110001",
+          "hamming_to_setting_marginal": 16,
+          "label": "historical_rcm_sample_top",
+          "marginal_log_likelihood": -38.04153009995118,
+          "marginal_mean_log_likelihood": -0.6793130374991282,
+          "mps_probability": 2.0250772106065266e-39
+        },
+        {
+          "bitstring": "00000000010011000111110010010111000011010111000111000001",
+          "hamming_to_setting_marginal": 26,
+          "label": "local_weighted_bd32_marginal",
+          "marginal_log_likelihood": -38.748584310222995,
+          "marginal_mean_log_likelihood": -0.6919390055396963,
+          "mps_probability": 8.880726124746334e-41
+        },
+        {
+          "bitstring": "01000110100110101001111110001110101111011000101011010000",
+          "hamming_to_setting_marginal": 34,
+          "label": "algebraic_rx_angle_top",
+          "marginal_log_likelihood": -40.226691033140995,
+          "marginal_mean_log_likelihood": -0.7183337684489464,
+          "mps_probability": 7.918835673375145e-40
+        },
+        {
+          "bitstring": "01110111000010010011000100100100000001000111110000000000",
+          "hamming_to_setting_marginal": 20,
+          "label": "algebraic_greedy_top",
+          "marginal_log_likelihood": -40.30148803810725,
+          "marginal_mean_log_likelihood": -0.7196694292519152,
+          "mps_probability": 3.931587406895636e-39
+        },
+        {
+          "bitstring": "00011101011000001001100011011110101001100100001111101101",
+          "hamming_to_setting_marginal": 25,
+          "label": "local_mpo_early_sample",
+          "marginal_log_likelihood": -41.36431499945995,
+          "marginal_mean_log_likelihood": -0.7386484821332134,
+          "mps_probability": 9.547793098389278e-40
+        },
+        {
+          "bitstring": "10001100010000001001000001001001011111110000101111111111",
+          "hamming_to_setting_marginal": 26,
+          "label": "local_rcm_bd16_marginal",
+          "marginal_log_likelihood": -49.10920274085883,
+          "marginal_mean_log_likelihood": -0.8769500489439076,
+          "mps_probability": 1.0966757089670274e-42
+        }
+      ],
+      "scores_by_probability": [
+        {
+          "bitstring": "10011101011000010010010101000000000001011101100010100001",
+          "hamming_to_setting_marginal": 0,
+          "label": "local_rcm_bd32_marginal",
+          "marginal_log_likelihood": -29.551404298827038,
+          "marginal_mean_log_likelihood": -0.5277036481933399,
+          "mps_probability": 9.581803313237965e-35
+        },
+        {
+          "bitstring": "01001101011011100100010111000110010001011100000110100001",
+          "hamming_to_setting_marginal": 16,
+          "label": "consensus_flip_q17",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.2935490459912905e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110010001111100000110100001",
+          "hamming_to_setting_marginal": 17,
+          "label": "consensus_all_sources",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.293549045991286e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110000001111100000110100001",
+          "hamming_to_setting_marginal": 16,
+          "label": "consensus_flip_q22",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.2935490459912822e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110010001111100000110000001",
+          "hamming_to_setting_marginal": 18,
+          "label": "consensus_flip_q5",
+          "marginal_log_likelihood": -32.78416663039345,
+          "marginal_mean_log_likelihood": -0.5854315469713116,
+          "mps_probability": 2.293549045991277e-36
+        },
+        {
+          "bitstring": "01001101011011100100010111000110000001011100000110000001",
+          "hamming_to_setting_marginal": 16,
+          "label": "consensus_flip_q5_q17_q22",
+          "marginal_log_likelihood": -32.78416663039344,
+          "marginal_mean_log_likelihood": -0.5854315469713115,
+          "mps_probability": 2.2935490459912765e-36
+        },
+        {
+          "bitstring": "00011001011111100101010111000000100101001111001111000100",
+          "hamming_to_setting_marginal": 22,
+          "label": "local_degree_bd32_marginal",
+          "marginal_log_likelihood": -36.928001156835705,
+          "marginal_mean_log_likelihood": -0.6594285920863519,
+          "mps_probability": 1.559256770597136e-37
+        },
+        {
+          "bitstring": "11001101111010101110010101100110001001111001100100101001",
+          "hamming_to_setting_marginal": 17,
+          "label": "historical_rcm_marginal_flip_q23",
+          "marginal_log_likelihood": -36.08131146980099,
+          "marginal_mean_log_likelihood": -0.6443091333893033,
+          "mps_probability": 6.986874429515622e-39
+        },
+        {
+          "bitstring": "11011101010110111101010011001100010011111100100111101101",
+          "hamming_to_setting_marginal": 21,
+          "label": "local_mpo_early_marginal",
+          "marginal_log_likelihood": -37.338828716172564,
+          "marginal_mean_log_likelihood": -0.6667647985030815,
+          "mps_probability": 4.228414866323375e-39
+        },
+        {
+          "bitstring": "11001101111010101110010101100110100001111001100100101001",
+          "hamming_to_setting_marginal": 17,
+          "label": "historical_rcm_marginal_flip_q21",
+          "marginal_log_likelihood": -36.66769526496439,
+          "marginal_mean_log_likelihood": -0.6547802725886498,
+          "mps_probability": 3.947783748142617e-39
+        },
+        {
+          "bitstring": "01110111000010010011000100100100000001000111110000000000",
+          "hamming_to_setting_marginal": 20,
+          "label": "algebraic_greedy_top",
+          "marginal_log_likelihood": -40.30148803810725,
+          "marginal_mean_log_likelihood": -0.7196694292519152,
+          "mps_probability": 3.931587406895636e-39
+        },
+        {
+          "bitstring": "11001101111010101110010101100110101001111001100100101001",
+          "hamming_to_setting_marginal": 18,
+          "label": "historical_rcm_marginal",
+          "marginal_log_likelihood": -36.67518282787426,
+          "marginal_mean_log_likelihood": -0.6549139790691832,
+          "mps_probability": 3.91833494788685e-39
+        },
+        {
+          "bitstring": "10011001011110000000010011010101100001001001110110110001",
+          "hamming_to_setting_marginal": 16,
+          "label": "historical_rcm_sample_top",
+          "marginal_log_likelihood": -38.04153009995118,
+          "marginal_mean_log_likelihood": -0.6793130374991282,
+          "mps_probability": 2.0250772106065266e-39
+        },
+        {
+          "bitstring": "11001101111010101110010101000110101001111001100100101001",
+          "hamming_to_setting_marginal": 17,
+          "label": "historical_rcm_marginal_flip_q29",
+          "marginal_log_likelihood": -36.44516468682209,
+          "marginal_mean_log_likelihood": -0.6508065122646801,
+          "mps_probability": 1.2506773644375354e-39
+        },
+        {
+          "bitstring": "00011101011000001001100011011110101001100100001111101101",
+          "hamming_to_setting_marginal": 25,
+          "label": "local_mpo_early_sample",
+          "marginal_log_likelihood": -41.36431499945995,
+          "marginal_mean_log_likelihood": -0.7386484821332134,
+          "mps_probability": 9.547793098389278e-40
+        },
+        {
+          "bitstring": "01000110100110101001111110001110101111011000101011010000",
+          "hamming_to_setting_marginal": 34,
+          "label": "algebraic_rx_angle_top",
+          "marginal_log_likelihood": -40.226691033140995,
+          "marginal_mean_log_likelihood": -0.7183337684489464,
+          "mps_probability": 7.918835673375145e-40
+        },
+        {
+          "bitstring": "00000000010011000111110010010111000011010111000111000001",
+          "hamming_to_setting_marginal": 26,
+          "label": "local_weighted_bd32_marginal",
+          "marginal_log_likelihood": -38.748584310222995,
+          "marginal_mean_log_likelihood": -0.6919390055396963,
+          "mps_probability": 8.880726124746334e-41
+        },
+        {
+          "bitstring": "10001100010000001001000001001001011111110000101111111111",
+          "hamming_to_setting_marginal": 26,
+          "label": "local_rcm_bd16_marginal",
+          "marginal_log_likelihood": -49.10920274085883,
+          "marginal_mean_log_likelihood": -0.8769500489439076,
+          "mps_probability": 1.0966757089670274e-42
+        }
+      ],
+      "status": "ok",
+      "total_seconds": 130.93882904199563
+    }
+  ]
+}
