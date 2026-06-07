@@ -643,6 +643,7 @@ def render_markdown(recs: list[Recommendation], detail_limit: int | None = None)
 def write_csv(recs: list[Recommendation], fp) -> None:
     writer = csv.DictWriter(
         fp,
+        lineterminator="\n",
         fieldnames=[
             "path",
             "difficulty_group",

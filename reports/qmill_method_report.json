@@ -1,8 +1,8 @@
 [
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-16_12.qasm",
+    "path": "challenges/easy/challenge-16_12.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-16_12.qasm",
+      "path": "challenges/easy/challenge-16_12.qasm",
       "difficulty_group": "easy",
       "num_qubits": 16,
       "total_ops": 291,
@@ -104,9 +104,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-24_13.qasm",
+    "path": "challenges/easy/challenge-24_13.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-24_13.qasm",
+      "path": "challenges/easy/challenge-24_13.qasm",
       "difficulty_group": "easy",
       "num_qubits": 24,
       "total_ops": 550,
@@ -207,9 +207,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-32_14.qasm",
+    "path": "challenges/easy/challenge-32_14.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-32_14.qasm",
+      "path": "challenges/easy/challenge-32_14.qasm",
       "difficulty_group": "easy",
       "num_qubits": 32,
       "total_ops": 875,
@@ -309,9 +309,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-36_15.qasm",
+    "path": "challenges/easy/challenge-36_15.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-36_15.qasm",
+      "path": "challenges/easy/challenge-36_15.qasm",
       "difficulty_group": "easy",
       "num_qubits": 36,
       "total_ops": 1752,
@@ -407,9 +407,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-40_16.qasm",
+    "path": "challenges/easy/challenge-40_16.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-40_16.qasm",
+      "path": "challenges/easy/challenge-40_16.qasm",
       "difficulty_group": "easy",
       "num_qubits": 40,
       "total_ops": 969,
@@ -509,9 +509,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-40_17.qasm",
+    "path": "challenges/easy/challenge-40_17.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-40_17.qasm",
+      "path": "challenges/easy/challenge-40_17.qasm",
       "difficulty_group": "easy",
       "num_qubits": 40,
       "total_ops": 779,
@@ -611,9 +611,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-40_18.qasm",
+    "path": "challenges/easy/challenge-40_18.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-40_18.qasm",
+      "path": "challenges/easy/challenge-40_18.qasm",
       "difficulty_group": "easy",
       "num_qubits": 40,
       "total_ops": 1328,
@@ -713,9 +713,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-48_19.qasm",
+    "path": "challenges/easy/challenge-48_19.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-48_19.qasm",
+      "path": "challenges/easy/challenge-48_19.qasm",
       "difficulty_group": "easy",
       "num_qubits": 48,
       "total_ops": 901,
@@ -810,9 +810,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-48_20.qasm",
+    "path": "challenges/easy/challenge-48_20.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-48_20.qasm",
+      "path": "challenges/easy/challenge-48_20.qasm",
       "difficulty_group": "easy",
       "num_qubits": 48,
       "total_ops": 917,
@@ -912,9 +912,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-48_21.qasm",
+    "path": "challenges/easy/challenge-48_21.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-48_21.qasm",
+      "path": "challenges/easy/challenge-48_21.qasm",
       "difficulty_group": "easy",
       "num_qubits": 48,
       "total_ops": 1103,
@@ -1014,9 +1014,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-56_22.qasm",
+    "path": "challenges/easy/challenge-56_22.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-56_22.qasm",
+      "path": "challenges/easy/challenge-56_22.qasm",
       "difficulty_group": "easy",
       "num_qubits": 56,
       "total_ops": 702,
@@ -1111,9 +1111,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-56_23.qasm",
+    "path": "challenges/easy/challenge-56_23.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-56_23.qasm",
+      "path": "challenges/easy/challenge-56_23.qasm",
       "difficulty_group": "easy",
       "num_qubits": 56,
       "total_ops": 1746,
@@ -1211,9 +1211,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-56_24.qasm",
+    "path": "challenges/easy/challenge-56_24.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-56_24.qasm",
+      "path": "challenges/easy/challenge-56_24.qasm",
       "difficulty_group": "easy",
       "num_qubits": 56,
       "total_ops": 1418,
@@ -1313,9 +1313,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-64_25.qasm",
+    "path": "challenges/easy/challenge-64_25.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-64_25.qasm",
+      "path": "challenges/easy/challenge-64_25.qasm",
       "difficulty_group": "easy",
       "num_qubits": 64,
       "total_ops": 1706,
@@ -1408,9 +1408,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-64_26.qasm",
+    "path": "challenges/easy/challenge-64_26.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-64_26.qasm",
+      "path": "challenges/easy/challenge-64_26.qasm",
       "difficulty_group": "easy",
       "num_qubits": 64,
       "total_ops": 1854,
@@ -1503,9 +1503,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-8_11.qasm",
+    "path": "challenges/easy/challenge-8_11.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/easy/challenge-8_11.qasm",
+      "path": "challenges/easy/challenge-8_11.qasm",
       "difficulty_group": "easy",
       "num_qubits": 8,
       "total_ops": 117,
@@ -1607,9 +1607,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-40_35.qasm",
+    "path": "challenges/hard/challenge-40_35.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-40_35.qasm",
+      "path": "challenges/hard/challenge-40_35.qasm",
       "difficulty_group": "hard",
       "num_qubits": 40,
       "total_ops": 2950,
@@ -1707,9 +1707,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-48_36.qasm",
+    "path": "challenges/hard/challenge-48_36.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-48_36.qasm",
+      "path": "challenges/hard/challenge-48_36.qasm",
       "difficulty_group": "hard",
       "num_qubits": 48,
       "total_ops": 2805,
@@ -1810,9 +1810,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-48_37.qasm",
+    "path": "challenges/hard/challenge-48_37.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-48_37.qasm",
+      "path": "challenges/hard/challenge-48_37.qasm",
       "difficulty_group": "hard",
       "num_qubits": 48,
       "total_ops": 3505,
@@ -1910,9 +1910,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-56_38.qasm",
+    "path": "challenges/hard/challenge-56_38.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-56_38.qasm",
+      "path": "challenges/hard/challenge-56_38.qasm",
       "difficulty_group": "hard",
       "num_qubits": 56,
       "total_ops": 5939,
@@ -2011,9 +2011,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-56_39.qasm",
+    "path": "challenges/hard/challenge-56_39.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-56_39.qasm",
+      "path": "challenges/hard/challenge-56_39.qasm",
       "difficulty_group": "hard",
       "num_qubits": 56,
       "total_ops": 2783,
@@ -2113,9 +2113,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-64_40.qasm",
+    "path": "challenges/hard/challenge-64_40.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-64_40.qasm",
+      "path": "challenges/hard/challenge-64_40.qasm",
       "difficulty_group": "hard",
       "num_qubits": 64,
       "total_ops": 3758,
@@ -2211,9 +2211,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-64_41.qasm",
+    "path": "challenges/hard/challenge-64_41.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/hard/challenge-64_41.qasm",
+      "path": "challenges/hard/challenge-64_41.qasm",
       "difficulty_group": "hard",
       "num_qubits": 64,
       "total_ops": 3428,
@@ -2309,9 +2309,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-16_28.qasm",
+    "path": "challenges/moderate/challenge-16_28.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-16_28.qasm",
+      "path": "challenges/moderate/challenge-16_28.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 16,
       "total_ops": 1670,
@@ -2410,9 +2410,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-24_29.qasm",
+    "path": "challenges/moderate/challenge-24_29.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-24_29.qasm",
+      "path": "challenges/moderate/challenge-24_29.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 24,
       "total_ops": 3086,
@@ -2512,9 +2512,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-32_30.qasm",
+    "path": "challenges/moderate/challenge-32_30.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-32_30.qasm",
+      "path": "challenges/moderate/challenge-32_30.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 32,
       "total_ops": 1977,
@@ -2613,9 +2613,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-48_31.qasm",
+    "path": "challenges/moderate/challenge-48_31.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-48_31.qasm",
+      "path": "challenges/moderate/challenge-48_31.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 48,
       "total_ops": 1265,
@@ -2715,9 +2715,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-48_32.qasm",
+    "path": "challenges/moderate/challenge-48_32.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-48_32.qasm",
+      "path": "challenges/moderate/challenge-48_32.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 48,
       "total_ops": 1790,
@@ -2815,9 +2815,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-56_33.qasm",
+    "path": "challenges/moderate/challenge-56_33.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-56_33.qasm",
+      "path": "challenges/moderate/challenge-56_33.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 56,
       "total_ops": 1510,
@@ -2910,9 +2910,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-64_34.qasm",
+    "path": "challenges/moderate/challenge-64_34.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-64_34.qasm",
+      "path": "challenges/moderate/challenge-64_34.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 64,
       "total_ops": 1948,
@@ -3010,9 +3010,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-8_27.qasm",
+    "path": "challenges/moderate/challenge-8_27.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/moderate/challenge-8_27.qasm",
+      "path": "challenges/moderate/challenge-8_27.qasm",
       "difficulty_group": "moderate",
       "num_qubits": 8,
       "total_ops": 459,
@@ -3116,9 +3116,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-16_2.qasm",
+    "path": "challenges/very easy/challenge-16_2.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-16_2.qasm",
+      "path": "challenges/very easy/challenge-16_2.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 16,
       "total_ops": 308,
@@ -3220,9 +3220,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-24_3.qasm",
+    "path": "challenges/very easy/challenge-24_3.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-24_3.qasm",
+      "path": "challenges/very easy/challenge-24_3.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 24,
       "total_ops": 363,
@@ -3323,9 +3323,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-28_4.qasm",
+    "path": "challenges/very easy/challenge-28_4.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-28_4.qasm",
+      "path": "challenges/very easy/challenge-28_4.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 28,
       "total_ops": 1220,
@@ -3425,9 +3425,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-32_5.qasm",
+    "path": "challenges/very easy/challenge-32_5.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-32_5.qasm",
+      "path": "challenges/very easy/challenge-32_5.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 32,
       "total_ops": 773,
@@ -3527,9 +3527,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-36_6.qasm",
+    "path": "challenges/very easy/challenge-36_6.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-36_6.qasm",
+      "path": "challenges/very easy/challenge-36_6.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 36,
       "total_ops": 426,
@@ -3627,9 +3627,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-40_7.qasm",
+    "path": "challenges/very easy/challenge-40_7.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-40_7.qasm",
+      "path": "challenges/very easy/challenge-40_7.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 40,
       "total_ops": 211,
@@ -3723,9 +3723,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-48_8.qasm",
+    "path": "challenges/very easy/challenge-48_8.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-48_8.qasm",
+      "path": "challenges/very easy/challenge-48_8.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 48,
       "total_ops": 227,
@@ -3819,9 +3819,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-56_9.qasm",
+    "path": "challenges/very easy/challenge-56_9.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-56_9.qasm",
+      "path": "challenges/very easy/challenge-56_9.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 56,
       "total_ops": 317,
@@ -3920,9 +3920,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-64_10.qasm",
+    "path": "challenges/very easy/challenge-64_10.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-64_10.qasm",
+      "path": "challenges/very easy/challenge-64_10.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 64,
       "total_ops": 313,
@@ -4021,9 +4021,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-8_1.qasm",
+    "path": "challenges/very easy/challenge-8_1.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very easy/challenge-8_1.qasm",
+      "path": "challenges/very easy/challenge-8_1.qasm",
       "difficulty_group": "very_easy",
       "num_qubits": 8,
       "total_ops": 46,
@@ -4123,9 +4123,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-104_49.qasm",
+    "path": "challenges/very_hard/challenge-104_49.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-104_49.qasm",
+      "path": "challenges/very_hard/challenge-104_49.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 104,
       "total_ops": 26361,
@@ -4227,9 +4227,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-48_42.qasm",
+    "path": "challenges/very_hard/challenge-48_42.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-48_42.qasm",
+      "path": "challenges/very_hard/challenge-48_42.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 48,
       "total_ops": 20733,
@@ -4332,9 +4332,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-56_43.qasm",
+    "path": "challenges/very_hard/challenge-56_43.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-56_43.qasm",
+      "path": "challenges/very_hard/challenge-56_43.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 56,
       "total_ops": 23004,
@@ -4437,9 +4437,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-64_44.qasm",
+    "path": "challenges/very_hard/challenge-64_44.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-64_44.qasm",
+      "path": "challenges/very_hard/challenge-64_44.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 64,
       "total_ops": 28787,
@@ -4542,9 +4542,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-72_45.qasm",
+    "path": "challenges/very_hard/challenge-72_45.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-72_45.qasm",
+      "path": "challenges/very_hard/challenge-72_45.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 72,
       "total_ops": 28777,
@@ -4646,9 +4646,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-80_46.qasm",
+    "path": "challenges/very_hard/challenge-80_46.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-80_46.qasm",
+      "path": "challenges/very_hard/challenge-80_46.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 80,
       "total_ops": 34586,
@@ -4750,9 +4750,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-88_47.qasm",
+    "path": "challenges/very_hard/challenge-88_47.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-88_47.qasm",
+      "path": "challenges/very_hard/challenge-88_47.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 88,
       "total_ops": 37660,
@@ -4854,9 +4854,9 @@
     ]
   },
   {
-    "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-96_48.qasm",
+    "path": "challenges/very_hard/challenge-96_48.qasm",
     "features": {
-      "path": "/Users/ecemguvener/Desktop/quantum/quantum-junction/challenges/very_hard/challenge-96_48.qasm",
+      "path": "challenges/very_hard/challenge-96_48.qasm",
       "difficulty_group": "very_hard",
       "num_qubits": 96,
       "total_ops": 28703,
